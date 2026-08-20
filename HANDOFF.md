@@ -33,8 +33,8 @@ and this file did not.
   *Deciphering the Icon* (numbered hotspot markers over the icon).
 - **Content, as of 2026-08-20:**
   - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **7 (b)**, **60 (c)**.
-    **58 have an icon, from 58 images — one icon, one passage, no image used twice.**
-    The other 60 render as plain verse rows because no Orthodox icon of them exists.
+    **57 have an icon, from 57 images — one icon, one passage, no image used twice.**
+    The other 61 render as plain verse rows because no Orthodox icon of them exists.
   - **15 of 62 icons have positioned hotspot markers.** All 62 have a prose reading.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
@@ -48,7 +48,7 @@ and this file did not.
   - **b** — a **type icon**: the image the Church attaches to the passage without depicting its
     verses. The card and drawer say so: *"This is the icon the Church attaches to this passage;
     it is not a depiction of these verses."* Exactly 7, each declared `tierB` in `overrides.js`:
-    `galilee` (Christ the Teacher at "Jesus begins to preach"), `matthew` (the apostle's own
+    `galilee` (the Forerunner dragged to prison, the event 4:12 reports), `matthew` (the apostle's own
     icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
     sign of Jonah), `lostsheep` (the Good Shepherd), `olivet` (Christ in Glory at the Second
     Coming), `commission` (Christ manifest among the apostles).
@@ -118,6 +118,16 @@ In the owner's priority order:
   Rossano Gospels (6th c.) and Greek minuscules gave the Ten Virgins and the Labourers, and
   Ferapontov gave the Wedding Feast — **all three are already in use.** Where an Orthodox
   parable image exists on Commons, this project already has it.
+- **A shared keyword is not a match — read what the icon actually depicts.** `johnq`
+  (Mt 11:1–15, "John Sends from Prison") was showing `Elkomenos Prodromos Phylaken`, whose
+  inscription is *ΕΛΚΟΜΕΝΟС Ο ΠΡΟΔΡΟΜΟС ΕΙС ΤΗΝ ΦΥΛΑΚΗΝ* — the Forerunner **dragged into**
+  prison. That is the arrest Matthew reports at 4:12, not John sending his disciples at 11:2.
+  The owner caught it; the automated name check did not, because both names contain "prison".
+  The fresco now sits at `galilee` (4:12–17) and 11:1–15 has no icon.
+- **An icon of one scene inside a multi-verse pericope is correct, not a mismatch.** The
+  passage titles name the whole block, so `Lord of the Sabbath` (12:1–21) legitimately carries
+  the healing of the withered hand (vv 9–14), and `Christ Walking on the Water` (14:22–36)
+  carries Peter saved from the waves (vv 28–31). Don't "fix" these.
 - **Read the Greek inscription before trusting a Dionysiou file name.** The three exorcism
   frescoes were all in the wrong place, and only the painted inscriptions settled it:
   `Iomenos Daimonon Takophon` is *τὸν δαιμονῶντα κωφόν*, the **dumb** demoniac (Mt 9:32–34),
@@ -411,3 +421,29 @@ him explicitly):
   icons that were about to be dropped.
 - `make check` lists the 19 passages that name a subject in `assign.js` and have no icon; that
   is the standing want-list if an Orthodox image ever surfaces.
+
+## Session 2026-08-20f (two placements the owner caught)
+
+**Did**
+- `johnq` (11:1–15) → **no icon**. Its fresco was the Forerunner being *dragged into* prison
+  (inscription read off the file), which is not John sending his disciples from prison.
+- Moved that fresco to `galilee` (4:12–17), whose first verse is "when Jesus had heard that
+  John was cast into prison" — the event the fresco depicts. Kept as tier b: it shows the
+  occasion of the passage, not Jesus' preaching.
+- **Dropped `Christos Didaskon` (Christ the Teacher) entirely.** It was the last generic image
+  in the set, holding 4:12–17 only because nothing better was there. Now nothing is.
+- Confirmed the owner's second flag is **not** an error: the withered hand (12:9–14) sits
+  inside the `Lord of the Sabbath` pericope (12:1–21). Recorded in Gotchas so it is not
+  "corrected" later.
+- Swept all 57 placements for the same class of error by comparing icon name to passage name;
+  the other divergences are synonyms (Theophany/Baptism, Tree of Jesse/Genealogy, Agony in the
+  Garden/Prayer in Gethsemane).
+
+**Verified**
+- Playwright: 57 images, **0 broken**, console clean, no horizontal scroll, 7 tier-b notes.
+  `galilee` shows the Forerunner fresco, `johnq` has no image, and `Christos Didaskon` no
+  longer appears anywhere in the page. `make check`: a:50 b:7 c:61, 57 images / 57 passages.
+  Page 8.28 MB → **8.14 MB**.
+
+**Next**
+- Unchanged. Positioned markers for the 57 icons (15 done) is the top item.
