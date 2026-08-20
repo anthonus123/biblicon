@@ -176,6 +176,9 @@ module.exports={
   story:"The scribes and the Pharisees sit in Moses’ seat: all therefore whatsoever they bid you observe, that observe and do; but do not ye after their works: for they say, and do not. They bind heavy burdens, and lay them on men’s shoulders; but they themselves will not move them with one of their fingers. But he that is greatest among you shall be your servant. And whosoever shall exalt himself shall be abased; and he that shall humble himself shall be exalted."},
  woes:{name:'The Seven Woes',type:'Teaching',keyVerse:27,
   story:"Woe unto you, scribes and Pharisees, hypocrites! — seven times the cry falls: for shutting up the kingdom of heaven against men; for devouring widows’ houses; for compassing sea and land to make one proselyte; for the blind guidance that swears by the gold and not the temple; for tithing mint and anise and omitting the weightier matters of the law, judgment, mercy, and faith; for cleansing the outside of the cup; for being like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men’s bones."},
+ // assign.js names this passage's own subject as "Christ the Teacher", so the shared
+ // Didaskon fresco is the icon for it, not a stand-in.
+ commandment:{tierB:true},
  lament23:{tierB:true,name:'Lament over Jerusalem',type:'Prophet',keyVerse:37,
   story:"O Jerusalem, Jerusalem, thou that killest the prophets, and stonest them which are sent unto thee, how often would I have gathered thy children together, even as a hen gathereth her chickens under her wings, and ye would not! Behold, your house is left unto you desolate. For I say unto you, Ye shall not see me henceforth, till ye shall say, Blessed is he that cometh in the name of the Lord."},
 

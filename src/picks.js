@@ -1,4 +1,8 @@
 // pericope id -> Commons file title (USER: = image supplied by the reader)
+// twosons21 (21:28-32) and tenants21 (21:33-46) deliberately have no icon. They had been
+// showing the Labourers in the Vineyard miniature that vineyard (20:1-16) owns — a
+// different parable that shares only a vineyard. No Orthodox icon of either scene exists
+// (searched twice, see HANDOFF Gotchas), so they render as plain verse rows, tier c.
 module.exports={
   "genealogy": "File:Victor (iconographer) Tree of Jesse.png",
   "annunciation": "USER:icon-nativity",
@@ -89,8 +93,6 @@ module.exports={
   "temple": "File:Rossano Gospels - Cleansing of the Temple.jpg",
   "figtree21": "File:074 Cursing the fig tree Icon from Saint Paraskevi Church in Langadas.jpg",
   "authority21": "File:Christos Didaskon Dionysiou.jpg",
-  "twosons21": "File:Workers in the vineyard, Minuscule 269 (11th century).jpg",
-  "tenants21": "File:Workers in the vineyard, Minuscule 269 (11th century).jpg",
   "wedding": "File:Parable of the Wedding Feast 04-14.jpg",
   "caesar22": "File:Christos Didaskon Dionysiou.jpg",
   "resurrect22": "File:Christos Didaskon Dionysiou.jpg",

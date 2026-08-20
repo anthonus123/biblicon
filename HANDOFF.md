@@ -32,8 +32,9 @@ and this file did not.
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
   *Deciphering the Icon* (numbered hotspot markers over the icon).
 - **Content, as of 2026-08-20:**
-  - **118 passages**, all 28 chapters. Tiers: **53 (a)**, **63 (b)**, **2 (c)**.
-    **116 have an icon**, drawn from **62 unique images**.
+  - **118 passages**, all 28 chapters. Tiers: **53 (a)**, **61 (b)**, **4 (c)**.
+    **114 have an icon**, drawn from **62 unique images**. Of the 61 tier-b, **14 are
+    stand-ins** (see the tier system below) and 47 are genuine wider-scene readings.
   - **15 of 62 icons have positioned hotspot markers.** All 62 have a prose reading.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
@@ -44,8 +45,15 @@ and this file did not.
 - **Tier system** (rendered on the card and in the drawer, so the reader is never misled):
   - **a** — a genuine Orthodox icon of *this* scene.
   - **b** — the icon the Church reads over the *wider* scene; the page says so explicitly.
-  - **c** — no traditional icon; the passage shows as a plain verse row. Only two:
-    `cost8` (Mt 8:18–22) and `reconcile18` (Mt 18:15–20).
+  - **c** — no traditional icon; the passage shows as a plain verse row. Four: `cost8`
+    (Mt 8:18–22), `reconcile18` (Mt 18:15–20), and `twosons21` / `tenants21` (Mt 21:28–46),
+    which had been borrowing another parable's icon.
+  - **stand-in** (the `fb` flag, computed in `assemble.js`; still tier b for layout) — the
+    passage names a real iconographic subject in `assign.js`, no Orthodox icon of it exists,
+    and a general icon of Christ is shown. The card and the drawer say so outright:
+    *"Orthodox tradition has no icon of this scene. A general icon stands in here — it does
+    not depict these verses."* This is deliberately **not** the tier-b sentence, which would
+    claim a reading the Church does not have. 14 passages; `make check` lists them.
 - **History.** The owner's original was a design-canvas bundle whose "icons" were empty
   `<image-slot>` drop targets that only function inside that editor, with 46 of 118 passages
   wired up. The current file is a rebuild in plain HTML/CSS/vanilla JS; the layout and
@@ -308,7 +316,43 @@ him explicitly):
   downloading the file and looking at it, per the owner's instruction and the Gotchas rule.
 
 **Next**
-- **Decision pending with the owner:** the 15 no-icon-exists passages need honest card
-  wording ("no icon of this scene; a general icon of Christ teaching stands in") rather than
-  the tier-b sentence. Sourcing was tried and is a dead end.
-- `twosons21` / `tenants21` show the wrong parable's icon — fix regardless of the above.
+- Both open items were closed in session 2026-08-20d, below.
+
+## Session 2026-08-20d (honest labelling for the stand-in icons)
+
+**Did**
+- Added the **stand-in** concept. `assemble.js` sets `fb` when a passage names a real subject
+  in `assign.js`, shares its image, and has no `tierA`/`tierB` declaration — the exact case
+  where the tier-b sentence was making a false claim. `app.js` renders those with their own
+  wording in all three paths (small card, icons-lead plate, drawer) and a `.standin` rule in
+  `page.css` sets them off with a rule and a warmer ink. 14 passages.
+- `twosons21` and `tenants21` lost their icon entirely (removed from `picks.js`, now tier c,
+  plain verse rows). They had been showing the *Labourers in the Vineyard* miniature, a
+  different parable. No icon of either scene exists, so no icon is the honest answer.
+- `commandment` (22:34-46) declared `tierB:true` instead: `assign.js` names its own subject as
+  "The Greatest Commandment / **Christ the Teacher**", so the Didaskon fresco is genuinely its
+  icon, not a stand-in.
+- Footer text in `build.js` now states the stand-in policy and the four iconless passages.
+- `make check` now **fails** if a demoted passage is not flagged `fb` — the page can never
+  silently go back to claiming a wider-scene reading for one of these.
+
+**Why**
+- Sourcing was the owner's first choice and it is a dead end (see Gotchas: searched twice).
+  With no icon to be had, the only remaining honesty is to say so on the page. The owner ranks
+  theological correctness second only to the icons themselves, and 16 passages were asserting
+  a tradition that does not exist.
+
+**Verified**
+- Playwright at 1440x960 against the local server, both modes and the drawer: 118 plates in
+  icons-lead, **0 broken images** (114 now, down from 116 by design), **console clean**, no
+  horizontal scroll. 14 stand-in notes and 47 plain tier-b notes in each of the card and plate
+  paths; the drawer shows the stand-in sentence and **zero** plain tier-b notes on a stand-in.
+- Spot-checked the three cases by their rendered text: `caesar22` reads "... - stands in",
+  `saltlight5` (a genuine wider-scene borrow) reads just the icon label, and `tenants21`
+  renders as a plain verse row with no image element.
+- `make check`: 118 passages, a:53 b:61 c:4, 114 with an icon, 46 notes, 354 quotations.
+
+**Next**
+- Positioned hotspot markers for the remaining 47 icons is again the top item (`## Next` 1).
+- If an Orthodox image for any of the 14 ever surfaces, `make check` prints the standing list
+  with the subject each one wants.

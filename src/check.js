@@ -98,10 +98,14 @@ const demoted=D.passages.filter(p=>{
   const ov=over[p.id]||{};
   return (A[p.id]||{}).tier==='a' && p.tier==='b' && !ov.tierA && !ov.tierB;
 });
+const mismatched=demoted.filter(p=>!p.fb);
+if(mismatched.length) fail(`${mismatched.length} demoted passage(s) are not flagged as stand-ins —`
+  +` assemble.js must set fb for these or the page will claim a wider-scene reading for them:`
+  +` ${mismatched.map(p=>p.id).join(', ')}`);
 if(demoted.length){
-  warn(`${demoted.length} passage(s) name a real iconographic subject in assign.js but were`
-    +` demoted to tier b by sharing an icon — the card claims a wider-scene reading the`
-    +` Church does not have. Declare overrides.tierB if the borrow is honest, or source the icon:`);
+  warn(`${demoted.length} passage(s) show a stand-in icon: they name a real iconographic subject in`
+    +` assign.js and no Orthodox icon of it exists. The page labels these as stand-ins, so this is`
+    +` honest, not broken — the list is the standing target if an icon ever surfaces:`);
   for(const p of demoted) warn(`    ${p.range.padEnd(17)} wants "${(A[p.id]||{}).subj}" — shows "${D.images[p.img].label}"`);
 }
 

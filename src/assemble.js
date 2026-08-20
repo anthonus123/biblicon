@@ -64,6 +64,11 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
       range,
       type: ov.type || o.type || '',
       tier: !imgKey ? 'c' : (ov.tierB ? 'b' : (ov.tierA ? 'a' : (useCount[imgKey]>1 ? 'b' : (ov.tier || as.tier || 'b')))),
+      // Stand-in: this passage named a real iconographic subject, no Orthodox icon of it
+      // exists, and it is showing a general icon instead. The shared-image rule would
+      // otherwise label it 'b' and have the page claim the Church reads that icon here.
+      // A declared borrow (ov.tierB) or an owned icon (ov.tierA) is not a stand-in.
+      fb: !!(imgKey && useCount[imgKey]>1 && as.tier==='a' && !ov.tierA && !ov.tierB),
       subject: ov.subject || as.subj || '',
       img: imgKey || null,
       keyRef: ov.keyVerse ? ('Matthew '+ch+':'+ov.keyVerse) : (ov.keyRef || o.keyRef || ''),

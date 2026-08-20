@@ -92,7 +92,10 @@ ${css}
   in the Orthodox Church. The icons and frescoes are, with one exception noted below, public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
   Where a passage has no icon of its own, the icon the Church reads over the wider scene is shown and
-  labelled as such.</p>
+  labelled as such. Orthodox iconography is built on the feast cycle, the miracles and the saints, and
+  it has no scene-icon for most of the parables and teaching passages: where that is so, a general icon
+  of Christ is shown as a stand-in and is labelled a stand-in, not as an icon of those verses. Four
+  passages have no icon at all and are given as plain text.</p>
   <h4 style="margin-top:26px">Images</h4>
   <ul>
 ${attribs}
