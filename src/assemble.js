@@ -7,12 +7,16 @@ const pool=JSON.parse(fs.readFileSync(B+'image_meta.json','utf8'));
 const keys=JSON.parse(fs.readFileSync(B+'pick_keys.json','utf8'));
 const kjv=JSON.parse(fs.readFileSync(B+'matthew_kjv.json','utf8'));
 const A=require('./assign.js'), picks=require('./picks.js'), F=require('./fathers.js');
-let over={}; try{ over=require('./overrides.js'); }catch(e){}
-let hotdb={};
-try{ const h1=require('./hotspots.js'), h2=require('./hotspots2.js');
-  hotdb={...h1}; for(const k in h2) hotdb[k]={read:h2[k],hot:[]};
-}catch(e){ console.error(e); }
-let stories={}; try{ stories=require('./stories.js'); }catch(e){}
+const h1=require('./hotspots.js'), h2=require('./hotspots2.js');
+
+// Genuinely optional modules are gated on the file existing. They are NOT wrapped in a
+// catch: a syntax error in one of these hand-edited files has to stop the build, not
+// quietly produce a page with every override or story missing.
+const optional=n=>fs.existsSync(__dirname+'/'+n)?require('./'+n):{};
+const over=optional('overrides.js');
+const stories=optional('stories.js');
+
+const hotdb={...h1}; for(const k in h2) hotdb[k]={read:h2[k],hot:[]};
 const labels=require('./labels.js');
 
 const verses={}; for(const c of kjv.chapters) verses[+c.chapter]=c.verses.map(v=>({n:+v.verse,t:v.text}));

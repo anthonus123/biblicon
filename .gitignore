@@ -1,3 +1,8 @@
 .playwright-mcp/
 node_modules/
 *.log
+
+# Generated intermediate — `make` rebuilds it from src/data + the js modules.
+# "Matthew Reader.html" is deliberately NOT ignored: it is the deliverable, and someone
+# cloning this repo should get a reader they can double-click.
+src/data/icons.json

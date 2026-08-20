@@ -1,5 +1,9 @@
 const fs=require('fs'),path=require('path');
 const B=__dirname+'/data/';
+if(!fs.existsSync(B+'icons.json')){
+  console.error("src/data/icons.json is missing \u2014 it is generated. Run `make` (or `node src/assemble.js`) first.");
+  process.exit(1);
+}
 const D=JSON.parse(fs.readFileSync(B+'icons.json','utf8'));
 const css=fs.readFileSync(__dirname+'/page.css','utf8');
 const app=fs.readFileSync(__dirname+'/app.js','utf8');
@@ -10,13 +14,19 @@ const fontCss=faces.map(f=>`@font-face{font-family:'Spectral';font-style:${f.sty
 
 // images
 const IMG={};
+const missing=[];
 for(const [k,v] of Object.entries(D.images)){
   const p=__dirname+'/img/'+v.file;
-  if(!fs.existsSync(p)){ console.error('no image file',p); continue; }
+  if(!fs.existsSync(p)){ missing.push(v.file); continue; }
   IMG[k]='data:image/webp;base64,'+fs.readFileSync(p).toString('base64');
 }
-const missing=Object.keys(D.images).filter(k=>!IMG[k]);
-if(missing.length) console.error('MISSING IMAGES:',missing.join(', '));
+// A page that silently drops icons is the one failure this project cannot ship: refuse to
+// write it rather than emit a reader with holes where the icons should be.
+if(missing.length){
+  console.error('MISSING IMAGE FILES in src/img/ ('+missing.length+'):');
+  missing.forEach(f=>console.error('  '+f));
+  process.exit(1);
+}
 
 // attributions
 const attribs=Object.values(D.images).filter(i=>i.license!=='user-supplied')

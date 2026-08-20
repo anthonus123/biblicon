@@ -19,11 +19,14 @@ and this file did not.
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverable:** `Matthew Reader.html` — a single self-contained file (~8.7 MB). Fonts,
   icons, the KJV text and all commentary are embedded; it opens by double-clicking, no
-  server and no network. **Do not hand-edit it.** It is generated:
+  server and no network. **Do not hand-edit it.** It is generated — one command from the
+  repo root, which sequences assemble → check → build:
   ```
-  node src/assemble.js      # merge the data files -> src/data/icons.json
-  node src/build.js         # emit "Matthew Reader.html"
+  make            # -> src/data/icons.json (generated, untracked) -> "Matthew Reader.html"
+  make check      # structural check + the content counts below, without re-emitting
+  make serve      # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
   ```
+  The build is deterministic: rebuilding unchanged content reproduces the same bytes.
 - **Structure** (preserved from the owner's original wireframe): sticky header, sticky
   chapter rail with a per-chapter icon tree, a **Text leads / Icons lead** mode toggle, and
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
@@ -43,10 +46,13 @@ and this file did not.
   - **b** — the icon the Church reads over the *wider* scene; the page says so explicitly.
   - **c** — no traditional icon; the passage shows as a plain verse row. Only two:
     `cost8` (Mt 8:18–22) and `reconcile18` (Mt 18:15–20).
-- **History.** The owner's original file is kept as `Matthew Reader.wireframe-original.html`.
-  It was a design-canvas bundle whose "icons" were empty `<image-slot>` drop targets that
-  only function inside that editor, with 46 of 118 passages wired up. The current file is a
-  rebuild in plain HTML/CSS/vanilla JS; the layout and interaction structure are unchanged.
+- **History.** The owner's original was a design-canvas bundle whose "icons" were empty
+  `<image-slot>` drop targets that only function inside that editor, with 46 of 118 passages
+  wired up. The current file is a rebuild in plain HTML/CSS/vanilla JS; the layout and
+  interaction structure are unchanged. The bundle itself was kept as
+  `Matthew Reader.wireframe-original.html` until the owner dropped it on 2026-08-20 — it is
+  still in history at commit `99d8959` (`git show 99d8959:"Matthew Reader.wireframe-original.html"`)
+  if anything is ever needed back out of it.
 
 ## Next
 
@@ -111,7 +117,22 @@ In the owner's priority order:
   `lament23` borrows) need `tierA:true` in `overrides.js`; the reverse case needs
   `tierB:true`.
 - **The HTML is ~8.7 MB and regenerated wholesale**, so every commit that touches it adds
-  a full copy to git history. Rebuild and commit it deliberately, not on every tweak.
+  a full copy to git history. It stays tracked deliberately — it is what someone clones the
+  repo for — but the build is byte-deterministic, so a rebuild with no content change leaves
+  `git status` clean and costs history nothing. Only a real content change grows the repo.
+  `src/data/icons.json` is generated and **untracked**; `make` rebuilds it.
+- **The build fails loudly now — keep it that way.** `build.js` exits non-zero rather than
+  emitting a page with an icon missing from `img/`, and `assemble.js` gates its optional
+  requires (`overrides.js`, `stories.js`) on `fs.existsSync` instead of catching. The old
+  `try{...}catch(e){}` meant a syntax error in the 38 KB hand-edited `overrides.js` produced
+  a *successful* build with every override silently gone. Don't reintroduce a catch there.
+- **`make check` (`src/check.js`) hard-fails only on ship-breaking structure** — a missing
+  image file, a passage whose verses don't match its anchor, a tier contradicting whether an
+  icon is present, or the count of passages carrying the owner's "Points to notice" dropping
+  below 46. Everything else warns, because content is meant to grow. Note that `assemble.js`
+  *clamps* hotspot coordinates to 9–92%, so bad coordinates cannot be seen in the assembled
+  data — the check reads the raw ones out of `hotspots.js` instead. Four current markers are
+  deliberately just outside and warn as clamped.
 - **`file://` is blocked in the Playwright MCP browser.** To verify, serve the directory
   (`python3 -m http.server 8731 --bind 127.0.0.1`) and open
   `http://127.0.0.1:8731/Matthew%20Reader.html`. A build that writes without error is not
@@ -177,3 +198,52 @@ him explicitly):
 - Positioned markers for the remaining 47 icons — see `## Next` item 1 for the method.
 - Hunt Romanian/Serbian fresco cycles for the four parables still on the shared
   *Christ the Teacher* fallback.
+
+## Session 2026-08-20b (make the repository nicer to rebuild)
+
+**Did**
+- `Makefile` at the root: `make` (assemble → check → build), `make check`, `make serve`,
+  `make clean`. `src/data/icons.json` has real prerequisites, so touching `hotspots.js` or
+  any data file redoes it; running `build.js` alone can no longer emit a page from stale
+  assembled data.
+- Removed the two silent-failure paths. `assemble.js` no longer wraps its requires in
+  `catch(e){}` — optional modules are gated on `fs.existsSync`, so a syntax error in
+  `overrides.js`/`hotspots.js` stops the build instead of emptying it. `build.js` exits
+  non-zero on a missing image file or a missing `icons.json`, with a message saying what to
+  run, instead of printing to stderr and writing the page anyway.
+- New `src/check.js` / `make check`: structural invariants hard-fail, content-growth
+  observations warn, and it prints the counts this log quotes. Includes the regression guard
+  for the owner's 46 passage-level note sets that a refactor dropped once before.
+- Untracked `src/data/icons.json` (staged deletion, added to `.gitignore`) — it is a pure
+  intermediate. `Matthew Reader.html` stays tracked: the owner chose that, it is the thing
+  people clone the repo for.
+- Root `README.md` (was 10 bytes) and a rewritten build section in `src/README.md`.
+- Deleted `Matthew Reader.wireframe-original.html` (4 MB) at the owner's request — the
+  rebuild has superseded it. Deleting does not shrink `.git`; the blob stays in history at
+  `99d8959`, which is also where to recover it from.
+
+**Why**
+- The two-step build had no ordering guarantee and three ways to fail quietly: a stale
+  `icons.json`, a swallowed require error, and a page written with icons missing. Each one
+  produces a reader that looks built and is wrong — the expensive kind of failure in a
+  project whose output is an 8.7 MB blob nobody reads by eye.
+- The check exists because the browser pass (HANDOFF's standing rule: a build that writes
+  without error is not evidence it renders) is slow, and most of what breaks is structural
+  and catchable in a second.
+
+**Verified**
+- `make` from clean reproduces `Matthew Reader.html` **byte-identically** to the committed
+  copy (md5 `416aa99f…` both), which is what makes the "rebuild costs history nothing" claim
+  true rather than hopeful.
+- `make check` re-derives every count in `## Status` unchanged: 118 passages, a:53 b:63 c:2,
+  116 with an icon, 62 unique images, 15 with markers, 46 with notes, 354 quotations.
+- All four failure paths exercised deliberately: `build.js` with no `icons.json` → exit 1
+  with the fix instruction; an image file moved away → `build.js` exit 1 naming the file,
+  `check.js` exit 1; a syntax error appended to `overrides.js` → `assemble.js` throws and
+  exits 1 (previously: exit 0, all overrides silently gone). Everything restored afterwards.
+- `make check` warns about 2 unused files in `src/img/` (`64edfde436b3.webp`,
+  `bd8f72a1b1fe.webp`). Left in place, not deleted — they may be staged for the hotspot work.
+
+**Next**
+- Unchanged; see `## Next`. Positioned markers for the remaining 47 icons is still item 1,
+  and `make check` now reports that count on every build.
