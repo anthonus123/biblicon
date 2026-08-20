@@ -32,9 +32,9 @@ and this file did not.
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
   *Deciphering the Icon* (numbered hotspot markers over the icon).
 - **Content, as of 2026-08-20:**
-  - **118 passages**, all 28 chapters. Tiers: **53 (a)**, **61 (b)**, **4 (c)**.
-    **114 have an icon**, drawn from **62 unique images**. Of the 61 tier-b, **14 are
-    stand-ins** (see the tier system below) and 47 are genuine wider-scene readings.
+  - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **7 (b)**, **60 (c)**.
+    **58 have an icon, from 58 images — one icon, one passage, no image used twice.**
+    The other 60 render as plain verse rows because no Orthodox icon of them exists.
   - **15 of 62 icons have positioned hotspot markers.** All 62 have a prose reading.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
@@ -42,18 +42,20 @@ and this file did not.
     (Oxford 1842, public domain). Chrysostom on 115 of 118 passages, then Jerome,
     Augustine, Hilary, Leo, Ambrose, Cyril of Alexandria, Bede, Cassian, Chrysologus,
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
-- **Tier system** (rendered on the card and in the drawer, so the reader is never misled):
-  - **a** — a genuine Orthodox icon of *this* scene.
-  - **b** — the icon the Church reads over the *wider* scene; the page says so explicitly.
-  - **c** — no traditional icon; the passage shows as a plain verse row. Four: `cost8`
-    (Mt 8:18–22), `reconcile18` (Mt 18:15–20), and `twosons21` / `tenants21` (Mt 21:28–46),
-    which had been borrowing another parable's icon.
-  - **stand-in** (the `fb` flag, computed in `assemble.js`; still tier b for layout) — the
-    passage names a real iconographic subject in `assign.js`, no Orthodox icon of it exists,
-    and a general icon of Christ is shown. The card and the drawer say so outright:
-    *"Orthodox tradition has no icon of this scene. A general icon stands in here — it does
-    not depict these verses."* This is deliberately **not** the tier-b sentence, which would
-    claim a reading the Church does not have. 14 passages; `make check` lists them.
+- **Tier system** (owner's rule, 2026-08-20: *one icon, one passage; no reuse; if there is no
+  relevant icon, remove it altogether*):
+  - **a** — an Orthodox icon of *this* scene, shown for this passage only. 51.
+  - **b** — a **type icon**: the image the Church attaches to the passage without depicting its
+    verses. The card and drawer say so: *"This is the icon the Church attaches to this passage;
+    it is not a depiction of these verses."* Exactly 7, each declared `tierB` in `overrides.js`:
+    `galilee` (Christ the Teacher at "Jesus begins to preach"), `matthew` (the apostle's own
+    icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
+    sign of Jonah), `lostsheep` (the Good Shepherd), `olivet` (Christ in Glory at the Second
+    Coming), `commission` (Christ manifest among the apostles).
+  - **c** — no icon; the passage is a plain verse row. 60, and that is the honest number.
+  - Tier is **declared, not counted**. `assemble.js` reads `c` if there is no image, `b` if
+    `overrides.tierB` says so, else `a`. The old rule ("shared image ⇒ tier b") is gone with
+    the sharing.
 - **History.** The owner's original was a design-canvas bundle whose "icons" were empty
   `<image-slot>` drop targets that only function inside that editor, with 46 of 118 passages
   wired up. The current file is a rebuild in plain HTML/CSS/vanilla JS; the layout and
@@ -76,8 +78,8 @@ In the owner's priority order:
    exists".** **35** passages (not ~20) share `Christos Didaskon Dionysiou` and **11** share
    `Christos Apostolois Dionysiou`: 46 of 116, 40% of the reader, on two images. A second
    independent search found no Orthodox image for any of the 15 subjects `assign.js` names —
-   see Gotchas. What is left to fix here is **not** sourcing but labelling, plus the two
-   wrong-parable borrows below.
+   see Gotchas. Resolved 2026-08-20d/e: no reuse at all, and the
+   60 passages with no icon of their own now render as plain verse rows.
 3. **The two tier-c passages** — decide whether they stay iconless or take a broader icon.
 4. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
@@ -116,12 +118,17 @@ In the owner's priority order:
   Rossano Gospels (6th c.) and Greek minuscules gave the Ten Virgins and the Labourers, and
   Ferapontov gave the Wedding Feast — **all three are already in use.** Where an Orthodox
   parable image exists on Commons, this project already has it.
-- **Two passages currently show the icon of a *different parable*.** `twosons21` (21:28–32)
-  and `tenants21` (21:33–46) both display the *Labourers in the Vineyard* miniature, which
-  `vineyard` (20:1–16) owns. They share only a vineyard. Tier b claims "the icon the Church
-  reads over the wider scene" — here that is not a wider scene but the wrong scene, and a
-  reader will take it for the icon of the wicked husbandmen. This is a content bug, not a
-  sourcing gap: fix it by relabelling or by dropping them to tier c.
+- **Read the Greek inscription before trusting a Dionysiou file name.** The three exorcism
+  frescoes were all in the wrong place, and only the painted inscriptions settled it:
+  `Iomenos Daimonon Takophon` is *τὸν δαιμονῶντα κωφόν*, the **dumb** demoniac (Mt 9:32–34),
+  not the Gadarenes where it sat; `Iomenos Daimonizomenous` is **plural** and set among tombs,
+  which is the two Gadarene demoniacs (Mt 8:28–34); the singular `Iomenos Daimonizomenon` went
+  to Mt 12:22–37. Crop the top 14% of the file and enlarge it — the inscriptions are legible at
+  660px and they name the scene exactly.
+- **`Christ before Caiaphas` (Gračanica) is unused on purpose.** Christ is present in it, so it
+  is the trial (26:57–75), not the plot to kill him (26:1–5) where it had been placed — and the
+  Dionysiou `Krinomenos Christou`, whose inscription names *both* Annas and Caiaphas, fits that
+  pericope better. With no reuse allowed, the Gračanica one has no home.
 - **Verify every image by eye before wiring it up.** Titles lie. `Christ in the pharisee's
   house (Monreale)` is actually the healing of the man with dropsy — its own Latin
   inscription says `SANAT YDROPICUM DIE SABBATI`. It had been assigned to seven
@@ -356,3 +363,51 @@ him explicitly):
 - Positioned hotspot markers for the remaining 47 icons is again the top item (`## Next` 1).
 - If an Orthodox image for any of the 14 ever surfaces, `make check` prints the standing list
   with the subject each one wants.
+
+## Session 2026-08-20e (one icon, one passage — full re-audit of every image)
+
+**Did**
+- Audited all **64 files in `src/img/`** by eye, in six labelled contact sheets built with
+  `montage`, against the passage each was serving. Decision table (file → passage → keep/drop →
+  reason) was written to disk before any edit.
+- **Rewrote `src/picks.js` from that table: 58 placements, no image used twice.** Header
+  documents the rule. The other 60 passages have no icon and render as plain verse rows.
+- **Three misplacements found and corrected**, all decided by the painted Greek inscriptions
+  (see Gotchas): the Gadarene demoniacs, the dumb demoniac and the single demoniac were each
+  on the wrong passage. This is the kind of error the owner asked to be found.
+- **Dropped as portrait/generic with no tie:** the Twelve Apostles panel (was on two passages),
+  `Christ Enthroned` (was on the Lord's Prayer), `Theotokos Panachranta` (was on "Who is my
+  mother?", where it reads backwards — the passage's point is that his kindred are those who do
+  the Father's will). Left unused: the Gračanica Caiaphas, the Monreale dropsy mosaic (Luke 14,
+  not Matthew), and a Dionysiou pendentive of St Matthew writing.
+- **Retired the stand-in vocabulary entirely** — with no reuse there is nothing to stand in.
+  `fb` is gone from `assemble.js`, `STANDIN` from `app.js`, `.standin` from `page.css`. Tier b
+  now means only *type icon*, 7 of them, each declared in `overrides.js`.
+- `assemble.js` now drops image records no passage shows, so the page stops embedding and
+  crediting images the reader never sees: **8.68 MB → 8.28 MB**, 62 → 58 embedded images.
+- `make check` gained the invariant this all rests on: **fail if any image is used by more than
+  one passage**, replacing the demotion checks.
+
+**Why**
+- The owner's rule, stated directly: one icon per passage, no reuse, correct theological place,
+  and no icon at all where none is relevant. A general icon of Christ next to the Talents was
+  never an icon of the Talents, and labelling it honestly (session d) was a stopgap; removing it
+  is the answer.
+
+**Verified**
+- Playwright at 1440×960, both modes and the drawer: 118 plates, **58 images, 0 broken**,
+  **console clean**, no horizontal scroll, **7** tier-b notes and **0** stand-in notes.
+  The 60 imageless passages collapse to a slim titled row (54px vs 961px for a plate) with a
+  "read the verses" link — screenshotted at the Talents; it reads as a deliberate text entry,
+  not a broken card. Footer credits 57 works (58 minus the owner's own Nativity).
+- `make check`: 118 passages, a:51 b:7 c:60, 58 images / 58 passages one each, 46 notes,
+  354 quotations, every structural invariant holding.
+- The duplicate-key trap in `overrides.js` fired again while adding the `tierB` declarations
+  (`galilee` and `signjonah12` are declared twice, and the later one wins). The check added in
+  session c caught it. **This file bites every session — always merge into the existing entry.**
+
+**Next**
+- Positioned hotspot markers: now only **58** icons to cover, 15 done, and no wasted work on
+  icons that were about to be dropped.
+- `make check` lists the 19 passages that name a subject in `assign.js` and have no icon; that
+  is the standing want-list if an Orthodox image ever surfaces.

@@ -1,0 +1,66 @@
+# 2026-08-20 audit: every file in src/img, checked by eye against the passage it served.
+# n	passage	action	tier	reason  (n = index in the contact sheets; see HANDOFF session e)
+1	8:5-13	keep	a	Inscription: Christ healing the centurion's servant
+2	3:1-12	keep	a	Christ with the Forerunner; drop from 11:16-19
+3	-	drop	-	Generic Twelve Apostles panel, portrait not scene
+4	12:1-21	keep	a	The man with the withered hand, in the synagogue
+5	17:1-13	keep	a	Transfiguration
+6	11:28-30	keep	a	Pantocrator at Come Unto Me; drop from 11:25-27
+7	26:6-13	keep	a	Anointing at Bethany
+8	20:1-16	keep	a	Labourers in the Vineyard
+9	8:23-27	keep	a	Stilling the storm
+10	4:1-11	keep	a	Temptation, Latin inscription on stones/bread
+11	27:32-56	keep	a	Crucifixion
+12	5:1-12	keep	a	Beatitudes icon, nine compartments
+13	26:17-30	keep	a	Mystical Supper
+14	4:23-25	keep	a	Inscription: healing sundry diseases
+15	9:27-31	keep	a	Healing the blind
+16	26:47-56	keep	a	The Betrayal
+17	12:22-37	MOVE	a	Single demoniac; was at 9:32-34 and 17:14-21
+18	26:36-46	keep	a	Gethsemane, sleeping disciples
+19	21:18-22	keep	a	Cursing the fig tree
+20	24:1-51	keep	b	Christ in Glory from the Last Judgment; type icon
+21	27:11-31	keep	a	Pilate washing his hands
+22	21:12-17	keep	a	Cleansing of the Temple
+23	1:1-17	keep	a	Tree of Jesse
+24	8:28-34	MOVE	a	Inscription PLURAL demoniacs + tombs = Gadarenes; was at 12:22-37
+25	-	unused	-	ORPHAN: St Matthew writing, Dionysiou pendentive; portrait
+26	12:38-45	keep	b	Jonah in the sea-monster; the sign itself, type icon
+27	22:1-14	keep	a	Wedding Feast, Ferapontov
+28	26:31-35	keep	a	Peter and the cock
+29	21:1-11	keep	a	Entry into Jerusalem; drop from 23:37-39
+30	9:9-13	keep	b	St Matthew portrait at his calling; the apostle, not the scene
+31	-	drop	-	Christ Enthroned, generic, no tie to the Lord's Prayer
+32	11:1-15	keep	a	The Forerunner led to prison
+33	14:13-21	keep	a	Blessing of the five loaves
+34	26:57-75	keep	a	Inscription: judged by Annas AND Caiaphas; matches pericope
+35	27:57-61	keep	a	Epitaphios Threnos
+36	2:1-12	keep	a	Magi offering gifts
+37	10:1-15	keep	b	Synaxis of the Twelve; type icon, not the sending; drop 10:16-25
+38	20:29-34	keep	a	Blind men of Jericho
+39	18:10-14	keep	b	Good Shepherd; the parable's own image
+40	9:1-8	keep	a	Healing the paralytic
+41	26:14-16	keep	a	Judas receiving the silver
+42	15:21-28	keep	a	Canaanite woman
+43	-	unused	-	ORPHAN: Monreale dropsy (SANAT YDROPICUM); Luke 14, not Matthew
+44	28:16-20	keep	b	Christ manifest among the apostles; drop from 10 others
+45	9:32-34	MOVE	a	Inscription: the DUMB demoniac; was wrongly at 8:28-34
+46	28:1-10	keep	a	Behold the place where the Lord lay
+47	-	drop	-	Theotokos Panachranta; backwards for Who Is My Mother
+48	2:16-18	keep	a	Holy Innocents
+49	4:12-17	keep	b	Christ the Teacher at Jesus begins to preach; drop from 34 others
+50	13:1-23	keep	a	The Sower
+51	3:13-17	keep	a	Theophany
+52	25:31-46	keep	a	Sheep and goats
+53	15:29-39	keep	a	Multiplication of the loaves
+54	27:62-66	keep	a	Sealed tomb; drop from 28:11-15
+55	25:1-13	keep	a	Wise and foolish virgins, Rossano
+56	27:1-10	keep	a	Judas returns the thirty pieces
+57	8:14-17	keep	a	Peter's mother-in-law
+58	9:18-26	keep	a	Daughter of Jairus
+59	14:22-36	keep	a	Peter saved from the waves
+60	8:1-4	keep	a	Cleansing of the leper
+61	14:1-12	keep	a	Beheading of the Forerunner
+62	-	unused	-	Gracanica Christ before Caiaphas: Christ present, so 26:57-75, where 34 already sits
+63	2:13-15	keep	a	Flight into Egypt; drop from 2:19-23
+64	1:18-25	keep	a	Nativity, owner's own icon

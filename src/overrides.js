@@ -2,19 +2,21 @@
 module.exports={
  lordsprayer:{tierB:true},
  matthew:{tierB:true},
+ // tierB marks a TYPE icon: the image the Church attaches to this passage, which is not a
+ // depiction of these verses. Everything else with an icon depicts its own scene (tier a);
+ // a passage with no icon is tier c. See src/picks.js.
+ lostsheep:{tierB:true},
+ olivet:{tierB:true},
+ commission:{tierB:true},
  vineyard:{tierA:true},
  yoke:{tierA:true},
  forerunner:{tierA:true},
- twelve:{tierA:true},
+ twelve:{tierB:true},
  entry:{tierA:true},
- // Declared wider-scene borrows: these three genuinely show an adjacent scene from the same
- // cycle, so the tier-b sentence on the card is true of them. Declaring it here (rather than
- // letting the shared-image rule infer it) is what separates an honest borrow from a passage
- // that merely failed to find its own icon — see `make check`.
  // ---- corrections to the original data ----
  annunciation:{name:'The Nativity of Christ',type:'Feast',keyVerse:23,
   story:"Matthew tells the Nativity from Joseph’s side. Before Mary and Joseph had come together she was found with child of the Holy Ghost; Joseph, being a just man, purposed to put her away privily. Then the angel of the Lord appeared to him in a dream: fear not to take unto thee Mary thy wife. The child was to be named Jesus — God saves — and Isaiah’s ancient word was fulfilled: Emmanuel, God with us. These are the verses the Orthodox Church reads as the Gospel of the Nativity."},
- nativity:{tierB:true,name:'The Return to Nazareth',type:'Event',keyVerse:23,
+ nativity:{name:'The Return to Nazareth',type:'Event',keyVerse:23,
   story:"When Herod was dead the angel appeared again to Joseph in Egypt and bade him take the young child and his mother back into the land of Israel. Hearing that Archelaus reigned in Judaea in his father’s room, Joseph turned aside into Galilee and settled in Nazareth — an obscure town of no reputation — so that the word of the prophets should be fulfilled, He shall be called a Nazarene. The hidden years begin here."},
  flight2:{tierA:true,name:'The Flight into Egypt',type:'Event',keyVerse:15,
   story:"After the Magi departed an angel warned Joseph in a dream: arise, take the young child and his mother and flee into Egypt, for Herod will seek the young child to destroy him. They went by night. The Lord who would one day lead his people out of Egypt is himself carried down into it as a refugee, and Hosea’s word is fulfilled: Out of Egypt have I called my son."},
@@ -22,7 +24,7 @@ module.exports={
   story:"Herod, seeing that the wise men had not returned to him, sent and slew all the children in Bethlehem from two years old and under. Jeremiah’s lament was fulfilled: Rachel weeping for her children, and would not be comforted, because they are not. The Church honours these children as the first martyrs of Christ — witnesses who suffered for him before they could speak his name."},
 
  // ---- chapter 4 ----
- galilee:{name:'Jesus Begins to Preach',type:'Event',keyVerse:17,
+ galilee:{tierB:true,name:'Jesus Begins to Preach',type:'Event',keyVerse:17,
   story:"Hearing that John was cast into prison, Jesus withdrew into Galilee and dwelt in Capernaum, upon the sea coast, in the borders of Zabulon and Nephthalim — the region Isaiah had called the land of the shadow of death, upon which a great light should shine. From that time he began to preach with the Forerunner’s own words: Repent, for the kingdom of heaven is at hand."},
  multitudes:{name:'Jesus Heals the Multitudes',type:'Miracle',keyVerse:23,
   story:"Jesus went about all Galilee, teaching in their synagogues, preaching the gospel of the kingdom, and healing every sickness among the people. They brought him all that were sick with divers diseases, those possessed with devils, the lunatick, and those that had the palsy; and he healed them. Great multitudes followed him from Galilee, Decapolis, Jerusalem, Judaea and beyond Jordan."},
@@ -102,7 +104,7 @@ module.exports={
  // ---- chapter 12 ----
  beelzebub12:{name:'Blasphemy Against the Spirit',type:'Teaching',keyVerse:28,
   story:"One possessed with a devil, blind and dumb, was brought and healed, so that the blind and dumb both spake and saw. The Pharisees said, This fellow doth not cast out devils, but by Beelzebub. Jesus answered that a kingdom divided against itself cannot stand: if I cast out devils by the Spirit of God, then the kingdom of God is come unto you. The blasphemy against the Holy Ghost shall not be forgiven — for it names the healing Spirit as unclean."},
- signjonah12:{name:'The Sign of Jonah',type:'Teaching',keyVerse:40,
+ signjonah12:{tierB:true,name:'The Sign of Jonah',type:'Teaching',keyVerse:40,
   story:"Certain of the scribes and Pharisees asked for a sign. He answered: An evil and adulterous generation seeketh after a sign; and there shall no sign be given to it, but the sign of the prophet Jonas. For as Jonas was three days and three nights in the whale’s belly, so shall the Son of man be three days and three nights in the heart of the earth. The men of Nineveh shall rise in judgment with this generation, for they repented at the preaching of Jonas; and behold, a greater than Jonas is here."},
  kindred12:{name:'Who Is My Mother?',type:'Teaching',keyVerse:50,
   story:"While he yet talked to the people, his mother and his brethren stood without, desiring to speak with him. He answered, Who is my mother? and who are my brethren? And he stretched forth his hand toward his disciples, and said, Behold my mother and my brethren! For whosoever shall do the will of my Father which is in heaven, the same is my brother, and sister, and mother. The Theotokos is first among them, for none did that will so perfectly."},
@@ -130,7 +132,7 @@ module.exports={
   story:"From that time forth began Jesus to shew his disciples how he must go unto Jerusalem, and suffer many things, and be killed, and be raised again the third day. Peter began to rebuke him: Be it far from thee, Lord. He turned and said, Get thee behind me, Satan: thou savourest not the things that be of God. Then said Jesus, If any man will come after me, let him deny himself, and take up his cross, and follow me."},
 
  // ---- chapter 17 ----
- boy17:{tierB:true,name:'The Healing of the Lunatick Boy',type:'Miracle',keyVerse:20,
+ boy17:{name:'The Healing of the Lunatick Boy',type:'Miracle',keyVerse:20,
   story:"A man came kneeling: Lord, have mercy on my son, for he is lunatick, and sore vexed; and I brought him to thy disciples, and they could not cure him. Jesus rebuked the devil, and he departed out of him: and the child was cured from that very hour. When the disciples asked why they could not cast him out, he said, Because of your unbelief: if ye have faith as a grain of mustard seed, ye shall say unto this mountain, Remove hence, and nothing shall be impossible unto you."},
  passion17:{name:'The Passion Foretold Again',type:'Teaching',keyVerse:23,
   story:"While they abode in Galilee, Jesus said unto them, The Son of man shall be betrayed into the hands of men: and they shall kill him, and the third day he shall be raised again. And they were exceeding sorry. The resurrection is spoken in the same breath as the betrayal, but grief hears only the first half."},
@@ -176,10 +178,7 @@ module.exports={
   story:"The scribes and the Pharisees sit in Moses’ seat: all therefore whatsoever they bid you observe, that observe and do; but do not ye after their works: for they say, and do not. They bind heavy burdens, and lay them on men’s shoulders; but they themselves will not move them with one of their fingers. But he that is greatest among you shall be your servant. And whosoever shall exalt himself shall be abased; and he that shall humble himself shall be exalted."},
  woes:{name:'The Seven Woes',type:'Teaching',keyVerse:27,
   story:"Woe unto you, scribes and Pharisees, hypocrites! — seven times the cry falls: for shutting up the kingdom of heaven against men; for devouring widows’ houses; for compassing sea and land to make one proselyte; for the blind guidance that swears by the gold and not the temple; for tithing mint and anise and omitting the weightier matters of the law, judgment, mercy, and faith; for cleansing the outside of the cup; for being like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men’s bones."},
- // assign.js names this passage's own subject as "Christ the Teacher", so the shared
- // Didaskon fresco is the icon for it, not a stand-in.
- commandment:{tierB:true},
- lament23:{tierB:true,name:'Lament over Jerusalem',type:'Prophet',keyVerse:37,
+ lament23:{name:'Lament over Jerusalem',type:'Prophet',keyVerse:37,
   story:"O Jerusalem, Jerusalem, thou that killest the prophets, and stonest them which are sent unto thee, how often would I have gathered thy children together, even as a hen gathereth her chickens under her wings, and ye would not! Behold, your house is left unto you desolate. For I say unto you, Ye shall not see me henceforth, till ye shall say, Blessed is he that cometh in the name of the Lord."},
 
  // ---- chapter 26 ----

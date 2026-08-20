@@ -91,11 +91,12 @@ ${css}
   (Oxford: J.G.F. &amp; J. Rivington, 1842; public domain) — restricted here to Fathers venerated as saints
   in the Orthodox Church. The icons and frescoes are, with one exception noted below, public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
-  Where a passage has no icon of its own, the icon the Church reads over the wider scene is shown and
-  labelled as such. Orthodox iconography is built on the feast cycle, the miracles and the saints, and
-  it has no scene-icon for most of the parables and teaching passages: where that is so, a general icon
-  of Christ is shown as a stand-in and is labelled a stand-in, not as an icon of those verses. Four
-  passages have no icon at all and are given as plain text.</p>
+  Every icon here stands for one passage only, and for the passage it actually depicts; no image is
+  used twice. Orthodox iconography is built on the feast cycle, the miracles and the saints, and it has
+  no scene-icon for most of the parables and teaching passages — those passages are given as plain text
+  rather than illustrated with a general image of Christ that would misrepresent them. A few passages
+  carry an icon the Church attaches to them without depicting their verses (the Good Shepherd beside
+  the Lost Sheep, the Prophet Jonah beside the sign of Jonah); each of those says so on the card.</p>
   <h4 style="margin-top:26px">Images</h4>
   <ul>
 ${attribs}

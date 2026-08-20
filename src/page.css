@@ -159,8 +159,6 @@ aside .sub{font-size:13px;color:var(--muted);margin:2px 0 16px}
 .fq .a{font-size:12.5px;color:var(--muted);margin-top:11px}
 .fq .a b{color:var(--ink);font-weight:600;font-style:normal}
 .srcnote{font-size:11.5px;color:var(--faint);line-height:1.5;margin-top:6px;font-style:italic}
-.standin{color:#8a6a3b}
-.tierb.standin,.srcnote.standin{border-left:2px solid #d8c49a;padding-left:8px}
 .hotwrap{position:relative;border-radius:6px;overflow:hidden;border:1px solid #b9a77d;margin-bottom:15px}
 .hotwrap img{width:100%;display:block}
 .hot{position:absolute;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%;

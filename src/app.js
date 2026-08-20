@@ -27,13 +27,11 @@ function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
 function versesHTML(p,cls){
   return p.verses.map(function(v){return '<span><sup>'+v.n+'</sup>'+esc(v.t)+' </span>';}).join('');
 }
-var TIERB='This is the icon the Church reads over this passage; it belongs to the wider scene, not to these verses alone.';
-// A stand-in is not a wider-scene reading. Orthodox iconography is built on the feast
-// cycle, the miracles and the saints; it has no scene-icon for most parables and teaching
-// passages, so a general icon of Christ is shown. Saying so is the honest alternative to
-// letting TIERB claim a tradition that does not exist for these verses.
-var STANDIN='Orthodox tradition has no icon of this scene. A general icon stands in here \u2014 it does not depict these verses.';
-function iconNote(p){ return p.fb?STANDIN:TIERB; }
+// Tier b is now only the type icon: the image the Church attaches to a passage without
+// depicting its verses (the Good Shepherd at the Lost Sheep, Jonah at the sign of Jonah).
+// Nothing stands in for anything else — a passage with no icon of its own simply has none.
+var TIERB='This is the icon the Church attaches to this passage; it is not a depiction of these verses.';
+
 
 /* ---------------- rail ---------------- */
 var railEl=document.getElementById('chapters');
@@ -74,7 +72,7 @@ function card(p,big){
       el('div',{class:'ribbon',text:p.type==='Feast'?'Great Feast':(p.type||'From the Gospel')}),
       el('div',{class:'cap'},[el('div',{class:'rg',text:p.range}),el('div',{class:'nm',text:p.name})])]);
     plate.appendChild(holder);
-    if(p.tier==='b') plate.appendChild(el('div',{class:p.fb?'tierb standin':'tierb',text:'Icon shown: '+im.label+' · '+iconNote(p)}));
+    if(p.tier==='b') plate.appendChild(el('div',{class:'tierb',text:'Icon shown: '+im.label+' · '+TIERB}));
     plate.appendChild(el('button',{class:'openbtn',text:'Open its story, the Fathers & the icon’s meaning ›',
       onclick:function(){openDetail(p.id);}}));
     plate.appendChild(el('div',{class:'platebody'},[
@@ -89,7 +87,7 @@ function card(p,big){
     el('span',{class:'rg',text:p.range}),
     p.type?el('span',{class:'tag',style:'border-color:'+(TC[p.type]||'#7a6e5a')+';color:'+(TC[p.type]||'#7a6e5a'),text:p.type}):null]));
   c.appendChild(el('div',{class:'hint',text:state.active===p.id?'panel open':'Story, Fathers & icon meaning ›'}));
-  if(p.tier==='b') c.appendChild(el('div',{class:p.fb?'tierb standin':'tierb',text:p.fb?im.label+' · stands in':im.label}));
+  if(p.tier==='b') c.appendChild(el('div',{class:'tierb',text:im.label}));
   return c;
 }
 function renderStream(){
@@ -149,7 +147,7 @@ function renderDrawer(){
       (im.artist?' · '+esc(im.artist):'')+' · '+esc(im.license)+
       (im.page?' · <a href="'+im.page+'" target="_blank" rel="noopener">Wikimedia Commons</a>':'');
     d.appendChild(cr);
-    if(p.tier==='b') d.appendChild(el('div',{class:p.fb?'srcnote standin':'srcnote',text:iconNote(p)}));
+    if(p.tier==='b') d.appendChild(el('div',{class:'srcnote',text:TIERB}));
   }
   var meta=el('div',{style:'display:flex;gap:8px;align-items:center;margin:12px 0 4px'});
   if(p.type) meta.appendChild(el('span',{class:'tag',

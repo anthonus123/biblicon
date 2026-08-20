@@ -86,27 +86,24 @@ for(const p of D.passages){
 // dropped them. Fewer than 46 means it happened again.
 if(withNotes<46) fail(`only ${withNotes} passages carry "Points to notice" — the owner's original 46 must all survive (see HANDOFF Gotchas)`);
 
-// --- icon reuse and silent demotion -----------------------------------------
-// assemble.js computes tier: an image used by more than one passage forces tier 'b', which
-// the page renders as "the icon the Church reads over this passage; it belongs to the wider
-// scene". That sentence is true of a declared borrow (overrides.js sets tierB) and false of
-// a passage that named a real iconographic subject in assign.js, found no icon, and got a
-// generic Christ-teaching fresco instead. Only the second kind is a defect, so only the
-// undeclared ones are listed. Warn, never fail: the list shrinks as icons are sourced.
-const A=require('./assign.js'), over=fs.existsSync(__dirname+'/overrides.js')?require('./overrides.js'):{};
-const demoted=D.passages.filter(p=>{
-  const ov=over[p.id]||{};
-  return (A[p.id]||{}).tier==='a' && p.tier==='b' && !ov.tierA && !ov.tierB;
-});
-const mismatched=demoted.filter(p=>!p.fb);
-if(mismatched.length) fail(`${mismatched.length} demoted passage(s) are not flagged as stand-ins —`
-  +` assemble.js must set fb for these or the page will claim a wider-scene reading for them:`
-  +` ${mismatched.map(p=>p.id).join(', ')}`);
-if(demoted.length){
-  warn(`${demoted.length} passage(s) show a stand-in icon: they name a real iconographic subject in`
-    +` assign.js and no Orthodox icon of it exists. The page labels these as stand-ins, so this is`
-    +` honest, not broken — the list is the standing target if an icon ever surfaces:`);
-  for(const p of demoted) warn(`    ${p.range.padEnd(17)} wants "${(A[p.id]||{}).subj}" — shows "${D.images[p.img].label}"`);
+// --- one icon, one passage -------------------------------------------------
+// The rule the whole picks.js now rests on. An image shown for two passages tells the reader
+// the second one has an icon of its own when it does not, and that is how the Wicked
+// Husbandmen ended up under the Labourers in the Vineyard. Hard failure, not a warning.
+const usedBy={};
+for(const p of D.passages) if(p.img) (usedBy[p.img]=usedBy[p.img]||[]).push(p.range);
+for(const [k,ranges] of Object.entries(usedBy))
+  if(ranges.length>1) fail(`"${D.images[k].label}" is used by ${ranges.length} passages (${ranges.join(', ')}) — one icon belongs to one passage`);
+
+// A passage that names a real iconographic subject and has no icon is expected, not broken:
+// Orthodox tradition has no scene-icon for most parables and teaching passages. Reported so
+// the gap stays visible if an image ever surfaces.
+const A=require('./assign.js');
+const wanted=D.passages.filter(p=>!p.img && (A[p.id]||{}).tier==='a');
+if(wanted.length){
+  warn(`${wanted.length} passage(s) name an iconographic subject in assign.js but have no icon —`
+    +` searched twice, none exists (see HANDOFF Gotchas). They render as plain verse rows:`);
+  for(const p of wanted) warn(`    ${p.range.padEnd(17)} wanted "${(A[p.id]||{}).subj}"`);
 }
 
 // overrides.js is one hand-edited 38 KB object literal: a repeated key silently discards the
@@ -123,10 +120,7 @@ console.log(`passages        ${D.passages.length}   tiers a:${tiers.a} b:${tiers
 console.log(`with an icon    ${withImage}   from ${uniqueImages} unique images (${Object.keys(D.images).length} defined)`);
 console.log(`icon readings   ${Object.values(D.images).filter(i=>i.read).length}/${Object.keys(D.images).length}   with positioned markers ${withHot}`);
 console.log(`passage notes   ${withNotes}   scripture stories ${withStory}`);
-const shared=Object.entries(D.passages.filter(p=>p.img).reduce((a,p)=>((a[p.img]=(a[p.img]||0)+1),a),{}))
-  .sort((a,b)=>b[1]-a[1]).filter(([,n])=>n>1);
-console.log(`icon reuse      ${uniqueImages-shared.length} used once · ${shared.length} shared`
-  + (shared.length?`  (most shared: ${shared[0][1]}\u00d7 ${D.images[shared[0][0]].label})`:''));
+console.log(`icon reuse      none — ${uniqueImages} images, ${uniqueImages} passages, one each`);
 console.log(`patristic       ${quotes} quotations` + (noFathers?`   (${noFathers} passages have none)`:''));
 
 if(warns.length){

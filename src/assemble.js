@@ -63,12 +63,11 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
       name: ov.name || o.name || a.name || titles[ch],
       range,
       type: ov.type || o.type || '',
-      tier: !imgKey ? 'c' : (ov.tierB ? 'b' : (ov.tierA ? 'a' : (useCount[imgKey]>1 ? 'b' : (ov.tier || as.tier || 'b')))),
-      // Stand-in: this passage named a real iconographic subject, no Orthodox icon of it
-      // exists, and it is showing a general icon instead. The shared-image rule would
-      // otherwise label it 'b' and have the page claim the Church reads that icon here.
-      // A declared borrow (ov.tierB) or an owned icon (ov.tierA) is not a stand-in.
-      fb: !!(imgKey && useCount[imgKey]>1 && as.tier==='a' && !ov.tierA && !ov.tierB),
+      // No icon -> c. A declared type icon -> b. Otherwise the icon depicts this passage's own
+      // scene -> a. Tier is no longer inferred from how many passages share an image, because
+      // no image is shared any more: picks.js is one icon to one passage, and `make check`
+      // enforces it. That also retires the stand-in flag — nothing stands in for anything.
+      tier: !imgKey ? 'c' : (ov.tierB ? 'b' : 'a'),
       subject: ov.subject || as.subj || '',
       img: imgKey || null,
       keyRef: ov.keyVerse ? ('Matthew '+ch+':'+ov.keyVerse) : (ov.keyRef || o.keyRef || ''),
@@ -82,6 +81,11 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
     });
   }
 }
+// Only ship the images a passage actually shows. Unused records would still be embedded as
+// base64 in the page and credited in the footer, crediting works the reader never sees.
+const shown=new Set(passages.map(p=>p.img).filter(Boolean));
+for(const k of Object.keys(images)) if(!shown.has(k)) delete images[k];
+
 const out={ chapterTitles:titles, images, passages };
 fs.writeFileSync(B+'icons.json',JSON.stringify(out));
 const st={a:0,b:0,c:0}; passages.forEach(p=>st[p.tier]++);
