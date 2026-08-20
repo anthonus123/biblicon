@@ -1,4 +1,6 @@
 module.exports={
+'File:Second Coming by G.Klontzas (16th c.).jpg':'The Second Coming — Georgios Klontzas, Crete, late 16th c.',
+'File:Christ banish tradesmen from Temple (Monreale).jpg':'The Cleansing of the Temple — Monreale, 12th c.',
 'USER:icon-nativity':'The Nativity of Christ',
 'File:Victor (iconographer) Tree of Jesse.png':'The Tree of Jesse — Victor of Crete, 1674',
 'File:Cathedral (Monreale) - North arch of transept - Adoration by the Magi.jpg':'The Adoration of the Magi — Monreale, 12th c.',

@@ -6,7 +6,6 @@ module.exports={
  // depiction of these verses. Everything else with an icon depicts its own scene (tier a);
  // a passage with no icon is tier c. See src/picks.js.
  lostsheep:{tierB:true},
- olivet:{tierB:true},
  commission:{tierB:true},
  vineyard:{tierA:true},
  yoke:{tierA:true},

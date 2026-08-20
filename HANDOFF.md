@@ -50,8 +50,8 @@ and this file did not.
     it is not a depiction of these verses."* Exactly 7, each declared `tierB` in `overrides.js`:
     `galilee` (the Forerunner dragged to prison, the event 4:12 reports), `matthew` (the apostle's own
     icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
-    sign of Jonah), `lostsheep` (the Good Shepherd), `olivet` (Christ in Glory at the Second
-    Coming), `commission` (Christ manifest among the apostles).
+    sign of Jonah), `lostsheep` (the Good Shepherd), `commission` (Christ manifest among the
+    apostles). `olivet` became tier a when it got a real Second Coming icon.
   - **c** — no icon; the passage is a plain verse row. 60, and that is the honest number.
   - Tier is **declared, not counted**. `assemble.js` reads `c` if there is no image, `b` if
     `overrides.tierB` says so, else `a`. The old rule ("shared image ⇒ tier b") is gone with
@@ -182,6 +182,11 @@ In the owner's priority order:
   *clamps* hotspot coordinates to 9–92%, so bad coordinates cannot be seen in the assembled
   data — the check reads the raw ones out of `hotspots.js` instead. Four current markers are
   deliberately just outside and warn as clamped.
+- **`img.complete` / `naturalWidth` is NOT a broken-image check on this page.** Every icon
+  carries `loading="lazy"`, so any image below the fold reports `naturalWidth === 0` whether it
+  is fine or not — two freshly added icons looked "broken" this way and decoded perfectly when
+  forced. Verify by constructing `new Image()` per `src` and awaiting `onload`/`onerror`;
+  that is the only count worth quoting.
 - **`file://` is blocked in the Playwright MCP browser.** To verify, serve the directory
   (`python3 -m http.server 8731 --bind 127.0.0.1`) and open
   `http://127.0.0.1:8731/Matthew%20Reader.html`. A build that writes without error is not
@@ -447,3 +452,32 @@ him explicitly):
 
 **Next**
 - Unchanged. Positioned markers for the 57 icons (15 done) is the top item.
+
+## Session 2026-08-20g (two better icons, both at the owner's prompting)
+
+**Did**
+- **Mt 24:1–51, the Second Coming.** Was a Gračanica Christ bust — an architectural photograph
+  with neighbouring frescoes and a dark ledge intruding at the edges, cropped from the narthex
+  Last Judgment. Replaced with **Georgios Klontzas' *Second Coming*, Crete, late 16th c.**
+  (2705×3605, public domain): the full Deutera Parousia — Christ in the mandorla with the
+  Deesis, the Hetoimasia and the cross, the apostles enthroned, the river of fire running the
+  height of the panel into the mouth of hell, the earth and sea giving up their dead. Now
+  **tier a**: it depicts what 24:30–31 proclaims, so it is no longer a type icon.
+- **Mt 21:12–17, the Cleansing of the Temple.** The Rossano miniature was authentic
+  (ΠΕΡΙ ΤΩΝ ΕΚΒΛΗΘΕΝΤΩΝ ΕΚ ΤΟΥ ΙΕΡΟΥ) but the scene fills only the top third of the leaf; the
+  rest is prophets and text columns. Replaced with the **Monreale mosaic**, Christ with the
+  scourge overturning the table, coins scattered, the sellers drawing back with oxen, sheep and
+  a cage of doves. Two Commons files show this mosaic; took the brighter, tighter crop.
+- Both new images: metadata pulled from Commons into `image_meta.json`, key = md5(title)[0:12]
+  per the existing convention, 660px WebP, label, and a prose reading in `hotspots2.js`.
+
+**Verified**
+- Playwright: **57 of 57 images decode** (forced decode — see the new Gotcha; the lazy-loading
+  trap made two good icons look broken), console clean, no horizontal scroll, 6 tier-b notes.
+  The Klontzas credit line renders with artist, date and licence, and its reading shows under
+  *Deciphering the Icon*. `make check`: a:51 b:6 c:61, 57 images / 57 passages, one each.
+- Page 8.14 MB → **8.54 MB**; the two replacements are larger files than what they displaced.
+
+**Next**
+- Unchanged. Nine files now sit unused in `src/img/` (the displaced Gračanica bust and Rossano
+  leaf among them); they are left in place, not deleted.
