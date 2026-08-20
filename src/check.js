@@ -86,6 +86,32 @@ for(const p of D.passages){
 // dropped them. Fewer than 46 means it happened again.
 if(withNotes<46) fail(`only ${withNotes} passages carry "Points to notice" — the owner's original 46 must all survive (see HANDOFF Gotchas)`);
 
+// --- icon reuse and silent demotion -----------------------------------------
+// assemble.js computes tier: an image used by more than one passage forces tier 'b', which
+// the page renders as "the icon the Church reads over this passage; it belongs to the wider
+// scene". That sentence is true of a declared borrow (overrides.js sets tierB) and false of
+// a passage that named a real iconographic subject in assign.js, found no icon, and got a
+// generic Christ-teaching fresco instead. Only the second kind is a defect, so only the
+// undeclared ones are listed. Warn, never fail: the list shrinks as icons are sourced.
+const A=require('./assign.js'), over=fs.existsSync(__dirname+'/overrides.js')?require('./overrides.js'):{};
+const demoted=D.passages.filter(p=>{
+  const ov=over[p.id]||{};
+  return (A[p.id]||{}).tier==='a' && p.tier==='b' && !ov.tierA && !ov.tierB;
+});
+if(demoted.length){
+  warn(`${demoted.length} passage(s) name a real iconographic subject in assign.js but were`
+    +` demoted to tier b by sharing an icon — the card claims a wider-scene reading the`
+    +` Church does not have. Declare overrides.tierB if the borrow is honest, or source the icon:`);
+  for(const p of demoted) warn(`    ${p.range.padEnd(17)} wants "${(A[p.id]||{}).subj}" — shows "${D.images[p.img].label}"`);
+}
+
+// overrides.js is one hand-edited 38 KB object literal: a repeated key silently discards the
+// earlier one, taking its corrections with it and leaving no trace anywhere in the output.
+const ovSrc=fs.readFileSync(__dirname+'/overrides.js','utf8');
+const ovKeys=[...ovSrc.matchAll(/^ ([A-Za-z0-9_]+):\{/gm)].map(m=>m[1]);
+const dups=[...new Set(ovKeys.filter((k,i)=>ovKeys.indexOf(k)!==i))];
+if(dups.length) fail(`overrides.js has duplicate key(s), the later one silently wins: ${dups.join(', ')}`);
+
 // --- report -----------------------------------------------------------------
 const uniqueImages=new Set(D.passages.filter(p=>p.img).map(p=>p.img)).size;
 const withHot=Object.values(D.images).filter(i=>(i.hot||[]).length).length;
@@ -93,6 +119,10 @@ console.log(`passages        ${D.passages.length}   tiers a:${tiers.a} b:${tiers
 console.log(`with an icon    ${withImage}   from ${uniqueImages} unique images (${Object.keys(D.images).length} defined)`);
 console.log(`icon readings   ${Object.values(D.images).filter(i=>i.read).length}/${Object.keys(D.images).length}   with positioned markers ${withHot}`);
 console.log(`passage notes   ${withNotes}   scripture stories ${withStory}`);
+const shared=Object.entries(D.passages.filter(p=>p.img).reduce((a,p)=>((a[p.img]=(a[p.img]||0)+1),a),{}))
+  .sort((a,b)=>b[1]-a[1]).filter(([,n])=>n>1);
+console.log(`icon reuse      ${uniqueImages-shared.length} used once · ${shared.length} shared`
+  + (shared.length?`  (most shared: ${shared[0][1]}\u00d7 ${D.images[shared[0][0]].label})`:''));
 console.log(`patristic       ${quotes} quotations` + (noFathers?`   (${noFathers} passages have none)`:''));
 
 if(warns.length){

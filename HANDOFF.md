@@ -64,12 +64,12 @@ In the owner's priority order:
    `src/img/<key>.webp`, montaged 4-up — read the coordinates straight off the overlay,
    then write `[label, text, "top%", "left%"]` into `hotspots.js`. Do **not** guess
    coordinates from a thumbnail; markers land on empty sky.
-2. **Replace the shared *Christ the Teacher* fallback where a real icon exists.** ~20
-   tier-b passages share `Christos Didaskon Dionysiou`. Orthodox tradition genuinely has no
-   scene-icon for most parables, so the sharing is honest — but `talents`, `tenants21`,
-   `twosons21` and `servant` may exist in Romanian or Serbian monastery fresco cycles that
-   were not exhausted (Sucevița, Voroneț, Humor, Moldovița were not reachable by the
-   category names tried).
+2. **The shared-fallback problem — searched 2026-08-20b, and the answer is mostly "no icon
+   exists".** **35** passages (not ~20) share `Christos Didaskon Dionysiou` and **11** share
+   `Christos Apostolois Dionysiou`: 46 of 116, 40% of the reader, on two images. A second
+   independent search found no Orthodox image for any of the 15 subjects `assign.js` names —
+   see Gotchas. What is left to fix here is **not** sourcing but labelling, plus the two
+   wrong-parable borrows below.
 3. **The two tier-c passages** — decide whether they stay iconless or take a broader icon.
 4. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
@@ -90,6 +90,30 @@ In the owner's priority order:
   retry, or you will lose ~60% of results with no error. Parallel image downloads get
   rate-limited into HTML error pages that land on disk with a `.jpg` name — **fetch
   serially and check `file -b` before trusting anything you downloaded.**
+- **The parable/teaching passages have no Orthodox scene-icon, and this has now been
+  searched twice — don't search a third time.** On 2026-08-20b: three complete Orthodox
+  programs were enumerated in full (Dionysiou katholikon 338 files, Saint Paraskevi Langadas
+  115 icons, Dionisy at Ferapontov 39) and **none** contains the Sermon, the disputes, or the
+  parables of the talents / tares / mustard seed / hidden treasure / unforgiving servant /
+  wicked husbandmen, nor the tribute money, the stater, the rich young ruler, the blessing of
+  the children, the calling of the fishermen, the confession of Peter, or the Great
+  Commission. Orthodox programs are built on the **feast cycle, the miracles and the saints**;
+  parables are the exception, not the rule. Every dedicated Commons category for those 15
+  subjects (`Render unto Caesar`, `Parable of the Talents`, `Parable of the Tares`,
+  `Unmerciful servant`, `The Tenants in the Vineyard`, …) is Western art — Cranach, Titian,
+  Caravaggio, Dutch engravings. Beware `Miniatures of Parables of Jesus Christ`: it looks
+  right and is almost entirely Ottonian/Flemish. `File:Parable of the Talents.jpg` is a 15th-c
+  **Western Gothic** miniature (crowned king in Western dress, no halo, no gold ground) —
+  checked by eye. The productive vein, already exhausted, is Byzantine Gospel manuscripts:
+  Rossano Gospels (6th c.) and Greek minuscules gave the Ten Virgins and the Labourers, and
+  Ferapontov gave the Wedding Feast — **all three are already in use.** Where an Orthodox
+  parable image exists on Commons, this project already has it.
+- **Two passages currently show the icon of a *different parable*.** `twosons21` (21:28–32)
+  and `tenants21` (21:33–46) both display the *Labourers in the Vineyard* miniature, which
+  `vineyard` (20:1–16) owns. They share only a vineyard. Tier b claims "the icon the Church
+  reads over the wider scene" — here that is not a wider scene but the wrong scene, and a
+  reader will take it for the icon of the wicked husbandmen. This is a content bug, not a
+  sourcing gap: fix it by relabelling or by dropping them to tier c.
 - **Verify every image by eye before wiring it up.** Titles lie. `Christ in the pharisee's
   house (Monreale)` is actually the healing of the man with dropsy — its own Latin
   inscription says `SANAT YDROPICUM DIE SABBATI`. It had been assigned to seven
@@ -247,3 +271,44 @@ him explicitly):
 **Next**
 - Unchanged; see `## Next`. Positioned markers for the remaining 47 icons is still item 1,
   and `make check` now reports that count on every build.
+
+## Session 2026-08-20c (audit of repeated icons)
+
+**Did**
+- Audited icon reuse after the owner noticed repeats. Distribution: 62 images over 116
+  passages, but **51 used once, 35 on one image, 11 on another**. HANDOFF's "~20" was an
+  undercount; corrected above.
+- Found the mechanism. `assemble.js` computes tier as `useCount[imgKey]>1 ? 'b' : as.tier`.
+  That rule was built for the `entry`/`lament23` case — one passage owns an icon, another
+  borrows it. It is also firing on passages that named a real iconographic subject in
+  `assign.js`, found no icon, and were given a generic Christ-teaching fresco: the shared-image
+  rule then relabels the result `b`, and the card says *"This is the icon the Church reads over
+  this passage; it belongs to the wider scene"* (`app.js:30`). For those, that sentence is
+  false — it converts "we had nothing" into a claim about Orthodox tradition.
+- Searched independently for all 15 missing subjects (see Gotchas for the full negative
+  result and the categories not worth retrying). Conclusion: the previous session was not
+  cutting corners — where an Orthodox image exists, it is already in the set.
+- Declared the three honest borrows (`nativity`, `boy17`, `lament23`) with `tierB:true` in
+  `overrides.js`, so an intentional borrow is now distinguishable from a failed search.
+- `make check` gained two checks: the silent-demotion list (warns, names all 16 with the
+  subject each wants) and a duplicate-key check on `overrides.js` — a repeated key in that
+  38 KB literal silently discards the earlier entry, which is how the first attempt at the
+  `tierB` declarations was lost.
+
+**Why**
+- The owner ranks theological correctness second only to the icons themselves. A page that
+  tells the reader the Church reads *Christ the Teacher* over "Render unto Caesar" is making a
+  claim the tradition does not support, and it does so on 16 passages.
+
+**Verified**
+- Every count re-derived from `src/data/icons.json`, not estimated. `make check` reports the
+  16 demotions on every build now. `Matthew Reader.html` md5 unchanged (`416aa99f`) — the
+  `tierB` declarations record intent without altering output, as intended.
+- The Western-Gothic identification of `File:Parable of the Talents.jpg` was made by
+  downloading the file and looking at it, per the owner's instruction and the Gotchas rule.
+
+**Next**
+- **Decision pending with the owner:** the 15 no-icon-exists passages need honest card
+  wording ("no icon of this scene; a general icon of Christ teaching stands in") rather than
+  the tier-b sentence. Sourcing was tried and is a dead end.
+- `twosons21` / `tenants21` show the wrong parable's icon — fix regardless of the above.
