@@ -41,10 +41,8 @@ and this file did not.
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
     second Orthodox image of that scene was found. The remaining 61 passages render as
     plain verse rows because no Orthodox icon of them exists.
-  - **87 of the 114 icons have positioned hotspot markers**, 440 markers in all: 14 live sets
-    in `hotspots.js` (a 15th is on a retired image) and 73 in `hotspots3.js`. The 27 without
-    are **the Passion icons, Matthew 26:6 to 27:66** — chapters 1–25 are done and so is
-    chapter 28; the pass stopped at the Anointing at Bethany and resumed after the tomb. **All 114 have a prose reading** — `make check` hard-fails on an
+  - **All 113 icons have positioned hotspot markers** — 26 sets were added on 2026-08-21b for
+    the Passion cycle, Matthew 26:6 to 27:66, which was the last stretch without them. **All 114 have a prose reading** — `make check` hard-fails on an
     icon with no label, and reports how many would show an empty "Deciphering the Icon" tab.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
@@ -81,8 +79,14 @@ and this file did not.
 
 In the owner's priority order:
 
-1. **Positioned hotspot markers for the 27 icons of the Passion — Matthew 26:6 to 27:66.**
-   Chapters 1–25 have them and so does chapter 28; only this stretch is missing. The 12 passages affected are listed in session 2026-08-21. Method that works:
+1. **Finish the reading audit. 27 of 113 readings are still unchecked against their pictures.**
+   Sheets 1–3 of the audit are done (see 2026-08-21b); the sweep stopped partway through
+   sheet 3. Roughly a third of the readings checked so far carried a false claim, so assume
+   the rest do too. **Open question found and not yet resolved:** `Christos Iomenos Typhlon`
+   is the sole icon of Matthew 9:27–31 (The Two Blind Men) at tier a, and its own reading
+   says plainly that it depicts the man born blind at Siloam — **John 9, not Matthew 9**.
+   The Gotchas record that John 9 images were rejected elsewhere on exactly those grounds.
+   Either it goes, and 9:27–31 becomes tier c, or the rule bends for it — the owner's call. The 12 passages affected are listed in session 2026-08-21. Method that works:
    `src/tools/grid.py` overlays a 10% coordinate grid on `src/img/<key>.webp` — read the
    coordinates straight off the overlay, then write `[label, text, "top%", "left%"]` into
    `hotspots3.js`. Do **not** guess coordinates from a thumbnail; markers land on empty sky.
@@ -775,4 +779,50 @@ A third commit then tracked the three remaining rejected candidate images, which
 out of `f4a87b5`. Six orphans of exactly the same kind were already tracked, so leaving these
 three loose was the inconsistency — and it made the `Stop` hook fire on a clean session. See the
 note under `## Next`.
+
+## Session 2026-08-21b (fix everything that the final check had flagged)
+
+**Did.** The owner said "fix everything", meaning the four items the 2026-08-21 check left open.
+
+- **Markers for the whole Passion cycle.** 26 icons from Matthew 26:6 to 27:66 got positioned
+  markers — **every icon in the reader now has both a reading and markers, 113 of 113.** Each
+  set was measured off `src/tools/grid.py` overlays and then **verified by drawing the stored
+  coordinates back onto the picture** and reading the result; that second step caught eleven
+  markers sitting on the wrong thing, which a green `make check` cannot see.
+- **The Sinai Last Judgment is fixed.** Its centre is bare wood — the panel has lost the Christ
+  the whole composition is arranged around, and both benches at the top are apostles. Marker 1
+  now names the apostles, a new marker names the loss, and the reading no longer says "Christ
+  at the top, the throne prepared beneath him".
+- **The pseudonymous quotations are gone.** `BLOCKED` in `fathers.js` was anchored, so it only
+  ever tested the author token; the Catena names the real source in the *work* portion
+  ("Ambrose, **Ambrosiaster**", "Bede, **ap. Anselm**"). A `BLOCKED_WORK` test now catches it.
+  Still 354 quotations, all verbatim, no passage left empty — the three were replaced by
+  Hilary, Augustine and Jerome.
+- **An icon was in the wrong passage, and has been removed.** `Mnemeion Christou Dionysiou`
+  led Matthew 27:62–66 (The Guard at the Tomb). Its painted inscription reads
+  Ο ΔΕ ΠΕΤΡΟС ΚΑΙ Ι(ΩΑΝΝΗ)С ΕΔΡΑΜΟΝ ΕΠΙ ΤΟ ΜΝΗΜΕΙΟΝ — *but Peter and John ran to the
+  sepulchre* — and it paints the empty tomb with the grave-clothes and the folded napkin,
+  labelled Ο ΑΓΙΟС ΤΑΦΟС. That is John 20 and Luke 24 on the morning of the Resurrection, not
+  the sealing and the watch. Matthew nowhere reports Peter running to the tomb, so no passage
+  owns it. The reader is now **113 icons**; 27:62–66 keeps the Russian sealing and the
+  Mileševa guard, both painted from Matthew.
+- **The reading audit found errors at about the rate of one in three.** Corrected so far:
+  Monreale's Bethany anointing paints the woman at Christ's **feet**, not his head; the
+  Stavronikita and Dionysiou Gethsemanes paint Christ **four times** and the whole company
+  asleep, not "alone" with "three disciples", and the Dionysiou one *does* paint the waking it
+  was said not to; Christ is **not bound** in either trial fresco (his hands are free and
+  extended at Dionysiou, hidden in his mantle at Gračanica) nor in the Russian Pilate panel;
+  the Gelati Judas is not "what the Athonite fresco does not show" — Dionysiou hangs him at the
+  left of the same wall; Monreale's Agony paints Christ **twice** and letters VIGILATE ET ORATE
+  into the gold; the Russian sealing has its guards **seated**, not standing, and no one
+  pressing a seal; the Epitaphios title band is **worn away**, not cleanly inscribed; the Tree
+  of Jesse has the Theotokos at its **centre**, not its summit; Dionysiou's Christ-and-Forerunner
+  is **half** a Deesis, not a Deesis; and Monreale's leper mosaic **stops short of the touch** —
+  the two hands reach across a gap of bare gold.
+
+**Verified.** `make check` green: 118 passages, 113 icons, 113/113 readings, 113/113 with
+markers, 354 quotations all verbatim, no reuse, no dead marker keys, no empty marker sets, no
+new clamp warnings. Every marker set written this session was overlay-verified by eye.
+
+**Next.** Finish the audit — see `## Next` item 1, including the John 9 / Matthew 9 question.
 

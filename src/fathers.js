@@ -26,12 +26,19 @@ const FATHERS = [
  [/^isidore\b/i,                           'St Isidore',                 6],
 ];
 const BLOCKED=/^(pseudo|gloss|remig|raban|haymo|anselm|origen|euseb|but |or otherwise|interlin|ord\b)/i;
+// BLOCKED is anchored, so it only ever tested the author token — and the Catena routinely
+// names the real source in the *work* portion instead. "Ambrose, Ambrosiaster. Serm. x. 5"
+// is not Ambrose but Ambrosiaster, the anonymous 4th-c. commentator; "Bede, ap. Anselm" is
+// Bede as transmitted by the medieval Glossa, which the whitelist excludes on its own. Both
+// passed as whitelisted Fathers. Exclude on the same grounds the pseudonymous Chrysostom is
+// excluded: what the Church reads under a Father's name has to actually be his.
+const BLOCKED_WORK=/ambrosiaster|\bap\.?\s*(anselm|raban|gloss)|gloss/i;
 
 function romanize(s){ return s.replace(/\b(?:hom|serm|lib|cap|tract|ep|qu)\.\s*([ivxlc]+)\b/gi,(m,r)=>m.replace(r,r.toUpperCase())); }
 
 // "Chrys., Hom. iv" -> {name:'St John Chrysostom', work:'Hom. IV', rank:10}
 function identify(attr){
-  if(!attr||BLOCKED.test(attr)) return null;
+  if(!attr||BLOCKED.test(attr)||BLOCKED_WORK.test(attr)) return null;
   for(const [re,name,rank] of FATHERS){
     if(re.test(attr)){
       let work=attr.replace(/^[^,]+,?\s*/,'').trim().replace(/[.,;]+$/,'');

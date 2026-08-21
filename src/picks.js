@@ -191,8 +191,13 @@ module.exports={
     "File:Lamentation by Emmanuel Lambardos (Byzantine museum).jpg",
     "File:09 Epitaphios Icon in Assumption of Mary Church in Agios Vasileios.jpg",
   ],
+  // "Mnemeion Christou Dionysiou" was here and has been removed. Its painted inscription
+  // reads Ο ΔΕ ΠΕΤΡΟС ΚΑΙ Ι(ΩΑΝΝΗ)С ΕΔΡΑΜΟΝ ΕΠΙ ΤΟ ΜΝΗΜΕΙΟΝ — "but Peter and John ran to
+  // the sepulchre" — and it paints the empty tomb with the grave-clothes and the folded
+  // napkin, labelled Ο ΑΓΙΟС ΤΑΦΟС. That is John 20 and Luke 24 on the morning of the
+  // Resurrection, not the sealing and the watch of 27:62-66, and Matthew nowhere reports
+  // Peter running to the tomb, so there is no passage here it belongs to.
   "guard27": [
-    "File:Mnemeion Christou Dionysiou.jpg",
     "File:Sealing of Christ's Tomb (Russia, 19th c.).jpg",
     "File:Sleeping soldiers by Christ's tomb, Mileševa.jpg",
   ],

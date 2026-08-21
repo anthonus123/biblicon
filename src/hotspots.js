@@ -83,7 +83,7 @@ module.exports={
   ["The foolish in the dark","They are painted on the far side of the door, against the purple night. Watch therefore, for ye know neither the day nor the hour.","45%","14%"]]},
 
 'File:Victor (iconographer) Tree of Jesse.png':{
- read:"The Tree of Jesse — the icon the Church paints for Christ’s genealogy. Jesse, the father of David, sleeps at the root; from his side a vine rises bearing the kings and prophets of Israel on its branches, each with a scroll of his own prophecy; and at the summit sits the Theotokos with the Child. Matthew’s forty-two generations are here made visible as one living plant, and Isaiah’s word is fulfilled: there shall come forth a rod out of the stem of Jesse.",
+ read:"The Tree of Jesse — the icon the Church paints for Christ’s genealogy. Jesse, the father of David, sleeps at the root; from his side a vine rises bearing the kings and prophets of Israel on its branches, each with a scroll of his own prophecy; and at the heart of it, at the centre of the icon, sits the Theotokos with the Child. Matthew’s forty-two generations are here made visible as one living plant, and Isaiah’s word is fulfilled: there shall come forth a rod out of the stem of Jesse.",
  hot:[
   ["The Theotokos and the Child","The whole tree grows toward this. She is the flower of the root of Jesse, and the Child in her lap is the fruit for which every branch below was grown.","45%","44%"],
   ["Jesse asleep at the root","He lies at the foot of the icon, asleep, unaware of what will grow out of him — as the generations of the genealogy were unaware.","93%","40%"],
