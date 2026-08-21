@@ -103,9 +103,21 @@ In the owner's priority order:
 4. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
 
-Note: the working tree carries uncommitted work — the full-size lightbox, the fix to the
-hotspot markers described in session 2026-08-20h, and the whole of the multi-icon gallery
-work of 2026-08-20i. Nothing of it is committed yet.
+Note: everything through 2026-08-21 is committed and pushed — `f4a87b5` carries the
+multi-icon galleries, the lightbox, the 54 icons, `hotspots3.js` and the build fixes;
+`09bb6f5` carries `src/tools/`. `origin/main` is level with `main`.
+
+**The nine orphan images in `src/img/` are tracked on purpose, and `make check` warns about
+them on purpose.** They are rejected candidates kept as the evidence for the rejections the
+Gotchas below describe by name — `66e7620d02cb` is the Langadas St John the **Evangelist**
+mislabelled as the Baptist, `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
+Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`. No passage
+shows any of them; none is embedded in the reader, because `assemble.js` deletes image records
+nothing shows. They cost ~1 MB in the repo and nothing in the deliverable. Tracking all nine
+also keeps `git status` clean, which matters: the `Stop` hook tests
+`git status --porcelain -- src '*.html'`, so a stray untracked file in `src/img/` makes it fire
+every session regardless of whether anything was really done. If they are ever judged not worth
+keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
 
@@ -743,3 +755,24 @@ Agrees to Betray, two of the three Mystical Suppers, Peter's Denial Foretold, al
 Agony in the Garden, all three of the Betrayal and Arrest, both Before Caiaphas, both of the End
 of Judas, all three Before Pilate, three of the four Crucifixions, three of the four Burials and
 all three of the Guard at the Tomb. Then the Sinai Last Judgment marker above.
+
+**Committed and pushed** (added after the check, same session). Two commits, `99d8959..f4a87b5`,
+`main` now level with `origin/main`:
+
+- `09bb6f5` — `src/tools/`, the harvest pipeline. It touches no build source, so it does not
+  touch the reader.
+- `f4a87b5` — everything else in one commit: the galleries and lightbox of 2026-08-20h/i, 54
+  icons, `hotspots3.js`, this session's Makefile / `check.js` / footer fixes, and one rebuilt
+  `Matthew Reader.html`. 68 files.
+
+Two commits and not five **on purpose**: the reader is a 17.3 MB generated blob and every commit
+touching it adds a full copy to history, so each extra split would have cost ~17 MB — and any
+intermediate commit would have carried an HTML that did not match its own sources, which is the
+exact bug this session fixed. Confirmed before pushing that `make` on the committed tree leaves
+`git status` clean, so the committed reader matches its sources byte-for-byte.
+
+A third commit then tracked the three remaining rejected candidate images, which had been left
+out of `f4a87b5`. Six orphans of exactly the same kind were already tracked, so leaving these
+three loose was the inconsistency — and it made the `Stop` hook fire on a clean session. See the
+note under `## Next`.
+
