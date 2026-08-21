@@ -17,7 +17,7 @@ and this file did not.
   polish. Catena Bible (catenabible.com) is the model for multi-Father commentary.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
-- **Deliverable:** `Matthew Reader.html` — a single self-contained file (~8.7 MB). Fonts,
+- **Deliverable:** `Matthew Reader.html` — a single self-contained file (~17.3 MB). Fonts,
   icons, the KJV text and all commentary are embedded; it opens by double-clicking, no
   server and no network. **Do not hand-edit it.** It is generated — one command from the
   repo root, which sequences assemble → check → build:
@@ -30,29 +30,42 @@ and this file did not.
 - **Structure** (preserved from the owner's original wireframe): sticky header, sticky
   chapter rail with a per-chapter icon tree, a **Text leads / Icons lead** mode toggle, and
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
-  *Deciphering the Icon* (numbered hotspot markers over the icon).
-- **Content, as of 2026-08-20:**
-  - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **7 (b)**, **60 (c)**.
-    **57 have an icon, from 57 images — one icon, one passage, no image used twice.**
-    The other 61 render as plain verse rows because no Orthodox icon of them exists.
-  - **15 of 62 icons have positioned hotspot markers.** All 62 have a prose reading.
+  *Deciphering the Icon* (numbered hotspot markers over the icon). Since 2026-08-20i a
+  passage may show **several icons of its own scene**: a thumbnail strip under the drawer
+  image and under the "Icons lead" plate switches between them, and the credit line, the
+  prose reading and the positioned markers all follow the icon selected.
+- **Content, as of 2026-08-20i:**
+  - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **6 (b)**, **61 (c)**.
+    **57 have an icon, and they show 114 icons between them** — no image is used under two
+    passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
+    has four, the Burial four, the Crucifixion four); the other 25 have one because no
+    second Orthodox image of that scene was found. The remaining 61 passages render as
+    plain verse rows because no Orthodox icon of them exists.
+  - **87 of the 114 icons have positioned hotspot markers**, 440 markers in all: 14 live sets
+    in `hotspots.js` (a 15th is on a retired image) and 73 in `hotspots3.js`. The 27 without
+    are **the Passion icons, Matthew 26:6 to 27:66** — chapters 1–25 are done and so is
+    chapter 28; the pass stopped at the Anointing at Bethany and resumed after the tomb. **All 114 have a prose reading** — `make check` hard-fails on an
+    icon with no label, and reports how many would show an empty "Deciphering the Icon" tab.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
   - **354 patristic quotations, every one verbatim** from the *Catena Aurea* on Matthew
     (Oxford 1842, public domain). Chrysostom on 115 of 118 passages, then Jerome,
     Augustine, Hilary, Leo, Ambrose, Cyril of Alexandria, Bede, Cassian, Chrysologus,
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
-- **Tier system** (owner's rule, 2026-08-20: *one icon, one passage; no reuse; if there is no
-  relevant icon, remove it altogether*):
+- **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
+  passage shows is of that passage's own scene, so a second or third one cannot change the
+  tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
+  altogether*) still holds in the form **one image, one passage** — what changed on
+  2026-08-20i is that one passage may hold several images.
   - **a** — an Orthodox icon of *this* scene, shown for this passage only. 51.
   - **b** — a **type icon**: the image the Church attaches to the passage without depicting its
     verses. The card and drawer say so: *"This is the icon the Church attaches to this passage;
-    it is not a depiction of these verses."* Exactly 7, each declared `tierB` in `overrides.js`:
+    it is not a depiction of these verses."* Exactly 6, each declared `tierB` in `overrides.js`:
     `galilee` (the Forerunner dragged to prison, the event 4:12 reports), `matthew` (the apostle's own
     icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
     sign of Jonah), `lostsheep` (the Good Shepherd), `commission` (Christ manifest among the
     apostles). `olivet` became tier a when it got a real Second Coming icon.
-  - **c** — no icon; the passage is a plain verse row. 60, and that is the honest number.
+  - **c** — no icon; the passage is a plain verse row. 61, and that is the honest number.
   - Tier is **declared, not counted**. `assemble.js` reads `c` if there is no image, `b` if
     `overrides.tierB` says so, else `a`. The old rule ("shared image ⇒ tier b") is gone with
     the sharing.
@@ -68,23 +81,70 @@ and this file did not.
 
 In the owner's priority order:
 
-1. **Positioned hotspot markers for the other 47 icons.** This is the biggest remaining
-   gap and the thing he cares most about. Method that works: `src/` has no grid tool
-   committed, but the one used was a Pillow script that overlays a 10% coordinate grid on
-   `src/img/<key>.webp`, montaged 4-up — read the coordinates straight off the overlay,
-   then write `[label, text, "top%", "left%"]` into `hotspots.js`. Do **not** guess
-   coordinates from a thumbnail; markers land on empty sky.
+1. **Positioned hotspot markers for the 27 icons of the Passion — Matthew 26:6 to 27:66.**
+   Chapters 1–25 have them and so does chapter 28; only this stretch is missing. The 12 passages affected are listed in session 2026-08-21. Method that works:
+   `src/tools/grid.py` overlays a 10% coordinate grid on `src/img/<key>.webp` — read the
+   coordinates straight off the overlay, then write `[label, text, "top%", "left%"]` into
+   `hotspots3.js`. Do **not** guess coordinates from a thumbnail; markers land on empty sky.
+   To *check* placements afterwards, draw the stored coordinates back onto the icons and
+   montage them 9-up: an overlay sheet reads in one glance and is how the Sinai Last
+   Judgment error below was caught.
 2. **The shared-fallback problem — searched 2026-08-20b, and the answer is mostly "no icon
    exists".** **35** passages (not ~20) share `Christos Didaskon Dionysiou` and **11** share
    `Christos Apostolois Dionysiou`: 46 of 116, 40% of the reader, on two images. A second
    independent search found no Orthodox image for any of the 15 subjects `assign.js` names —
    see Gotchas. Resolved 2026-08-20d/e: no reuse at all, and the
    60 passages with no icon of their own now render as plain verse rows.
-3. **The two tier-c passages** — decide whether they stay iconless or take a broader icon.
+3. **More icons of the scenes that still have only one.** 25 of the 57 illustrated passages
+   still show a single icon. The ones where a second almost certainly exists but was not
+   found this pass: the stilling of the storm, the centurion, Peter's mother-in-law, the
+   cleansing of the leper, the two blind men, the dumb man, the withered hand, the Canaanite
+   woman, walking on the water, the Sermon on the Mount. Method that worked is in Gotchas.
 4. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
 
+Note: the working tree carries uncommitted work — the full-size lightbox, the fix to the
+hotspot markers described in session 2026-08-20h, and the whole of the multi-icon gallery
+work of 2026-08-20i. Nothing of it is committed yet.
+
 ## Gotchas (learned)
+
+- **To find more icons of a scene you already have, seed the search from the file you already
+  trust.** Free-text search returns Western art and guessed category names mostly do not
+  exist. What works: `prop=categories` on each file already in `pick_keys.json`, then
+  `catMembers` on the subject categories that come back — a verified Theophany fresco sits in
+  precisely the categories where more Theophany icons live. That bootstrapped 56 known-good
+  files into a pool of 44,000 candidates on 2026-08-20i. `catSearch` on a programme name
+  ("Life of Christ mosaics") also surfaces cycles you would never guess: that is how
+  *Miracles and Teachings of Christ mosaics in Sant'Apollinare Nuovo (Ravenna)* and
+  *Palatine chapel (Palermo) - Life of Christ mosaics* were found.
+- **Grepping a pool for a place name undercounts a cycle badly.** The Ferapontov frescoes are
+  titled `Fig tree cursed 04-16.jpg`, `Ten virgins 05-15.jpg` — no place name anywhere in the
+  title. Probing the pool for "Ferapontov" returned 8 files; the category itself holds 39, and
+  it is one of the very few Orthodox programmes that paints parables. Enumerate the category,
+  never grep the titles.
+- **`upload.wikimedia.org` rate-limits into 429s, and a 429 is not a dead candidate.** A first
+  pass fetching 177 thumbnails got 21 files and 156 "failures". With `Retry-After` honoured and
+  an exponential backoff (6 attempts, ~1.5s growing), the same list returned 172 of 172. Never
+  record a 429 as "no such image".
+- **A title that names the right feast can still name the wrong person.**
+  `049 Saint John the Baptist Icon 2 ... Langadas` is inscribed ΙΩΑΝΗC ο Βαγγελιστής and shows
+  an old man writing with Prochoros beside him — St John the **Evangelist**, not the
+  Forerunner. `Matthew the Evangelist.jpg` has a Commons description reading "Saint Mathias".
+  Both were caught only by looking at the picture at full size after they had passed the
+  contact sheet. Two-stage review works: 400px contact sheets to throw out the obvious
+  Western art, then 700px for anything you are about to wire up.
+- **Coptic and Armenian images are not Eastern Orthodox.** `Baptism (coptic icon)` and the
+  T'oros Roslin Gospels are Oriental Orthodox; they were dropped on those grounds, and the
+  same rule should hold next time they surface — which they will, because they match every
+  keyword.
+- **A second icon may not change the passage's tier, and that rules out the obvious padding.**
+  The Anastasis (the Descent into Hades) is the Church's icon *of* the Resurrection, not a
+  picture of Matthew 28:1–10, so the three Anastasis panels found for `resurrection` were
+  dropped rather than set beside the myrrhbearers at the tomb. Likewise a second and third
+  Christ Pantokrator beside `yoke` is padding, not a second reading of a scene — and the two
+  generic-Christ files that commits `982bc5e` and `e283f96` deliberately removed must not come
+  back in through the gallery door.
 
 - **Wikimedia Commons free-text search returns Western art** (Dutch engravings, MET/NGA
   paintings) for Gospel scenes — useless here. What works is harvesting whole Orthodox
@@ -165,7 +225,15 @@ In the owner's priority order:
   legitimately *own* a shared image (e.g. `entry` owns the Entry-into-Jerusalem icon that
   `lament23` borrows) need `tierA:true` in `overrides.js`; the reverse case needs
   `tierB:true`.
-- **The HTML is ~8.7 MB and regenerated wholesale**, so every commit that touches it adds
+- **A source file missing from the Makefile's `SOURCES` ships a stale reader in silence.**
+  `src/hotspots3.js` was added on 2026-08-20i but never listed, so `$(DATA)` did not rebuild
+  when it changed and the 18,080,873-byte reader on disk was a build behind its own sources —
+  no error, nothing in `git status` to say so, and `make` printing "wrote … 114 images" as
+  usual. Fixed 2026-08-21. **Every file `assemble.js` requires must appear in `SOURCES`.**
+- **A green `make check` says nothing about whether a marker is on the right thing.** It
+  validates that coordinates parse and fall in 0–100; it cannot see that "Christ in judgment"
+  is sitting on an apostle. Only drawing the stored coordinates back onto the picture does.
+- **The HTML is ~17.3 MB and regenerated wholesale**, so every commit that touches it adds
   a full copy to git history. It stays tracked deliberately — it is what someone clones the
   repo for — but the build is byte-deterministic, so a rebuild with no content change leaves
   `git status` clean and costs history nothing. Only a real content change grows the repo.
@@ -481,3 +549,197 @@ him explicitly):
 **Next**
 - Unchanged. Nine files now sit unused in `src/img/` (the displaced Gračanica bust and Rossano
   leaf among them); they are left in place, not deleted.
+
+---
+
+## Session 2026-08-20h (the marker-click scroll, reported by the owner)
+
+**Did**
+- The owner reported: open an icon → *Deciphering the Icon* → click marker **4** on the
+  Genealogy (that marker is "The prophets with scrolls") and the panel **jumps back to the
+  top** instead of going down to that entry. Two separate faults, one already fixed:
+  1. **The jump to the top.** At `HEAD` (995efe8) the marker handler was
+     `onclick:function(){state.hot=i+1;renderDrawer();}`, and `renderDrawer` begins
+     `scrim.innerHTML=''` — every click destroyed the `.drawer` node and built a new one, so
+     `scrollTop` went to 0. That is the reported symptom exactly. The uncommitted work already
+     in the tree replaces it with `selectHot()`, which only flips `aria-current` on the markers
+     and rows. **The fix was on disk and in the built HTML before this session started, so what
+     the owner was looking at was a page loaded before the rebuild — a reload cures it.**
+  2. **The alignment was wrong anyway,** and this *was* reproduced. `alignInDrawer` pinned the
+     row 96px below the top of the panel; at 2560×1400 the drawer's maximum scroll is 1232 and
+     the four targets are 1609/1737/1865/1992, so **all four markers clamped to the same
+     position** — the end of the panel — and carried the icon (1115–1690) off the top with them.
+     Replaced with minimal scrolling: leave it alone if the row is already fully visible, else
+     move just far enough to uncover it (bottom-align below, top-align above, 16px margin).
+- Only `alignInDrawer` changed. Row clicks in the list stay highlight-only (`align=false`) on
+  purpose — yanking the panel under someone who is reading a row would be a new annoyance.
+
+**Verified**
+- Playwright against the rebuilt page. 2560×1400, marker 4: `scrollTop` 824 (was 1232), the icon
+  fully on screen at 292–867 and row 4 fully on screen at 1264–1384. 1850×910, starting from the
+  reader looking at the icon (`scrollTop` 1150): markers 1 and 2 don't move at all (their rows are
+  already visible), 3 moves 36px, 4 moves 164px — each row ends fully in view, against 1722 (the
+  end of the panel) for all four before. `make` rebuilds clean, `src/app.js` embeds verbatim.
+
+**Next**
+- Unchanged. This change is **unstaged and uncommitted** along with the lightbox work it sits on.
+
+## Session 2026-08-20i (several icons of one scene)
+
+**Did.** The owner asked for more than one icon per scene — "I'm sure you can find different
+icons of baptism of Christ ... please look deeply." A passage can now carry a gallery.
+
+- **Data.** `picks.js` values are a file *or a list of files*; the first is the primary.
+  `assemble.js` emits `imgs:[...]` alongside `img` (the primary) and collects every variant
+  into the `shown` set so `build.js` embeds them. `check.js` keeps the invariant that matters —
+  an image belongs to exactly one passage — and adds: no duplicate inside a passage's own
+  gallery, primary must be `imgs[0]`, and a **hard fail** on an icon with no label.
+- **UI** (`app.js`, `page.css`). A thumbnail strip appears under the drawer image and under the
+  "Icons lead" plate, only where a passage really has more than one icon. Selecting one swaps
+  the picture, the credit line, the prose reading and the positioned markers, and the choice is
+  remembered per passage in `state.pick` so the plate, the drawer and the full-size view agree.
+  The full-size view gained ‹ › arrows and Left/Right keys across the icons of one scene. The
+  small text-mode card gets a "3 icons" badge instead of a strip — it is itself a `<button>`,
+  and a button inside a button does not work.
+- **Icons.** 57 new ones, taking the reader from 57 to **114 images over the same 57 passages**;
+  32 passages now show a gallery. Sources: the Langadas / Adam / Agios Vasileios Greek village
+  collections, Ferapontov (Dionisy, 1502), Sant'Apollinare Nuovo, the Palatine Chapel and
+  Monreale, Sinai, Chora, Nerezi, Mileševa, Gračanica, Gelati, Rila, the Hermitage and the
+  Kirillo-Belozersky iconostasis. Four files earlier sessions had downloaded and left unused
+  (`Rossano Gospels - Cleansing of the Temple`, `Christ before Caiaphas` and the Last Judgment
+  Christ from Gračanica, the Princeton Twelve Apostles) now have a home as second icons.
+- **Words.** Every one of the 58 carries a `labels.js` name and a `hotspots2.js` reading of two
+  to four sentences saying where and when it was made and **what it does differently** from the
+  icon it stands beside. All 115 icons in the reader now have a reading.
+- **Rejected, on purpose.** The Gračanica narthex Christ — its file is titled "last judgment"
+  and it is indeed the Christ of the Dread Judgment, but the frame holds a half-figure with an
+  open book and nothing of the judgment itself, which makes it the same kind of image as the
+  Pantokratoros rejected below. Three Anastasis panels (the Church's icon of the Resurrection, not
+  Matthew 28:1–10); extra Pantokratoros for `yoke`; a Coptic Baptism and an Armenian Gadarene;
+  Monreale's ten lepers (Luke 17) under Matthew 8; "Sunday of the Blind Man" and the Siloam
+  mosaics (John 9) under Matthew 9; a St John the **Evangelist** mislabelled as the Baptist;
+  a "Saint Mathias"; and every Bowyer Bible / MET / NGA engraving the keyword pass dragged in.
+
+**Why.** The owner's stated priority is the icons and the explanation of each icon. One icon
+per scene made the reader assert that the Church paints a feast one way; it does not.
+
+**Verified.** `make` → 17.16 MB, 114 images, `make check` green. Served over HTTP and driven in
+the browser: 32 strips render; switching an icon moves the picture, credit, reading and markers
+together and keeps the drawer's scroll position and the open tab; the Crucifixion's 3 markers
+disappear on a variant that has none and come back on return with the highlight in range; the
+plate strip swaps in place without re-rendering the stream; the lightbox steps 1→2→3→4→1 by
+click and by arrow key and Escape closes it without closing the drawer; **all 114 images decode**
+(counted with `new Image()` + `onload`, not `naturalWidth` — see Gotchas); console clean. The
+card in the reading stream follows a choice made in the drawer or the full-size view, so all
+four views of a passage agree.
+
+**Size.** The page went from 8.96 MB to **17.16 MB**. Variants are encoded at 660px like every
+other icon, deliberately: they open in the same "see it at full size" view, and a softer variant
+under that promise would be a lie. If the size ever has to come down, the lever is fewer
+variants, not smaller ones.
+
+**Also.** `src/tools/` now holds the harvest pipeline (category seeding, pool enumeration,
+the backoff fetcher, the encoder) with a README of the method, because `## Next` item 3 asks
+for more of exactly this. And `make check` now fails on a duplicate key in `labels.js` or
+`hotspots2.js`: bringing back four files that earlier sessions had downloaded and shelved
+created three silent duplicate entries, invisible because one copy was single-quoted and the
+other double-quoted. The later entry wins, so nothing shipped wrong — but the older text was
+dead, and `hotspots2.js` overwriting a `hotspots.js` entry would have wiped its markers.
+
+**Next.** Positioned markers are still only on 14 icons of 114. 25 illustrated passages still
+show a single icon — the list of the ones most likely to yield a second is in `## Next`.
+
+## Session 2026-08-21 (full final check — nothing new added, one build bug and three content faults found)
+
+**Did.** The owner asked for a full final check that every element is there and correct. No new
+icons, no new markers; this was verification, plus the fixes the verification turned up.
+
+- **The shipped reader was stale, and the Makefile was why.** `src/hotspots3.js` — the file that
+  now carries 73 of the 87 marker sets — was never added to `SOURCES`, so `make` did not
+  re-derive `icons.json` when it changed. The reader on disk (18,080,873 bytes, 01:38) predated
+  the last edit to `hotspots3.js` (06:37) and rebuilt 15,152 bytes larger. The whole of the h3
+  marker corpus is ~97 KB of JSON, so what was missing was roughly one editing session's
+  increment, not the marker work as a whole — but nothing anywhere said so. `SOURCES` fixed and
+  verified: `touch src/hotspots3.js && make` now runs `assemble.js`, and two consecutive `make`
+  runs still produce identical bytes.
+- **The footer promised an exception it never named.** "The icons and frescoes are, with one
+  exception noted below…" — but `build.js` filters `license==='user-supplied'` out of the credit
+  list, so the reader-supplied Nativity was simply absent. It is now named in a line after the
+  list, with its passage range derived rather than hard-coded.
+- **Two icons in one gallery carried the same name.** Both Dionysiou Jonahs at Matthew 12:38–45
+  were labelled "The Prophet Jonah — Dionysiou, Athos, 1547"; the strip tooltips read alike and
+  only the fine print of the credit differed. The primary is now "Jonah and the Great Fish".
+  `make check` gained a guard: identical labels inside one passage's gallery **fail**, identical
+  labels across two passages warn. Verified by reverting the label — it fails.
+- **`make check` gained the h1∩h2 guard as well.** The existing one catches markers declared in
+  both `hotspots.js` and `hotspots3.js`. The same silent overwrite exists between `hotspots.js`
+  and `hotspots2.js` (`hotdb[k]={read:h2[k],hot:[]}` replaces the record). Nothing collides
+  today; the guard keeps it that way. Verified by probe.
+
+**Verified.** Data: 118 passages, tiers a:51 b:6 c:61, 57 illustrated, 114 icons, 32 galleries,
+no image under two passages, 114/114 readings, 87 with markers (440 markers), 46 "Points to
+notice", 354 quotations. **All 1071 verses of Matthew are present, contiguous, with no gap or
+overlap, and every verse string matches `matthew_kjv.json` exactly.** **All 354 patristic
+quotations reproduce byte-for-byte from `catena.json` through `fathers.js` `clean()`** — nothing
+paraphrased, nothing invented — and every display name matches the Catena's own attribution
+(Chrys.→Chrysostom, Chrysol.→Chrysologus, no crossover); no Pseudo-Chrysostom, Glossa,
+Carolingian, Origen or Eusebius leaked through. In the browser over HTTP: 118 rows in text mode
+with 57 cards and 32 "N icons" badges; 118 plates in Icons-lead mode with 57 images, 61 plain
+rows, 32 strips, 6 tier-b notes, 28 chapter marks; 28 rail chapters, 5 of them reporting "No
+icon in this chapter yet", which is exactly the 5 chapters (6, 7, 16, 19, 23) with no icon;
+all three drawer tabs; **all 114 images decode** (`new Image()` + `onload`); console clean; no
+horizontal page scroll. **The regression surface the multi-icon work never exercised — switching
+between two icons that both carry markers — is clean:** the marker set swaps entirely, the
+highlight lands back in range, the open tab and the stream card follow. Lightbox steps and wraps
+4→1 and closes without closing the drawer.
+
+**Marker placement, checked by eye.** All 87 marker sets were drawn back onto their icons at the
+stored coordinates and read as 10 montage sheets. Placement is good: markers labelled for an
+inscription sit on the inscription (Monreale's two temptation tituli are correctly told apart —
+the devil's words on one band, Christ's answer on the other), Elias and Moses are on the right
+figures in all three Transfigurations, the sheep and the goats are on the right sides at Ravenna,
+and the root of the Jesse tree is at the root. **One error found in 440 markers**, and it is not
+a coordinate slip: on *The Last Judgment — John Tokhabi, Sinai, c. 1100* (the second icon at
+Matthew 25:31–46), marker 1 "Christ in judgment" at top 16% / left 72% sits on the **right-hand
+bench of enthroned apostles**. The panel has two apostle benches, left and right, and the centre
+where Christ would sit is abraded away — there is no Christ figure in the frame. The marker text
+("At the top right he sits enthroned with the apostles ranked on either side") and the reading's
+opening ("Christ at the top") share the misreading. **Left for the owner**, because the fix is a
+rewrite of prose about a damaged 900-year-old panel, not a nudge.
+
+**What this check does *not* establish.** The 114 icon readings were verified to be **present**,
+not content-audited: every icon has one, none is a stub. Their prose was not read against the
+pictures the way the markers were — and the one reading examined closely, the Sinai Last
+Judgment, carried the same misreading as its marker ("Christ at the top" on a panel whose centre
+is abraded away). A reading-by-reading audit against the images is still owed.
+
+**Flagged, not changed.**
+- **Two quotations given to "St Ambrose of Milan" are cited by the Catena itself as
+  *Ambrosiaster*** (Matthew 3:13–17 and 8:28–34), which is not Ambrose but an anonymous
+  4th-c. commentator; the page prints "St Ambrose of Milan, Ambrosiaster. Serm. X. 5". A third,
+  at Matthew 18:10–14, is "St Bede | ap. Anselm" — Bede as quoted in the *Glossa*, which the
+  whitelist otherwise excludes. Same class of call as the Pseudo-Chrysostom exclusion, so the
+  owner's to make. 3 of 354.
+- **`Mosaic of the exorcism of the Gerasene demoniac` (Sant'Apollinare Nuovo) sits under Matthew
+  8:28–34**, where Matthew says *Gadarenes* and *two* men. It is the synoptic parallel of the
+  same event, so this is not the Luke-only / John-only borrow the Gotchas forbid — but the label
+  says "Gerasene" under a Gadarene passage, which a reader may notice.
+- **Three icons are below 400px on their long side** because that is the resolution Commons
+  holds: the Rossano Wise and Foolish Virgins (335×213), the Langadas St Matthew (389×506) and
+  the reader-supplied Nativity (337×436). They open in the same "see it at full size" view as
+  the 660px ones.
+- **The 9 orphan files in `src/img/` are all documented decisions**, not leftovers: the Gračanica
+  Last Judgment Christ and `Christos Didaskon` (deliberately retired), the Langadas St John the
+  **Evangelist** mislabelled as the Baptist, the "Saint Mathias", the Langadas Christ Enthroned,
+  the Theotokos Panachranta and a 16th-c. Adoration (never wired up), plus two files
+  (`64edfde436b3`, `bd8f72a1b1fe`) that have been unreferenced since the first rebuild at
+  `99d8959` and appear in no data file at all.
+
+**Not verified.** Mobile — the layout is still desktop-only by decision, and nothing here changed
+that.
+
+**Next.** Markers for the 27 Passion icons (Matthew 26:6–27:66): the Anointing at Bethany, Judas
+Agrees to Betray, two of the three Mystical Suppers, Peter's Denial Foretold, all three of the
+Agony in the Garden, all three of the Betrayal and Arrest, both Before Caiaphas, both of the End
+of Judas, all three Before Pilate, three of the four Crucifixions, three of the four Burials and
+all three of the Guard at the Tomb. Then the Sinai Last Judgment marker above.

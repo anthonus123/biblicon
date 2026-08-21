@@ -2,7 +2,7 @@
 'use strict';
 var D=window.__DATA__, IMG=window.__IMG__;
 var TC={Feast:'#a8792c',Event:'#7a6e5a',Prophet:'#5f7c86',Teaching:'#6f8a5f',Miracle:'#4f7a86',Parable:'#8a6f4f'};
-var state={mode:'text',active:null,chapter:1,detail:null,tab:1,hot:1};
+var state={mode:'text',active:null,chapter:1,detail:null,tab:1,hot:1,pick:{}};
 var byId={}; D.passages.forEach(function(p){byId[p.id]=p;});
 var chapters=[];
 D.passages.forEach(function(p){
@@ -32,6 +32,102 @@ function versesHTML(p,cls){
 // Nothing stands in for anything else — a passage with no icon of its own simply has none.
 var TIERB='This is the icon the Church attaches to this passage; it is not a depiction of these verses.';
 
+/* ---------------- a passage's icons ---------------- */
+// A passage may carry several icons OF THE SAME SCENE — the Theophany at Ohrid beside the
+// Theophany on Athos. They are alternatives, not a sequence: the first leads, and it is the
+// one that carries the positioned markers. Which one the reader last chose is remembered per
+// passage, so the drawer, the plate and the full-size view all agree.
+function imgsOf(p){ return (p.imgs&&p.imgs.length?p.imgs:(p.img?[p.img]:[])); }
+function selIdx(p){
+  var n=imgsOf(p).length;
+  var i=state.pick[p.id]||0;
+  return i<n?i:0;
+}
+function selKey(p){ return imgsOf(p)[selIdx(p)]||null; }
+function rec(k){ return k?D.images[k]:null; }
+// The card or plate already rendered in the stream for this passage. Choosing an icon in the
+// drawer has to move it too, or closing the drawer reveals a card still showing the primary.
+function syncStream(p){
+  var row=document.getElementById('p-'+p.id);
+  if(!row) return;
+  var k=selKey(p), im=rec(k);
+  var img=row.querySelector('.frame img');
+  if(img&&k) img.setAttribute('src',src(k));
+  var i=selIdx(p);
+  row.querySelectorAll('.stripthumbs button').forEach(function(b,j){
+    b.setAttribute('aria-current',j===i?'true':'false');});
+  var tb=row.querySelector('.tierb');
+  if(tb&&im) tb.textContent=(row.classList.contains('plate')?'Icon shown: '+im.label+' · '+TIERB:im.label);
+}
+// The strip of alternatives. `onpick` gets the new index; it is not rendered for a passage
+// with only one icon.
+function strip(p,current,onpick){
+  var ks=imgsOf(p);
+  if(ks.length<2) return null;
+  var wrap=el('div',{class:'strip'});
+  wrap.appendChild(el('div',{class:'striplab',
+    text:ks.length+' icons of this scene — the Church has painted it more than once'}));
+  var row=el('div',{class:'stripthumbs'});
+  ks.forEach(function(k,i){
+    var im=D.images[k];
+    row.appendChild(el('button',{'aria-current':i===current?'true':'false',
+      title:im.label,onclick:function(e){e.stopPropagation();onpick(i);}},[
+      el('img',{src:src(k),alt:im.label,loading:'lazy'})]));
+  });
+  wrap.appendChild(row);
+  return wrap;
+}
+
+
+/* ---------------- full-size icon ---------------- */
+// Every icon is embedded at 660px wide. The card crops it, the drawer reduces it; this is the
+// one view that shows the icon whole, at its own size, as large as the window allows.
+var lbEl=null;
+function closeLightbox(){
+  if(lbEl&&lbEl.parentNode) lbEl.parentNode.removeChild(lbEl);
+  lbEl=null;
+}
+function openLightbox(p,idx){
+  closeLightbox();
+  var ks=imgsOf(p);
+  if(!ks.length) return;
+  var i=(idx==null?selIdx(p):idx);
+  if(i<0) i=ks.length-1; if(i>=ks.length) i=0;
+  var im=D.images[ks[i]];
+  if(!im) return;
+  var fig=el('figure',{onclick:function(e){e.stopPropagation();}},[
+    el('img',{src:src(ks[i]),alt:p.name}),
+    el('figcaption',{},[
+      el('b',{text:p.name}),
+      el('span',{text:im.label+' · '+p.range}),
+      ks.length>1?el('span',{class:'of',text:'Icon '+(i+1)+' of '+ks.length+' of this scene'}):null])]);
+  lbEl=el('div',{class:'lightbox',role:'dialog','aria-label':p.name,onclick:closeLightbox},[
+    fig,
+    el('button',{class:'lbclose',text:'×','aria-label':'Close',onclick:closeLightbox})]);
+  if(ks.length>1){
+    lbEl.appendChild(el('button',{class:'lbnav prev',text:'‹','aria-label':'Previous icon of this scene',
+      onclick:function(e){e.stopPropagation();lbGo(p,i-1);}}));
+    lbEl.appendChild(el('button',{class:'lbnav next',text:'›','aria-label':'Next icon of this scene',
+      onclick:function(e){e.stopPropagation();lbGo(p,i+1);}}));
+  }
+  document.body.appendChild(lbEl);
+  lbCtx={p:p,i:i};
+}
+var lbCtx=null;
+// Stepping in the full-size view also moves the selection behind it, so closing the lightbox
+// leaves the drawer showing the icon the reader stopped on rather than snapping back.
+function lbGo(p,i){
+  var n=imgsOf(p).length;
+  i=(i+n)%n;
+  state.pick[p.id]=i;
+  state.hot=1;
+  syncStream(p);
+  openLightbox(p,i);
+  if(state.detail===p.id) renderDrawer(true);
+}
+function zoomable(p,getIdx){
+  return function(e){ e.stopPropagation(); e.preventDefault(); openLightbox(p,getIdx?getIdx():null); };
+}
 
 /* ---------------- rail ---------------- */
 var railEl=document.getElementById('chapters');
@@ -63,30 +159,56 @@ function renderRail(){
 /* ---------------- main ---------------- */
 var mainEl=document.getElementById('stream');
 function card(p,big){
-  var im=p.img?D.images[p.img]:null;
-  var frame=el('div',{class:'frame'},[
-    el('div',{class:'in'},[el('img',{src:src(p.img),alt:p.name,loading:'lazy'})])]);
+  var ks=imgsOf(p);
+  var i=selIdx(p);
+  var im=rec(ks[i]);
+  var img=el('img',{src:src(ks[i]),alt:p.name,loading:'lazy'});
+  var frame=el('div',{class:'frame'},[el('div',{class:'in'},[img])]);
   if(big){
     var plate=el('div',{class:'plate',id:'p-'+p.id,'data-pid':p.id});
+    frame.setAttribute('role','button');
+    frame.setAttribute('tabindex','0');
+    frame.setAttribute('title','See this icon at full size');
+    frame.addEventListener('click',zoomable(p,function(){return selIdx(p);}));
+    frame.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();openLightbox(p,selIdx(p));}});
     var holder=el('div',{style:'position:relative'},[frame,
       el('div',{class:'ribbon',text:p.type==='Feast'?'Great Feast':(p.type||'From the Gospel')}),
       el('div',{class:'cap'},[el('div',{class:'rg',text:p.range}),el('div',{class:'nm',text:p.name})])]);
     plate.appendChild(holder);
-    if(p.tier==='b') plate.appendChild(el('div',{class:'tierb',text:'Icon shown: '+im.label+' · '+TIERB}));
-    plate.appendChild(el('button',{class:'openbtn',text:'Open its story, the Fathers & the icon’s meaning ›',
+    var tb=p.tier==='b'?el('div',{class:'tierb',text:'Icon shown: '+im.label+' · '+TIERB}):null;
+    // Choosing another icon of the same scene swaps the picture in place. Re-rendering the
+    // whole stream here would scroll the reader away from the plate they are looking at.
+    var st=strip(p,i,function(n){
+      state.pick[p.id]=n;
+      state.hot=1;              // the new icon has its own markers; keep the highlight in range
+      var k=imgsOf(p)[n];
+      img.setAttribute('src',src(k));
+      if(tb) tb.textContent='Icon shown: '+rec(k).label+' · '+TIERB;
+      st.querySelectorAll('.stripthumbs button').forEach(function(b,j){
+        b.setAttribute('aria-current',j===n?'true':'false');});
+      if(state.detail===p.id) renderDrawer(true);
+    });
+    if(st) plate.appendChild(st);
+    if(tb) plate.appendChild(tb);
+    plate.appendChild(el('button',{class:'openbtn',text:'Open its story, the Fathers & the icon\u2019s meaning \u203a',
       onclick:function(){openDetail(p.id);}}));
     plate.appendChild(el('div',{class:'platebody'},[
       el('div',{class:'lab',text:'From the Gospel · '+p.range}),
       el('div',{class:'txt',html:versesHTML(p)})]));
     return plate;
   }
+  // The small card is itself a button, so the thumbnails cannot live inside it — a button
+  // inside a button is invalid and does not click through. It says how many icons there are
+  // and the drawer shows them.
   var c=el('button',{class:'card',onclick:function(){openDetail(p.id);}});
   c.appendChild(frame);
   c.appendChild(el('div',{class:'nm',text:p.name}));
   c.appendChild(el('div',{class:'meta'},[
     el('span',{class:'rg',text:p.range}),
-    p.type?el('span',{class:'tag',style:'border-color:'+(TC[p.type]||'#7a6e5a')+';color:'+(TC[p.type]||'#7a6e5a'),text:p.type}):null]));
-  c.appendChild(el('div',{class:'hint',text:state.active===p.id?'panel open':'Story, Fathers & icon meaning ›'}));
+    p.type?el('span',{class:'tag',style:'border-color:'+(TC[p.type]||'#7a6e5a')+';color:'+(TC[p.type]||'#7a6e5a'),text:p.type}):null,
+    ks.length>1?el('span',{class:'count',text:ks.length+' icons'}):null]));
+  c.appendChild(el('div',{class:'hint',text:state.active===p.id?'panel open':'Story, Fathers & icon meaning \u203a'}));
   if(p.tier==='b') c.appendChild(el('div',{class:'tierb',text:im.label}));
   return c;
 }
@@ -130,18 +252,40 @@ function fatherBlock(f){
     el('div',{class:'t',text:f.t}),
     el('div',{class:'a',html:'☨&nbsp; <b>'+esc(f.n)+'</b>'+(f.w?', '+esc(f.w):'')})]);
 }
-function renderDrawer(){
+// The drawer is the scrolling element, so bringing something into view means moving the
+// drawer, not the page: scrollIntoView would drag the reading behind it along too.
+// Move as little as possible. Pinning the row to a fixed offset from the top of the panel
+// runs the drawer to its end and carries the icon off with it, so every marker lands in the
+// same place; scrolling just far enough to uncover the row keeps the icon on screen above it.
+function alignInDrawer(node){
+  var d=scrim.querySelector('.drawer');
+  if(!d) return;
+  var M=16, dr=d.getBoundingClientRect(), nr=node.getBoundingClientRect(), delta=0;
+  if(nr.bottom>dr.bottom-M) delta=nr.bottom-(dr.bottom-M);
+  if(nr.top-delta<dr.top+M) delta=nr.top-(dr.top+M);
+  if(!delta) return;
+  d.scrollTo({top:Math.max(0,d.scrollTop+delta),behavior:'smooth'});
+}
+// `keep` re-renders without throwing the reader back to the top: switching to another icon
+// of the same scene must not lose their place in the panel.
+function renderDrawer(keep){
+  var was=keep?(scrim.querySelector('.drawer')||{}).scrollTop||0:0;
   scrim.innerHTML='';
   if(!state.detail){scrim.style.display='none';return;}
   scrim.style.display='flex';
-  var p=byId[state.detail], im=p.img?D.images[p.img]:null;
+  var p=byId[state.detail], sel=selIdx(p), key=selKey(p), im=rec(key);
   var d=el('div',{class:'drawer',onclick:function(e){e.stopPropagation();}});
   d.appendChild(el('div',{class:'top'},[
     el('div',{},[el('div',{class:'rg',text:p.range}),el('h3',{text:p.name})]),
     el('button',{class:'close',text:'×','aria-label':'Close',onclick:closeDetail})]));
   if(im){
     d.appendChild(el('div',{class:'dimg'},[el('div',{class:'in'},[
-      el('img',{src:src(p.img),alt:p.name})])]));
+      el('img',{src:src(key),alt:p.name,title:'See this icon at full size',
+        onclick:zoomable(p,function(){return selIdx(p);})})])]));
+    d.appendChild(el('div',{class:'zoomhint',text:'Tap the icon to see it at full size.'}));
+    // The alternatives, each with its own credit and its own reading below.
+    var st=strip(p,sel,function(n){ state.pick[p.id]=n; state.hot=1; syncStream(p); renderDrawer(true); });
+    if(st) d.appendChild(st);
     var cr=el('div',{class:'credit'});
     cr.innerHTML='<b style="color:var(--ink2);font-weight:600">'+esc(im.label)+'</b><br>'+esc(im.title)+(im.date?' · '+esc(im.date):'')+
       (im.artist?' · '+esc(im.artist):'')+' · '+esc(im.license)+
@@ -185,23 +329,36 @@ function renderDrawer(){
     }
     if(im&&hot.length){
       h.appendChild(el('div',{class:'hotintro',text:'Tap a marker to read what each part of the icon means.'}));
-      var wrap=el('div',{class:'hotwrap'},[el('img',{src:src(p.img),alt:p.name})]);
+      // Selecting a marker only moves the highlight: re-rendering the drawer would rebuild the
+      // scrolling element and throw the reader back to the top of the panel.
+      var marks=[],rows=[];
+      var selectHot=function(n,align){
+        state.hot=n;
+        marks.forEach(function(b,j){b.setAttribute('aria-current',j===n-1?'true':'false');});
+        rows.forEach(function(b,j){b.setAttribute('aria-current',j===n-1?'true':'false');});
+        if(align&&rows[n-1]) alignInDrawer(rows[n-1]);
+      };
+      var wrap=el('div',{class:'hotwrap'},[el('img',{src:src(key),alt:p.name,
+        title:'See this icon at full size',onclick:zoomable(p,function(){return selIdx(p);})})]);
       hot.forEach(function(x,i){
-        wrap.appendChild(el('button',{class:'hot',style:'top:'+x[2]+';left:'+x[3],
+        var b=el('button',{class:'hot',style:'top:'+x[2]+';left:'+x[3],
           'aria-current':state.hot===i+1?'true':'false',text:String(i+1),
-          onclick:function(){state.hot=i+1;renderDrawer();}}));
+          onclick:function(){selectHot(i+1,true);}});
+        marks.push(b); wrap.appendChild(b);
       });
       h.appendChild(wrap);
       var list=el('div',{class:'hotlist'});
       hot.forEach(function(x,i){
-        list.appendChild(el('button',{'aria-current':state.hot===i+1?'true':'false',
-          onclick:function(){state.hot=i+1;renderDrawer();}},[
+        var b=el('button',{'aria-current':state.hot===i+1?'true':'false',
+          onclick:function(){selectHot(i+1,false);}},[
           el('span',{class:'n',text:String(i+1)}),
-          el('span',{},[el('span',{class:'l',text:x[0]}),el('span',{class:'x',text:x[1]})])]));
+          el('span',{},[el('span',{class:'l',text:x[0]}),el('span',{class:'x',text:x[1]})])]);
+        rows.push(b); list.appendChild(b);
       });
       h.appendChild(list);
     }else if(im){
-      h.appendChild(el('div',{class:'hotwrap'},[el('img',{src:src(p.img),alt:p.name})]));
+      h.appendChild(el('div',{class:'hotwrap'},[el('img',{src:src(key),alt:p.name,
+        title:'See this icon at full size',onclick:zoomable(p,function(){return selIdx(p);})})]));
     }else{
       h.appendChild(el('div',{class:'nohot',text:'The Church has no traditional icon of this passage; it is read within the discourse it belongs to.'}));
     }
@@ -218,11 +375,18 @@ function renderDrawer(){
     d.appendChild(h);
   }
   scrim.appendChild(d);
+  if(was) d.scrollTop=was;
 }
 function openDetail(id){state.detail=id;state.active=id;state.tab=1;state.hot=1;renderDrawer();renderRail();markActive();}
-function closeDetail(){state.detail=null;renderDrawer();}
+function closeDetail(){closeLightbox();state.detail=null;renderDrawer();}
 scrim.addEventListener('click',closeDetail);
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDetail();});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){ if(lbEl) closeLightbox(); else closeDetail(); return; }
+  // Arrow keys step between the icons of one scene while the full-size view is open.
+  if(!lbEl||!lbCtx) return;
+  if(e.key==='ArrowLeft'){e.preventDefault();lbGo(lbCtx.p,lbCtx.i-1);}
+  else if(e.key==='ArrowRight'){e.preventDefault();lbGo(lbCtx.p,lbCtx.i+1);}
+});
 
 function markActive(){
   document.querySelectorAll('.passage').forEach(function(n){

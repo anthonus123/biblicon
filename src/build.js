@@ -28,7 +28,16 @@ if(missing.length){
   process.exit(1);
 }
 
-// attributions
+// attributions. The reader-supplied icon is kept out of the Commons list — it has no Commons
+// page and no licence to state — but the prose above the list promises "one exception noted
+// below", so it is named in its own line after the list rather than left unmentioned.
+const userKeys=Object.keys(D.images).filter(k=>D.images[k].license==='user-supplied');
+const whereShown=k=>(D.passages.find(p=>(p.imgs||[]).includes(k))||{}).range||'';
+const userNote=userKeys.length
+  ? `<p style="margin-top:14px">The exception is ${userKeys.map(k=>esc(D.images[k].label)
+      +(whereShown(k)?' at '+esc(whereShown(k)):'')).join(', ')}: supplied by the reader, `
+    +`not taken from Wikimedia Commons.</p>`
+  : '';
 const attribs=Object.values(D.images).filter(i=>i.license!=='user-supplied')
   .sort((a,b)=>a.title.localeCompare(b.title))
   .map(i=>`<li>${esc(i.title)}${i.date?' · '+esc(i.date):''}${i.artist?' · '+esc(i.artist):''} · ${esc(i.license)}${i.page?` · <a href="${i.page}" target="_blank" rel="noopener">Commons</a>`:''}</li>`).join('\n');
@@ -91,16 +100,22 @@ ${css}
   (Oxford: J.G.F. &amp; J. Rivington, 1842; public domain) — restricted here to Fathers venerated as saints
   in the Orthodox Church. The icons and frescoes are, with one exception noted below, public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
-  Every icon here stands for one passage only, and for the passage it actually depicts; no image is
-  used twice. Orthodox iconography is built on the feast cycle, the miracles and the saints, and it has
-  no scene-icon for most of the parables and teaching passages — those passages are given as plain text
-  rather than illustrated with a general image of Christ that would misrepresent them. A few passages
-  carry an icon the Church attaches to them without depicting their verses (the Good Shepherd beside
-  the Lost Sheep, the Prophet Jonah beside the sign of Jonah); each of those says so on the card.</p>
+  Where the Church has painted a scene more than once, this reader shows several of its icons
+  side by side — the Theophany at Langadas beside the Theophany in the Russian North, the
+  Lamentation at Nerezi beside the Lamentation of a Cretan master — and each one carries its own
+  reading saying where it was made and what it does differently. Every icon shown for a passage
+  depicts that passage&rsquo;s own scene, and no image appears under two passages. Orthodox
+  iconography is built on the feast cycle, the miracles and the saints, and it has no scene-icon
+  for most of the parables and teaching passages &mdash; those passages are given as plain text
+  rather than illustrated with a general image of Christ that would misrepresent them. A few
+  passages carry an icon the Church attaches to them without depicting their verses (the Good
+  Shepherd beside the Lost Sheep, the Prophet Jonah beside the sign of Jonah); each of those says
+  so on the card.</p>
   <h4 style="margin-top:26px">Images</h4>
   <ul>
 ${attribs}
   </ul>
+${userNote}
 </div></footer>
 <div class="scrim" id="scrim" style="display:none"></div>
 </div>

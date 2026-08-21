@@ -14,8 +14,11 @@ DATA    := src/data/icons.json
 PORT    := 8731
 
 # Everything the assembled data is derived from. Touch any of these and `make` redoes it.
+# Every hotspots file assemble.js requires has to be listed: hotspots3.js was left out when
+# it was added, so a session that wrote 73 sets of markers into it left icons.json — and the
+# shipped reader — a build behind, with no error anywhere to say so.
 SOURCES := src/assemble.js src/assign.js src/picks.js src/labels.js src/fathers.js \
-           src/hotspots.js src/hotspots2.js $(wildcard src/overrides.js) \
+           src/hotspots.js src/hotspots2.js src/hotspots3.js $(wildcard src/overrides.js) \
            $(wildcard src/stories.js) \
            src/data/anchors.json src/data/titles.json src/data/icons_orig.json \
            src/data/image_meta.json src/data/pick_keys.json src/data/matthew_kjv.json \
