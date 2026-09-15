@@ -148,7 +148,7 @@ module.exports={
 'File:019 Baptism of Jesus Icon from Saint Paraskevi Church in Langadas.jpg':[
  ["The light from above","A band of light comes down the middle of the panel to the head of Christ. The Father's voice and the descent of the Spirit are what give the feast its name: Theophany, the showing of God as Trinity, not merely the baptism of a man.","25%","48%"],
  ["Christ in the Jordan","He stands in the river as one condemned, with nothing on and nothing to say. St Augustine gives the reason the Church repeats at every blessing of water: he was baptized not to be cleansed himself, but to cleanse the water for us.","58%","47%"],
- ["The hand of the Forerunner","John's hand is stretched over the head of the one he had just called mightier than himself. Matthew records his protest — I have need to be baptized of thee, and comest thou to me? — and the answer that overruled it: suffer it to be so now.","45%","32%"],
+ ["The hand of the Forerunner","John's hand is stretched over the head of the one he had just called mightier than himself. Matthew records his protest — I have need to be baptized of thee, and comest thou to me? — and the answer that overruled it: suffer it to be so now.","47%","39%"],
  ["The angels on the bank","They wait at the right with their hands covered, holding the garments. Even the bodiless powers approach the mystery as servants approach a king, with nothing bare that could touch it.","48%","74%"],
  ["The water round him","The Jordan is painted dark and closing over him. St Ambrose recalls the psalm sung at this feast — Jordan was driven back — and says that where once the water turned back, now sin is turned back in its current.","75%","45%"]],
 
@@ -214,10 +214,10 @@ module.exports={
 'File:Iomenos Daimonizomenous Dionysiou.jpg':[
  ["The plural titulus","The Greek reads ΙΩΜΕΝΟΣ ΤΟΥΣ ΔΑΙΜΟΝΙΖΟΜΕΝΟΥΣ — healing those possessed with devils, in the plural. Matthew alone says there were two; the Athonite painter has followed Matthew and painted two.","6%","55%"],
  ["The two men","They are painted naked, wasted and unable to stand straight. Matthew says they were exceeding fierce, so that no man might pass by that way — the whole road had been given up to them.","45%","78%"],
- ["The devils coming out","Small black shapes leave the men and scatter into the air. Orthodox painting never gives evil bulk or beauty: it is drawn small, dark and already losing.","46%","44%"],
+ ["The devils coming out","Small black shapes leave the men and scatter into the air. Orthodox painting never gives evil bulk or beauty: it is drawn small, dark and already losing.","38%","67%"],
  ["The tomb","A rock-cut grave stands open at the foot of the fresco. They came out of the tombs, and St John Chrysostom says the detail was kept to correct a superstition — that the spirits crying out of these men were the souls of the dead, which they are not.","84%","72%"],
  ["The herdsmen on the hill","Two small figures in the field behind are the keepers of the swine, already running. They fled into the city and told everything; and the whole city came out and besought Christ to depart out of their coasts.","18%","52%"],
- ["The hand of Christ","He speaks one word — Go — and does not come near them. The devils had asked to be sent into the herd rather than into the deep, and the icon shows the command given at a distance.","58%","42%"]],
+ ["The hand of Christ","He speaks one word — Go — and does not come near them. The devils had asked to be sent into the herd rather than into the deep, and the icon shows the command given at a distance.","45%","43%"]],
 
 'File:Christos Iomenos Daimonon Takophon Dionysiou.jpg':[
  ["The Greek titulus","The inscription is τὸν δαιμονῶντα κωφόν — the dumb demoniac. St Jerome notes that the Greek word is used indifferently for deaf and for dumb; Matthew's point is that the man could neither hear the preaching nor ask for himself.","6%","60%"],
@@ -315,7 +315,7 @@ module.exports={
  ["The Greek titulus","The inscription is singular — Christ healing the one possessed with a devil. Matthew says the man was blind and dumb as well as possessed, and that after the healing both spake and saw.","15%","33%"],
  ["The hand of Christ","One gesture across the width of the fresco. St John Chrysostom's remark on this miracle is about what the devil had done: he had blocked both the ways by which a man could come to believe, hearing and sight, and Christ opened them both.","52%","35%"],
  ["The man","He stands stripped and bent at the left, his arms up. Orthodox painting does not make the possessed monstrous; he is a man in a bad state, and he is at the edge of the frame rather than the centre.","65%","18%"],
- ["The devil going out","A small dark shape scuttles away across the rock. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","70%","43%"],
+ ["The devil going out","A small dark shape scuttles away across the rock. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","42%","24%"],
  ["The apostles","They stand behind Christ, closed in a group. What follows this miracle in Matthew is the charge that he cast out devils by Beelzebub, and the warning about the sin against the Holy Spirit that is answered to it.","28%","80%"]],
 
 'File:Christos Pantokrator Dionysiou.jpg':[
@@ -516,20 +516,20 @@ module.exports={
 
 'File:Parable of the Wedding Feast 04-14.jpg':[
  ["The king","The crowned figure at the left is the one the parable begins with: the kingdom of heaven is like unto a certain king, which made a marriage for his son. Everything in the story is his — the feast, the invitation, and the anger.","35%","27%"],
- ["The servants carrying in the dishes","Men stride across the fresco with trays held high. Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. The refusal, when it comes, is not of a request but of a finished feast.","36%","43%"],
+ ["The servants carrying in the dishes","Men stride across the fresco with trays held high. Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. The refusal, when it comes, is not of a request but of a finished feast.","28%","51%"],
  ["The tables","White cloths and vessels are set out across the lower half. Dionisy painted this at Ferapontov in 1502; Orthodox programmes rarely paint the parables at all, and this is one of the few walls in the world where the wedding feast is on it.","65%","35%"],
  ["The guests","The men gathered at the right are the second set of invitations. Go ye therefore into the highways, and as many as ye shall find, bid to the marriage — and the servants gathered together all as many as they found, both bad and good.","40%","68%"],
  ["The hall","The architecture stands over the whole scene, prepared and open. The parable ends with a man thrown out of it for having no wedding garment, and with the sentence: for many are called, but few are chosen.","16%","30%"]],
 
 'File:Ten virgins 05-15.jpg':[
- ["Christ enthroned","He sits at the right with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","43%","52%"],
- ["The angels beside him","Two winged figures stand at either side of the throne. In Matthew's telling the door is shut by the bridegroom himself; the icon paints the household of heaven standing at it.","39%","62%"],
+ ["Christ enthroned","He sits at the right with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","44%","64%"],
+ ["The angels beside him","Two winged figures stand at either side of the throne. In Matthew's telling the door is shut by the bridegroom himself; the icon paints the household of heaven standing at it.","42%","77%"],
  ["The virgins","They come in a file from the left, all alike in dress. Five of them were wise, and five were foolish, and nothing in their appearance divides them — the difference is only what they brought.","45%","25%"],
  ["The lamps","Each carries her lamp on its long stem. They that were foolish took their lamps, and took no oil with them: but the wise took oil in their vessels with their lamps.","39%","30%"],
  ["The trees behind the throne","Tall plants rise behind him like the trees of paradise. Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh — the parable is set in Holy Week and points past it.","24%","52%"]],
 
 'File:John Tokhabi, Last Judgment, around 1100. Icon, tempera. St Catherine monastery on Sinai, Egypt.jpg':[
- ["Christ in judgment","At the top right he sits enthroned with the apostles ranked on either side. When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations.","16%","72%"],
+ ["Christ in judgment","The centre of the top register, where he sat enthroned, is worn down to the ground; what survives around it says what was there. The Theotokos at the left and the Forerunner at the right stand turned toward the empty place with their hands raised — the Deesis, the Church's own picture of intercession at the Judgment — and the apostles sit ranked on either side of them with open books. When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations.","15%","49%"],
  ["The river of fire","A broad band of red runs out from under the throne and down the panel. Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire — the icon makes the fire flow from the throne itself, not from somewhere else.","45%","62%"],
  ["The enemy in the fire","A dark enthroned figure sits inside the burning with a small soul on his knees. Orthodox Judgment icons paint him as a prisoner in his own place, seated but going nowhere.","46%","70%"],
  ["The ranks of the saved","The whole left half is filled with orderly rows — apostles, bishops, martyrs, monks, women. They are painted standing quietly in ranks, while the other side of the panel is all motion.","45%","20%"],
