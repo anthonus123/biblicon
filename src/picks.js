@@ -192,7 +192,6 @@ module.exports={
     "File:09 Epitaphios Icon in Assumption of Mary Church in Agios Vasileios.jpg",
   ],
   "guard27": [
-    "File:Mnemeion Christou Dionysiou.jpg",
     "File:Sealing of Christ's Tomb (Russia, 19th c.).jpg",
     "File:Sleeping soldiers by Christ's tomb, Mileševa.jpg",
   ],

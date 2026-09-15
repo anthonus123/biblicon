@@ -89,7 +89,7 @@ module.exports={
 'File:Aponepsis Pilatou Dionysiou.jpg':
  "Pilate washing his hands — Dionysiou, Athos. The governor is enthroned and a servant pours water over his fingers while Christ stands to one side. I am innocent of the blood of this just person: see ye to it. The icon fixes the moment a man performs a ritual of innocence in the act of committing the crime.",
 'File:Mnemeion Christou Dionysiou.jpg':
- "The tomb of Christ — Dionysiou, Athos. The sealed sepulchre with its watch, from the end of Matthew 27. The chief priests asked for a guard lest the disciples steal him away; the Church has always noted that they thereby provided the Resurrection with impartial witnesses and made the stone’s seal part of the evidence.",
+ "Peter and John at the empty tomb — Dionysiou, Athos. The inscription reads Ο ΔΕ ΠΕΤΡΟΣ ΚΑΙ ΙΩΑΝΝΗΣ ΕΔΡΑΜΟΝ ΕΠΙ ΤΟ ΜΝΗΜΕΙΟΝ, but Peter and John ran to the tomb, which is John 20:3, and the grave-clothes lie inside the open sepulchre marked Ο ΑΓΙΟΣ ΤΑΦΟΣ. There is no stone, no seal and no watch: it is not the sealing of the tomb, and it depicts no passage of Matthew. Kept only as the record of that finding.",
 
 // Readings for the further icons of a scene. Each one says where and when it was made and
 // what it does differently from the icon it stands beside — that difference is the reason it

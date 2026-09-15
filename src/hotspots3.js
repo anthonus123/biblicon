@@ -148,7 +148,7 @@ module.exports={
 'File:019 Baptism of Jesus Icon from Saint Paraskevi Church in Langadas.jpg':[
  ["The light from above","A band of light comes down the middle of the panel to the head of Christ. The Father's voice and the descent of the Spirit are what give the feast its name: Theophany, the showing of God as Trinity, not merely the baptism of a man.","25%","48%"],
  ["Christ in the Jordan","He stands in the river as one condemned, with nothing on and nothing to say. St Augustine gives the reason the Church repeats at every blessing of water: he was baptized not to be cleansed himself, but to cleanse the water for us.","58%","47%"],
- ["The hand of the Forerunner","John's hand is stretched over the head of the one he had just called mightier than himself. Matthew records his protest — I have need to be baptized of thee, and comest thou to me? — and the answer that overruled it: suffer it to be so now.","45%","32%"],
+ ["The hand of the Forerunner","John's hand is stretched over the head of the one he had just called mightier than himself. Matthew records his protest — I have need to be baptized of thee, and comest thou to me? — and the answer that overruled it: suffer it to be so now.","47%","39%"],
  ["The angels on the bank","They wait at the right with their hands covered, holding the garments. Even the bodiless powers approach the mystery as servants approach a king, with nothing bare that could touch it.","48%","74%"],
  ["The water round him","The Jordan is painted dark and closing over him. St Ambrose recalls the psalm sung at this feast — Jordan was driven back — and says that where once the water turned back, now sin is turned back in its current.","75%","45%"]],
 
@@ -214,10 +214,10 @@ module.exports={
 'File:Iomenos Daimonizomenous Dionysiou.jpg':[
  ["The plural titulus","The Greek reads ΙΩΜΕΝΟΣ ΤΟΥΣ ΔΑΙΜΟΝΙΖΟΜΕΝΟΥΣ — healing those possessed with devils, in the plural. Matthew alone says there were two; the Athonite painter has followed Matthew and painted two.","6%","55%"],
  ["The two men","They are painted naked, wasted and unable to stand straight. Matthew says they were exceeding fierce, so that no man might pass by that way — the whole road had been given up to them.","45%","78%"],
- ["The devils coming out","Small black shapes leave the men and scatter into the air. Orthodox painting never gives evil bulk or beauty: it is drawn small, dark and already losing.","46%","44%"],
+ ["The devils coming out","Small black shapes leave the men and scatter into the air. Orthodox painting never gives evil bulk or beauty: it is drawn small, dark and already losing.","38%","67%"],
  ["The tomb","A rock-cut grave stands open at the foot of the fresco. They came out of the tombs, and St John Chrysostom says the detail was kept to correct a superstition — that the spirits crying out of these men were the souls of the dead, which they are not.","84%","72%"],
  ["The herdsmen on the hill","Two small figures in the field behind are the keepers of the swine, already running. They fled into the city and told everything; and the whole city came out and besought Christ to depart out of their coasts.","18%","52%"],
- ["The hand of Christ","He speaks one word — Go — and does not come near them. The devils had asked to be sent into the herd rather than into the deep, and the icon shows the command given at a distance.","58%","42%"]],
+ ["The hand of Christ","He speaks one word — Go — and does not come near them. The devils had asked to be sent into the herd rather than into the deep, and the icon shows the command given at a distance.","45%","43%"]],
 
 'File:Christos Iomenos Daimonon Takophon Dionysiou.jpg':[
  ["The Greek titulus","The inscription is τὸν δαιμονῶντα κωφόν — the dumb demoniac. St Jerome notes that the Greek word is used indifferently for deaf and for dumb; Matthew's point is that the man could neither hear the preaching nor ask for himself.","6%","60%"],
@@ -315,7 +315,7 @@ module.exports={
  ["The Greek titulus","The inscription is singular — Christ healing the one possessed with a devil. Matthew says the man was blind and dumb as well as possessed, and that after the healing both spake and saw.","15%","33%"],
  ["The hand of Christ","One gesture across the width of the fresco. St John Chrysostom's remark on this miracle is about what the devil had done: he had blocked both the ways by which a man could come to believe, hearing and sight, and Christ opened them both.","52%","35%"],
  ["The man","He stands stripped and bent at the left, his arms up. Orthodox painting does not make the possessed monstrous; he is a man in a bad state, and he is at the edge of the frame rather than the centre.","65%","18%"],
- ["The devil going out","A small dark shape scuttles away across the rock. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","70%","43%"],
+ ["The devil going out","A small dark shape scuttles away across the rock. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","42%","24%"],
  ["The apostles","They stand behind Christ, closed in a group. What follows this miracle in Matthew is the charge that he cast out devils by Beelzebub, and the warning about the sin against the Holy Spirit that is answered to it.","28%","80%"]],
 
 'File:Christos Pantokrator Dionysiou.jpg':[
@@ -516,20 +516,20 @@ module.exports={
 
 'File:Parable of the Wedding Feast 04-14.jpg':[
  ["The king","The crowned figure at the left is the one the parable begins with: the kingdom of heaven is like unto a certain king, which made a marriage for his son. Everything in the story is his — the feast, the invitation, and the anger.","35%","27%"],
- ["The servants carrying in the dishes","Men stride across the fresco with trays held high. Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. The refusal, when it comes, is not of a request but of a finished feast.","36%","43%"],
+ ["The servants carrying in the dishes","Men stride across the fresco with trays held high. Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. The refusal, when it comes, is not of a request but of a finished feast.","28%","51%"],
  ["The tables","White cloths and vessels are set out across the lower half. Dionisy painted this at Ferapontov in 1502; Orthodox programmes rarely paint the parables at all, and this is one of the few walls in the world where the wedding feast is on it.","65%","35%"],
  ["The guests","The men gathered at the right are the second set of invitations. Go ye therefore into the highways, and as many as ye shall find, bid to the marriage — and the servants gathered together all as many as they found, both bad and good.","40%","68%"],
  ["The hall","The architecture stands over the whole scene, prepared and open. The parable ends with a man thrown out of it for having no wedding garment, and with the sentence: for many are called, but few are chosen.","16%","30%"]],
 
 'File:Ten virgins 05-15.jpg':[
- ["Christ enthroned","He sits at the right with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","43%","52%"],
- ["The angels beside him","Two winged figures stand at either side of the throne. In Matthew's telling the door is shut by the bridegroom himself; the icon paints the household of heaven standing at it.","39%","62%"],
+ ["Christ enthroned","He sits at the right with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","44%","64%"],
+ ["The angels beside him","Two winged figures stand at either side of the throne. In Matthew's telling the door is shut by the bridegroom himself; the icon paints the household of heaven standing at it.","42%","77%"],
  ["The virgins","They come in a file from the left, all alike in dress. Five of them were wise, and five were foolish, and nothing in their appearance divides them — the difference is only what they brought.","45%","25%"],
  ["The lamps","Each carries her lamp on its long stem. They that were foolish took their lamps, and took no oil with them: but the wise took oil in their vessels with their lamps.","39%","30%"],
  ["The trees behind the throne","Tall plants rise behind him like the trees of paradise. Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh — the parable is set in Holy Week and points past it.","24%","52%"]],
 
 'File:John Tokhabi, Last Judgment, around 1100. Icon, tempera. St Catherine monastery on Sinai, Egypt.jpg':[
- ["Christ in judgment","At the top right he sits enthroned with the apostles ranked on either side. When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations.","16%","72%"],
+ ["Christ in judgment","The centre of the top register, where he sat enthroned, is worn down to the ground; what survives around it says what was there. The Theotokos at the left and the Forerunner at the right stand turned toward the empty place with their hands raised — the Deesis, the Church's own picture of intercession at the Judgment — and the apostles sit ranked on either side of them with open books. When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations.","15%","49%"],
  ["The river of fire","A broad band of red runs out from under the throne and down the panel. Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire — the icon makes the fire flow from the throne itself, not from somewhere else.","45%","62%"],
  ["The enemy in the fire","A dark enthroned figure sits inside the burning with a small soul on his knees. Orthodox Judgment icons paint him as a prisoner in his own place, seated but going nowhere.","46%","70%"],
  ["The ranks of the saved","The whole left half is filled with orderly rows — apostles, bishops, martyrs, monks, women. They are painted standing quietly in ranks, while the other side of the panel is all motion.","45%","20%"],
@@ -544,4 +544,211 @@ module.exports={
  ["The river of fire","The red stream runs the whole height of the icon, from under the throne to the bottom edge. Orthodox iconography paints judgment as one continuous thing descending, not as a courtroom.","52%","50%"],
  ["The ranks of the saved","Along the left the orders of the saved are drawn up in bands — patriarchs, bishops, monks, martyrs. Watch therefore: for ye know not what hour your Lord doth come.","65%","18%"],
  ["The earth and the sea giving up their dead","Along the bottom the ground opens and the water gives back the bodies in it. Klontzas painted this in Crete at the end of the sixteenth century, and he has left nobody out of the picture.","90%","25%"]],
+
+// ---- The Passion, Matthew 26:6 to 27:66 (added 2026-09-15) ----
+'File:Monreale - Anointing at Bethany.jpg':[
+ ["Christ at the table","He reclines at the left of the table, haloed, with his hand raised toward the company. Matthew sets the meal in the house of Simon the leper at Bethany, two days before the Passover, while the chief priests are already consulting how to take him: the icon shows him at ease at a supper with the plot made.","38%","17%"],
+ ["The woman at his feet","She is laid along the floor at his feet, the only figure in the mosaic not upright. Matthew has her pour the ointment on his head; the mosaicist follows John, who puts her at his feet with her hair. The Church reads every account of her in Holy Week and does not sort them: what it keeps is that she understood what the twelve did not.","78%","27%"],
+ ["The alabaster vessel","The small jar stands at the edge of the floor where she set it down. An alabaster box of very precious ointment — the disciples price it, and she does not.","86%","12%"],
+ ["The murmuring disciples","They are packed at the right with their hands up in argument. To what purpose is this waste? Christ answers that the poor they will always have, and that she has done a good work upon him.","40%","72%"],
+ ["The dish on the table","One dish at the centre of the cloth in front of the guests. The supper at Bethany opens the Passion narrative and the next meal Matthew describes is the Mystical Supper; it is at table that he says she did it for my burial.","57%","42%"]],
+
+'File:Judas receiving money, icon of Yaroslavl (19 c, priv.coll).jpg':[
+ ["Judas","He stands at the left in a plain robe with his hand out over the table, the one figure set apart from the group. What will ye give me, and I will deliver him unto you? — Matthew has him open the bargaining himself.","45%","22%"],
+ ["The high priest","Seated at the centre under the canopy in the headdress of the priesthood, he counts the money out onto the cloth. Matthew says they covenanted with him: the offer is Judas's, the price is theirs.","37%","50%"],
+ ["The thirty pieces of silver","The coins lie in a small heap on the table between them. Thirty shekels was the sum the Law set for a slave gored by an ox, and Zechariah had named it in scorn: a goodly price that I was prised at of them.","55%","50%"],
+ ["The elders","A row of turbaned heads and one seated elder in red crowd the right-hand side. The council is painted as a body rather than as men: after naming Caiaphas once, Matthew speaks only of the chief priests and elders.","42%","78%"],
+ ["The canopy and the drawn curtain","The scene is set under a draped canopy between two towers, the painter's convention for indoors — the palace of the high priest where they assembled. The curtain is pulled back so that what was done in private is shown.","15%","50%"]],
+
+'File:05 Last Supper Icon from Saint Paraskevi Church in Adam.jpg':[
+ ["Christ at the head of the table","He sits at the top of the table with the cruciform halo and his hand raised in blessing over the bread. Take, eat; this is my body — the Liturgy repeats Matthew's words at every Eucharist.","28%","48%"],
+ ["The inscription","ὁ δεῖπνος ὁ μυστικός — the Mystical Supper — is written on either side of the hanging lamp. The Greek Church does not call this the Last Supper: not the last meal but the first Liturgy.","12%","40%"],
+ ["The beloved disciple","John leans back against the Lord, the only beardless face among the twelve. Matthew does not report it; the painter takes it from John's own Gospel, and the two accounts have always been painted as one.","44%","38%"],
+ ["The hand across the cloth","At the front of the table one disciple reaches over toward the dish. He that dippeth his hand with me in the dish, the same shall betray me — the painter names no one and paints the reach.","62%","66%"],
+ ["The single dish","One bowl in the middle of the table, with the bread and the cup beside it. Matthew's account of this meal is the one the Church reads on Holy Thursday, and what is on this table is all that he records being blessed.","52%","52%"]],
+
+'File:Kirillo-Belozersky iconostasis 12 - Last Supper.jpg':[
+ ["Christ","He reclines at the head of the table at the upper left, the only haloed figure, with his hand over the disciple at his breast. The panel was painted for the festival tier of a screen, to be read from the nave: the Lord is found first, at the top.","32%","17%"],
+ ["The beloved disciple","John rests against the Lord, painted small and close. The detail is from John's own Gospel, set into Matthew's meal; the Church has never painted the Supper without it.","43%","22%"],
+ ["The hand stretched to the dish","At the far side of the table one apostle reaches across the cloth. Matthew's sign is exact — he that dippeth his hand with me in the dish — and the painter gives the man nothing else to mark him: no colour, no place, only the reach.","48%","50%"],
+ ["The table stood on end","The top of the table is tilted up until the cup and the dishes sit in full view. An icon does not use perspective to lead the eye into the room; it turns the room out toward the reader, so that nothing on the table can be hidden.","57%","50%"],
+ ["The apostles in one curve","Eleven men run round the table in a single unbroken arc and every face is turned in. Painted for a screen seen from the floor, the composition is reduced to one shape, and the shape is the Church at table.","66%","60%"],
+ ["The borrowed room","Two towers at the corners with a wall between them frame the scene, the convention for indoors. Matthew has the disciples sent into the city to a certain man: the room is borrowed, and the icon does not dress it up.","15%","18%"]],
+
+'File:Alektor Petrou Dionysiou.jpg':[
+ ["The inscription","Η ΑΡΝΗΣΙΣ ΤΟΥ ΠΕΤΡΟΥ — the denial of Peter — across the top. The fresco tells the story three times in one field, as Matthew tells it: Peter answers three people in three places.","5%","35%"],
+ ["Peter at the fire","He sits among the servants at the fire in the courtyard, and a hand goes up in protest: I know not what thou sayest. Matthew records that he had followed afar off, and got this far in.","52%","27%"],
+ ["The damsel at the door","A woman in red stands in the doorway and points. Thou also wast with Jesus of Galilee — the first accuser is a servant girl, and the apostle who drew a sword in the garden is undone by her.","30%","53%"],
+ ["Peter at the porch","He is painted a second time, gone out into the porch, where another maid names him again. Matthew notes that the second denial was with an oath: each answer is worse than the last.","35%","42%"],
+ ["Peter weeping","At the top right he sits alone with his face in his hands. And he went out, and wept bitterly. The Church reads the bitter weeping as the beginning of his return, and sets it against the remorse of Judas, which had no return in it.","12%","73%"],
+ ["The cock on the parapet","The bird stands on the wall above him, small and exact. Before the cock crow, thou shalt deny me thrice — it is painted at the moment its cry is heard, over the man who remembers.","6%","87%"]],
+
+"File:The Lord's prayer in Gethsemane - Stavronikita monastery, Mt Athos - Theophanes of Crete, 16th c..jpg":[
+ ["Christ at prayer on the rock","At the upper left he kneels on the rock, bowed toward the ground, alone. O my Father, if it be possible, let this cup pass from me. The Church reads the agony as the true will of a true man, freely brought under the Father's.","30%","25%"],
+ ["The prayer painted three times","He kneels again at the right, and again at the top: three prayers, as Matthew counts them — he went away again the second time, and prayed the third time, saying the same words. The fresco does not choose one moment; it gives the whole night.","32%","85%"],
+ ["Christ returning to the disciples","He comes down the rock, standing, with his hand out toward the sleepers. What, could ye not watch with me one hour? It is said to Peter, who had sworn an hour before that he would die with him.","46%","55%"],
+ ["The disciples asleep","The three are heaped across the foot of the wall, wrapped in their cloaks, heads down. The spirit indeed is willing, but the flesh is weak — the painter gives their sleep as much of the field as his prayer, which is fair to the text.","76%","55%"],
+ ["The rock of the garden","The mountain is cut in jagged steps of grey and black. In Orthodox painting rock is never scenery: it is the hardness of the world, and the light along its edges is the only light in the picture.","50%","15%"]],
+
+'File:Gethsemane Dionysiou.jpg':[
+ ["The inscription","Η ΠΡΟΣΕΥΧΗ — the Prayer — across the top, with the monogram ΙΣ ΧΣ written beside each figure of Christ. The one name is written four times because the one Lord is painted four times.","5%","28%"],
+ ["Christ kneeling in prayer","At the far left he kneels on the rock with his hands stretched out. Matthew says he fell on his face and prayed; the painter keeps him upright enough for the reader to see the face.","28%","17%"],
+ ["The three prayers","He kneels again at the centre and again beside it: three times in one field, as Matthew counts three prayers with the same words. Iconography paints time as space — to read the fresco from left to right is to keep the watch through the night.","28%","57%"],
+ ["Christ returning","At the right he stands over the disciples with his hand out to wake them. Rise, let us be going: behold, he is at hand that doth betray me. The prayer ends where the arrest begins.","32%","83%"],
+ ["Peter waking","One disciple in yellow half sits up among the sleepers with a hand raised — the one Christ addresses. Matthew has the reproach said to Peter for all three: could ye not watch with me one hour?","50%","72%"],
+ ["The sleepers","The rest lie in a heap at the foot of the rock, wrapped and inert. They are given the lower register on purpose: the icon sets the watching above the sleeping.","78%","75%"]],
+
+'File:Cathedral (Monreale) - Right wing transept - Agony in the Garden.jpg':[
+ ["The inscription","The Latin band along the top carries the verse: VIGILATE ET ORATE UT NON INTRETIS IN TEMPTATIONEM — watch and pray, that ye enter not into temptation. The mosaicists chose the words spoken to the sleepers rather than the prayer itself.","6%","82%"],
+ ["The angel out of the gold","A winged figure comes down head-first out of the gold ground toward the one praying. Matthew does not mention the angel; Luke does — there appeared an angel unto him from heaven, strengthening him — and the mosaic gives Matthew's night Luke's comfort.","12%","48%"],
+ ["Christ at prayer","At the upper right he kneels on the hill with both hands lifted toward the angel. O my Father, if it be possible, let this cup pass from me — the mosaic paints the petition, and the lifted hands are the nevertheless.","22%","68%"],
+ ["Christ returning to the sleepers","He is painted a second time at the right, standing and bending toward the heap of disciples with his hand out. The words in the band above are said here: could ye not watch with me one hour?","55%","90%"],
+ ["The disciples asleep","They are heaped together across the middle of the panel, more than half of it, wrapped and slumped against one another. Matthew has him find them asleep three times; the mosaicists paint the sleep once and give it the whole hillside.","60%","38%"]],
+
+'File:Prodosia Dionysiou.jpg':[
+ ["The inscription","Η ΠΡΟΔΟΣΙΑ — the Betrayal — is written across the top. The Greek word means the handing-over and the treachery at once, which is exactly Matthew's account.","5%","60%"],
+ ["Judas's kiss","He comes at the Lord from the left with both arms round him and his face pressed to his. Hail, master; and kissed him. The painter gives Judas no halo: the two heads are side by side, and the difference between them is the light.","40%","50%"],
+ ["Christ unmoved","He stands perfectly still at the centre of a scene that is nothing but motion, with the cruciform halo and one hand lowered. Friend, wherefore art thou come? — Matthew's word for him is friend, and the icon keeps the calm of it.","42%","60%"],
+ ["Peter with the sword","At the left a disciple has drawn a sword and strikes. Matthew does not name him; John does, and names the servant Malchus. Put up again thy sword into his place — the icon paints the blow so that the command can be heard.","48%","27%"],
+ ["The staves and torches","Swords, clubs and a lit torch bristle over the heads of the crowd. A great multitude with swords and staves, from the chief priests and elders of the people — the painter sets the weapons above the faces, so that the arrest is seen first as a forest of arms.","24%","40%"],
+ ["The soldier seizing him","A man in armour at the right takes hold of him. Then came they, and laid hands on Jesus, and took him. Peter's blow and the soldier's grip are painted on either side of the kiss.","45%","72%"]],
+
+"File:Judas's kiss (Monreale).jpg":[
+ ["TRADITIO","TRADITIO — the handing over — is written at the top left, and DOMINI, of the Lord, at the other end of the band. The Latin makes a noun of what Judas did; the Greek word, prodosia, means treachery and delivery at once.","8%","10%"],
+ ["Christ","He stands haloed at the centre with his face turned to the man kissing him. Matthew has him answer with a question — Friend, wherefore art thou come? — and the mosaic gives him the still face of one who already knows.","33%","44%"],
+ ["Judas's embrace","Judas has both arms round the Lord's shoulders and their two heads are set together in the middle of the crowd. Whomsoever I shall kiss, that same is he: hold him fast. The sign of friendship is made the sign of arrest.","48%","56%"],
+ ["Peter and the servant","At the bottom left Peter bends over the high priest's servant, who is down on the ground, and cuts off his ear. All they that take the sword shall perish with the sword — the mosaic puts the blow in the corner, under the arrest, where it changes nothing.","85%","15%"],
+ ["The lantern and the spears","A lantern hangs from a pole above the crowd and the spears stand up thick against the gold. The arrest was by night, with lanterns and torches and weapons: the mosaicists set the lights and the iron above the heads, so that the crowd is seen as a crowd before it is seen as faces.","10%","84%"],
+ ["The soldier at the right","A man in helmet and cuirass stands apart at the right edge. Matthew's multitude is sent by the chief priests and elders; the mosaic adds one Roman in armour to it, and the state stands behind the council.","45%","90%"]],
+
+'File:Kiss of Judas (Church of Saint Nicolas the Orphan).jpg':[
+ ["Christ","He stands at the right of the pair with the cruciform halo, upright and unresisting, one hand at his side. The arrest is already happening round him, and the painter leaves him the only still figure on the wall.","32%","72%"],
+ ["Judas","He leans in from the left with his face pressed to the Lord's and his arm across his shoulder. Hail, master. The two heads are set side by side so that the reader can compare them: one has the light, and one does not.","38%","62%"],
+ ["The forest of weapons","Swords, axes and spears are raised in a line across the top of the fresco, above every head. A great multitude with swords and staves — the painter gives the crowd its weapons before its faces.","5%","45%"],
+ ["The lantern","A lantern burns at the top of the press, red against the dark. The arrest was at night, and Orthodox painters keep the lights lit in the Betrayal so that the reader remembers it was done in the dark.","5%","72%"],
+ ["Peter's sword","At the left a disciple in red has drawn a sword and strikes at a man in the crowd. Put up again thy sword — the painter puts the blow at the edge and the command in the centre.","28%","14%"],
+ ["The soldiers in helmets","Helmeted heads press in behind the crowd. Matthew's arresting party comes from the chief priests, and the painter adds to it the armour of the state.","28%","30%"]],
+
+'File:Krinomenos Christou Dionysiou.jpg':[
+ ["The inscription","Ο ΧΡΙΣΤΟΣ ΚΡΙΝΟΜΕΝΟΣ ΥΠΟ ΑΝΝΑ ΚΑΙ ΚΑΪΑΦΑ — Christ judged by Annas and Caiaphas. Matthew names only Caiaphas; the hearing before Annas is John's, and the painter puts the two trials into one room and names both judges.","5%","55%"],
+ ["Caiaphas rending his garments","The high priest on the raised seat grips the front of his robe with both hands. Then the high priest rent his clothes, saying, He hath spoken blasphemy — the icon fixes the instant after Christ's answer, when the verdict is given by a gesture.","55%","17%"],
+ ["Annas","A second elder sits beside him in a hood. Matthew brings Christ straight to Caiaphas; the painter, following John, seats the father-in-law at his side, so that the reader sees the whole council that was answering him.","47%","31%"],
+ ["Christ standing","He stands before the seated judges, haloed, answering nothing. Jesus held his peace — until the oath, when he says, Thou hast said. The composition is the reverse of an icon of Christ enthroned: the Judge stands, and men sit above him.","42%","70%"],
+ ["The book on the lectern","An open book and an inkwell stand between the judges and the accused. They sought false witness against Jesus, to put him to death: the writing-desk is the trial's apparatus, painted plainly.","57%","58%"],
+ ["The soldier","A soldier in a cuirass stands at his back with a spear. The painter adds the guard Matthew does not describe, so that the reader sees Christ held while the priests deliberate.","50%","88%"]],
+
+'File:Christ before Caiaphas, GRACANICA 1 090A7764.jpg':[
+ ["Caiaphas enthroned","He sits raised on his seat at the left with a hand lifted toward the accused. I adjure thee by the living God, that thou tell us whether thou be the Christ — the whole hearing turns on this one question, and the painter gives him the gesture of it.","48%","25%"],
+ ["The accuser","A figure in red between the seat and the prisoner points and speaks. Many false witnesses came, yet found they none; at the last came two. The fresco gives the witnesses one pointing arm.","42%","36%"],
+ ["Christ","He stands haloed among the guards at the right, silent. Jesus held his peace — Matthew has him say nothing until the oath, and the fresco shows him before that moment, while the case is still being made.","44%","72%"],
+ ["The soldier holding him","A helmeted man at his side holds him by the arm. The prisoner between soldiers is how every trial scene of the Passion shows him: he is led, and does not walk.","44%","62%"],
+ ["The elders","Behind the guards the elders stand in a group at the right edge. All the council sought false witness — the painter fills the edge with them, so that the prisoner is enclosed on both sides.","45%","86%"],
+ ["The cock below the trial","At the bottom edge a cock stands beside the beginning of another scene. Matthew ends this passage with Peter in the courtyard; at Gračanica the denial is painted directly under the hearing, so that the two go on at once.","92%","17%"]],
+
+'File:Ypestrepseta Triakonta Argyria Ioudas.jpg':[
+ ["The inscription","ΥΠΕΣΤΡΕΨΕ ΤΑ ΤΡΙΑΚΟΝΤΑ ΑΡΓΥΡΙΑ — he brought back the thirty pieces of silver. The painter titles the scene with Matthew's own verb.","4%","80%"],
+ ["Judas at the priests' table","He stands in red at the table with his hand out over it, emptying it. I have sinned in that I have betrayed the innocent blood. What is it to us? see thou to that — the icon gives the priests the seats and Judas the floor.","50%","73%"],
+ ["The silver on the cloth","The coins lie on the table where he has cast them down. He cast down the pieces of silver in the temple, and departed — and the priests, who would not put blood money into the treasury, bought the potter's field with it.","58%","86%"],
+ ["The priests","Two seated figures at the far end of the table receive him without rising. They took the money back and washed their hands of the man; the painter shows them already turned to the next business.","38%","88%"],
+ ["Judas hanged","At the far left, in the same field, he hangs from the tree. And he went and hanged himself — the two moments are painted as one wall, the confession at one end and the rope at the other, with nothing between them but the road.","30%","6%"],
+ ["The temple between","The buildings stand between the two scenes: the temple where the money was thrown down, and the way out of it. The fresco makes the architecture the distance Judas walked.","30%","42%"]],
+
+'File:Judas hangs himself. Gelati fresco.JPG':[
+ ["The tree","A single tree with a spreading crown, and nothing else grows in the picture. And he went and hanged himself — Matthew gives the death one clause, and the painter gives it one tree.","12%","60%"],
+ ["The rope","A cord runs from the branch to the neck and the head is thrown back against it. The face is painted, which Orthodox painters seldom do for the lost: he is shown as a man, not as a devil.","24%","44%"],
+ ["The empty rocks","The landscape is bare rock in steps, with no city and no witness. The scene is set outside everything — outside the temple, outside the company of the apostles, outside the walls.","50%","15%"],
+ ["The open hands","The arms hang loose and the hands are open and empty. The silver he brought back lies on the priests' table in the fresco beside this one; here he holds nothing.","57%","65%"],
+ ["The feet off the ground","The feet do not reach the rock. The Church sets his end against Peter's: both failed the Lord that night and both were sorry, and one went back and one went out.","75%","50%"]],
+
+'File:Aponepsis Pilatou Dionysiou.jpg':[
+ ["The inscription","Η ΑΠΟΝΙΨΙΣ ΤΟΥ ΠΙΛΑΤΟΥ — the washing of Pilate's hands — across the top, with ΙΣ ΧΣ beside the halo. The painter names the scene by the gesture Matthew alone records.","4%","55%"],
+ ["Pilate on the judgment seat","He sits crowned on a raised seat in the dress of a Byzantine official and holds his hands out over the basin. When Pilate saw that he could prevail nothing, but that rather a tumult was made, he took water — the fresco shows a man performing a rite of innocence in the act of the crime.","40%","30%"],
+ ["The water poured","A servant in a soldier's tunic tips the ewer over his fingers into the basin. I am innocent of the blood of this just person: see ye to it. Water washes hands; the icon leaves the reader to judge what else it washed.","48%","47%"],
+ ["Christ","He stands at the governor's side with the cruciform halo, hands held before him, silent. The verse here is theirs, not his — His blood be on us, and on our children — and the icon paints him hearing it.","45%","68%"],
+ ["The woman behind the seat","A woman stands close at Pilate's shoulder. Matthew alone records that his wife sent unto him, saying, Have thou nothing to do with that just man; the painter gives her message a figure.","42%","11%"],
+ ["The chief priests","The elders press in from the right, one hand raised at the front of them. They persuaded the multitude that they should ask Barabbas, and destroy Jesus — the crowd is not painted; the men who moved it are.","35%","85%"]],
+
+'File:Flagellation of Christ (icon).jpg':[
+ ["Christ at the column","He stands stripped to the waist with his hands bound to the pillar and his head turned aside. And when he had scourged Jesus — the icon gives one verb of Matthew's a whole board.","35%","42%"],
+ ["The bound hands","The wrists are tied together round the column at the front. Orthodox painting keeps the body upright and composed even here: the suffering is shown, and the disgrace is not painted into the face.","52%","50%"],
+ ["The scourger at the left","Arm back, whip in the air, caught at the top of the stroke. Neither blow has yet landed: the painter shows the sentence, not the wounds.","55%","20%"],
+ ["The scourger at the right","The second man mirrors the first from the other side, so that Christ is enclosed between the two strokes. Pilate delivered him to be crucified, and this is the first thing that delivery meant.","55%","80%"],
+ ["The column","A dark pillar with a carved capital, taller than the men. The pillar of the scourging was shown to pilgrims in Jerusalem as a relic, and Russian painters give it this plain form.","10%","52%"],
+ ["The wall","A crenellated wall runs flat behind the three figures, with no door in it. The scene is inside the praetorium; the icon gives the room one wall and nothing else that could draw the eye from the column.","40%","80%"]],
+
+'File:Crucifixion Icon Sinai 12th century.jpg':[
+ ["Christ on the cross","The body is laid along the cross in a long curve, the head fallen toward his Mother. Twelfth-century painters used this curve to show a death that is not a defeat: he is not slumped on the wood, he is laid on it.","35%","50%"],
+ ["The name above the cross","ΙΣ ΧΣ, the monogram of Jesus Christ, above the cross-bar. Matthew records the charge Pilate set over his head — THIS IS JESUS THE KING OF THE JEWS — and the icon puts the name where the accusation was.","18%","50%"],
+ ["The angels above the arms","Two small angels bend down out of the gold on either side of the cross with their hands covered. The hosts of heaven are painted grieving: what is happening below them is beyond their office.","22%","38%"],
+ ["The Theotokos","She stands at his right hand in a dark maphorion with one hand raised to her face. Matthew names the women beholding afar off; the Church brings his own Mother to the foot of the cross from John's account, and has painted her there since the earliest icons of the scene.","55%","32%"],
+ ["The beloved disciple","John stands on the other side with his hand to his cheek, the posture of mourning. The Mother and the disciple on either side of the cross is the oldest Orthodox composition of the scene, and this small panel keeps it exactly.","55%","68%"],
+ ["The saints in the border","Bishops, soldiers, martyrs, monks and women fill the frame in rows. The panel is small enough to have been a private icon, and its owner set the whole Church round the cross: the martyrs in the border died the death painted in the middle.","42%","10%"]],
+
+'File:024 Crucifixion of Jesus Icon from Saint Paraskevi Church in Langadas.jpg':[
+ ["Christ on the cross","He hangs with the arms spread wide along the whole cross-bar and the head sunk toward his right. And Jesus, when he had cried again with a loud voice, yielded up the ghost — the icon paints the moment after.","28%","50%"],
+ ["The title","The board over his head carries the Greek initials of the title Pilate wrote. Matthew gives it as the accusation set up over his head: THIS IS JESUS THE KING OF THE JEWS.","13%","50%"],
+ ["The Theotokos and the women","She stands nearest the cross at his right in the red maphorion, and the other women behind her. Many women were there beholding afar off — Matthew names Mary Magdalene, Mary the mother of James and Joses, and the mother of Zebedee's children.","50%","22%"],
+ ["John","The beloved disciple stands opposite the Mother with his hand to his face. Matthew does not put him at the cross; the Church paints him there from his own Gospel, and no Orthodox Crucifixion is without him.","50%","68%"],
+ ["The centurion","At the right edge a soldier in armour with a shield looks up at the cross. Now when the centurion, and they that were with him, saw the earthquake, and those things that were done, they feared greatly, saying, Truly this was the Son of God.","52%","86%"],
+ ["The skull in the rock","Under the cross the rock opens on a skull. Golgotha means the place of a skull, and the tradition the Church paints is that Adam was buried there, so that the blood of the second Adam runs down onto the first.","85%","50%"],
+ ["The walls of Jerusalem","The city wall runs across the whole ground behind the cross. The painter makes the city the backdrop and keeps the cross outside it: he suffered without the gate.","30%","80%"]],
+
+'File:Double-sided icon - Crucifixion and Hodegetria (9-13th c., Byzantine museum).jpg':[
+ ["Christ on the cross","He hangs with the arms out along the bar and the head inclined, the body already sagging in the long Byzantine curve. Matthew's account of the death is the shortest of the four; the icon is as spare as the text.","33%","48%"],
+ ["The King of Glory","On either side of the cross-bar the inscription reads Ο ΒΑΣΙΛΕΥΣ ΤΗΣ ΔΟΞΗΣ — the King of Glory. Matthew records the title Pilate wrote as a charge; the Orthodox icon writes what the Church confesses in its place.","30%","20%"],
+ ["The archangels","Michael and Gabriel, named, fly in from the upper corners with covered hands. They are painted small and grieving under the arms of the cross.","10%","25%"],
+ ["The Theotokos","She stands at his right in a dark maphorion with one hand at her breast. Matthew's women watch from afar off; the Church brings the Mother close, from John's account.","48%","22%"],
+ ["John the Theologian","The beloved disciple stands opposite her with his head bowed and his hand to his face, the mourner's gesture. The two of them at the cross are the oldest Orthodox arrangement of the scene.","50%","75%"],
+ ["The stars in the ground","Red stars are scattered over the gold. From the sixth hour there was darkness over all the land unto the ninth hour: the painter puts the stars out at midday.","35%","60%"],
+ ["The worn surface","The lower half is rubbed almost bare. The panel was carried in procession on a pole and painted three times over, and what survived every repainting was the composition.","80%","40%"]],
+
+'File:Pilate judgement (icon).jpg':[
+ ["Christ","He stands at the left in a dark mantle with the halo, hands crossed and bound before him. Jesus stood before the governor — Pilate asks his one question, Art thou the King of the Jews? and receives Thou sayest.","48%","17%"],
+ ["The guards behind him","Spiked helmets rise behind his shoulder. He is brought in under escort from the priests' hearing, and the painter shows the escort as a row of helmets.","39%","17%"],
+ ["Pilate on the judgment seat","He sits raised on the seat in a crown and a patterned robe, one hand out toward the accused. The governor marvelled greatly that he answered nothing — the icon paints him mid-question.","45%","55%"],
+ ["The counsellors","Men in turbans and caps crowd the right of the seat, leaning in. The chief priests and elders persuaded the multitude — the painter does not show the multitude, only the council at the governor's ear.","42%","78%"],
+ ["The vessel for the washing","A figure stands above and behind the seat holding a small vessel: the water Matthew alone records. The painter keeps the washing of the hands in the same room as the hearing.","32%","45%"],
+ ["The steps of the tribunal","The seat stands on a raised platform of steps painted in flat colours. Matthew says only that Pilate sat down in the judgment seat; the icon builds the seat as a stage, so that the accused stands below it.","72%","40%"]],
+
+'File:Lamentation icon Nerezi MK.jpg':[
+ ["The Mother's face against her Son's","She has taken his head into her lap and pressed her cheek to his. The painter of 1164 did what no one had done before: he let the Mother of God grieve. Every Lamentation painted after Nerezi is working from this.","40%","20%"],
+ ["John over the hand","The beloved disciple bends double over the Lord's hand and holds it to his face. He had leaned on that breast at the Supper; the icon of the burial has him take the hand.","47%","46%"],
+ ["The body on the cloth","The body lies stretched across the whole picture, the wounds visible, laid on a patterned cloth. Joseph wrapped it in a clean linen cloth — the fresco shows the wrapping about to begin.","60%","48%"],
+ ["Joseph of Arimathea at the feet","The bearded man at the right stoops over the feet. Matthew names him: a rich man of Arimathaea, named Joseph, who also himself was Jesus' disciple, and who went to Pilate and begged the body.","58%","88%"],
+ ["The jar of myrrh","A vessel stands at the edge of the picture at the bottom left. Matthew's Joseph brings the linen; the myrrh and aloes are Nicodemus's, from John's account, and the painter sets the jar down where the reader will find it last.","85%","5%"],
+ ["The hill and the sky","A flat green hill against a deep blue, and nothing else. There is no cross and no tomb in the frame: the painter shows only the body and the people who loved it.","12%","40%"]],
+
+'File:Lamentation by Emmanuel Lambardos (Byzantine museum).jpg':[
+ ["The empty cross","The cross stands empty behind the group with the title still nailed to it. The lament is painted at its foot, where the body was brought down.","15%","50%"],
+ ["The Theotokos","She holds his head against her face at the left end of the stone, as the Nerezi painter first showed her. The Church sings her lament on the night of Great Friday in her own voice.","57%","22%"],
+ ["The body on the stone","He lies on a red slab wrapped from the waist in the shroud. The stone of unction in Jerusalem is venerated as the place where the body was anointed, and Cretan painters give it this red.","68%","50%"],
+ ["The woman with her arms thrown up","Behind the Mother a woman in red throws both arms into the air. In the Cretan type the gesture is Mary Magdalene's — Matthew names her first among the women who followed from Galilee and sat over against the sepulchre.","25%","25%"],
+ ["John","The beloved disciple bends over the body at its side. Every Orthodox Lamentation places him here, as he was at the cross in his own account.","55%","62%"],
+ ["Nicodemus with the ladder","The man at the right brings the ladder down on his shoulder and holds a hand to his face. The ladder was for taking the body down; he has come down it and is not done weeping.","30%","80%"],
+ ["The nails and the myrrh","At the foot of the stone a basket holds the nails and the pincers, and a jar the ointment. Nothing on the slab is decoration: the tools of the deposition and the burial are laid out as evidence.","85%","58%"]],
+
+'File:09 Epitaphios Icon in Assumption of Mary Church in Agios Vasileios.jpg':[
+ ["The Theotokos","She holds his head to her face at the left end of the body, in the dark maphorion. Ο ΕΠΙΤΑΦΙΟΣ ΘΡΗΝΟΣ, the lament at the tomb, is her lament first.","52%","20%"],
+ ["Christ laid out","The body lies along the slab, wrapped from the waist, the wounds shown. Joseph took the body, and wrapped it in a clean linen cloth — the cloth is under him and not yet round him.","65%","55%"],
+ ["The empty cross with its title","The cross stands behind the group with the title still on it. He has been taken down: the lament is of the body on the ground, not of the body on the wood.","15%","45%"],
+ ["The disciple bending to the body","A haloed figure bends down over the Lord's side. The beloved disciple is at the burial in every Orthodox Epitaphios, from his own account of the cross.","45%","44%"],
+ ["Joseph of Arimathea","The old man with the white beard at the right holds the shroud at the feet. Matthew says he was rich, and that the tomb was his own new tomb, hewn out in the rock.","45%","72%"],
+ ["Nicodemus with the ladder","The man at the far right carries the ladder from the cross on his shoulder. Matthew does not name him; John does, and the Church has always painted the two men together at the burial.","30%","84%"],
+ ["The women behind","The women stand in a rank behind the Mother, one with her hand at her face. Matthew names Mary Magdalene and the other Mary sitting over against the sepulchre; the icon gathers all the women of Galilee at the body.","35%","20%"]],
+
+"File:Sealing of Christ's Tomb (Russia, 19th c.).jpg":[
+ ["The stone across the door","A great stone, painted as a squared slab, is set across the mouth of the cave. Joseph rolled a great stone to the door of the sepulchre, and departed — the icon shows it in place, and the seal going onto it.","33%","35%"],
+ ["The seal being set","The man in the turban leans in with both hands to the stone. So they went, and made the sepulchre sure, sealing the stone — the precaution was the priests', and the painter gives the act to a priest.","44%","42%"],
+ ["The guard at the left","A man in a patterned robe sits at the left with his back to the rock. Ye have a watch: go your way, make it as sure as ye can — Pilate's words, and the watch is the only thing in the scene he supplied.","55%","25%"],
+ ["The soldier with the spear","A helmeted soldier sits at the right with a spear across his knees, looking at the seal. The Mileševa fresco beside this icon shows what became of the watch.","60%","75%"],
+ ["The second elder","Another elder in blue stands between the guards, watching the seal set. The chief priests and Pharisees came together unto Pilate — Matthew has this done by a delegation, and the painter gives it two men.","50%","62%"],
+ ["The women watching","Four haloed figures stand on the hill above the tomb, looking on. Matthew's last words before this passage are that Mary Magdalene and the other Mary were sitting over against the sepulchre: the painter has them witness the seal they will find broken.","30%","72%"],
+ ["The title","The Slavonic inscription along the lower border names the Lord's tomb. The icon is painted from these five verses and from nothing else.","90%","50%"]],
+
+'File:Sleeping soldiers by Christ\'s tomb, Mileševa.jpg':[
+ ["The helmets","Four helmeted heads lean together, eyes shut. The watch was set to make the sepulchre sure; the painter gives it the sleep of men off duty.","25%","15%"],
+ ["The scale armour","The mail is painted scale by scale over the whole group. The precaution is shown as thorough as it was — armour, shields, spears — and none of it awake.","45%","45%"],
+ ["The shields","Round shields with painted bosses are propped against the sleepers. Matthew reports the guards' story afterwards — his disciples came by night, and stole him away while we slept — and the fresco paints the while we slept.","60%","70%"],
+ ["The spear","A spear lies across a sleeper's knee, held in a slack hand. The soldiers became as dead men, Matthew says of the moment of the Resurrection; the painter shows them so before it.","85%","55%"],
+ ["The edge of the tomb above","Along the top runs the base of the sarcophagus in the scene above — the white angel on the stone. The sleepers are painted directly under the empty tomb: the watch posted to keep the body in is asleep when it goes out.","5%","50%"]],
 };
