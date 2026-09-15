@@ -58,7 +58,7 @@ module.exports={
 'File:Aponepsis Pilatou Dionysiou.jpg':'Pilate Washing His Hands — Dionysiou, Athos, 1547',
 'File:Stavrosis Dionysiou.jpg':'The Crucifixion — Dionysiou, Athos, 1547',
 'File:Epitaphios Threnos Dionysiou.jpg':'The Lamentation at the Tomb — Dionysiou, Athos, 1547',
-'File:Mnemeion Christou Dionysiou.jpg':'The Sealed Tomb — Dionysiou, Athos, 1547',
+'File:Mnemeion Christou Dionysiou.jpg':'Peter and John at the Empty Tomb — Dionysiou, Athos, 1547',
 'File:Ide Topos pou Ekato Dionysiou.jpg':'“Behold the Place Where the Lord Lay” — Dionysiou, Athos, 1547',
 
 // The further icons of a scene the Church has painted more than once. Each names its own
