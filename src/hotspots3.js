@@ -703,7 +703,7 @@ module.exports={
  ["The worn surface","The lower half is rubbed almost bare. The panel was carried in procession on a pole and painted three times over, and what survived every repainting was the composition.","80%","40%"]],
 
 'File:Pilate judgement (icon).jpg':[
- ["Christ","He stands at the left in a dark mantle with the halo, hands crossed and bound before him. Jesus stood before the governor — Pilate asks his one question, Art thou the King of the Jews? and receives Thou sayest.","48%","17%"],
+ ["Christ","He stands at the left in a dark mantle with the halo, his hands crossed in front of him and free — the painter binds him nowhere in this panel. Jesus stood before the governor — Pilate asks his one question, Art thou the King of the Jews? and receives Thou sayest.","48%","17%"],
  ["The guards behind him","Spiked helmets rise behind his shoulder. He is brought in under escort from the priests' hearing, and the painter shows the escort as a row of helmets.","39%","17%"],
  ["Pilate on the judgment seat","He sits raised on the seat in a crown and a patterned robe, one hand out toward the accused. The governor marvelled greatly that he answered nothing — the icon paints him mid-question.","45%","55%"],
  ["The counsellors","Men in turbans and caps crowd the right of the seat, leaning in. The chief priests and elders persuaded the multitude — the painter does not show the multitude, only the council at the governor's ear.","42%","78%"],

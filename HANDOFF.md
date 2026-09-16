@@ -900,3 +900,49 @@ reading correction in `hotspots2.js` listed above.
 **Next**
 - Items 2–4 of `## Next` are unchanged: second icons for the 25 single-icon scenes, and
   mobile. The parable/teaching passages remain plain rows on purpose.
+
+## Session 2026-09-15b (merge of the two parallel Passion branches)
+
+**Did**
+- `git pull` found the branches diverged: local `3943017` and the pushed PR `8b67612`
+  (`de9a101` + `33773d9`) had each done the Passion cycle without knowing about the other.
+  Merged them as `923ec27`. Four conflicts: `hotspots2.js`, `hotspots3.js`, `HANDOFF.md`,
+  and the generated reader.
+- **`hotspots3.js` — took 2026-09-15's marker sets** for all 22 contested Passion icons and
+  for the Sinai Last Judgment (its three-marker reading of the worn centre, not the local
+  four-marker one). That branch also covers the Mileševa guard icon, and it carries
+  `src/tools/overlay.py`.
+- **`hotspots2.js` — took the local side**: the ~22 reading corrections from the reading
+  audit, including the emphatic NOT IN USE note on the Mnemeion fresco.
+- `hotspots.js` and `picks.js` auto-merged and hold both sides' work — the Sower-thorns
+  coordinate from `de9a101` and the Tree of Jesse fix from `3943017`; both branches had
+  already dropped the Mnemeion fresco from `picks.js`.
+- **`HANDOFF.md`** — both session blocks kept, with a "Superseded in part" note appended to
+  2026-08-21b saying which half of it the merge dropped. `## Next` now leads with the marker
+  overlay item and keeps the unfinished reading audit as item 2 (items renumbered to 5).
+  `src/data/icon_reading_audit.tsv` is now tracked, like the placement audit.
+- **Cross-checked the seam.** Mixing one branch's readings with the other branch's markers is
+  the one thing `make check` cannot see, so the six icons whose readings the local audit had
+  *corrected* were read against their adopted markers by hand. Five agreed. One did not:
+  `Pilate judgement (icon)` marker 1 said Christ's hands were "crossed and bound", and the
+  audit had found him **not bound** in that panel. Corrected.
+- Rebuilt with `make`; the reader was never hand-resolved.
+
+**Why**
+- Two independently overlay-verified marker sets of equal quality; the tiebreak was coverage
+  (one more icon) and the tooling that came with it. Neither branch's prose was discarded
+  silently — the note in 2026-08-21b records what went.
+
+**Verified**
+- `make check`: 118 passages, 113 icons, 113/113 readings, 113/113 with markers, 594 markers,
+  354 quotations all verbatim, no reuse, no dead marker keys, no empty marker sets.
+- **74 clamp warnings, the same 74 as `origin/main`** — the merge introduced no coordinate
+  neither branch had rendered.
+- `make` on the committed tree leaves `git status` clean: the committed reader matches its
+  sources byte-for-byte.
+- `overlay.py` not re-run: every coordinate in the merged tree is unchanged from a branch
+  that had already overlay-verified it, except the one Pilate marker above, whose text
+  changed and whose coordinates did not.
+
+**Next.** `## Next` item 2 — finish the reading audit, 27 of 113 still unchecked, and settle
+the John 9 / Matthew 9 question on `Christos Iomenos Typhlon`.
