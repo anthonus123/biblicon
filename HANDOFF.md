@@ -34,15 +34,18 @@ and this file did not.
   passage may show **several icons of its own scene**: a thumbnail strip under the drawer
   image and under the "Icons lead" plate switches between them, and the credit line, the
   prose reading and the positioned markers all follow the icon selected.
-- **Content, as of 2026-08-20i:**
+- **Content, as of 2026-09-15:**
   - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **6 (b)**, **61 (c)**.
-    **57 have an icon, and they show 114 icons between them** — no image is used under two
+    **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
     second Orthodox image of that scene was found. The remaining 61 passages render as
     plain verse rows because no Orthodox icon of them exists.
-  - **All 113 icons have positioned hotspot markers** — 26 sets were added on 2026-08-21b for
-    the Passion cycle, Matthew 26:6 to 27:66, which was the last stretch without them. **All 114 have a prose reading** — `make check` hard-fails on an
+  - **All 113 icons have positioned hotspot markers**, 594 markers in all: 14 live sets in
+    `hotspots.js` (a 15th is on a retired image) and 99 in `hotspots3.js`. The Passion
+    stretch (26:6 to 27:66, 26 icons) was done on 2026-09-15, and every marker on every icon
+    was checked by drawing it back onto the picture (`src/tools/overlay.py`, see Gotchas).
+    **All 113 have a prose reading** — `make check` hard-fails on an
     icon with no label, and reports how many would show an empty "Deciphering the Icon" tab.
     **46 passages** also carry passage-level "Points to notice" (inherited from the
     owner's original 46 entries).
@@ -79,51 +82,75 @@ and this file did not.
 
 In the owner's priority order:
 
-1. **Finish the reading audit. 27 of 113 readings are still unchecked against their pictures.**
-   Sheets 1–3 of the audit are done (see 2026-08-21b); the sweep stopped partway through
-   sheet 3. Roughly a third of the readings checked so far carried a false claim, so assume
-   the rest do too. **Open question found and not yet resolved:** `Christos Iomenos Typhlon`
-   is the sole icon of Matthew 9:27–31 (The Two Blind Men) at tier a, and its own reading
-   says plainly that it depicts the man born blind at Siloam — **John 9, not Matthew 9**.
-   The Gotchas record that John 9 images were rejected elsewhere on exactly those grounds.
-   Either it goes, and 9:27–31 becomes tier c, or the rule bends for it — the owner's call. The 12 passages affected are listed in session 2026-08-21. Method that works:
+1. **Keep the markers honest.** Every icon now has markers, and the owner's priest reports
+   marker placement errors when he sees them. After *any* edit to `hotspots.js` /
+   `hotspots3.js`, run `node src/assemble.js && python3 src/tools/overlay.py OUT` and read the
+   sheets — that pass found and fixed eight misplaced markers on 2026-09-15. Method for
+   writing new ones:
    `src/tools/grid.py` overlays a 10% coordinate grid on `src/img/<key>.webp` — read the
    coordinates straight off the overlay, then write `[label, text, "top%", "left%"]` into
    `hotspots3.js`. Do **not** guess coordinates from a thumbnail; markers land on empty sky.
    To *check* placements afterwards, draw the stored coordinates back onto the icons and
    montage them 9-up: an overlay sheet reads in one glance and is how the Sinai Last
    Judgment error below was caught.
-2. **The shared-fallback problem — searched 2026-08-20b, and the answer is mostly "no icon
+2. **Finish the reading audit. 27 of 113 readings are still unchecked against their
+   pictures.** Sheets 1-3 of the audit are done (see 2026-08-21b and
+   `src/data/icon_reading_audit.tsv`); the sweep stopped partway through sheet 3. Roughly a
+   third of the readings checked so far carried a false claim, so assume the rest do too.
+   **Open question found and not yet resolved:** `Christos Iomenos Typhlon` is the sole icon
+   of Matthew 9:27-31 (The Two Blind Men) at tier a, and its own reading says plainly that it
+   depicts the man born blind at Siloam — **John 9, not Matthew 9**. The Gotchas record that
+   John 9 images were rejected elsewhere on exactly those grounds. Either it goes, and
+   9:27-31 becomes tier c, or the rule bends for it — the owner's call.
+3. **The shared-fallback problem — searched 2026-08-20b, and the answer is mostly "no icon
    exists".** **35** passages (not ~20) share `Christos Didaskon Dionysiou` and **11** share
    `Christos Apostolois Dionysiou`: 46 of 116, 40% of the reader, on two images. A second
    independent search found no Orthodox image for any of the 15 subjects `assign.js` names —
    see Gotchas. Resolved 2026-08-20d/e: no reuse at all, and the
    60 passages with no icon of their own now render as plain verse rows.
-3. **More icons of the scenes that still have only one.** 25 of the 57 illustrated passages
+4. **More icons of the scenes that still have only one.** 25 of the 57 illustrated passages
    still show a single icon. The ones where a second almost certainly exists but was not
    found this pass: the stilling of the storm, the centurion, Peter's mother-in-law, the
    cleansing of the leper, the two blind men, the dumb man, the withered hand, the Canaanite
    woman, walking on the water, the Sermon on the Mount. Method that worked is in Gotchas.
-4. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
+5. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
 
-Note: everything through 2026-08-21 is committed and pushed — `f4a87b5` carries the
-multi-icon galleries, the lightbox, the 54 icons, `hotspots3.js` and the build fixes;
-`09bb6f5` carries `src/tools/`. `origin/main` is level with `main`.
+Note: everything through 2026-09-15 is committed and pushed on the branch named in that
+session block (`de9a101` the eight marker fixes; the next commit the Passion markers, the
+Mnemeion removal and the rebuilt reader). Before that, `f4a87b5` carries the multi-icon
+galleries and `09bb6f5` carries `src/tools/`.
 
-**The nine orphan images in `src/img/` are tracked on purpose, and `make check` warns about
+**The ten orphan images in `src/img/` are tracked on purpose, and `make check` warns about
 them on purpose.** They are rejected candidates kept as the evidence for the rejections the
 Gotchas below describe by name — `66e7620d02cb` is the Langadas St John the **Evangelist**
 mislabelled as the Baptist, `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
-Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`. No passage
-shows any of them; none is embedded in the reader, because `assemble.js` deletes image records
-nothing shows. They cost ~1 MB in the repo and nothing in the deliverable. Tracking all nine
-also keeps `git status` clean, which matters: the `Stop` hook tests
+Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`, `d5b36ae3319a` is the Dionysiou `Mnemeion
+Christou` whose inscription turned out to be John 20:3 (see Gotchas). No passage shows any of
+them; none is embedded in the reader, because `assemble.js` deletes image records
+nothing shows. They cost ~1 MB in the repo and nothing in the deliverable. Tracking all ten also keeps `git status` clean, which matters: the `Stop` hook tests
 `git status --porcelain -- src '*.html'`, so a stray untracked file in `src/img/` makes it fire
 every session regardless of whether anything was really done. If they are ever judged not worth
 keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
+
+- **The only check that sees a misplaced marker is drawing it back onto the icon.**
+  `python3 src/tools/overlay.py OUT` (after `node src/assemble.js`) montages every marked icon
+  four to a sheet with the numbered circles and a legend; `overlay.py OUT KEY` draws one icon
+  large with a 10% grid so the corrected coordinate can be read straight off it. On
+  2026-09-15 that pass caught eight markers on the wrong figure — 'the devils coming out' on
+  Christ's hand, 'Christ enthroned' on an angel, 'the thorns' on a crag, 'the servants' on
+  the crowned son — none of which `make check` could see. The eye is fooled by a plausible
+  label next to a plausible spot; the overlay is not.
+- **`Mnemeion Christou Dionysiou` is not the sealing of the tomb.** Its inscription reads
+  Ο ΔΕ ΠΕΤΡΟΣ ΚΑΙ ΙΩ(ΑΝΝΗΣ) ΕΔΡΑΜΟΝ ΕΠΙ ΤΟ ΜΝΗΜΕΙΟΝ — *but Peter and John ran to the tomb*,
+  John 20:3 — and it shows the two apostles at an open sepulchre with the grave-clothes
+  inside: no stone, no seal, no watch. It sat under 27:62–66 from the file name alone.
+  Removed 2026-09-15 (the Russian *Sealing* and the Mileševa sleepers remain there); it
+  depicts no Matthew passage, so it has no home in this reader. Same lesson as the
+  exorcism frescoes: crop the top of a Dionysiou file and read the Greek before wiring it.
+
 
 - **To find more icons of a scene you already have, seed the search from the file you already
   trust.** Free-text search returns Western art and guessed category names mostly do not
@@ -824,5 +851,52 @@ note under `## Next`.
 markers, 354 quotations all verbatim, no reuse, no dead marker keys, no empty marker sets, no
 new clamp warnings. Every marker set written this session was overlay-verified by eye.
 
-**Next.** Finish the audit — see `## Next` item 1, including the John 9 / Matthew 9 question.
+**Next.** Finish the audit — see `## Next` item 2, including the John 9 / Matthew 9 question.
 
+**Superseded in part.** This session and 2026-09-15 were worked in parallel on two branches and
+reached the same findings independently — the Passion markers, the Sinai Last Judgment's lost
+centre, and the Mnemeion fresco being John 20:3. The merge of 2026-09-15 kept **2026-09-15's**
+Passion marker sets and its three-marker Sinai reading, because that branch also covers the
+Mileševa guard icon and carries `src/tools/overlay.py`. What this session contributed and the
+merge kept: the `BLOCKED_WORK` fix in `fathers.js`, the Tree of Jesse marker fix, and every
+reading correction in `hotspots2.js` listed above.
+
+## Session 2026-09-15 (marker audit, the Passion markers, one misattributed fresco)
+
+**Did**
+- The owner relayed his priest's report that the numbered circles sometimes point to the
+  wrong place. Wrote `src/tools/overlay.py`, which draws every stored marker back onto its
+  icon and montages the lot, and read all 87 marked icons (440 markers) sheet by sheet.
+  Eight markers on seven icons were on the wrong thing and were re-measured on the grid:
+  Gadarenes (devils / hand of Christ), the 12:22 exorcism (the devil), the Sower (thorns),
+  Ferapontov Ten Virgins (Christ / angels swapped), Ferapontov Wedding Feast (servants),
+  Sinai Last Judgment (Christ, whose figure is worn away — marker moved to the lost centre
+  and the text rewritten to read the surviving Deesis), Langadas Baptism (Forerunner's hand).
+  Commit `de9a101`.
+- Wrote positioned markers for the 26 Passion icons (26:6 to 27:66) that had none, reading
+  each off a 10% grid: 154 markers in `hotspots3.js`, then checked them on the overlay
+  sheets and nudged four. Every icon in the reader now has markers.
+- Found that the 27th, Dionysiou's `Mnemeion Christou`, is Peter and John at the empty tomb
+  (John 20:3, by its own inscription), not the sealing. Removed it from `picks.js`; fixed
+  its label and reading; logged it as row 65 of `icon_placement_audit.tsv`.
+- Rebuilt the reader (`make`): 113 icons, 594 markers.
+
+**Why**
+- The owner's stated priority is the icons and their explanation; a circle on the wrong
+  figure teaches the wrong thing. `make check` cannot see this, only the overlay can, so
+  the tool is kept and the Next list now starts with running it.
+- The Mnemeion fresco stays on disk as an orphan, like the other rejected candidates, so
+  the rejection has its evidence.
+
+**Verified**
+- Overlay sheets for all 113 icons read by eye after the final assemble.
+- `make check`: every structural invariant holds (74 warnings: the usual 'wanted' list,
+  the ten orphans, and the deliberate near-edge clamps).
+- Playwright against the built file over HTTP at 1440×960: 57 icon images on the page,
+  0 broken (checked with `new Image()` per src), 0 console errors; opened 27:11–31, 8:28–34
+  and 27:62–66, switched to *Deciphering the Icon*, clicked markers, screenshotted
+  `.hotwrap` — circles sit on the figures the text names.
+
+**Next**
+- Items 2–4 of `## Next` are unchanged: second icons for the 25 single-icon scenes, and
+  mobile. The parable/teaching passages remain plain rows on purpose.

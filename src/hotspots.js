@@ -99,7 +99,7 @@ module.exports={
   ["The Sower","He that soweth the good seed is the Son of man. He is painted sowing broadcast, without measuring the ground — the word is given to every soil alike.","35%","55%"],
   ["The birds on the wayside","Then cometh the wicked one, and catcheth away that which was sown in his heart. The path is beaten hard by traffic: a heart worn smooth by everything that passes over it.","52%","20%"],
   ["The stony ground","He heareth the word, and anon with joy receiveth it; yet hath he not root in himself, but dureth for a while. The stones lie just under a thin skin of earth.","85%","72%"],
-  ["The thorns and the good ground","The care of this world, and the deceitfulness of riches, choke the word. Beyond them the green ground bears thirtyfold, sixtyfold, an hundredfold.","28%","82%"]]},
+  ["The thorns and the good ground","The care of this world, and the deceitfulness of riches, choke the word. Beyond them the green ground bears thirtyfold, sixtyfold, an hundredfold.","58%","78%"]]},
 
 [D('Christos Didaskon')]:{
  read:"Christ the Teacher, enthroned and expounding — the image the Church sets over the discourses. Orthodox iconography does not usually illustrate the parables as scenes; it paints instead the One who speaks them, seated in the teacher’s place with the elders listening. What matters in a parable is not the anecdote but the mouth it comes from.",
