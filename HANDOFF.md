@@ -318,7 +318,7 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   the prose that contradicts the credit sitting next to it.
 - **A marker text can be well placed and still misquote.** Neither `make check` nor the overlay
   reads the words. On 2026-09-19 `src/tools/quotes.js` found, in John texts that had passed both,
-  Origen's words credited to Augustine and to Chrysostom, and 37 quotations that were not
+  Origen's words credited to Augustine and to Chrysostom, and 35 quotations that were not
   verbatim. Run it after writing any reading or marker.
 - **Never write a patristic quotation from memory.** `src/books/matthew/catena.json` holds ~6,200
   real ones parsed from the 1842 Catena; `fathers.js` selects from it. If a passage has no
@@ -1081,7 +1081,7 @@ records what the tree shows, not what the session intended.
   - **two comments of Origen quoted as St Augustine and St Chrysostom** (the envoys in
     `Prodromos Didaskon Ioudaious`, the waiting apostles in `Nipter`). Origen is excluded from
     both readers. Both markers now quote the Gospel instead.
-  - 19 KJV quotations elided without a mark, reworded, or given the wrong opening word
+  - 17 KJV quotations elided without a mark, reworded, or given the wrong opening word
     ("Then Thomas answered" for "And Thomas answered"), and one Holy Friday hymn line
     written from memory. All now verbatim, or turned into plain prose.
   - 18 patristic sentences that drifted from the Catena: a dropped "viz." or "afterwards", a
