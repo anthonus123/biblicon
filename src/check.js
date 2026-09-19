@@ -138,7 +138,7 @@ const A=require(book.file('assign.js'));
 const wanted=D.passages.filter(p=>!p.img && (A[p.id]||{}).tier==='a');
 if(wanted.length){
   warn(`${wanted.length} passage(s) name an iconographic subject in assign.js but have no icon —`
-    +` searched twice, none exists (see HANDOFF Gotchas). They render as plain verse rows:`);
+    +` ${book.iconGap}. They render as plain verse rows:`);
   for(const p of wanted) warn(`    ${p.range.padEnd(17)} wanted "${(A[p.id]||{}).subj}"`);
 }
 

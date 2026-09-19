@@ -65,14 +65,15 @@ and this file did not.
     (Oxford 1842, public domain). Chrysostom on 115 of 118 passages, then Jerome,
     Augustine, Hilary, Leo, Ambrose, Cyril of Alexandria, Bede, Cassian, Chrysologus,
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
-- **John content, as of 2026-09-18:**
+- **John content, as of 2026-09-19:**
   - **64 passages**, all 21 chapters. Tiers: **25 (a)**, **2 (b)**, **37 (c)**. The two tier-b
     passages are the Prologue (1:1–18, the Evangelist writing) and 1:35–42 (St Andrew's own icon).
   - **27 have an icon, showing 73 icons between them**; 23 of the 27 show more than one.
     67 new images went into the shared pool for them. **All 73 have a prose reading.**
   - **192 patristic quotations**, parsed from the isidore.co edition of the Oxford Catena on
     John (see Gotchas for why not the 1845 scan). Nothing paraphrased, nothing invented.
-  - Positioned markers: see `## Next` item 1 and the latest session block for the count.
+  - **All 73 icons have positioned markers**, 513 in all, every one in `src/books/john/hotspots3.js`
+    and every set checked by drawing it back onto the picture on 2026-09-19. No clamp warnings.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -102,8 +103,8 @@ and this file did not.
 
 In the owner's priority order:
 
-1. **Keep the markers honest.** *John: 45 of its 73 icons had no markers at the end of
-   2026-09-18; write them by the method below.* In Matthew every icon now has markers, and the owner's priest reports
+1. **Keep the markers honest.** Every icon in both readers now has markers (John's were
+   finished 2026-09-19), and the owner's priest reports
    marker placement errors when he sees them. After *any* edit to `hotspots.js` /
    `hotspots3.js`, run `BOOK=<book> node src/assemble.js && BOOK=<book> python3 src/tools/overlay.py OUT` and read the
    sheets — that pass found and fixed eight misplaced markers on 2026-09-15. Method for
@@ -136,11 +137,21 @@ In the owner's priority order:
    woman, walking on the water, the Sermon on the Mount. Method that worked is in Gotchas.
 5. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
+6. **John: the ten passages that want an icon and have none.** `make check` lists them. Unlike
+   Matthew's, they have not had two dedicated searches; the check now says so. Two leads:
+   - **John 10:1–21, the Good Shepherd.** Both Good Shepherd mosaics in the pool (the Great
+     Palace floor and Galla Placidia at Ravenna) already serve Matthew 18:10–14 at tier b.
+     The shared pool allows one file in both readers, and John 10 is the Good Shepherd's own
+     text. Whether to reuse them there, and at which tier, is the owner's call.
+   - Christ and Nicodemus, walking on the sea, Mary anointing the feet, and the appearance
+     with the doors shut are all subjects Orthodox programmes do paint. Seed the search from
+     the Dionysiou, Monreale and Kirillo files John already uses (see Gotchas).
 
 Note: everything through 2026-09-15 is committed and pushed on the branch named in that
 session block (`de9a101` the eight marker fixes; the next commit the Passion markers, the
 Mnemeion removal and the rebuilt reader). Before that, `f4a87b5` carries the multi-icon
-galleries and `09bb6f5` carries `src/tools/`.
+galleries and `09bb6f5` carries `src/tools/`. The 2026-09-18 and 2026-09-19 work is committed
+on `main` locally (`15c58e3` onward) and **not pushed**.
 
 **The eight orphan images in `src/img/` are tracked on purpose, and `make check` warns about
 them on purpose.** They are rejected candidates kept as the evidence for the rejections the
@@ -1036,3 +1047,45 @@ records what the tree shows, not what the session intended.
 - `check.js` still prints "searched twice, none exists" for the 10 John passages that want
   an icon and have none. That sentence is true of Matthew's search; nothing in the tree shows
   a John search of equal depth.
+
+## Session 2026-09-19 (John markers finished; the 2026-09-18 work committed)
+
+**Did**
+- Committed the 2026-09-18 tree first, as `15c58e3`, with a reconstructed session block; it
+  had been left uncommitted and unlogged. Before committing, confirmed the rebuilt Matthew
+  reader's data equals the committed one's.
+- **Wrote markers for the 45 John icons that had none**, in six batches of six to eight, each
+  committed on its own (`1354cce` … `93f75f8`). For every icon: read its prose reading, drew the
+  10% grid, cropped and enlarged any inscription or small figure before naming it, wrote the
+  set, then drew it back with `overlay.py` and read the sheet. The overlay pass moved six
+  markers that sat beside their figure rather than on it, and three that sat just outside the
+  unclamped 9–92% band.
+- **Overlay-checked the 28 sets from 2026-09-18** as well. All 28 were on their figures; the
+  one doubtful spot, the veiled woman high in the rocks of `Katakrinon Pornin`, was confirmed
+  by a crop.
+- **Two readings corrected** where the picture contradicted them:
+  - `Last Supper by Theophanes the Cretan` quoted Matthew 26:23, "he that dippeth his hand with
+    me in the dish", as if it were John's. It now says so and gives John's sop instead.
+  - The Monreale Entombment reading said the Mother of God bends over Christ's head. An old
+    haloed man holds the head; she holds the body at its middle.
+- Also kept marker texts to what each icon shows: no angels quoted over the Cretan *Noli*,
+  which paints none, and no kiss claimed as John's where the icon borrows it from the others.
+- `check.js`: the "searched twice, none exists" note is now per book (`iconGap` in each
+  `book.json`). For John it says the search has not been done to Matthew's depth. The field
+  is read only by `check.js`; the readers are unchanged by it.
+
+**Why**
+- Markers are how the icon explanations reach the reader, and the owner ranks those first.
+  Batching with a commit per batch meant any stop would leave verified sets and an honest count.
+
+**Verified**
+- `make check`: John 64 passages, **73/73 readings, 73/73 with markers, 513 markers**, no clamp
+  warnings, no reuse. Matthew unchanged; its rebuilt reader is byte-identical to the committed one.
+- Browser, served over http: John reader loads with 0 console errors and all 27 unique image
+  sources decode. On the Samaritan, Thomas and Tiberias galleries every thumbnail was
+  selected, its markers counted against the source, and a marker clicked; the Gračanica
+  Tiberias screenshot matches the overlay.
+- Not pushed. `main` is ahead of `origin/main` by the commits of 2026-09-18 and 2026-09-19.
+
+**Next.** `## Next` items 2 and 6: the Matthew reading audit, and icons for John's ten
+unillustrated passages, starting with the Good Shepherd question for the owner.
