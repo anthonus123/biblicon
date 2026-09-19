@@ -5,13 +5,14 @@
 // owner's original passage notes. WARN and the counts are informational: content is meant
 // to grow (more hotspots, more icons), so growth must never turn the build red.
 const fs=require('fs'),path=require('path');
+const book=require('./book.js');
 const B=__dirname+'/data/';
 
-if(!fs.existsSync(B+'icons.json')){
-  console.error("src/data/icons.json is missing — it is generated. Run `make` (or `node src/assemble.js`) first.");
+if(!book.has('icons.json')){
+  console.error(book.file('icons.json')+" is missing — it is generated. Run `make` (or `node src/assemble.js`) first.");
   process.exit(1);
 }
-const D=JSON.parse(fs.readFileSync(B+'icons.json','utf8'));
+const D=JSON.parse(fs.readFileSync(book.file('icons.json'),'utf8'));
 const meta=JSON.parse(fs.readFileSync(B+'image_meta.json','utf8'));
 const keys=JSON.parse(fs.readFileSync(B+'pick_keys.json','utf8'));
 
@@ -36,25 +37,38 @@ for(const [k,v] of Object.entries(D.images)){
     else if(!h[0]||!h[1]) fail(`image ${k}: hotspot with no label or no text`);
   }
 }
+// The image pool is shared between the readers: a file this Gospel does not show may be
+// shown by the other one, so a pool entry or a file on disk is only reported when no book's
+// picks name it at all.
+const otherUsed=new Set(), otherTitles=new Set();
+for(const b of fs.readdirSync(__dirname+'/books')){
+  if(b===book.id||!fs.existsSync(path.join(__dirname,'books',b,'picks.js'))) continue;
+  const pk=require(path.join(__dirname,'books',b,'picks.js'));
+  for(const v of Object.values(pk)) for(const t of (Array.isArray(v)?v:[v])){
+    otherTitles.add(t);
+    if(keys[t]) otherUsed.add(keys[t]+'.webp');
+    if(t.startsWith('USER:')) otherUsed.add('user-nativity.webp');
+  }
+}
 for(const [title,k] of Object.entries(keys)){
   if(!meta[title]) fail(`pick_keys: "${title}" has no entry in image_meta.json`);
-  if(!D.images[k]) warn(`pick_keys: "${title}" (${k}) is not used by any passage`);
+  if(!D.images[k]&&!otherTitles.has(title)) warn(`pick_keys: "${title}" (${k}) is not used by any passage of either reader`);
 }
-const orphans=[...onDisk].filter(f=>!used.has(f));
-if(orphans.length) warn(`src/img has ${orphans.length} file(s) no passage uses: ${orphans.join(', ')}`);
+const orphans=[...onDisk].filter(f=>!used.has(f)&&!otherUsed.has(f));
+if(orphans.length) warn(`src/img has ${orphans.length} file(s) no passage in any reader uses: ${orphans.join(', ')}`);
 
 // --- hotspot coordinates, read from the source ------------------------------
 // assemble.js clamps markers to 9–92% so they never sit on the frame edge, which means the
 // assembled data can never look wrong — the clamp has already hidden it. So check what was
 // actually written. A nudged coordinate is usually deliberate; one far outside is a typo,
 // and HANDOFF is explicit that a bad coordinate puts the marker on empty sky.
-const raw=require('./hotspots.js'), raw3=require('./hotspots3.js');
+const raw=require(book.file('hotspots.js')), raw3=require(book.file('hotspots3.js'));
 // assemble.js applies hotspots3 last, so a file with markers in both files would quietly
 // lose the ones in hotspots.js. Say so rather than let a set of markers disappear.
 // The same hole exists between hotspots.js and hotspots2.js: `hotdb[k]={read:h2[k],hot:[]}`
 // replaces the whole record, so an h1 marker set whose file later gets a reading in h2 is
 // wiped without a trace. Nothing collides today; the guard is here so it stays that way.
-const raw2=require('./hotspots2.js');
+const raw2=require(book.file('hotspots2.js'));
 for(const t of Object.keys(raw3))
   if(((raw[t]||{}).hot||[]).length) fail(`${t}: markers in both hotspots.js and hotspots3.js — the hotspots3 set silently wins`);
 for(const t of Object.keys(raw2))
@@ -105,7 +119,7 @@ for(const p of D.passages){
 // Regression guard. The owner's original 46 entries each carry three [label, text] pairs of
 // passage commentary; a refactor once moved hotspots onto the image record and silently
 // dropped them. Fewer than 46 means it happened again.
-if(withNotes<46) fail(`only ${withNotes} passages carry "Points to notice" — the owner's original 46 must all survive (see HANDOFF Gotchas)`);
+if(withNotes<book.minNotes) fail(`only ${withNotes} passages carry "Points to notice" — the owner's original ${book.minNotes} must all survive (see HANDOFF Gotchas)`);
 
 // --- one icon, one passage -------------------------------------------------
 // A passage may now show several icons, but every one of them is of its own scene, so an
@@ -120,7 +134,7 @@ for(const [k,ranges] of Object.entries(usedBy))
 // A passage that names a real iconographic subject and has no icon is expected, not broken:
 // Orthodox tradition has no scene-icon for most parables and teaching passages. Reported so
 // the gap stays visible if an image ever surfaces.
-const A=require('./assign.js');
+const A=require(book.file('assign.js'));
 const wanted=D.passages.filter(p=>!p.img && (A[p.id]||{}).tier==='a');
 if(wanted.length){
   warn(`${wanted.length} passage(s) name an iconographic subject in assign.js but have no icon —`
@@ -134,7 +148,7 @@ if(wanted.length){
 // label from an earlier session, and the duplicates went unnoticed because one copy was
 // single-quoted and the other double-quoted. Compare the keys, not the source lines.
 for(const f of ['labels','hotspots2','hotspots3']){
-  const src=fs.readFileSync(__dirname+'/'+f+'.js','utf8');
+  const src=fs.readFileSync(book.file(f+'.js'),'utf8');
   const keys=[...src.matchAll(/^(['"])((?:File|USER):.*?)\1\s*:/gm)].map(m=>m[2]);
   const dup=[...new Set(keys.filter((k,i)=>keys.indexOf(k)!==i))];
   if(dup.length) fail(`${f}.js has duplicate key(s), the later one silently wins: ${dup.join(' | ')}`);
@@ -155,7 +169,7 @@ for(const [lab,ks] of Object.entries(labelOf)) if(ks.length>1){
 
 // overrides.js is one hand-edited 38 KB object literal: a repeated key silently discards the
 // earlier one, taking its corrections with it and leaving no trace anywhere in the output.
-const ovSrc=fs.readFileSync(__dirname+'/overrides.js','utf8');
+const ovSrc=book.has('overrides.js')?fs.readFileSync(book.file('overrides.js'),'utf8'):'';
 const ovKeys=[...ovSrc.matchAll(/^ ([A-Za-z0-9_]+):\{/gm)].map(m=>m[1]);
 const dups=[...new Set(ovKeys.filter((k,i)=>ovKeys.indexOf(k)!==i))];
 if(dups.length) fail(`overrides.js has duplicate key(s), the later one silently wins: ${dups.join(', ')}`);

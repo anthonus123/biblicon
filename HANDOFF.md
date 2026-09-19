@@ -1,4 +1,4 @@
-# HANDOFF — Biblicon (Matthew icon reader)
+# HANDOFF — Biblicon (Matthew and John icon readers)
 
 Cross-session handoff log. Read this first at session start. End every working session by
 updating `## Status` + `## Next` and appending a `## Session YYYY-MM-DD` block
@@ -10,23 +10,35 @@ and this file did not.
 
 ## Status
 
-- **What this is.** A Bible-study reader for the Gospel of Matthew (KJV) in which every
-  passage is paired with an Eastern Orthodox icon and with commentary from the Church
-  Fathers. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
+- **What this is.** Bible-study readers for the Gospels of **Matthew** and **John** (KJV) in
+  which every passage is paired with an Eastern Orthodox icon and with commentary from the
+  Church Fathers. The John reader was started 2026-09-18 at the owner's request to "repeat
+  the process" for St John; it follows every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
   each icon matter most**, then theological correctness on Orthodox terms, then visual
   polish. Catena Bible (catenabible.com) is the model for multi-Father commentary.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
-- **Deliverable:** `Matthew Reader.html` — a single self-contained file (~17.3 MB). Fonts,
-  icons, the KJV text and all commentary are embedded; it opens by double-clicking, no
-  server and no network. **Do not hand-edit it.** It is generated — one command from the
-  repo root, which sequences assemble → check → build:
+- **Deliverables:** `Matthew Reader.html` (~17.2 MB) and `John Reader.html` — each a single
+  self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+  opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
+  generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
-  make            # -> src/data/icons.json (generated, untracked) -> "Matthew Reader.html"
-  make check      # structural check + the content counts below, without re-emitting
-  make serve      # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
+  make                 # both readers; src/books/<book>/icons.json is generated, untracked
+  make john            # one Gospel (also: make matthew)
+  make check           # structural check + the content counts below, both books
+  make BOOK=john serve # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
   ```
   The build is deterministic: rebuilding unchanged content reproduces the same bytes.
+- **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
+  `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|john`
+  through `src/book.js` (default Matthew). Everything a Gospel owns lives in
+  `src/books/<book>/`: `book.json` (names, output file, commentary provenance line),
+  `anchors.json`, `titles.json`, `kjv.json`, `catena.json`, `assign.js`, `picks.js`,
+  `labels.js`, `hotspots{,2,3}.js`, `overrides.js`, and for Matthew `icons_orig.json` and the
+  two audit TSVs. **The image pool is shared** — `src/img/`, `src/data/image_meta.json`,
+  `src/data/pick_keys.json` — so one Commons file may serve both readers; labels, readings
+  and markers are per book, because the same fresco is read against different verses.
+  "One icon, one passage" is enforced **within** each reader.
 - **Structure** (preserved from the owner's original wireframe): sticky header, sticky
   chapter rail with a per-chapter icon tree, a **Text leads / Icons lead** mode toggle, and
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
@@ -53,6 +65,14 @@ and this file did not.
     (Oxford 1842, public domain). Chrysostom on 115 of 118 passages, then Jerome,
     Augustine, Hilary, Leo, Ambrose, Cyril of Alexandria, Bede, Cassian, Chrysologus,
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
+- **John content, as of 2026-09-18:**
+  - **64 passages**, all 21 chapters. Tiers: **25 (a)**, **2 (b)**, **37 (c)**. The two tier-b
+    passages are the Prologue (1:1–18, the Evangelist writing) and 1:35–42 (St Andrew's own icon).
+  - **27 have an icon, showing 73 icons between them**; 23 of the 27 show more than one.
+    67 new images went into the shared pool for them. **All 73 have a prose reading.**
+  - **192 patristic quotations**, parsed from the isidore.co edition of the Oxford Catena on
+    John (see Gotchas for why not the 1845 scan). Nothing paraphrased, nothing invented.
+  - Positioned markers: see `## Next` item 1 and the latest session block for the count.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -82,9 +102,10 @@ and this file did not.
 
 In the owner's priority order:
 
-1. **Keep the markers honest.** Every icon now has markers, and the owner's priest reports
+1. **Keep the markers honest.** *John: 45 of its 73 icons had no markers at the end of
+   2026-09-18; write them by the method below.* In Matthew every icon now has markers, and the owner's priest reports
    marker placement errors when he sees them. After *any* edit to `hotspots.js` /
-   `hotspots3.js`, run `node src/assemble.js && python3 src/tools/overlay.py OUT` and read the
+   `hotspots3.js`, run `BOOK=<book> node src/assemble.js && BOOK=<book> python3 src/tools/overlay.py OUT` and read the
    sheets — that pass found and fixed eight misplaced markers on 2026-09-15. Method for
    writing new ones:
    `src/tools/grid.py` overlays a 10% coordinate grid on `src/img/<key>.webp` — read the
@@ -95,7 +116,7 @@ In the owner's priority order:
    Judgment error below was caught.
 2. **Finish the reading audit. 27 of 113 readings are still unchecked against their
    pictures.** Sheets 1-3 of the audit are done (see 2026-08-21b and
-   `src/data/icon_reading_audit.tsv`); the sweep stopped partway through sheet 3. Roughly a
+   `src/books/matthew/icon_reading_audit.tsv`); the sweep stopped partway through sheet 3. Roughly a
    third of the readings checked so far carried a false claim, so assume the rest do too.
    **Open question found and not yet resolved:** `Christos Iomenos Typhlon` is the sole icon
    of Matthew 9:27-31 (The Two Blind Men) at tier a, and its own reading says plainly that it
@@ -121,14 +142,16 @@ session block (`de9a101` the eight marker fixes; the next commit the Passion mar
 Mnemeion removal and the rebuilt reader). Before that, `f4a87b5` carries the multi-icon
 galleries and `09bb6f5` carries `src/tools/`.
 
-**The ten orphan images in `src/img/` are tracked on purpose, and `make check` warns about
+**The eight orphan images in `src/img/` are tracked on purpose, and `make check` warns about
 them on purpose.** They are rejected candidates kept as the evidence for the rejections the
-Gotchas below describe by name — `66e7620d02cb` is the Langadas St John the **Evangelist**
-mislabelled as the Baptist, `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
-Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`, `d5b36ae3319a` is the Dionysiou `Mnemeion
-Christou` whose inscription turned out to be John 20:3 (see Gotchas). No passage shows any of
-them; none is embedded in the reader, because `assemble.js` deletes image records
-nothing shows. They cost ~1 MB in the repo and nothing in the deliverable. Tracking all ten also keeps `git status` clean, which matters: the `Stop` hook tests
+Gotchas below describe by name — `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
+Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`. There were
+ten until 2026-09-18, when the John reader took two of them into use: `66e7620d02cb` (the
+Langadas St John the **Evangelist** mislabelled as the Baptist) is John's Prologue icon, and
+`d5b36ae3319a` (the Dionysiou `Mnemeion Christou`, inscribed with John 20:3) is John 20:1–10's.
+No passage of either reader shows the remaining eight; none is embedded in a reader, because
+`assemble.js` deletes image records nothing shows. They cost ~1 MB in the repo and nothing in
+the deliverables. Tracking them also keeps `git status` clean, which matters: the `Stop` hook tests
 `git status --porcelain -- src '*.html'`, so a stray untracked file in `src/img/` makes it fire
 every session regardless of whether anything was really done. If they are ever judged not worth
 keeping, delete the files *and* their `pick_keys.json` entries together.
@@ -172,8 +195,9 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   record a 429 as "no such image".
 - **A title that names the right feast can still name the wrong person.**
   `049 Saint John the Baptist Icon 2 ... Langadas` is inscribed ΙΩΑΝΗC ο Βαγγελιστής and shows
-  an old man writing with Prochoros beside him — St John the **Evangelist**, not the
-  Forerunner. `Matthew the Evangelist.jpg` has a Commons description reading "Saint Mathias".
+  an old man writing at a desk with a haloed **eagle** beside him (not Prochoros, as this note
+  said until 2026-09-18) — St John the **Evangelist**, not the Forerunner. It now serves the
+  John reader as the Prologue's type icon. `Matthew the Evangelist.jpg` has a Commons description reading "Saint Mathias".
   Both were caught only by looking at the picture at full size after they had passed the
   contact sheet. Two-stage review works: 400px contact sheets to throw out the obvious
   Western art, then 700px for anything you are about to wire up.
@@ -238,10 +262,39 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   which is the two Gadarene demoniacs (Mt 8:28–34); the singular `Iomenos Daimonizomenon` went
   to Mt 12:22–37. Crop the top 14% of the file and enlarge it — the inscriptions are legible at
   660px and they name the scene exactly.
-- **`Christ before Caiaphas` (Gračanica) is unused on purpose.** Christ is present in it, so it
-  is the trial (26:57–75), not the plot to kill him (26:1–5) where it had been placed — and the
-  Dionysiou `Krinomenos Christou`, whose inscription names *both* Annas and Caiaphas, fits that
-  pericope better. With no reuse allowed, the Gračanica one has no home.
+- **The John Catena is not the 1845 Oxford text verbatim, and the reader says so.** CCEL
+  hosts only the Matthew and Mark volumes. The archive.org OCR of the Oxford John
+  (`catenaaureacomme04thomuoft`, ch 1–10; `catenaaurestjohn00thomuoft`, the 1874 reprint)
+  interleaves the margin citations into the prose ("iraraediately", "Ilimself") and cannot be
+  quoted. `src/books/john/catena.json` is parsed from `isidore.co/aquinas/english/CAJohn.htm`,
+  the Dominican House of Studies edition of the same translation: complete and cleanly
+  attributed, but with thou/thee modernised to you and **no work references**. The footer and
+  the Fathers tab give that provenance. Nothing in it is paraphrased by us.
+- **Because the John attributions carry no work reference, `BLOCKED_WORK` is inert there.**
+  In Matthew it catches "Ambrose, Ambrosiaster" and "Bede, ap. Anselm" by reading the work
+  portion of the attribution. The isidore edition gives bare names (CHRYS, AUG, BEDE…), so a
+  comment the Oxford margin credits to Bede-via-the-Glossa enters John as plain Bede. The two
+  books are therefore not filtered equally; if the 1845 margins are ever transcribed, rebuild
+  `catena.json` with them. Alcuin (173 John comments), Origen, Haymo and the Gloss are
+  excluded by the whitelist as in Matthew. **Theophylact of Ohrid** was added to the
+  whitelist for John: post-schism but Orthodox, the standard Orthodox commentator on the
+  Gospels; the Matthew volume never cites him, so the Matthew reader is unchanged.
+- **`catMembers` caps a category at its `limit`, and the harvest used 400.** On 2026-09-18
+  that silently cut `Frescos in Dionysiou monastery` (445 files) at the letter P, which hid
+  `Samaritan Woman Dionysiou`, `Stavrosis`, `Ysepitimon Thalassan` and the rest from any
+  title search. Any category that comes back with exactly the limit is truncated; re-list it
+  with a higher one.
+- **`Christos Iomenos Paralyton Dionysiou` is painted as Bethesda (John 5).** It has the
+  arched portico of five bays with the sick lying under it and the round mouth of the pool in
+  front of Christ — the five porches are John's detail, not Matthew's. It is the John
+  reader's Bethesda icon; it is also still the first icon of Matthew 9:1–8, where it depicts
+  the Capernaum paralytic less exactly. Same shape as the `Typhlon` question in `## Next`;
+  the owner's call, not changed in Matthew.
+- **`Christ before Caiaphas` (Gračanica) belongs to the trial, not the plot.** Christ is
+  present in it, so it is the trial (26:57–75), not the plot to kill him (26:1–5) where it had
+  been placed. Since 2026-08-20i it is the *second* icon of the trial, after the Dionysiou
+  `Krinomenos Christou`, whose inscription names both Annas and Caiaphas. (Until 2026-09-18
+  this note still said it was unused.)
 - **Verify every image by eye before wiring it up.** Titles lie. `Christ in the pharisee's
   house (Monreale)` is actually the healing of the man with dropsy — its own Latin
   inscription says `SANAT YDROPICUM DIE SABBATI`. It had been assigned to seven
@@ -251,7 +304,7 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   Tzortzis Phouka and Theophanes the Cretan. The katholikon is standardly given to
   Tzortzis. Credit lines render the Commons field verbatim, so don't assert a painter in
   the prose that contradicts the credit sitting next to it.
-- **Never write a patristic quotation from memory.** `src/data/catena.json` holds ~6,200
+- **Never write a patristic quotation from memory.** `src/books/matthew/catena.json` holds ~6,200
   real ones parsed from the 1842 Catena; `fathers.js` selects from it. If a passage has no
   quote, widen the block window — do not compose one.
 - **The Fathers whitelist is deliberate.** `fathers.js` excludes Pseudo-Chrysostom (the
@@ -268,7 +321,11 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   legitimately *own* a shared image (e.g. `entry` owns the Entry-into-Jerusalem icon that
   `lament23` borrows) need `tierA:true` in `overrides.js`; the reverse case needs
   `tierB:true`.
-- **A source file missing from the Makefile's `SOURCES` ships a stale reader in silence.**
+- **A source file missing from the Makefile's dependencies ships a stale reader in silence.**
+  Since 2026-09-18 each book's `icons.json` depends on `$(wildcard src/books/<book>/*.js
+  *.json)` plus the shared `src/book.js`, `assemble.js`, `fathers.js` and the pool JSON, so a
+  new file in a book folder is picked up automatically; a new *shared* module still has to be
+  added to `SHARED` by hand. History:
   `src/hotspots3.js` was added on 2026-08-20i but never listed, so `$(DATA)` did not rebuild
   when it changed and the 18,080,873-byte reader on disk was a build behind its own sources —
   no error, nothing in `git status` to say so, and `make` printing "wrote … 114 images" as
@@ -280,7 +337,7 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   a full copy to git history. It stays tracked deliberately — it is what someone clones the
   repo for — but the build is byte-deterministic, so a rebuild with no content change leaves
   `git status` clean and costs history nothing. Only a real content change grows the repo.
-  `src/data/icons.json` is generated and **untracked**; `make` rebuilds it.
+  `src/books/<book>/icons.json` is generated and **untracked**; `make` rebuilds it.
 - **The build fails loudly now — keep it that way.** `build.js` exits non-zero rather than
   emitting a page with an icon missing from `img/`, and `assemble.js` gates its optional
   requires (`overrides.js`, `stories.js`) on `fs.existsSync` instead of catching. The old
@@ -946,3 +1003,36 @@ reading correction in `hotspots2.js` listed above.
 
 **Next.** `## Next` item 2 — finish the reading audit, 27 of 113 still unchecked, and settle
 the John 9 / Matthew 9 question on `Christos Iomenos Typhlon`.
+
+## Session 2026-09-18 (the John reader and the per-book layout) — reconstructed 2026-09-19
+
+This session ended without writing its block or committing. The block below was
+reconstructed on 2026-09-19 from the working tree, the HANDOFF diff and `make check`; it
+records what the tree shows, not what the session intended.
+
+**Did**
+- At the owner's request to "repeat the process for the bible according to saint john",
+  split the pipeline into a shared core and per-book folders: `src/book.js` reads
+  `BOOK=matthew|john`, and everything a Gospel owns moved to `src/books/<book>/` (the Matthew
+  files by `git mv`). `Makefile`, `README.md`, `src/README.md`, `check.js`, `build.js`,
+  `assemble.js`, `fathers.js`, `overlay.py` and the tools take the book from there. The image
+  pool (`src/img/`, `image_meta.json`, `pick_keys.json`) stays shared.
+- Built `John Reader.html`: KJV from the same aruljohn JSON as Matthew, the Catena from
+  isidore.co, 64 passages, 27 illustrated with 73 icons, 73 prose readings in
+  `src/books/john/hotspots2.js`, and 28 positioned marker sets (174 markers) in
+  `src/books/john/hotspots3.js`. Theophylact of Ohrid added to the Fathers whitelist.
+- Corrected three Gotchas: the Langadas Evangelist has an eagle, not Prochoros; `Christ before
+  Caiaphas` is in use as the trial's second icon; `catMembers` truncates at its limit.
+
+**Verified on 2026-09-19, before the commit**
+- `make check` green on both books. Matthew unchanged: 118 passages, 113 icons, 113/113 with
+  markers. John: 64 passages, 73/73 readings, **28/73 with markers**, 192 quotations.
+- The rebuilt `Matthew Reader.html` differs from the committed one only by a reflowed footer
+  paragraph and the new `book` record; its `chapterTitles`, `images` and `passages` data
+  compare equal.
+
+**Not done by that session**
+- Markers on 45 of John's 73 icons.
+- `check.js` still prints "searched twice, none exists" for the 10 John passages that want
+  an icon and have none. That sentence is true of Matthew's search; nothing in the tree shows
+  a John search of equal depth.

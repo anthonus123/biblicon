@@ -1,0 +1,492 @@
+{
+ "1": [
+  {
+   "id": "prologue",
+   "vS": 1,
+   "vE": 18,
+   "icon": false,
+   "name": "The Word Made Flesh"
+  },
+  {
+   "id": "witness1",
+   "vS": 19,
+   "vE": 28,
+   "icon": false,
+   "name": "The Witness of John to the Priests"
+  },
+  {
+   "id": "lamb",
+   "vS": 29,
+   "vE": 34,
+   "icon": false,
+   "name": "Behold the Lamb of God"
+  },
+  {
+   "id": "firstdisciples",
+   "vS": 35,
+   "vE": 42,
+   "icon": false,
+   "name": "Andrew Finds Peter"
+  },
+  {
+   "id": "nathanael",
+   "vS": 43,
+   "vE": 51,
+   "icon": false,
+   "name": "Philip and Nathanael"
+  }
+ ],
+ "2": [
+  {
+   "id": "cana",
+   "vS": 1,
+   "vE": 12,
+   "icon": false,
+   "name": "The Marriage at Cana"
+  },
+  {
+   "id": "temple2",
+   "vS": 13,
+   "vE": 25,
+   "icon": false,
+   "name": "The Cleansing of the Temple"
+  }
+ ],
+ "3": [
+  {
+   "id": "nicodemus",
+   "vS": 1,
+   "vE": 21,
+   "icon": false,
+   "name": "Nicodemus Comes by Night"
+  },
+  {
+   "id": "witness3",
+   "vS": 22,
+   "vE": 36,
+   "icon": false,
+   "name": "He Must Increase"
+  }
+ ],
+ "4": [
+  {
+   "id": "samaritan",
+   "vS": 1,
+   "vE": 26,
+   "icon": false,
+   "name": "The Samaritan Woman at the Well"
+  },
+  {
+   "id": "harvest4",
+   "vS": 27,
+   "vE": 42,
+   "icon": false,
+   "name": "The Fields White to Harvest"
+  },
+  {
+   "id": "nobleman",
+   "vS": 43,
+   "vE": 54,
+   "icon": false,
+   "name": "The Nobleman’s Son"
+  }
+ ],
+ "5": [
+  {
+   "id": "bethesda",
+   "vS": 1,
+   "vE": 18,
+   "icon": false,
+   "name": "The Paralytic at Bethesda"
+  },
+  {
+   "id": "sonfather",
+   "vS": 19,
+   "vE": 30,
+   "icon": false,
+   "name": "The Son Does What the Father Does"
+  },
+  {
+   "id": "witnesses5",
+   "vS": 31,
+   "vE": 47,
+   "icon": false,
+   "name": "The Witnesses to the Son"
+  }
+ ],
+ "6": [
+  {
+   "id": "feeding",
+   "vS": 1,
+   "vE": 15,
+   "icon": false,
+   "name": "The Feeding of the Five Thousand"
+  },
+  {
+   "id": "walking",
+   "vS": 16,
+   "vE": 21,
+   "icon": false,
+   "name": "Christ Walks on the Sea"
+  },
+  {
+   "id": "bread6",
+   "vS": 22,
+   "vE": 40,
+   "icon": false,
+   "name": "The Bread from Heaven"
+  },
+  {
+   "id": "breadlife",
+   "vS": 41,
+   "vE": 59,
+   "icon": false,
+   "name": "I Am the Bread of Life"
+  },
+  {
+   "id": "hardsaying",
+   "vS": 60,
+   "vE": 71,
+   "icon": false,
+   "name": "Lord, to Whom Shall We Go?"
+  }
+ ],
+ "7": [
+  {
+   "id": "brethren",
+   "vS": 1,
+   "vE": 13,
+   "icon": false,
+   "name": "Christ Goes Up Secretly to the Feast"
+  },
+  {
+   "id": "midfeast",
+   "vS": 14,
+   "vE": 36,
+   "icon": false,
+   "name": "Teaching in the Temple at Mid-feast"
+  },
+  {
+   "id": "livingwater",
+   "vS": 37,
+   "vE": 53,
+   "icon": false,
+   "name": "Rivers of Living Water"
+  }
+ ],
+ "8": [
+  {
+   "id": "adulteress",
+   "vS": 1,
+   "vE": 11,
+   "icon": false,
+   "name": "The Woman Taken in Adultery"
+  },
+  {
+   "id": "light8",
+   "vS": 12,
+   "vE": 30,
+   "icon": false,
+   "name": "I Am the Light of the World"
+  },
+  {
+   "id": "truth8",
+   "vS": 31,
+   "vE": 47,
+   "icon": false,
+   "name": "The Truth Shall Make You Free"
+  },
+  {
+   "id": "abraham8",
+   "vS": 48,
+   "vE": 59,
+   "icon": false,
+   "name": "Before Abraham Was, I Am"
+  }
+ ],
+ "9": [
+  {
+   "id": "blindman",
+   "vS": 1,
+   "vE": 12,
+   "icon": false,
+   "name": "The Man Born Blind"
+  },
+  {
+   "id": "inquiry9",
+   "vS": 13,
+   "vE": 34,
+   "icon": false,
+   "name": "The Pharisees Question the Blind Man"
+  },
+  {
+   "id": "seeing9",
+   "vS": 35,
+   "vE": 41,
+   "icon": false,
+   "name": "Dost Thou Believe on the Son of God?"
+  }
+ ],
+ "10": [
+  {
+   "id": "shepherd",
+   "vS": 1,
+   "vE": 21,
+   "icon": false,
+   "name": "I Am the Good Shepherd"
+  },
+  {
+   "id": "dedication",
+   "vS": 22,
+   "vE": 42,
+   "icon": false,
+   "name": "I and My Father Are One"
+  }
+ ],
+ "11": [
+  {
+   "id": "lazarussick",
+   "vS": 1,
+   "vE": 16,
+   "icon": false,
+   "name": "Lazarus Is Sick"
+  },
+  {
+   "id": "resurrectionlife",
+   "vS": 17,
+   "vE": 37,
+   "icon": false,
+   "name": "I Am the Resurrection and the Life"
+  },
+  {
+   "id": "lazarus",
+   "vS": 38,
+   "vE": 44,
+   "icon": false,
+   "name": "The Raising of Lazarus"
+  },
+  {
+   "id": "caiaphas11",
+   "vS": 45,
+   "vE": 57,
+   "icon": false,
+   "name": "Caiaphas Prophesies"
+  }
+ ],
+ "12": [
+  {
+   "id": "anointing",
+   "vS": 1,
+   "vE": 11,
+   "icon": false,
+   "name": "Mary Anoints the Feet of Jesus"
+  },
+  {
+   "id": "entry",
+   "vS": 12,
+   "vE": 19,
+   "icon": false,
+   "name": "The Entry into Jerusalem"
+  },
+  {
+   "id": "greeks",
+   "vS": 20,
+   "vE": 36,
+   "icon": false,
+   "name": "The Hour Is Come"
+  },
+  {
+   "id": "unbelief12",
+   "vS": 37,
+   "vE": 50,
+   "icon": false,
+   "name": "The Unbelief of the People"
+  }
+ ],
+ "13": [
+  {
+   "id": "washing",
+   "vS": 1,
+   "vE": 17,
+   "icon": false,
+   "name": "The Washing of the Feet"
+  },
+  {
+   "id": "betrayer",
+   "vS": 18,
+   "vE": 30,
+   "icon": false,
+   "name": "One of You Shall Betray Me"
+  },
+  {
+   "id": "newcommandment",
+   "vS": 31,
+   "vE": 38,
+   "icon": false,
+   "name": "A New Commandment"
+  }
+ ],
+ "14": [
+  {
+   "id": "way",
+   "vS": 1,
+   "vE": 14,
+   "icon": false,
+   "name": "I Am the Way, the Truth, and the Life"
+  },
+  {
+   "id": "comforter",
+   "vS": 15,
+   "vE": 31,
+   "icon": false,
+   "name": "The Promise of the Comforter"
+  }
+ ],
+ "15": [
+  {
+   "id": "vine",
+   "vS": 1,
+   "vE": 17,
+   "icon": false,
+   "name": "I Am the True Vine"
+  },
+  {
+   "id": "hatred15",
+   "vS": 18,
+   "vE": 27,
+   "icon": false,
+   "name": "The Hatred of the World"
+  }
+ ],
+ "16": [
+  {
+   "id": "spirit16",
+   "vS": 1,
+   "vE": 15,
+   "icon": false,
+   "name": "The Work of the Spirit of Truth"
+  },
+  {
+   "id": "sorrow16",
+   "vS": 16,
+   "vE": 33,
+   "icon": false,
+   "name": "Your Sorrow Shall Be Turned into Joy"
+  }
+ ],
+ "17": [
+  {
+   "id": "prayer17",
+   "vS": 1,
+   "vE": 26,
+   "icon": false,
+   "name": "The High Priestly Prayer"
+  }
+ ],
+ "18": [
+  {
+   "id": "arrest",
+   "vS": 1,
+   "vE": 11,
+   "icon": false,
+   "name": "The Betrayal and Arrest in the Garden"
+  },
+  {
+   "id": "annas",
+   "vS": 12,
+   "vE": 27,
+   "icon": false,
+   "name": "Before Annas and Caiaphas; Peter Denies"
+  },
+  {
+   "id": "pilate18",
+   "vS": 28,
+   "vE": 40,
+   "icon": false,
+   "name": "Christ before Pilate"
+  }
+ ],
+ "19": [
+  {
+   "id": "eccehomo",
+   "vS": 1,
+   "vE": 16,
+   "icon": false,
+   "name": "Behold the Man"
+  },
+  {
+   "id": "crucifixion",
+   "vS": 17,
+   "vE": 27,
+   "icon": false,
+   "name": "The Crucifixion"
+  },
+  {
+   "id": "death19",
+   "vS": 28,
+   "vE": 37,
+   "icon": false,
+   "name": "It Is Finished"
+  },
+  {
+   "id": "burial",
+   "vS": 38,
+   "vE": 42,
+   "icon": false,
+   "name": "The Burial of Christ"
+  }
+ ],
+ "20": [
+  {
+   "id": "tomb20",
+   "vS": 1,
+   "vE": 10,
+   "icon": false,
+   "name": "Peter and John at the Empty Tomb"
+  },
+  {
+   "id": "magdalene",
+   "vS": 11,
+   "vE": 18,
+   "icon": false,
+   "name": "Christ Appears to Mary Magdalene"
+  },
+  {
+   "id": "doorsshut",
+   "vS": 19,
+   "vE": 23,
+   "icon": false,
+   "name": "Peace Be unto You"
+  },
+  {
+   "id": "thomas",
+   "vS": 24,
+   "vE": 31,
+   "icon": false,
+   "name": "The Belief of Thomas"
+  }
+ ],
+ "21": [
+  {
+   "id": "tiberias",
+   "vS": 1,
+   "vE": 14,
+   "icon": false,
+   "name": "The Appearance at the Sea of Tiberias"
+  },
+  {
+   "id": "feedsheep",
+   "vS": 15,
+   "vE": 19,
+   "icon": false,
+   "name": "Feed My Sheep"
+  },
+  {
+   "id": "beloved",
+   "vS": 20,
+   "vE": 25,
+   "icon": false,
+   "name": "The Disciple Whom Jesus Loved"
+  }
+ ]
+}

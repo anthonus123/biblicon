@@ -1,49 +1,52 @@
-# Build the Matthew reader.
+# Build the readers.
 #
-#   make            assemble the data, emit the reader, check it
-#   make check      structural check on the assembled data
-#   make serve      serve the reader at http://127.0.0.1:8731 (file:// breaks in some browsers)
-#   make clean      remove the generated intermediate
+#   make                assemble, check and emit BOTH readers ("Matthew Reader.html", "John Reader.html")
+#   make matthew        one Gospel only (also: make john)
+#   make check          structural check on every book's assembled data
+#   make BOOK=john serve   serve a reader at http://127.0.0.1:8731 (file:// breaks in some browsers)
+#   make clean          remove the generated intermediates
 #
-# The build is deterministic: rebuilding without a content change reproduces the same bytes
-# and leaves `git status` clean, so the 8.7 MB reader only enters git history when something
-# actually changed.
+# Each Gospel's own sources live in src/books/<book>/ (see src/book.js); the pipeline in src/
+# is shared, and so is the image pool. The build is deterministic: rebuilding without a content
+# change reproduces the same bytes and leaves `git status` clean, so a reader only enters git
+# history when something actually changed.
 
-READER  := Matthew Reader.html
-DATA    := src/data/icons.json
-PORT    := 8731
+BOOKS := matthew john
+PORT  := 8731
+BOOK  ?= matthew
 
 # Everything the assembled data is derived from. Touch any of these and `make` redoes it.
-# Every hotspots file assemble.js requires has to be listed: hotspots3.js was left out when
-# it was added, so a session that wrote 73 sets of markers into it left icons.json — and the
-# shipped reader — a build behind, with no error anywhere to say so.
-SOURCES := src/assemble.js src/assign.js src/picks.js src/labels.js src/fathers.js \
-           src/hotspots.js src/hotspots2.js src/hotspots3.js $(wildcard src/overrides.js) \
-           $(wildcard src/stories.js) \
-           src/data/anchors.json src/data/titles.json src/data/icons_orig.json \
-           src/data/image_meta.json src/data/pick_keys.json src/data/matthew_kjv.json \
-           src/data/catena.json
+# Every file assemble.js requires has to be listed: hotspots3.js was once left out, and a
+# session that wrote 73 sets of markers into it left the shipped reader a build behind, with
+# no error anywhere to say so.
+SHARED := src/book.js src/assemble.js src/fathers.js src/data/image_meta.json src/data/pick_keys.json
+PERBOOK = $(wildcard src/books/$(1)/*.js) $(wildcard src/books/$(1)/*.json)
 
-.PHONY: all reader check serve clean
+.PHONY: all check serve clean $(BOOKS) $(addprefix check-,$(BOOKS))
 
-all: check reader
+all: $(BOOKS)
 
-# Stage 1 — merge the data files into one blob the page can carry.
-$(DATA): $(SOURCES)
-	node src/assemble.js
+define BOOK_RULES
+# Stage 1 — merge the book's data files into one blob the page can carry.
+src/books/$(1)/icons.json: $(SHARED) $$(filter-out src/books/$(1)/icons.json,$$(call PERBOOK,$(1)))
+	BOOK=$(1) node src/assemble.js
 
-# Stage 2 — inline the fonts, icons and app into the single self-contained file.
-# Phony rather than a real target: GNU make cannot depend cleanly on a path with a space,
-# and the build is deterministic, so re-emitting it costs nothing but a few seconds.
-reader: check $(DATA) src/build.js src/app.js src/page.css src/spectral_keep.json
-	node src/build.js
+# Stage 2 — inline the fonts, icons and app into the single self-contained file. Phony
+# rather than a real target: GNU make cannot depend cleanly on a path with a space, and the
+# build is deterministic, so re-emitting it costs nothing but a few seconds.
+$(1): check-$(1) src/build.js src/app.js src/page.css src/spectral_keep.json
+	BOOK=$(1) node src/build.js
 
-check: $(DATA)
-	node src/check.js
+check-$(1): src/books/$(1)/icons.json src/check.js
+	BOOK=$(1) node src/check.js
+endef
+$(foreach b,$(BOOKS),$(eval $(call BOOK_RULES,$(b))))
 
-serve: reader
-	@echo "http://127.0.0.1:$(PORT)/$(subst $() ,%20,$(READER))"
+check: $(addprefix check-,$(BOOKS))
+
+serve: $(BOOK)
+	@echo "http://127.0.0.1:$(PORT)/$(subst $() ,%20,$(shell node -e "process.stdout.write(require('./src/books/$(BOOK)/book.json').reader)"))"
 	python3 -m http.server $(PORT) --bind 127.0.0.1
 
 clean:
-	rm -f $(DATA)
+	rm -f $(addsuffix /icons.json,$(addprefix src/books/,$(BOOKS)))

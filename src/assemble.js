@@ -1,18 +1,21 @@
 const fs=require('fs');
+const book=require('./book.js');           // BOOK=matthew (default) or BOOK=john
 const B=__dirname+'/data/';
-const anchors=JSON.parse(fs.readFileSync(B+'anchors.json','utf8'));
-const titles=JSON.parse(fs.readFileSync(B+'titles.json','utf8'));
-const orig=JSON.parse(fs.readFileSync(B+'icons_orig.json','utf8'));
+const J=n=>JSON.parse(fs.readFileSync(book.file(n),'utf8'));
+const anchors=J('anchors.json');
+const titles=J('titles.json');
+// The owner's original 46 Matthew entries; another Gospel has none.
+const orig=book.has('icons_orig.json')?J('icons_orig.json'):{};
 const pool=JSON.parse(fs.readFileSync(B+'image_meta.json','utf8'));
 const keys=JSON.parse(fs.readFileSync(B+'pick_keys.json','utf8'));
-const kjv=JSON.parse(fs.readFileSync(B+'matthew_kjv.json','utf8'));
-const A=require('./assign.js'), picks=require('./picks.js'), F=require('./fathers.js');
-const h1=require('./hotspots.js'), h2=require('./hotspots2.js'), h3=require('./hotspots3.js');
+const kjv=J('kjv.json');
+const A=require(book.file('assign.js')), picks=require(book.file('picks.js')), F=require('./fathers.js');
+const h1=require(book.file('hotspots.js')), h2=require(book.file('hotspots2.js')), h3=require(book.file('hotspots3.js'));
 
 // Genuinely optional modules are gated on the file existing. They are NOT wrapped in a
 // catch: a syntax error in one of these hand-edited files has to stop the build, not
 // quietly produce a page with every override or story missing.
-const optional=n=>fs.existsSync(__dirname+'/'+n)?require('./'+n):{};
+const optional=n=>book.has(n)?require(book.file(n)):{};
 const over=optional('overrides.js');
 const stories=optional('stories.js');
 
@@ -21,7 +24,7 @@ const stories=optional('stories.js');
 // markers from h3 — `make check` fails if the same file declares markers in both.
 const hotdb={...h1}; for(const k in h2) hotdb[k]={read:h2[k],hot:[]};
 for(const k in h3) hotdb[k]={read:(hotdb[k]||{}).read||'',hot:h3[k]};
-const labels=require('./labels.js');
+const labels=require(book.file('labels.js'));
 
 const verses={}; for(const c of kjv.chapters) verses[+c.chapter]=c.verses.map(v=>({n:+v.verse,t:v.text}));
 const dash='–';
@@ -61,7 +64,7 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
     const imgKeys = iconsFor(a.id);
     const imgKey = imgKeys[0] || null;
     const fa=F.forPericope(ch,a.vS,a.vE,3);
-    const range='Matthew '+ch+':'+a.vS+dash+a.vE;
+    const range=book.name+' '+ch+':'+a.vS+dash+a.vE;
     passages.push({
       id:a.id, ch, vS:a.vS, vE:a.vE,
       name: ov.name || o.name || a.name || titles[ch],
@@ -75,7 +78,7 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
       subject: ov.subject || as.subj || '',
       img: imgKey || null,
       imgs: imgKeys,
-      keyRef: ov.keyVerse ? ('Matthew '+ch+':'+ov.keyVerse) : (ov.keyRef || o.keyRef || ''),
+      keyRef: ov.keyVerse ? (book.name+' '+ch+':'+ov.keyVerse) : (ov.keyRef || o.keyRef || ''),
       keyText: ov.keyVerse
         ? ((verses[ch].find(function(v){return v.n===ov.keyVerse;})||{}).t||'')
         : (ov.keyText || o.keyText || ''),
@@ -91,12 +94,13 @@ for(const ch of Object.keys(anchors).map(Number).sort((a,b)=>a-b)){
 const shown=new Set(); passages.forEach(p=>p.imgs.forEach(k=>shown.add(k)));
 for(const k of Object.keys(images)) if(!shown.has(k)) delete images[k];
 
-const out={ chapterTitles:titles, images, passages };
-fs.writeFileSync(B+'icons.json',JSON.stringify(out));
+const out={ book:{id:book.id,name:book.name,title:book.title,greek:book.greek,chapters:book.chapters,catenaShort:book.catenaShort},
+  chapterTitles:titles, images, passages };
+fs.writeFileSync(book.file('icons.json'),JSON.stringify(out));
 const st={a:0,b:0,c:0}; passages.forEach(p=>st[p.tier]++);
 console.log('passages',passages.length,JSON.stringify(st),
  'with image',passages.filter(p=>p.img).length,
  'icons shown',passages.reduce((n,p)=>n+p.imgs.length,0),
  'with story',passages.filter(p=>p.story).length,
  'with fathers',passages.filter(p=>p.fathers.length).length,
- 'size KB',Math.round(fs.statSync(B+'icons.json').size/1024));
+ 'size KB',Math.round(fs.statSync(book.file('icons.json')).size/1024));

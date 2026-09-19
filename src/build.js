@@ -1,10 +1,10 @@
 const fs=require('fs'),path=require('path');
-const B=__dirname+'/data/';
-if(!fs.existsSync(B+'icons.json')){
-  console.error("src/data/icons.json is missing \u2014 it is generated. Run `make` (or `node src/assemble.js`) first.");
+const book=require('./book.js');
+if(!book.has('icons.json')){
+  console.error(book.file('icons.json')+" is missing \u2014 it is generated. Run `make` (or `node src/assemble.js`) first.");
   process.exit(1);
 }
-const D=JSON.parse(fs.readFileSync(B+'icons.json','utf8'));
+const D=JSON.parse(fs.readFileSync(book.file('icons.json'),'utf8'));
 const css=fs.readFileSync(__dirname+'/page.css','utf8');
 const app=fs.readFileSync(__dirname+'/app.js','utf8');
 
@@ -50,7 +50,7 @@ const html=`<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2ece0'/%3E%3Cpath d='M16 4v24M9 10h14M11 16h10M12 22h8' stroke='%23a8792c' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
-<title>The Gospel of Matthew — an Orthodox Icon Reader</title>
+<title>${book.title} — an Orthodox Icon Reader</title>
 <style>
 ${fontCss}
 ${css}
@@ -61,14 +61,14 @@ ${css}
 <header>
   <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="#a8792c" stroke-width="1.6" aria-hidden="true">
     <path d="M12 2v20M6 7h12M8.5 12h7M9.5 17.5h5"/></svg>
-  <h1>The Gospel of <em>Matthew</em></h1>
-  <span class="badge">28 Chapters · King James Version</span>
+  <h1>The Gospel of <em>${book.name}</em></h1>
+  <span class="badge">${book.chapters} Chapters · King James Version</span>
 </header>
 
 <div class="layout">
   <aside>
-    <h2>Reading Matthew</h2>
-    <div class="sub">All 28 chapters · with the icons of the Church</div>
+    <h2>Reading ${book.name}</h2>
+    <div class="sub">All ${book.chapters} chapters · with the icons of the Church</div>
     <div class="progress"><i id="bar" style="width:0%"></i></div>
     <div class="pctline" id="pct">0% through the reading</div>
     <div class="lab" style="margin-bottom:7px">How to read</div>
@@ -83,8 +83,8 @@ ${css}
 
   <main>
     <div class="mast">
-      <div class="kicker">Κατὰ Ματθαῖον</div>
-      <h2>The Gospel of Matthew</h2>
+      <div class="kicker">${book.greek}</div>
+      <h2>${book.title}</h2>
       <p id="modehint">King James Version · open an icon for its story, the Fathers &amp; its meaning</p>
       <div class="orn"><span></span>☨<span></span></div>
     </div>
@@ -95,10 +95,7 @@ ${css}
 
 <footer><div class="inner">
   <h4>About this reader</h4>
-  <p>The gospel text is the King James Version. The patristic commentary is quoted verbatim from the
-  <em>Catena Aurea</em> on St Matthew — the “golden chain” of the Fathers compiled by St Thomas Aquinas
-  (Oxford: J.G.F. &amp; J. Rivington, 1842; public domain) — restricted here to Fathers venerated as saints
-  in the Orthodox Church. The icons and frescoes are, with one exception noted below, public-domain or
+  <p>The gospel text is the King James Version. ${book.catenaLong} The icons and frescoes are, ${userKeys.length?'with one exception noted below, ':''}public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
   Where the Church has painted a scene more than once, this reader shows several of its icons
   side by side — the Theophany at Langadas beside the Theophany in the Russian North, the
@@ -125,6 +122,6 @@ ${app}
 </script>
 </body>
 </html>`;
-const out=process.argv[2]||(__dirname+'/../Matthew Reader.html');
+const out=process.argv[2]||(__dirname+'/../'+book.reader);
 fs.writeFileSync(out,html);
 console.log('wrote',out,(fs.statSync(out).size/1048576).toFixed(2)+' MB','images',Object.keys(IMG).length);

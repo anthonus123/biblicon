@@ -1,5 +1,6 @@
 const fs=require('fs');
-const catena=JSON.parse(fs.readFileSync(__dirname+'/data/catena.json','utf8'));
+const book=require('./book.js');
+const catena=JSON.parse(fs.readFileSync(book.file('catena.json'),'utf8'));
 
 // Fathers venerated as saints in the Orthodox Church (all pre-schism).
 // Deliberately excluded: Pseudo-Chrysostom (the Arian-tinged Opus Imperfectum),
@@ -23,6 +24,11 @@ const FATHERS = [
  [/^cyprian\b/i,                           'St Cyprian of Carthage',     7],
  [/^chrysol|^chrysologus/i,                'St Peter Chrysologus',       6],
  [/^bede\b/i,                              'St Bede',                    6],
+ // Blessed Theophylact of Ohrid (d. c. 1107): the standard Orthodox commentator on the
+ // Gospels, cited throughout the John volume. Not a Latin; his rank sits just under
+ // Chrysostom, whom he follows.
+ [/^theophyl/i,                            'Blessed Theophylact of Ohrid', 9],
+ [/^council of ephesus/i,                  'The Council of Ephesus (431)', 8],
  [/^isidore\b/i,                           'St Isidore',                 6],
 ];
 const BLOCKED=/^(pseudo|gloss|remig|raban|haymo|anselm|origen|euseb|but |or otherwise|interlin|ord\b)/i;

@@ -3,8 +3,8 @@
 of placements can be checked in one glance.  This is the only check that can see a marker
 sitting on the wrong figure — `make check` only knows the coordinates parse.  Usage:
 
-    node src/assemble.js                      # icons.json must be current
-    python3 src/tools/overlay.py OUTDIR [KEY ...]
+    node src/assemble.js                      # icons.json must be current (BOOK=john for John)
+    BOOK=john python3 src/tools/overlay.py OUTDIR [KEY ...]
 
 With no keys, every icon that has markers is drawn, 4 to a sheet, in Gospel order, with a
 legend of the marker labels beside each icon.  With keys, one sheet per key at a larger
@@ -14,7 +14,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
-D = json.load(open(os.path.join(ROOT, "data", "icons.json")))
+BOOK = os.environ.get("BOOK", "matthew").lower()      # BOOK=john for the other reader
+D = json.load(open(os.path.join(ROOT, "books", BOOK, "icons.json")))
 
 def font(sz, bold=True):
     for p in ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else
@@ -80,7 +81,7 @@ def main():
     def order(kv):
         r = owner.get(kv[0], "")
         import re
-        m = re.match(r"Matthew (\d+):(\d+)", r)
+        m = re.match(r"\w+ (\d+):(\d+)", r)
         return (int(m.group(1))*1000 + int(m.group(2))) if m else 0
     items.sort(key=order)
     if keys:

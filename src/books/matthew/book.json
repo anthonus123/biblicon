@@ -1,0 +1,11 @@
+{
+ "id": "matthew",
+ "name": "Matthew",
+ "title": "The Gospel of Matthew",
+ "greek": "Κατὰ Ματθαῖον",
+ "chapters": 28,
+ "reader": "Matthew Reader.html",
+ "minNotes": 46,
+ "catenaShort": "Quoted verbatim from the Catena Aurea on the Gospel of St Matthew, compiled by St Thomas Aquinas from the Fathers (Oxford: J.G.F. & J. Rivington, 1842; public domain).",
+ "catenaLong": "The patristic commentary is quoted verbatim from the <em>Catena Aurea</em> on St Matthew — the “golden chain” of the Fathers compiled by St Thomas Aquinas (Oxford: J.G.F. &amp; J. Rivington, 1842; public domain) — restricted here to Fathers venerated as saints in the Orthodox Church."
+}

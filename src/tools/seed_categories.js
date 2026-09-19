@@ -1,7 +1,7 @@
 // For every file already trusted in picks.js, ask Commons which categories it sits in.
 // A verified Theophany fresco lives in the categories where more Theophany icons live.
 const C=require('../commons.js');
-const picks=require('../picks.js');
+const picks=require(require('../book.js').file('picks.js'));
 const fs=require('fs');
 const OUT=__dirname+'/file_cats.json';
 

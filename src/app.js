@@ -318,7 +318,7 @@ function renderDrawer(keep){
     var f=el('div');
     if(p.fathers.length){ p.fathers.forEach(function(x){f.appendChild(fatherBlock(x));});
       f.appendChild(el('div',{class:'srcnote',
-        text:'Quoted verbatim from the Catena Aurea on the Gospel of St Matthew, compiled by St Thomas Aquinas from the Fathers (Oxford: J.G.F. & J. Rivington, 1842; public domain).'}));
+        text:D.book.catenaShort}));
     } else f.appendChild(el('div',{class:'nohot',text:'No patristic comment on this passage in the present collection.'}));
     d.appendChild(f);
   }else{
