@@ -20,3 +20,12 @@ in `hotspots2.js`, and run `make`. The check fails if an icon has no label.
 
 The paths in these scripts assume they are run from this directory. They were written for one
 harvest and are kept as a record of the method rather than as a polished tool.
+
+# Checking the quotations
+
+`quotes.js` (`BOOK=john node src/tools/quotes.js`) checks the words inside the readings and
+markers, which nothing else does. KJV clauses must be verbatim from the book's `kjv.json`. A
+Father quoted as "St Augustine: …" must be quoted from a Catena comment the Catena credits to
+him. Its first run on John found 19 misquoted verses, 18 drifted patristic sentences and two
+comments of Origen credited to Augustine and Chrysostom. Run it after writing any reading or
+marker, and read the list it prints: our own prose around a quotation shows up too.

@@ -119,6 +119,7 @@ In the owner's priority order:
    pictures.** Sheets 1-3 of the audit are done (see 2026-08-21b and
    `src/books/matthew/icon_reading_audit.tsv`); the sweep stopped partway through sheet 3. Roughly a
    third of the readings checked so far carried a false claim, so assume the rest do too.
+   Start with `BOOK=matthew node src/tools/quotes.js`: it lists 38 KJV clauses to read.
    **Open question found and not yet resolved:** `Christos Iomenos Typhlon` is the sole icon
    of Matthew 9:27-31 (The Two Blind Men) at tier a, and its own reading says plainly that it
    depicts the man born blind at Siloam — **John 9, not Matthew 9**. The Gotchas record that
@@ -315,6 +316,10 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   Tzortzis Phouka and Theophanes the Cretan. The katholikon is standardly given to
   Tzortzis. Credit lines render the Commons field verbatim, so don't assert a painter in
   the prose that contradicts the credit sitting next to it.
+- **A marker text can be well placed and still misquote.** Neither `make check` nor the overlay
+  reads the words. On 2026-09-19 `src/tools/quotes.js` found, in John texts that had passed both,
+  Origen's words credited to Augustine and to Chrysostom, and 37 quotations that were not
+  verbatim. Run it after writing any reading or marker.
 - **Never write a patristic quotation from memory.** `src/books/matthew/catena.json` holds ~6,200
   real ones parsed from the 1842 Catena; `fathers.js` selects from it. If a passage has no
   quote, widen the block window — do not compose one.
@@ -1070,6 +1075,19 @@ records what the tree shows, not what the session intended.
     haloed man holds the head; she holds the body at its middle.
 - Also kept marker texts to what each icon shows: no angels quoted over the Cretan *Noli*,
   which paints none, and no kiss claimed as John's where the icon borrows it from the others.
+- **Checked the words, not just the positions.** `src/tools/quotes.js` (new) tests every KJV
+  clause in John's readings and markers against `kjv.json`, and every "St X: …" quotation
+  against the Catena comment credited to that Father. It found, across both sessions' work:
+  - **two comments of Origen quoted as St Augustine and St Chrysostom** (the envoys in
+    `Prodromos Didaskon Ioudaious`, the waiting apostles in `Nipter`). Origen is excluded from
+    both readers. Both markers now quote the Gospel instead.
+  - 19 KJV quotations elided without a mark, reworded, or given the wrong opening word
+    ("Then Thomas answered" for "And Thomas answered"), and one Holy Friday hymn line
+    written from memory. All now verbatim, or turned into plain prose.
+  - 18 patristic sentences that drifted from the Catena: a dropped "viz." or "afterwards", a
+    pronoun swapped, "ardour" for the source's "ardor", and three real paraphrases (Hilary on
+    the vine, Augustine on the fragments, Chrysostom on the waterpots). All now the Catena's
+    words; two use "…" where a stretch of the same comment is left out.
 - `check.js`: the "searched twice, none exists" note is now per book (`iconGap` in each
   `book.json`). For John it says the search has not been done to Matthew's depth. The field
   is read only by `check.js`; the readers are unchanged by it.
@@ -1081,11 +1099,19 @@ records what the tree shows, not what the session intended.
 **Verified**
 - `make check`: John 64 passages, **73/73 readings, 73/73 with markers, 513 markers**, no clamp
   warnings, no reuse. Matthew unchanged; its rebuilt reader is byte-identical to the committed one.
+- `quotes.js` on John: 66 patristic quotations, every one credited to the right Father. The
+  three sentences it still prints are source typos ("be was", a stray "c") and a KJV verse
+  after a Father's words. Its 11 KJV lines are our prose leading into a correct quotation, or
+  Luke's words on the Nea Moni inscription, which the marker names as Luke's.
 - Browser, served over http: John reader loads with 0 console errors and all 27 unique image
   sources decode. On the Samaritan, Thomas and Tiberias galleries every thumbnail was
   selected, its markers counted against the source, and a marker clicked; the Gračanica
-  Tiberias screenshot matches the overlay.
+  Tiberias screenshot matches the overlay. In "Icons lead" mode the plate's thumbnail strip
+  works, and the drawer opened from the plate shows the icon selected there.
 - Not pushed. `main` is ahead of `origin/main` by the commits of 2026-09-18 and 2026-09-19.
 
 **Next.** `## Next` items 2 and 6: the Matthew reading audit, and icons for John's ten
-unillustrated passages, starting with the Good Shepherd question for the owner.
+unillustrated passages, starting with the Good Shepherd question for the owner. For the
+audit, `BOOK=matthew node src/tools/quotes.js` lists 38 KJV clauses to read. Matthew reports
+the Fathers in indirect speech, so the attribution half of the tool finds nothing there, and
+those claims still need checking against `catena.json` by hand.
