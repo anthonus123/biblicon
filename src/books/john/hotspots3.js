@@ -250,7 +250,7 @@ module.exports={
 ],
 "File:Cathedral (Monreale) - North arch of transept - Wedding at Cana.jpg":[
  ["The inscription", "IESUS SEDENS AD NUPTIAS DE AQUA FECIT VINUM — Jesus, sitting at the wedding, made wine of water. Both Jesus was called, and his disciples, to the marriage.", "9%", "22%"],
- ["Christ at the table", "He sits at the left end of the round table with the cross in his halo. The mosaic names him sitting: he is a guest at this feast before he is its host.", "36%", "8%"],
+ ["Christ at the table", "He sits at the left end of the round table with the cross in his halo. The mosaic names him sitting: he is a guest at this feast before he is its host.", "36%", "9%"],
  ["His Mother", "The mother of Jesus was there, and she sits beside him in her dark veil. It is she who notices first: They have no wine.", "31%", "12%"],
  ["A crowned guest", "One figure at the table wears a crown. In the Orthodox marriage service the bride and bridegroom are both crowned, and the crown marks this guest as one of the couple.", "25%", "27%"],
  ["The table", "The round table under the colonnade is laid with dishes and cups. The feast is ordinary, and the mosaic keeps it so.", "48%", "24%"],
@@ -260,7 +260,7 @@ module.exports={
 ],
 "File:StNikita122general.jpg":[
  ["The inscription", "The title over the arcade is in Slavonic and ends with the word БРАКЪ, the marriage.", "9%", "34%"],
- ["Christ at the end of the table", "He sits apart at the left end, haloed, with his hand raised. The feast goes on down the length of the table without looking at him.", "40%", "8%"],
+ ["Christ at the end of the table", "He sits apart at the left end, haloed, with his hand raised. The feast goes on down the length of the table without looking at him.", "40%", "9%"],
  ["The arcade", "The wedding is set under a long colonnade hung with a curtain, the painters' way of saying the scene is indoors.", "22%", "50%"],
  ["The guests raising cups", "Along the far side of the table the guests lift their cups. Every man at the beginning doth set forth good wine.", "37%", "25%"],
  ["The table", "The table runs the width of the wall, laid with bowls and dishes. The Serbian painters give the whole of an ordinary wedding meal.", "51%", "57%"],
