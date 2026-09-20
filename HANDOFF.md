@@ -82,16 +82,18 @@ and this file did not.
     John (see Gotchas for why not the 1845 scan). Nothing paraphrased, nothing invented.
   - **All 73 icons have positioned markers**, 513 in all, every one in `src/books/john/hotspots3.js`
     and every set checked by drawing it back onto the picture on 2026-09-19. No clamp warnings.
-- **Mark content, as of 2026-09-20 (the skeleton only):**
+- **Mark content, as of 2026-09-20:**
   - **104 passages**, all 16 chapters, every verse of the Gospel in exactly one of them and none
     in two — `make_anchors.js` refused to write the file otherwise. The divisions are the *Catena
     Aurea*'s own verse blocks on Mark (the 1842 volume groups the text into 105), with four
     overlapping pairs resolved and its 1:2–3 / 1:4–8 pair joined: they are the traditional
     pericopes, which is also where the Fathers' comments sit, so `fathers.js` selects cleanly.
-  - **Tiers: 0 (a), 0 (b), 104 (c) — no icons are wired yet.** `assign.js` names an
-    iconographic subject for **50** of the 104, and `make check` lists all 50. Almost every one
-    is a scene Matthew already carries in the shared pool, which is what the owner's reuse
-    decision of 2026-09-20 is for.
+  - **38 passages have an icon and they show 78 icons between them; 21 show more than one.**
+    Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
+    carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
+    *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
+    differs (see the Gotcha below). **28 of the 78 have a prose reading and positioned markers,
+    150 markers in all**; the other 50 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -99,7 +101,12 @@ and this file did not.
     other two differ only where `fathers.js` `clean()` strips a bracketed scripture reference.
     Blessed Theophylact (106) and St Bede (103) lead, then Augustine 43, Chrysostom 35,
     Jerome 4, Gregory the Dialogist 3, Hilary 2, Cyril of Alexandria 2, Ambrose 1, Leo 1.
-  - No readings and no markers, because there are no icons yet.
+  - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
+    1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
+    Christ among the apostles at 16:14–18.
+  - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
+    *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
+    improvement, not a hole.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -127,24 +134,37 @@ and this file did not.
 
 ## Next
 
-**Active work — Mark's icons.** The skeleton is built, checked and committed; the reader is
-text and commentary only. Next is `picks.js`, then `labels.js`, then readings in `hotspots2.js`,
-then markers in `hotspots3.js`, in batches with a commit each, exactly as John was done. The
-owner's decision of 2026-09-20 is to reuse Matthew's files for the parallel scenes, so the work
-is mostly *writing*, not searching: for each of the 50 subjects `make check` lists, find the
-Matthew passage that carries that scene, copy the Commons titles into Mark's `picks.js`, and
-then write Mark's own label, reading and markers for each. Three cautions:
-  - **A reading copied from Matthew's will be wrong**, and `BOOK=mark node src/tools/quotes.js`
-    is the check that proves it was adapted: any Matthew wording quoted as Mark's fails against
-    `src/books/mark/kjv.json`. Mark's details are his own — the four who carried the paralytic,
-    the green grass, Bartimaeus by name, the young man who fled naked, Simon of Cyrene's sons.
-  - **Markers must be written fresh against the picture**, never copied, even for a shared file:
-    Matthew's marker set explains the icon against Matthew's verses.
-  - **The footer's gallery and type-icon sentences come from `book.json`** (`galleryExample`,
-    `typeExample`) and are printed only when the reader really has galleries or tier-b passages.
-    Mark's two fields are unset, so its footer omits both. Set them when its icons land.
-  - The subjects with no icon anywhere in the pool (the Sower, the widow's mites, the seed
-    growing secretly) need a real search; Mark has had none.
+**Active work — the 50 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 28 of the 78 icons are finished. The
+remaining 22 passages, with how many icons each still needs:
+
+```
+7:24-30 (1)   8:1-9 (1)    9:1-8 (4)    11:1-10 (4)  11:11-14 (2) 11:15-18 (2)
+13:21-27 (1)  14:3-9 (1)   14:10-11 (1) 14:22-25 (3) 14:32-42 (3) 14:43-52 (3)
+14:53-59 (2)  14:66-72 (2) 15:1-5 (2)   15:6-15 (2)  15:16-20 (1) 15:21-28 (6)
+15:42-47 (4)  16:1-8 (1)   16:9-13 (3)  16:14-18 (1)
+```
+
+The loop that works, six to eight icons at a time, one commit each:
+  1. `python3 src/tools/grid.py OUT <key>…` and **read the grid image itself** — it carries the
+     picture as well as the coordinates, so it replaces looking at the icon separately.
+  2. Write the reading in `hotspots2.js` and the markers in `hotspots3.js`.
+  3. Check every KJV clause is verbatim **before** committing. `BOOK=mark node
+     src/tools/quotes.js` finds them; a scratch script that greps each clause against
+     `kjv.json` is faster when writing a batch. This caught nine misquotations in four batches —
+     "he commanded" for "and commanded", "weeping and wailing greatly" for "them that wept and
+     wailed greatly", a straight apostrophe for the KJV's curly one.
+  4. `BOOK=mark node src/assemble.js && BOOK=mark python3 src/tools/overlay.py OUT <key>…` and
+     read the sheets. This moved about a dozen markers and, three times, **disproved something
+     the reading claimed** — see the Gotcha below.
+  5. Crop before naming anything small: `python3 src/tools/crop.py OUT.png <key> T L B R`.
+
+Three cautions that have already cost time:
+  - **A reading copied from Matthew's would be wrong**, and `quotes.js` is what proves it was
+    adapted: Matthew's wording quoted as Mark's fails against `src/books/mark/kjv.json`.
+  - **Markers must be written fresh against the picture**, never copied, even for a shared file.
+  - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
+    walking on the sea, the Ascension) need a real search; Mark has had none.
 
 Then, in the owner's priority order:
 
@@ -243,6 +263,30 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 - **Mark's chapter blocks are coarse, and that is the source being right, not the parse being
   wrong.** The volume gives Mark 4:1–20 as one block and 5:1–20 as another, because those are
   the traditional pericopes. 105 blocks for 678 verses is correct; don't "fix" it by splitting.
+- **The overlay does not only move markers — it disproves sentences.** Three readings written
+  for Mark in one day said things the picture did not show, and each was caught by drawing the
+  markers back and then cropping: the Monreale mother-in-law has a band of bare gold between
+  Christ's hand and hers (the reading had them joined); the Monreale Jairus has the girl already
+  sitting up with her hand closed in his (the reading had her lying under the coverlet); and the
+  Princeton Twelve Apostles panel has darkened so far that nothing below the haloes can be made
+  out at all (the reading had each apostle holding a scroll or a Gospel). A reading is a claim
+  about a picture, so it has to be checked against the picture, not only against the text.
+- **What Mark does not have is as useful as what he does.** Five scenes in the shared pool were
+  deliberately *not* given to Mark, because the picture shows another Evangelist's version:
+  Pilate washing his hands (Matthew 27:24 — Mark has no washing), Peter walking on the water
+  (Matthew 14:28-31), the two blind men at Jericho (Mark names one, Bartimaeus), the Dionysiou
+  Gadarene fresco whose inscription is plural (Mark has a single Gerasene — the Ravenna mosaic
+  serves instead), and the Dionysiou dumb-demoniac for the deaf-mute of 7:31-37, a different
+  healing. Those five passages stay tier c and `make check` lists them as still wanting an icon.
+  The same rule made two positive finds: the Monreale paralytic, whose own inscription reads
+  APERVERVNT TECTVM and which shows two men opening the roof, is Mark's alone — Matthew and Luke
+  put nobody on a roof — and the Ravenna denial of Peter fits 14:66-72 exactly.
+- **Six icons of one scene belong to one passage, not to two adjacent ones.** Mark's six
+  Crucifixions were briefly split, two of them onto 15:33-37 on the strength of the sponge at
+  15:36. A Byzantine Crucifixion paints the darkness, the sponge, the centurion and the dead
+  Christ all at once, so the split gave two neighbouring passages the same scene under two
+  names. They all sit on 15:21-28 and 15:33-37 is tier c. `make check` cannot see this: it only
+  enforces one image to one passage.
 - **The only check that sees a misplaced marker is drawing it back onto the icon.**
   `python3 src/tools/overlay.py OUT` (after `node src/assemble.js`) montages every marked icon
   four to a sheet with the numbered circles and a legend; `overlay.py OUT KEY` draws one icon
@@ -1236,7 +1280,38 @@ those claims still need checking against `catena.json` by hand.
   the one untested case in the pipeline — no reader had ever been built with an empty `images`
   map — and it builds and renders.
 
-**Next.** Mark's icons, per `## Next`: `picks.js` from Matthew's files for the parallel scenes,
-then Mark's own labels, readings and markers, in batches with a commit each. Run
-`BOOK=mark node src/tools/quotes.js` after every reading — it is what proves a reading was
-adapted to Mark and not copied from Matthew.
+**Then, in the same session, the icons.**
+- **Wired all 38 illustrated passages to 78 icons** from the shared pool (commit `15224ba`),
+  with `labels.js` and an `overrides.js` that declares the five type icons and gives every one of
+  the 104 passages its type and key verse. Five scenes were deliberately not reused because the
+  picture is another Evangelist's version of the event; two turned out to fit Mark better than
+  the reader they came from. Both lists are in the Gotchas.
+- **Consolidated the six Crucifixions onto 15:21-28** after briefly splitting two of them onto
+  15:33-37; that passage is tier c again. Reason in the Gotchas.
+- **Wrote readings and markers for 28 of the 78 icons**, in four batches committed separately
+  (`407e642`, `f9fb5bf`, `248bf9c`, `3cbac70`): all of chapter 1, then 1:29-2:17, then
+  3:1-5:20, then 5:35-6:44. 150 markers, every set read off a 10% grid and then drawn back with
+  `overlay.py`.
+- **Made the footer describe its own reader.** Two of its sentences were printed unconditionally
+  with Matthew's examples baked into `build.js`, so John's footer had been naming Matthew's
+  galleries and Matthew's type icons, and Mark's would have claimed galleries it did not have.
+  They now come from `galleryExample` / `typeExample` in each `book.json` and print only when the
+  reader really has them. Matthew's wording is unchanged by construction; John's now names its
+  own, checked against `picks.js` — the first draft of that sentence put a Washing of the Feet at
+  Ohrid that is at Nea Moni.
+
+**Verified for the icon work**
+- `make check` green on all three books after every batch. Mark: 104 passages, 38 with an icon,
+  78 icons, 21 galleries, **28/78 readings, 28/78 with markers, 150 markers**, no clamp warnings,
+  no reuse inside the reader, 300 quotations.
+- **Every marker set drawn back onto its icon and read.** That pass moved about a dozen markers
+  and disproved three sentences outright (the Gotchas name them).
+- **Every KJV clause checked verbatim before each commit.** Nine misquotations were caught and
+  fixed this way across the four batches; none reached a commit.
+- `quotes.js` on Mark: 12 KJV lines flagged, every one of them our own prose running into a
+  correct quotation, or the Monreale temptation inscription, which both texts name as Matthew's
+  and Luke's. No Father is quoted in Mark's texts yet, so its attribution half is idle.
+
+**Next.** The 50 icons that still have no reading and no markers — the list and the loop are in
+`## Next`. After that, scripture stories, and a real icon search for the subjects the pool has
+nothing for.
