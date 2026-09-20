@@ -194,17 +194,12 @@ committed 2026-09-20 (`026077d`): 152 passages, 455 quotations, `make check` gre
 an icon it has no card, and with no card the drawer never opens — so Luke today shows its KJV
 text and none of its 455 quotations (see the first Gotcha). What it needs, in order:
 
-1. **First, the ~28 scenes the shared pool already holds**, because they need no harvest and they
-   are what turns the commentary back on: the Theophany, the Temptation, the Transfiguration, the
-   Entry, the Mystical Supper, Gethsemane, the arrest, the denial, Pilate, the Crucifixion, the
-   Burial, the Myrrhbearers, the leper, the paralytic, the withered hand, the Gerasene, Jairus,
-   the issue of blood, the five thousand, the centurion, Simon's wife's mother, Christ and the
-   child, the Synaxis of the Twelve, the Good Shepherd, Levi, the Forerunner and the Second
-   Coming. **Two reuse traps that Mark's list does not cover:** Luke's blind man at Jericho is
-   *one* man, so Matthew's two-blind-men fresco is as wrong here as it was for Mark; and Luke
-   alone gives the thief on the right hand, the bloody sweat, the angel in the garden and the
-   Lord turning to look upon Peter — a Crucifixion or Gethsemane reading adapted from Mark's
-   would miss precisely what Luke adds.
+1. **First, the 32 passages the shared pool already covers — the survey is done, below.** They
+   need no harvest, and they are what turns the commentary back on. The pool was read against all
+   152 passages on 2026-09-20b and the result is the table further down this section: **32
+   passages, 68 icons, none of them needing a download.** Writing `picks.js` and `labels.js` from
+   that table, plus an `overrides.js` carrying the `tierB` declarations, is the next session's
+   first job; readings and markers follow in batches of six to eight, the loop Mark uses.
 2. **Then a real Commons harvest, which Luke is the first book to genuinely require.** Mark could
    reuse Matthew's files wholesale because its scenes were Matthew's. Luke's own material is
    the **Infancy and the Feast cycle** — the Annunciation to Zacharias, the Annunciation to the
@@ -222,6 +217,87 @@ text and none of its 455 quotations (see the first Gotcha). What it needs, in or
    Prodigal Son, and the Last Judgment from Matthew), and the Prodigal, the Rich Man and Lazarus
    and the Good Samaritan **are** painted. Ferapontov is the one programme in the pool that
    paints parables at all. Worth one pass, no more.
+
+### The Luke wiring table (surveyed 2026-09-20b, nothing downloaded, nothing written)
+
+Every file below is already in `src/data/pick_keys.json` and on disk in `src/img/`. The reader
+named in brackets is where the file is used today — sharing across readers is the owner's
+decision of 2026-09-20, and "one icon, one passage" still holds *inside* Luke. **Each one still
+has to be read against Luke's verses before its reading is written; only the scene is settled
+here, not the words.**
+
+| Luke | passage id | icons | files |
+|---|---|---|---|
+| 2:1–7 | `nativity` | 3 | `031 Nativity … Langadas`, `12 Nativity … Agios Vasileios`, `Nativity Icon Panagia Evraidos` — all three sit under Matthew 1:18–25 today, and the Nativity icon is mostly Luke's text: the manger, the swaddling clothes, the shepherds |
+| 3:1–6 | `forerunnerpreach` | 1 | `St John the Baptist … Ohrid` (the Angel of the Desert) |
+| 3:21–22 | `baptism` | 4 | `019 … Langadas`, `03 … Adam`, `0663Ha Hermitage Epiphany`, `Baptism of Christ … Ohrid` |
+| 4:1–13 | `temptation` | 2 | `Christ's temptation (Monreale)`, `Monreale — 2nd Temptation` |
+| 4:38–41 | `petersmother` | 1 | `Monreale — Jesus heals Simon's mother in law` |
+| 5:12–16 | `leper` | 1 | `Christ cleans leper man` |
+| 5:17–26 | `paralytic` | 3 | `Monreale — healing of paralytic`, `Healing of the Paralytic 04-17`, `Christos Iomenos Paralyton Dionysiou` |
+| 5:27–32 | `levi` **tierB** | 2 | `090 Mathew the Apostle … Langadas`, `Matthew the Evangelist - icon` |
+| 6:6–11 | `witheredhand` | 1 | `Iomenos xeran echon cheira Dionysiou` |
+| 6:12–19 | `twelve` **tierB** | 3 | the three Synaxis panels (Rila, Pushkin, Princeton) |
+| 7:1–10 | `centurion` | 1 | `Iomenos Gon Ekatonarchou Dionysiou` |
+| 8:4–15 | `sower` | 1 | `Representation of the Sower's parable` |
+| 8:22–25 | `storm` | 1 | `Hrist utišava buru na moru, Gračanica` |
+| 8:26–39 | `gadarene` | 1 | `Mosaic of the exorcism of the Gerasene demoniac, Sant'Apollinare Nuovo` — the **singular** one, as for Mark |
+| 8:49–56 | `jairus` | 3 | `Daughter of the head of synagogue…`, `Raising of Jairus' daughter 03-19`, `Tokalı Kilise…` |
+| 9:10–17 | `fivethousand` | 2 | `Evlogesis Pente Arton Dionysiou`, `Feeding the multitude, Sant'Apollinare Nuovo` |
+| 9:28–36 | `transfiguration` | 4 | `042 … Langadas`, `Sinai`, `Yaroslavl`, `Transfiguration … Sinai 12th c.` |
+| 11:14–26 | `beelzebub` | 1 | `Christos Iomenos Daimonon Takophon Dionysiou` — the **dumb** demoniac, which is exactly Luke 11:14. Its neighbour `Iomenos Daimonizomenon` is Matthew 12:22, blind *and* dumb, a detail Luke does not give: don't add it |
+| 15:1–7 | `lostsheep` **tierB** | 2 | `The Good Shepherd … Constantinople`, `Ravenna — The Good Shepherd mosaic` |
+| 19:28–36 | `entry` | 4 | `005 … Langadas`, `18 … Adam`, `Baiophoros Dionysiou`, `Entry into Jerusalem (Afon icon)` |
+| 19:45–48 | `temple` | 2 | `Christ banish tradesmen from Temple (Monreale)`, `Rossano Gospels — Cleansing of the Temple` |
+| 21:25–33 | `coming` | 1 | `Second Coming by G. Klontzas` |
+| 22:14–20 | `supper` | 3 | `05 Last Supper … Adam`, `Deipnos Mystikos Dionysiou`, `Kirillo-Belozersky 12` |
+| 22:39–46 | `gethsemane` | 3 | `Monreale — Agony in the Garden`, `Gethsemane Dionysiou`, `Stavronikita — The Lord's prayer in Gethsemane` |
+| 22:47–53 | `arrest` | 3 | `Judas's kiss (Monreale)`, `Kiss of Judas (St Nicolas the Orphan)`, `Prodosia Dionysiou` |
+| 22:54–62 | `denial` | 2 | `Alektor Petrou Dionysiou`, `Ravenna — rinnegamento di pietro` |
+| 22:63–71 | `council` | 2 | `Christ before Caiaphas, Gračanica`, `Krinomenos Christou Dionysiou` |
+| 23:1–5 | `pilate` | 2 | `Monreale — Before Pilate`, `Pilate judgement (icon)` |
+| 23:33–43 | `crucifixion` | 4 | `Stavrosis Dionysiou`, `Crucifixion Icon Sinai 12th c.`, `024 … Langadas`, `Double-sided icon — Crucifixion and Hodegetria` |
+| 23:50–56 | `burial` | 3 | `Etesatou Ioseph Somatou Christou` (Joseph asking for the body — Luke 23:52), `Apokalthelosis Dionysiou`, `Epitaphios Threnos Dionysiou` |
+| 24:1–12 | `myrrhbearers` | 1 | `Ide Topos pou Ekato Dionysiou` |
+| 24:36–43 | `peace` | 1 | `Christos Apostolois Dionysiou` — **tier undecided, see below** |
+
+**Deliberately not reused, and why — the Luke list, which is not Mark's list.**
+
+- **The scourging** (`barabbas`, 23:13–25). `Flagellation of Christ` and `Mastigosis Dionysiou`
+  are in the pool, but Luke twice has Pilate say only *I will therefore chastise him, and release
+  him* (23:16, 23:22) and never reports a scourging carried out. Those icons paint Matthew, Mark
+  and John. 23:13–25 stays tier c.
+- **Pilate washing his hands** (`Aponepsis Pilatou Dionysiou`). Matthew 27:24 alone, as for Mark.
+- **The blind man at Jericho** (`blindjericho`, 18:35–43). `Christ heals two Jericho blind men` is
+  Matthew's two; Luke names one. And `Christos Iomenos Typhlon` is the open question below —
+  its own reading says it depicts John 9.
+- **The barren fig tree** (`figtree`, 13:6–9). The two fig-tree files are the *cursing* of the
+  tree (Matthew 21 / Mark 11), a different event from Luke's parable.
+- **The great supper** (`greatsupper`, 14:15–24). `Parable of the Wedding Feast 04-14` is
+  Matthew 22's wedding feast, a different parable.
+- **The draught of fishes** (`draught`, 5:1–11). The Monreale `Miraculous catch of fish` and
+  `Evresete Dionysiou` are the *post-resurrection* catch at Tiberias, John 21.
+- **The sinful woman** (`sinfulwoman`, 7:36–50). `Monreale — Anointing at Bethany` is Matthew 26
+  / Mark 14, and `Katakrinon Pornin` is the woman taken in adultery, John 8. Luke 7 is neither.
+- **The ten lepers** (`tenlepers`, 17:11–19). The one leper file is already Luke 5:12–16's, and
+  "one icon, one passage" holds inside this reader.
+- **The Prologue** (`prologue`, 1:1–4). The three Evangelist-at-his-desk icons in the pool are all
+  **St John**, not St Luke. A St Luke Evangelist icon is a harvest item — he is painted often,
+  usually with his ox, and sometimes painting the Theotokos.
+
+**Two decisions left open, both needing the picture looked at:**
+
+- **`peace` (24:36–43): tier a or tier b?** `Christos Apostolois Dionysiou` is declared a *type*
+  icon in both Matthew and Mark, for the Great Commission, which narrates no scene. But Luke 24:36–43
+  narrates exactly what the fresco's name describes — Christ standing in the midst — and goes on to
+  the hands and the feet and the broiled fish. If the fresco shows Christ showing his wounds it is
+  tier a for Luke; if it is a frontal Christ among ranked apostles it is tier b. `assign.js`
+  currently says tier a, so the two must be made to agree either way. The image is
+  `src/img/c4d2c9bb6006.webp`; this session was reading it when the work stopped.
+- **`beatitudes` (6:20–26).** `IkonaZapovediBlazhenGIM` (Matthew's) is a Russian icon of the
+  Commandments of the Beatitudes. Luke's version is shorter and adds four woes, and the icon
+  almost certainly paints Matthew's nine — so `assign.js` has it tier c and it is left out of the
+  table. Worth one look before it is settled.
 
 **For the owner to decide — St Gregory the Dialogist is missing from three shipped readers.**
 `fathers.js` matches him with `/^greg(ory|\.)\b/i`, and the bare attribution `Greg.` matches
@@ -1511,3 +1587,47 @@ nothing for.
 need no harvest and are what makes the commentary reachable at all, then the Feast-cycle harvest
 the pool has never been asked for. The list and the reasoning are in `## Next`. Mark's 50 unread icons are still the other open
 thread, and the St Gregory question above is waiting on the owner.
+
+## Session 2026-09-20c (St Titus of Bostra; the Luke wiring surveyed, not written)
+
+**Did**
+- **Added St Titus of Bostra to the shared whitelist at the owner's word**, at rank 7. He is the
+  fifth most cited author in the Luke volume (77 comments) and matched nothing in `fathers.js`.
+  The basis is the owner's judgement that he is venerated in the Orthodox Church — recorded as
+  such in the Gotchas, in his own hedged wording, so it can be reversed by deleting one line.
+  The pattern is the full name, so it is inert outside Luke and the other three readers rebuilt
+  byte-identical. Rank was chosen by measurement, not feel: 6 gives him 1 of Luke's 455
+  quotations, 7 gives 5, 8 gives 14, 9 gives 17.
+- **Surveyed the whole shared pool against all 152 Luke passages** and wrote the result into
+  `## Next` as a table: **32 passages, 68 icons, nothing needing a download.** Also wrote the
+  Luke-specific *exclusion* list, which is not Mark's — the scourging (Luke has Pilate only
+  threaten it), the two blind men at Jericho, the fig tree (Luke's is the parable, not the
+  cursing), the great supper (Matthew 22's is a different parable), the draught of fishes (the
+  pool's is John 21's), the sinful woman (the pool's anointings are Bethany and the adulteress),
+  and the Prologue (every Evangelist-at-his-desk icon in the pool is St John, not St Luke).
+- **Corrected a Gotcha that was wrong about Luke.** It said the Monreale paralytic "is Mark's
+  alone — Matthew and Luke put nobody on a roof". Luke 5:19 has the housetop and the tiling
+  explicitly, and the picture was reopened to confirm the two men and the ropes. Matthew is the
+  only account without a roof.
+
+**Why**
+- The owner asked for the icons to be wired and then, part way through, asked for a handoff
+  instead. So the survey — the part that is tedious to redo and easy to get wrong — is written
+  down, and nothing was committed to `picks.js` on a half-finished pass.
+
+**Verified**
+- `make check` green on all four books after the Titus change; Luke still 455 quotations, every
+  one verbatim, every passage carrying at least one, now 16 Fathers.
+- Matthew, Mark and John byte-identical after it.
+- The Monreale paralytic re-read from `src/img/9b4f680312cb.webp`, not from the note.
+
+**Not done**
+- `picks.js`, `labels.js` and `overrides.js` for Luke: **not written.** The reader still shows no
+  icons, and therefore still no commentary (see the first Gotcha). The table in `## Next` is what
+  to write them from.
+- Two tier decisions left open, both needing a look at the picture: `peace` (24:36-43) and
+  `beatitudes` (6:20-26). Both are named in `## Next`.
+
+**Next.** Write the three files from the table, run `make`, then readings and markers in batches
+of six to eight with `grid.py` and `overlay.py`, exactly as Mark's four batches went. After that,
+the Feast-cycle harvest, which is still the one thing Luke needs that no other reader can supply.
