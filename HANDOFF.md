@@ -122,7 +122,12 @@ and this file did not.
   - **The source is the isidore.co edition, as John's is** — CCEL hosts only the Matthew and
     Mark volumes (`catena3` and `catena4` are 404). `book.json`'s footer says so.
   - **No icons yet.** All 152 passages are tier c; `assign.js` names the Orthodox iconographic
-    subject for **69** of them at tier a and **5** at tier b, and `make check` lists every one.
+    subject for **69** of them at tier a and **5** at tier b. `make check` lists the 69, but
+    **not** the five, because it filters the gap list on tier a — the five are `prologue`
+    (St Luke the Evangelist at his desk, beside his own prologue), `levi` (the Apostle Matthew's
+    own icon at the receipt of custom), `twelve` (the Synaxis of the Holy Apostles), `seventy`
+    (the Synaxis of the Seventy, which is Luke's alone — no other Gospel reports the sending)
+    and `lostsheep` (the Good Shepherd).
   - **No scripture stories yet**, same as Mark.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
@@ -184,10 +189,22 @@ Three cautions that have already cost time:
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
 **Also open — the Luke reader has text and commentary but not one icon.** Its skeleton was
-committed 2026-09-20 (`026077d`): 152 passages, 455 quotations, `make check` green. What it
-needs, in order:
+committed 2026-09-20 (`026077d`): 152 passages, 455 quotations, `make check` green. Until a passage has
+an icon it has no card, and with no card the drawer never opens — so Luke today shows its KJV
+text and none of its 455 quotations (see the first Gotcha). What it needs, in order:
 
-1. **A real Commons harvest, which Luke is the first book to genuinely require.** Mark could
+1. **First, the ~28 scenes the shared pool already holds**, because they need no harvest and they
+   are what turns the commentary back on: the Theophany, the Temptation, the Transfiguration, the
+   Entry, the Mystical Supper, Gethsemane, the arrest, the denial, Pilate, the Crucifixion, the
+   Burial, the Myrrhbearers, the leper, the paralytic, the withered hand, the Gerasene, Jairus,
+   the issue of blood, the five thousand, the centurion, Simon's wife's mother, Christ and the
+   child, the Synaxis of the Twelve, the Good Shepherd, Levi, the Forerunner and the Second
+   Coming. **Two reuse traps that Mark's list does not cover:** Luke's blind man at Jericho is
+   *one* man, so Matthew's two-blind-men fresco is as wrong here as it was for Mark; and Luke
+   alone gives the thief on the right hand, the bloody sweat, the angel in the garden and the
+   Lord turning to look upon Peter — a Crucifixion or Gethsemane reading adapted from Mark's
+   would miss precisely what Luke adds.
+2. **Then a real Commons harvest, which Luke is the first book to genuinely require.** Mark could
    reuse Matthew's files wholesale because its scenes were Matthew's. Luke's own material is
    the **Infancy and the Feast cycle** — the Annunciation to Zacharias, the Annunciation to the
    Theotokos, the Visitation, the Nativity, the Circumcision, the Meeting in the Temple, Christ
@@ -196,13 +213,8 @@ needs, in order:
    has had**: every one of those is a Great Feast or a feast with a fixed icon, painted in every
    Orthodox programme already in `pick_keys.json`. Seed it the way the Gotchas say — `prop=categories`
    on the Dionysiou, Monreale, Langadas and Ferapontov files already in the pool — not free text.
-2. **Then the shared scenes**, which the pool does have: the Theophany, the Transfiguration, the
-   Entry, the Mystical Supper, Gethsemane, the arrest, the denial, the trials, the Crucifixion,
-   the Burial, the Myrrhbearers. Every one still has to be read against **Luke's** verses before
-   it is wired, and a reading copied from Matthew's or Mark's would be wrong: Luke alone gives
-   the thief on the right hand, the bloody sweat, the angel in the garden, the Lord turning and
-   looking upon Peter, and the women of Jerusalem. `BOOK=luke node src/tools/quotes.js` is what
-   proves a reading was adapted rather than copied.
+   Every one still has to be read against **Luke's** verses before it is wired;
+   `BOOK=luke node src/tools/quotes.js` is what proves a reading was adapted rather than copied.
 3. **Luke's parables are the exception to the "don't search a third time" rule.** The two
    dedicated searches recorded below proved Orthodox programmes do not paint parables — but the
    Triodion reads three of Luke's on its preparatory Sundays (the Publican and the Pharisee, the
@@ -290,6 +302,30 @@ every session regardless of whether anything was really done. If they are ever j
 keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
+
+- **A passage with no icon shows no commentary either, in every reader.** The drawer — and with
+  it *Wisdom of the Fathers* — opens only from an icon card: `app.js` gives a tier-c passage its
+  verses and then an empty `<div>`, and in "Icons lead" its plate carries only a "read the verses"
+  button that switches modes. Checked in the browser against the shipped readers: Matthew has 118
+  passage rows, 57 with a card and **61 with no opener of any kind**, so the patristic quotations
+  on those 61 are embedded in the page and unreachable. It is most visible in Luke, which has no
+  icons at all and therefore currently shows nothing but the KJV text, although all 455 of its
+  quotations are in the file. Wiring icons fixes it passage by passage, which is how Mark and John
+  have been getting their commentary back. Whether a plain verse row should also be able to open
+  the drawer is a change to all four readers and so the owner's call.
+- **The Luke volume has no preface to check, and the Gotcha below asks for one.** The isidore.co
+  page goes from CONTENTS straight to CHAPTER I, so the warning the Mark volume's editors gave
+  about its Chrysostom and its Jerome has no counterpart to read here. What can be said is that
+  the same editorial practice carried through: the volume flags `PSEUDO-CHRYS.` (12),
+  `PSEUDO-AUG.` (10) and `PSEUDO-BASIL` (3) in its own text, and `fathers.js` excludes all of
+  them. Nothing here establishes whose the genuine attributions are, and nothing should be
+  claimed about them without a source.
+- **Titus of Bostra: 77 comments in Luke, dropped, and an open question for the owner.** He is the
+  fifth most cited author in the volume and matches nothing in `fathers.js`. The full-name pattern
+  `/^titus of bostra/i` would be provably inert in the other books — Mark's only Titus attribution
+  is the bare token `Titus` — so adding him is a one-line change *if* he belongs. What is not
+  established here is whether he is venerated as a saint in the Orthodox Church, and this project
+  does not put a name in the whitelist on a guess. Ask the priest; 77 comments turn on it.
 
 - **A Father can be dropped from a reader by his abbreviation alone, and nothing reports it.**
   The Luke volume writes `GREG NYSS.`, `GREG NAZ.`, `ATHAN.` and `DAMASCENE`; `fathers.js`
@@ -1450,10 +1486,17 @@ nothing for.
   two differing only by the one-byte footer comma (checked by a byte-level diff, not by eye).
 - Browser, served over http: `Luke Reader.html` (0.69 MB, 0 images) loads with **0 console
   errors**, the chapter rail lists all 24 chapters with their titles, chapter 1 says "No icon in
-  this chapter yet", all 152 passages render as plain verse rows, and the footer names this
-  reader's own source and prints neither the gallery sentence nor the type-icon sentence, because
-  it has neither yet.
+  this chapter yet", all 152 passages render as plain verse rows with their KJV text, and the
+  footer names this reader's own source and prints neither the gallery sentence nor the type-icon
+  sentence, because it has neither yet.
+- **But the commentary is not reachable yet, and that is a property of the page, not of Luke.**
+  The drawer opens only from an icon card, so with no icons the *Wisdom of the Fathers* tab
+  cannot be opened at all: the 455 quotations are in the file and invisible. Verified against the
+  shipped Matthew reader too — 61 of its 118 rows have no opener either. The drawer itself is
+  sound: opened on Matthew 1:1–17 and all three tabs are there. New first Gotcha; the fix for
+  Luke is icons, which is what `## Next` now puts first.
 
-**Next.** Luke's icons, starting with the Feast-cycle harvest the pool has never been asked for —
-the list and the reasoning are in `## Next`. Mark's 50 unread icons are still the other open
+**Next.** Luke's icons — **the ~28 scenes the shared pool already holds first**, because those
+need no harvest and are what makes the commentary reachable at all, then the Feast-cycle harvest
+the pool has never been asked for. The list and the reasoning are in `## Next`. Mark's 50 unread icons are still the other open
 thread, and the St Gregory question above is waiting on the owner.
