@@ -490,8 +490,14 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   serves instead), and the Dionysiou dumb-demoniac for the deaf-mute of 7:31-37, a different
   healing. Those five passages stay tier c and `make check` lists them as still wanting an icon.
   The same rule made two positive finds: the Monreale paralytic, whose own inscription reads
-  APERVERVNT TECTVM and which shows two men opening the roof, is Mark's alone — Matthew and Luke
-  put nobody on a roof — and the Ravenna denial of Peter fits 14:66-72 exactly.
+  APERVERVNT TECTVM and which shows two men opening the roof, is not Matthew's — he puts nobody
+  on a roof — and the Ravenna denial of Peter fits 14:66-72 exactly.
+  **Corrected 2026-09-20c: that fresco is not Mark's alone**, as this note said until then. Luke
+  has the roof too — *they went upon the housetop, and let him down through the tiling with his
+  couch* (5:19) — which is the tiling the mosaic paints, and the picture was reopened to be sure:
+  two men on the roof with the ropes, the paralytic on his bed reaching for Christ. It belongs to
+  Mark 2:1-12 **and** Luke 5:17-26, in their different readers, which the shared pool allows.
+  Matthew 9:1-8 is the one account with no roof in it.
 - **Six icons of one scene belong to one passage, not to two adjacent ones.** Mark's six
   Crucifixions were briefly split, two of them onto 15:33-37 on the strength of the sponge at
   15:36. A Byzantine Crucifixion paints the darkness, the sponge, the centurion and the dead
