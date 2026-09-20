@@ -17,7 +17,9 @@ module.exports={
 
  // ---- chapter 1 ----
  beginning:{type:'Teaching',keyVerse:1},
- forerunner:{type:'Event',keyVerse:4},
+ // The Angel of the Desert is the Church's icon of the Forerunner himself, not a scene from
+ // these verses: it paints him winged, with his own severed head already in the charger.
+ forerunner:{tierB:true,type:'Event',keyVerse:4},
  baptism:{type:'Feast',keyVerse:11},
  temptation:{type:'Event',keyVerse:13},
  fishers:{type:'Event',keyVerse:17},

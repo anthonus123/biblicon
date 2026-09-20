@@ -7,8 +7,10 @@
 // is Matthew 27:24), no Peter walking on the water, no two blind men at Jericho where Mark names
 // one, and not the plural Gadarene fresco where Mark has a single Gerasene.
 module.exports={
+  // Only the Angel of the Desert. The Dionysiou fresco Matthew shows at 3:1-12 is a Deesis —
+  // Christ enthroned with the Forerunner beside him — and the book in Christ's hand is open at
+  // "Come unto me, all ye that labour", Matthew 11:28. It depicts no part of Mark 1:2-8.
   "forerunner": [
-    "File:Christos Prodomo Dionysiou.jpg",
     "File:St John the Baptist Late XVII - Early XVIII Cenury St Mary Blonichka Church, Ohris Icon Gallery.jpg",
   ],
   "baptism": [
@@ -137,13 +139,16 @@ module.exports={
   "mocking": [
     "File:Empaigmos Dionysiou.jpg",
   ],
+  // All six Crucifixions sit here, on the verses that say "they crucified him". They were
+  // briefly split, two of them onto 15:33-37, on the strength of the sponge at 15:36 — but a
+  // Byzantine Crucifixion paints the whole event at once: the darkened sun, the sponge, the
+  // centurion and the dead Christ are in nearly every one of these six. Splitting them would
+  // have given two adjacent passages the same scene under two names. 15:33-37 is tier c.
   "crucifixion": [
     "File:Stavrosis Dionysiou.jpg",
     "File:Crucifixion Icon Sinai 12th century.jpg",
     "File:024 Crucifixion of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
     "File:Double-sided icon - Crucifixion and Hodegetria (9-13th c., Byzantine museum).jpg",
-  ],
-  "death": [
     "File:Great Lavra Monastery Katholikon Church Crucifixion, Theophanes the Cretan 1535.jpg",
     "File:Cathedral (Monreale) - Left wing transept - West wall - Crucifixion.jpg",
   ],
