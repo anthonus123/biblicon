@@ -1,19 +1,19 @@
 # Building the readers
 
 Each reader is a single self-contained HTML file — `Matthew Reader.html`, `Mark Reader.html`,
-`John Reader.html`.
+`Luke Reader.html`, `John Reader.html`.
 Everything (fonts, icons, the KJV text, the patristic commentary) is embedded, so it opens
 by double-clicking with no server and no network.
 
 ```sh
 make               # assemble -> check -> emit every reader   (run from the repo root)
-make john          # one Gospel only (also: make matthew, make mark)
+make john          # one Gospel only (also: make matthew, make mark, make luke)
 make check         # structural check + content counts for every book, without re-emitting
 make BOOK=john serve   # serve a reader at http://127.0.0.1:8731
 make clean         # drop the generated intermediates
 ```
 
-Two stages, which `make` sequences for you, once per book (`BOOK=matthew`, `BOOK=mark` or
+Two stages, which `make` sequences for you, once per book (`BOOK=matthew`, `BOOK=mark`, `BOOK=luke` or
 `BOOK=john`; `src/book.js` resolves the folder). A new Gospel is a new `src/books/<book>/`
 folder with the eleven files below plus a line in the Makefile's `BOOKS`:
 

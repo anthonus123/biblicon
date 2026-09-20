@@ -29,7 +29,15 @@ const FATHERS = [
  // Chrysostom, whom he follows.
  [/^theophyl/i,                            'Blessed Theophylact of Ohrid', 9],
  [/^council of ephesus/i,                  'The Council of Ephesus (431)', 8],
+ // The Catena on Luke names him in full, and he is not the Isidore of the line below: this is
+ // St Isidore of Pelusium (d. c. 450), the Egyptian ascetic whose letters the volume quotes.
+ // The pattern is deliberately the full name, so it matches nothing in the other three books —
+ // Matthew's "Isidore, Epist. lib. iv. 166" keeps the entry it has always had.
+ [/^isidore of pelusium/i,                 'St Isidore of Pelusium',     6],
  [/^isidore\b/i,                           'St Isidore',                 6],
+ // St Epiphanius of Salamis (d. 403). Only the Luke volume cites him; no attribution in the
+ // Matthew, Mark or John catena begins with "Epiphan", so this line is inert in those readers.
+ [/^epiphan/i,                             'St Epiphanius of Salamis',   7],
 ];
 const BLOCKED=/^(pseudo|gloss|remig|raban|haymo|anselm|origen|euseb|but |or otherwise|interlin|ord\b)/i;
 // BLOCKED is anchored, so it only ever tested the author token — and the Catena routinely

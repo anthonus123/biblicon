@@ -1,0 +1,14 @@
+{
+ "id": "luke",
+ "name": "Luke",
+ "title": "The Gospel of Luke",
+ "greek": "Κατὰ Λουκᾶν",
+ "chapters": 24,
+ "reader": "Luke Reader.html",
+ "minNotes": 0,
+ "iconGap": "Luke's own material is the Infancy and the Feast cycle, which the shared pool was never harvested for; no dedicated search has been done for this Gospel yet (see HANDOFF Next)",
+ "galleryExample": "",
+ "typeExample": "",
+ "catenaShort": "Quoted from the Catena Aurea on the Gospel of St Luke, compiled by St Thomas Aquinas from the Fathers, in the Oxford translation of 1843 (public domain) as given in the Dominican House of Studies electronic edition, which modernises the second-person pronouns and omits the marginal references to each Father’s work.",
+ "catenaLong": "The patristic commentary is quoted from the <em>Catena Aurea</em> on St Luke — the “golden chain” of the Fathers compiled by St Thomas Aquinas — in the Oxford translation of 1843 (public domain), as given in the Dominican House of Studies electronic edition, which modernises the second-person pronouns and omits the marginal references to each Father’s work; nothing is paraphrased. It is restricted here to Fathers venerated in the Orthodox Church, and to Blessed Theophylact of Ohrid, whose commentary on the Gospels is the standard Orthodox reading of them. This volume leans on St Cyril of Alexandria, whose commentary on St Luke survives largely in the Syriac, and on St Ambrose, who wrote the great Latin exposition of this Gospel; the Carolingians, the medieval Glossa, Origen and Eusebius are excluded here as they are in the other readers."
+}

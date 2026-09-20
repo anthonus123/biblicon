@@ -1,0 +1,962 @@
+{
+ "1": [
+  {
+   "id": "prologue",
+   "vS": 1,
+   "vE": 4,
+   "name": "The Prologue to Theophilus"
+  },
+  {
+   "id": "zacharias",
+   "vS": 5,
+   "vE": 25,
+   "name": "The Annunciation to Zacharias"
+  },
+  {
+   "id": "annunciation",
+   "vS": 26,
+   "vE": 38,
+   "name": "The Annunciation to the Theotokos"
+  },
+  {
+   "id": "visitation",
+   "vS": 39,
+   "vE": 45,
+   "name": "The Visitation"
+  },
+  {
+   "id": "magnificat",
+   "vS": 46,
+   "vE": 56,
+   "name": "The Magnificat"
+  },
+  {
+   "id": "forerunnerbirth",
+   "vS": 57,
+   "vE": 66,
+   "name": "The Nativity of the Forerunner"
+  },
+  {
+   "id": "benedictus",
+   "vS": 67,
+   "vE": 80,
+   "name": "The Prophecy of Zacharias"
+  }
+ ],
+ "2": [
+  {
+   "id": "nativity",
+   "vS": 1,
+   "vE": 7,
+   "name": "The Nativity of Christ"
+  },
+  {
+   "id": "shepherds",
+   "vS": 8,
+   "vE": 20,
+   "name": "The Shepherds and the Angels"
+  },
+  {
+   "id": "circumcision",
+   "vS": 21,
+   "vE": 21,
+   "name": "The Circumcision"
+  },
+  {
+   "id": "meeting",
+   "vS": 22,
+   "vE": 38,
+   "name": "The Meeting in the Temple"
+  },
+  {
+   "id": "nazareth",
+   "vS": 39,
+   "vE": 41,
+   "name": "The Return to Nazareth"
+  },
+  {
+   "id": "twelveyears",
+   "vS": 42,
+   "vE": 52,
+   "name": "Christ at Twelve Years in the Temple"
+  }
+ ],
+ "3": [
+  {
+   "id": "forerunnerpreach",
+   "vS": 1,
+   "vE": 6,
+   "name": "The Preaching of the Forerunner"
+  },
+  {
+   "id": "fruits",
+   "vS": 7,
+   "vE": 14,
+   "name": "Bring Forth Fruits of Repentance"
+  },
+  {
+   "id": "mightier",
+   "vS": 15,
+   "vE": 20,
+   "name": "He Shall Baptize with the Holy Ghost"
+  },
+  {
+   "id": "baptism",
+   "vS": 21,
+   "vE": 22,
+   "name": "The Baptism of Christ"
+  },
+  {
+   "id": "genealogy",
+   "vS": 23,
+   "vE": 38,
+   "name": "The Genealogy of Christ"
+  }
+ ],
+ "4": [
+  {
+   "id": "temptation",
+   "vS": 1,
+   "vE": 13,
+   "name": "The Temptation in the Wilderness"
+  },
+  {
+   "id": "synagogue",
+   "vS": 14,
+   "vE": 21,
+   "name": "The Spirit of the Lord Is Upon Me"
+  },
+  {
+   "id": "noprophet",
+   "vS": 22,
+   "vE": 30,
+   "name": "No Prophet Is Accepted in His Own Country"
+  },
+  {
+   "id": "capernaum",
+   "vS": 31,
+   "vE": 37,
+   "name": "The Unclean Spirit at Capernaum"
+  },
+  {
+   "id": "petersmother",
+   "vS": 38,
+   "vE": 41,
+   "name": "Simon’s Wife’s Mother"
+  },
+  {
+   "id": "preaching",
+   "vS": 42,
+   "vE": 44,
+   "name": "Preaching in the Synagogues of Galilee"
+  }
+ ],
+ "5": [
+  {
+   "id": "draught",
+   "vS": 1,
+   "vE": 11,
+   "name": "The Draught of Fishes"
+  },
+  {
+   "id": "leper",
+   "vS": 12,
+   "vE": 16,
+   "name": "The Cleansing of the Leper"
+  },
+  {
+   "id": "paralytic",
+   "vS": 17,
+   "vE": 26,
+   "name": "The Paralytic Let Down Through the Tiles"
+  },
+  {
+   "id": "levi",
+   "vS": 27,
+   "vE": 32,
+   "name": "The Calling of Levi"
+  },
+  {
+   "id": "fasting",
+   "vS": 33,
+   "vE": 39,
+   "name": "The Question of Fasting"
+  }
+ ],
+ "6": [
+  {
+   "id": "sabbath",
+   "vS": 1,
+   "vE": 5,
+   "name": "Lord of the Sabbath"
+  },
+  {
+   "id": "witheredhand",
+   "vS": 6,
+   "vE": 11,
+   "name": "The Withered Hand"
+  },
+  {
+   "id": "twelve",
+   "vS": 12,
+   "vE": 19,
+   "name": "The Choosing of the Twelve"
+  },
+  {
+   "id": "beatitudes",
+   "vS": 20,
+   "vE": 26,
+   "name": "The Beatitudes and the Woes"
+  },
+  {
+   "id": "loveenemies",
+   "vS": 27,
+   "vE": 36,
+   "name": "Love Your Enemies"
+  },
+  {
+   "id": "judgenot",
+   "vS": 37,
+   "vE": 42,
+   "name": "Judge Not"
+  },
+  {
+   "id": "houserock",
+   "vS": 43,
+   "vE": 49,
+   "name": "The Tree and Its Fruit, and the House on the Rock"
+  }
+ ],
+ "7": [
+  {
+   "id": "centurion",
+   "vS": 1,
+   "vE": 10,
+   "name": "The Centurion’s Servant"
+  },
+  {
+   "id": "nain",
+   "vS": 11,
+   "vE": 17,
+   "name": "The Widow’s Son at Nain"
+  },
+  {
+   "id": "johnsends",
+   "vS": 18,
+   "vE": 23,
+   "name": "John Sends from Prison"
+  },
+  {
+   "id": "witnesstojohn",
+   "vS": 24,
+   "vE": 35,
+   "name": "Christ’s Witness to the Forerunner"
+  },
+  {
+   "id": "sinfulwoman",
+   "vS": 36,
+   "vE": 50,
+   "name": "The Sinful Woman Anoints His Feet"
+  }
+ ],
+ "8": [
+  {
+   "id": "women",
+   "vS": 1,
+   "vE": 3,
+   "name": "The Women Who Ministered to Him"
+  },
+  {
+   "id": "sower",
+   "vS": 4,
+   "vE": 15,
+   "name": "The Parable of the Sower"
+  },
+  {
+   "id": "candle",
+   "vS": 16,
+   "vE": 18,
+   "name": "The Candle and the Measure"
+  },
+  {
+   "id": "brethren",
+   "vS": 19,
+   "vE": 21,
+   "name": "Who Is My Mother?"
+  },
+  {
+   "id": "storm",
+   "vS": 22,
+   "vE": 25,
+   "name": "The Stilling of the Storm"
+  },
+  {
+   "id": "gadarene",
+   "vS": 26,
+   "vE": 39,
+   "name": "The Gadarene Demoniac"
+  },
+  {
+   "id": "issueofblood",
+   "vS": 40,
+   "vE": 48,
+   "name": "The Woman with the Issue of Blood"
+  },
+  {
+   "id": "jairus",
+   "vS": 49,
+   "vE": 56,
+   "name": "The Daughter of Jairus"
+  }
+ ],
+ "9": [
+  {
+   "id": "sending",
+   "vS": 1,
+   "vE": 6,
+   "name": "The Sending of the Twelve"
+  },
+  {
+   "id": "herod",
+   "vS": 7,
+   "vE": 9,
+   "name": "Herod Hears of Jesus"
+  },
+  {
+   "id": "fivethousand",
+   "vS": 10,
+   "vE": 17,
+   "name": "The Five Thousand Fed"
+  },
+  {
+   "id": "confession",
+   "vS": 18,
+   "vE": 22,
+   "name": "The Confession of Peter"
+  },
+  {
+   "id": "takecross",
+   "vS": 23,
+   "vE": 27,
+   "name": "Whosoever Will Come After Me"
+  },
+  {
+   "id": "transfiguration",
+   "vS": 28,
+   "vE": 36,
+   "name": "The Transfiguration"
+  },
+  {
+   "id": "dumbspirit",
+   "vS": 37,
+   "vE": 43,
+   "name": "The Boy with the Unclean Spirit"
+  },
+  {
+   "id": "greatest",
+   "vS": 44,
+   "vE": 50,
+   "name": "The Passion Foretold, and Who Should Be Greatest"
+  },
+  {
+   "id": "samaritanvillage",
+   "vS": 51,
+   "vE": 56,
+   "name": "The Village That Would Not Receive Him"
+  },
+  {
+   "id": "followme",
+   "vS": 57,
+   "vE": 62,
+   "name": "Follow Me"
+  }
+ ],
+ "10": [
+  {
+   "id": "seventy",
+   "vS": 1,
+   "vE": 12,
+   "name": "The Sending of the Seventy"
+  },
+  {
+   "id": "chorazin",
+   "vS": 13,
+   "vE": 16,
+   "name": "Woe unto Thee, Chorazin"
+  },
+  {
+   "id": "returnseventy",
+   "vS": 17,
+   "vE": 20,
+   "name": "The Return of the Seventy"
+  },
+  {
+   "id": "thankfather",
+   "vS": 21,
+   "vE": 24,
+   "name": "I Thank Thee, O Father"
+  },
+  {
+   "id": "samaritan",
+   "vS": 25,
+   "vE": 37,
+   "name": "The Good Samaritan"
+  },
+  {
+   "id": "marthamary",
+   "vS": 38,
+   "vE": 42,
+   "name": "Martha and Mary"
+  }
+ ],
+ "11": [
+  {
+   "id": "lordsprayer",
+   "vS": 1,
+   "vE": 4,
+   "name": "The Lord’s Prayer"
+  },
+  {
+   "id": "friendmidnight",
+   "vS": 5,
+   "vE": 13,
+   "name": "The Friend at Midnight"
+  },
+  {
+   "id": "beelzebub",
+   "vS": 14,
+   "vE": 26,
+   "name": "The Dumb Spirit Cast Out"
+  },
+  {
+   "id": "blessedwomb",
+   "vS": 27,
+   "vE": 32,
+   "name": "Blessed Is the Womb, and the Sign of Jonas"
+  },
+  {
+   "id": "lightbody",
+   "vS": 33,
+   "vE": 36,
+   "name": "The Light of the Body"
+  },
+  {
+   "id": "woepharisees",
+   "vS": 37,
+   "vE": 44,
+   "name": "Woe unto You, Pharisees"
+  },
+  {
+   "id": "woelawyers",
+   "vS": 45,
+   "vE": 54,
+   "name": "Woe unto You, Lawyers"
+  }
+ ],
+ "12": [
+  {
+   "id": "leaven",
+   "vS": 1,
+   "vE": 12,
+   "name": "Beware the Leaven of the Pharisees"
+  },
+  {
+   "id": "richfool",
+   "vS": 13,
+   "vE": 21,
+   "name": "The Rich Fool"
+  },
+  {
+   "id": "takenothought",
+   "vS": 22,
+   "vE": 34,
+   "name": "Take No Thought for Your Life"
+  },
+  {
+   "id": "loinsgirded",
+   "vS": 35,
+   "vE": 40,
+   "name": "Let Your Loins Be Girded"
+  },
+  {
+   "id": "steward",
+   "vS": 41,
+   "vE": 53,
+   "name": "The Faithful and Wise Steward"
+  },
+  {
+   "id": "discern",
+   "vS": 54,
+   "vE": 59,
+   "name": "Discerning the Time"
+  }
+ ],
+ "13": [
+  {
+   "id": "repent",
+   "vS": 1,
+   "vE": 5,
+   "name": "Except Ye Repent"
+  },
+  {
+   "id": "figtree",
+   "vS": 6,
+   "vE": 9,
+   "name": "The Barren Fig Tree"
+  },
+  {
+   "id": "bowedwoman",
+   "vS": 10,
+   "vE": 17,
+   "name": "The Woman Bowed Together"
+  },
+  {
+   "id": "mustard",
+   "vS": 18,
+   "vE": 21,
+   "name": "The Mustard Seed and the Leaven"
+  },
+  {
+   "id": "straitgate",
+   "vS": 22,
+   "vE": 30,
+   "name": "The Strait Gate"
+  },
+  {
+   "id": "jerusalem",
+   "vS": 31,
+   "vE": 35,
+   "name": "O Jerusalem, Jerusalem"
+  }
+ ],
+ "14": [
+  {
+   "id": "dropsy",
+   "vS": 1,
+   "vE": 6,
+   "name": "The Man with the Dropsy"
+  },
+  {
+   "id": "chiefrooms",
+   "vS": 7,
+   "vE": 14,
+   "name": "The Chief Rooms, and the Poor Bidden"
+  },
+  {
+   "id": "greatsupper",
+   "vS": 15,
+   "vE": 24,
+   "name": "The Great Supper"
+  },
+  {
+   "id": "bearcross",
+   "vS": 25,
+   "vE": 27,
+   "name": "Whosoever Doth Not Bear His Cross"
+  },
+  {
+   "id": "countcost",
+   "vS": 28,
+   "vE": 33,
+   "name": "Counting the Cost"
+  },
+  {
+   "id": "salt",
+   "vS": 34,
+   "vE": 35,
+   "name": "Salt That Has Lost His Savour"
+  }
+ ],
+ "15": [
+  {
+   "id": "lostsheep",
+   "vS": 1,
+   "vE": 7,
+   "name": "The Lost Sheep"
+  },
+  {
+   "id": "lostcoin",
+   "vS": 8,
+   "vE": 10,
+   "name": "The Lost Piece of Silver"
+  },
+  {
+   "id": "prodigal",
+   "vS": 11,
+   "vE": 32,
+   "name": "The Prodigal Son"
+  }
+ ],
+ "16": [
+  {
+   "id": "unjuststeward",
+   "vS": 1,
+   "vE": 7,
+   "name": "The Unjust Steward"
+  },
+  {
+   "id": "mammon",
+   "vS": 8,
+   "vE": 13,
+   "name": "Ye Cannot Serve God and Mammon"
+  },
+  {
+   "id": "derided",
+   "vS": 14,
+   "vE": 18,
+   "name": "The Pharisees Derided Him"
+  },
+  {
+   "id": "lazarus",
+   "vS": 19,
+   "vE": 31,
+   "name": "The Rich Man and Lazarus"
+  }
+ ],
+ "17": [
+  {
+   "id": "offences",
+   "vS": 1,
+   "vE": 4,
+   "name": "Offences and Forgiveness"
+  },
+  {
+   "id": "faithservants",
+   "vS": 5,
+   "vE": 10,
+   "name": "Increase Our Faith, and the Unprofitable Servants"
+  },
+  {
+   "id": "tenlepers",
+   "vS": 11,
+   "vE": 19,
+   "name": "The Ten Lepers"
+  },
+  {
+   "id": "kingdomwithin",
+   "vS": 20,
+   "vE": 21,
+   "name": "The Kingdom of God Is Within You"
+  },
+  {
+   "id": "daysofson",
+   "vS": 22,
+   "vE": 25,
+   "name": "The Days of the Son of Man"
+  },
+  {
+   "id": "daysofnoe",
+   "vS": 26,
+   "vE": 37,
+   "name": "As It Was in the Days of Noe"
+  }
+ ],
+ "18": [
+  {
+   "id": "unjustjudge",
+   "vS": 1,
+   "vE": 8,
+   "name": "The Unjust Judge"
+  },
+  {
+   "id": "publican",
+   "vS": 9,
+   "vE": 14,
+   "name": "The Pharisee and the Publican"
+  },
+  {
+   "id": "children",
+   "vS": 15,
+   "vE": 17,
+   "name": "Suffer the Little Children"
+  },
+  {
+   "id": "richruler",
+   "vS": 18,
+   "vE": 23,
+   "name": "The Rich Ruler"
+  },
+  {
+   "id": "needleseye",
+   "vS": 24,
+   "vE": 30,
+   "name": "The Eye of a Needle"
+  },
+  {
+   "id": "foretold",
+   "vS": 31,
+   "vE": 34,
+   "name": "The Third Foretelling of the Passion"
+  },
+  {
+   "id": "blindjericho",
+   "vS": 35,
+   "vE": 43,
+   "name": "The Blind Man at Jericho"
+  }
+ ],
+ "19": [
+  {
+   "id": "zacchaeus",
+   "vS": 1,
+   "vE": 10,
+   "name": "Zacchaeus"
+  },
+  {
+   "id": "pounds",
+   "vS": 11,
+   "vE": 27,
+   "name": "The Parable of the Pounds"
+  },
+  {
+   "id": "entry",
+   "vS": 28,
+   "vE": 36,
+   "name": "The Entry into Jerusalem"
+  },
+  {
+   "id": "olivet",
+   "vS": 37,
+   "vE": 40,
+   "name": "The Descent of the Mount of Olives"
+  },
+  {
+   "id": "wept",
+   "vS": 41,
+   "vE": 44,
+   "name": "He Wept Over the City"
+  },
+  {
+   "id": "temple",
+   "vS": 45,
+   "vE": 48,
+   "name": "The Cleansing of the Temple"
+  }
+ ],
+ "20": [
+  {
+   "id": "bywhat",
+   "vS": 1,
+   "vE": 8,
+   "name": "By What Authority?"
+  },
+  {
+   "id": "husbandmen",
+   "vS": 9,
+   "vE": 18,
+   "name": "The Wicked Husbandmen"
+  },
+  {
+   "id": "tribute",
+   "vS": 19,
+   "vE": 26,
+   "name": "Render unto Caesar"
+  },
+  {
+   "id": "risen",
+   "vS": 27,
+   "vE": 40,
+   "name": "The Question of the Resurrection"
+  },
+  {
+   "id": "davidson",
+   "vS": 41,
+   "vE": 44,
+   "name": "The Son of David"
+  },
+  {
+   "id": "scribes",
+   "vS": 45,
+   "vE": 47,
+   "name": "Beware of the Scribes"
+  }
+ ],
+ "21": [
+  {
+   "id": "mites",
+   "vS": 1,
+   "vE": 4,
+   "name": "The Widow’s Two Mites"
+  },
+  {
+   "id": "stones",
+   "vS": 5,
+   "vE": 11,
+   "name": "Not One Stone Upon Another"
+  },
+  {
+   "id": "persecution",
+   "vS": 12,
+   "vE": 19,
+   "name": "They Shall Lay Their Hands on You"
+  },
+  {
+   "id": "armies",
+   "vS": 20,
+   "vE": 24,
+   "name": "Jerusalem Compassed with Armies"
+  },
+  {
+   "id": "coming",
+   "vS": 25,
+   "vE": 33,
+   "name": "The Son of Man Coming in a Cloud"
+  },
+  {
+   "id": "watch",
+   "vS": 34,
+   "vE": 38,
+   "name": "Watch Ye Therefore"
+  }
+ ],
+ "22": [
+  {
+   "id": "plot",
+   "vS": 1,
+   "vE": 6,
+   "name": "The Plot and the Bargain"
+  },
+  {
+   "id": "upperroom",
+   "vS": 7,
+   "vE": 13,
+   "name": "The Preparing of the Passover"
+  },
+  {
+   "id": "supper",
+   "vS": 14,
+   "vE": 20,
+   "name": "The Mystical Supper"
+  },
+  {
+   "id": "betrayer",
+   "vS": 21,
+   "vE": 23,
+   "name": "The Hand of the Betrayer"
+  },
+  {
+   "id": "whogreatest",
+   "vS": 24,
+   "vE": 30,
+   "name": "Which Should Be the Greatest"
+  },
+  {
+   "id": "satandesired",
+   "vS": 31,
+   "vE": 34,
+   "name": "Satan Hath Desired to Have You"
+  },
+  {
+   "id": "swords",
+   "vS": 35,
+   "vE": 38,
+   "name": "The Two Swords"
+  },
+  {
+   "id": "gethsemane",
+   "vS": 39,
+   "vE": 46,
+   "name": "The Agony in the Garden"
+  },
+  {
+   "id": "arrest",
+   "vS": 47,
+   "vE": 53,
+   "name": "The Betrayal and the Arrest"
+  },
+  {
+   "id": "denial",
+   "vS": 54,
+   "vE": 62,
+   "name": "The Denial of Peter"
+  },
+  {
+   "id": "council",
+   "vS": 63,
+   "vE": 71,
+   "name": "Mocked, and Before the Council"
+  }
+ ],
+ "23": [
+  {
+   "id": "pilate",
+   "vS": 1,
+   "vE": 5,
+   "name": "Before Pilate"
+  },
+  {
+   "id": "herodtrial",
+   "vS": 6,
+   "vE": 12,
+   "name": "Before Herod"
+  },
+  {
+   "id": "barabbas",
+   "vS": 13,
+   "vE": 25,
+   "name": "Barabbas Released"
+  },
+  {
+   "id": "simoncyrene",
+   "vS": 26,
+   "vE": 32,
+   "name": "Simon of Cyrene and the Daughters of Jerusalem"
+  },
+  {
+   "id": "crucifixion",
+   "vS": 33,
+   "vE": 43,
+   "name": "The Crucifixion, and the Thief"
+  },
+  {
+   "id": "death",
+   "vS": 44,
+   "vE": 49,
+   "name": "The Darkness and the Death of Christ"
+  },
+  {
+   "id": "burial",
+   "vS": 50,
+   "vE": 56,
+   "name": "The Burial"
+  }
+ ],
+ "24": [
+  {
+   "id": "myrrhbearers",
+   "vS": 1,
+   "vE": 12,
+   "name": "The Myrrhbearing Women at the Tomb"
+  },
+  {
+   "id": "emmausroad",
+   "vS": 13,
+   "vE": 24,
+   "name": "The Road to Emmaus"
+  },
+  {
+   "id": "breaking",
+   "vS": 25,
+   "vE": 35,
+   "name": "Known in the Breaking of Bread"
+  },
+  {
+   "id": "peace",
+   "vS": 36,
+   "vE": 43,
+   "name": "Peace Be unto You"
+  },
+  {
+   "id": "understanding",
+   "vS": 44,
+   "vE": 49,
+   "name": "The Opening of Their Understanding"
+  },
+  {
+   "id": "ascension",
+   "vS": 50,
+   "vE": 53,
+   "name": "The Ascension"
+  }
+ ]
+}

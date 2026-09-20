@@ -41,3 +41,15 @@ still reproduce their output byte-for-byte, which is the point of keeping them.
 | `mark_anchors.js <out.json>` | writes `anchors.json`. The divisions are the Catena's own verse blocks, and the script **refuses to write** on a gap, an overlap, a duplicate id, or a chapter whose passages do not add up to the KJV's verse count. |
 
 `node src/tools/mark_anchors.js src/books/mark/anchors.json` regenerates the anchors in place.
+
+# Where Luke's text and pericopes came from
+
+The same two-script pattern, kept for the same reason — both still reproduce their output
+byte-for-byte.
+
+| script | what it does |
+|---|---|
+| `parse_catena_luke.js <CALuke.htm> <out.json>` | parses the Dominican House of Studies edition of the *Catena Aurea* on St Luke (`isidore.co/aquinas/english/CALuke.htm`) into `catena.json`. CCEL hosts only the Matthew and Mark volumes, so Luke takes John's source: the Oxford translation with the pronouns modernised and the work references dropped. Like the Mark parser it matches a closed list of author names and prints every bold head it rejected. It also **normalises the names this volume abbreviates differently** — `GREG NYSS.`, `ATHAN.`, `DAMASCENE`, `GREG NAZ.`, and `GREG.` itself — because those spellings match none of the patterns in `fathers.js` and four great Greek Fathers would be dropped from the reader with `make check` green throughout. |
+| `luke_anchors.js <out.json>` | writes `anchors.json`. Unlike Mark's, the divisions are **not** the Catena's blocks one for one: the volume splits Luke into 245, commenting on the Magnificat and the Benedictus verse by verse, so these are the traditional pericopes set to begin where a Catena block begins. It refuses to write on a gap, an overlap, a duplicate id, or a chapter that does not add up to the KJV's verse count. |
+
+`node src/tools/luke_anchors.js src/books/luke/anchors.json` regenerates the anchors in place.

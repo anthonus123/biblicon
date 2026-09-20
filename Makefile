@@ -1,7 +1,8 @@
 # Build the readers.
 #
-#   make                assemble, check and emit BOTH readers ("Matthew Reader.html", "John Reader.html")
-#   make matthew        one Gospel only (also: make john)
+#   make                assemble, check and emit EVERY reader ("Matthew Reader.html", "Mark Reader.html",
+#                       "Luke Reader.html", "John Reader.html")
+#   make matthew        one Gospel only (also: make mark, make luke, make john)
 #   make check          structural check on every book's assembled data
 #   make BOOK=john serve   serve a reader at http://127.0.0.1:8731 (file:// breaks in some browsers)
 #   make clean          remove the generated intermediates
@@ -11,7 +12,7 @@
 # change reproduces the same bytes and leaves `git status` clean, so a reader only enters git
 # history when something actually changed.
 
-BOOKS := matthew john mark
+BOOKS := matthew john mark luke
 PORT  := 8731
 BOOK  ?= matthew
 
