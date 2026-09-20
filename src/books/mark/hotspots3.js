@@ -179,4 +179,71 @@ module.exports={
  ["The apostle", "One companion in white stands behind Christ. Mark ends the passage with an instruction the man disobeys in the best way: Go home to thy friends, and tell them how great things the Lord hath done for thee.", "30%", "22%"],
 ],
 
+// ---- chapters 5-6 ----
+
+"File:Daughter of the head of synagogue is resurrected by Christ.jpg":[
+ ["The inscription", "The Latin names the scene: Jesus raises the daughter of the ruler of the synagogue, in the house. Mark names the man himself — Jairus by name — where Matthew leaves him anonymous.", "9%", "50%"],
+ ["Their two hands", "Here the hands do meet: his fingers are closed round hers at the edge of the coverlet. Mark keeps the words he said in the language he said them in, and then translates them for his readers: Talitha cumi; which is, being interpreted, Damsel, I say unto thee, arise.", "63%", "52%"],
+ ["The child sitting up", "She is upright already, in a white gown and headcloth, her legs still under the coverlet, looking past Christ at her parents. Mark gives her age at the very end, in an aside: for she was of the age of twelve years.", "52%", "75%"],
+ ["The father and mother", "Pressed in at the head of the bed. Mark says Christ took the father and the mother of the damsel, and them that were with him, and entered in where the damsel was lying — and shut everyone else out.", "45%", "62%"],
+ ["The three apostles", "Behind Christ at the left. Mark is exact about which: he suffered no man to follow him, save Peter, and James, and John the brother of James.", "42%", "14%"],
+ ["The house", "The mosaicist has built a whole church front above the room. Mark's ending is domestic and abrupt: he charged them straitly that no man should know it; and commanded that something should be given her to eat.", "20%", "55%"],
+],
+
+"File:Raising of Jairus' daughter 03-19.jpg":[
+ ["The girl raised on her elbow", "She is already up out of the flat of the bed, in a white shift. Mark: straightway the damsel arose, and walked.", "40%", "22%"],
+ ["The lost face", "The halo here is a bare ring of ochre — the face inside it has flaked off the plaster entirely. Five centuries on a curved wall in the Russian North.", "30%", "34%"],
+ ["The second haloed figure", "A figure in dark red stands apart at the right, also haloed. Painters of this school often give a scene twice on one wall, the coming and the doing; with the damage, that is a reading rather than a certainty.", "27%", "70%"],
+ ["The bed", "Drawn end-on and dark, filling the lower left. Mark reaches this room through a delay — the woman in the crowd stops him on the way, and the message comes while he is still speaking: Thy daughter is dead: why troublest thou the Master any further?", "62%", "25%"],
+ ["Those kneeling", "Figures bent low at the foot of the scene. Mark has Christ come to the house and see the tumult, and them that wept and wailed greatly, and put them all out.", "65%", "58%"],
+],
+
+"File:Tokalı Kilise Raising of daughter of Jairus - 2004 6964.jpg":[
+ ["The red bed", "Half the painting is the bed: a swag of deep red cloth with looping ornament and a row of black chevrons along its edge, hanging down the whole lower wall. The painter has given the death its full weight and the raising one arm.", "72%", "45%"],
+ ["The girl", "She lies along the top of the red in pale blue, small against it. Mark: for she was of the age of twelve years.", "47%", "42%"],
+ ["Christ's hand", "Reaching across toward her. Mark says he took the damsel by the hand — the same gesture as with Peter's mother-in-law, three chapters earlier and in the same Gospel.", "33%", "52%"],
+ ["Christ", "Standing left of centre, haloed. This is the tenth century, cut into the rock of a Cappadocian cave church, and the drawing is done in a few strokes.", "25%", "37%"],
+ ["The household", "Figures crowd in behind the bed. Mark: they laughed him to scorn. But when he had put them all out…", "20%", "60%"],
+],
+
+"File:Apotome Agiou Ioannou Prodromou Dionysiou.jpg":[
+ ["The sword", "Swung back above the executioner's head, at the top of the stroke. Mark's account of this is the longest thing in his Gospel that Christ is not present for.", "12%", "33%"],
+ ["The executioner", "In scale armour and a turban. Mark's word for him is a Latin one borrowed into Greek, speculator — a guardsman of the king's own bodyguard: the king sent an executioner, and commanded his head to be brought.", "30%", "33%"],
+ ["The Forerunner kneeling", "Bent right down over the rock, his body already folded. Mark has kept him in this prison since the fourteenth verse of chapter one.", "65%", "40%"],
+ ["The head", "Painted forward of the shoulders with its halo intact, at the instant of the stroke. The icon does not spare the reader anything Mark does not spare him.", "48%", "62%"],
+ ["The daughter with the dish", "A young woman in red with a crown kneels to catch it in a golden dish. Mark has her ask for it in those words: I will that thou give me by and by in a charger the head of John the Baptist.", "58%", "76%"],
+ ["The prison", "The stone tower behind, with its barred window. Mark says Herod feared John, knowing that he was a just man and an holy, and heard him gladly — and killed him for an oath made at a birthday feast.", "25%", "78%"],
+],
+
+"File:103 Beheading of Saint John the Baptist Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The head alone", "There is no scene in this panel — only the severed head, face upward, filling it. The Church paints this on its own for the feast of the Beheading on the twenty-ninth of August, a day kept as a strict fast.", "45%", "42%"],
+ ["The halo", "Still there behind the head, taking up the whole upper half of the board. The icon insists on the sanctity at the moment of the outrage.", "25%", "45%"],
+ ["The charger", "The shallow dish the head lies in. Mark gives the word twice in four verses, and then the sentence no reader forgets: and the damsel gave it to her mother.", "72%", "45%"],
+ ["The crack", "A split runs the full height of the panel. It was painted in 1927 for a village church and has been kissed and carried ever since.", "60%", "49%"],
+],
+
+"File:19 Beheading of Saint John the Baptist Icon in Assumption of Mary Church in Agios Vasileios.jpg":[
+ ["The executioner", "In gold armour and a plumed helmet, holding the head by the hair. This panel takes the moment after the stroke, where the Dionysiou fresco takes the stroke itself.", "35%", "27%"],
+ ["The head going into the dish", "He is lowering it into the charger she holds up with both hands. Mark: and brought his head in a charger, and gave it to the damsel.", "47%", "63%"],
+ ["The daughter", "Crowned, in gold, reaching up with the dish. Mark never gives her a name; the icon never gives her a face worth remembering either.", "45%", "83%"],
+ ["The body", "Laid along the bottom of the panel, headless. Mark's last verse here is his disciples: when they heard of it, they came and took up his corpse, and laid it in a tomb.", "80%", "45%"],
+ ["The prison window", "A grated window in the wall behind. Mark had told us in chapter six why he was in there: for Herodias' sake, because he had said, It is not lawful for thee to have thy brother’s wife.", "57%", "55%"],
+],
+
+"File:Evlogesis Pente Arton Dionysiou.jpg":[
+ ["The inscription", "Η ΕΥΛΟΓΗΣΙΣ ΤΩΝ ΠΕΝΤΕ ΑΡΤΩΝ — the blessing of the five loaves.", "9%", "50%"],
+ ["Christ with the loaves", "He stands at the far edge with the bread heaped in a fold of cloth. Mark: when he had taken the five loaves and the two fishes, he looked up to heaven, and blessed.", "36%", "24%"],
+ ["The companies on the grass", "The crowd is set out in blocks of red and green on a slope with small plants drawn across it. Mark alone says what they sat on and how they were arranged: he commanded them to make all sit down by companies upon the green grass, and they sat down in ranks, by hundreds, and by fifties.", "20%", "65%"],
+ ["The apostle with the basket", "One of them bends under the weight of a basket. Mark has them protest the arithmetic first: Shall we go and buy two hundred pennyworth of bread, and give them to eat?", "40%", "44%"],
+ ["Handing the bread down", "An apostle stoops to put bread into the hands of the seated. Mark: gave them to his disciples to set before them.", "60%", "66%"],
+ ["The baskets of fragments", "Four wicker baskets packed with broken bread stand on the grass. Mark: they took up twelve baskets full of the fragments, and of the fishes.", "78%", "33%"],
+],
+
+"File:Feeding the multitude, Sant'Apollinare Nuovo, Ravenna.jpg":[
+ ["The young Christ", "Beardless, in purple with a gold stripe, arms stretched to both sides. About 520, from the same Ravenna cycle as the Gerasene.", "25%", "50%"],
+ ["The loaves", "Two apostles in white hold up round loaves at his right hand. Mark counts them, five, and the mosaicist does not bother to.", "38%", "28%"],
+ ["The fishes", "Two more hold out the fish at his left. Mark: when he had taken the five loaves and the two fishes, he looked up to heaven, and blessed.", "40%", "78%"],
+ ["No crowd at all", "There is nobody here but Christ and four disciples — no grass, no companies, no baskets. The mosaic is made out of the one clause at the centre of the miracle: gave them to his disciples to set before them.", "70%", "50%"],
+],
+
 };
