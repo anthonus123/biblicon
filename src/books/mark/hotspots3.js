@@ -120,4 +120,63 @@ module.exports={
  ["The jewelled Gospel", "A bound book with a metal and enamel cover propped at his side: the finished thing, beside the writing of it.", "53%", "89%"],
 ],
 
+// ---- chapters 3-5 ----
+
+"File:Iomenos xeran echon cheira Dionysiou.jpg":[
+ ["The inscription", "Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ ΤΟΝ ΞΗΡΑΝ ΕΧΟΝΤΑ ΤΗΝ ΧΕΙΡΑ — Christ healing the man having the withered hand.", "9%", "50%"],
+ ["The man standing forth", "He stands alone in the middle of the floor in a short red tunic, with his arm coming up. Mark alone reports the order that put him there, and it is an order to be seen obeyed: Stand forth.", "45%", "43%"],
+ ["Christ seated", "He sits at the left with the apostles behind him. Mark gives him one question here — Is it lawful to do good on the sabbath days, or to do evil? to save life, or to kill? — and then says, But they held their peace.", "42%", "20%"],
+ ["The three elders", "Seated along the right wall in green, red and purple, one with his hand up in objection. Mark says Christ looked round about on them with anger, being grieved for the hardness of their hearts. No other Evangelist writes that word of him.", "50%", "68%"],
+ ["The synagogue", "The painter has given the synagogue the panelled walls and coffered ceiling of a Greek church, with a strip of starry night above. Mark's last verse here has these men leaving it to take counsel with the Herodians against him, how they might destroy him.", "20%", "62%"],
+],
+
+"File:Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg":[
+ ["The title", "Η ΣΥΝΑΞΙΣ ΤΩΝ ΑΓΙΩΝ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΩΝ — the assembly of the holy twelve apostles. It is the name of a feast, kept on the thirtieth of June, not the name of an event in Mark.", "17%", "45%"],
+ ["The names in gold", "Each man's name is lettered above his head. Mark 3:16-19 is where the twelve are first named one by one in this Gospel, and two of the surnames there are his alone: Simon he surnamed Peter, and the sons of Zebedee, Boanerges, which is, The sons of thunder.", "21%", "25%"],
+ ["The front rank", "Four apostles with their haloes overlapping, holding scrolls. They stand shoulder to shoulder doing nothing, which is the first thing Mark says they were ordained for — that they should be with him.", "45%", "27%"],
+ ["The rank behind", "Eight more heads fill the gold above them. Painting all twelve at once is the icon's way of saying what Mark's list says: not disciples in general, but these men, counted.", "27%", "55%"],
+ ["The Gospel book", "A dark red binding held up against the chest by the apostle at the right of the front rank. The second half of Mark's sentence is in it — that he might send them forth to preach, and to have power to heal sicknesses, and to cast out devils.", "47%", "67%"],
+],
+
+"File:Synaxis of the Twelve Apostles Dimitar Molerov Rila Monastery 1835.jpg":[
+ ["The row of haloes", "Five of the twelve fill this photograph, each with his own disc of gold. Dimitar Molerov painted them at Rila in 1835, in a late half-Western manner — modelled faces and deep folds — on an arrangement a thousand years older.", "15%", "45%"],
+ ["The scroll", "A white roll held closed. Scroll for a preacher, book for an Evangelist: the icon sorts the twelve by what each one left behind.", "60%", "27%"],
+ ["The jewelled Gospel", "A Gospel bound in gold and stones, carried like a shield. Mark's reason for the twelve is in it: that he might send them forth to preach.", "63%", "62%"],
+ ["The martyr's cross", "A small silver cross on a long stem, held upright against the chest. The Church gives it to a martyr, and of the twelve Mark names here only one died in his bed.", "60%", "82%"],
+],
+
+"File:The Twelve Apostles, with later gilding, Greek, Late Byzantine, early 1300s, tempera and gold leaf on wood panel - Princeton University Art Museum - DSC06701.jpg":[
+ ["Three ranks of haloes", "Rows of punched gold discs, one behind another, with the faces under them nearly gone. The panel gathers the twelve into one company and gives them nothing to do — which is the first clause of Mark's sentence: he ordained twelve, that they should be with him. The being with him comes before the sending.", "45%", "45%"],
+ ["The regilded ground", "Tempera and gold leaf on wood, Greek work of the early 1300s, with the gilding renewed at some later date — which is why the ground is brighter than anything under it.", "18%", "22%"],
+ ["Darkened past reading", "Below the haloes the panel has gone almost uniformly brown; the robes, the hands and whatever each man was given to hold can no longer be made out. What is left is the company, which is what Mark 3:14 is about.", "58%", "70%"],
+],
+
+"File:Representation of the Sower's parable.JPEG":[
+ ["The title", "PILDA SEMĂNĂTORULUI — the parable of the sower, in Romanian, numbered 21 in the cycle this mosaic belongs to.", "9%", "50%"],
+ ["Christ as the sower", "The sower is given Christ's own face and halo. Mark's explanation licenses it: the sower soweth the word.", "20%", "52%"],
+ ["The sowing hand", "Flung open at the end of the throw, the seed already gone. Mark's telling opens with a word the other two leave out — Hearken — and the whole parable turns on what the ground does, not on the sower.", "46%", "70%"],
+ ["The birds on the path", "Four black birds are down on the trodden way at the left. Mark: some fell by the way side, and the fowls of the air came and devoured it up.", "60%", "20%"],
+ ["The stony ground", "Bare grey rock across the upper right, with a little earth on it. Mark: it had no depth of earth… and because it had no root, it withered away.", "22%", "80%"],
+ ["The thorns", "A thicket with red flowers along the right-hand edge. Mark names three things that grow in it — the cares of this world, and the deceitfulness of riches, and the lusts of other things.", "55%", "84%"],
+ ["The good ground", "The standing green corn behind him. Mark counts the yield upward, thirty, sixty, an hundred, where Matthew counts it down.", "20%", "30%"],
+],
+
+"File:Hrist utišava buru na moru, manastir Gračanica.jpg":[
+ ["Christ asleep in the stern", "At the right of the same boat Christ lies asleep with his head propped on his hand. This is Mark's detail and no other Evangelist's: he was in the hinder part of the ship, asleep on a pillow.", "55%", "82%"],
+ ["Christ standing in the bow", "At the left he is on his feet with his hand out over the water — the same man, in the same boat, a minute later. Byzantine wall-painters tell a sequence inside one frame. Mark: he arose, and rebuked the wind, and said unto the sea, Peace, be still.", "45%", "27%"],
+ ["The apostle who wakes him", "One of them has turned back toward the sleeper with his hands open. Mark gives them the sharpest words any account of this night has: Master, carest thou not that we perish?", "52%", "66%"],
+ ["The man at the ropes", "A sailor in red hauls on a line running down from the yard. The picture is full of men working hard at a boat that Mark says was now full of water.", "48%", "55%"],
+ ["The sail", "A great pale sail fills the top left of the fresco, still spread. Mark opens the passage in the evening, with other little ships in company — and those are gone from the picture.", "22%", "33%"],
+ ["The sea", "Rank on rank of grey scallops running off the bottom edge, under a nearly black sky. What follows the calm is not relief but fear: they feared exceedingly, and said one to another, What manner of man is this?", "85%", "45%"],
+],
+
+"File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg":[
+ ["The young Christ", "Beardless, in a purple robe, with a cruciform halo. About 520, and older than the bearded Christ the Church later settled on; Ravenna's mosaicists painted him as a young man throughout this cycle.", "25%", "38%"],
+ ["One man, not two", "A single small figure crouches on the ground before him in a short tunic. This is why the mosaic stands with Mark: Matthew has two men in this country, Mark one, and Mark spends eight verses on him — the chains and the fetters plucked asunder, the crying night and day among the tombs, the cutting of himself with stones.", "60%", "55%"],
+ ["Christ's hand", "Held out low toward the man, not raised in command. Mark's exorcism here is a conversation: What is thy name? And he answered, saying, My name is Legion: for we are many.", "42%", "47%"],
+ ["The swine", "A dark herd running to the right. Mark is the one who counts them — they were about two thousand — and it is the herd, not the men, that ran violently down a steep place into the sea.", "60%", "80%"],
+ ["The sea", "A band of bright blue glass at the right edge, where the herd is going. The man who is left behind is last seen sitting, and clothed, and in his right mind.", "45%", "89%"],
+ ["The apostle", "One companion in white stands behind Christ. Mark ends the passage with an instruction the man disobeys in the best way: Go home to thy friends, and tell them how great things the Lord hath done for thee.", "30%", "22%"],
+],
+
 };
