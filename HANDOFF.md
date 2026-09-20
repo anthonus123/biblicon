@@ -316,6 +316,14 @@ overrule either; both are one line to change.**
   blessings and four woes. The icon paints Matthew 5, so it is not Luke's and the passage keeps
   its plain verse row. Recorded in `assign.js` beside the entry.
 
+**One fresco, two captions across the readers — `Ide Topos pou Ekato Dionysiou`.** Matthew and
+Luke caption it "Behold the Place Where the Lord Lay"; Mark captions it "Behold the Place Where
+They Laid Him". The fresco's own inscription is ΙΔΕ Ο ΤΟΠΟC ΟΠΟΥ ΕΚΑΤΟ — ἔκειτο, "where he lay",
+which is the verb of Matthew 28:6, not of Mark 16:6. So Mark's caption renders Mark's verse rather
+than the picture's writing. That is a defensible per-Gospel choice and it is **not** being called a
+bug, but it is the one place where three readers show one picture under two names, and it is
+recorded here so nobody has to rediscover it. Noted 2026-09-20d; no reader was changed for it.
+
 **Found while wiring Luke, and it is Matthew's problem, not Luke's — `Christos Iomenos Paralyton
 Dionysiou` is Bethesda.** The Dionysiou fresco Matthew's reader shows at 9:1–8, labelled there
 "The Healing of the Paralytic", paints the **five porches** — an arcade of five red-roofed bays —

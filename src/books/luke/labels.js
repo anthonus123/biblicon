@@ -5,8 +5,12 @@
 //   · the two Apostle Matthew panels take Mark's "called Levi", because Luke 5:27 calls him Levi
 //   · the Ravenna denial takes Mark's "The Denial of Peter", not John's doorkeeper (John 18:17)
 //   · `Apokalthelosis` takes Mark's "Taking Down from the Cross", the verb of Luke 23:53
-//   · `Ide Topos` keeps Matthew's rendering, because it translates the fresco's OWN inscription
-//     (ΙΔΕ Ο ΤΟΠΟC ΟΠΟΥ ΕΚΑΤΟ, "behold the place where he lay")
+//   · `Ide Topos` keeps Matthew's rendering, "Behold the Place Where the Lord Lay". The fresco's
+//     own inscription is ΙΔΕ Ο ΤΟΠΟC ΟΠΟΥ ΕΚΑΤΟ — ἔκειτο, "where he lay", which is the verb of
+//     Matthew 28:6 and not of Mark 16:6 ("where they laid him"). Mark's reader captions the same
+//     fresco with Mark's phrasing instead; that is a per-Gospel choice, not a mistake to fix
+//     here, but it does mean one picture carries two captions across the readers. Reported in
+//     HANDOFF rather than left to be discovered.
 //   · the Gerasene mosaic takes Mark's spelling, with the curly apostrophe the rest use
 module.exports={
 "File:031 Nativity of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":"The Nativity — Langadas, Greece, before 1900",
