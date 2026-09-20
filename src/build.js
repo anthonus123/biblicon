@@ -110,7 +110,7 @@ ${css}
 
 <footer><div class="inner">
   <h4>About this reader</h4>
-  <p>The gospel text is the King James Version. ${book.catenaLong} The icons and frescoes are, ${userKeys.length?'with one exception noted below, ':''}public-domain or
+  <p>The gospel text is the King James Version. ${book.catenaLong} The icons and frescoes are${userKeys.length?', with one exception noted below,':''} public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
   ${galleryClause}Every icon shown for a passage
   depicts that passage&rsquo;s own scene, and no image appears under two passages. Orthodox

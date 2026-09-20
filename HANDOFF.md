@@ -1,4 +1,4 @@
-# HANDOFF — Biblicon (Matthew, Mark and John icon readers)
+# HANDOFF — Biblicon (Matthew, Mark, Luke and John icon readers)
 
 Cross-session handoff log. Read this first at session start. End every working session by
 updating `## Status` + `## Next` and appending a `## Session YYYY-MM-DD` block
@@ -10,29 +10,29 @@ and this file did not.
 
 ## Status
 
-- **What this is.** Bible-study readers for the Gospels of **Matthew**, **Mark** and **John**
-  (KJV) in which every passage is paired with an Eastern Orthodox icon and with commentary from
-  the Church Fathers. The John reader was started 2026-09-18 at the owner's request to "repeat
-  the process" for St John, and the Mark reader on 2026-09-20 on the same request; each follows
-  every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
+- **What this is.** Bible-study readers for all four Gospels — **Matthew**, **Mark**, **Luke**
+  and **John** (KJV) — in which every passage is paired with an Eastern Orthodox icon and with
+  commentary from the Church Fathers. The John reader was started 2026-09-18 at the owner's
+  request to "repeat the process" for St John, the Mark reader on 2026-09-20, and the Luke
+  reader later the same day on the same request; each follows every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
   each icon matter most**, then theological correctness on Orthodox terms, then visual
   polish. Catena Bible (catenabible.com) is the model for multi-Father commentary.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
-- **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB) and
-  `Mark Reader.html` (0.5 MB so far — text and commentary only, no icons wired yet) — each a
-  single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+- **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
+  `Mark Reader.html` (~12.4 MB) and `Luke Reader.html` (0.7 MB so far — text and commentary
+  only, no icons wired yet) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
   make                 # every reader; src/books/<book>/icons.json is generated, untracked
-  make john            # one Gospel (also: make matthew, make mark)
+  make john            # one Gospel (also: make matthew, make mark, make luke)
   make check           # structural check + the content counts below, every book
   make BOOK=john serve # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
   ```
   The build is deterministic: rebuilding unchanged content reproduces the same bytes.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
-  `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|john`
+  `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|luke|john`
   through `src/book.js` (default Matthew). Adding a Gospel is a new `src/books/<book>/` folder
   with its eleven files and one word in the Makefile's `BOOKS` — miss the Makefile and `make`
   never builds it and `make check` never checks it, with no output at all to notice. Everything a Gospel owns lives in
@@ -107,6 +107,23 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
+- **Luke content, as of 2026-09-20:**
+  - **152 passages**, all 24 chapters, every verse in exactly one of them — `luke_anchors.js`
+    refused to write the file otherwise. Unlike Mark's, these are **not** the Catena's own
+    blocks: the volume divides Luke into 245, commenting on the Magnificat and the Benedictus
+    verse by verse, so the divisions are the traditional pericopes **set to begin where a Catena
+    block begins**, which is what keeps the Fathers' comments inside exactly one passage.
+  - **455 patristic quotations, every one verbatim**, and every passage carries at least one.
+    Chrysostom 106, Cyril of Alexandria 98, Theophylact 95, then Ambrose 34, Basil 29, Gregory
+    of Nyssa 26, Augustine 18, Bede 18, Athanasius 11, Gregory the Dialogist 8, Gregory the
+    Theologian 8, and one each of Epiphanius, Jerome, John of Damascus and Isidore of Pelusium.
+    All 3,679 parsed comments and all 455 shipped quotations were checked byte-for-byte against
+    the source; nothing differs.
+  - **The source is the isidore.co edition, as John's is** — CCEL hosts only the Matthew and
+    Mark volumes (`catena3` and `catena4` are 404). `book.json`'s footer says so.
+  - **No icons yet.** All 152 passages are tier c; `assign.js` names the Orthodox iconographic
+    subject for **69** of them at tier a and **5** at tier b, and `make check` lists every one.
+  - **No scripture stories yet**, same as Mark.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -165,6 +182,45 @@ Three cautions that have already cost time:
   - **Markers must be written fresh against the picture**, never copied, even for a shared file.
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
+
+**Also open — the Luke reader has text and commentary but not one icon.** Its skeleton was
+committed 2026-09-20 (`026077d`): 152 passages, 455 quotations, `make check` green. What it
+needs, in order:
+
+1. **A real Commons harvest, which Luke is the first book to genuinely require.** Mark could
+   reuse Matthew's files wholesale because its scenes were Matthew's. Luke's own material is
+   the **Infancy and the Feast cycle** — the Annunciation to Zacharias, the Annunciation to the
+   Theotokos, the Visitation, the Nativity, the Circumcision, the Meeting in the Temple, Christ
+   at twelve years, Emmaus, the Ascension — and Matthew and John tell none of it, so the shared
+   pool was never harvested for any of it. This is also **the most findable search this project
+   has had**: every one of those is a Great Feast or a feast with a fixed icon, painted in every
+   Orthodox programme already in `pick_keys.json`. Seed it the way the Gotchas say — `prop=categories`
+   on the Dionysiou, Monreale, Langadas and Ferapontov files already in the pool — not free text.
+2. **Then the shared scenes**, which the pool does have: the Theophany, the Transfiguration, the
+   Entry, the Mystical Supper, Gethsemane, the arrest, the denial, the trials, the Crucifixion,
+   the Burial, the Myrrhbearers. Every one still has to be read against **Luke's** verses before
+   it is wired, and a reading copied from Matthew's or Mark's would be wrong: Luke alone gives
+   the thief on the right hand, the bloody sweat, the angel in the garden, the Lord turning and
+   looking upon Peter, and the women of Jerusalem. `BOOK=luke node src/tools/quotes.js` is what
+   proves a reading was adapted rather than copied.
+3. **Luke's parables are the exception to the "don't search a third time" rule.** The two
+   dedicated searches recorded below proved Orthodox programmes do not paint parables — but the
+   Triodion reads three of Luke's on its preparatory Sundays (the Publican and the Pharisee, the
+   Prodigal Son, and the Last Judgment from Matthew), and the Prodigal, the Rich Man and Lazarus
+   and the Good Samaritan **are** painted. Ferapontov is the one programme in the pool that
+   paints parables at all. Worth one pass, no more.
+
+**For the owner to decide — St Gregory the Dialogist is missing from three shipped readers.**
+`fathers.js` matches him with `/^greg(ory|\.)\b/i`, and the bare attribution `Greg.` matches
+nothing: after the full stop there is no word boundary for `\b` to sit on. So every comment the
+Catena attributes to plain `Greg.` has always been dropped — **110 in Matthew, 120 in John, 17 in
+Mark** — and neither `make check` nor `quotes.js` can see it, because the other Fathers fill
+every passage. Luke's parser sidesteps it by spelling the name out, which is why Luke ships 8 of
+his and the others ship none. Fixing the regex would restore a major Orthodox saint (his
+Presanctified Liturgy is served every Lent) to all three readers, but it **rewrites their
+commentary**, so it is not something to do unasked. Note that a naive fix — dropping the `\b` —
+would also make `Greg. Nyss.` match as the Dialogist, which is wrong; the fix has to exclude the
+two other Gregories explicitly.
 
 Then, in the owner's priority order:
 
@@ -234,6 +290,39 @@ every session regardless of whether anything was really done. If they are ever j
 keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
+
+- **A Father can be dropped from a reader by his abbreviation alone, and nothing reports it.**
+  The Luke volume writes `GREG NYSS.`, `GREG NAZ.`, `ATHAN.` and `DAMASCENE`; `fathers.js`
+  matches `/^nyssen|gregory of nyssa/i`, `/^naz\b/i`, `/^athanas/i` and `/^damas(cenus|\.)/i`.
+  Four great Greek Fathers — 156 comments — would have gone into the void with `make check`
+  green throughout, because Ambrose (528) and Bede (639) alone fill all 152 passages, and the
+  check counts quotations, never which Fathers are absent. `parse_catena_luke.js` normalises
+  each to the spelling the whitelist already knows, the way the Mark parser normalises its five
+  print misspellings, so the shared `fathers.js` stays untouched and the other readers rebuild
+  byte-identical. **Do the same audit for any new volume**: histogram the attributions and run
+  each one against `fathers.js` before trusting the quotation count.
+- **`Greg.` matches nothing, in any book.** `/^greg(ory|\.)\b/i` cannot match the token `Greg.`
+  — after the `.` there is no word boundary. See `## Next` for the counts and why it was not
+  fixed here.
+- **The Catena on Luke lives only on isidore.co.** CCEL hosts `catena1` (Matthew) and `catena2`
+  (Mark) and nothing else — `catena3`/`catena4` return 404 — so Luke takes John's source, the
+  Dominican House of Studies edition of the Oxford translation, with the second-person pronouns
+  modernised and the marginal work references dropped. Verbatim within itself: all 3,679 parsed
+  comments are byte-for-byte in the page. Don't go looking for an Oxford Luke to replace it; the
+  archive.org OCR fails the same way the John one does.
+- **The Luke source's own verse numbering has seven small faults, and they are the source's.**
+  Chapter 8 heads a block `49, 50, 61, 52…` — a typo for 51 — and chapters 2, 4, 5, 9 and 12 omit
+  a heading for verses the commentary still covers (2:38, 4:40-41, 5:28-29, 9:43, 12:49-53), while
+  1:74 and 2:28 are headed twice because a block boundary falls mid-verse. None of it reaches the
+  reader: `anchors.json` is generated from the traditional pericopes and validated against
+  `kjv.json`, not from the Catena's numbers. Don't "fix" the parser for them.
+- **Luke is the one Gospel the shared pool cannot supply.** The sharing decision of 2026-09-20
+  covered Mark, whose scenes are Matthew's. Luke's Infancy and Feast material — the two
+  Annunciations, the Visitation, the Nativity of the Forerunner, the Circumcision, the Meeting in
+  the Temple, Emmaus, the Ascension — appears in no other Gospel and so in no earlier harvest.
+  Conversely the Passion scenes the pool does hold must not simply be reused: Luke alone has the
+  thief on the right hand, the bloody sweat, the angel in the garden, and the Lord turning to
+  look upon Peter, and an icon that paints those is painting *Luke*.
 
 - **The Mark Catena *is* the Oxford text, unlike John's.** CCEL hosts the Matthew and Mark
   volumes as plain-text caches (`ccel.org/ccel/a/aquinas/catena2/cache/catena2.txt` is Volume II,
@@ -1315,3 +1404,56 @@ those claims still need checking against `catena.json` by hand.
 **Next.** The 50 icons that still have no reading and no markers — the list and the loop are in
 `## Next`. After that, scripture stories, and a real icon search for the subjects the pool has
 nothing for.
+
+## Session 2026-09-20b (the Luke reader: skeleton, text and commentary)
+
+**Did**
+- At the owner's request to "do the same for the gospel of luke", added a fourth book,
+  `src/books/luke/`, and `luke` to the Makefile's `BOOKS`. Nothing in the shared pipeline needed
+  changing for it beyond two additive lines in `fathers.js`; the per-book split of 2026-09-18
+  held again.
+- **The KJV text** from the same aruljohn JSON the other three use; verse counts checked against
+  the KJV chapter by chapter (80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37,
+  43, 48, 47, 38, 71, 56, 53).
+- **The Catena Aurea on St Luke**, parsed from the isidore.co edition. CCEL was checked first and
+  hosts only Matthew and Mark. 245 blocks, 3,679 comments, 3,619 attributed, **every one of the
+  3,679 verbatim in the source**, and so are all 455 the reader ships.
+- **152 passages over all 24 chapters.** Not the Catena's own blocks, as Mark's are: the volume
+  gives 245, commenting on the Magnificat and the Benedictus verse by verse, so the divisions are
+  the traditional pericopes set to begin where a Catena block begins. The generator hard-fails on
+  a gap, an overlap, a duplicate id or a chapter that does not add up to the KJV's count.
+- **Caught four Fathers being dropped by their abbreviations** before any of it shipped — see the
+  new Gotcha. `GREG NYSS.`, `GREG NAZ.`, `ATHAN.` and `DAMASCENE` match none of the patterns in
+  `fathers.js`; the parser normalises them, and they now carry 46 of the 455 quotations.
+- **Two Fathers added to the shared whitelist**, both verified inert in the other three books:
+  St Isidore of Pelusium (whom this volume names in full, and who is not the "Isidore" of
+  Matthew's entry) and St Epiphanius of Salamis (cited only here).
+- **`assign.js` names the Orthodox iconographic subject for 74 of the 152 passages** — 69 at tier
+  a, 5 at tier b — so `make check` prints the whole icon gap as a list.
+- **One footer typo fixed**, pre-existing: "The icons and frescoes are, public-domain" — the comma
+  belonged to the one-exception clause that only Matthew prints. John, Mark and Luke each differ
+  from their committed build by exactly that one byte; Matthew is byte-identical.
+
+**Why**
+- Skeleton first, icons after, exactly as Mark was done: it makes the text, the pericopes and the
+  commentary a verified milestone on their own, and de-risks the Catena parse before any icon work
+  depends on it. Luke needed it more than Mark did, because its source is a different edition.
+
+**Verified**
+- `make check` green on all four books. Luke: 152 passages, tiers a:0 b:0 c:152, 455 quotations,
+  every passage with at least one, 15 Fathers represented.
+- **Every quotation verbatim.** All 3,679 parsed comments and all 455 shipped ones are
+  byte-for-byte in the isidore.co page after whitespace flattening. Zero exceptions — Luke's
+  `clean()` never had to strip a bracketed reference, unlike Matthew's and Mark's.
+- **Every verse of Luke in exactly one passage**, proven by the generator, not assumed.
+- Matthew, John and Mark rebuild with their content unchanged: Matthew byte-identical, the other
+  two differing only by the one-byte footer comma (checked by a byte-level diff, not by eye).
+- Browser, served over http: `Luke Reader.html` (0.69 MB, 0 images) loads with **0 console
+  errors**, the chapter rail lists all 24 chapters with their titles, chapter 1 says "No icon in
+  this chapter yet", all 152 passages render as plain verse rows, and the footer names this
+  reader's own source and prints neither the gallery sentence nor the type-icon sentence, because
+  it has neither yet.
+
+**Next.** Luke's icons, starting with the Feast-cycle harvest the pool has never been asked for —
+the list and the reasoning are in `## Next`. Mark's 50 unread icons are still the other open
+thread, and the St Gregory question above is waiting on the owner.
