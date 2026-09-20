@@ -37,8 +37,13 @@ module.exports = {
  twelveyears:     {tier:'a', subj:'Christ at twelve years among the doctors in the Temple', kw:[['twelve','temple'],['doctors'],['among','elders']]},
 
  // ---- chapter 3 ----
- forerunnerpreach:{tier:'a', subj:'St John the Forerunner preaching in the wilderness', kw:[['forerunner','preach'],['prodromos'],['baptist','wilderness']]},
- fruits:          {tier:'c', subj:'', kw:[]},
+ // Wired 2026-09-20d to the Angel of the Desert, which is the Forerunner himself and not a
+ // scene from these verses — tier b, as the same file is in Mark. The preaching itself is
+ // painted at `fruits` below.
+ forerunnerpreach:{tier:'b', subj:'St John the Forerunner, the Angel of the Desert', kw:[['forerunner','preach'],['prodromos'],['baptist','wilderness']]},
+ // The Dionysiou fresco of the Forerunner teaching sets SOLDIERS on his right hand, and 3:14
+ // is the only place in the four Gospels where soldiers come to John. Wired 2026-09-20d.
+ fruits:          {tier:'a', subj:'St John the Forerunner teaching the multitude, the publicans and the soldiers', kw:[['forerunner','preach'],['prodromos','didaskon'],['baptist','teaching']]},
  mightier:        {tier:'c', subj:'', kw:[]},
  baptism:         {tier:'a', subj:'The Theophany — the Baptism of Christ in Jordan', kw:[['baptism'],['theophan'],['jordan'],['baptisis']]},
  genealogy:       {tier:'c', subj:'', kw:[]},
@@ -62,6 +67,9 @@ module.exports = {
  sabbath:         {tier:'c', subj:'', kw:[]},
  witheredhand:    {tier:'a', subj:'The healing of the withered hand on the sabbath', kw:[['withered'],['xeran'],['hand','sabbath']]},
  twelve:          {tier:'b', subj:'The Synaxis of the Holy Apostles', kw:[['synaxis'],['twelve','apostle'],['apostolon']]},
+ // Settled 2026-09-20d: `IkonaZapovediBlazhenGIM`, the one Beatitudes icon in the pool, is a
+ // Russian panel of NINE scenes, one to a beatitude — Matthew's nine. Luke gives four
+ // blessings and four woes, so the icon does not paint these verses. Stays tier c.
  beatitudes:      {tier:'c', subj:'', kw:[]},
  loveenemies:     {tier:'c', subj:'', kw:[]},
  judgenot:        {tier:'c', subj:'', kw:[]},
@@ -215,7 +223,10 @@ module.exports = {
  myrrhbearers:    {tier:'a', subj:'The Myrrhbearing Women at the empty tomb', kw:[['myrrh'],['myrophor'],['tomb','women']]},
  emmausroad:      {tier:'a', subj:'The road to Emmaus', kw:[['emmaus'],['emmaous']]},
  breaking:        {tier:'a', subj:'The supper at Emmaus — known in the breaking of bread', kw:[['emmaus','supper'],['breaking','bread']]},
- peace:           {tier:'a', subj:'Christ appearing to the apostles, showing his hands and his feet', kw:[['apostles','appear'],['doors','shut'],['psilaphisis']]},
+ // Settled 2026-09-20d by looking at `Christos Apostolois Dionysiou`: a frontal Christ on a
+ // footstool among ranked apostles holding books, no wounds and no detail of these verses.
+ // Tier b, agreeing with overrides.js and with Matthew and Mark, which call it a type icon.
+ peace:           {tier:'b', subj:'Christ manifest in the midst of the apostles', kw:[['apostles','appear'],['doors','shut'],['psilaphisis']]},
  understanding:   {tier:'c', subj:'', kw:[]},
  ascension:       {tier:'a', subj:'The Ascension of Christ', kw:[['ascension'],['analepsis']]},
 };

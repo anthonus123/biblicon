@@ -20,8 +20,7 @@ and this file did not.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
-  `Mark Reader.html` (~12.4 MB) and `Luke Reader.html` (0.7 MB so far — text and commentary
-  only, no icons wired yet) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+  `Mark Reader.html` (~12.4 MB) and `Luke Reader.html` (~11 MB) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
@@ -107,7 +106,7 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
-- **Luke content, as of 2026-09-20:**
+- **Luke content, as of 2026-09-20d:**
   - **152 passages**, all 24 chapters, every verse in exactly one of them — `luke_anchors.js`
     refused to write the file otherwise. Unlike Mark's, these are **not** the Catena's own
     blocks: the volume divides Luke into 245, commenting on the Magnificat and the Benedictus
@@ -122,13 +121,21 @@ and this file did not.
     the source; nothing differs.
   - **The source is the isidore.co edition, as John's is** — CCEL hosts only the Matthew and
     Mark volumes (`catena3` and `catena4` are 404). `book.json`'s footer says so.
-  - **No icons yet.** All 152 passages are tier c; `assign.js` names the Orthodox iconographic
-    subject for **69** of them at tier a and **5** at tier b. `make check` lists the 69, but
-    **not** the five, because it filters the gap list on tier a — the five are `prologue`
-    (St Luke the Evangelist at his desk, beside his own prologue), `levi` (the Apostle Matthew's
-    own icon at the receipt of custom), `twelve` (the Synaxis of the Holy Apostles), `seventy`
-    (the Synaxis of the Seventy, which is Luke's alone — no other Gospel reports the sending)
-    and `lostsheep` (the Good Shepherd).
+  - **33 passages have an icon and they show 68 icons between them; 20 show more than one.**
+    Tiers: **28 (a), 5 (b), 119 (c)**. Wired 2026-09-20d from the survey table below — every one
+    of the 68 is a file Matthew, Mark or John already carries, chosen against what the picture
+    shows of *Luke's* verses, and thirteen scenes the pool does hold were deliberately **not**
+    reused (the list is below, and it is not Mark's list). **The reader now reaches 99 of its 455
+    quotations**, up from none: the drawer opens only from an icon card (first Gotcha), so wiring
+    an icon is what turns a passage's commentary on.
+  - **None of the 68 has a prose reading or markers yet** — that is the next work, in batches of
+    six to eight, the loop Mark uses.
+  - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
+    icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
+    the lost sheep, and Christ manifest among the apostles at 24:36–43.
+  - `assign.js` still names a subject with no icon for **40** passages, and `make check` lists
+    every one. They are Luke's own material: the Infancy, the Feast cycle, Emmaus, the Ascension,
+    and the parables Orthodox painting does take up.
   - **No scripture stories yet**, same as Mark.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
@@ -189,17 +196,23 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has text and commentary but not one icon.** Its skeleton was
-committed 2026-09-20 (`026077d`): 152 passages, 455 quotations, `make check` green. Until a passage has
-an icon it has no card, and with no card the drawer never opens — so Luke today shows its KJV
-text and none of its 455 quotations (see the first Gotcha). What it needs, in order:
+**Also open — the Luke reader now has 33 icons and no reading on any of them.** `picks.js`,
+`labels.js` and `overrides.js` were written 2026-09-20d from the survey table below: **33
+passages, 68 icons**, tiers 28a / 5b / 119c, `make check` green, and the reader's commentary is
+reachable on those 33 passages — **99 of its 455 quotations**, where before it reached none.
+What it needs, in order:
 
-1. **First, the 32 passages the shared pool already covers — the survey is done, below.** They
-   need no harvest, and they are what turns the commentary back on. The pool was read against all
-   152 passages on 2026-09-20b and the result is the table further down this section: **32
-   passages, 68 icons, none of them needing a download.** Writing `picks.js` and `labels.js` from
-   that table, plus an `overrides.js` carrying the `tierB` declarations, is the next session's
-   first job; readings and markers follow in batches of six to eight, the loop Mark uses.
+1. **First, readings and markers for the 68, in batches of six to eight** — the loop Mark uses,
+   step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
+   reading was adapted to Luke rather than copied from Matthew's or Mark's. Two files carry a
+   caveat the reading must honour, both recorded in `picks.js`:
+   - `Ide Topos pou Ekato Dionysiou` (24:1–12) paints the **fallen guard**, and the watch at the
+     sepulchre is Matthew's alone (27:62–66, 28:4). Luke reports none. Its **two** angels, on the
+     other hand, are Luke 24:4 against Matthew's and Mark's one, which is why it fits Luke better
+     than it fits Mark, which shows it too.
+   - `Iomenos Gon Ekatonarchou Dionysiou` (7:1–10): Luke's centurion never comes in person — he
+     sends the elders of the Jews, then friends. If the fresco puts him at Christ's feet, that is
+     Matthew 8:5, and the reading has to say so rather than pass it off as Luke.
 2. **Then a real Commons harvest, which Luke is the first book to genuinely require.** Mark could
    reuse Matthew's files wholesale because its scenes were Matthew's. Luke's own material is
    the **Infancy and the Feast cycle** — the Annunciation to Zacharias, the Annunciation to the
@@ -218,7 +231,7 @@ text and none of its 455 quotations (see the first Gotcha). What it needs, in or
    and the Good Samaritan **are** painted. Ferapontov is the one programme in the pool that
    paints parables at all. Worth one pass, no more.
 
-### The Luke wiring table (surveyed 2026-09-20b, nothing downloaded, nothing written)
+### The Luke wiring table (surveyed 2026-09-20b, WIRED 2026-09-20d — kept as the record of why each file was chosen)
 
 Every file below is already in `src/data/pick_keys.json` and on disk in `src/img/`. The reader
 named in brackets is where the file is used today — sharing across readers is the owner's
@@ -229,12 +242,13 @@ here, not the words.**
 | Luke | passage id | icons | files |
 |---|---|---|---|
 | 2:1–7 | `nativity` | 3 | `031 Nativity … Langadas`, `12 Nativity … Agios Vasileios`, `Nativity Icon Panagia Evraidos` — all three sit under Matthew 1:18–25 today, and the Nativity icon is mostly Luke's text: the manger, the swaddling clothes, the shepherds |
-| 3:1–6 | `forerunnerpreach` | 1 | `St John the Baptist … Ohrid` (the Angel of the Desert) |
+| 3:1–6 | `forerunnerpreach` **tierB** | 1 | `St John the Baptist … Ohrid` (the Angel of the Desert — the Forerunner himself, not the preaching, so tier b as in Mark) |
+| 3:7–14 | `fruits` | 1 | `Prodromos Didaskon Ioudaious Dionysiou` — **not in the original survey; added 2026-09-20d.** The group on the fresco's right is soldiers in mail, and 3:14 is the only place in the four Gospels where soldiers come to John. John's reader shows it at 1:19–28 |
 | 3:21–22 | `baptism` | 4 | `019 … Langadas`, `03 … Adam`, `0663Ha Hermitage Epiphany`, `Baptism of Christ … Ohrid` |
 | 4:1–13 | `temptation` | 2 | `Christ's temptation (Monreale)`, `Monreale — 2nd Temptation` |
 | 4:38–41 | `petersmother` | 1 | `Monreale — Jesus heals Simon's mother in law` |
 | 5:12–16 | `leper` | 1 | `Christ cleans leper man` |
-| 5:17–26 | `paralytic` | 3 | `Monreale — healing of paralytic`, `Healing of the Paralytic 04-17`, `Christos Iomenos Paralyton Dionysiou` |
+| 5:17–26 | `paralytic` | 2 | `Monreale — healing of paralytic` (it paints the tiling of 5:19), `Healing of the Paralytic 04-17`. **`Christos Iomenos Paralyton Dionysiou` was surveyed here and dropped 2026-09-20d** — the fresco paints the five porches and the pool with the other sick under the arcade, which is Bethesda, John 5 |
 | 5:27–32 | `levi` **tierB** | 2 | `090 Mathew the Apostle … Langadas`, `Matthew the Evangelist - icon` |
 | 6:6–11 | `witheredhand` | 1 | `Iomenos xeran echon cheira Dionysiou` |
 | 6:12–19 | `twelve` **tierB** | 3 | the three Synaxis panels (Rila, Pushkin, Princeton) |
@@ -259,7 +273,7 @@ here, not the words.**
 | 23:33–43 | `crucifixion` | 4 | `Stavrosis Dionysiou`, `Crucifixion Icon Sinai 12th c.`, `024 … Langadas`, `Double-sided icon — Crucifixion and Hodegetria` |
 | 23:50–56 | `burial` | 3 | `Etesatou Ioseph Somatou Christou` (Joseph asking for the body — Luke 23:52), `Apokalthelosis Dionysiou`, `Epitaphios Threnos Dionysiou` |
 | 24:1–12 | `myrrhbearers` | 1 | `Ide Topos pou Ekato Dionysiou` |
-| 24:36–43 | `peace` | 1 | `Christos Apostolois Dionysiou` — **tier undecided, see below** |
+| 24:36–43 | `peace` **tierB** | 1 | `Christos Apostolois Dionysiou` — settled tier b 2026-09-20d, see below |
 
 **Deliberately not reused, and why — the Luke list, which is not Mark's list.**
 
@@ -285,19 +299,34 @@ here, not the words.**
   **St John**, not St Luke. A St Luke Evangelist icon is a harvest item — he is painted often,
   usually with his ox, and sometimes painting the Theotokos.
 
-**Two decisions left open, both needing the picture looked at:**
+**Both decisions are settled — each by looking at the picture, 2026-09-20d. The owner can
+overrule either; both are one line to change.**
 
-- **`peace` (24:36–43): tier a or tier b?** `Christos Apostolois Dionysiou` is declared a *type*
-  icon in both Matthew and Mark, for the Great Commission, which narrates no scene. But Luke 24:36–43
-  narrates exactly what the fresco's name describes — Christ standing in the midst — and goes on to
-  the hands and the feet and the broiled fish. If the fresco shows Christ showing his wounds it is
-  tier a for Luke; if it is a frontal Christ among ranked apostles it is tier b. `assign.js`
-  currently says tier a, so the two must be made to agree either way. The image is
-  `src/img/c4d2c9bb6006.webp`; this session was reading it when the work stopped.
-- **`beatitudes` (6:20–26).** `IkonaZapovediBlazhenGIM` (Matthew's) is a Russian icon of the
-  Commandments of the Beatitudes. Luke's version is shorter and adds four woes, and the icon
-  almost certainly paints Matthew's nine — so `assign.js` has it tier c and it is left out of the
-  table. Worth one look before it is settled.
+- **`peace` (24:36–43): tier b.** `src/img/c4d2c9bb6006.webp` is a frontal Christ standing on a
+  red cushion over a stepped footstool, between two symmetrically ranked groups of apostles, most
+  of them carrying books. No wound is legible on the hands or the feet, and nothing of these
+  verses is in the picture — no table, no broiled fish, no terrified disciples. The inscription is
+  a generic post-resurrection one ("… ἐκ νεκρῶν ἔγερσιν … ἐμφανίσας … τοῖς ὑπ' αὐτοῦ γενομένοις"),
+  not Luke's words. That is the tier-b case as this file itself stated it. The open palms are the
+  one thing that argues the other way and they were not enough. `assign.js` and `overrides.js`
+  were both moved to b, so they now agree, and Matthew and Mark call the same file a type icon.
+- **`beatitudes` (6:20–26): stays tier c, and the evidence is countable.**
+  `IkonaZapovediBlazhenGIM` is a Russian panel of **nine scenes in a 3×3 grid**, one to a
+  beatitude, each with its own Slavonic title band. Nine is Matthew's number; Luke gives four
+  blessings and four woes. The icon paints Matthew 5, so it is not Luke's and the passage keeps
+  its plain verse row. Recorded in `assign.js` beside the entry.
+
+**Found while wiring Luke, and it is Matthew's problem, not Luke's — `Christos Iomenos Paralyton
+Dionysiou` is Bethesda.** The Dionysiou fresco Matthew's reader shows at 9:1–8, labelled there
+"The Healing of the Paralytic", paints the **five porches** — an arcade of five red-roofed bays —
+with the pool's well-head in the middle and other sick lying under the arcade. That is John 5,
+and John's reader labels the same file "The Paralytic at Bethesda", so the two readers already
+disagree about what one picture shows. Luke does not reuse it for exactly this reason. Matthew
+9:1–8 has one other icon in its gallery, so the fix is either to drop this file from Matthew (and
+let the passage stand on the other) or to keep it and say in the reading that the architecture is
+Bethesda's — **the owner's call, and it rewrites a shipped reader, so it was not done here.** It
+belongs with the `Christos Iomenos Typhlon` question under the reading audit below: both are icons
+whose own picture names a different Gospel from the passage they stand under.
 
 **For the owner to decide — St Gregory the Dialogist is missing from three shipped readers.**
 `fathers.js` matches him with `/^greg(ory|\.)\b/i`, and the bare attribution `Greg.` matches
@@ -1637,3 +1666,73 @@ thread, and the St Gregory question above is waiting on the owner.
 **Next.** Write the three files from the table, run `make`, then readings and markers in batches
 of six to eight with `grid.py` and `overlay.py`, exactly as Mark's four batches went. After that,
 the Feast-cycle harvest, which is still the one thing Luke needs that no other reader can supply.
+
+---
+
+## Session 2026-09-20d (the Luke icons wired: picks, labels, overrides)
+
+**Did**
+- **Wrote `src/books/luke/picks.js`, `labels.js` and `overrides.js`** from the survey table, and
+  created `overrides.js`, which Luke did not have. **33 passages, 68 icons**, tiers 28a / 5b /
+  119c. Every file is one Matthew, Mark or John already carries; nothing was downloaded.
+- **The reader's commentary is reachable again on those 33 passages — 99 of Luke's 455
+  quotations, where before it reached none.** That was the point of doing this first: the drawer
+  opens only from an icon card, so an iconless passage hides its Fathers (first Gotcha).
+- **Settled the two tier questions the last session left open**, both by opening the picture:
+  - **`peace` (24:36–43) is tier b.** A frontal Christ on a footstool between two ranked groups
+    carrying books; no wounds legible, no table, no fish, no fear, and a generic post-resurrection
+    inscription. `assign.js` was moved from a to b so the two files agree, as the handoff asked.
+  - **`beatitudes` (6:20–26) stays tier c.** `IkonaZapovediBlazhenGIM` is a 3×3 panel of **nine**
+    scenes, one per beatitude — Matthew's nine. Luke has four blessings and four woes.
+- **Added one passage the survey missed: `fruits` (3:7–14)**, wired to `Prodromos Didaskon
+  Ioudaious Dionysiou`. The group on the fresco's right is **soldiers in mail**, one holding his
+  helmet, and 3:14 is the only place in the four Gospels where soldiers come to John and ask what
+  they shall do. The elders on the left are the multitude and the publicans of 3:10–13. That also
+  freed `forerunnerpreach` (3:1–6) to be honestly tier b: its icon is the Angel of the Desert,
+  which is the Forerunner himself and paints none of those verses, exactly as Mark declares it.
+- **Dropped one file the survey had listed: `Christos Iomenos Paralyton Dionysiou` at 5:17–26.**
+  The fresco paints the five porches and the pool with the other sick under the arcade — Bethesda,
+  John 5, not the house at Capernaum. Luke keeps the Monreale mosaic (which paints the tiling of
+  5:19) and the Ferapontov fresco. **This is a live problem in Matthew's shipped reader**, which
+  shows the same file at 9:1–8 while John's labels it Bethesda; written up in `## Next` for the
+  owner, not fixed here.
+- **`overrides.js` covers only the 33 passages that have an icon, not all 152.** Established by
+  reading the code rather than by copying Mark's all-104 pattern: `p.type` and `p.keyText` are
+  consumed at `app.js:176`, `:209`, `:297` and `:312`, every one of them inside `card()` or
+  `renderDrawer()`, and neither is reachable for a tier-c passage. Entries for the other 119 would
+  be dead weight in a hand-edited literal that `make check` guards for duplicate keys.
+
+**Why**
+- The handoff named this the next session's first job, in this order, and gave the criterion for
+  the `peace` decision. Wiring the pool first costs no harvest and is what turns the commentary
+  back on; the Feast-cycle harvest, which Luke alone needs, is untouched and still next.
+
+**Verified**
+- `make` green on all four books. `git status` shows **only `Luke Reader.html`** changed among the
+  four — Matthew, Mark and John rebuilt byte-identical, which is the deterministic-build guarantee.
+- `make check` on Luke: 152 passages, 33 with an icon showing 68 icons from 68 unique images, no
+  icon used by two passages, no duplicate label inside a gallery, 455 quotations, every passage
+  carrying at least one. The 68 "no prose reading" warnings are the expected state of a first pass.
+- Every one of the 68 file titles resolved against `pick_keys.json` before anything was written,
+  and every label was pulled verbatim from Matthew's, Mark's or John's `labels.js`. Seven files
+  are named differently in different readers; Luke's choice for each is recorded at the head of
+  `labels.js` with the reason (Luke calls him Levi; `Ide Topos` keeps the rendering that
+  translates the fresco's own inscription; and so on).
+- The four pictures the decisions turned on were opened and read, not taken from a note:
+  `c4d2c9bb6006` (peace), `2b3d17a3e3ad` (beatitudes), `99bbd3ac6496` (the Forerunner teaching),
+  `b6218c06f8f4` (the Bethesda paralytic), plus `9b4f680312cb` and `f8643ee3f937` to confirm the
+  two files Luke does keep at 5:17–26.
+
+**Not done**
+- **No readings and no markers**, for any of the 68. `hotspots2.js` and `hotspots3.js` are still
+  the empty stubs, so all 68 would show an empty "Deciphering the Icon" tab.
+- **No scripture stories**, same as Mark. The tab falls back to printing the verses.
+- **No harvest.** The 40 passages `make check` lists — the Infancy, the Feast cycle, Emmaus, the
+  Ascension, the parables — still have no icon, and they are the ones only a Commons search can
+  supply.
+
+**Next.** Readings and markers for the 68, six to eight at a time, one commit each, by the loop
+under "Active work": `grid.py`, write, check every KJV clause with `BOOK=luke node
+src/tools/quotes.js`, then `overlay.py` and read the sheets. Two files carry a caveat the reading
+must honour — the guard in `Ide Topos` (Matthew's alone) and the centurion who never comes in
+person in Luke — both recorded in `picks.js` and in `## Next`.
