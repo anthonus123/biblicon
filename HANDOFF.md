@@ -116,7 +116,8 @@ and this file did not.
   - **455 patristic quotations, every one verbatim**, and every passage carries at least one.
     Chrysostom 106, Cyril of Alexandria 98, Theophylact 95, then Ambrose 34, Basil 29, Gregory
     of Nyssa 26, Augustine 18, Bede 18, Athanasius 11, Gregory the Dialogist 8, Gregory the
-    Theologian 8, and one each of Epiphanius, Jerome, John of Damascus and Isidore of Pelusium.
+    Theologian 8, Titus of Bostra 5, and one each of Epiphanius, Jerome, John of Damascus and
+    Isidore of Pelusium.
     All 3,679 parsed comments and all 455 shipped quotations were checked byte-for-byte against
     the source; nothing differs.
   - **The source is the isidore.co edition, as John's is** — CCEL hosts only the Matthew and
@@ -320,12 +321,21 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   `PSEUDO-AUG.` (10) and `PSEUDO-BASIL` (3) in its own text, and `fathers.js` excludes all of
   them. Nothing here establishes whose the genuine attributions are, and nothing should be
   claimed about them without a source.
-- **Titus of Bostra: 77 comments in Luke, dropped, and an open question for the owner.** He is the
-  fifth most cited author in the volume and matches nothing in `fathers.js`. The full-name pattern
-  `/^titus of bostra/i` would be provably inert in the other books — Mark's only Titus attribution
-  is the bare token `Titus` — so adding him is a one-line change *if* he belongs. What is not
-  established here is whether he is venerated as a saint in the Orthodox Church, and this project
-  does not put a name in the whitelist on a guess. Ask the priest; 77 comments turn on it.
+- **St Titus of Bostra is in the whitelist on the owner's judgement, and the basis is worth
+  keeping.** He is the fifth most cited author in the Luke volume (77 comments) and matched
+  nothing in `fathers.js`. He was added 2026-09-20 after the owner said he is venerated in the
+  Orthodox Church — that is the whole basis; nothing in this repo establishes it independently,
+  and the owner's own wording was "i believe he is". If the priest says otherwise, the fix is to
+  delete the one line. The pattern is the full name `/^titus of bostra/i`, so it is inert in the
+  other three books, whose readers rebuilt byte-identical: Mark's only Titus attribution is the
+  bare token `Titus`, which it does not match.
+- **A Father's rank decides whether he is heard at all, not just how loudly.** `fathers.js` takes
+  three distinct Fathers per passage by score, and rank dominates the score, so a Father with
+  hundreds of comments can still surface a handful of times: Bede has 639 comments in Luke and 18
+  quotations, Ambrose 528 and 34. Titus was measured across ranks before one was chosen — 6 gives
+  him 1 of the 455, 7 gives 5, 8 gives 14, 9 gives 17 — and sits at 7, with the Fathers below the
+  great Greek dogmatic teachers, because that is what the tiers mean. Changing it is one digit.
+  Do the same measurement before ranking any new name; the count is not obvious from the source.
 
 - **A Father can be dropped from a reader by his abbreviation alone, and nothing reports it.**
   The Luke volume writes `GREG NYSS.`, `GREG NAZ.`, `ATHAN.` and `DAMASCENE`; `fathers.js`
@@ -1461,9 +1471,10 @@ nothing for.
 - **Caught four Fathers being dropped by their abbreviations** before any of it shipped — see the
   new Gotcha. `GREG NYSS.`, `GREG NAZ.`, `ATHAN.` and `DAMASCENE` match none of the patterns in
   `fathers.js`; the parser normalises them, and they now carry 46 of the 455 quotations.
-- **Two Fathers added to the shared whitelist**, both verified inert in the other three books:
+- **Three Fathers added to the shared whitelist**, all verified inert in the other three books:
   St Isidore of Pelusium (whom this volume names in full, and who is not the "Isidore" of
-  Matthew's entry) and St Epiphanius of Salamis (cited only here).
+  Matthew's entry), St Epiphanius of Salamis (cited only here), and — after the owner confirmed
+  his veneration when asked — St Titus of Bostra, the volume's fifth most cited author, at rank 7.
 - **`assign.js` names the Orthodox iconographic subject for 74 of the 152 passages** — 69 at tier
   a, 5 at tier b — so `make check` prints the whole icon gap as a list.
 - **One footer typo fixed**, pre-existing: "The icons and frescoes are, public-domain" — the comma

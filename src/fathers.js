@@ -38,6 +38,15 @@ const FATHERS = [
  // St Epiphanius of Salamis (d. 403). Only the Luke volume cites him; no attribution in the
  // Matthew, Mark or John catena begins with "Epiphan", so this line is inert in those readers.
  [/^epiphan/i,                             'St Epiphanius of Salamis',   7],
+ // St Titus of Bostra (d. c. 378), the fifth most cited author in the Luke volume (77 comments).
+ // Added on the owner's judgement, 2026-09-20, that he is venerated in the Orthodox Church. The
+ // pattern is the full name on purpose: Mark's one Titus attribution is the bare token "Titus",
+ // so this line matches nothing outside Luke and the other three readers rebuild byte-identical.
+ // Rank 7 places him with the Fathers below the great Greek dogmatic teachers rather than among
+ // them, which is what the tiers above mean; it is not a judgement about the volume's reliance on
+ // him. Rank decides how often he is picked at all: 6 gives him 1 of Luke's 455 quotations, 7
+ // gives 5, 8 gives 14, 9 gives 17.
+ [/^titus of bostra/i,                     'St Titus of Bostra',         7],
 ];
 const BLOCKED=/^(pseudo|gloss|remig|raban|haymo|anselm|origen|euseb|but |or otherwise|interlin|ord\b)/i;
 // BLOCKED is anchored, so it only ever tested the author token — and the Catena routinely
