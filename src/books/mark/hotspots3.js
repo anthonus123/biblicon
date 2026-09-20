@@ -68,4 +68,56 @@ module.exports={
  ["Herod's throne", "The carved throne at the far left edge, with a helmeted guard beside it holding a red spear; the seated figure is cut off by the edge of the fresco. The order is Herod's, and Mark gives the reason only later — that John had told him it was not lawful to have his brother's wife.", "60%", "10%"],
 ],
 
+// ---- chapters 1-2 ----
+
+"File:Monreale - Jesus heals Simon's mother in law.jpg":[
+ ["The inscription", "IHS LIBERAT SOCRV[M] SIMONIS A MAGNIS FEBRIBVS — Jesus frees Simon's mother-in-law from a great fever. \"Great\" is Luke's word for it. Mark writes only that she lay sick of a fever.", "9%", "50%"],
+ ["The two reaching arms", "His arm comes out from the left, hers back from the bed, and the mosaicist has left a band of bare gold between the hands — the instant before. Mark is the only Evangelist who says what closes it: he came and took her by the hand, and lifted her up. Matthew has him touch her hand; Luke has him stand over her and rebuke the fever.", "60%", "52%"],
+ ["She is already sitting up", "She has raised herself on the bed to meet him, not been raised from it afterwards. Mark's next clause is that she ministered unto them, and the painter has begun the getting-up that ends in the serving.", "50%", "78%"],
+ ["The four from the synagogue", "Behind Christ stand the men Mark names as coming into the house with him: Simon and Andrew, with James and John. This is the first house he enters in this Gospel, and it is Peter's.", "45%", "12%"],
+ ["The man in the doorway", "A head looks out of the curtained door behind the bed. Mark says anon they tell him of her — someone had to fetch him to the room.", "37%", "77%"],
+ ["The bed", "A low bed with a heavy coverlet, drawn end-on so that the whole length of it lies across the picture. She is on it and off it at once.", "75%", "62%"],
+],
+
+"File:Christ cleans leper man.jpg":[
+ ["The leper's words", "POTES ME MVNDARE — thou canst make me clean. Mark gives the whole sentence: If thou wilt, thou canst make me clean. It is the only speech written into this mosaic, and it is the leper's, not Christ's.", "9%", "68%"],
+ ["The reaching hand", "Christ's arm is out across the gold toward him. Mark says what fills that gap, and no other Evangelist says it in these words: moved with compassion, put forth his hand, and touched him. The mosaic holds the instant before the touch.", "44%", "49%"],
+ ["The leper", "He stands upright on a staff, one hand raised. Mark says he came beseeching him, and kneeling down to him; the mosaicist has him standing, because a kneeling figure could not have been seen from the nave floor.", "45%", "80%"],
+ ["The spots", "Dark flecks are set into the skin of his face, arms and legs in a different tessera from the rest. It is the only sign of the disease in the picture, and the thing that is about to be taken away.", "70%", "69%"],
+ ["The disciples", "Heads crowded behind Christ's shoulder. Mark will end this passage with Christ unable to go openly into the city because the man told everyone — the crowd in this Gospel grows by disobedience.", "38%", "10%"],
+ ["The house at the edge", "The little building at the right is where Mark sends him next: go thy way, shew thyself to the priest, and offer for thy cleansing those things which Moses commanded.", "20%", "88%"],
+],
+
+"File:Monreale - healing of paralytic.jpg":[
+ ["They uncovered the roof", "The inscription over the arches begins APERVERVNT TECTVM — they uncovered the roof. Only Mark reports it: they uncovered the roof where he was: and when they had broken it up, they let down the bed wherein the sick of the palsy lay.", "10%", "50%"],
+ ["The men on the roof", "Two men lean in over the parapet, one from each side, working at the opening with their hands. Mark says the man was borne of four; the mosaicist has fitted two of them into the band above the wall and left the others to be imagined below.", "16%", "24%"],
+ ["The opening they broke up", "Between the two men the roof is dug open, a dark gap in the masonry with the bedding at its edge. The whole upper band of this mosaic exists because of one clause that only Mark wrote.", "21%", "42%"],
+ ["Christ enthroned", "He sits at the left with his hand out. Mark gives him two sentences here, and the first is not about the legs: Son, thy sins be forgiven thee.", "45%", "24%"],
+ ["The paralytic", "He has come up off the bed onto his knees and reaches both arms back toward Christ. Mark's command is Arise, and take up thy bed, and go thy way into thine house.", "60%", "60%"],
+ ["The scribes", "A knot of men in green and blue at the right, heads together. Mark has them thinking rather than speaking — reasoning in their hearts, Why doth this man thus speak blasphemies? — and Christ answering the thought.", "40%", "80%"],
+],
+
+"File:Healing of the Paralytic 04-17.jpg":[
+ ["Christ and the apostles", "Dionisy puts Christ at the left with his hand raised and the apostles crowded behind him. The fresco is painted on a curving wall over an arch, so the scene runs across it from left to right as a sequence, not as one moment.", "20%", "26%"],
+ ["The four bearers", "Four heads crowd together over the low bier at the bottom left. Mark alone counts them: one sick of the palsy, which was borne of four.", "52%", "17%"],
+ ["The paralytic", "He lies stretched full length on the bier, still unable to move. There is no roof in this fresco — Dionisy has painted the arrival and the departure and left the opening of the roof out.", "66%", "25%"],
+ ["Carrying his bed away", "In the middle of the wall the same man walks off with the plank of his bed on his shoulder, upright and alone. Mark: immediately he arose, took up the bed, and went forth before them all.", "35%", "42%"],
+ ["Those who watched", "Figures in dark robes at the right-hand edge, turning to each other — the haloed man between them and the bed-carrier is an apostle. Mark ends the passage with what the crowd said: We never saw it on this fashion.", "40%", "80%"],
+],
+
+"File:090 Mathew the Apostle Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The face of an old man", "The Church paints the publican at the end of his life, white-bearded, not as the man who was sitting at the tax table. What it remembers about him is what came after the call.", "15%", "58%"],
+ ["The pen", "A reed pen held upright in his right hand. Mark names him Levi the son of Alphaeus; the Gospel this pen is writing names the same man, at the same table and the same two words, Matthew.", "50%", "42%"],
+ ["The open book", "The codex lies open across his knee. This is why the icon is here and why the card says it is not a picture of these verses: it shows the Gospel, not the custom-house.", "68%", "72%"],
+ ["The gold halo", "Beaten gold with an incised border, against flat blue. A village hand in nineteenth-century Macedonia, still painting the Byzantine way.", "16%", "30%"],
+],
+
+"File:Matthew the Evangelist - icon.jpeg":[
+ ["The inscription", "С. ЕVАГГ. МАТѲЕЙ — the holy Evangelist Matthew, in Church Slavonic, lettered in gold across the top left.", "10%", "18%"],
+ ["The quill", "Lifted, not writing: the moment between hearing and setting down. Palekh painters worked in a fine miniaturist hand, and the pen is drawn as a real goose quill rather than a Byzantine reed.", "33%", "14%"],
+ ["The open book", "The page under his hand carries actual Slavonic letters. Mark's two verses about Levi say nothing of any of this; the Church has filled in the rest of the man's life around them.", "50%", "22%"],
+ ["The angel at his shoulder", "The winged figure leaning over him is the symbol the Church gives this Evangelist — the man, or the angel — painted here not standing beside him but dictating into his ear.", "14%", "80%"],
+ ["The jewelled Gospel", "A bound book with a metal and enamel cover propped at his side: the finished thing, beside the writing of it.", "53%", "89%"],
+],
+
 };
