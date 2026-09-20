@@ -38,6 +38,21 @@ const userNote=userKeys.length
       +(whereShown(k)?' at '+esc(whereShown(k)):'')).join(', ')}: supplied by the reader, `
     +`not taken from Wikimedia Commons.</p>`
   : '';
+// Two sentences of the footer describe things a reader may not have yet: galleries of several
+// icons of one scene, and type icons. They used to be printed unconditionally with Matthew's
+// examples in them, so John's footer named Matthew's galleries and a book with no icons at all
+// would claim both. Print each only when this reader really has them, with this book's own
+// examples from book.json.
+const hasGallery=D.passages.some(p=>(p.imgs||[]).length>1);
+const hasTypeIcon=D.passages.some(p=>p.tier==='b');
+const galleryClause=hasGallery&&book.galleryExample
+  ? `Where the Church has painted a scene more than once, this reader shows several of its icons
+  side by side — ${book.galleryExample} — and each one carries its own
+  reading saying where it was made and what it does differently. ` : '';
+const typeClause=hasTypeIcon&&book.typeExample
+  ? `A few
+  passages carry an icon the Church attaches to them without depicting their verses (${book.typeExample}); each of those says
+  so on the card.` : '';
 const attribs=Object.values(D.images).filter(i=>i.license!=='user-supplied')
   .sort((a,b)=>a.title.localeCompare(b.title))
   .map(i=>`<li>${esc(i.title)}${i.date?' · '+esc(i.date):''}${i.artist?' · '+esc(i.artist):''} · ${esc(i.license)}${i.page?` · <a href="${i.page}" target="_blank" rel="noopener">Commons</a>`:''}</li>`).join('\n');
@@ -97,17 +112,11 @@ ${css}
   <h4>About this reader</h4>
   <p>The gospel text is the King James Version. ${book.catenaLong} The icons and frescoes are, ${userKeys.length?'with one exception noted below, ':''}public-domain or
   freely-licensed photographs of Byzantine, Athonite, Serbian, Sicilian-Byzantine and Russian works.
-  Where the Church has painted a scene more than once, this reader shows several of its icons
-  side by side — the Theophany at Langadas beside the Theophany in the Russian North, the
-  Lamentation at Nerezi beside the Lamentation of a Cretan master — and each one carries its own
-  reading saying where it was made and what it does differently. Every icon shown for a passage
+  ${galleryClause}Every icon shown for a passage
   depicts that passage&rsquo;s own scene, and no image appears under two passages. Orthodox
   iconography is built on the feast cycle, the miracles and the saints, and it has no scene-icon
   for most of the parables and teaching passages &mdash; those passages are given as plain text
-  rather than illustrated with a general image of Christ that would misrepresent them. A few
-  passages carry an icon the Church attaches to them without depicting their verses (the Good
-  Shepherd beside the Lost Sheep, the Prophet Jonah beside the sign of Jonah); each of those says
-  so on the card.</p>
+  rather than illustrated with a general image of Christ that would misrepresent them. ${typeClause}</p>
   <h4 style="margin-top:26px">Images</h4>
   <ul>
 ${attribs}

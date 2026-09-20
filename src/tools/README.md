@@ -29,3 +29,15 @@ Father quoted as "St Augustine: …" must be quoted from a Catena comment the Ca
 him. Its first run on John found 17 misquoted verses, 18 drifted patristic sentences and two
 comments of Origen credited to Augustine and Chrysostom. Run it after writing any reading or
 marker, and read the list it prints: our own prose around a quotation shows up too.
+
+# Where Mark's text and pericopes came from
+
+Two one-shot scripts, kept as the record of how `src/books/mark/` was made on 2026-09-20. Both
+still reproduce their output byte-for-byte, which is the point of keeping them.
+
+| script | what it does |
+|---|---|
+| `parse_catena_mark.js <catena2.txt> <out.json>` | parses the CCEL plain-text cache of the *Catena Aurea* on St Mark (Volume II, Oxford 1842 — `ccel.org/ccel/a/aquinas/catena2/cache/catena2.txt`) into `catena.json`. It matches the volume's **closed list of 22 author tokens**, because a "looks like an attribution" heuristic read 300 sentences (`There follows,`, `It goes on,`) as authors; it prints every capitalised head it rejected, so a missing name cannot pass unnoticed. It also normalises five print misspellings — `Psuedo-Chrys.`, `Pseudo-Chyrs.` and `Origin` would otherwise slip past the `^pseudo` / `^origen` exclusions in `fathers.js`, and `Theophlyact` past `^theophyl`. |
+| `mark_anchors.js <out.json>` | writes `anchors.json`. The divisions are the Catena's own verse blocks, and the script **refuses to write** on a gap, an overlap, a duplicate id, or a chapter whose passages do not add up to the KJV's verse count. |
+
+`node src/tools/mark_anchors.js src/books/mark/anchors.json` regenerates the anchors in place.

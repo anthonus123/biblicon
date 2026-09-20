@@ -11,7 +11,7 @@
 # change reproduces the same bytes and leaves `git status` clean, so a reader only enters git
 # history when something actually changed.
 
-BOOKS := matthew john
+BOOKS := matthew john mark
 PORT  := 8731
 BOOK  ?= matthew
 

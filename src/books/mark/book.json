@@ -1,0 +1,12 @@
+{
+ "id": "mark",
+ "name": "Mark",
+ "title": "The Gospel of Mark",
+ "greek": "Κατὰ Μᾶρκον",
+ "chapters": 16,
+ "reader": "Mark Reader.html",
+ "minNotes": 0,
+ "iconGap": "the image pool is shared, so most of these are scenes Matthew already carries; the ones named here have no icon in the pool at all and Mark has not had a dedicated search (see HANDOFF Next)",
+ "catenaShort": "Quoted verbatim from the Catena Aurea on the Gospel of St Mark, compiled by St Thomas Aquinas from the Fathers (Volume II of the Oxford translation; J.G.F. & J. Rivington, 1842; public domain).",
+ "catenaLong": "The patristic commentary is quoted verbatim from the <em>Catena Aurea</em> on St Mark — the “golden chain” of the Fathers compiled by St Thomas Aquinas — in Volume II of the Oxford translation (J.G.F. &amp; J. Rivington, 1842; public domain), restricted here to Fathers venerated in the Orthodox Church and to Blessed Theophylact of Ohrid, whose commentary this volume cites more than any other. The volume’s own preface warns that much of what St Thomas received under the name of St Chrysostom is in truth Victor of Antioch’s, and that its commentary under the name of St Jerome is spurious; the Oxford editors marked those passages <em>Pseudo-Chrys.</em> and <em>Pseudo-Jerome</em>, and every one of them is excluded here."
+}

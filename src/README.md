@@ -1,19 +1,21 @@
 # Building the readers
 
-Each reader is a single self-contained HTML file — `Matthew Reader.html`, `John Reader.html`.
+Each reader is a single self-contained HTML file — `Matthew Reader.html`, `Mark Reader.html`,
+`John Reader.html`.
 Everything (fonts, icons, the KJV text, the patristic commentary) is embedded, so it opens
 by double-clicking with no server and no network.
 
 ```sh
-make               # assemble -> check -> emit both readers   (run from the repo root)
-make john          # one Gospel only (also: make matthew)
+make               # assemble -> check -> emit every reader   (run from the repo root)
+make john          # one Gospel only (also: make matthew, make mark)
 make check         # structural check + content counts for every book, without re-emitting
 make BOOK=john serve   # serve a reader at http://127.0.0.1:8731
 make clean         # drop the generated intermediates
 ```
 
-Two stages, which `make` sequences for you, once per book (`BOOK=matthew` or `BOOK=john`;
-`src/book.js` resolves the folder):
+Two stages, which `make` sequences for you, once per book (`BOOK=matthew`, `BOOK=mark` or
+`BOOK=john`; `src/book.js` resolves the folder). A new Gospel is a new `src/books/<book>/`
+folder with the eleven files below plus a line in the Makefile's `BOOKS`:
 
 ```
 src/assemble.js   src/books/<book>/* + the shared pool -> src/books/<book>/icons.json
@@ -30,7 +32,7 @@ Per Gospel, in `src/books/<book>/`:
 
 | file | what it holds |
 |---|---|
-| `book.json` | name, Greek title, chapter count, output file name, the commentary's provenance line |
+| `book.json` | name, Greek title, chapter count, output file name, the commentary's provenance line, and the footer's own examples of this reader's galleries and type icons |
 | `anchors.json` | the pericope divisions (chapter, first and last verse, name) |
 | `kjv.json` | the King James text |
 | `catena.json` | the *Catena Aurea* on that Gospel, parsed into attributed patristic comments keyed by verse |
@@ -49,7 +51,7 @@ Shared:
 |---|---|
 | `fathers.js` | picks the quotations — restricted to Fathers venerated in the Orthodox Church |
 | `data/image_meta.json`, `data/pick_keys.json` | source, artist, licence and key for every image in the pool |
-| `img/` | the icons, 660px WebP — one pool for both readers; an image may serve both Gospels |
+| `img/` | the icons, 660px WebP — one pool for every reader; an image may serve more than one Gospel, because an icon of the Entry into Jerusalem is the same icon whichever Gospel's account it stands beside |
 | `check.js` | the structural check `make check` runs |
 | `tools/` | the harvest and marker-checking scripts (take `BOOK=`) |
 

@@ -1,4 +1,4 @@
-# HANDOFF — Biblicon (Matthew and John icon readers)
+# HANDOFF — Biblicon (Matthew, Mark and John icon readers)
 
 Cross-session handoff log. Read this first at session start. End every working session by
 updating `## Status` + `## Next` and appending a `## Session YYYY-MM-DD` block
@@ -10,35 +10,43 @@ and this file did not.
 
 ## Status
 
-- **What this is.** Bible-study readers for the Gospels of **Matthew** and **John** (KJV) in
-  which every passage is paired with an Eastern Orthodox icon and with commentary from the
-  Church Fathers. The John reader was started 2026-09-18 at the owner's request to "repeat
-  the process" for St John; it follows every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
+- **What this is.** Bible-study readers for the Gospels of **Matthew**, **Mark** and **John**
+  (KJV) in which every passage is paired with an Eastern Orthodox icon and with commentary from
+  the Church Fathers. The John reader was started 2026-09-18 at the owner's request to "repeat
+  the process" for St John, and the Mark reader on 2026-09-20 on the same request; each follows
+  every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
   each icon matter most**, then theological correctness on Orthodox terms, then visual
   polish. Catena Bible (catenabible.com) is the model for multi-Father commentary.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
-- **Deliverables:** `Matthew Reader.html` (~17.2 MB) and `John Reader.html` — each a single
-  self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+- **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB) and
+  `Mark Reader.html` (0.5 MB so far — text and commentary only, no icons wired yet) — each a
+  single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
-  make                 # both readers; src/books/<book>/icons.json is generated, untracked
-  make john            # one Gospel (also: make matthew)
-  make check           # structural check + the content counts below, both books
+  make                 # every reader; src/books/<book>/icons.json is generated, untracked
+  make john            # one Gospel (also: make matthew, make mark)
+  make check           # structural check + the content counts below, every book
   make BOOK=john serve # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
   ```
   The build is deterministic: rebuilding unchanged content reproduces the same bytes.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
-  `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|john`
-  through `src/book.js` (default Matthew). Everything a Gospel owns lives in
+  `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|john`
+  through `src/book.js` (default Matthew). Adding a Gospel is a new `src/books/<book>/` folder
+  with its eleven files and one word in the Makefile's `BOOKS` — miss the Makefile and `make`
+  never builds it and `make check` never checks it, with no output at all to notice. Everything a Gospel owns lives in
   `src/books/<book>/`: `book.json` (names, output file, commentary provenance line),
   `anchors.json`, `titles.json`, `kjv.json`, `catena.json`, `assign.js`, `picks.js`,
   `labels.js`, `hotspots{,2,3}.js`, `overrides.js`, and for Matthew `icons_orig.json` and the
   two audit TSVs. **The image pool is shared** — `src/img/`, `src/data/image_meta.json`,
-  `src/data/pick_keys.json` — so one Commons file may serve both readers; labels, readings
-  and markers are per book, because the same fresco is read against different verses.
-  "One icon, one passage" is enforced **within** each reader.
+  `src/data/pick_keys.json` — so one Commons file may serve more than one reader; labels,
+  readings and markers are per book, because the same fresco is read against different verses.
+  "One icon, one passage" is enforced **within** each reader. The owner settled the
+  cross-reader question on **2026-09-20**, for Mark, whose scenes are almost all scenes Matthew
+  already carries: **reuse Matthew's files** — it is the same icon of the same event — but every
+  icon Mark shows gets its own label, its own prose reading and its own markers, written against
+  Mark's text.
 - **Structure** (preserved from the owner's original wireframe): sticky header, sticky
   chapter rail with a per-chapter icon tree, a **Text leads / Icons lead** mode toggle, and
   a right-hand drawer with three tabs — *Scripture Story*, *Wisdom of the Fathers*,
@@ -74,6 +82,24 @@ and this file did not.
     John (see Gotchas for why not the 1845 scan). Nothing paraphrased, nothing invented.
   - **All 73 icons have positioned markers**, 513 in all, every one in `src/books/john/hotspots3.js`
     and every set checked by drawing it back onto the picture on 2026-09-19. No clamp warnings.
+- **Mark content, as of 2026-09-20 (the skeleton only):**
+  - **104 passages**, all 16 chapters, every verse of the Gospel in exactly one of them and none
+    in two — `make_anchors.js` refused to write the file otherwise. The divisions are the *Catena
+    Aurea*'s own verse blocks on Mark (the 1842 volume groups the text into 105), with four
+    overlapping pairs resolved and its 1:2–3 / 1:4–8 pair joined: they are the traditional
+    pericopes, which is also where the Fathers' comments sit, so `fathers.js` selects cleanly.
+  - **Tiers: 0 (a), 0 (b), 104 (c) — no icons are wired yet.** `assign.js` names an
+    iconographic subject for **50** of the 104, and `make check` lists all 50. Almost every one
+    is a scene Matthew already carries in the shared pool, which is what the owner's reuse
+    decision of 2026-09-20 is for.
+  - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
+    of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
+    which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
+    comments and 298 of the 300 shipped quotations are byte-for-byte in the source, and the
+    other two differ only where `fathers.js` `clean()` strips a bracketed scripture reference.
+    Blessed Theophylact (106) and St Bede (103) lead, then Augustine 43, Chrysostom 35,
+    Jerome 4, Gregory the Dialogist 3, Hilary 2, Cyril of Alexandria 2, Ambrose 1, Leo 1.
+  - No readings and no markers, because there are no icons yet.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -101,7 +127,26 @@ and this file did not.
 
 ## Next
 
-In the owner's priority order:
+**Active work — Mark's icons.** The skeleton is built, checked and committed; the reader is
+text and commentary only. Next is `picks.js`, then `labels.js`, then readings in `hotspots2.js`,
+then markers in `hotspots3.js`, in batches with a commit each, exactly as John was done. The
+owner's decision of 2026-09-20 is to reuse Matthew's files for the parallel scenes, so the work
+is mostly *writing*, not searching: for each of the 50 subjects `make check` lists, find the
+Matthew passage that carries that scene, copy the Commons titles into Mark's `picks.js`, and
+then write Mark's own label, reading and markers for each. Three cautions:
+  - **A reading copied from Matthew's will be wrong**, and `BOOK=mark node src/tools/quotes.js`
+    is the check that proves it was adapted: any Matthew wording quoted as Mark's fails against
+    `src/books/mark/kjv.json`. Mark's details are his own — the four who carried the paralytic,
+    the green grass, Bartimaeus by name, the young man who fled naked, Simon of Cyrene's sons.
+  - **Markers must be written fresh against the picture**, never copied, even for a shared file:
+    Matthew's marker set explains the icon against Matthew's verses.
+  - **The footer's gallery and type-icon sentences come from `book.json`** (`galleryExample`,
+    `typeExample`) and are printed only when the reader really has galleries or tier-b passages.
+    Mark's two fields are unset, so its footer omits both. Set them when its icons land.
+  - The subjects with no icon anywhere in the pool (the Sower, the widow's mites, the seed
+    growing secretly) need a real search; Mark has had none.
+
+Then, in the owner's priority order:
 
 1. **Keep the markers honest.** Every icon in both readers now has markers (John's were
    finished 2026-09-19), and the owner's priest reports
@@ -170,6 +215,34 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
 
+- **The Mark Catena *is* the Oxford text, unlike John's.** CCEL hosts the Matthew and Mark
+  volumes as plain-text caches (`ccel.org/ccel/a/aquinas/catena2/cache/catena2.txt` is Volume II,
+  St Mark, Oxford 1842), so `src/books/mark/catena.json` is verbatim where
+  `src/books/john/catena.json` is the isidore.co modernisation. Do not go looking for a better
+  Mark source; there is none, and this one verified byte-for-byte.
+- **Parse the Catena by its closed list of author names, never by a heuristic.** The Mark volume
+  opens a comment with `Name, work:` and a *sentence* with things like `There follows,`,
+  `It goes on,` and `Wherefore it is said,`. A "looks like an attribution" rule let 300 of those
+  in as authors on the first attempt. The volume uses exactly 22 author tokens; matching the
+  first token against that list is what makes the parse trustworthy, and the parser prints every
+  capitalised head it *rejected* so a missing name cannot pass unnoticed.
+- **Three print/OCR misspellings in the Mark volume defeat the exclusion lists.** `fathers.js`
+  blocks the pseudonymous authors with `/^pseudo/i` and Origen with `/^origen/i`; the volume also
+  spells them `Psuedo-Chrys.`, `Pseudo-Chyrs.` and `Origin`, and spells Theophylact `Theophlyact`
+  and `Theophyact`, which `/^theophyl/i` misses. The parser normalises all five. They fail *safe*
+  today only by accident — a misspelt `Psuedo-Chrys.` matches no whitelist entry either — so do
+  not rely on that if the whitelist ever grows a looser pattern.
+- **The Mark volume's own preface says its Chrysostom and its Jerome are largely not theirs** —
+  most of the Chrysostom passages are Victor of Antioch's, and its Jerome commentary is
+  "universally pronounced to be spurious" (Philippus Presbyter). This matters because neither
+  `make check` nor `quotes.js` can see a *wrong attribution in the source*: they only check that
+  our words match what the Catena credits to that Father. The Oxford editors did the work for us
+  — they marked those passages `Pseudo-Chrys.` (107) and `Pseudo-Jerome` (226), and `fathers.js`
+  excludes both already, leaving 8 real Jerome comments with work references. Mark's
+  `catenaLong` states all of this in the footer. Check the preface of any new volume the same way.
+- **Mark's chapter blocks are coarse, and that is the source being right, not the parse being
+  wrong.** The volume gives Mark 4:1–20 as one block and 5:1–20 as another, because those are
+  the traditional pericopes. 105 blocks for 678 verses is correct; don't "fix" it by splitting.
 - **The only check that sees a misplaced marker is drawing it back onto the icon.**
   `python3 src/tools/overlay.py OUT` (after `node src/assemble.js`) montages every marked icon
   four to a sheet with the numbered circles and a legend; `overlay.py OUT KEY` draws one icon
@@ -1115,3 +1188,55 @@ unillustrated passages, starting with the Good Shepherd question for the owner. 
 audit, `BOOK=matthew node src/tools/quotes.js` lists 38 KJV clauses to read. Matthew reports
 the Fathers in indirect speech, so the attribution half of the tool finds nothing there, and
 those claims still need checking against `catena.json` by hand.
+
+## Session 2026-09-20 (the Mark reader: skeleton, text and commentary)
+
+**Did**
+- At the owner's request to "continue with the gospel of marc", added a third book,
+  `src/books/mark/`, and `mark` to the Makefile's `BOOKS`. Nothing in the shared pipeline needed
+  changing for it — the per-book split of 2026-09-18 held.
+- **The KJV text** from the same aruljohn JSON the other two use; verse counts checked against
+  the KJV chapter by chapter (45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 20).
+  16:9–20 is anchored as its own pericopes, as Orthodox use has it.
+- **The Catena Aurea on Mark**, parsed from the CCEL plain-text cache of Volume II of the Oxford
+  translation (1842) — verbatim, unlike John's isidore.co source. 105 blocks, 2,541 comments,
+  1,454 of them attributed. The parser matches the volume's closed list of 22 author tokens;
+  a heuristic first attempt had read 300 sentences (`There follows,`, `It goes on,`) as authors.
+  It normalises five print misspellings, three of which would otherwise slip past the
+  `^pseudo` / `^origen` exclusions in `fathers.js`.
+- **104 passages** over all 16 chapters, from the Catena's own verse blocks; the generator hard-
+  fails on a gap, an overlap or a verse count that does not match the KJV, so coverage is proven,
+  not assumed. `assign.js` names the Orthodox iconographic subject for 50 of them.
+- **Made the footer describe its own reader.** Two of its sentences were printed unconditionally
+  with Matthew's examples baked into `build.js`, so John's footer had been naming Matthew's
+  galleries and Matthew's type icons, and Mark's would have claimed galleries it does not have.
+  They now come from `galleryExample` / `typeExample` in each `book.json` and are printed only
+  when the reader really has a gallery or a tier-b passage. Matthew's wording is unchanged by
+  construction; John's now names its own (the four Samaritan women, the two Washings; the
+  Evangelist and St Andrew), which was checked against `picks.js` and `labels.js` — the first
+  draft of that sentence said "at Ohrid" for a Washing that is at Nea Moni.
+
+**Why**
+- Skeleton first, icons after, at the owner's choice: it makes the text, the pericopes and the
+  commentary a shippable, verified milestone on their own, and it de-risks the Catena parse
+  before any of the icon work depends on it.
+
+**Verified**
+- `make check` green on all three books. Mark: 104 passages, tiers a:0 b:0 c:104, 300 patristic
+  quotations, every passage with at least one. Matthew and John unchanged in content; the rebuilt
+  `Matthew Reader.html` is **byte-identical** to the committed one, and the John reader's only
+  diff is the two footer sentences.
+- **Every quotation verbatim.** All 2,541 parsed comments are byte-for-byte in the CCEL source
+  after whitespace flattening, and so are 298 of the 300 the reader ships; the two that differ do
+  so only where `clean()` strips a bracketed scripture reference (`[Luke 4:38]`, `[1 Sam 21]`) —
+  the documented behaviour, the same as in Matthew.
+- Browser, served over http: `Mark Reader.html` (0.50 MB, 0 images) loads with **0 console
+  errors**, the chapter rail lists all 16 chapters with their titles, chapter 1 says "No icon in
+  this chapter yet", and every passage renders as a plain verse row with its KJV text. This was
+  the one untested case in the pipeline — no reader had ever been built with an empty `images`
+  map — and it builds and renders.
+
+**Next.** Mark's icons, per `## Next`: `picks.js` from Matthew's files for the parallel scenes,
+then Mark's own labels, readings and markers, in batches with a commit each. Run
+`BOOK=mark node src/tools/quotes.js` after every reading — it is what proves a reading was
+adapted to Mark and not copied from Matthew.
