@@ -132,7 +132,8 @@ module.exports = {
 
  // ---- chapter 15 ----
  pilate:       {tier:'a', subj:'Christ before Pilate', kw:[['pilate'],['pilato'],['praetorium']]},
- barabbas:     {tier:'a', subj:'Pilate washing his hands and Barabbas released', kw:[['pilate','wash'],['barabbas'],['hands']]},
+ // Not the washing of hands: that is Matthew 27:24, and Mark does not report it.
+ barabbas:     {tier:'a', subj:'Barabbas released and Christ scourged', kw:[['barabbas'],['scourg'],['flagell'],['mastigosis']]},
  mocking:      {tier:'a', subj:'The crowning with thorns and the mocking', kw:[['thorns'],['mocking'],['akanth'],['purple']]},
  crucifixion:  {tier:'a', subj:'The Crucifixion', kw:[['crucifix'],['stavrosis'],['golgotha'],['cross']]},
  reviled:      {tier:'c', subj:'', kw:[]},
