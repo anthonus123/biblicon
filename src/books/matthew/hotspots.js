@@ -122,7 +122,7 @@ module.exports={
 'File:Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg':{
  read:"The Synaxis of the Twelve Apostles — a Constantinopolitan panel of the early fourteenth century. The Twelve stand together as one assembly, and the Church keeps their common feast on the 30th of June, the day after Peter and Paul. Matthew 10 is where they are first named and first sent.",
  hot:[
-  ["The inscription","The Greek title across the top reads: The Synaxis of the Twelve Apostles. Their names follow, as Matthew lists them.","13%","40%"],
-  ["The chief apostles in front","Peter and Paul are set forward. Paul is included though he was not of the Twelve — the Church counts the apostolate by calling, not by chronology.","50%","25%"],
-  ["The rank behind","The rest stand shoulder to shoulder, each with the scroll or book of his preaching. Freely ye have received, freely give.","28%","52%"]]},
+  ["The inscription","The Greek across the top reads Η СΥΝΑΞΙС ΤΩΝ ΔΩΔΕΚΑ ΑΠΟСΤΟΛΩΝ, the Synaxis of the Twelve Apostles, and the names follow in Matthew's own order — ΠΕΤΡΟС, ΑΝΔΡΕΟС, ΙΑΚΩΒΟС, ΙΩ, ΦΙΛΙΠΠΟС, ΒΑΡΘΟ, ΘΩΜΑС, ΜΑΤΘ, ΙΑΚΩΒΟС, ΘΑΔΔΑΙΟС, ΙΜΩΝ — as far as the rubbed gold lets them be read.","13%","40%"],
+  ["The four set forward","Four of them stand a step in front of the rest and are painted larger: a beardless young one at the left, one holding a scroll, and two with red books. No ΠΑΥΛΟΣ can be read in what survives of the name-band — St Paul is often given a place in a Synaxis although he was not of the Twelve, and this icon appears to keep to Matthew's list.","50%","25%"],
+  ["The rank behind","Eight more stand shoulder to shoulder behind them, and the front rank hides everything below their chins: not one of their hands, and nothing they may be carrying, is visible in the panel. Four in front and eight behind is the Twelve. Freely ye have received, freely give.","28%","52%"]]},
 };
