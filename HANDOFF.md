@@ -334,6 +334,23 @@ than the picture's writing. That is a defensible per-Gospel choice and it is **n
 bug, but it is the one place where three readers show one picture under two names, and it is
 recorded here so nobody has to rediscover it. Noted 2026-09-20d; no reader was changed for it.
 
+**Three icons in Matthew's reader depict a different Gospel from the passage they stand under —
+and two of them are the same passage.** Found in the 2026-09-21 audit; all three now say so in
+their own readings, and **none has been moved, because moving one changes a passage's tier and
+takes its commentary away with it. The owner's call.**
+
+- **Matthew 9:1–8 has two icons and both are somebody else's.** The Monreale mosaic is lettered
+  APERVERVNT TECTVM — *they uncovered the roof* — and Matthew puts nobody on a roof; the digging
+  open is Mark 2:4 and the tiling is Luke 5:19. The Dionysiou fresco beside it paints the five
+  porches and the pool of Bethesda, which is John 5 (found while wiring Luke, written up below).
+  If both went, 9:1–8 would be tier c.
+- **Matthew 15:29–39, the feeding of the four thousand, shows a mosaic of the five thousand.**
+  The Monreale Latin reads DE QVINQVE PANIBVS ET DVOBVS PISCIBVS QVINQVE MILIA HOMINVM SATIAVIT
+  ET DE FRAGMENTIS DVODECIM COPHINI IMPLETI SVNT — every number is Matthew 14's. Its own marker
+  had said so since it was written; the reading contradicted it. The clean fix is to move the file
+  to 14:13–21, which already has two icons, and let 15:29–39 fall to tier c.
+- The related open question, `Christos Iomenos Typhlon` at 9:27–31, is below and unchanged.
+
 **FIXED 2026-09-21 at the owner's word ("fix the nativity") — Matthew's prose readings for all
 three Nativity icons contradicted the pictures.** Found the same day while writing Luke's
 readings for the same three files at 2:1–7, which is the only time anyone will have had the
@@ -408,11 +425,20 @@ Then, in the owner's priority order:
    To *check* placements afterwards, draw the stored coordinates back onto the icons and
    montage them 9-up: an overlay sheet reads in one glance and is how the Sinai Last
    Judgment error below was caught.
-2. **Finish the reading audit. 27 of 113 readings are still unchecked against their
-   pictures.** Sheets 1-3 of the audit are done (see 2026-08-21b and
-   `src/books/matthew/icon_reading_audit.tsv`); the sweep stopped partway through sheet 3. Roughly a
-   third of the readings checked so far carried a false claim, so assume the rest do too.
-   Start with `BOOK=matthew node src/tools/quotes.js`: it lists 38 KJV clauses to read.
+2. **The reading audit is FINISHED, 2026-09-21 — all 113 readings have now been read against
+   their own pictures.** `src/books/matthew/icon_reading_audit.tsv` has no PENDING rows left.
+   Two things came out of it that matter more than any single correction:
+   - **A row marked `fixed` in that file meant nothing.** All 28 rows marked `fixed-2026-08-22`
+     recorded a correction that was **never applied to `hotspots2.js`** — the note said what was
+     wrong, and the shipped prose went on saying it, through every rebuild since. Three of them
+     were the Nativity readings the owner had fixed earlier the same day; the other 25 were found
+     by spot-checking five of them and discovering all five still carried the exact claim the note
+     said had been corrected. **Never trust the verdict column without reading the prose.**
+   - **The markers were not clean either.** 47 marker texts were wrong alongside the readings, and
+     several times the *marker* was right where the *reading* contradicted it (the Monreale loaves,
+     the Sinai Transfiguration, the two paralytics). Audit both together from now on.
+   Start with `BOOK=matthew node src/tools/quotes.js`: it lists 44 KJV clauses to read, almost all
+   of them the documented false positives where our prose leads into a quotation.
    **Open question found and not yet resolved:** `Christos Iomenos Typhlon` is the sole icon
    of Matthew 9:27-31 (The Two Blind Men) at tier a, and its own reading says plainly that it
    depicts the man born blind at Siloam — **John 9, not Matthew 9**. The Gotchas record that
@@ -1871,3 +1897,61 @@ Luke's, so a paraphrase of Mark's prose with the verses swapped passes it clean.
 text beside the new one before committing is the check — Luke gives the Holy Ghost *in a bodily shape like a dove* (3:22), a
 detail Mark and Matthew do not, and he puts the baptism in a subordinate clause after the
 Forerunner is already shut up in prison.
+
+## Session 2026-09-21b (Matthew's reading audit finished — 43 readings, 47 markers)
+
+**Did**
+- **Finished the reading audit.** All 113 of Matthew's readings have now been read against their
+  own pictures at full size. `icon_reading_audit.tsv` has no PENDING rows; the 43 outstanding ones
+  were rewritten and the file's header records why the verdict column cannot be trusted on its own.
+- **Found that the previous audit's fixes were never applied.** 28 rows were marked
+  `fixed-2026-08-22` with a note naming the error. Spot-checking five of them found all five still
+  carrying the exact claim the note said had been corrected — the beheading's "head already on the
+  charger", the Flight's "Joseph leads the ass", the paralytic "walking off with that bed", Dionisy's
+  Christ "from the right", the Good Shepherd's "one of the oldest Christian images". `git log` on
+  `hotspots2.js` confirms it: the only commits touching it are the pre-split restructure and today's.
+  So the audit note was written and the prose never was.
+- **Audited the markers alongside the readings, and 47 marker texts were wrong.** Several times
+  the marker was right where the reading contradicted it — the Monreale loaves marker already
+  named Matthew 14's numbers, the Sinai Transfiguration marker already said there is no mandorla,
+  both paralytic markers already described what the readings denied.
+- **The findings worth keeping**, beyond the recorded ones:
+  - The Dionysiou **Crucifixion** paints Matthew 27:51–52 at the foot of the cross — rent rock, a
+    skull in the cave beneath, and figures climbing out of the broken ground in their grave-bands.
+    No other Gospel has it, and the reading had been a generic paragraph about Orthodox restraint.
+    It also paints the breaking of the thieves' legs, which is St John's, and the Theotokos-and-
+    Beloved-Disciple group, which is St John's too: Matthew keeps the women beholding afar off.
+  - The **Ferapontov Ten Virgins** has no legible lamp anywhere in it. The marker claimed one in
+    every hand. Long diagonal paint losses have taken the whole left half.
+  - The **Sinai Transfiguration** has no mandorla and no gold halo — three or four red strokes only.
+  - The **Ferapontov fig tree** photograph holds two scenes, and the bare tree is in the middle, not
+    at the right; the right third is a supper with a figure stretched out at the company's feet.
+  - The **Evraidos Nativity's** "beast's head at the edge of the frame" is a young man in profile.
+  - The **Russian Tree of Jesse** has no trunk and no reclining Jesse; two markers claimed both.
+  - The **Athonite Entry** was called the sparest of three; it is the most crowded.
+  - Inscriptions read and quoted for the first time: the Jonah scroll (Jonah 2:2), the Langadas
+    Transfiguration signature, ΡΑΧΗΛ ΚΛΑΙΟΥΣΑ on the Sinai Flight, the Rossano prophets' names,
+    MISERERE NOSTRI at Jericho, the abbreviated Magi Latin, APERVERVNT TECTVM at Monreale.
+- **Claims deliberately dropped rather than repaired**, because nothing supports them: the donor
+  named in the Langadas beheading's inscription, the Yaroslavl panel's height, and "one of the
+  oldest Christian images" for the Great Palace pavement.
+
+**Why**
+- The owner asked for the audit to be finished, and for no generic readings. Every icon in the
+  batch was opened with `grid.py` and, wherever a specific claim was in doubt, cropped with
+  `crop.py` before anything was written.
+
+**Verified**
+- `make check` green on all four books; Matthew 113 readings, 113 marker sets, no new clamp
+  warnings. `BOOK=matthew node src/tools/quotes.js` at 44, up from 37 — every new flag read and
+  confirmed as the documented false-positive shape (our prose leading into a verbatim quotation).
+- `overlay.py` re-run for every icon whose coordinates moved or gained a marker.
+- Only `Matthew Reader.html` changed; John, Mark and Luke rebuilt byte-identical each time.
+
+**Not done**
+- **The three misplaced icons are reported, not moved** — see `## Next`. Moving one drops a passage
+  to tier c and takes its commentary with it, which is the owner's call.
+- 44 pre-existing clamp warnings: markers written above 9% ship at 9%. Cosmetic, untouched.
+- Luke's 63 remaining icons and Mark's 50 are still the standing work.
+
+**Next.** Luke batch 2 — `baptism` (4) and `temptation` (2) — by the loop under "Active work".

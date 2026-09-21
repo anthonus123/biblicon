@@ -1,5 +1,12 @@
 # Reading audit: every icon reading read against its own picture, at full size.
 # key	label	verdict	note   (verdict: checked-DATE | fixed-DATE | PENDING)
+# 2026-09-21: the sweep was finished. NOTE FOR ANYONE READING THIS FILE: the 28 rows
+# marked fixed-2026-08-22 recorded corrections that were NEVER APPLIED to hotspots2.js -
+# the reader shipped the wrong text for a month of sessions, through every rebuild since. A row marked fixed
+# here means nothing unless the prose says what the note says. All 43 outstanding rows were
+# re-read against their pictures on 2026-09-21 and the prose was rewritten; 47 marker texts
+# were corrected with them.
+# key	label	verdict	note   (verdict: checked-DATE | fixed-DATE | PENDING)
 1700683b5e46	The Anointing at Bethany — Monreale, 12th c.	checked-2026-08-21b	
 b9c2dc87cce1	Judas Receiving the Silver — Yaroslavl school, 19th c.	checked-2026-08-21b	
 07b286a4112f	The Mystical Supper — Asterios Anagnostos, Adam, 1898	checked-2026-08-21b	
@@ -45,70 +52,70 @@ c5a887002f86	The Dumb Demoniac — Dionysiou, Athos, 1547	checked-2026-08-21b
 b6218c06f8f4	The Healing of the Paralytic — Dionysiou, Athos, 1547	checked-2026-08-21b	
 809e4f434700	St Matthew the Apostle — Langadas, Greece, 19th c.	checked-2026-08-21b	
 e74e957600c1	The Daughter of Jairus — Monreale, 12th c.	checked-2026-08-21b	
-486477b98e70	Christ Casting Out a Devil — Dionysiou, Athos, 1547	fixed-2026-08-22	hedge removed: the demon is a black winged imp above his head with a streak to his mouth
+486477b98e70	Christ Casting Out a Devil — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; imp confirmed: black winged imp over his head with a streak into his open mouth, one only - marker 'scuttles away across the rock' was wrong too
 ae630c177c4b	The Synaxis of the Twelve Apostles — Constantinople, early 14th c.	checked-2026-08-22	12 in two ranks, June 30 feast correct
 0816dc776ae6	The Twelve Apostles — Late Byzantine panel, early 1300s	checked-2026-08-22	three ranks of four, haloes overlap, gold ground - all confirmed at full size
-890086731821	The Forerunner Led to Prison — Dionysiou, Athos, 1547	fixed-2026-08-22	reading still framed it as John sending from prison (Mt 11); it sits at 4:12-17. Rewritten to the arrest, matching its markers
+890086731821	The Forerunner Led to Prison — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; and the prison window holds the Forerunner AGAIN, haloed - the fresco shows seizing and imprisonment at once
 12d1b6b5abd7	Christ Pantocrator — Dionysiou, Athos, 1547	checked-2026-08-22	O WN in halo, blessing right hand, closed Gospel in left - confirmed
 0b83261a7926	The Man with the Withered Hand — Dionysiou, Athos, 1547	checked-2026-08-22	unhaloed elders seated at both left and right, so 'either side' is right
 632d526875ab	The Gadarene Demoniacs — Dionysiou, Athos, 1547	checked-2026-08-22	plural titulus, both men painted, devils leaving - confirmed
 74e4150f14a6	Jonah and the Great Fish — Dionysiou, Athos, 1547	checked-2026-08-22	Jonah given up from the fish's open mouth with the scroll of his prayer - reading holds
 d3cd28ed2081	The Parable of the Sower — Orthodox mosaic	checked-2026-08-22	seed-fold at the waist, seed cast, birds on the path, thorns, stony ground - all four grounds present
-fd69652893db	The Beheading of the Forerunner — Dionysiou, Athos, 1547	fixed-2026-08-22	the head is NOT on the charger: it lies on the ground, the body kneels headless with bound hands, Salome's charger is empty
-8b7f7d9d5bf8	The Blessing of the Five Loaves — Dionysiou, Athos, 1547	fixed-2026-08-22	Christ does not make a blessing gesture - he holds the loaves in both hands and looks up; reading now says so
+fd69652893db	The Beheading of the Forerunner — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; the gold disc round the fallen head is his HALO, which is what makes the 'head on the charger' misreading easy
+8b7f7d9d5bf8	The Blessing of the Five Loaves — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; he holds five loaves with the two fishes laid across them and his face turned UP - the painter chose 'looking up to heaven'
 eeb8331bcc9e	Christ Saving Peter from the Waves — Monreale, 12th c.	checked-2026-08-22	hands actually clasp; Peter chest-deep - reading holds
-bced617a4e30	The Canaanite Woman — Dionysiou, Athos, 1547	fixed-2026-08-22	she does not kneel - she stands with both hands open; daughter lies on a bed before the house
-d5a17108ebef	The Multiplication of the Loaves — Monreale, 12th c.	fixed-2026-08-22	Christ gives the bread into a disciple's cloth, he does not bless - the reading contradicted its own marker
+bced617a4e30	The Canaanite Woman — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; and the daughter is IN the fresco on a red couch, not 'at home' as the reading said
+d5a17108ebef	The Multiplication of the Loaves — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; ALSO its Latin counts five loaves/two fishes/five thousand/twelve baskets - Matthew 14, not the 15:29-39 it stands under. Owner's call, see HANDOFF
 0c81d57a20b0	The Transfiguration — Sinai, 12th c.	checked-2026-08-22	mandorla, Moses and Elias either side, three disciples down - holds
-b5aeb19e98db	The Good Shepherd — Great Palace, Constantinople, 5th–6th c.	fixed-2026-08-22	overclaim removed: a 6th-c palace pavement is not 'one of the oldest Christian images' and the man is not Christ; now named as the kriophoros type
+b5aeb19e98db	The Good Shepherd — Great Palace, Constantinople, 5th–6th c.	fixed-2026-09-21	applied 2026-09-21; and the 'pail' is a woven basket with two round pale things in it
 18b841ec8665	The Labourers in the Vineyard — Byzantine Gospel book, 11th c.	checked-2026-08-22	two registers, captions OIKODESPOTHS and OI GEWRGOI as described
-afa7c09513ff	The Blind Men of Jericho — Monreale, 12th c.	fixed-2026-08-22	no touch: the hand stops short of their eyes; the two sit by the way with their sticks
-7cd490c6152f	The Entry into Jerusalem — Dionysiou, Athos, 1547	fixed-2026-08-22	children in the palm and the church doorway the fresco is painted around were both unsaid
-61b829bb9d62	The Cleansing of the Temple — Rossano Gospels, 6th c.	fixed-2026-08-22	the prophets are busts behind a rail with open books; their texts are written on the page, not on scrolls in their hands
-542679055fe0	The Cursing of the Fig Tree — Langadas, Greece, 19th c.	fixed-2026-08-22	the tree is painted still in leaf - the icon does not show the withering
-769af079a9d9	The Wedding Feast — Dionisius, Ferapontov Monastery, 1502	fixed-2026-08-22	the man without the garment does not stand: he is being thrust out doubled over at the right edge
-d7585bf8fa5e	The Wise and Foolish Virgins — Rossano Gospels, 6th c.	fixed-2026-08-22	'their lamps gone out' is not legible at 335px; reading now claims only what the leaf shows
+afa7c09513ff	The Blind Men of Jericho — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; inscription is MISERERE NOSTRI not NOBIS, and the blind men's eyes are set as blank white ovals
+7cd490c6152f	The Entry into Jerusalem — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; THREE children in the palm with a knife, a fourth at its foot; marker moved onto them and one added for the doorway
+61b829bb9d62	The Cleansing of the Temple — Rossano Gospels, 6th c.	fixed-2026-09-21	applied 2026-09-21; prophets named on the leaf - David twice (both crowned), Hosea, Isaiah - and they hold nothing at all
+542679055fe0	The Cursing of the Fig Tree — Langadas, Greece, 19th c.	fixed-2026-09-21	applied 2026-09-21; scroll writing not legible; the Ferapontov fresco beside it paints the SAME tree already bare
+769af079a9d9	The Wedding Feast — Dionisius, Ferapontov Monastery, 1502	fixed-2026-09-21	applied 2026-09-21; marker added for the man cast out; the king stands under an arch giving orders, not enthroned
+d7585bf8fa5e	The Wise and Foolish Virgins — Rossano Gospels, 6th c.	fixed-2026-09-21	applied 2026-09-21; every torch on the right ends in a red flame and not one on the left has any - that is the legible contrast
 d4f530364ab1	The Separation of the Sheep and the Goats — Ravenna, 6th c.	checked-2026-08-22	sheep at Christ's right, goats at his left, beardless Christ between two angels - holds
 2f9b9ae9e6e4	The Mystical Supper — Dionysiou, Athos, 1547	checked-2026-08-22	sigma table with the near side open, beloved disciple on the breast, hand at the dish - holds
-22a3d28c32fa	The Crucifixion — Dionysiou, Athos, 1547	fixed-2026-08-22	thief postures confirmed; added the two soldiers with clubs the fresco actually paints
+22a3d28c32fa	The Crucifixion — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; and the fresco paints Matthew 27:51-52 at the foot of the cross - rent rock, skull, figures climbing out in grave-bands. Three markers added
 90bb6dd72243	The Lamentation at the Tomb — Dionysiou, Athos, 1547	checked-2026-08-22	Theotokos cheek to cheek, myrrhbearers with raised hands, empty cross on a starred sky - holds
-c8cde9e68f3f	“Behold the Place Where the Lord Lay” — Dionysiou, Athos, 1547	fixed-2026-08-22	two angels not one, and the guard is not asleep - they reel back under their shields; marker label 'sleeping guard' corrected
-d8d0e2a8233a	The Second Coming — Georgios Klontzas, Crete, late 16th c.	fixed-2026-08-22	the river widens into a lake of fire with beasts, not a hell-mouth
+c8cde9e68f3f	“Behold the Place Where the Lord Lay” — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; marker label 'sleeping guard' now 'guard struck down'; two angels named in the reading
+d8d0e2a8233a	The Second Coming — Georgios Klontzas, Crete, late 16th c.	fixed-2026-09-21	applied 2026-09-21; the lake holds chained souls, black winged devils with hooks, green scaly beasts, and a ribbed flank closing it at the right
 c73d837b2a2b	The Cleansing of the Temple — Monreale, 12th c.	checked-2026-08-22	hanging dove cage, scattered coins, sellers drawing back - all present
 5f0302871958	The Tree of Jesse — Theodore Poulakis, Crete, 1666	checked-2026-08-22	Theotokos and Child central in the vine, Jesse asleep at the root, prophets with scrolls - holds
-0653624bed65	The Tree of Jesse — Russian, 17th c.	fixed-2026-08-22	made precise: the list ends at the head of the central column, not vaguely 'at the end'
-42da5561e5f8	The Nativity — Langadas, Greece, before 1900	fixed-2026-08-22	Joseph is at the RIGHT and kneeling, not sitting apart at the lower left
-835a7ceeeb4d	The Nativity — Agios Vasileios, Greece, before 1900	fixed-2026-08-22	the Theotokos kneels, she does not recline, and there is one angel, not ranks of them
-10697d296a8f	The Nativity — Panagia Evraidou, Greece, 19th c.	fixed-2026-08-22	no cave and no single ray: three rays from the top edge, the Child on the open ground
-376a74fc60df	The Journey of the Magi — Monreale, 12th c.	fixed-2026-08-22	the Latin is abbreviated in the mosaic; quoted as lettered
+0653624bed65	The Tree of Jesse — Russian, 17th c.	fixed-2026-09-21	applied 2026-09-21; and there is NO trunk and no reclining Jesse - two markers claimed both. Vine survives only as the roundels
+42da5561e5f8	The Nativity — Langadas, Greece, before 1900	fixed-2026-09-21	fix recorded 2026-08-22 was never applied to hotspots2.js; applied 2026-09-21, and the marker 'she lies at rest' corrected too
+835a7ceeeb4d	The Nativity — Agios Vasileios, Greece, before 1900	fixed-2026-09-21	fix recorded 2026-08-22 was never applied; applied 2026-09-21. Manger re-cropped: masonry block, Child lies ALONG THE TOP, far rim not legible
+10697d296a8f	The Nativity — Panagia Evraidou, Greece, 19th c.	fixed-2026-09-21	fix recorded 2026-08-22 was never applied; applied 2026-09-21. Also the 'beast's head at the edge' is a YOUNG MAN in profile - no beast in the panel
+376a74fc60df	The Journey of the Magi — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; the mosaic letters it ...TES STELLA IN ORIETE VENT with abbreviation strokes
 4f9aa3206d34	The Flight into Egypt — Kastoria, Greece, 19th c.	checked-2026-08-22	Joseph ahead with the rein, head turned back - holds
-cea09590845f	The Flight into Egypt — Monreale, 12th c.	fixed-2026-08-22	Joseph carries the Child on his shoulders and goes ahead; the youth drives the ass from behind - reading had it backwards
-957d61b0b520	The Flight into Egypt — Sinai, 12th c.	fixed-2026-08-22	ochre field not gold, and four figures not two
+cea09590845f	The Flight into Egypt — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; marker 'the young man leading' also wrong - he drives from BEHIND
+957d61b0b520	The Flight into Egypt — Sinai, 12th c.	fixed-2026-09-21	applied 2026-09-21; five figures, and the woman in the doorway is lettered PAXHA KAAIOYCA, Rachel weeping - Matthew 2:18
 892e33ad2d95	The Massacre of the Innocents — Menologion of Basil II, c. 985	checked-2026-08-22	Herod enthroned left under a canopy, soldiers right, mother and bodies - holds
-356d96d0e360	The Massacre of the Innocents — Chora, Constantinople, 14th c.	fixed-2026-08-22	the child is on the ground held by the arm, and there are two soldiers
+356d96d0e360	The Massacre of the Innocents — Chora, Constantinople, 14th c.	fixed-2026-09-21	applied 2026-09-21
 a775939956b4	St John the Forerunner, the Angel of the Desert — Ohrid, c. 1700	checked-2026-08-22	wings, camel hair, scroll and the head in the dish all present
-5041a08ee3e1	The Theophany — Athanasios Margaritis, Langadas, 1850	fixed-2026-08-22	the Jordan here is a dark pool with wooded banks, not the upright shaft of the Russian panel
-aad702998821	The Theophany — Adam, Greece, before 1900	fixed-2026-08-22	Christ's arms are at his sides - no raised blessing; water is black, not a green channel
+5041a08ee3e1	The Theophany — Athanasios Margaritis, Langadas, 1850	fixed-2026-09-21	applied 2026-09-21; and it carries NO title band at all - the reading quoted one
+aad702998821	The Theophany — Adam, Greece, before 1900	fixed-2026-09-21	applied 2026-09-21
 686af8bf09a5	The Theophany — Russian North, 17th c.	checked-2026-08-22	black trough between red-brown banks, angels crowding the right - holds
 6e1639e806a6	The Second Temptation — Monreale, 12th c.	checked-2026-08-22	both tituli read as quoted, Christ on the domed temple, devil at his right - holds
-9b4f680312cb	The Healing of the Paralytic — Monreale, 12th c.	fixed-2026-08-22	he does not walk off with the bed: he sits up on it; the second showing is the roof
-f8643ee3f937	The Healing of the Paralytic — Dionisy, Ferapontov, 1502	fixed-2026-08-22	Christ is at the LEFT, not the right; the bed is carried away in the middle
-a8365493cb79	St Matthew the Evangelist — Palekh, Russia, 19th c.	PENDING	
-f9a841fac743	The Daughter of Jairus — Dionisy, Ferapontov, 1502	PENDING	
-3422e12ea342	The Daughter of Jairus — Tokalı Kilise, Cappadocia, 10th c.	PENDING	
-ee98b32ac9d2	The Gerasene Demoniac — Sant'Apollinare Nuovo, Ravenna, 6th c.	PENDING	
-6c7b9af56054	The Synaxis of the Twelve Apostles — Dimitar Molerov, Rila, 1835	PENDING	
-71c52dbbe96d	The Prophet Jonah — Dionysiou, Athos, 1547	PENDING	
-720096bcfe48	The Head of the Forerunner — Langadas, Greece, 1927	PENDING	
-68b10ea7692f	The Beheading of the Forerunner — Agios Vasileios, Greece, before 1900	PENDING	
-95f104159057	The Multiplication of the Loaves — Sant'Apollinare Nuovo, Ravenna, 6th c.	PENDING	
-e19685593de5	The Transfiguration — Stavrakis Margaritis, Langadas, 1885	PENDING	
-138e81c8252b	The Transfiguration — St Catherine's, Sinai, 12th c.	PENDING	
-26e109805b11	The Transfiguration — Yaroslavl, c. 1516	PENDING	
-c92f7d56cab1	The Good Shepherd — Galla Placidia, Ravenna, c. 425	PENDING	
-909fb1695c8e	The Entry into Jerusalem — Langadas, Greece, before 1900	PENDING	
-bdb5181482af	The Entry into Jerusalem — Athanasios of Adam, 1846	PENDING	
-a50942612f18	The Entry into Jerusalem — Athos, 16th c.	PENDING	
-0e8f54a54170	The Cursing of the Fig Tree — Dionisy, Ferapontov, 1502	PENDING	
-6f36e1eaccde	The Ten Virgins — Dionisy, Ferapontov, 1502	PENDING	
-user-nativity	The Nativity of Christ	PENDING	
+9b4f680312cb	The Healing of the Paralytic — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; ALSO its own Latin is APERVERVNT TECTVM, which is Mark/Luke - Matthew puts nobody on a roof. Second such icon at 9:1-8
+f8643ee3f937	The Healing of the Paralytic — Dionisy, Ferapontov, 1502	fixed-2026-09-21	applied 2026-09-21
+a8365493cb79	St Matthew the Evangelist — Palekh, Russia, 19th c.	fixed-2026-09-21	checked 2026-09-21; enriched. Matthew's creature is the MAN painted winged, not an angel - reading had it as 'the angel'
+f9a841fac743	The Daughter of Jairus — Dionisy, Ferapontov, 1502	fixed-2026-09-21	the girl is SITTING UP and reaching, hands almost touching; no minstrels, only the two parents. Two markers wrong
+3422e12ea342	The Daughter of Jairus — Tokalı Kilise, Cappadocia, 10th c.	fixed-2026-09-21	she is wound head to foot in a striped shroud with NO hand showing - 'the hand of Christ reaching for hers' impossible. Bed ornament is the most careful drawing on the wall
+ee98b32ac9d2	The Gerasene Demoniac — Sant'Apollinare Nuovo, Ravenna, 6th c.	fixed-2026-09-21	the old reading argued the swine fixed it as Matthew's; all three Synoptics have the herd, and the single demoniac is Mark's and Luke's number
+6c7b9af56054	The Synaxis of the Twelve Apostles — Dimitar Molerov, Rila, 1835	fixed-2026-09-21	the photograph holds five of the twelve, not the panel; one carries a martyr's cross, not a book
+71c52dbbe96d	The Prophet Jonah — Dionysiou, Athos, 1547	fixed-2026-09-21	scroll read: EBOHCA EN QLIYEI MOU PROC KURION TON QEON MOU KAI EICHKOUCE (Jonah 2:2)
+720096bcfe48	The Head of the Forerunner — Langadas, Greece, 1927	fixed-2026-09-21	donor claim dropped - nothing supports it. Tooled halo wider than the head, crack down the board, hanging ring, title band illegible
+68b10ea7692f	The Beheading of the Forerunner — Agios Vasileios, Greece, before 1900	fixed-2026-09-21	the sword is DOWN at his side; he is setting the head into the dish by the hair
+95f104159057	The Multiplication of the Loaves — Sant'Apollinare Nuovo, Ravenna, 6th c.	fixed-2026-09-21	Christ beardless and taller by rank; loaves scored with a cross; there IS a landscape - green strip and a plant at either end
+e19685593de5	The Transfiguration — Stavrakis Margaritis, Langadas, 1885	fixed-2026-09-21	signature read and quoted: 1885 . CEIR STAUROU MARGARITH EK KOLAKIAC
+138e81c8252b	The Transfiguration — St Catherine's, Sinai, 12th c.	fixed-2026-09-21	NO mandorla and no gold halo at all - three or four thin red strokes only. Its own marker said so; the reading described a mandorla
+26e109805b11	The Transfiguration — Yaroslavl, c. 1516	fixed-2026-09-21	dropped the unverifiable 'over five feet high'; ascent and descent confirmed
+c92f7d56cab1	The Good Shepherd — Galla Placidia, Ravenna, c. 425	fixed-2026-09-21	checked 2026-09-21; enriched. Six sheep, all heads turned to him, none grazing - confirmed by crop
+909fb1695c8e	The Entry into Jerusalem — Langadas, Greece, before 1900	fixed-2026-09-21	checked 2026-09-21; enriched - hanging ring, red title at the upper left, figure up the palm, losses along the foot
+bdb5181482af	The Entry into Jerusalem — Athanasios of Adam, 1846	fixed-2026-09-21	no rock at the left, the city fills the upper half, and Christ looks FORWARD blessing the townspeople - marker 'looks behind him' was wrong
+a50942612f18	The Entry into Jerusalem — Athos, 16th c.	fixed-2026-09-21	called 'the sparest of the three'; it is the most crowded - a great domed city and thirty or forty heads at the gate
+0e8f54a54170	The Cursing of the Fig Tree — Dionisy, Ferapontov, 1502	fixed-2026-09-21	the bare tree is in the MIDDLE, not at the right; the right third is a second scene, a supper with a figure stretched out at the company's feet
+6f36e1eaccde	The Ten Virgins — Dionisy, Ferapontov, 1502	fixed-2026-09-21	NO lamp is legible anywhere in the fresco, and the marker claimed one in every hand. Two groups divided by a painted pillar; nothing distinguishes wise from foolish
+user-nativity	The Nativity of Christ	fixed-2026-09-21	checked 2026-09-21; enriched with what this particular image holds (Magi twice, angel and one shepherd, ox and ass, Joseph and the old man, the washing)

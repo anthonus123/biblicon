@@ -470,7 +470,7 @@ module.exports={
 
 'File:18 Triumphal entry into Jerusalem Icon from Saint Paraskevi Church in Adam..jpg':[
  ["The title across the top","Η ΒΑΪΟΦΟΡΟΣ — the Palm-bearing. The Orthodox feast of Palm Sunday takes its name from the branches, and the icon is painted the same way in every century: a king coming into a city on a borrowed animal.","8%","45%"],
- ["Christ turned back","He sits sideways and looks behind him at the disciples. The icon shows a King indifferent to his own triumph, and Matthew's own commentary is Zechariah's word: thy King cometh unto thee, meek.","42%","50%"],
+ ["Christ blessing the city","He sits sideways on the animal, as every Entry paints him, but this painter turns his head forward rather than back: he is looking at the people coming out of the gate and his hand is raised in blessing toward them. Matthew's own commentary is Zechariah's word: thy King cometh unto thee, meek.","42%","50%"],
  ["The ass","Not a war-horse, and not his own. Matthew alone reports both animals, the ass and the colt with her, and the instruction to say only this if anyone objects: the Lord hath need of them.","60%","55%"],
  ["The disciples","They walk behind on foot. Six days later most of them will have gone; the crowd shouting here and the crowd shouting on Friday are painted by the Church as the same crowd.","45%","15%"],
  ["Jerusalem","The domes and walls fill the whole upper half. He is entering the city that kills the prophets, as he had said in the previous chapter, and he goes in openly.","20%","40%"],
@@ -509,9 +509,9 @@ module.exports={
 
 'File:Fig tree cursed 04-16.jpg':[
  ["Christ speaking to the tree","Dionisy paints him at Ferapontov in 1502 with his hand out and his disciples behind. Ferapontov is one of the few Orthodox programmes that paint the teaching episodes of Holy Week and not only the feasts.","32%","30%"],
- ["The bare tree","Thin dry sticks stand against the blue with not one leaf on them. And presently the fig tree withered away — the fresco shows the tree after the word, which is the only state Matthew describes it in.","32%","41%"],
+ ["The bare tree","A thin pale trunk with dry branching twigs stands in the middle of the wall against the blue, with not one leaf on it. And presently the fig tree withered away — the fresco shows the tree after the word, which is the only state Matthew describes it in.","32%","41%"],
  ["The disciples","They crowd behind him and look at the tree, not at him. Matthew reports their reaction as astonishment at the speed, and Christ turns it at once into a promise about faith and prayer.","42%","22%"],
- ["The second scene at the right","The wall runs straight on into the next moment, inside the city. Byzantine cycles are painted as continuous narrative: one register, several episodes, no frames between them.","40%","70%"],
+ ["The second scene at the right","The wall runs straight on into the next episode: a table spread with a white cloth, men seated round it, an old man in a white head-cloth at the end, and a figure in dark red stretched out full length on the floor at their feet. Byzantine cycles are painted as continuous narrative: one register, several episodes, no frames between them.","40%","70%"],
  ["The company at the table","Figures are gathered at the right around a white cloth. Everything in this chapter happens between the Entry and the Passion, in the last days when he taught daily in the temple and lodged outside the walls at night.","55%","65%"]],
 
 'File:Parable of the Wedding Feast 04-14.jpg':[
@@ -523,10 +523,10 @@ module.exports={
  ["The hall","The architecture stands over the whole scene, prepared and open. The parable ends with a man thrown out of it for having no wedding garment, and with the sentence: for many are called, but few are chosen.","16%","30%"]],
 
 'File:Ten virgins 05-15.jpg':[
- ["Christ enthroned","He sits at the right with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","44%","64%"],
+ ["Christ enthroned","He sits right of centre on a high-backed throne with a footstool, blessing, with ΙΣ ΧΣ written beside his head. The Orthodox Church reads this parable on Great Tuesday and calls the first three nights of Holy Week the Bridegroom services — the Bridegroom of the parable is the one on this throne.","44%","64%"],
  ["The angels beside him","Two winged figures stand at either side of the throne. In Matthew's telling the door is shut by the bridegroom himself; the icon paints the household of heaven standing at it.","42%","77%"],
- ["The virgins","They come in a file from the left, all alike in dress. Five of them were wise, and five were foolish, and nothing in their appearance divides them — the difference is only what they brought.","45%","25%"],
- ["The lamps","Each carries her lamp on its long stem. They that were foolish took their lamps, and took no oil with them: but the wise took oil in their vessels with their lamps.","39%","30%"],
+ ["The virgins","They come from the left in two groups of four or five, divided by a painted pillar, all alike in dress and hair. Five of them were wise, and five were foolish, and nothing in their appearance divides them — the difference is only what they brought.","45%","25%"],
+ ["The lamps that are not there","This is where the lamps should be, and none can be made out. The paint has gone in long diagonal losses across the whole left half of the fresco, and no woman in it is now holding anything. The parable turns on the difference: they that were foolish took their lamps, and took no oil with them: but the wise took oil in their vessels with their lamps.","39%","30%"],
  ["The trees behind the throne","Tall plants rise behind him like the trees of paradise. Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh — the parable is set in Holy Week and points past it.","24%","52%"]],
 
 'File:John Tokhabi, Last Judgment, around 1100. Icon, tempera. St Catherine monastery on Sinai, Egypt.jpg':[
