@@ -57,9 +57,9 @@ module.exports={
  read:"The Theophany — the manifestation of the Holy Trinity at the Jordan. Christ stands naked in the water as one condemned, the Forerunner laying his hand on his head, angels waiting on the far bank with cloths in veiled hands. The Father’s voice comes from above and the Spirit descends: this is my beloved Son, in whom I am well pleased.",
  hot:[
   ["Christ in the Jordan","He stands in the water as in a grave; the river is painted rising round him like a dark tomb. He is baptised not to be cleansed but to cleanse the waters, and through them the world.","55%","44%"],
-  ["St John the Forerunner","He stretches out his hand with fear, having said, I have need to be baptized of thee. The axe often lies at the root of a tree beside him — his own preaching of repentance.","40%","23%"],
-  ["The angels with veiled hands","They stand ready with the garments, their hands covered as servants approach a king. Even the bodiless powers do not touch the mystery bare-handed.","40%","70%"],
-  ["The ray from heaven","A single ray descends to Christ’s head. The Father speaks and the Spirit comes: the Trinity is manifest, which is why the feast is called Theophany and not merely the Baptism.","16%","44%"]]},
+  ["St John the Forerunner","He stretches out his hand with fear, having said, I have need to be baptized of thee. The axe is in this panel: it lies at the root of the small dark tree just below him, blade and handle together — now also the axe is laid unto the root of the trees, which is his own preaching of repentance.","40%","23%"],
+  ["The angels with veiled hands","Four of them stand on the bank, two behind two, bowing toward the river with white cloths carried over their hands — hands covered, as servants approach a king. Even the bodiless powers do not touch the mystery bare-handed.","40%","70%"],
+  ["The ray from heaven","A dark scalloped segment of heaven opens at the top of the panel and a single narrow ray comes down from it toward Christ’s head, ending in a small pale dove. The Father speaks and the Spirit comes: the Trinity is manifest, which is why the feast is called Theophany and not merely the Baptism.","16%","44%"]]},
 
 [D('Epitaphios Threnos')]:{
  read:"The Lamentation at the Tomb — the Epitaphios Threnos of Holy Friday. Matthew tells it briefly: Joseph of Arimathaea begged the body, wrapped it in clean linen, and laid it in his own new tomb. The icon fills the silence with the mourning of the Church: the Theotokos holds her Son’s head against her face, the myrrhbearers raise their hands, and the empty cross stands behind against a night sky.",
@@ -115,9 +115,9 @@ module.exports={
 [D('Christos Apostolois')]:{
  read:"Christ standing among the apostles, both hands outstretched toward the two ranks of them. It is the image the Church uses for the moments when the Lord turns aside from the crowds to instruct, warn or send out the Twelve — including his last word on the mountain in Galilee: Go ye therefore, and teach all nations.",
  hot:[
-  ["Christ sending","He stands on a footstool with both arms open. The whole composition moves outward from him toward the edges of the panel — the icon of a mission, not of a conversation.","30%","50%"],
-  ["The apostles on his right","They are painted as a close rank of haloed heads, indistinguishable in glory. In Orthodox iconography the Twelve are a body before they are individuals.","28%","15%"],
-  ["The apostles on his left","Lo, I am with you alway, even unto the end of the world. The apostles are turned outward, already leaving the frame.","30%","82%"]]},
+  ["Christ sending","He stands frontally on a red cushion over a stepped footstool with both arms open, ΙΣ ΧΣ lettered either side of his halo. Across the top of the fresco runs a line of Greek in which ΕΜΦΑΝΙCΑС — having appeared — and ΤΟΙС ΥΠ ΑΥΤ(ΟΥ) ΓΕΝΟΜΕΝΟΙС — to those who were made by him — can be read: it is a title about an appearing, not the words of Matthew 28. The whole composition moves outward from him toward the edges of the panel — the icon of a mission, not of a conversation.","30%","50%"],
+  ["The apostles on his right","Four of them stand close at his right with the haloes overlapping, and they are not painted alike: a grey-bearded man holds a red book, an older one behind him holds a white scroll, and every face is drawn differently. They stand as a body, all of them turned in toward him.","28%","15%"],
+  ["The apostles on his left","Lo, I am with you alway, even unto the end of the world. Five or six of them press in at his left — one with his hand raised and a red book under it, a white-bearded one in red, a beardless youth at the edge — and not one of them is turned away: the whole company faces the figure in the middle.","30%","82%"]]},
 
 'File:Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg':{
  read:"The Synaxis of the Twelve Apostles — a Constantinopolitan panel of the early fourteenth century. The Twelve stand together as one assembly, and the Church keeps their common feast on the 30th of June, the day after Peter and Paul. Matthew 10 is where they are first named and first sent.",
