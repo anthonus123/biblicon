@@ -213,10 +213,10 @@ module.exports={
 
 'File:Iomenos Daimonizomenous Dionysiou.jpg':[
  ["The plural titulus","The Greek reads ΙΩΜΕΝΟΣ ΤΟΥΣ ΔΑΙΜΟΝΙΖΟΜΕΝΟΥΣ — healing those possessed with devils, in the plural. Matthew alone says there were two; the Athonite painter has followed Matthew and painted two.","6%","55%"],
- ["The two men","They are painted naked, wasted and unable to stand straight. Matthew says they were exceeding fierce, so that no man might pass by that way — the whole road had been given up to them.","45%","78%"],
+ ["The two men","They are painted wasted to the ribs, each in a loincloth — one ochre, one pink — and they are not in the same state: the first is bent double with his arms hanging, the second stands bolt upright with both arms thrown above his head. Matthew says they were exceeding fierce, so that no man might pass by that way — the whole road had been given up to them.","45%","78%"],
  ["The devils coming out","Small black shapes leave the men and scatter into the air. Orthodox painting never gives evil bulk or beauty: it is drawn small, dark and already losing.","38%","67%"],
  ["The tomb","A rock-cut grave stands open at the foot of the fresco. They came out of the tombs, and St John Chrysostom says the detail was kept to correct a superstition — that the spirits crying out of these men were the souls of the dead, which they are not.","84%","72%"],
- ["The herdsmen on the hill","Two small figures in the field behind are the keepers of the swine, already running. They fled into the city and told everything; and the whole city came out and besought Christ to depart out of their coasts.","18%","52%"],
+ ["The herdsmen on the hill","Two small figures in wide straw hats look out from behind the rocks on the hill, the keepers of the swine; the painter has given them no swine and no flight. They fled into the city and told everything; and the whole city came out and besought Christ to depart out of their coasts.","18%","52%"],
  ["The hand of Christ","He speaks one word — Go — and does not come near them. The devils had asked to be sent into the herd rather than into the deep, and the icon shows the command given at a distance.","45%","43%"]],
 
 'File:Christos Iomenos Daimonon Takophon Dionysiou.jpg':[
@@ -309,7 +309,7 @@ module.exports={
  ["Christ seated in the synagogue","He is painted seated, in their own building, on their own sabbath. St Hilary notices the change of place: what had gone before was said in the open air, and this was done after he had gone inside.","45%","20%"],
  ["The withered hand held out","Then saith he to the man, Stretch forth thine hand. And he stretched it forth; and it was restored whole, like as the other. Nothing is touched and nothing is applied — the man is told to do the one thing he cannot do, and finds that he can.","38%","41%"],
  ["The man standing in the middle","He is set upright in the centre of the fresco with everyone looking at him. The healing is deliberately public: Christ asks them first whether it is lawful to do well on the sabbath days, and answers his own question in front of them.","62%","45%"],
- ["The Pharisees seated","Three men sit at the right and watch without moving. Matthew's next sentence is the point of their stillness: then the Pharisees went out, and held a council against him, how they might destroy him.","46%","72%"]],
+ ["The Pharisees seated","Three grey-bearded men are gathered at the right, and they are not still: one has his hand up with the palm out, one leans forward with his hand thrown toward his neighbour, and the third sits with his hand at his breast and his eyes down. Matthew's next sentence is the point of their stillness: then the Pharisees went out, and held a council against him, how they might destroy him.","46%","72%"]],
 
 'File:Iomenos Daimonizomenon Dionysiou.jpg':[
  ["The Greek titulus","The inscription is singular — Christ healing the one possessed with a devil. Matthew says the man was blind and dumb as well as possessed, and that after the healing both spake and saw.","15%","33%"],
@@ -323,7 +323,7 @@ module.exports={
  ["ΙΣ ΧΣ","The two abbreviations on either side of the head name him: Ἰησοῦς Χριστός. An Orthodox image is not complete until it is inscribed, because the honour paid to it passes to the person named and not to the paint.","28%","30%"],
  ["The hand of blessing","The fingers are shaped to spell the name and to confess the faith — two fingers for the two natures, three touching for the Trinity. This is the hand held out over the words, Come unto me, all ye that labour and are heavy laden.","55%","22%"],
  ["The closed Gospel","He holds the book shut and clasped, in gold and jewels. In the dome the Gospel is not being read out but held: the Pantocrator is the Ruler of all, and what he holds is the law by which everything under the dome will be judged.","70%","60%"],
- ["The inscribed band","A ring of Greek runs right round the medallion, invoking the Lord God of hosts. The whole church is built under this circle, and everyone in it stands inside the sentence.","88%","45%"]],
+ ["The inscribed band","A ring of Greek runs right round the medallion, and the words legible along the bottom of it are ΤΩΝ ΔΥΝΑΜΕΩΝ — the close of the invocation Κύριε ὁ Θεὸς τῶν δυνάμεων, O Lord God of hosts. The whole church is built under this circle, and everyone in it stands inside the sentence.","88%","45%"]],
 
 'File:The Twelve Apostles, with later gilding, Greek, Late Byzantine, early 1300s, tempera and gold leaf on wood panel - Princeton University Art Museum - DSC06701.jpg':[
  ["Twelve, ranked and standing","There is no scene here and nothing is happening: twelve men are simply set out in rows. The Church calls this the Synaxis, the assembly, and keeps the Synaxis of the Twelve on the 30th of June, the day after Peter and Paul.","25%","50%"],
@@ -339,9 +339,9 @@ module.exports={
  ["Faces that stay the same","Every apostle keeps his own features from icon to icon — this one bald and broad-bearded, that one young and dark. The painter is not inventing men, he is repeating faces the Church has agreed on for centuries.","25%","55%"]],
 
 'File:Prophetes Ionas Ketos Dionysiou.jpg':[
- ["The Greek inscription","The letters at the right name the prophet Jonah and the belly he is coming out of. Christ himself made this the only sign that would be given: as Jonas was three days and three nights in the whale's belly, so shall the Son of man be three days and three nights in the heart of the earth.","14%","70%"],
+ ["The Greek inscription","The letters at the right read Η ΕΚ ΤΟΥ ΚΗΤΟΥΣ ΑΝΑΔΟΣΙΣ ΤΟΥ ΠΡΟΦΗΤΟΥ ΙΩΝΑ — the giving up of the prophet Jonah out of the sea-monster. Christ himself made this the only sign that would be given: as Jonas was three days and three nights in the whale's belly, so shall the Son of man be three days and three nights in the heart of the earth.","14%","70%"],
  ["Jonah coming out of the mouth","He rises out of the fish alive, upright, and unhurt. It is a picture of the third day, painted eight hundred years before the events of Matthew 12 and read by the Church as such ever since.","25%","52%"],
- ["The open scroll","He holds his own prayer out of the deep. The whole of it is the sixth ode of every canon sung at Orthodox matins, so that this prayer from inside the fish is said in church more often than almost any other passage of the prophets.","40%","30%"],
+ ["The open scroll","He holds his own prayer out of the deep, open at its first words: ΕΒΟΗΣΑ ΕΝ ΘΛΙΨΕΙ ΜΟΥ ΠΡΟΣ Κ(ΥΡΙΟ)Ν Θ(ΕΟ)Ν ΜΟΥ — I cried in my affliction unto the Lord my God. The whole of it is the sixth ode of every canon sung at Orthodox matins, so that this prayer from inside the fish is said in church more often than almost any other passage of the prophets.","40%","30%"],
  ["The great fish","It runs the whole width of the fresco, and Jonah is small against it. The book of Jonah is read entire at the Vigil of Pascha, in the hours when the Church keeps watch at the tomb.","72%","45%"],
  ["The sea","Water fills the lower half of the wall. The Ninevites repented at the preaching of a man who had just come out of it, and Christ's charge in this passage is that they will rise in judgment against a generation that would not repent at his.","85%","20%"]],
 

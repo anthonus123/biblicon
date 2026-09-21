@@ -100,10 +100,10 @@ module.exports={
 "File:Representation of the Sower's parable.JPEG":{
  read:"A modern Orthodox mosaic of the Sower — Pilda Semănătorului. The four grounds of Matthew 13 are laid out around the sowing Christ: the beaten path where the birds come, the stony place, the thorns, and the good earth. Christ is himself the Sower, and the seed is the word of the kingdom.",
  hot:[
-  ["The Sower","He that soweth the good seed is the Son of man. He is painted sowing broadcast, without measuring the ground — the word is given to every soil alike.","35%","55%"],
+  ["The Sower","He that soweth the good seed is the Son of man. He is painted haloed, as Christ himself, sowing broadcast without measuring the ground — the word is given to every soil alike. The title lettered above him is Romanian, 21. PILDA SEMĂNĂTORULUI, the parable of the sower, the twenty-first of a numbered set.","35%","55%"],
   ["The birds on the wayside","Then cometh the wicked one, and catcheth away that which was sown in his heart. The path is beaten hard by traffic: a heart worn smooth by everything that passes over it.","52%","20%"],
-  ["The stony ground","He heareth the word, and anon with joy receiveth it; yet hath he not root in himself, but dureth for a while. The stones lie just under a thin skin of earth.","85%","72%"],
-  ["The thorns and the good ground","The care of this world, and the deceitfulness of riches, choke the word. Beyond them the green ground bears thirtyfold, sixtyfold, an hundredfold.","58%","78%"]]},
+  ["The stony ground","He heareth the word, and anon with joy receiveth it; yet hath he not root in himself, but dureth for a while. The stones are not under anything: flat pale slabs lie bare on the ground at the lower right with the seed scattered over them, nothing for it to root in.","85%","72%"],
+  ["The thorns and the good ground","The care of this world, and the deceitfulness of riches, choke the word: the painter gives them as a thicket of thistles with red heads, growing where the seed falls. The panel stops at its border behind them — the hundredfold is in the parable and is not painted here.","58%","78%"]]},
 
 [D('Christos Didaskon')]:{
  read:"Christ the Teacher, enthroned and expounding — the image the Church sets over the discourses. Orthodox iconography does not usually illustrate the parables as scenes; it paints instead the One who speaks them, seated in the teacher’s place with the elders listening. What matters in a parable is not the anecdote but the mouth it comes from.",
