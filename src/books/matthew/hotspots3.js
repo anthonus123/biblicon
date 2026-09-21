@@ -171,7 +171,7 @@ module.exports={
  ["The Greek titulus","The inscription reads ΕΛΚΟΜΕΝΟΣ Ο ΠΡΟΔΡΟΜΟΣ ΕΙΣ ΤΗΝ ΦΥΛΑΚΗΝ — the Forerunner dragged into the prison. It names the exact event Matthew reports in one half-verse at 4:12, and it is why this fresco belongs here and not at chapter 11.","7%","50%"],
  ["The Forerunner","He is still in the camel-hair coat he preached in, and he is being pulled along by the wrists. The greatest of those born of women is painted powerless, and the Gospel says nothing about a rescue.","30%","48%"],
  ["The soldier's grip","One man's hands are enough to end the preaching. St John Chrysostom notes that no one can do anything against a holy man unless God gives him up, and that Christ withdrew after this rather than force the hour of his own passion.","45%","62%"],
- ["The prison","The barred window at the right is where he is going. From that cell he will send two of his disciples with the question at Matthew 11:3 — Art thou he that should come, or do we look for another?","42%","88%"],
+ ["The prison","The white tower at the right is where he is going — and he is already in it: the same gaunt face under the same gold halo looks out through the grille, so the fresco shows the seizing and the shutting up at once. From that cell he will send two of his disciples with the question at Matthew 11:3 — Art thou he that should come, or do we look for another?","42%","88%"],
  ["The guard at the king's door","The armed men at the left belong to Herod, who took John because of Herodias. The icon puts the machinery of the state at one edge of the frame and one thin man at the centre.","35%","15%"]],
 
 'File:Iomenos Asthenoun tas apo Poikilon noson.jpg':[
@@ -315,7 +315,7 @@ module.exports={
  ["The Greek titulus","The inscription is singular — Christ healing the one possessed with a devil. Matthew says the man was blind and dumb as well as possessed, and that after the healing both spake and saw.","15%","33%"],
  ["The hand of Christ","One gesture across the width of the fresco. St John Chrysostom's remark on this miracle is about what the devil had done: he had blocked both the ways by which a man could come to believe, hearing and sight, and Christ opened them both.","52%","35%"],
  ["The man","He stands stripped and bent at the left, his arms up. Orthodox painting does not make the possessed monstrous; he is a man in a bad state, and he is at the edge of the frame rather than the centre.","65%","18%"],
- ["The devil going out","A small dark shape scuttles away across the rock. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","42%","24%"],
+ ["The devil going out","A small black imp with spread wings and thin crooked limbs hangs over the man's head, and a black streak runs down out of it into his open mouth. It is given no size, no beauty and no dignity, which is itself the teaching: the icon will not let evil look impressive.","42%","24%"],
  ["The apostles","They stand behind Christ, closed in a group. What follows this miracle in Matthew is the charge that he cast out devils by Beelzebub, and the warning about the sin against the Holy Spirit that is answered to it.","28%","80%"]],
 
 'File:Christos Pantokrator Dionysiou.jpg':[
@@ -354,8 +354,8 @@ module.exports={
 'File:Apotome Agiou Ioannou Prodromou Dionysiou.jpg':[
  ["The Greek titulus","The inscription names the feast: the Beheading of the Forerunner. The Church keeps it on the 29th of August as a strict fast — one of the few days of mourning in the calendar that is not for Christ himself.","7%","30%"],
  ["The raised sword","The executioner is caught with the blade still up. Matthew says Herod was sorry, and gave the order anyway — for the oath's sake, and for the sake of those which sat with him at meat.","14%","28%"],
- ["The Forerunner kneeling","He bends his neck without being held. The greatest born of women is painted small and folded up at the bottom of the fresco, and the Church's hymns for the day set his death beside his preaching: he was killed for telling a king the truth about his marriage.","58%","48%"],
- ["The charger","A dish is held out ready before the head has fallen. It was given to the girl at her mother's asking, and she brought it to her mother — the icon shows the errand as an ordinary piece of household business.","70%","62%"],
+ ["The Forerunner kneeling","The body kneels forward already headless, unheld, its bound hands stretched down to the pavement. The greatest born of women is painted small and folded up at the bottom of the fresco, and the Church's hymns for the day set his death beside his preaching: he was killed for telling a king the truth about his marriage.","58%","48%"],
+ ["The charger","The dish is empty. The head is already off and lying on the step above, and the girl is still holding the platter out for it. It was given to the girl at her mother's asking, and she brought it to her mother — the icon shows the errand as an ordinary piece of household business.","70%","62%"],
  ["The crowned girl","She kneels in court dress with a crown on her head, waiting. Matthew's account of the whole affair is short and cold, and the painter has kept the coldness: no one in this picture is angry.","62%","80%"],
  ["The prison","The barred window and the shut door are behind them. John had been in that cell since Matthew 4:12, and it is from there that he sent his disciples to ask whether Christ was he that should come.","25%","72%"]],
 
@@ -375,10 +375,10 @@ module.exports={
 
 'File:Evlogesis Pente Arton Dionysiou.jpg':[
  ["The Greek titulus","The band reads: the blessing of the five loaves. The Church's name for the scene is not the feeding but the blessing — the miracle is located in what Christ does with the bread, not in how many were fed.","5%","50%"],
- ["Christ blessing","He took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake, and gave. Those four verbs are the verbs of the Liturgy, which is why this icon is never far from the Mystical Supper.","33%","20%"],
+ ["Christ looking up to heaven","He makes no blessing gesture: the loaves are gathered in both hands with the two fishes laid over them, and his face is turned up to the sky. He took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake, and gave. Those four verbs are the verbs of the Liturgy, which is why this icon is never far from the Mystical Supper.","33%","20%"],
  ["The disciple carrying the loaves","The bread is handed to the disciples and they give it to the multitude. Christ had told them, they need not depart; give ye them to eat — the impossible order comes before the miracle that makes it possible.","38%","42%"],
  ["The people sitting on the grass","He commanded the multitude to sit down on the grass, and Matthew's detail is kept: they are seated in ranks on green ground, not crowding forward.","60%","85%"],
- ["The baskets of fragments","Two full baskets stand in the foreground where nothing hides them. They took up of the fragments that remained twelve baskets full — more left over than there was to begin with.","80%","33%"],
+ ["The baskets of fragments","A clump of woven baskets stands in the foreground where nothing hides them, heaped with broken bread; about half a dozen mouths can be counted rather than a laid-out twelve. They took up of the fragments that remained twelve baskets full — more left over than there was to begin with.","80%","33%"],
  ["The child","A small figure reaches up among the seated people. They that had eaten were about five thousand men, beside women and children: the icon paints the ones the count leaves out.","46%","78%"]],
 
 'File:Feeding the multitude, Sant\'Apollinare Nuovo, Ravenna.jpg':[
@@ -404,7 +404,7 @@ module.exports={
 
 'File:Monreale - Multiplication of the Loaves and Fishes.jpg':[
  ["The inscription","The Latin counts everything: with five loaves and two fishes he satisfied five thousand men, and of the fragments twelve baskets were filled. Those are the numbers of Matthew 14 — the feeding of the five thousand — and not the seven loaves and four thousand of this passage.","40%","55%"],
- ["Christ giving to the disciples","At the lower left he puts the bread into their hands. In both feedings Matthew uses the same chain: he blessed, and brake, and gave the loaves to his disciples, and the disciples to the multitude.","68%","15%"],
+ ["Christ giving to the disciples","At the lower left he puts the bread into a white cloth that a disciple holds stretched between both hands. He is not blessing it here; the mosaic paints the handing over. In both feedings Matthew uses the same chain: he blessed, and brake, and gave the loaves to his disciples, and the disciples to the multitude.","68%","15%"],
  ["The disciples carrying it out","They move to the right in a line, into the seated crowd. Christ's words before the second feeding are the reason there is a second one at all: I have compassion on the multitude, because they continue with me now three days, and have nothing to eat.","70%","42%"],
  ["The multitude","Rank upon rank of heads fills the right of the mosaic. Matthew counts four thousand men in this chapter, beside women and children, and notes that they had been three days with him in a desert place.","62%","72%"],
  ["The baskets along the bottom","A row of full baskets stands across the foot of the mosaic. Christ later makes the disciples recall both counts — the five loaves and twelve baskets, the seven and the seven — and rebukes them for still worrying about bread.","90%","45%"]],
@@ -433,9 +433,9 @@ module.exports={
  ["The descent","At the right they are shown coming down again. As they came down from the mountain, Jesus charged them, saying, Tell the vision to no man, until the Son of man be risen again from the dead.","52%","82%"]],
 
 'File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg':[
- ["The sheep across his shoulders","A man carries a beast home on his neck, holding its legs. This is the oldest way Christians painted Christ at all — the shepherd bearing the sheep is on the walls of the catacombs before there is any icon of the Crucifixion.","17%","42%"],
+ ["The beast across his shoulders","A man carries an animal home on his neck, holding its legs. The tesserae are coarse and worn and it is a shape rather than a legible sheep, but the pose is the kriophoros, the ram-bearer, which Greek and Roman art had been making long before the Church borrowed it — and which the early Church used for the shepherd of this parable before there was any icon of the Crucifixion.","17%","42%"],
  ["The shepherd himself","He is dressed as a working countryman, not as a king. The parable in this passage is put as a question to the reader: how think ye? if a man have an hundred sheep, and one of them be gone astray, doth he not leave the ninety and nine, and goeth into the mountains, and seeketh that which is gone astray?","40%","40%"],
- ["The pail at his side","The gear of the trade is painted with him. The Church attaches this image to the passage without its being a picture of these verses: the sheep in the parable is not carried home in Matthew's telling — that detail belongs to St Luke's version of it.","46%","30%"],
+ ["The basket at his side","A woven basket with two round pale things in it hangs at his hip: the gear of the trade, painted with him. The Church attaches this image to the passage without its being a picture of these verses: the sheep in the parable is not carried home in Matthew's telling — that detail belongs to St Luke's version of it.","46%","30%"],
  ["The white field of the floor","This is a palace pavement in Constantinople, laid in the fifth or sixth century, and the figure stands alone on plain ground. The last line of the passage is what the Church hears in him: it is not the will of your Father which is in heaven, that one of these little ones should perish.","62%","68%"]],
 
 'File:Ravenna — The Good Shepherd mosaic.jpg':[
@@ -454,10 +454,10 @@ module.exports={
  ["The vines","The eleventh hour of this parable is quoted every year at Pascha, in the Catechetical Homily of St John Chrysostom read at the midnight service: let him who has laboured from the first hour receive his due, and let him who came at the eleventh hour not be afraid.","80%","55%"]],
 
 'File:Christ heals two Jericho blind men.jpg':[
- ["The inscription","DUO CECI CLAMANTES DOMINE MISERERE NOBIS — two blind men crying, Lord, have mercy on us. The mosaic quotes their words, and the Church has made them her shortest and most constant prayer.","5%","50%"],
+ ["The inscription","What is legible of the Latin reads CLAMANTES DOMINE MISERERE NOSTRI — crying, Lord, have mercy on us; the photograph cuts off the opening words. The mosaic quotes what they shouted, and the Church has made it her shortest and most constant prayer.","5%","50%"],
  ["The two blind men","There are two of them, sitting by the way side as Matthew says. They cried the more when the multitude rebuked them, and it was that second cry, not the first, that stopped him.","73%","70%"],
  ["Their faces turned up","They are painted with their heads lifted toward a man they cannot see. What they call him is a title: Thou son of David — which is the confession the crowds will shout at the gate of Jerusalem two verses later.","68%","88%"],
- ["The hand of Christ","So Jesus had compassion on them, and touched their eyes: and immediately their eyes received sight, and they followed him. Matthew ends the miracle with the following, not with the seeing.","60%","45%"],
+ ["The hand of Christ","It is out, and it stops short: between his fingers and the nearer man's face lie a span of gold and then the flank of the hill. The mosaic holds the moment before the verse — So Jesus had compassion on them, and touched their eyes: and immediately their eyes received sight, and they followed him. Matthew ends the miracle with the following, not with the seeing.","60%","45%"],
  ["The disciples","They are pressed behind him in a block. This is the last thing that happens on the road: the next verse begins the entry into Jerusalem, and everything after it is Holy Week.","45%","12%"]],
 
 'File:005 Entry into Jerusalem Icon from Saint Paraskevi Church in Langadas.jpg':[
@@ -489,7 +489,7 @@ module.exports={
  ["Christ driving them out","He moves in from the left with his arm up and the apostles behind him. Matthew's sentence is blunt: Jesus went into the temple of God, and cast out all them that sold and bought in the temple.","18%","34%"],
  ["The money-changers' table","A man sits at his table with the coins still on it. And overthrew the tables of the moneychangers — the trade was lawful, licensed and necessary for the temple tax, and it is thrown over anyway.","24%","47%"],
  ["The cage of doves","A wicker cage hangs at the right of the register. And the seats of them that sold doves — the dove was the offering of the poor, which is what makes the traffic in them the sharpest part of the scene.","20%","78%"],
- ["The four prophets below","Under every scene the Rossano Gospels set four figures holding scrolls of prophecy. It is the book's method: the event above, and beneath it the words that foretold it — here, My house shall be called the house of prayer, but ye have made it a den of thieves, from Isaiah and Jeremiah.","48%","45%"],
+ ["The four prophets below","Four half-figures cut off at a ledge, each with a hand raised and holding nothing at all: their texts are written out on the purple page beneath them, in four columns of Greek. Their names are lettered above — ΔΑΔ, David, twice and both crowned, ΩΣΗΕ, Hosea, and ΗΣΑΙΑΣ, Isaiah. It is the book's method: the event above, the words below, and the joining left to the reader. Matthew does it himself inside the passage, quoting My house shall be called the house of prayer; but ye have made it a den of thieves.","48%","45%"],
  ["The purple page","The parchment is dyed imperial purple and written in silver. A book like this was made for a court, and the scene chosen for it is the one where Christ turns over the furniture of a religious market.","88%","50%"]],
 
 'File:Christ banish tradesmen from Temple (Monreale).jpg':[
@@ -519,6 +519,7 @@ module.exports={
  ["The servants carrying in the dishes","Men stride across the fresco with trays held high. Behold, I have prepared my dinner: my oxen and my fatlings are killed, and all things are ready: come unto the marriage. The refusal, when it comes, is not of a request but of a finished feast.","28%","51%"],
  ["The tables","White cloths and vessels are set out across the lower half. Dionisy painted this at Ferapontov in 1502; Orthodox programmes rarely paint the parables at all, and this is one of the few walls in the world where the wedding feast is on it.","65%","35%"],
  ["The guests","The men gathered at the right are the second set of invitations. Go ye therefore into the highways, and as many as ye shall find, bid to the marriage — and the servants gathered together all as many as they found, both bad and good.","40%","68%"],
+ ["The man cast out","At the right edge a man in a pale tunic is bent almost double, head down and arms hanging, while a figure behind him puts a hand on him and pushes. He is being put out of the hall, and that is as far as Dionisy goes — nobody here is bound. Friend, how camest thou in hither not having a wedding garment? And he was speechless.","63%","78%"],
  ["The hall","The architecture stands over the whole scene, prepared and open. The parable ends with a man thrown out of it for having no wedding garment, and with the sentence: for many are called, but few are chosen.","16%","30%"]],
 
 'File:Ten virgins 05-15.jpg':[
