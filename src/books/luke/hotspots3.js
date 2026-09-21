@@ -10,13 +10,13 @@ module.exports={
  ["The manger", "A low chest of stone, stepped at the foot as an altar is stepped, and the Child laid in it swaddled in gold-flecked bands. Luke tells the birth in one clause and this is the whole of it: and wrapped him in swaddling clothes, and laid him in a manger.", "73%", "55%"],
  ["The Theotokos", "She kneels rather than reclines, her hands crossed on her breast and her head bowed to the manger. Luke gives her no words here at all; what he says of her comes a few verses later, that Mary kept all these things, and pondered them in her heart.", "55%", "37%"],
  ["Joseph", "Kneeling opposite her with his hands crossed in the same way. He is in these verses only as the man who made the journey: Joseph also went up from Galilee, out of the city of Nazareth, into Judaea, unto the city of David, which is called Bethlehem.", "53%", "68%"],
- ["The old man in the fleece", "Wrapped to the throat in a shaggy hide, his head thrown back, standing over Joseph's shoulder. The Evangelist names nobody here but Joseph, Mary and the Child.", "50%", "79%"],
+ ["The old man in the fleece", "Wrapped to the throat in a shaggy hide, his head thrown back, standing over Joseph's shoulder. Luke brings nobody else to the manger: the only other names in these seven verses are Caesar Augustus and Cyrenius, and they are a world away.", "50%", "79%"],
  ["The angel and the shepherds", "Above the cave an angel in orange leans down to two men on the hillside, one of them piping. That is the next paragraph, not this one — there were in the same country shepherds abiding in the field, keeping watch over their flock by night.", "22%", "32%"],
  ["The riders on the hill", "Three horsemen coming over the ridge at the upper right, and the eight-pointed star above the manger with them. Both belong to Matthew. Luke's account of the birth has no star in it and no wise men.", "30%", "78%"],
 ],
 
 "File:12 Nativity of Jesus Icon in Assumption of Mary Church in Agios Vasileios.jpg":[
- ["The stone trough", "A white masonry trough standing flat on the ground, with the Child in it swaddled in rose bands. It is the one thing in this ruined panel that is unmistakable, and it is the one thing Luke specifies: laid him in a manger.", "80%", "47%"],
+ ["The white masonry", "A block of white stone with a straight top and a moulded lip, and the Child lying along the top of it in rose swaddling bands. It is the one structure in this ruined panel still legible, though not legible enough to say whether it has a far rim. Luke's own clause for it: and wrapped him in swaddling clothes, and laid him in a manger.", "80%", "47%"],
  ["The Theotokos", "The rose maphorion and the jewelled halo on the right of the manger, bowing to it with her hands crossed on her breast.", "55%", "62%"],
  ["Joseph", "The old man with the grey beard in blue on the left, kneeling in the same attitude. Luke keeps him silent from the journey to the Circumcision.", "55%", "30%"],
  ["The shaft of light", "A broad orange beam down the centre of the board from the top edge to the manger. The panel is too worn to show what it comes from.", "20%", "48%"],
@@ -31,7 +31,7 @@ module.exports={
  ["The shepherd", "Sitting below him with his hand raised and a long pipe across his lap, listening. Luke is the only Evangelist who reports any of this.", "34%", "79%"],
  ["Joseph", "Kneeling at the left in red over blue, reaching a hand toward the Child without touching him.", "52%", "33%"],
  ["The Theotokos", "Kneeling opposite him in a red maphorion, her hand out in the same way.", "50%", "69%"],
- ["The Child, and no manger", "He lies swaddled in white bands directly on the grass, with thin gold rays spreading from him across it. There is no crib here, no cave and no ox and ass — which leaves out the one detail of the birth Luke actually gives. Two white sheep lie on the grass below his feet.", "70%", "46%"],
+ ["The Child, and no manger", "He lies swaddled in white bands directly on the grass, with thin gold rays spreading from him across it. There is no crib here, no cave and no ox and ass — which leaves out the one detail of the birth Luke actually gives. Two pale beasts lie on the grass below his feet, the nearer with a long muzzle and a drooping ear.", "70%", "46%"],
 ],
 
 // ---- chapter 3 ----

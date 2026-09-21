@@ -182,7 +182,12 @@ The loop that works, six to eight icons at a time, one commit each:
      picture as well as the coordinates, so it replaces looking at the icon separately.
   2. Write the reading in `hotspots2.js` and the markers in `hotspots3.js`.
   3. Check every KJV clause is verbatim **before** committing. `BOOK=mark node
-     src/tools/quotes.js` finds them; a scratch script that greps each clause against
+     src/tools/quotes.js` finds them — but note what it cannot do: it proves the **quotations**
+     are this Gospel's, never that the **prose** was written fresh. A near-paraphrase of another
+     reader's reading with the verses swapped passes it clean, and its clause splitter also
+     cannot see a quotation that sits between two em dashes and contains a colon (found
+     2026-09-21). Reading the other reader's text beside your own before committing is the only
+     check there is, and it has no tool behind it; a scratch script that greps each clause against
      `kjv.json` is faster when writing a batch. This caught nine misquotations in four batches —
      "he commanded" for "and commanded", "weeping and wailing greatly" for "them that wept and
      wailed greatly", a straight apostrophe for the KJV's curly one.
@@ -328,6 +333,29 @@ which is the verb of Matthew 28:6, not of Mark 16:6. So Mark's caption renders M
 than the picture's writing. That is a defensible per-Gospel choice and it is **not** being called a
 bug, but it is the one place where three readers show one picture under two names, and it is
 recorded here so nobody has to rediscover it. Noted 2026-09-20d; no reader was changed for it.
+
+**Also Matthew's problem, not Luke's — Matthew's prose readings for all three Nativity icons
+contradict the pictures.** Found 2026-09-21 while writing Luke's readings for the same three
+files at 2:1–7, which is the only time anyone will have had the panels open at full size *and*
+Matthew's text in front of them. Three for three:
+
+- `031 … Langadas`. Matthew's reading says *Joseph sits apart at the lower left, which is where
+  Matthew's account puts him*. Joseph is at the **right**, kneeling, haloed, hands crossed on his
+  breast; the figure at the lower left is the Theotokos. Matthew's reading also gives the manger a
+  black cave behind it, which is right, and that part stands.
+- `12 … Agios Vasileios`. Matthew's reading gives *the dark cave at the centre, the Theotokos
+  reclining beside the manger, the ranks of angels above*. She is not reclining — every figure in
+  the panel kneels — there is no cave, and there are no ranks of angels: the upper register holds
+  one small scene in each corner, and the left one is rubbed past identifying.
+- `Nativity Icon Panagia Evraidos`. Matthew's reading says *a single ray comes down from the star
+  to the cave*. The shaft is **triple**, and there is no cave in the panel at all — nor a manger,
+  which is the point Luke's reading of it turns on.
+
+Read together they look like three readings written from the standard Nativity composition rather
+than from these three boards, which is precisely what the reading audit exists to catch (a third
+of the readings checked so far carried a false claim, and 27 are still unchecked). Matthew's
+*markers* on these files were not audited here and mostly do not make these claims. Fixing it
+rewrites a shipped reader, so it is **the owner's call**, same as the two items above and below.
 
 **Found while wiring Luke, and it is Matthew's problem, not Luke's — `Christos Iomenos Paralyton
 Dionysiou` is Bethesda.** The Dionysiou fresco Matthew's reader shows at 9:1–8, labelled there
@@ -1768,7 +1796,10 @@ person in Luke — both recorded in `picks.js` and in `## Next`.
     one concrete detail of the birth Luke gives, and the marker is titled for it.
   - **The Agios Vasileios panel is rubbed nearly to the gesso.** The haloes are often all that is
     left of a figure, and the upper-left corner scene cannot be identified at all. Marker 6 says
-    that and does not guess; `picks.js` had listed the file without the caveat.
+    that and does not guess; `picks.js` had listed the file without the caveat. Its manger was
+    re-cropped after the first draft called it a trough with the Child *in* it: at full size it is
+    a block of white masonry with a straight top and a moulded lip, and the Child lies **along the
+    top** of it. Whether there is a far rim cannot be told, and the reading now says so.
   - **The Ohrid scroll is Matthew's sermon.** Read at full size: ΜΕΤΑΝΟΕΙΤΕ ΗΓΓΙΚΕΝ ΓΑΡ Η
     ΒΑΣΙΛΕΙΑ ΤΩΝ ΟΥΡΑΝΩΝ. Luke reports no such sermon at 3:1–6 — one clause of his own and then
     three verses of Isaiah — so the reading names the wording as Matthew's and gives Luke's
@@ -1805,15 +1836,22 @@ person in Luke — both recorded in `picks.js` and in `## Next`.
   markers**, no clamp warnings, 455 quotations. `make` on all four; `git status` shows only
   `Luke Reader.html` changed — Matthew, Mark and John rebuilt byte-identical.
 
+**Also found, and written up in `## Next` rather than fixed** — Matthew's prose readings for
+all three Nativity icons contradict the pictures (Joseph on the wrong side, a reclining Theotokos
+who kneels, a single ray that is triple, and caves that are not there). It is the same class as
+the Bethesda paralytic and it rewrites a shipped reader, so it is the owner's call.
+
 **Not done**
 - **63 of Luke's 68 icons still have no reading and no markers.** Next in Gospel order:
-  `baptism` (4), `temptation` (2), `petersmother` (1), `leper` (1), `paralytic` (2).
+  `baptism` (4), `temptation` (2), `petersmother` (1), `leper` (1), `paralytic` (2) — that is 10,
+  so split it: the four Baptisms and the two Temptations first, the other four after.
 - **No harvest**, and no scripture stories. Both still as the previous session left them.
 - **The 50 Mark icons** remain the other open batch of the same work.
 
-**Next.** Batch 2, the same loop: `baptism` (4) and `temptation` (2), then `petersmother`,
-`leper` and `paralytic`. Note that Mark already carries readings for all four Baptism files and
-for the first Monreale Temptation, so `quotes.js` plus a read of Mark's text is what proves
-Luke's were written fresh — Luke gives the Holy Ghost *in a bodily shape like a dove* (3:22), a
+**Next.** Batch 2, the same loop, and keep it to six: `baptism` (4) and `temptation` (2). Mark
+already carries readings for all four Baptism files and for the first Monreale Temptation, and
+**`quotes.js` cannot prove a reading was written fresh** — it only proves the quotations are
+Luke's, so a paraphrase of Mark's prose with the verses swapped passes it clean. Reading Mark's
+text beside the new one before committing is the check — Luke gives the Holy Ghost *in a bodily shape like a dove* (3:22), a
 detail Mark and Matthew do not, and he puts the baptism in a subordinate clause after the
 Forerunner is already shut up in prison.
