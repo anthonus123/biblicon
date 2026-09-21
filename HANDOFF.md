@@ -128,8 +128,10 @@ and this file did not.
     reused (the list is below, and it is not Mark's list). **The reader now reaches 99 of its 455
     quotations**, up from none: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **None of the 68 has a prose reading or markers yet** — that is the next work, in batches of
-    six to eight, the loop Mark uses.
+  - **5 of the 68 now have a prose reading and positioned markers, 33 markers in all** (first
+    batch, 2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou
+    `Prodromos Didaskon`). The other 63 are the work in progress, in batches of six to eight,
+    the loop Mark uses.
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43.
@@ -196,13 +198,16 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader now has 33 icons and no reading on any of them.** `picks.js`,
+**Also open — the Luke reader has 33 icons and 63 of its 68 still want a reading.** `picks.js`,
 `labels.js` and `overrides.js` were written 2026-09-20d from the survey table below: **33
 passages, 68 icons**, tiers 28a / 5b / 119c, `make check` green, and the reader's commentary is
 reachable on those 33 passages — **99 of its 455 quotations**, where before it reached none.
-What it needs, in order:
+The first batch of readings and markers was written 2026-09-21 — `nativity` (3), `forerunnerpreach`
+(1) and `fruits` (1), 33 markers — so what is left is 63 icons across 30 passages, next in
+Gospel order being `baptism` (4), `temptation` (2), `petersmother` (1), `leper` (1) and
+`paralytic` (2). What it needs, in order:
 
-1. **First, readings and markers for the 68, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 63, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Two files carry a
    caveat the reading must honour, both recorded in `picks.js`:
@@ -1744,3 +1749,71 @@ under "Active work": `grid.py`, write, check every KJV clause with `BOOK=luke no
 src/tools/quotes.js`, then `overlay.py` and read the sheets. Two files carry a caveat the reading
 must honour — the guard in `Ide Topos` (Matthew's alone) and the centurion who never comes in
 person in Luke — both recorded in `picks.js` and in `## Next`.
+
+## Session 2026-09-21 (Luke readings and markers, batch 1 of 9: chapters 2–3)
+
+**Did**
+- **Wrote the first five of Luke's 68 icon readings and their markers** — `hotspots2.js` and
+  `hotspots3.js` were empty stubs before this session; they now carry 5 readings and **33
+  positioned markers**. The batch is Gospel order from the top: the three Nativities at 2:1–7
+  (`031 … Langadas`, `12 … Agios Vasileios`, `Nativity Icon Panagia Evraidos`), the Ohrid Angel
+  of the Desert at 3:1–6, and the Dionysiou `Prodromos Didaskon Ioudaious` at 3:7–14.
+- **Every reading was written against the picture at full size, not from the survey note.** Five
+  things the pictures turned out to say, none of which was in `picks.js`:
+  - **The Langadas Nativity carries Matthew as well as Luke.** Three horsemen come over the hill
+    at the upper right and an eight-pointed star stands over the manger — the Magi and the star,
+    neither of which is in Luke. The reading and marker 7 say so outright.
+  - **The Panagia Evraidos panel has no manger at all.** The Child lies swaddled on the bare
+    grass with gold rays spreading from him: no crib, no cave, no ox and ass. That leaves out the
+    one concrete detail of the birth Luke gives, and the marker is titled for it.
+  - **The Agios Vasileios panel is rubbed nearly to the gesso.** The haloes are often all that is
+    left of a figure, and the upper-left corner scene cannot be identified at all. Marker 6 says
+    that and does not guess; `picks.js` had listed the file without the caveat.
+  - **The Ohrid scroll is Matthew's sermon.** Read at full size: ΜΕΤΑΝΟΕΙΤΕ ΗΓΓΙΚΕΝ ΓΑΡ Η
+    ΒΑΣΙΛΕΙΑ ΤΩΝ ΟΥΡΑΝΩΝ. Luke reports no such sermon at 3:1–6 — one clause of his own and then
+    three verses of Isaiah — so the reading names the wording as Matthew's and gives Luke's
+    instead. Luke's claim on the panel is 1:80, *was in the deserts till the day of his shewing
+    unto Israel*, and 7:27 for the wings.
+  - **The Dionysiou fresco has no axe.** One small bare-trunked tree stands at the Forerunner's
+    feet between the two groups, and 3:9 — *the axe is laid unto the root of the trees* — is not
+    painted. Said so rather than implying it.
+- **Two claims were checked and deliberately not made.** The round object the foremost soldier
+  holds is called "his helmet" in `picks.js`; at full crop it will not resolve, so the reading
+  says only that he cradles something round. And the old man in the fleece behind Joseph on the
+  Langadas panel is described as what he is, with no identification attached to him.
+
+**Why**
+- The handoff named this Luke's first job, in this order, and gave the loop: grid, write, check
+  every KJV clause, overlay, crop. All five steps were run on every icon in the batch.
+
+**Verified**
+- `BOOK=luke node src/tools/quotes.js`: 0 KJV clauses to read, 0 wrong Father, 0 no source, 0
+  drift. Its clause splitter cannot see a quotation that sits between two em dashes and contains
+  a colon, so a scratch script checked all 19 quoted clauses against `src/books/luke/kjv.json`
+  independently. It caught one: *she kept all these things* is **Mary** kept all these things at
+  2:19. Fixed before the build.
+- `BOOK=luke python3 src/tools/overlay.py` on all five, read sheet by sheet, then re-run twice.
+  **Seven coordinates moved**: the Langadas riders (twice — the first move put the marker on the
+  horses' legs), the Evraidos inscription band, the Ohrid wing (it was on the scroll's edge) and
+  its head in the charger, and the Dionysiou inscription and cross, which were written at 6% and
+  7% and are **clamped to 9%** by `assemble.js` — they are now written as 9% so the file says what
+  ships.
+- **Reading the overlay sheet by eye is not accurate enough to place a marker.** Three times the
+  sheet suggested a marker was several per cent off and a `crop.py` probe of the exact
+  coordinates proved it was dead on. The overlay is for *which figure*, the crop is for *where*.
+- `make check`: Luke 152 passages, 33 with an icon, 68 icons, **5/68 readings with 5 sets of
+  markers**, no clamp warnings, 455 quotations. `make` on all four; `git status` shows only
+  `Luke Reader.html` changed — Matthew, Mark and John rebuilt byte-identical.
+
+**Not done**
+- **63 of Luke's 68 icons still have no reading and no markers.** Next in Gospel order:
+  `baptism` (4), `temptation` (2), `petersmother` (1), `leper` (1), `paralytic` (2).
+- **No harvest**, and no scripture stories. Both still as the previous session left them.
+- **The 50 Mark icons** remain the other open batch of the same work.
+
+**Next.** Batch 2, the same loop: `baptism` (4) and `temptation` (2), then `petersmother`,
+`leper` and `paralytic`. Note that Mark already carries readings for all four Baptism files and
+for the first Monreale Temptation, so `quotes.js` plus a read of Mark's text is what proves
+Luke's were written fresh — Luke gives the Holy Ghost *in a bodily shape like a dove* (3:22), a
+detail Mark and Matthew do not, and he puts the baptism in a subordinate clause after the
+Forerunner is already shut up in prison.
