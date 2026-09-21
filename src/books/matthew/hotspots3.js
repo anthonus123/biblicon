@@ -367,7 +367,7 @@ module.exports={
 
 'File:19 Beheading of Saint John the Baptist Icon in Assumption of Mary Church in Agios Vasileios.jpg':[
  ["The head handed over","The whole icon turns on this exchange in the middle of the panel: the head is passed from one hand to another, over a dish, like an article at a table. Matthew's account is exactly as flat — it was brought in a charger, and given to the damsel.","46%","56%"],
- ["The executioner","He stands in full armour, doing his work without expression. He is a servant of the state carrying out an order; nobody in the icon is enraged, and that is what makes it terrible.","40%","25%"],
+ ["The executioner","He stands in full armour with his sword already down at his side, doing his work without expression. He is a servant of the state carrying out an order; nobody in the icon is enraged, and that is what makes it terrible.","40%","25%"],
  ["The charger","A serving dish out of a banquet is held up to receive it. The head was asked for at a birthday feast, in front of guests, because of a promise made after a dance.","52%","66%"],
  ["The girl crowned","She is painted in court dress with a crown, waiting to carry it to her mother. Matthew keeps the chain of responsibility visible — being before instructed of her mother — and so does the icon.","52%","82%"],
  ["The body at the foot of the panel","The Forerunner's body lies across the bottom, headless. His disciples came, and took up the body, and buried it, and went and told Jesus: that last sentence is what carries the Gospel forward to the next passage.","80%","42%"],
@@ -383,7 +383,7 @@ module.exports={
 
 'File:Feeding the multitude, Sant\'Apollinare Nuovo, Ravenna.jpg':[
  ["Christ at the centre","He stands in the middle in purple, beardless, with the cross set into his halo — the sixth-century way of painting him. He is larger than the men beside him, which in Byzantine art is not perspective but rank.","22%","51%"],
- ["The loaves","A disciple at the left holds up the bread in a dish. Five loaves and two fishes is all that Matthew says they had, and the mosaic puts exactly that in the picture and nothing else.","36%","27%"],
+ ["The loaves","A disciple at the left holds up a cloth of round golden loaves, each scored with a cross. They are not laid out to be counted — the mosaicist gives a handful — but five loaves and two fishes is all Matthew says they had, and the picture holds nothing else.","36%","27%"],
  ["The fishes","At the right the two fish are held out across the mosaicist's gold. The fish was a sign of Christ himself in the earliest centuries, because the Greek word ἰχθύς spells out Jesus Christ, Son of God, Saviour.","39%","72%"],
  ["Both hands stretched out","He gives to left and right and does not hand anything to the crowd himself. The distribution goes through the Twelve, which is how the Fathers read the Church's own ministry out of this miracle.","33%","40%"],
  ["The empty gold ground","There is no multitude in the frame at all. Ravenna keeps only the essential: the one who blesses, the men he gives to, and what there was to give.","14%","20%"]],
