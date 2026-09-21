@@ -43,3 +43,38 @@ d28b2d1e169e	6	The borrowed room	holds	a gabled building at each upper corner wi
 7a949a6fedd9	4	Peter at the porch	fixed-2026-09-21	'another maid names him again' is not in the picture — the fresco paints one maid and repeats Peter instead
 7a949a6fedd9	5	Peter weeping	fixed-2026-09-21	he is not sitting with his face in his hands: he is bent double over a green column with his face buried in his arms
 7a949a6fedd9	6	The cock on the parapet	fixed-2026-09-21	not a wall above him: the flat roof of a small white building beside him, and the bird's head is thrown back with the beak open, crowing. Prose in hotspots2.js called it 'a little pillared roof' and said 'two moments' where the wall paints three; fixed with it
+51116569bee9	1	Christ at prayer on the rock	holds	upper left, haloed, bowed deep over the rock
+51116569bee9	2	The prayer painted three times	fixed-2026-09-21	four figures of Christ on this wall, not three prayers: two bowed, one upright at the top centre, one turned back to the sleepers — which is what the icon's own prose reading already said
+51116569bee9	3	Christ returning to the disciples	holds	haloed, head inclined, right hand out and down toward the sleepers
+51116569bee9	4	The disciples asleep	fixed-2026-09-21	not 'the three' — about a dozen figures fill the whole foot of the wall, the eight told to sit here as well as the three taken farther on
+51116569bee9	5	The rock of the garden	fixed-2026-09-21	the rock is ochre and pale olive where the light falls; only the crags along the top are near-black. 'grey and black' described no part of it
+a1561fe508e3	1	The inscription	fixed-2026-09-21	the titulus is longer than the marker gave: Η ΠΡΟΣΕΥΧΗ ΤΟΥ ΧΥ, the Prayer of Christ. ΙΣ ΧΣ beside each figure confirmed
+a1561fe508e3	2	Christ kneeling in prayer	holds	far left, kneeling on the rock, both hands stretched out to the right
+a1561fe508e3	3	The three prayers	holds	three kneeling figures of Christ across the left two-thirds of the wall, a fourth standing at the right
+a1561fe508e3	4	Christ returning	holds	standing over the sleepers in dark red, right hand out and down
+a1561fe508e3	5	Peter waking	fixed-2026-09-21	both hands are open toward the Lord, not one, and he is the grey-haired one
+a1561fe508e3	6	The sleepers	holds	about eleven heads heaped at the foot of the rock, wrapped and inert
+a1561fe508e3	-	(prose, hotspots2.js)	fixed-2026-09-21	the fresco paints Luke's angel — a small winged haloed figure high in the dark sky — and no marker or reading had ever named it. Added to the prose; a marker there would clamp to 9% and land on Christ's halo
+dc6723fe4d6e	1	The inscription	holds	…LATE 7 OR… / …TIS IN TEM… legible at full crop, with a Tironian 7 for ET; the left half of the band is too worn to read in this photograph
+dc6723fe4d6e	2	The angel out of the gold	fixed-2026-09-21	it does not come head-first: it flies in level from the left with its hand stretched out to meet Christ's, and carries no cup
+dc6723fe4d6e	3	Christ at prayer	holds	kneeling on the hill, both hands lifted toward the angel
+dc6723fe4d6e	4	Christ returning to the sleepers	fixed-2026-09-21	he stands upright, not bending, and holds a closed scroll in his left hand — the scroll was in no text
+dc6723fe4d6e	5	The disciples asleep	holds	heaped across the middle and the whole lower left of the panel
+417a35d2ac73	1	The inscription	holds	ΗΠΡΟΔΟCΙΑ read across the top
+417a35d2ac73	2	Judas's kiss	holds	green tunic, one arm across the body and the other hand on the far shoulder, face to face, no halo
+417a35d2ac73	3	Christ unmoved	holds	cruciform halo confirmed at full crop, still, one hand down
+417a35d2ac73	4	Peter with the sword	fixed-2026-09-21	MISPLACED as well as wrong: the sword at the left belongs to the arresting party, not to a disciple. Peter and Malchus are at the LOWER RIGHT — marker moved from 48%/27% to 76%/85% and the text rewritten to what is painted there
+417a35d2ac73	5	The staves and torches	fixed-2026-09-21	there is also an axe and a white gabled lantern with the flame inside it, held up on a staff, against a black sky pricked with stars
+417a35d2ac73	6	The soldier seizing him	fixed-2026-09-21	the man laying hands on him wears no armour — a beardless youth in a plain red tunic with a dagger at his belt; the armoured soldier stands behind him
+acdfedfb6036	1	TRADITIO	holds	·RADITIO· at the left of the band and DOMI[NI] at the right, both read at full crop
+acdfedfb6036	2	Christ	fixed-2026-09-21	his face is set straight forward, NOT turned to the man kissing him; cruciform halo confirmed
+acdfedfb6036	3	Judas's embrace	fixed-2026-09-21	one arm round him, not both — the other hand reaching across the Lord belongs to someone else in the press
+acdfedfb6036	4	Peter and the servant	holds	bottom left, Peter grips the servant's head and holds the blade at his ear, the servant down on the ground
+acdfedfb6036	5	The lantern and the spears	fixed-2026-09-21	a lantern AND a hanging lamp on poles, and two long axes and a knobbed club among the spears
+acdfedfb6036	6	The soldier at the right	fixed-2026-09-21	he wears no cuirass and no armour — a pointed cap and a mantle over a white tunic. The 'one Roman in armour, and the state behind the council' was not in the picture; label changed to 'The man at the right edge'
+30b296dd3bad	1	Christ	fixed-2026-09-21	the halo is deep orange-red and the cross in it is faint, not the clean cruciform the text implied; and his hands are not visible at all, so 'one hand at his side' was invented
+30b296dd3bad	2	Judas	holds	leans in from the left, face against the Lord's cheek, arm across him
+30b296dd3bad	3	The forest of weapons	holds	spears, two axe-heads and a curved blade raised in a line across the top
+30b296dd3bad	4	The lantern	fixed-2026-09-21	right, and better than it said: the monogram ΙΣ ΧΣ is lettered either side of the lantern's pole over the Lord's head
+30b296dd3bad	5	Peter's sword	fixed-2026-09-21	nobody is struck in this fresco — no servant on the ground, no ear. A man in red holds a sword raised over his head, and nothing identifies him as a disciple. Label changed to 'The raised sword at the left'
+30b296dd3bad	6	The soldiers in helmets	fixed-2026-09-21	there are no helmets and no armour anywhere in the panel; every head is bare. Label changed to 'The bare heads of the crowd'
