@@ -1,0 +1,45 @@
+# Marker-text audit: every numbered "Deciphering the Icon" marker read against the picture
+# under its own circle, at full size, with crops where the detail is small.
+#
+# WHY THIS FILE EXISTS. The reading audit (icon_reading_audit.tsv) finished 2026-09-21 and
+# examined MARKER TEXT on only the 48 icons it touched that day; roughly one marker in three
+# on those was wrong. The other 65 icons — the rows marked checked-2026-08-21b and
+# checked-2026-08-22 there — had their PROSE read against the picture and their MARKER TEXTS
+# never examined by anyone. This file is that sweep. 65 icons, 347 markers.
+#
+# A ROW HERE MEANS NOTHING UNLESS hotspots.js / hotspots3.js SAYS WHAT THE NOTE SAYS. The
+# reading audit's 28 fixed-2026-08-22 rows recorded corrections that were never applied to
+# the source, and the reader shipped the wrong text for a month. Every `fixed` row below was
+# written AFTER the edit landed and AFTER grepping the old wording out of the source.
+#
+# One row per MARKER, not per icon — per-icon rows are how 47 bad marker texts hid behind 65
+# "checked" ones the first time.
+#
+# key	n	marker label	verdict	note   (verdict: holds | fixed-DATE)
+1700683b5e46	1	Christ at the table	fixed-2026-09-21	he does not recline and his hand is not raised: he sits upright on a cushioned seat and his right hand is down at his knee, fingers reaching toward the woman. Prose in hotspots2.js said 'reclines' too and was fixed with it
+1700683b5e46	2	The woman at his feet	fixed-2026-09-21	position right, but her hair is bound under a white cloth — nothing is wiped with it. Added what is there: face turned up, hands at his bare foot
+1700683b5e46	3	The alabaster vessel	fixed-2026-09-21	the vase is there and upright, two-handled and white, standing on the pavement below the couch; the prose called it 'emptied on the floor', which the picture does not show
+1700683b5e46	4	The murmuring disciples	holds	a press of eight or nine unhaloed heads at the right, two hands legible in gesture over the table
+1700683b5e46	5	The dish on the table	holds	one footed bowl at the centre of the cloth, with round loaves, long loaves and green sprigs about it
+b9c2dc87cce1	1	Judas	fixed-2026-09-21	the robe is not plain — a dark red mantle over a gold-shot green brocade sleeve; hand flat on the table edge is right, and the column that sets him apart is now named
+b9c2dc87cce1	2	The high priest	fixed-2026-09-21	'seated' cannot be seen — the table cuts him at the waist; he is at the centre behind it in a yellow hood and veil, both hands down on the cloth
+b9c2dc87cce1	3	The thirty pieces of silver	fixed-2026-09-21	not a heap: the coins lie spread flat in one layer under both his hands
+b9c2dc87cce1	4	The elders	fixed-2026-09-21	caps and hoods, not turbans; one elder seated in orange in front and a beardless young man in blue among them
+b9c2dc87cce1	5	The canopy and the drawn curtain	holds	a red velum swagged between the flanking buildings and gathered at both columns, over a gabled central portico
+07b286a4112f	1	Christ at the head of the table	fixed-2026-09-21	cruciform halo confirmed at full crop, but no bread is painted on this table: the blessing hand is at his breast, the left hand reaches over the cloth
+07b286a4112f	2	The inscription	holds	ὁ δεῖπνος left of the hanging lamp, ὁ μυστικός right of it — both read at full crop
+07b286a4112f	3	The beloved disciple	fixed-2026-09-21	'the only beardless face among the twelve' is false — at least two more beardless apostles on the right side; and he is bowed forward at the Lord's side, not leaning back
+07b286a4112f	4	The hand across the cloth	holds	an arm comes in from the right and the fingers are over the rim of the central basin
+07b286a4112f	5	The single dish	fixed-2026-09-21	not bread and a cup: a footed basin at the centre with a dark flask, two small cups and knives — the icon's own prose reading said so and the marker contradicted it
+d28b2d1e169e	1	Christ	holds	upper left, reclining, the one gold halo in the panel (abraded); his hand is over the bowed disciple at his breast
+d28b2d1e169e	2	The beloved disciple	holds	bowed small and close under the Lord's chin, head almost on the table
+d28b2d1e169e	3	The hand stretched to the dish	fixed-2026-09-21	the reach is more exact than the text said: the hand comes down INTO a small footed cup on the cloth, which is the dipping itself
+d28b2d1e169e	4	The table stood on end	holds	two footed cups, a lidded vessel and triangular wedges all lie in full view on the tilted top
+d28b2d1e169e	5	The apostles in one curve	fixed-2026-09-21	counted twice at full crop: TWELVE apostles, not eleven — seven behind the table and five seated in front with their backs half turned
+d28b2d1e169e	6	The borrowed room	holds	a gabled building at each upper corner with a plain wall between them
+7a949a6fedd9	1	The inscription	holds	read at full crop: ΗΑΡΝΗCΙC ΤȢ ΠΕΤΡȢ, lunate sigmas and an ou-ligature — the denial of Peter
+7a949a6fedd9	2	Peter at the fire	fixed-2026-09-21	the company at the fire is two soldiers in scale armour and helmets and a young man in blue, not servants, and Peter sits apart across the flames from them
+7a949a6fedd9	3	The damsel at the door	holds	a girl in red in the doorway with her right hand up, pointing at him
+7a949a6fedd9	4	Peter at the porch	fixed-2026-09-21	'another maid names him again' is not in the picture — the fresco paints one maid and repeats Peter instead
+7a949a6fedd9	5	Peter weeping	fixed-2026-09-21	he is not sitting with his face in his hands: he is bent double over a green column with his face buried in his arms
+7a949a6fedd9	6	The cock on the parapet	fixed-2026-09-21	not a wall above him: the flat roof of a small white building beside him, and the bird's head is thrown back with the beak open, crowing. Prose in hotspots2.js called it 'a little pillared roof' and said 'two moments' where the wall paints three; fixed with it
