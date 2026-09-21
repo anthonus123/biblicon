@@ -20,9 +20,9 @@ module.exports={
  ["Jesse asleep at the root","The old man lies at the foot of the icon with the trunk rising at his side. He is the father of David, and he sleeps: the generations that carried the promise did not see what would grow out of them.","80%","23%"]],
 
 'File:Tree of Jesse icon (17 c.).jpg':[
- ["The Theotokos enthroned at the summit","The vine climbs the whole panel and ends here, in the Mother of God enthroned with the Child. The icon is read from the bottom upward, as the genealogy is read from Abraham forward.","10%","48%"],
- ["The root of the tree","The vine springs at the foot of the panel from Jesse, the father of David, who is always painted at the root of this icon — from his stem, as Isaiah said, the rod comes forth.","88%","48%"],
- ["A generation in its own roundel","Every forefather is given a medallion of vine, seated and turned toward the next. Matthew's begat, repeated forty-two times, is painted here as one plant with many branches rather than as a list.","46%","20%"],
+ ["The Theotokos at the summit","The central column ends here, in the Mother of God standing on a pedestal with the Child, in dark blue against the ochre. She is standing, not enthroned. The panel is read from the bottom upward, as the genealogy is read from Abraham forward.","10%","48%"],
+ ["The foot of the panel","There is no reclining Jesse here and no trunk: the stem simply comes down to the base band, where a blackened inscription plate hangs and a small figure bows beneath it. This painter has kept the vine as scaffolding for the roundels and dropped the root that gives the icon its usual name.","88%","48%"],
+ ["A generation in its own roundel","Every forefather sits inside a thin roundel of vine with a small red rosette where the tendrils meet, turned toward the next. Matthew's begat, repeated forty-two times, is painted here as one plant with many branches rather than as a list.","46%","20%"],
  ["The prophets in the lower band","Along the base stand the prophets with their scrolls, outside the vine and pointing into it. The genealogy is Israel's history; the scrolls are Israel's expectation of how it would end.","87%","33%"]],
 
 'File:031 Nativity of Jesus Icon from Saint Paraskevi Church in Langadas.jpg':[
@@ -61,7 +61,7 @@ module.exports={
 
 'File:Cathedral (Monreale) - North arch of transept - Journey of the Magi.jpg':[
  ["The star in the disc of heaven","The star is set in a dark blue medallion and a beam runs down from it across the gold. Matthew's words are the whole of what the Magi knew: we have seen his star in the east, and are come to worship him.","8%","57%"],
- ["The inscription","MAGI VIDENTES STELLAM IN ORIENTE VENIUNT IN HIERUSALEM — the Magi, seeing the star in the east, come to Jerusalem. St Leo notes what is wrong with that: judging as men, they looked for a new-born King in the royal city, and the star had to leave them until the scribes named Bethlehem.","17%","18%"],
+ ["The inscription","The mosaic letters it in abbreviation with strokes over the shortened words — ...TES · STELLĀ · IN · ORIĒTE · VENT — for MAGI VIDENTES STELLAM IN ORIENTE VENIUNT IN HIERUSALEM, the Magi, seeing the star in the east, come to Jerusalem. St Leo notes what is wrong with that: judging as men, they looked for a new-born King in the royal city, and the star had to leave them until the scribes named Bethlehem.","17%","18%"],
  ["The youngest of the three","The Magi are painted as three ages of man, which is why one rider is beardless. The Church did not know their names from the Gospel; what she keeps is that they were Gentiles, and that they came a long way.","32%","30%"],
  ["The eldest","The white-bearded rider between the other two. St Jerome supposed they came by the prophecy of Balaam, that there should come a Star out of Jacob — an oracle spoken among the Gentiles and remembered by them.","31%","52%"],
  ["The hand raised toward the star","Each of them turns and points upward, and the gesture, not the road, is the subject. St Gregory the Great says the Jews, who used their reason, were called by an angel's preaching, while the Gentiles, who did not, were called by a sign.","27%","74%"]],
@@ -85,7 +85,7 @@ module.exports={
  ["The Child on Joseph's shoulders","He rides on the old man's shoulders and blesses with his right hand as he goes. The mosaic holds both together: a refugee child being carried, and the Lord blessing the country he is entering.","14%","57%"],
  ["Joseph carrying him","Matthew tells this whole chapter from Joseph's obedience. St Bede reads the flight as the lot of the elect, who are often driven from their homes by the wickedness of the wicked — and Christ takes that lot first.","27%","59%"],
  ["The Theotokos riding","She rides with her hand at her breast and the Child not in her arms. She is given the beast and the road, and no explanation.","21%","30%"],
- ["The young man leading","A youth goes in front with the bundle on a pole — in tradition James, the son of Joseph, the Brother of the Lord. The flight is painted as a household on the move.","23%","12%"],
+ ["The young man driving from behind","A youth in green walks at the back of the procession with a bundle slung on a pole over his shoulder and a long stick in his hand, keeping the beast moving — in tradition James, the son of Joseph, the Brother of the Lord. The flight is painted as a household on the move.","23%","12%"],
  ["Egypt","The buildings at the end of the road are the country of the ten plagues. St Hilary observes what it means that Christ, after being sought among the Jews, leaves Judaea to be sheltered among nations full of idols.","40%","82%"]],
 
 'File:Flight into Egypt (12 Sinai).jpg':[
@@ -93,7 +93,7 @@ module.exports={
  ["The Theotokos and the Child on the ass","She holds him with both hands as the beast walks. St John Chrysostom draws the lesson for the reader from exactly this: if at the beginning of your own course you meet with trouble, do not be discouraged, but bear it, having this before you.","33%","37%"],
  ["Joseph leading them on","He walks in front in red, haloed, looking back. Matthew says he departed by night; St Jerome notices that the Gospel mentions night for the going down and says nothing of darkness for the return.","35%","58%"],
  ["The young man with the staff","The youth behind the beast is the son of Joseph whom tradition names James, the Brother of the Lord. He belongs to this scene in Byzantine painting as regularly as the ass does.","35%","22%"],
- ["The woman weeping in the gate","A crowned woman stands in the gateway with her hands raised, and the Greek written beneath her is the word for weeping. On the whole icon this stands next to the flight: Rachel weeping for her children, and would not be comforted, because they are not.","48%","77%"]],
+ ["Rachel weeping","A woman in dark robes stands in the doorway at the right with her hands raised, and the red letters written under her name her: ΡΑΧΗΛ ΚΛΑΙΟΥΣΑ. She is not part of the journey — she is the next paragraph, set beside it on the same board. In Rama was there a voice heard, lamentation, and weeping, and great mourning, Rachel weeping for her children, and would not be comforted, because they are not.","48%","77%"]],
 
 'File:Massacre of the Innocents (Ionian, 17th c., Byzantine museum).jpg':[
  ["Herod in the portico","He sits under the colonnade at the edge of the scene, giving the order and not carrying it out. St John Chrysostom explains the fury: the Magi had obeyed an infant lying in a manger, whom the king on his throne could not move — and when a king's anger is stirred by fear for his crown, it is inextinguishable.","22%","11%"],
