@@ -285,15 +285,15 @@ module.exports={
 
 "File:Raising of Jairus' daughter 03-19.jpg":[
  ["Christ at the bed","At the left he stands over the girl with his hand out. Dionisy has painted two moments on one wall, and this is the second of them.","33%","38%"],
- ["The girl on the bed","She lies wrapped and still while the room fills. Matthew compresses the story: the father says at the start that she is already dead, and St Augustine explains that Matthew has given the man's mind rather than his exact words.","50%","28%"],
- ["The mourners","The women at the left edge are the household's grief. Matthew mentions the minstrels and the people making a noise, and the first thing Christ does in the house is to get rid of them.","36%","14%"],
+ ["The girl on the bed","She is already sitting up, in white, reaching out so that her hand and his almost meet across the coverlet — he went in, and took her by the hand, and the maid arose. Matthew compresses the story: the father says at the start that she is already dead, and St Augustine explains that Matthew has given the man's mind rather than his exact words.","50%","28%"],
+ ["The parents behind the bed","Two figures only stand behind the bed, a woman in a white headcloth and a bearded man in white. Dionisy has not painted the minstrels and the people making a noise that Matthew mentions: by this moment in the story they have been put forth.","36%","14%"],
  ["Christ again, at the right","The same figure is painted a second time on the other side of the fresco, in the street. This is the earlier moment — Jesus arose, and followed him, and so did his disciples.","28%","70%"],
  ["Jairus at his feet","The small kneeling figures are the ruler of the synagogue, who came and worshipped him. He asked for a hand laid on a dead child, and the Gospel calls that worship.","57%","61%"]],
 
 'File:Tokalı Kilise Raising of daughter of Jairus - 2004 6964.jpg':[
  ["The cross in the halo","Even in a tenth-century cave church in Cappadocia, worn almost to the plaster, the bars of the cross are still visible in the halo. It is how the eye finds Christ in a crowd of haloed figures, and it is reserved to him alone.","11%","39%"],
- ["His hand reaching down","He bends over the bed and puts out his hand. The gesture is the same in every version of this scene for a thousand years, because the Gospel makes it the point: he took her by the hand.","37%","40%"],
- ["The girl","She lies small and wrapped on the bed, painted in the pale colours of the dead. Matthew's word for what he did to her is the word the Gospels use of the Resurrection — she was not woken, she was raised.","46%","42%"],
+ ["His hand reaching down","He bends over the bed and puts his hand out above the wrapped body. In every other version of this scene he takes her by the hand; here he cannot, because the painter has wound her up to the chin and left her no hand to take.","37%","40%"],
+ ["The girl","She lies wound head to foot in a blue-and-white striped shroud, with nothing of her showing. Matthew's word for what he did to her is the word the Gospels use of the Resurrection — she was not woken, she was raised.","46%","42%"],
  ["The great bed","The painter has given most of the wall to the bed and its patterned cover, so that the reader is looking at a deathbed before he sees anything else in the scene.","70%","45%"],
  ["The apostles behind him","They stand pressed together at his back, watching and doing nothing. Matthew says his disciples followed him into the house — this raising is one of the things they will be sent out to do in his name in the next chapter.","10%","30%"]],
 
