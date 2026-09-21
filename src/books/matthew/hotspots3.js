@@ -425,7 +425,7 @@ module.exports={
  ["The green mountain","The rock is painted as a solid green mass with no path up it. This is a real hill that three men climbed with him, six days after he had told them plainly that he must be killed and be raised again the third day.","62%","50%"]],
 
 'File:Icon of transfiguration (Spaso-Preobrazhensky Monastery, Yaroslavl).jpg':[
- ["The mandorla darkening at the centre","The rings of glory are painted darkest where Christ is, and the rays break out of the dark. Orthodox painting says by this that God is not made visible by the light: the nearer the eye comes, the less it can hold, which the Fathers call the divine darkness.","14%","50%"],
+ ["The dark mandorla","The glory is painted as a disc of deep blue-green with a paler star-shaped figure inside it, gold rays breaking outward through the dark and gold stars scattered in it. Orthodox painting says by this that God is not made visible by the light: the nearer the eye comes, the less it can hold, which the Fathers call the divine darkness.","14%","50%"],
  ["Elias","The prophet at the left, leaning in toward Christ. He had once stood on Horeb and been told to cover his face; here he stands and talks with him.","14%","25%"],
  ["Moses holding the book","At the right, with the Law in his hands. He had asked on Sinai to see the glory of God and was shown only the back parts; on Tabor he is inside the cloud, facing it.","14%","78%"],
  ["The disciples cast down","Three men fall down the whole width of the lower half, one shielding his eyes, one flat on his face, one scrambling away. Peter had just offered to build three tabernacles, and the voice out of the cloud answered him: This is my beloved Son; hear ye him.","78%","55%"],

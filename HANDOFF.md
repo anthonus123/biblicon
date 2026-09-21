@@ -437,6 +437,14 @@ Then, in the owner's priority order:
    - **The markers were not clean either.** 47 marker texts were wrong alongside the readings, and
      several times the *marker* was right where the *reading* contradicted it (the Monreale loaves,
      the Sinai Transfiguration, the two paralytics). Audit both together from now on.
+   - **And the marker audit is the part still outstanding.** Marker text was examined only on the
+     48 icons touched on 2026-09-21. **The other 65** — the 45 rows marked `checked-2026-08-21b`
+     and the 20 marked `checked-2026-08-22` — had their *readings* read against the pictures and
+     their *marker texts* never examined by anyone. Roughly one marker in three was wrong on the
+     48 that were checked, so assume something like twenty bad markers are still shipping. That is
+     the next sweep, and `icon_placement_audit.tsv` covers where markers sit, not what they say.
+   - One icon, `33237ce33d7b`, had **no row in the file at all** — 112 rows for 113 images — so it
+     was invisible to both sweeps. Read 2026-09-21 and its row added; the reading stands.
    Start with `BOOK=matthew node src/tools/quotes.js`: it lists 44 KJV clauses to read, almost all
    of them the documented false positives where our prose leads into a quotation.
    **Open question found and not yet resolved:** `Christos Iomenos Typhlon` is the sole icon
@@ -1953,5 +1961,15 @@ Forerunner is already shut up in prison.
   to tier c and takes its commentary with it, which is the owner's call.
 - 44 pre-existing clamp warnings: markers written above 9% ship at 9%. Cosmetic, untouched.
 - Luke's 63 remaining icons and Mark's 50 are still the standing work.
+
+**Checked again afterwards, and four things were wrong in today's own work**
+- `33237ce33d7b` had **no row in the audit file** — 112 rows for 113 icons — so "no PENDING rows"
+  was not the same as "all checked". Read, and its row added; the reading stands as written.
+- Two readings authored today each claimed to be **"the one icon"** whose inscription names another
+  Gospel, while the new `## Next` section says there are three. Both now cross-reference the others.
+- The Jonah scroll was Englished two ways in one drawer, reading against marker. Made one.
+- The Yaroslavl mandorla marker rested on a claim ("darkest where Christ is") that a second look at
+  the crop would not settle. Both reading and marker now describe what is unambiguous: a deep
+  blue-green disc with a paler star-shaped figure in it, gold rays breaking outward, stars in the dark.
 
 **Next.** Luke batch 2 — `baptism` (4) and `temptation` (2) — by the loop under "Active work".
