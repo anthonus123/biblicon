@@ -1973,3 +1973,39 @@ Forerunner is already shut up in prison.
   blue-green disc with a paler star-shaped figure in it, gold rays breaking outward, stars in the dark.
 
 **Next.** Luke batch 2 — `baptism` (4) and `temptation` (2) — by the loop under "Active work".
+
+## Session 2026-09-21c (the marker-text audit — the sweep the reading audit named as outstanding)
+
+**Did** — in progress; this block is updated as batches land.
+- Opened `src/books/matthew/icon_marker_audit.tsv`: one row per **marker**, not per icon, because
+  per-icon rows are how 47 bad marker texts hid behind 65 "checked" ones the first time. Every
+  `fixed` row is written **after** the edit lands in `hotspots.js`/`hotspots3.js` and after the old
+  wording is grepped out of the source — the reading audit's 28 phantom `fixed-2026-08-22` rows are
+  the reason that order is now a rule.
+- Working the 65 icons whose marker texts nobody had ever read against the picture (the rows marked
+  `checked-2026-08-21b` and `checked-2026-08-22` in `icon_reading_audit.tsv`): **347 markers**.
+  Loop per icon: `overlay.py OUT <key>` for the numbered circles on the picture, then `crop.py` on
+  anything small, then the edit, then the row.
+
+**Progress**
+- Batch 1 (`4f870c9`): 5 icons, 27 markers, **16 wrong**.
+- Batch 2 (`d561092`): 6 icons, 34 markers, **21 wrong**.
+- Batch 3 (`2e36bfc`): 6 icons, 35 markers, **16 wrong**.
+
+**What the errors are actually like** — three kinds, over and over:
+1. **The marker narrates the Gospel and credits the narration to the picture.** Peter "among the
+   servants" at a fire the painter filled with armoured soldiers; "another maid names him again"
+   where one maid is painted; "one Roman in armour, and the state behind the council" on a man
+   wearing a cap and a mantle.
+2. **Counts.** Eleven apostles where twelve are painted; "the three" asleep where a dozen lie;
+   "three prayers" where Christ is painted four times — and in that case the icon's own prose
+   reading had it right and the marker contradicted it.
+3. **Small things asserted without looking.** An open book that is a written sheet and an inkwell;
+   a heap of coins that lies flat in one layer; feet that are not in the photograph at all.
+- And the reverse happens too: several markers **understate** what is there. Luke's angel is
+  painted in the Dionysiou Gethsemane and nothing had ever named it; the fresco letters ΙȢΔΑС
+  beside the hanged Judas; ΙΣ ΧΣ is lettered either side of the lantern pole at St Nicholas Orphanos.
+
+**Next.** Icons 18–65 of the list, same loop. Then rebuild `Matthew Reader.html` once — the reader
+is deliberately left a build behind while the sweep runs, so history takes one 17 MB copy and not
+thirteen.
