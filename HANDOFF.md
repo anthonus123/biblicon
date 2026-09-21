@@ -334,10 +334,11 @@ than the picture's writing. That is a defensible per-Gospel choice and it is **n
 bug, but it is the one place where three readers show one picture under two names, and it is
 recorded here so nobody has to rediscover it. Noted 2026-09-20d; no reader was changed for it.
 
-**Also Matthew's problem, not Luke's — Matthew's prose readings for all three Nativity icons
-contradict the pictures.** Found 2026-09-21 while writing Luke's readings for the same three
-files at 2:1–7, which is the only time anyone will have had the panels open at full size *and*
-Matthew's text in front of them. Three for three:
+**FIXED 2026-09-21 at the owner's word ("fix the nativity") — Matthew's prose readings for all
+three Nativity icons contradicted the pictures.** Found the same day while writing Luke's
+readings for the same three files at 2:1–7, which is the only time anyone will have had the
+panels open at full size *and* Matthew's text in front of them. Kept here as the record of what
+was wrong and why the audit matters. Three for three:
 
 - `031 … Langadas`. Matthew's reading says *Joseph sits apart at the lower left, which is where
   Matthew's account puts him*. Joseph is at the **right**, kneeling, haloed, hands crossed on his
@@ -351,11 +352,23 @@ Matthew's text in front of them. Three for three:
   to the cave*. The shaft is **triple**, and there is no cave in the panel at all — nor a manger,
   which is the point Luke's reading of it turns on.
 
-Read together they look like three readings written from the standard Nativity composition rather
+Read together they were three readings written from the standard Nativity composition rather
 than from these three boards, which is precisely what the reading audit exists to catch (a third
-of the readings checked so far carried a false claim, and 27 are still unchecked). Matthew's
-*markers* on these files were not audited here and mostly do not make these claims. Fixing it
-rewrites a shipped reader, so it is **the owner's call**, same as the two items above and below.
+of the readings checked so far carried a false claim, and 27 are still unchecked).
+
+**What was done.** All three prose readings were rewritten against the pictures, and the markers
+were audited too — they were not clean either. **Eight marker texts were wrong and are now
+fixed:** the Langadas Theotokos "lies at rest" when she kneels; the Agios Vasileios shaft ran
+"down the fissure to the cave" when there is no cave, its messenger was "winged" when no wings
+survive, its upper-left corner was called "the Magi on the road" when nothing in it can be
+identified, its Theotokos had "hands open in prayer" when they are crossed on her breast, and its
+Child was "swaddled inside" a stone box when he lies along the top of it; and on the Evraidos
+panel "the beast's head at the edge of the frame" is, at full crop, a **young man in profile** —
+brow, nose, chin, dark curling hair — leaning past Joseph's shoulder, so the ox-and-ass reading
+attached to it was doubly wrong, and "the flock… small and asleep" is two animals. The three
+Langadas markers that were right — the single shaft down the cleft (checked by crop), the ranks
+of angels, the Magi riding — were left alone. **This still leaves 27 of Matthew's 113 readings
+unchecked**, and this episode is the argument for finishing that sweep.
 
 **Found while wiring Luke, and it is Matthew's problem, not Luke's — `Christos Iomenos Paralyton
 Dionysiou` is Bethesda.** The Dionysiou fresco Matthew's reader shows at 9:1–8, labelled there
@@ -1836,10 +1849,13 @@ person in Luke — both recorded in `picks.js` and in `## Next`.
   markers**, no clamp warnings, 455 quotations. `make` on all four; `git status` shows only
   `Luke Reader.html` changed — Matthew, Mark and John rebuilt byte-identical.
 
-**Also found, and written up in `## Next` rather than fixed** — Matthew's prose readings for
-all three Nativity icons contradict the pictures (Joseph on the wrong side, a reclining Theotokos
-who kneels, a single ray that is triple, and caves that are not there). It is the same class as
-the Bethesda paralytic and it rewrites a shipped reader, so it is the owner's call.
+**Also found, and then fixed at the owner's word in the same session** — Matthew's prose
+readings for all three Nativity icons contradicted the pictures (Joseph on the wrong side, a
+reclining Theotokos who kneels, a single ray that is triple, and caves that are not there). The
+owner said "fix the nativity", so all three readings were rewritten and the markers on those
+three files audited with them: **eight marker texts were wrong as well**, including one that
+called a young man's head in profile an ox or an ass. Details in `## Next`; Matthew's reader was
+rebuilt for it, and John, Mark and Luke rebuilt byte-identical.
 
 **Not done**
 - **63 of Luke's 68 icons still have no reading and no markers.** Next in Gospel order:
