@@ -304,4 +304,76 @@ module.exports={
  ["The falling apostles", "One pitched forward almost head-first down the slope, one crouched low and turning away: and suddenly, when they had looked round about, they saw no man any more, save Jesus only with themselves.", "80%", "55%"],
 ],
 
+// ---- chapter 11 ----
+
+"File:Baiophoros Dionysiou.jpg":[
+ ["The title", "ΒΑΙΟΦΟΡΟΣ, the Palm-bearing — the Church's name for the feast, painted straight onto the wall above the scene.", "9%", "55%"],
+ ["Christ's blessing hand", "Raised chest-high, the monogram IC XC over his halo. Mark gives him no words at all in this passage; every gesture here is the Church's addition.", "32%", "22%"],
+ ["The colt alone", "One animal under him, not two. Mark: and he sat upon him — where Matthew brings an ass and her colt both.", "64%", "20%"],
+ ["The boy in the tree", "Cutting a branch and passing it down. Mark never names the tree; it is John's Gospel that calls the branches palms.", "15%", "38%"],
+ ["The children in the road", "One has already thrown himself flat to spread his cloak under the colt's feet. Mark: many spread their garments in the way.", "82%", "34%"],
+ ["Jerusalem's gate", "The city's people are already coming out to meet him, red roofs and white walls behind them.", "38%", "82%"],
+],
+
+"File:005 Entry into Jerusalem Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The title", "Η ΒΑΙΟΦΟΡΟC, lettered in red at the upper left.", "12%", "14%"],
+ ["Christ looking back", "He rides forward but turns to face his own disciples rather than the city ahead of him.", "52%", "45%"],
+ ["The disciples", "Massed behind him under overlapping gold haloes.", "45%", "14%"],
+ ["The boy cutting branches", "Climbing the dark palm at the centre of the panel.", "18%", "47%"],
+ ["Jerusalem", "Red roofs at the upper right, its people already coming out at the gate.", "15%", "80%"],
+ ["The garments underfoot", "Laid in the road under the colt's hooves — the colt Mark says no man had ridden before this day.", "88%", "44%"],
+],
+
+"File:18 Triumphal entry into Jerusalem Icon from Saint Paraskevi Church in Adam..jpg":[
+ ["The title", "Η ΒΑΙΟΦΟΡΟC, across the top in pale letters.", "9%", "48%"],
+ ["Jerusalem", "The whole upper half of the board — walls, towers, a gold dome — filling the space Christ is riding toward.", "15%", "45%"],
+ ["Christ facing forward", "Unlike the icon beside this one, his head is turned toward the city, not back at his own disciples.", "42%", "47%"],
+ ["The crowd at the gate", "Painted coming out to meet him, one with a hand already raised.", "40%", "80%"],
+ ["The disciples", "Three following behind at the left, under gold haloes.", "45%", "14%"],
+ ["The child with the cloth", "Kneeling to spread a dark cloth in front of the colt's hooves.", "78%", "74%"],
+],
+
+"File:Entry into Jerusalem (Afon icon).jpg":[
+ ["The inscription", "Written straight onto the gold at the top of the panel.", "9%", "40%"],
+ ["Christ with the scroll", "Blessing with his right hand, a rolled scroll held in his left — the sign of one who teaches with authority.", "45%", "30%"],
+ ["The boy in the tree", "Climbing to cut branches, in red, at the centre of the panel.", "22%", "38%"],
+ ["Jerusalem's crowd", "Thirty or forty heads painted one behind another at the gate.", "30%", "76%"],
+ ["The disciples", "Banked in a close mass at the far left — among them the two Mark sent ahead for the colt, no longer distinguishable from the rest.", "45%", "10%"],
+ ["The children laying garments", "Kneeling in the road at the colt's feet.", "88%", "55%"],
+],
+
+"File:074 Cursing the fig tree Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["Jerusalem", "Walls, towers and cypresses at the upper left — the city Christ had ridden into the day before.", "16%", "16%"],
+ ["The apostles", "Packed into a wedge of overlapping haloes behind Christ.", "42%", "26%"],
+ ["Christ's stretched arm", "Reaching toward the tree. Mark: seeing a fig tree afar off having leaves, he came, if haply he might find any thing thereon.", "50%", "44%"],
+ ["The scroll", "Held in his left hand, the writing on it no longer legible.", "62%", "56%"],
+ ["The tree in full leaf", "Thick and healthy green, nothing withered in it — exactly the state Mark's verse finds it in: he found nothing but leaves; for the time of figs was not yet.", "32%", "82%"],
+],
+
+"File:Fig tree cursed 04-16.jpg":[
+ ["The bare tree", "A thin pale trunk with bare twigs and not one leaf — the tree already at the end of a story Mark has not yet told at this point in his own text.", "38%", "43%"],
+ ["Christ and the apostles", "Crowded together at the left, his arm out toward the tree.", "42%", "22%"],
+ ["The domed tower", "Rising between the two halves of the register — Ferapontov's own architecture, not anything Mark describes.", "15%", "50%"],
+ ["The supper", "A table spread with a white cloth, a company seated round it and an old man in a white head-cloth at its head.", "40%", "68%"],
+ ["The reclining figure", "Stretched full length in dark red on the floor at the company's feet — the second of the two scenes this one photograph takes in.", "80%", "65%"],
+],
+
+"File:Christ banish tradesmen from Temple (Monreale).jpg":[
+ ["Christ", "His hand comes down on the table at the centre.", "35%", "35%"],
+ ["The money-changers' table", "Coins heaped on it and pouring off the edge.", "65%", "46%"],
+ ["The sellers recoiling", "Three men at the right, under a hanging cage.", "40%", "76%"],
+ ["The rod behind his head", "A short rod raised behind Christ — St John's scourge of small cords, not anything Mark mentions.", "31%", "79%"],
+ ["The cage of doves", "Mark names the sellers of doves among those whose seats were overthrown.", "25%", "64%"],
+ ["The oxen driven out", "At the bottom edge — John's animals, not Mark's; Mark names no beast here at all.", "88%", "88%"],
+],
+
+"File:Rossano Gospels - Cleansing of the Temple.jpg":[
+ ["The inscription", "ΠΕΡΙ ΤΩΝ ΕΚΒΛΗΘΕΝΤΩΝ ΕΚ ΤΟΥ ΙΕΡΟΥ — concerning those cast out of the temple.", "9%", "45%"],
+ ["Christ", "In a gold himation at the left, two figures behind him.", "18%", "30%"],
+ ["The money-changer", "Bent over his table in the middle of the band.", "25%", "56%"],
+ ["The dove-carrier", "A man holding a cage of doves — Mark's own detail among the sellers named.", "23%", "81%"],
+ ["The oxen", "Hauled out at the right edge — St John's animals, folded into the same picture.", "22%", "92%"],
+ ["Isaiah", "One of four prophet busts below the scene, each holding nothing, his own words written in a column beneath him — the prophet Mark is quoting when Christ calls the temple the house of prayer.", "50%", "80%"],
+],
+
 };
