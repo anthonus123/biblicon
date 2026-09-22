@@ -2299,7 +2299,7 @@ SessionStart hook will show them.
   the crowd; Mark gives the bargain no setting at all.
 
 **Verified**
-- Scratch check of every quoted clause in the nine readings and 60 markers against
+- Scratch check of every quoted clause in the nine readings and 58 markers against
   `src/books/mark/kjv.json`: 56 clauses, all verbatim. The Matthew contrast quotations (*Drink ye
   all of it*, *Hail, master*, *hold him fast*, *Friend, wherefore art thou come?*, *for the
   remission of sins*) were checked against Matthew's `kjv.json`.
