@@ -130,10 +130,10 @@ and this file did not.
     reused (the list is below, and it is not Mark's list). **The reader now reaches 99 of its 455
     quotations**, up from none: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **5 of the 68 now have a prose reading and positioned markers, 33 markers in all** (first
-    batch, 2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou
-    `Prodromos Didaskon`). The other 63 are the work in progress, in batches of six to eight,
-    the loop Mark uses.
+  - **12 of the 68 now have a prose reading and positioned markers, 75 markers in all** (batch 1,
+    2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou `Prodromos
+    Didaskon`; batch 2, 2026-09-22e: the four Baptisms, both Temptations and `petersmother`). The
+    other 56 are the work in progress, in batches of six to eight, the loop Mark uses.
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43.
@@ -171,7 +171,7 @@ and this file did not.
 **Mark's readings are finished — 78 of 78, 513 markers, twelve batches.** Batch 12 (2026-09-22d)
 did 16:9-18: the three appearances to Mary Magdalene (`magdalene`) and the Dionysiou `Christos
 Apostolois` (`commission`, tier b), 38 markers. **The active work is now the Luke reader**, whose
-63 remaining icons are described below; it uses the same loop, set out here because every Mark
+56 remaining icons are described below; it uses the same loop, set out here because every Mark
 batch was run from it.
 
 **16:9-20 is the longer ending**, and it was handled as the Church reads it: the Mark Catena
@@ -179,12 +179,31 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 63 of 68 icons still want
-a reading and markers, next in Gospel order `baptism` (4), `temptation` (2), `petersmother` (1),
-`leper` (1) and `paralytic` (2). The trap that held through every Mark batch holds there too, one
+**Active work — the Luke readings.** See the Luke section further down: 56 of 68 icons still want
+a reading and markers, next in Gospel order `leper` (1), `paralytic` (2), `levi` (2) and
+`witheredhand` (1). Batch 2 (2026-09-22e) did the four Baptisms, both Temptations and
+`petersmother`, 7 icons. The trap that held through every Mark batch holds there too, one
 book further on: **Matthew's, Mark's and John's readers already have a reading of each shared file
 built on their own Gospel's words**, and that wording is often load-bearing in it. Draft Luke's
 first, dump the others afterwards, and read them side by side before committing.
+
+**For the owner, from Luke batch 2 (2026-09-22e).** The Monreale mosaics repeat across three
+readers now, and two things worth a note came out of writing Luke's own copy fresh rather than
+adapting Matthew's or Mark's:
+- **The stones-temptation mosaic's Latin caption is Matthew's, not Luke's.** LAPIDES ISTI PANE
+  FIANT is plural — *these stones* — which is Matthew 4:3's own wording (his Vulgate). Luke's
+  Greek has the devil ask for one: *command this stone that it be made bread* (4:3). The caption
+  was cut for Matthew's reader first and Luke's reading now says so rather than translating the
+  Latin as if it were its own verse.
+- **The pinnacle mosaic's Latin says SCRIPTUM EST — "it is written" — but Luke's own verb for this
+  third citation is different from his first two.** 4:4 and 4:8 both have *it is written*; 4:12
+  changes it to *It is said, Thou shalt not tempt the Lord thy God*. Luke's reading keeps the
+  Latin's literal sense but names the mismatch rather than smoothing it into "it is written" as
+  the inscription has it.
+- **The Ohrid Baptism panel paints an axe at the root of a tree** (bottom left, cropped and
+  confirmed), which no other Baptism icon in the pool does — and it makes an odd pair with
+  `Prodromos Didaskon Ioudaious` (3:7-14, batch 1), whose own tree the reading already noted has
+  no axe painted at it. Both readings now cross-reference the other.
 
 **For the owner, from batch 12 (2026-09-22d) — nothing changed in any other reader.**
 - **John's reader says the two Cretan `Noli me tangere` panels letter the words of both.** Of the
@@ -292,16 +311,17 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has 33 icons and 63 of its 68 still want a reading.** `picks.js`,
+**Also open — the Luke reader has 33 icons and 56 of its 68 still want a reading.** `picks.js`,
 `labels.js` and `overrides.js` were written 2026-09-20d from the survey table below: **33
 passages, 68 icons**, tiers 28a / 5b / 119c, `make check` green, and the reader's commentary is
 reachable on those 33 passages — **99 of its 455 quotations**, where before it reached none.
 The first batch of readings and markers was written 2026-09-21 — `nativity` (3), `forerunnerpreach`
-(1) and `fruits` (1), 33 markers — so what is left is 63 icons across 30 passages, next in
-Gospel order being `baptism` (4), `temptation` (2), `petersmother` (1), `leper` (1) and
-`paralytic` (2). What it needs, in order:
+(1) and `fruits` (1), 33 markers — and batch 2, 2026-09-22e, did `baptism` (4), `temptation` (2)
+and `petersmother` (1), 42 markers. What is left is 56 icons across 27 passages, next in
+Gospel order being `leper` (1), `paralytic` (2), `levi` (2) and `witheredhand` (1). What it needs,
+in order:
 
-1. **First, readings and markers for the remaining 63, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 56, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
    caveat the reading must honour — the first two recorded in `picks.js`, the third found while
@@ -2665,3 +2685,64 @@ the count had been read off a truncated grep. (3) Six coordinates had been patch
 overlay run, so the verification line claimed a pass that had not covered them; redrawn and read.
 Also *beside Christ's shoulder* → *beside his head* for ΜΗ ΜΟΥ ΑΠΤΟΥ, which is lettered at ~19% top
 where the shoulder is at ~30%.
+
+## Session 2026-09-22e (Luke readings and markers, batch 2: 3:21-22, 4:1-13, 4:38-41)
+
+**Did**
+- **Wrote 7 more of Luke's 68 icon readings and their markers**: the four Baptism icons (3:21-22),
+  both Monreale Temptation panels (4:1-13) and the Monreale healing of Simon's wife's mother
+  (4:38-41). 42 new markers, 75 in all across 12 files. The last three files are shared with
+  Matthew's and Mark's readers, so each was reread against Luke's own verses rather than adapted.
+- **The loop caught two real synoptic mix-ups before commit, both from `quotes.js`.** Drafting the
+  stones-temptation reading, the first pass glossed the mosaic's Latin LAPIDES ISTI (plural) as
+  *command that these stones be made bread* — Matthew's own wording (Matthew 4:3's Vulgate is
+  plural; Luke's Greek asks for one stone). And the pinnacle panel's SCRIPTUM EST was glossed *it
+  is written* — true of the Latin, but Luke's own verb for this third citation is not: 4:4 and 4:8
+  both say *it is written*, 4:12 changes it to *It is said*. Both readings now name the mismatch
+  instead of smoothing it away; see `## Next` for the owner-facing note.
+- **`quotes.js`'s sentence splitter needed working around, not just satisfied.** It only flags a
+  sentence containing an archaic word (thou, unto, shewed, …) and checks the *whole* sentence as one
+  substring of `kjv.json`; a clean verbatim quote embedded in a longer sentence with the reading's
+  own prose on either side of it fails even when the quote itself is exact. Every quotation in this
+  batch was rewritten so the quoted clause sits alone between a colon or em dash and the next
+  sentence boundary, with no non-scriptural words inside that span. Six such run-ons were caught and
+  fixed this way before the check went clean; none was a wrong quotation, all were structural.
+- **The Ohrid Baptism panel paints an axe at a tree root** — cropped and confirmed — which pairs
+  with the Dionysiou `Prodromos Didaskon Ioudaious` from batch 1, whose own tree the reading already
+  says has no axe. Both readings now cross-reference the other.
+- **Two markers were honestly hedged rather than guessed.** The worn mark at the foot of the
+  Langadas beam and the small light on the Hermitage icon are both described as too worn/small to
+  call a dove's shape with confidence, rather than asserted as one — the Adam panel's dove is the
+  one of the four painted clearly enough to name outright.
+
+**Why**
+- HANDOFF's own `## Next` named this batch after batch 1: the four Baptisms and two Temptations,
+  six icons; `petersmother` was added to round it to seven and finish the pericope group before the
+  next one (`leper`/`paralytic`) starts.
+
+**Verified**
+- `python3 src/tools/grid.py` on all 7 files, read at full size, plus targeted `crop.py` probes on
+  the Ohrid axe/river figure, the Adam title and tree roots, and the Hermitage dove and title —
+  the river-personification the Ohrid panel has is genuinely there; the Adam panel's "roots" a
+  first glance mistook for a second small figure turned out to be tree roots on closer crop.
+- `BOOK=luke node src/tools/quotes.js`: 0 KJV clauses to read, 0 Fathers issues — after the fixes
+  above; the first run found 6.
+- `BOOK=luke node src/check.js`: 0 clamp warnings — after moving four markers off sub-9% coordinates
+  the first run flagged.
+- `BOOK=luke python3 src/tools/overlay.py` on all 7, read sheet by sheet; **six coordinates moved**
+  after the first pass — the Langadas Forerunner's hand and angels/cloth, the Hermitage ray/small
+  light/angels-cloth, and the petersmother Christ's-hand and rebuked-not-touched markers were all
+  sitting off the feature they named. Re-rendered and confirmed on the second pass.
+- `make luke`: builds clean, `git status` shows only `Luke Reader.html` changed.
+
+**Not done**
+- **56 of Luke's 68 icons still have no reading and no markers.** Next in Gospel order: `leper` (1),
+  `paralytic` (2), `levi` (2, tierB) and `witheredhand` (1) — six icons across four passages.
+- No harvest, and no scripture stories. Both still as batch 1 left them.
+- The 50 Mark icons line in earlier sessions is stale — Mark finished in batch 12 (2026-09-22d).
+
+**Next.** Batch 3, same loop: `leper` (1), `paralytic` (2), `levi` (2), `witheredhand` (1). No
+shared-file caveats are recorded for these four in the wiring table, but check the composition
+against Luke's own verses anyway — `paralytic`'s Monreale mosaic paints the tiling of 5:19, which
+belongs to Luke and not to Matthew's or Mark's telling of the same miracle, so it is worth
+confirming neither of those two readings' wording has leaked in via a shared first draft.

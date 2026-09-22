@@ -55,4 +55,67 @@ module.exports={
  ["The tree with no axe", "One small bare-trunked tree stands between the two groups at his feet. The hardest sentence in the passage is about such a tree — And now also the axe is laid unto the root of the trees — and the painter has not put an axe at this one.", "73%", "58%"],
 ],
 
+"File:Baptism of Christ, Early XIV Century, St Mary Perivleptos Church, Ohrid Icon Gallery.jpg":[
+ ["Jesus also being baptized", "He is not first into the river but last of a crowd already gone under: Now when all the people were baptized, it came to pass, that Jesus also being baptized, and praying, the heaven was opened. Nothing in his size or his dress marks him apart from any other man at the Jordan — only the halo does.", "58%", "45%"],
+ ["The Forerunner's hand", "John leans from the rocks with his hand raised over Christ's head, not laid on it. Luke gives him no gesture here at all; what Luke says of the baptism belongs to what happens after John has finished, not to the act itself.", "40%", "26%"],
+ ["The heaven torn open", "A scalloped grey arc breaks the gold at the top edge, and a narrow beam falls from it. Luke's clause for it is bare of any description beyond the fact of it: the heaven was opened.", "12%", "48%"],
+ ["What is left of the dove", "The beam narrows at its foot to a small pale mark, worn nearly away. Luke's own phrase for what it once showed is more exact than Matthew's or Mark's: the Holy Ghost descended in a bodily shape like a dove upon him — a shape, not only a likeness.", "27%", "47%"],
+ ["The four angels", "They wait on the far bank with their heads bowed and their hands kept under the fall of their sleeves rather than shown bare. These two verses give the angels no part in the scene at all; the reverence is the icon's own.", "35%", "75%"],
+ ["The axe at the root", "A grey axe leans against a bare trunk at the water's edge — the one Baptism icon of Luke's four that keeps the Forerunner's own warning in view, spoken twelve verses earlier in this same chapter: and now also the axe is laid unto the root of the trees. The fresco of the Forerunner teaching the soldiers, earlier in this reader, paints that same warning with no axe at all; this one does.", "70%", "22%"],
+ ["The river in flight", "A small draped figure lies at the water's edge below Christ's feet, turned back over its own shoulder as if fleeing downstream. Luke's own sentence says nothing of the river; the figure comes from the Church's hymn for this feast, not from the Gospel text.", "84%", "28%"],
+],
+
+"File:019 Baptism of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The opened heaven", "A torn cleft of grey-green cloud fills the top third of the panel. Luke's own clause is the plainest of any Evangelist's for this moment: the heaven was opened — nothing about a shape or a manner, only that it happened.", "10%", "48%"],
+ ["The beam and its worn foot", "A broad orange-red shaft runs down the centre from the cleft toward Christ's head, ending in a small dark mark too flattened by wear to call a bird with any confidence. What the shaft stands for is Luke's own sentence: the Holy Ghost descended in a bodily shape like a dove upon him.", "36%", "47%"],
+ ["The little trees on the banks", "Small dark trees, trunk and canopy reduced to a few strokes, stand in a row along each slope of the opened heaven — the landscape the painter has given the vision, not anything Luke's two verses describe.", "18%", "20%"],
+ ["The Forerunner's hand", "John leans in from the left, his hand raised over Christ rather than resting on him — the same restraint the Ohrid panel keeps, closer to Luke's own silence about any touch in these verses.", "48%", "26%"],
+ ["The angels and the cloth", "Two winged angels stand one behind the other at the right, heads bowed, a white cloth held between them so their own hands stay covered rather than bare. Luke gives no angel any part in the baptism itself.", "54%", "68%"],
+ ["Christ in the water", "He stands upright in flat dark green between the two banks, his body reduced by the panel's wear to little more than an outline. Luke's own clause insists on what can no longer be read in his face: Jesus also being baptized, and praying.", "62%", "45%"],
+],
+
+"File:03 Baptism of Christ Icon from Saint Paraskevi Church in Adam.jpg":[
+ ["The inscription", "Red letters run across the top, worn to fragments that still give the sense of a title — the Baptism … of Christ — rather than a word that can be read whole.", "10%", "35%"],
+ ["The dove", "A white dove with rays spreading from its wings descends on a straight shaft out of grey cloud — the one icon of Luke's four in this reader where the bird itself, and not only the light around it, is still there to be seen: the Holy Ghost descended in a bodily shape like a dove upon him.", "20%", "48%"],
+ ["The Forerunner's hand", "John lays his hand directly on Christ's head, his other hand holding the end of his own cloak. Luke's own account gives him no gesture at all; what is shown here is the Church's addition to a scene Luke tells in one subordinate clause.", "38%", "38%"],
+ ["The angels and the cloth", "Three haloed angels stand at the right, the foremost holding a white cloth ready in both hands. None of the three has a face left distinct enough to read an expression from.", "45%", "78%"],
+ ["The roots in the water", "Bare tree roots run down both banks toward Christ's feet, tangled but empty of any tool among them — no axe cut into either trunk, unlike the Ohrid panel. Luke's two verses give the river no figure and no name at all.", "85%", "45%"],
+ ["Christ in the water", "He stands with both feet visible through the dark surface, his body pale against it. Luke names no place and no witness beside John and the angels in these two verses; the water is where the whole event happens.", "62%", "48%"],
+],
+
+"File:0663Ha. Hermitage Museum (Hall 143). Icon of the Epiphany.jpg":[
+ ["The inscription", "A line of Church Slavonic letters runs across the top of the board, too worn now to make out beyond its position — where every Russian Epiphany icon carries its title.", "9%", "45%"],
+ ["The star at the cleft", "A white radiant burst breaks the top of the black wedge where the two banks of cloud meet. It stands for Luke's opened heaven, painted here as light bursting through a tear rather than as the scalloped arc the Greek panels use.", "18%", "48%"],
+ ["The ray to Christ's head", "A single silver line runs down the black wedge from the star toward a second, smaller point of light just above Christ's halo — the most direct picture, of Luke's four, of one unbroken clause: the Holy Ghost descended in a bodily shape like a dove upon him.", "24%", "48%"],
+ ["The small light at its foot", "Where the ray ends, just above Christ's halo, a tiny white mark with a few illegible red letters beside it stands for the dove itself, too small and too worn at this size to show a bird's shape with any certainty.", "31%", "49%"],
+ ["The Forerunner's hand", "John, in green, lays his hand on Christ's head from the left. Luke's own sentence gives him no action here at all — every verb in these two verses belongs to Christ, to the Spirit, or to the voice from heaven.", "38%", "27%"],
+ ["The angels and the cloth", "Three winged angels lean in from the right in a diagonal file, the foremost holding a folded white cloth in both covered hands. The black water below them is unpeopled — no river given a face or a body in this telling.", "56%", "66%"],
+],
+
+"File:Christ's temptation (Monreale).jpg":[
+ ["Full of the Holy Ghost, from Jordan", "The same figure Matthew's and Mark's readers show, standing on bare rock with a closed scroll, but Luke's own first sentence is what sends him here, and it comes straight out of the baptism just told: And Jesus being full of the Holy Ghost returned from Jordan, and was led by the Spirit into the wilderness.", "18%", "25%"],
+ ["The tempter's words", "SI FILI DI ES DIC VT LAPIDES ISTI PANE FIANT — the mosaic's own Latin, Matthew's plural stones. Luke's own devil asks for one: If thou be the Son of God, command this stone that it be made bread. It is the one temptation both Evangelists tell in the same order.", "9%", "68%"],
+ ["Christ's answer", "SCRIPTUM EST — it is written. Luke's own wording of the reply is shorter than Matthew's: that man shall not live by bread alone, but by every word of God, stopping short of Matthew's addition that proceedeth out of the mouth of God.", "9%", "10%"],
+ ["The five stones", "Round and white on the bare ground between them, the thing the devil asked to have made bread. Christ answers the request without ever addressing the stones themselves.", "60%", "50%"],
+ ["The devil", "Dark, winged and gaunt, reaching a hand toward the stones rather than toward Christ. Luke calls him simply the devil through these thirteen verses — no other name, no other title.", "36%", "78%"],
+ ["The order this scene keeps", "This is the first of Luke's three temptations, and the only one where his order agrees with Matthew's. The two that follow do not: Luke's own sequence puts the mountain of the kingdoms next and the pinnacle of the temple last, reversing Matthew's middle and end.", "82%", "15%"],
+],
+
+"File:Cathedral (Monreale) - Right wing transept - 2nd Temptation of Christ.jpg":[
+ ["The devil's words", "SI FILIUS DEI ES MITTE TE DEORSUM — if thou be the Son of God, cast thyself down from hence. In Luke's own order this is the third and last temptation, not the second as Matthew has it.", "9%", "65%"],
+ ["Christ's answer", "SCRIPTUM EST NON TEMPTABIS DOMINUM DEUM TUUM — the inscription's own it is written, though Luke's own text uses a different verb for this third citation: It is said, Thou shalt not tempt the Lord thy God. Every answer Christ gives in this contest, in either Evangelist's order, is a quotation, never an argument of his own.", "9%", "12%"],
+ ["Jerusalem beneath his feet", "The small arcaded building under Christ's feet is the pinnacle of the temple, and Luke alone names the city it stands in: he brought him to Jerusalem. Matthew's parallel calls it only the holy city.", "70%", "30%"],
+ ["The tempter, reaching but not touching", "He hangs beside Christ in the air, winged and dark, his hand out toward him without contact — the same distance he kept over the stones in the first temptation, on the same wall.", "35%", "70%"],
+ ["Departed for a season", "What the picture cannot show is how the contest ends: when the devil had ended all the temptation, he departed from him for a season. Luke's own word for it is temporary, not final, and gives Christ none of Matthew's angels sent at once to minister to him.", "82%", "62%"],
+],
+
+"File:Monreale - Jesus heals Simon's mother in law.jpg":[
+ ["The inscription", "IHS LIBERAT SOCRUM SIMONIS A MAGNIS FEBRIBUS — Jesus frees Simon's mother-in-law from a great fever. Magnis, great, is Luke's own word; neither Matthew nor Mark qualifies the fever at all.", "9%", "35%"],
+ ["Christ's hand, not yet touching", "He crosses the room with his arm already out toward her, the hand still short of hers. Luke's account never closes that gap in words either: he stood over her, and rebuked the fever, with no touch reported at any point.", "63%", "32%"],
+ ["Simon's wife's mother", "She has raised herself from the bed and reaches back toward Christ's hand. Luke names her only by the men she belongs to — Simon's wife's mother — and gives her no name of her own, as none of the Synoptics do.", "50%", "75%"],
+ ["The four from the synagogue", "The men behind Christ are those who had just come with him out of the synagogue — Luke's own account of how this house was reached: he arose out of the synagogue, and entered into Simon's house.", "45%", "10%"],
+ ["The face in the doorway", "A fifth head looks in from an upper doorway at the right, unremarked in any of the three Gospels' accounts of this house.", "30%", "82%"],
+ ["Rebuked, not touched", "The gap of bare gold between Christ's hand and hers is the whole of Luke's difference from Matthew and Mark: he stood over her, and rebuked the fever; and it left her — a word spoken over her, the same verb Luke's Gospel uses elsewhere for silencing unclean spirits, not a hand laid on.", "63%", "48%"],
+],
+
 };
