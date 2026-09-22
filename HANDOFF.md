@@ -196,7 +196,8 @@ Next batch: 15:42-47 (4) with 16:1-8 (1), five icons. Then 16:9-18 (4) last, whi
 - **The six Crucifixions paint 15:33-41 as much as 15:21-28** — the sponge (15:36), the dead Christ
   (15:37), the centurion (15:39), the women — and `death` and `veil` stay tier c, as `picks.js`
   already records. It is the `betrayer`/`council` shape again; the readings anchor on 21-28 and name
-  each later verse as its own passage's.
+  each later verse as its own passage's (the one marker that quoted 15:32 bare was fixed in the
+  follow-up commit).
 
 **For the owner, from batch 9 (2026-09-22) — nothing changed for any of these.**
 - **Both icons of Mark 14:53-59 (`council`) paint verse 63, the rending of the garment**, which
@@ -2455,10 +2456,18 @@ contour. The Langadas ending and the Byzantine Museum *King of Glory* sentence w
 the comparison because their shape had come across from Matthew's (*the blood of the second Adam
 runs down onto the first*; *writes what the Church confesses in its place*).
 
+**Follow-up after review, same session.** Four more corrections: the Sinai frame's top row has a
+long-haired, bearded figure with a staff at its centre, neither apostle nor archangel and its name
+worn away, and the reading and marker had described the row without it; the Stavrosis inscriptions
+were transcribed `Ο ΑΓ(ΙΟΣ)` where the wall carries Ο Α with a mark above, now `Ο Α(ΓΙΟΣ)`; the
+Dionysiou thief marker quoted 15:32 without saying it is the next passage's; and *What none of the
+six paints* became *shows*, since the Great Lavra file is only a detail of its fresco.
+
 **Verified**
-- Scratch clause check (`clauses.js` in the session scratchpad): 53 clauses, every one verbatim in
-  `src/books/mark/kjv.json` (or John's/Matthew's for the contrasts) and present in the text, bar
-  sentence-initial capitals.
+- Scratch clause check (`clauses.js` in the session scratchpad): 53 candidate clauses listed; the
+  49 that are in the text are all verbatim in `src/books/mark/kjv.json` (or John's/Matthew's for the
+  contrasts) bar two sentence-initial capitals, and the other 4 were candidates not used — two of
+  them the paraphrases corrected away.
 - `BOOK=mark node src/tools/quotes.js`: 50 to read (49 before), 0 wrong Father, 0 no source, 0
   drift; the one new line is prose leading into *they bring him unto the place Golgotha*, verbatim.
 - `overlay.py` on all seven keys, two passes. First pass 61 of 63 on target; moved the Sinai frame
