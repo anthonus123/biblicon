@@ -657,4 +657,68 @@ module.exports={
  ["The place of a skull", "The rock bursts open in pale rays where the cross goes into it, and in the cave below lies a skull. Golgotha, which is, being interpreted, The place of a skull.", "90%", "52%"],
 ],
 
+"File:Etesatou Ioseph Somatou Christou.jpg":[
+ ["ΗΤΗΣΑΤΟ ΙΩΣΗΦ", "ΗΤΗΣΑΤΟ ΙΩΣΗΦ ΤΟ ΣΩΜΑ ΤΟΥ Ι(ΗΣΟ)Υ — Joseph asked for the body of Jesus. Matthew, Mark and Luke share the Greek words; in Mark the King James gives them as craved the body of Jesus.", "10%", "55%"],
+ ["Pilate", "Crowned, in red with a blue-grey cloak, enthroned under a shell-headed niche. Mark gives him the same astonishment he showed at the trial, where Jesus yet answered nothing; so that Pilate marvelled. Here: Pilate marvelled if he were already dead.", "32%", "32%"],
+ ["Pilate's hand", "Raised with the palm out, toward the soldier and the old man together. In Mark, Pilate does not answer Joseph until he has asked the centurion whether he had been any while dead.", "42%", "44%"],
+ ["The soldier", "Young and beardless, in armour and a red cloak, a spear in his hand and a round shield slung behind him. Mark alone has Pilate call the centurion before he gives up the body; the fresco does not say whether this is he.", "45%", "53%"],
+ ["Joseph of Arimathaea", "Grey-haired, haloed, in green — the same figure takes the body down and wraps it in the next two Dionysiou scenes. Mark calls him an honourable counsellor, which also waited for the kingdom of God.", "39%", "83%"],
+ ["His open hands", "Both held out, palms up: asking, not demanding. Mark's word for how he came is boldly, and the boldness was in the asking — went in boldly unto Pilate, and craved the body of Jesus.", "48%", "72%"],
+ ["The starred sky", "Dark and sown with stars. Mark begins with the hour: And now when the even was come, because it was the preparation, that is, the day before the sabbath.", "20%", "58%"],
+],
+
+"File:Apokalthelosis Dionysiou.jpg":[
+ ["Η ΑΠΟΚΑΘΗΛΩΣΙΣ", "The unnailing — the Church's name for the scene, split either side of Joseph's halo. Mark's words are and took him down, and he never mentions the nails.", "10%", "33%"],
+ ["Joseph", "The grey-haired man in green who asked Pilate for the body in the first icon of this passage, now taking its weight round the waist. Every verb of the burial in Mark is his: he bought fine linen, and took him down.", "18%", "50%"],
+ ["The Theotokos", "She has taken the head as it comes free and laid her face against his. Mark does not mention her at the cross or at the burial.", "20%", "35%"],
+ ["The ladder", "Still propped against the crossbeam at the left.", "17%", "22%"],
+ ["The pincers", "A dark-haired man kneels at the foot of the cross drawing a nail from the feet. Byzantine painters give this place to Nicodemus, whom only John names; Mark names no one with Joseph.", "72%", "57%"],
+ ["The drawn nails", "Two nails already out stand upright in a basket at his knee. Mark's account of the crucifixion says only, And when they had crucified him.", "83%", "59%"],
+ ["The woman with his hand", "In yellow, she holds Christ's loose right hand to her cheek, with two more women behind her. The painter does not name them. Mark's two at the burial are Mary Magdalene and Mary the mother of Joses.", "47%", "21%"],
+ ["The young disciple", "He rests his cheek on Christ's left hand. The place is from John's Gospel; in Mark's, at the arrest, they all forsook him, and fled.", "38%", "64%"],
+ ["The woman in green", "At the back, one hand at her face and the other open. Mark's women beheld where he was laid; the painter gives them grief as well.", "37%", "83%"],
+ ["The place of a skull", "A black cave opens in the rock under the cross with a skull in it: Golgotha, which is, being interpreted, The place of a skull.", "89%", "50%"],
+],
+
+"File:Epitaphios Threnos Dionysiou.jpg":[
+ ["Ο ΕΠΙΤΑΦΙΟΣ ΘΡΗΝΟΣ", "The lament at the grave: the Church's name for this scene and for the lamentations sung over the tomb at the Matins of Holy Saturday. No Gospel describes it, and Mark records no weeping.", "9%", "37%"],
+ ["The linen", "White linen under the body, and Joseph's hands in its end, ready to fold it over the feet. The buying is in Mark alone: he bought fine linen, and took him down, and wrapped him in the linen.", "68%", "71%"],
+ ["Joseph", "Grey-haired, haloed, bent over the feet: the man who went in to Pilate and took the body down in the first two icons of this passage.", "57%", "70%"],
+ ["The Theotokos", "ΜΡ ΘΥ beside her. She holds his head in her lap, her face bent down onto his. Mark does not mention her at the burial; the two women he names are Mary Magdalene and Mary the mother of Joses.", "64%", "25%"],
+ ["St John", "ΙΩ beside his halo. He bends over the body with his cheek on Christ's hand. Mark has no disciple at the burial.", "60%", "49%"],
+ ["The woman in red", "One arm flung up and the other hand at her chin, the most violent grief in the picture. The painter names none of the women; Mark says only that two of them beheld where he was laid.", "49%", "15%"],
+ ["The man with the ladder", "He carries the ladder on his shoulder and rests his cheek on his hand. Byzantine painters give him the name of Nicodemus, from John's Gospel; Mark names no one but Joseph.", "43%", "88%"],
+ ["The basket", "Under the slab, a basket holding the pincers and the drawn nails.", "90%", "48%"],
+ ["The bare cross", "The cross stands empty behind the body, with two angels flying in at the upper corners.", "30%", "46%"],
+],
+
+"File:Cathedral (Monreale) - Left wing transept - North wall - Entombment.jpg":[
+ ["PONITUR IN SEPULCRO", "The Latin title, split by the angels' wings: [C]ORP(US) X(RISTI) PONITUR I(N) SEPULCRO — the body of Christ is laid in the sepulchre.", "12%", "78%"],
+ ["The rock tomb", "A rounded mass of rock with a door cut in its side: a sepulchre which was hewn out of a rock.", "30%", "88%"],
+ ["The open door", "Dark inside, and still open. Mark's verse ends with Joseph closing it — and rolled a stone unto the door of the sepulchre — which the mosaic does not reach.", "65%", "76%"],
+ ["The face of Christ", "Eyes closed, the only part of him left uncovered, inside a halo marked with the cross.", "48%", "66%"],
+ ["The linen", "Wound round the body from shoulder to foot like swaddling bands. Mark alone says Joseph bought it: And he bought fine linen.", "60%", "38%"],
+ ["The elder at the head", "White-haired and haloed, stepping to the threshold with the head and shoulders in his arms. The mosaic needs two men to carry the body; Mark names only Joseph.", "40%", "57%"],
+ ["The bearer at the feet", "A younger man with a brown beard holds the feet. Mark does not name him or anyone else; the burial in Mark is Joseph's alone.", "45%", "21%"],
+ ["The Mother of God", "Veiled in dark brown, bending her face toward the body. Mark does not mention her at the burial.", "44%", "30%"],
+ ["The young disciple", "Behind her, his cheek on his hand. Mark has no disciple at the burial.", "42%", "42%"],
+ ["The angels", "Two angels fly down over the procession, one behind the other.", "18%", "32%"],
+ ["The two flasks", "Small white flasks on the ground at the bearers' feet. Mark's burial has no spices; his women buy them when the sabbath was past.", "92%", "45%"],
+],
+
+// ---- chapter 16 ----
+
+"File:Ide Topos pou Ekato Dionysiou.jpg":[
+ ["ΙΔΕ Ο ΤΟΠΟΣ", "Behold the place — the opening words are Mark's Greek exactly: behold the place where they laid him.", "9%", "47%"],
+ ["ΟΠΟΥ ΕΚΕΙΤΟ Ο Κ(ΥΡΙΟ)Σ", "Where the Lord lay — the ending is Matthew's, not Mark's. Matthew's angel says, Come, see the place where the Lord lay.", "9%", "75%"],
+ ["The women", "Two, haloed, pressed together, each with a hand at her face. Mark names three: Mary Magdalene, and Mary the mother of James, and Salome.", "27%", "15%"],
+ ["The flasks", "Two small gold vessels held between the women. Matthew says they came to see the sepulchre; Mark says what they carried, and why: they had bought sweet spices, that they might come and anoint him.", "46%", "18%"],
+ ["The stone", "Huge and red, thrown down across the rock. Mark alone gives the women's question — Who shall roll us away the stone — and what they found: the stone was rolled away: for it was very great.", "62%", "40%"],
+ ["The angel on the stone", "Seated on the stone with a staff, his face turned toward the women and one hand laid out on the rock toward the tomb. The angel on the stone is Matthew's: he rolled back the stone from the door, and sat upon it.", "24%", "41%"],
+ ["The angel within", "Seated behind the open coffin, before the mouth of the cave, his hands on his knees, in a long pale robe over rose — the nearer of the two to Mark's words: a young man sitting on the right side, clothed in a long white garment.", "25%", "80%"],
+ ["Ο ΑΓΙΟΣ ΤΑΦΟΣ", "The holy sepulchre, lettered on the dark mouth of the cave.", "46%", "67%"],
+ ["The grave-cloths", "Linen bands in the open coffin, the head-cloth folded apart at the end. Mark does not describe them. They lie empty: he is risen; he is not here.", "61%", "82%"],
+ ["The guard", "Soldiers sprawled in their armour, one stretched across his shield. The watch at the tomb is Matthew's alone; Mark reports no guard.", "82%", "55%"],
+],
+
 };
