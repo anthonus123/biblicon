@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **28 of the 78 have a prose reading and positioned markers,
-    150 markers in all**; the other 50 are the work in progress.
+    differs (see the Gotcha below). **34 of the 78 have a prose reading and positioned markers,
+    188 markers in all**; the other 44 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,15 +166,22 @@ and this file did not.
 
 ## Next
 
-**Active work — the 50 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 28 of the 78 icons are finished. The
-remaining 22 passages, with how many icons each still needs:
+**Active work — the 44 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 34 of the 78 icons are finished — batch 5
+(2026-09-21) did the Syrophoenician woman, the four thousand fed, and all four Transfiguration
+icons at 9:1-8, 38 markers, one commit. Two of that batch's own gotchas, in case the pattern
+repeats: the Canaanite fresco's inscription keeps Matthew's name for the woman where Mark calls
+her Syrophenician, and the Monreale "Multiplication of the Loaves and Fishes" mosaic's Latin
+carries the first feeding's numbers (five loaves, five thousand, twelve baskets) under Mark's
+seven-loaves, four-thousand pericope — the same mismatch already logged for Matthew's own reader
+at 15:29-39, now confirmed on the Mark side too. The remaining 19 passages, with how many icons
+each still needs:
 
 ```
-7:24-30 (1)   8:1-9 (1)    9:1-8 (4)    11:1-10 (4)  11:11-14 (2) 11:15-18 (2)
-13:21-27 (1)  14:3-9 (1)   14:10-11 (1) 14:22-25 (3) 14:32-42 (3) 14:43-52 (3)
-14:53-59 (2)  14:66-72 (2) 15:1-5 (2)   15:6-15 (2)  15:16-20 (1) 15:21-28 (6)
-15:42-47 (4)  16:1-8 (1)   16:9-13 (3)  16:14-18 (1)
+11:1-10 (4)   11:11-14 (2) 11:15-18 (2) 13:21-27 (1)  14:3-9 (1)   14:10-11 (1)
+14:22-25 (3)  14:32-42 (3) 14:43-52 (3) 14:53-59 (2)  14:66-72 (2) 15:1-5 (2)
+15:6-15 (2)   15:16-20 (1) 15:21-28 (6) 15:42-47 (4)  16:1-8 (1)   16:9-13 (3)
+16:14-18 (1)
 ```
 
 The loop that works, six to eight icons at a time, one commit each:
@@ -2083,4 +2090,43 @@ eyes cannot be seen either way. Marker and reading now say what can be seen and 
 
 **Next.** Luke batch 2 — `baptism` (4) and `temptation` (2) — by the loop under "Active work". Mark's
 50 are the other standing batch of the same work.
+
+## Session 2026-09-21d (Mark readings and markers, batch 5: 7:24-9:8)
+
+**Did.** Six icons, three passages, 38 markers, one commit (`26ffcec`), following the loop under
+"Active work" exactly: `grid.py` on each key, read the grid image itself, write the prose in
+`hotspots2.js` and the markers in `hotspots3.js`, `quotes.js` before committing, `assemble.js` +
+`overlay.py` after, `make check` and `make mark` at the end.
+- `syrophoenician` (7:24-30, 1 icon) — the Dionysiou fresco of the Canaanite woman. Its own
+  inscription and Matthew's reader both call her Χαναναίας, Canaanite; Mark's word is different —
+  *a Greek, a Syrophenician by nation* — and the reading says so rather than silently matching
+  Matthew's. Mark's Christ also answers her differently: no *O woman, great is thy faith* (that is
+  Matthew's), only *For this saying go thy way*.
+- `fourthousand` (8:1-9, 1 icon) — the Monreale mosaic already flagged in Matthew's own reader as
+  showing the wrong feeding (its Latin gives five loaves, five thousand, twelve baskets). Same file,
+  same problem, confirmed independently against Mark's seven loaves and four thousand rather than
+  copied from Matthew's finding.
+- `transfiguration` (9:1-8, 4 icons) — Sinai 12th c. (a worn detail of a wider festal beam), the
+  1885 Langadas panel signed by Stavros Margaritis, a second Sinai panel (the only one of the four
+  with no mandorla or halo on Christ), and the Yaroslavl panel with its extra ascent/descent
+  registers. Elias and Moses swap sides between icons — checked by crop on each one rather than
+  assumed from a pattern — and the descent scene in the Yaroslavl icon was noted as belonging to
+  9:9, the next pericope, not to these eight verses.
+
+**Verified**
+- `BOOK=mark node src/tools/quotes.js`: 15 clauses to read, 0 wrong Father, 0 no source, 0 drift.
+  The two new flags from this batch are both intentional — sentences contrasting Mark's wording
+  with Matthew's, which correctly aren't verbatim KJV.
+- A direct Python substring check of every quoted clause against `kjv.json` (case/quote-mark
+  aware) confirmed all twelve KJV excerpts used in this batch's prose and markers.
+- `overlay.py` on all six keys: all placements landed on their referents; two markers on the
+  Sinai 12th-c. icon (John, James) were nudged after the first sheet showed them sitting on
+  neighbouring rocks rather than the figures.
+- `make check`: green, no new failures. `make mark`: rebuilt clean, 12.42 MB.
+
+**Not done.** The other 44 Mark icons across 19 passages, starting at 11:1-10 (`entry`, 4 icons).
+Luke's 63 icons are also still untouched.
+
+**Next.** Continue the Mark loop at `entry` (11:1-10, 4 icons), `figtree` (11:11-14, 2) and
+`temple` (11:15-18, 2) — a natural eight-icon batch since all three sit in one chapter.
 
