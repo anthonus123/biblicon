@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **69 of the 78 have a prose reading and positioned markers,
-    428 markers in all**; the other 9 are the work in progress.
+    differs (see the Gotcha below). **74 of the 78 have a prose reading and positioned markers,
+    475 markers in all**; the other 4 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,20 +166,41 @@ and this file did not.
 
 ## Next
 
-**Active work — the 9 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 69 of the 78 icons are finished — batch 10
-(2026-09-22b) did the mocking and the six Crucifixions (15:16-28), seven icons and 63 markers
-(`30ee516`). The trap that has held through every Passion batch: **Matthew's reader already has a
+**Active work — the 4 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 74 of the 78 icons are finished — batch 11
+(2026-09-22c) did the Burial and the tomb (15:42-16:8), five icons and 47 markers (`1c0ef6e`). The trap that has held through every Passion batch: **Matthew's reader already has a
 reading of each shared file built on Matthew's words**, and his wording is often load-bearing in
 it — *Friend, wherefore art thou come?* at the kiss, *Caiaphas* at the trial, *the governor
-marvelled greatly*, the washing of the hands. The same care applies to the Burial and the tomb.
-The remaining 4 passages, with how many icons each still needs:
+marvelled greatly*, the washing of the hands. The remaining 2 passages, with how many icons each
+still needs:
 
 ```
-15:42-47 (4)  16:1-8 (1)  16:9-13 (3)  16:14-18 (1)
+16:9-13 (3)  16:14-18 (1)
 ```
 
-Next batch: 15:42-47 (4) with 16:1-8 (1), five icons. Then 16:9-18 (4) last, which finishes Mark.
+Next batch: 16:9-18, four icons — the three appearances to Mary Magdalene (`magdalene`) and the
+Dionysiou `Christos Apostolois` (`commission`, tier b). It finishes Mark. **16:9-20 is the longer
+ending**, and the Mark Catena comments on it as Mark's (blocks 9–13, 14–18, 19–20). The
+suggestion — not the owner's ruling — is to read it as the Church reads it, as Scripture, and not
+raise the manuscript question in an icon reading. The Magdalene icons will paint
+John 20:17 (*Touch me not*), which Mark does not have — Mark 16:9 has only *he appeared first to
+Mary Magdalene, out of whom he had cast seven devils*. That is the `council`/`betrayer` shape
+again: say whose words the picture paints.
+
+**For the owner, from batch 11 (2026-09-22c) — nothing changed in any other reader.**
+- **Matthew's reading of `Ide Topos pou Ekato Dionysiou` misdescribes both angels.** It says the
+  second angel is *standing beyond the tomb at the right*; at crop (35–62% top, 64–96% left) he is
+  seated, his lap and knees under the robe and his hands on his knees. It says the angel on the
+  stone has *his hand out toward the women*, and its marker says the same; at crop (30–60%, 30–62%)
+  his only visible hand is laid palm-down on the rock to his right, toward the tomb, away from the
+  women — his face is what turns toward them.
+- **John's reader calls the Monreale Entombment's figure with a hand at the cheek "a woman".** At
+  crop (30–62%, 30–55%) the head is bare, curly-haired and beardless — the young disciple; every
+  woman in the mosaic is veiled. John's reader of all readers should name him. The same reading
+  also says the Mother of God *holds the body at its middle*; at crop her hands are not visible.
+- **The `Ide Topos` inscription is half Mark's, which sharpens the "one fresco, two captions" note
+  below.** ΙΔΕ Ο ΤΟΠΟΣ is Mark 16:6's Greek exactly (Matthew 28:6 has δεῦτε ἴδετε τὸν τόπον); ΟΠΟΥ
+  ΕΚΕΙΤΟ Ο Κ(ΥΡΙΟ)Σ is Matthew's. Mark's reading now says so. Nothing else changed for it.
 
 **For the owner, from batch 10 (2026-09-22b) — nothing changed in any other reader.**
 - **John's reader misdescribes the Great Lavra Crucifixion (Theophanes, 1535).** Its reading says
@@ -2480,3 +2501,52 @@ six paints* became *shows*, since the Great Lavra file is only a detail of its f
 
 **Next.** Mark 15:42-47 (4) with 16:1-8 (1), then 16:9-18 (4), which finishes Mark.
 
+
+## Session 2026-09-22c (Mark readings and markers, batch 11: 15:42-47, 16:1-8)
+
+**Did.** Five icons, two passages, 47 markers, one commit (`1c0ef6e`), the loop under "Active
+work". About thirty crops before writing. Matthew's and John's texts for the same files were
+dumped and read only after Mark's were drafted; Luke has none of these five read yet.
+- `burial` (15:42-47, four icons), each anchored on a different verse. Dionysiou `Etesatou`: the
+  inscription ΗΤΗΣΑΤΟ ΙΩΣΗΦ ΤΟ ΣΩΜΑ ΤΟΥ Ι(ΗΣΟ)Υ is the Synoptics' shared Greek, which the KJV renders
+  *craved* only in Mark; *went in boldly*, *an honourable counsellor*, and the centurion
+  verification (15:44-45), which no other Gospel has — the soldier at Pilate's shoulder is described
+  and **not** claimed as that centurion. Dionysiou `Apokalthelosis`: the title means the unnailing
+  and Mark never mentions a nail; every burial verb in 15:46 is Joseph's, and the kneeling man with
+  the pincers is the painters' Nicodemus, John's. Dionysiou `Epitaphios Threnos`: no Gospel
+  describes the lament; the hook is the linen in Joseph's hands and *he bought fine linen*, the
+  buying Mark's alone. Monreale: the Latin [C]ORP(US) X(RISTI) PONITUR I(N) SEPULCRO, the tomb as
+  *a sepulchre which was hewn out of a rock*, the door still open (the rolling of the stone is not
+  shown), and the two flasks, which in Mark cannot be burial spices — his come after the sabbath.
+  The grey-haired man in green is painted the same way in all three Dionysiou scenes, which is what
+  the readings rest on when they call him Joseph; none of the three letters him.
+- `myrrhbearers` (16:1-8, Dionysiou `Ide Topos`). Sorted by Evangelist: the guard is Matthew's
+  alone, two women where Mark names three, two angels where Mark has one young man (the angel on the
+  stone is Matthew's; the one seated within is nearer Mark's), and the grave-cloths John's. Mark's
+  own: the flasks (*had bought sweet spices*), the women's question about the stone and *for it was
+  very great*, and the fear of 16:8. The reading cites Theophylact and Augustine from Mark's own
+  Catena, indirectly, for reading the angels together, per the Gotcha on not setting Evangelists
+  against each other. **ΙΔΕ Ο ΤΟΠΟΣ is Mark's Greek** and ΕΚΕΙΤΟ Matthew's — see `## Next`.
+
+**Corrected before committing.** Two clause faults the scratch check found (*He bought fine linen*
+with a sentence capital; *they had bought sweet spices* standing as a quotation). Three phrases whose
+shape had come across from Matthew's Epitaphios reading (*a white linen sheet spread over a red
+slab*, the linen *in his hands* at the feet, the cheek *pressed* to his) were rewritten. The
+Etesatou soldier's gold disc was cropped once more: it is a shield slung behind his shoulder,
+centred off his head, not a halo. Three black rectangles low in three of the files (Etesatou,
+Apokalthelosis, Ide Topos) are holes in the photographs and carry no marker.
+
+**Verified**
+- Scratch clause check (`clauses.js` in the session scratchpad): 37 candidate clauses, every one in
+  the text verbatim in `src/books/mark/kjv.json` or Matthew's for the three contrasts.
+- `BOOK=mark node src/tools/quotes.js`: 51 to read (50 before), 0 wrong Father, 0 no source, 0
+  drift; the one new line is the rendering of the fresco's inscription, *behold the place where the
+  Lord lay*, which is Matthew's wording on purpose.
+- `overlay.py` on all five keys, two passes. First pass 46 of 47 on target; Pilate's hand moved from
+  his sleeve onto the hand; second pass all 47 on their referents.
+- `make check` green, no clamp from any marker in this batch. `check.js`: Mark 74/78 readings, 74
+  with markers. `make mark`: 12.54 MB.
+- Browser, served on 8731: both passages open, each thumbnail shows its own reading and its full
+  marker count (7/10/9/11; 10), 38 images decode via `new Image()`, no console errors.
+
+**Next.** Mark 16:9-13 (3) and 16:14-18 (1), which finishes Mark.
