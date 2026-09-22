@@ -92,7 +92,7 @@ and this file did not.
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
     differs (see the Gotcha below). **54 of the 78 have a prose reading and positioned markers,
-    310 markers in all**; the other 24 are the work in progress.
+    308 markers in all**; the other 24 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -168,8 +168,8 @@ and this file did not.
 
 **Active work — the 24 Mark icons that still have no reading and no markers.** `picks.js`,
 `labels.js` and `overrides.js` are done and committed; 54 of the 78 icons are finished — batch 8
-(2026-09-21g) did the Mystical Supper, Gethsemane and the Betrayal (14:22-52), nine icons and 60
-markers, one commit (`1efd126`). All nine files are shared with Matthew's reader, and the one
+(2026-09-21g) did the Mystical Supper, Gethsemane and the Betrayal (14:22-52), nine icons and 58
+markers (`1efd126`), and fixed four false claims batch 7 had left in Mark's reader (`6b4eb18`). All nine files are shared with Matthew's reader, and the one
 trap worth knowing before the Passion batches: **Mark gives Christ no words at the kiss** —
 *Friend, wherefore art thou come?* is Matthew's and is load-bearing in three of Matthew's marker
 texts for these files. The same care applies from here on: the trial, the denial, Pilate and the
@@ -182,6 +182,20 @@ The remaining 10 passages, with how many icons each still needs:
 ```
 
 Next batch: 14:53-59, 14:66-72, 15:1-5 and 15:6-15 — eight icons, two each.
+
+**For the owner, from batch 8 (2026-09-21g) — two things, neither changed.**
+- **Mark 14:17-21 (`betrayer`, "One of You Shall Betray Me") has no icon, and the three Mystical
+  Supper icons at 14:22-25 paint its verse 20** — the hand reaching to the dish is the most legible
+  gesture in all three. The readings say so. Moving or splitting the icons is not the fix (the
+  Crucifixion Gotcha: one scene, one passage), so 14:17-21 stays a plain verse row unless a
+  separate icon of the foretelling is found. Your call whether that is acceptable.
+- **Two of Matthew's texts contradict their pictures, found while reading the same files for
+  Mark.** The St Nicholas Orphanos Betrayal marker *Christ* says *His own hands are not visible at
+  all*; a crop shows a white scroll held low against his dark mantle, in a hand half hidden under
+  Judas's arm. The Stavronikita Gethsemane reading says Christ is painted *kneeling three times*,
+  while its own marker lists *bowed … bowed again … upright … and again lower down*; at full crop
+  the top figure is upright, not kneeling. Matthew's reading audit is marked finished, so these
+  are post-audit finds and belong with the `Typhlon` / Bethesda items above.
 
 The loop that works, six to eight icons at a time, one commit each:
   1. `python3 src/tools/grid.py OUT <key>…` and **read the grid image itself** — it carries the
@@ -2228,8 +2242,8 @@ comparable size to the ones already done.
 
 ## Session 2026-09-21g (Mark readings and markers, batch 8: 14:22-25, 14:32-42, 14:43-52)
 
-**Did.** Nine icons, three passages, 60 markers, one commit (`1efd126`), the same loop as batches
-5–7. Before writing, every figure a reading names was cropped — twenty crops across the nine files,
+**Did.** Nine icons, three passages, 58 markers (`1efd126`), the same loop as batches 5–7, then
+a second commit (`6b4eb18`) fixing four batch-7 claims. Before writing, every figure a reading names was cropped — twenty crops across the nine files,
 the Stavronikita fresco especially, which is only 500 px wide. Matthew's readings and markers for
 the same nine files were dumped to a scratch file and read only **after** Mark's were drafted, to
 catch sentence shapes that had come across; two marker phrases had (ΙΣ ΧΣ "either side of his
@@ -2265,20 +2279,24 @@ head", and "where the eye starts" for the screen icon) and were rewritten.
   at the top left, clothed and still, and the Monreale mosaic one young man apart at its left edge;
   both readings describe them and say they are not shown fleeing.
 
-**Found and not fixed — for the owner or a later audit.**
+**Found along the way.** The owner-facing items are also under `## Next`, where the
+SessionStart hook will show them.
 - **Matthew's Orphanos Betrayal marker is wrong about the hands.** It says *His own hands are not
   visible at all*; a crop shows a white scroll held low against Christ's dark mantle, in a hand
   half hidden under Judas's arm (Mark's reading and marker describe it). And Matthew's Stavronikita
   reading says Christ kneels *three times* while its own marker gives *bowed … bowed again …
   upright … and again lower down* — the upright top figure is, at full crop, standing or upright,
   not kneeling. Neither changed: it is Matthew's reader.
-- **Batch 7 left three things in Mark's own reader.** (a) The Klontzas marker *The scroll-bearing
-  cherubs* is at `4%` and `make check` reports the clamp — that session's block said there were
-  none. (b) The Monreale anointing marker *The alabaster vessel* reads *Mark alone, with John* and
-  claims Mark gives the price, *above three hundred pence*; John 12:5 gives the same price. (c) The
-  Yaroslavl Judas marker *The canopy and curtain* ends *the arrangement Mark says was kept from the
-  crowd that had so lately hailed him at the temple*, which Mark does not say. None of the three was
-  touched here; they want a short fix pass.
+- **Batch 7 left four false claims in Mark's own reader, all fixed in `6b4eb18`.** (a) The
+  Klontzas marker sat at `4%` and `make check` reported the clamp — that session's block said there
+  were none — and, at full crop, its *pair of bodiless winged heads* in each upper corner is a
+  cluster of full-bodied winged angels in a curling grey cloud band; reading and marker now say
+  that, and the marker is at `10%`. (b) The anointing marker quoted Mark 14:5 as *above three
+  hundred pence*; the KJV reads *more than three hundred pence* — the changed-word paraphrase
+  `quotes.js` cannot see, caught by the scratch grep. (c) The anointing reading called the pouring
+  Mark's own detail; Matthew 26:7 has it too, and only the breaking of the box is Mark's. It also
+  called the mosaic a fresco. (d) The Yaroslavl Judas marker said Mark has the meeting kept from
+  the crowd; Mark gives the bargain no setting at all.
 
 **Verified**
 - Scratch check of every quoted clause in the nine readings and 60 markers against
@@ -2288,12 +2306,14 @@ head", and "where the eye starts" for the screen icon) and were rewritten.
 - `BOOK=mark node src/tools/quotes.js`: 35 clauses to read (20 before), 0 wrong Father, 0 no
   source, 0 drift. The 15 new ones read clean: prose leading into a verbatim quotation, or a
   deliberate quotation of Matthew's differing wording.
-- `overlay.py` on all nine keys, two passes. First pass: 56 of 60 on target; moved four (a loaf
+- `overlay.py` on all nine keys, two passes. First pass: 54 of 58 on target; moved four (a loaf
   marker on a candlestick base, the Kirillo bread-piece marker a little low, the Dionysiou angel
   marker beside the figure, and Christ's marker in the Dionysiou Betrayal sitting on Judas's
-  sleeve). Second pass: all 60 on their referents.
-- `make check`: green; no clamp warning from any marker this batch added. `make mark`: rebuilt,
-  12.47 MB. `check.js` reports 54/78 readings, 54 with markers.
+  sleeve). Second pass: all 58 on their referents. The moved Klontzas marker was redrawn and checked too.
+- `make check`: green; no clamp warning from any marker in Mark's own sets now (the clamps listed
+  against these shared files are Matthew's markers). `make mark`: rebuilt, 12.47 MB. `check.js`
+  reports 54/78 readings, 54 with markers. `quotes.js` after the fixes: 36 to read, the new one the
+  canopy marker's prose leading into *went unto the chief priests*, verbatim.
 
 **Next.** Continue the Mark loop at 14:53-59 (2), 14:66-72 (2), 15:1-5 (2) and 15:6-15 (2). Then
 15:16-20 (1) with 15:21-28 (6), the Crucifixions, as their own batch.
