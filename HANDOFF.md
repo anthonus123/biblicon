@@ -2380,10 +2380,15 @@ turned wholly from Christ. The Novgorod left word was first read as БИЕНИЕ
   verbatim in `src/books/mark/kjv.json`, or Matthew's or John's for the contrast quotations, and
   every one present in the drafted text; the three it flagged were sentence-initial capitals and a
   paraphrase that is not a quotation.
-- `BOOK=mark node src/tools/quotes.js`: 50 clauses to read (36 before), 0 wrong Father, 0 no source,
-  0 drift. Of the 14 new, one was a real near-paraphrase — *who looked upon him* for the KJV's *she
-  looked upon him* — fixed; the rest are prose leading into verbatim quotations or deliberate
-  Matthew contrasts.
+- `BOOK=mark node src/tools/quotes.js`: first run 50 clauses to read (36 before), 0 wrong Father, 0
+  no source, 0 drift. Of the 14 new, one was a real near-paraphrase — *who looked upon him* for the
+  KJV's *she looked upon him* — fixed; the rest are prose leading into verbatim quotations or
+  deliberate Matthew contrasts. **Re-run after every fix: 49 to read**, 0 wrong Father, 0 no source,
+  0 drift; the scratch clause check re-run too, unchanged.
+- The Novgorod title marker, the largest move, was redrawn alone at full size and sits on
+  СТОЛПА. The Krinomenos hands were cropped once more (42–60% top, 50–74% left): the scribe's two
+  hands are the one holding the pen and the one on the desk, and the middle pair runs into Christ's
+  red sleeve, so *both hands held out together toward the scribe's desk* stands.
 - `overlay.py` on all eight keys, two passes. First pass: 54 of 57 on target; 3 moved (the
   Dionysiou rent garment onto the bared breast, the Mastigosis stars marker off a balcony onto a
   star, the Novgorod title marker onto У СТОЛПА); second pass all 57 on their referents.
