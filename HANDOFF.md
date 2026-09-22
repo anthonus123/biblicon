@@ -130,10 +130,12 @@ and this file did not.
     reused (the list is below, and it is not Mark's list). **The reader now reaches 99 of its 455
     quotations**, up from none: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **12 of the 68 now have a prose reading and positioned markers, 75 markers in all** (batch 1,
+  - **18 of the 68 now have a prose reading and positioned markers, 97 markers in all** (batch 1,
     2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou `Prodromos
-    Didaskon`; batch 2, 2026-09-22e: the four Baptisms, both Temptations and `petersmother`). The
-    other 56 are the work in progress, in batches of six to eight, the loop Mark uses.
+    Didaskon`; batch 2, 2026-09-22e: the four Baptisms, both Temptations and `petersmother`; batch
+    3, 2026-09-22g: `leper`, both `paralytic` icons, both Levi/Matthew portraits and
+    `witheredhand`). The other 50 are the work in progress, in batches of six to eight, the loop
+    Mark uses.
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43.
@@ -179,13 +181,24 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 56 of 68 icons still want
-a reading and markers, next in Gospel order `leper` (1), `paralytic` (2), `levi` (2) and
-`witheredhand` (1). Batch 2 (2026-09-22e) did the four Baptisms, both Temptations and
-`petersmother`, 7 icons. The trap that held through every Mark batch holds there too, one
-book further on: **Matthew's, Mark's and John's readers already have a reading of each shared file
-built on their own Gospel's words**, and that wording is often load-bearing in it. Draft Luke's
-first, dump the others afterwards, and read them side by side before committing.
+**Active work — the Luke readings.** See the Luke section further down: 50 of 68 icons still want
+a reading and markers. Batch 3 (2026-09-22g) did `leper` (1), `paralytic` (2), `levi` (2) and
+`witheredhand` (1), 6 icons, 22 markers — closing chapters 5 and 6. Next in Gospel order:
+`draught` (1, the miraculous draught of fishes, 5:1-11 — checked in `assign.js` as tier a but
+not yet in `picks.js`; confirm a file before drafting), `centurion` (1, 7:1-10, already picked)
+and whatever the survey table further down lists after it. The trap that held through every Mark
+batch holds there too, one book further on: **Matthew's, Mark's and John's readers already have a
+reading of each shared file built on their own Gospel's words**, and that wording is often
+load-bearing in it. Draft Luke's first, dump the others afterwards, and read them side by side
+before committing.
+
+**For the owner, from Luke batch 3 (2026-09-22g).** One correctness finding, fixed on sight rather
+than carried forward: Matthew's reader (and only Matthew's — Mark's own reading of the same file
+already says "with their hands") described the two roof-openers in `Monreale - healing of
+paralytic.jpg` as working "with a rope in each hand." A tight crop of the mosaic at that
+resolution shows no rope at any point — both men grip the tiling itself with bare fingers.
+Matthew's `hotspots2.js` and `hotspots3.js` are corrected and rebuilt; nothing else in either
+reading changed.
 
 **For the owner, from Luke batch 2 (2026-09-22e).** The Monreale mosaics repeat across three
 readers now, and two things worth a note came out of writing Luke's own copy fresh rather than
@@ -2746,3 +2759,118 @@ shared-file caveats are recorded for these four in the wiring table, but check t
 against Luke's own verses anyway — `paralytic`'s Monreale mosaic paints the tiling of 5:19, which
 belongs to Luke and not to Matthew's or Mark's telling of the same miracle, so it is worth
 confirming neither of those two readings' wording has leaked in via a shared first draft.
+
+## Session 2026-09-22f (Luke batch 3 — prep only, nothing written to `hotspots2.js`/`hotspots3.js` yet)
+
+**Did.** Research pass for batch 3 (`leper`, `paralytic` x2, `levi` x2, `witheredhand`), interrupted
+before any reading or marker was committed to disk. `picks.js`/`labels.js`/`overrides.js` already
+carry all six (confirmed 2026-09-20d, unchanged). Pulled Luke's own KJV text for 5:12-16, 5:17-26,
+5:27-32, 6:6-11, and read the six images with `grid.py` (keys `f53e17ad7406`, `9b4f680312cb`,
+`f8643ee3f937`, `809e4f434700`, `a8365493cb79`, `0b83261a7926`).
+
+**Why.** Continuing the Luke loop from batch 2, per HANDOFF's own `## Next`.
+
+**Textual hooks found for fresh Luke wording (not yet written into any reading):**
+- `leper` (5:12-16): Luke alone calls him "a man **full of** leprosy" (fuller than Matthew's/Mark's
+  bare "a leper"); v.16's "he withdrew himself into the wilderness, and **prayed**" echoes the
+  baptism reading's prayer theme from batch 2 (3:21) and is a genuine Lukan habit-of-prayer motif
+  no icon of this scene paints.
+- `paralytic` (5:17-26): Luke's own word for the opening is "**tiling**" (5:19), distinct from
+  Mark's "broke it up" — Matthew's existing reading already says so ("the tiling is St Luke's").
+  Christ's address is "**Man**, thy sins are forgiven thee" (5:20) where Matthew's and Mark's both
+  have "Son". V.25-26 add "**glorifying God**" and "filled with fear, saying, We have seen
+  **strange things** to day" (παράδοξα, "paradoxes") — both absent from Matthew's and Mark's
+  endings of the same miracle.
+- `levi` (5:27-32, tierB): "he **left all**, rose up, and followed him" (5:28) — Matthew's and
+  Mark's both have bare "arose and followed"; echoes Luke's own 5:11 of the fishermen ("they
+  forsook all"). V.29 "Levi made him a **great feast**" — Mark has no feast word at all.
+- `witheredhand` (6:6-11): "**he knew their thoughts**" (6:8) before Christ speaks — present in
+  neither Matthew's nor Mark's telling of this pericope. V.10 keeps Mark's "looking round about
+  upon them all" but **drops** "with anger, being grieved for the hardness of their hearts" — worth
+  contrasting directly with Mark's reading of the same fresco, which calls that anger clause a
+  thing "no other Evangelist" writes. V.11 "filled with **madness**" where Mark instead names the
+  Herodians — Luke has neither Herodians nor a named council here.
+
+**A finding, not yet confirmed or fixed:** Matthew's and Mark's existing readings of
+`Monreale - healing of paralytic.jpg` both call the men on the roof workers with "a rope in each
+hand." A crop of the mosaic's top register (0-35% top, 5-95% left) shows both men's hands directly
+at the tiled surface, prying it open — no rope visible at this resolution. Possibly a detail
+invisible at grid.py's resolution, possibly a wrong claim carried between the two readings since
+one Gospel's draft came from the other. Re-crop tighter before writing Luke's own version of this
+marker, and don't repeat "rope" unless it is actually there.
+
+**Not done.** No reading or marker was saved — the batch is unstarted on disk. Matthew's and
+Mark's `hotspots3.js` coordinates for these six shared files were pulled for calibration (see this
+session's tool output, not reproduced here) but not transcribed into Luke's files.
+
+**Next.** Redo the grid/crop pass for these six keys, write `hotspots2.js` and `hotspots3.js`
+fresh from the textual hooks above (don't assume any prior draft survived), then the usual
+`quotes.js` → `assemble.js` + `overlay.py` → `crop.py` spot-checks → `make luke` → commit.
+
+## Session 2026-09-22g (Luke batch 3: leper, paralytic x2, levi x2, witheredhand — 6 icons, 22 markers)
+
+**Did**
+- **Wrote the six readings prepped in the previous session** (2026-09-22f, which did the grid/crop
+  research but committed nothing): `leper` (5:12-16), both `paralytic` icons (5:17-26), both
+  Levi/Matthew portrait icons (5:27-32, tier b) and `witheredhand` (6:6-11). 22 new markers, 97 in
+  all across 18 files — chapters 5 and 6 now fully covered.
+- **Confirmed the prior session's unresolved finding**: cropped `Monreale - healing of
+  paralytic.jpg` at the roof opening (0-30% top, 25-75% left) and found no rope at any
+  resolution — both men grip the tiling itself with bare fingers. Luke's own reading of the file
+  says so and uses Luke's own word for what they are doing, *the tiling*, distinct from Mark's
+  *the roof dug open* and from the wording Matthew's reader had been using.
+- **Fixed the same false claim in Matthew's reader**, found only because Luke's draft needed the
+  same crop. Matthew's `hotspots2.js` and `hotspots3.js` both said the men worked "with a rope in
+  each hand" — Mark's own reading of the identical file already said "with their hands," so the
+  error was Matthew's alone, not shared. Both files corrected and rebuilt; nothing else touched.
+- **`quotes.js` caught three merged clauses, all from careless dash/comma placement, not wrong
+  quotations** — the same class of error the batch-2 HANDOFF entry names: a verbatim clause sitting
+  in the same tool-detected "sentence" as adjoining prose, so the substring check failed on the
+  whole span. Rewritten with a hard delimiter (period or colon) directly before each clause.
+- **Two more paraphrases were caught by hand, not by the tool**, because neither contains an
+  archaic word the checker watches for: "he arose up before them" for 5:25's own "immediately he
+  rose up before them," and "he saw a publican" for 5:27's own "he went forth, and saw a
+  publican" (this second one appeared twice, once in the reading and once in its marker). Both
+  are corrected to the verbatim clause. **`quotes.js`'s archaic-word filter is not a completeness
+  guarantee** — a clean run means no *flagged* sentence is wrong, not that every sentence claiming
+  to quote KJV actually does; a paraphrase built entirely of common words passes silently.
+
+**Why**
+- HANDOFF's own `## Next`, left by the previous (prep-only) session, named this batch and this
+  order.
+
+**Verified**
+- `BOOK=luke node src/tools/quotes.js`: 0 KJV clauses to read, 0 Fathers issues, after the three
+  merge fixes and the two hand-caught paraphrases above; also reran for Matthew after the rope
+  fix — 45 pre-existing clauses (all unrelated to this edit, confirmed by grepping the output for
+  "roof"/"rope"/"parapet," which returns only an unrelated Capernaum-centurion verse).
+- `BOOK=luke node src/check.js`: two clamp warnings on the first pass (`The plea` at 3% top,
+  `The inscription` on the withered-hand fresco at 5% top, both below the 9% floor) — moved to 9%,
+  second pass clean, 0 clamps.
+- `BOOK=luke python3 src/tools/overlay.py` on all six keys, two passes. First pass: three markers
+  sitting off their subject — the leper's "Leaning at the threshold" was on his leg rather than the
+  doorway, and the Ferapontov paralytic fresco's "Christ seated" landed on a bystander two figures
+  away from the actual haloed, hand-raised figure (confirmed which was which with a tighter crop of
+  that cluster) while "Still on his bed" sat beside the bed rather than on the reclining figure.
+  All three moved and redrawn; second pass on the two affected keys confirmed.
+- `make check`: all four Gospels, 0 errors, 0 clamps. `make luke`: 10.86 MB, 68 images.
+  `make matthew`: 17.21 MB, 113 images, after the rope fix.
+- Browser, served on 8731, via Playwright: `Luke Reader.html` loads with 0 console
+  errors/warnings; the paralytic passage's drawer opens, both icons' thumbnails are present, the
+  "Deciphering the Icon" tab shows all 4 markers on the Monreale icon with the corrected tiling
+  text; the withered-hand passage's own verse text (6:8, "But he knew their thoughts…") confirms
+  the chapter-6 wiring.
+
+**Not done**
+- **50 of Luke's 68 icons still have no reading and no markers.** Next in Gospel order per
+  `assign.js`: `draught` (1, 5:1-11, tier a but **no file chosen yet** — not in `picks.js`, needs a
+  Commons search before it can be drafted), then `centurion` (1, 7:1-10, already picked:
+  `Iomenos Gon Ekatonarchou Dionysiou.jpg`), then whatever the survey table further down lists
+  after it.
+- No harvest, no scripture stories. Both still as every prior Luke session left them.
+
+**Next.** Search for a `draught` icon (the miraculous draught of fishes / calling of Peter, Luke
+5:1-11 — distinct from `centurion`'s Peter-adjacent fresco already in the pool) and wire it into
+`picks.js`, `labels.js` and `overrides.js` before drafting its reading; then `centurion` and
+onward, same loop: grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` →
+`assemble.js` + `overlay.py` → `crop.py` spot-checks → `make luke` → commit.

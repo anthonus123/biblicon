@@ -118,4 +118,50 @@ module.exports={
  ["Rebuked, not touched", "The gap of bare gold between Christ's hand and hers is the whole of Luke's difference from Matthew and Mark: he stood over her, and rebuked the fever; and it left her — a word spoken over her, the same verb Luke's Gospel uses elsewhere for silencing unclean spirits, not a hand laid on.", "63%", "48%"],
 ],
 
+// ---- chapter 5 ----
+
+"File:Christ cleans leper man.jpg":[
+ ["The plea", "POTES ME MVNDARE — thou canst make me clean. Luke gives the whole sentence: Lord, if thou wilt, thou canst make me clean — a confession before it is a request, the same as in Matthew's and Mark's readings of this mosaic.", "9%", "55%"],
+ ["A man full of leprosy", "Dark spots run from his throat down his bare chest and arm. Luke's own phrase for him is fuller than Matthew's or Mark's bare a leper: a man full of leprosy — and the mosaicist has covered the body to match it, where the other two readers of this picture single out only his hand.", "42%", "77%"],
+ ["Leaning at the threshold", "He stands at the doorway of the building at the right, his weight on a staff. Luke's own next verse sends him further than this doorway: shew thyself to the priest, and offer for thy cleansing, according as Moses commanded.", "35%", "89%"],
+],
+
+"File:Monreale - healing of paralytic.jpg":[
+ ["The tiling, worked by hand", "Two men lean in at the parapet and pull apart a lattice of thin overlapping strips with their bare fingers — no rope in either hand at any resolution. Luke's own word for what they are doing is the one no other Evangelist uses: they let him down through the tiling with his couch into the midst before Jesus.", "20%", "50%"],
+ ["Man, thy sins are forgiven thee", "Christ sits enthroned at the left with his hand out. Luke alone gives him this address to the paralytic — Man — where Matthew's and Mark's readings of this same mosaic both have Son.", "40%", "20%"],
+ ["Risen, and glorifying God", "He has come up off the bed onto his knees, both arms reaching back toward Christ, his feet still caught against the frame. Luke's own sentence for what follows is his alone: he departed to his own house, glorifying God.", "61%", "57%"],
+ ["The scribes, already there", "A tight knot of heads at the right. Luke says they had gathered before the healing, out of every town of Galilee, and Judaea, and Jerusalem — witnesses brought in ahead of the miracle, not only reacting to it.", "40%", "84%"],
+],
+
+"File:Healing of the Paralytic 04-17.jpg":[
+ ["Christ seated", "He sits at the left with the apostles behind him and his hand raised in speech — the same figure Matthew's reader of this fresco shows, painted here for the sentence Luke alone finishes with a second verb.", "23%", "15%"],
+ ["The bed on his shoulder, glorifying God", "Dionisy paints the man twice more on this wall: once still on the ground, once upright and walking with the bed across his shoulder. Luke's own clause for this moment does not stop where Matthew's does: and immediately he rose up before them, and took up that whereon he lay, and departed to his own house, glorifying God.", "45%", "44%"],
+ ["We have seen strange things to day", "A knot of witnesses at the right stand with their heads drawn close together. Luke alone reports what they said: they were all amazed, and they glorified God, and were filled with fear, saying, We have seen strange things to day — his own word for it, a plain transliteration of the Greek paradoxa.", "35%", "85%"],
+ ["Still on his bed", "Lower in the scene the sick man still lies among the crowd that carried him, the moment before the second and third paintings of him on this same wall show him risen.", "68%", "30%"],
+],
+
+// ---- chapter 5, tier B: Levi ----
+
+"File:090 Mathew the Apostle Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["An old man's face, not the tax table", "The Church paints him at the end of his life, not at the receipt of custom where Luke's own verse finds him: he went forth, and saw a publican, named Levi, sitting at the receipt of custom.", "20%", "47%"],
+ ["The pen", "Held upright in his right hand. Luke's own clause for what happened at the table he left is the shortest of the three Synoptics': he left all, rose up, and followed him.", "52%", "45%"],
+ ["The closed book", "The codex he holds shut on his knee is the Gospel that same rising led to — nothing in these verses of Luke's describes it being written; that comes later in the man's life, not in this chapter.", "75%", "70%"],
+],
+
+"File:Matthew the Evangelist - icon.jpeg":[
+ ["The Slavonic inscription", "С. ЕѴГЛС МАТѲЕЙ — the holy Evangelist Matthew, lettered in gold. Luke's own Gospel never calls him by this name again after the calling; it is the Church's later title for Levi, not Luke's.", "10%", "22%"],
+ ["The quill lifted from the page", "Caught between hearing and setting down. Luke gives no word at all to any of this — his account of the call ends with the rising, not with what the man went on to write.", "37%", "22%"],
+ ["The angel at his shoulder", "The winged man is the creature the Church assigns this Evangelist, dictating rather than merely standing by. It is the mark of the book he wrote, not of the feast Luke says he gave on the day he left the tax table.", "20%", "80%"],
+ ["The bound Gospel", "A jewelled book stands finished at his side, the thing the writing in front of him will become. Luke's own sentence for the same day looks the other way, toward the house Levi still owned and opened to his old company: Levi made him a great feast in his own house.", "60%", "87%"],
+],
+
+// ---- chapter 6 ----
+
+"File:Iomenos xeran echon cheira Dionysiou.jpg":[
+ ["The inscription", "Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ ΤΟΝ ΞΗΡΑΝ ΕΧΟΝΤΑ ΤΗΝ ΧΕΙΡΑ — Christ healing the man having the withered hand, the same titulus Mark's reader of this fresco shows.", "9%", "52%"],
+ ["He knew their thoughts", "Christ, seated at the left, is shown before he has spoken. Luke alone gives him this knowledge ahead of any question asked aloud: but he knew their thoughts, and said to the man which had the withered hand, Rise up, and stand forth in the midst.", "36%", "18%"],
+ ["The man standing forth", "Alone in the centre of the floor, his arm already lifting. He has done exactly what Luke's Christ told him, in the order Luke tells it: and he arose and stood forth.", "55%", "44%"],
+ ["Looking round about, without anger", "Three elders wait along the right wall, one with a hand raised in objection. Luke keeps Mark's gesture — looking round about upon them all — but drops what Mark hangs on it, the anger and the grief for hardened hearts; and where Mark's men go out to the Herodians, Luke's are filled with madness, with no ally and no plan yet named.", "50%", "76%"],
+],
+
 };
