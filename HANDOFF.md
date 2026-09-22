@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **62 of the 78 have a prose reading and positioned markers,
-    365 markers in all**; the other 16 are the work in progress.
+    differs (see the Gotcha below). **69 of the 78 have a prose reading and positioned markers,
+    428 markers in all**; the other 9 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,21 +166,37 @@ and this file did not.
 
 ## Next
 
-**Active work — the 16 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 62 of the 78 icons are finished — batch 9
-(2026-09-22) did the council, the denial, Pilate and the scourging (14:53-15:15), eight icons and
-57 markers (`8754f1c`). The trap that has held through every Passion batch: **Matthew's reader
-already has a reading of each shared file built on Matthew's words**, and his wording is often
-load-bearing in it — *Friend, wherefore art thou come?* at the kiss, *Caiaphas* at the trial,
-*the governor marvelled greatly*, the washing of the hands. The same care applies to the
-Crucifixion. The remaining 6 passages, with how many icons each still needs:
+**Active work — the 9 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 69 of the 78 icons are finished — batch 10
+(2026-09-22b) did the mocking and the six Crucifixions (15:16-28), seven icons and 63 markers
+(`30ee516`). The trap that has held through every Passion batch: **Matthew's reader already has a
+reading of each shared file built on Matthew's words**, and his wording is often load-bearing in
+it — *Friend, wherefore art thou come?* at the kiss, *Caiaphas* at the trial, *the governor
+marvelled greatly*, the washing of the hands. The same care applies to the Burial and the tomb.
+The remaining 4 passages, with how many icons each still needs:
 
 ```
-15:16-20 (1)  15:21-28 (6)  15:42-47 (4)  16:1-8 (1)  16:9-13 (3)  16:14-18 (1)
+15:42-47 (4)  16:1-8 (1)  16:9-13 (3)  16:14-18 (1)
 ```
 
-Next batch: 15:16-20 (1) and 15:21-28 (6), the mocking and the six Crucifixions — seven icons.
-Then 15:42-47 (4) with 16:1-8 (1), and 16:9-18 (4) last.
+Next batch: 15:42-47 (4) with 16:1-8 (1), five icons. Then 16:9-18 (4) last, which finishes Mark.
+
+**For the owner, from batch 10 (2026-09-22b) — nothing changed in any other reader.**
+- **John's reader misdescribes the Great Lavra Crucifixion (Theophanes, 1535).** Its reading says
+  the soldier *thrusts a spear up into Christ's side* and its marker *drives his spear into
+  Christ's side*; at crop (20–36% top, 36–54% left) the lance point stops in the dark air short of
+  the body. It also says *two angels … holding chalices*: there are three angels (the third cut off
+  at the upper left, hands wrapped in its cloak), one chalice is legible, and what the right-hand
+  angel raises is too dim to name. John's readings have had no audit; this is the first find.
+- **Matthew's double-sided Crucifixion (Byzantine Museum) marker *The Theotokos* puts one hand
+  *closed at her chin*.** At crop it is at her breast, well below the chin. And Matthew's Langadas
+  marker has the Theotokos *held up under the arms by the other two* women; at crop the woman at the
+  back has a hand on her arm and the one in blue holds both hands at her own breast — one support,
+  not two. Both belong with the post-audit list.
+- **The six Crucifixions paint 15:33-41 as much as 15:21-28** — the sponge (15:36), the dead Christ
+  (15:37), the centurion (15:39), the women — and `death` and `veil` stay tier c, as `picks.js`
+  already records. It is the `betrayer`/`council` shape again; the readings anchor on 21-28 and name
+  each later verse as its own passage's.
 
 **For the owner, from batch 9 (2026-09-22) — nothing changed for any of these.**
 - **Both icons of Mark 14:53-59 (`council`) paint verse 63, the rending of the garment**, which
@@ -668,6 +684,15 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   two men on the roof with the ropes, the paralytic on his bed reaching for Christ. It belongs to
   Mark 2:1-12 **and** Luke 5:17-26, in their different readers, which the shared pool allows.
   Matthew 9:1-8 is the one account with no roof in it.
+- **Don't set one Evangelist's word against another's where the Fathers read them as one.**
+  The first draft of the Mark mocking reading contrasted Mark's *purple* with Matthew's *scarlet
+  robe*. Mark's own Catena has St Augustine on exactly that verse saying the two words name one
+  royal colour, and John's reader quotes Bede to the same effect. A reading may say what the
+  painter used and what each Gospel calls it; it may not imply a discrepancy the Church resolves.
+  Search `catena.json` for the passage before writing any "Mark says X where Matthew says Y".
+- **`pkill -f "http.server 8731"` kills the shell that runs it**, because that shell's own
+  command line contains the pattern — exit 144, and anything chained after it with `;` never runs.
+  Stop the server by its task, or put `pkill` in a command of its own.
 - **Six icons of one scene belong to one passage, not to two adjacent ones.** Mark's six
   Crucifixions were briefly split, two of them onto 15:33-37 on the strength of the sponge at
   15:36. A Byzantine Crucifixion paints the darkness, the sponge, the centurion and the dead
@@ -2398,3 +2423,51 @@ turned wholly from Christ. The Novgorod left word was first read as БИЕНИЕ
   marker count (7/6, 9/6, 9/7, 7/6), every image decodes via `new Image()`, no console errors.
 
 **Next.** Mark 15:16-20 (1) and 15:21-28 (6): the mocking and the six Crucifixions, one batch.
+
+## Session 2026-09-22b (Mark readings and markers, batch 10: 15:16-20, 15:21-28)
+
+**Did.** Seven icons, two passages, 63 markers, one commit (`30ee516`), the loop under "Active
+work". About forty crops before writing, several at high zoom where the pictures are small or worn
+(the Langadas panel is 395 px at source; the Byzantine Museum panel is abraded below the waist).
+Matthew's and John's texts for the same files were dumped and read only after Mark's were drafted.
+- `mocking` (15:16-20, Dionysiou `Empaigmos`). Hooks: *began to salute him*, *bowing their knees
+  worshipped him* (Matthew: *bowed the knee*), the reed used only to strike — the fresco also puts
+  one in Christ's right hand, which is Matthew's detail and the reading says so. The mockers wear no
+  armour, where Mark says *the soldiers … the whole band*. The purple/scarlet contrast in the first
+  draft was taken out — see the new Gotcha.
+- `crucifixion` (15:21-28, six icons). Each reading anchors on a different verse of Mark's eight:
+  the thieves and *numbered with the transgressors* (Dionysiou — the only one of the six that paints
+  them), the superscription (Sinai writes IC XC on the board; the Byzantine Museum panel writes Ο
+  ΒΑΣΙΛΕΥΣ ΤΗΣ ΔΟΞΗΣ, set against the six uses of *King* in Mark 15, all from enemies; Langadas and
+  Monreale give John's ΙΝΒΙ / INRI), *The place of a skull* (Dionysiou, Langadas, Monreale paint the
+  skull; Sinai a hollow; the Byzantine Museum panel is too worn to say), the vinegar sponge as
+  15:36 and not 15:23's *wine mingled with myrrh* (Dionysiou, Great Lavra), and the chalice angel
+  (Great Lavra) read through Mark 14:24. The Mother and the disciple are named as John's in every
+  one: Mark has no disciple at Golgotha, and the Catena's Bede makes *Mary the mother of James the
+  less* the Theotokos's sister, which is what lets the readings say Mark does not mention her.
+  Simon of Cyrene, with Alexander and Rufus, is in none of the six, and the first reading says so.
+
+**Corrected before committing.** Two paraphrases that read as quotations (*They began to salute
+him*; *when he cried with a loud voice* for *And Jesus cried*), a mixed clause about the
+Praetorium, and the purple/scarlet contrast. *Townsmen* for the mockers became *no armour, no
+weapon*. The Sinai side wound was not claimed: at crop the red line under the ribs could be a
+contour. The Langadas ending and the Byzantine Museum *King of Glory* sentence were rewritten after
+the comparison because their shape had come across from Matthew's (*the blood of the second Adam
+runs down onto the first*; *writes what the Church confesses in its place*).
+
+**Verified**
+- Scratch clause check (`clauses.js` in the session scratchpad): 53 clauses, every one verbatim in
+  `src/books/mark/kjv.json` (or John's/Matthew's for the contrasts) and present in the text, bar
+  sentence-initial capitals.
+- `BOOK=mark node src/tools/quotes.js`: 50 to read (49 before), 0 wrong Father, 0 no source, 0
+  drift; the one new line is prose leading into *they bring him unto the place Golgotha*, verbatim.
+- `overlay.py` on all seven keys, two passes. First pass 61 of 63 on target; moved the Sinai frame
+  marker off bare gold onto the empress and the Monreale Latin-title marker off the left angel's
+  hand; second pass all 63 on their referents.
+- `make check` green, no clamp from any Mark marker. `check.js`: Mark 69/78 readings, 69 with
+  markers, 428 markers. `make mark`: 12.52 MB.
+- Browser, served on 8731: both passages open, each thumbnail shows its reading and its full marker
+  count (10; 11/8/8/8/8/10), 38 images decode via `new Image()`, no console errors.
+
+**Next.** Mark 15:42-47 (4) with 16:1-8 (1), then 16:9-18 (4), which finishes Mark.
+
