@@ -387,6 +387,8 @@ module.exports={
  ["The earth and the sea giving up their dead", "Along the bottom edge the ground opens and naked figures rise from it. Mark's own phrase reaches this low: from the uttermost part of the earth to the uttermost part of heaven — one merism spanning the whole board, top to bottom, that Matthew's version of the same saying does not use.", "90%", "30%"],
 ],
 
+// ---- chapter 14 ----
+
 "File:Monreale - Anointing at Bethany.jpg":[
  ["Christ reclining", "He sits upright at the left on a cushioned couch, haloed, his right hand low with the fingers reaching down toward the woman on the floor — Mark sets this as he sat at meat in the house of Simon the leper at Bethany.", "38%", "17%"],
  ["The woman at his feet", "Stretched full length on the floor, the only figure in the mosaic not upright. Mark says she brake the box, and poured it on his head; the mosaicist has followed John's Gospel instead in setting her at Christ's feet, with no wiping of them shown here.", "78%", "29%"],
@@ -401,6 +403,91 @@ module.exports={
  ["The coins being counted", "Small coins lie spread and counted on the white cloth. Mark's two verses name no sum at all; the thirty pieces this scene traditionally stands for is the fuller story the Church reads behind Mark's sparer account, not a number these verses themselves give.", "55%", "50%"],
  ["The elders", "A press of capped and bearded heads at the right, with a scribe and a beardless attendant nearer the priest. Mark speaks of the chief priests as the body Judas goes to, without naming who else was present.", "42%", "77%"],
  ["The canopy and curtain", "A draped canopy between two towers marks the scene as held indoors, under cover — the arrangement Mark says was kept from the crowd that had so lately hailed him at the temple.", "13%", "49%"],
+],
+
+"File:Deipnos Mystikos Dionysiou.jpg":[
+ ["The title", "Ο ΔΕΙΠΝΟΣ Ο ΜΥΣΤΙΚΟΣ — the Mystical Supper — is lettered across the dark sky. The name is the Church's; Mark gives the meal no name and tells its centre in four verses that begin as they did eat.", "9%", "55%"],
+ ["Christ blessing", "He sits at the middle of the far side, haloed, his right hand lifted before his breast. Jesus took bread, and blessed, and brake it — the painter gives the blessing to the hand and leaves the loaves where they lie.", "36%", "47%"],
+ ["The loaves", "Round loaves lie scattered about the cloth, whole. Take, eat: this is my body — Mark sets the words in the middle of the meal, and the table is painted in the middle of the meal.", "68%", "57%"],
+ ["The goblets", "A gold goblet stands at the left of the table and a green glass one at the right, and none is in the Lord's hand. And he took the cup, and when he had given thanks, he gave it to them: and they all drank of it — Mark reports the drinking as done.", "64%", "42%"],
+ ["The fish in the bowl", "A footed bowl in the middle of the table holds a single fish. No Gospel puts a fish on this table: Mark says only that they made ready the passover. The fish is the painter's.", "57%", "47%"],
+ ["The disciple at his shoulder", "A young disciple rests his head against the Lord. It is John's detail, from his own Gospel. In Mark's account of this meal no disciple is singled out and none is named — not even the betrayer.", "38%", "56%"],
+ ["The reach toward the bowl", "A man in green under a red cloak lies forward over the cloth with his arm stretched toward the bowl. That is verse 20, two verses before this passage: It is one of the twelve, that dippeth with me in the dish. Mark's words have no hand in them; the painter supplies one.", "52%", "64%"],
+],
+
+"File:05 Last Supper Icon from Saint Paraskevi Church in Adam.jpg":[
+ ["Christ blessing", "At the head of the table in a red tunic under a dark mantle, his right hand raised palm outward with two fingers up. Mark has him bless over the bread and give thanks over the cup; the painter gives both to this one hand.", "35%", "45%"],
+ ["The cups", "Two small cups stand on the cloth, one on either side of the basin, and neither is in his hand. And they all drank of it — Mark tells it as done, where Matthew's account has the command, Drink ye all of it.", "59%", "33%"],
+ ["The beloved disciple", "Beardless, in green, bowed low at the Lord's side with his head almost on the board; the crack in the panel runs through his halo. The detail is John's. Mark gives this meal no beloved disciple.", "43%", "38%"],
+ ["The hand over the basin", "A green sleeve comes in from the right and the hand hangs over the rim of the great basin. It is one of the twelve, that dippeth with me in the dish — verse 20, before this passage opens. The arm belongs to a haloed apostle; the painter marks the man with nothing but the reach.", "56%", "59%"],
+ ["The raised palm", "At the upper left a grey-haired apostle holds up an open palm. Mark's verse 19 has them begin to be sorrowful, and to say unto him one by one, Is it I? The question comes before these four verses, and the painter keeps it at the table.", "36%", "27%"],
+ ["The lamp and the title", "An oil lamp hangs on its chain over Christ's head, with ὁ δεῖπνος ὁ μυστικός written either side. The lamp is the painter's; the hour is Mark's — in the evening he cometh with the twelve.", "12%", "49%"],
+],
+
+"File:Kirillo-Belozersky iconostasis 12 - Last Supper.jpg":[
+ ["Christ", "At the upper left corner of the table rather than its middle, haloed, in a red tunic under a blue mantle. Every act in Mark's four verses is his — took bread, and blessed, and brake it, and gave to them — and every word.", "31%", "23%"],
+ ["The disciple at his breast", "Bowed against the Lord with his face hidden. It is John's detail: Mark's account has no disciple leaning on Christ, and names none of the twelve at this meal.", "41%", "25%"],
+ ["The hand in the cup", "An apostle in green leans over from the far side and lowers his fingers into a footed cup. One of the twelve, that dippeth with me in the dish — verse 20 — but the vessel here is a cup, the cup of which Mark says three verses later, they all drank of it.", "51%", "39%"],
+ ["The piece in his fingers", "An apostle at the right on the far side holds one of the small triangular pieces laid about the cloth — the only thing on this table in anyone's hand. Mark's bread is broken and handed round, brake it, and gave to them, and this is as near as the icon comes to painting the giving.", "47%", "61%"],
+ ["The second cup", "At the right of the table a cup like the first is there only in outline, drawn and never painted, or its paint worn away. Mark's account has one cup — And he took the cup — and it is the finished one at the left that the icon gives.", "53%", "67%"],
+ ["The open hands in front", "Two apostles in the front row turn to each other with open palms. They began to be sorrowful, and to say unto him one by one, Is it I? — verse 19, before these four verses, and the icon keeps the question at the table.", "65%", "29%"],
+],
+
+"File:The Lord's prayer in Gethsemane - Stavronikita monastery, Mt Athos - Theophanes of Crete, 16th c..jpg":[
+ ["Fallen on the ground", "At the upper left he is bowed so low over the rock that his face is hidden. And he went forward a little, and fell on the ground — Mark's words; Matthew's account has him fall on his face.", "32%", "27%"],
+ ["Upright at the top", "He is painted again upright at the head of the rock, his halo against the dark. Mark gives the second prayer in a line: And again he went away, and prayed, and spake the same words.", "18%", "48%"],
+ ["Kneeling with his face lifted", "At the right he kneels with his head raised. Abba, Father, all things are possible unto thee — Mark is the only Evangelist to keep the Aramaic word, and the only one to say he prayed that, if it were possible, the hour might pass from him.", "32%", "84%"],
+ ["Coming back to them", "Lower down he stands with his hand held out toward the sleepers. Mark alone has him speak to one of them by name, and by the name he bore before he was called Peter: Simon, sleepest thou? couldest not thou watch one hour?", "48%", "56%"],
+ ["The disciple sitting up", "Nearest the outstretched hand a disciple in yellow sits upright; the plaster is too worn to show whether he is awake. Watch ye and pray, lest ye enter into temptation. The spirit truly is ready, but the flesh is weak.", "60%", "38%"],
+ ["The sleepers", "A dozen figures fill the foot of the wall, sitting with their heads down or lying across one another, one stretched full length along the bottom. On the second return he found them asleep again, (for their eyes were heavy,) neither wist they what to answer him — the last clause is Mark's alone.", "80%", "70%"],
+],
+
+"File:Gethsemane Dionysiou.jpg":[
+ ["The angel", "A tiny winged figure with a gold halo flies down out of the night between the two halves of the title. There is no angel in Mark's garden; this one comes from Luke, the only Evangelist who reports it.", "9%", "38%"],
+ ["Hands spread open", "The first of the three kneeling figures, lettered ΙΣ ΧΣ, kneels with both hands open. Mark says he fell on the ground, and prayed; the painter keeps him on his knees, so that the face and the hands can be seen.", "30%", "19%"],
+ ["Hand to his cheek", "The second kneels upright with his hand raised to his cheek in grief. Mark alone says amazed — began to be sore amazed, and to be very heavy — and then, My soul is exceeding sorrowful unto death.", "22%", "33%"],
+ ["Bent to the rock", "The third leans forward with a hand stretched down toward the stone. Mark narrates two prayers — And again he went away, and prayed, and spake the same words — and leaves the third to be understood from he cometh the third time. The painter has counted three.", "28%", "57%"],
+ ["Christ standing over them", "At the right he stands with a closed white scroll in his left hand and his right raised toward the one disciple awake. Simon, sleepest thou? couldest not thou watch one hour?", "38%", "82%"],
+ ["Peter with nothing to say", "Grey-haired and short-bearded in yellow, as Peter is painted, he sits up with both hands open and his mouth shut. Mark alone gives the disciples' silence at the second return: neither wist they what to answer him.", "47%", "70%"],
+ ["The sleepers", "The rest sleep every way a man can: heads propped on hands, one with his mouth fallen open, one wrapped head and all in a red mantle, an old man stretched on the ground in green. The spirit truly is ready, but the flesh is weak.", "72%", "78%"],
+],
+
+"File:Cathedral (Monreale) - Right wing transept - Agony in the Garden.jpg":[
+ ["The angel", "An angel flies in level out of the gold from the left, haloed, reaching toward the kneeling Christ. The angel is Luke's; Mark's account of the garden has none.", "11%", "44%"],
+ ["Christ kneeling on the hill", "At the top he kneels on the crest of the hill with both hands raised. Abba, Father, all things are possible unto thee; take away this cup from me: nevertheless not what I will, but what thou wilt.", "22%", "66%"],
+ ["Peter roused", "One disciple sits up out of the heap, white-haired and short-bearded in an ochre mantle over blue, his hand at his breast, turned toward the Lord. Mark alone has Christ call him by name here: Simon, sleepest thou? couldest not thou watch one hour?", "58%", "64%"],
+ ["Christ returning", "He is set a second time at the right, standing, a closed scroll in his left hand and his right held out toward the one who is awake. He cometh, and findeth them sleeping — and the mosaic makes the finding the larger picture.", "62%", "88%"],
+ ["The Latin band", "At the upper right the letters that can still be read, …LATE ET ORATE… TIS IN TEM…, are the Latin of the words spoken to the sleepers. Mark gives them as Watch ye and pray, lest ye enter into temptation.", "9%", "82%"],
+ ["The sleepers", "The disciples lie heaped across the hill below the kneeling figure, wrapped in their mantles and slumped on one another. He found them asleep again, (for their eyes were heavy,) — the mosaicists give the sleep more of the hill than the prayer.", "65%", "30%"],
+],
+
+"File:Prodosia Dionysiou.jpg":[
+ ["Judas", "He comes in from the left in a red mantle over green, both arms round the Lord and his face against his. Master, master; and kissed him — Mark doubles the greeting, where Matthew's account has Hail, master.", "46%", "44%"],
+ ["Christ silent", "He stands in the midst with the cruciform halo, unmoving. Mark gives him no word to Judas at all — no Friend, as in Matthew, no question about the kiss, as in Luke — and his first words are to the crowd.", "68%", "62%"],
+ ["Hands laid on him", "A young man in a red tunic reaches in from the right and takes hold of the Lord's garment. Take him, and lead him away safely, Judas had told them — safely is Mark's word alone — and then they laid their hands on him, and took him.", "42%", "73%"],
+ ["The swords and staves", "Swords, clubs and an axe are raised over the heads, with a lantern held high on a pole. Are ye come out, as against a thief, with swords and with staves to take me? — Christ's first words in Mark are about exactly this.", "22%", "44%"],
+ ["The elder with the torch", "An old man in a red hood at the far left holds a torch up over the crowd, and another hooded elder stands at the right edge in green. Mark sends the multitude from the chief priests and the scribes and the elders; Matthew's account names no scribes.", "42%", "12%"],
+ ["The blow in the corner", "At the lower right a grey-haired man kneels on a youth in a short red tunic and holds a blade to his head. Mark names neither — one of them that stood by drew a sword, and smote a servant of the high priest, and cut off his ear — and in Mark the blow gets no answer from Christ at all.", "78%", "86%"],
+ ["Two watchers on the rock", "High at the top left, outside the torchlight, two young men stand on the rocks looking toward the arrest, unhaloed and unnamed. Mark ends the scene with they all forsook him, and fled, and a young man who left the linen cloth, and fled from them naked; these two are clothed and standing still, and the painter does not say who they are.", "15%", "9%"],
+],
+
+"File:Judas's kiss (Monreale).jpg":[
+ ["TRADITIO", "TRADITIO at the left end of the band, DOM… at the right where the photograph cuts it: the handing over of the Lord. The Latin Gospel calls Judas at this point traditor, the one who hands over — Mark's he that betrayed him.", "9%", "10%"],
+ ["Christ", "He stands at the centre in a cruciform halo, facing out of the mosaic while Judas's face is at his cheek. Mark's Christ answers the kiss with nothing; his first words, three verses later, are to the crowd.", "40%", "46%"],
+ ["Judas", "In a pale mantle, coming in from the right with his arm about the Lord. Whomsoever I shall kiss, that same is he; take him, and lead him away safely — the last word only Mark records.", "60%", "58%"],
+ ["The arm across his breast", "A beardless man on the left reaches his arm right across to take hold of the Lord. And they laid their hands on him, and took him — here the seizing has begun before the kiss is over.", "46%", "30%"],
+ ["The servant on the ground", "At the lower left a grey-haired man kneels on a young man thrown to the ground and has him by the head. Mark says only one of them that stood by drew a sword, and smote a servant of the high priest, and cut off his ear. He does not call the striker a disciple, and he names neither man; the names are John's.", "80%", "18%"],
+ ["The young man at the edge", "At the far left a young man stands apart from the press in a plain mantle. Nothing marks him as the young man of Mark's last two verses, having a linen cloth cast about his naked body; this one is clothed and still, and no one in the mosaic flees.", "48%", "9%"],
+ ["The lantern", "A lantern hangs from a crooked pole over the right of the crowd, among the spear-heads and axes. Christ's words in Mark name what the gold is full of: with swords and with staves to take me.", "13%", "82%"],
+],
+
+"File:Kiss of Judas (Church of Saint Nicolas the Orphan).jpg":[
+ ["Judas", "He leans in from the left in a pale mantle, one hand gripping the dark mantle at the Lord's breast and his face against his. Master, master; and kissed him — the doubled greeting is Mark's.", "42%", "50%"],
+ ["Christ", "Upright at the right of the pair under a deep orange-red halo, his face turned a little from the kiss rather than toward it. In Mark he says nothing to Judas at all.", "27%", "76%"],
+ ["The scroll", "Low against the Lord's dark mantle a white scroll shows, the hand that holds it half hidden under Judas's arm. I was daily with you in the temple teaching, and ye took me not: but the scriptures must be fulfilled.", "51%", "76%"],
+ ["The hand on his shoulder", "An arm in red with a patterned cuff reaches across from the right and takes him by the shoulder while the kiss is still going on. They laid their hands on him, and took him — in Mark, the very next verse.", "31%", "88%"],
+ ["The lantern and the blades", "Spear-heads, axes and curved blades stand in a row against the night over every head, and a lantern is carried in above them with ΙΣ ΧΣ written beneath it. With swords and with staves — Christ's first words in Mark are about what the crowd has brought.", "10%", "74%"],
+ ["The drawn sword", "At the far left a man in a red mantle holds a long sword up, and strikes nothing. One of them that stood by drew a sword — Mark does not say who — and the painter stops at the drawing: no servant is down and no ear is cut here.", "24%", "9%"],
 ],
 
 };
