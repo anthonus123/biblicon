@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **34 of the 78 have a prose reading and positioned markers,
-    188 markers in all**; the other 44 are the work in progress.
+    differs (see the Gotcha below). **42 of the 78 have a prose reading and positioned markers,
+    234 markers in all**; the other 36 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,22 +166,21 @@ and this file did not.
 
 ## Next
 
-**Active work — the 44 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 34 of the 78 icons are finished — batch 5
-(2026-09-21) did the Syrophoenician woman, the four thousand fed, and all four Transfiguration
-icons at 9:1-8, 38 markers, one commit. Two of that batch's own gotchas, in case the pattern
-repeats: the Canaanite fresco's inscription keeps Matthew's name for the woman where Mark calls
-her Syrophenician, and the Monreale "Multiplication of the Loaves and Fishes" mosaic's Latin
-carries the first feeding's numbers (five loaves, five thousand, twelve baskets) under Mark's
-seven-loaves, four-thousand pericope — the same mismatch already logged for Matthew's own reader
-at 15:29-39, now confirmed on the Mark side too. The remaining 19 passages, with how many icons
-each still needs:
+**Active work — the 36 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 42 of the 78 icons are finished — batch 6
+(2026-09-21e) did all four Entry icons, both fig-tree icons and both temple-cleansing icons at
+11:1-18, 46 markers, one commit. Two gotchas from that batch, in case the pattern repeats: Mark's
+temple-cleansing prophecy keeps a clause ("of all nations") that Matthew's and Luke's versions of
+the same quotation both drop, so a reading adapted from either would silently lose it; and Mark
+splits the fig tree into two mornings a full passage apart (cursed at 11:12-14, found withered
+only at 11:20 inside the next passage, `faith`), so the Ferapontov fresco's already-bare tree is
+compressing two of Mark's own days into one image — worth saying, not silently inheriting from
+Matthew's single-day account. The remaining 19 passages, with how many icons each still needs:
 
 ```
-11:1-10 (4)   11:11-14 (2) 11:15-18 (2) 13:21-27 (1)  14:3-9 (1)   14:10-11 (1)
-14:22-25 (3)  14:32-42 (3) 14:43-52 (3) 14:53-59 (2)  14:66-72 (2) 15:1-5 (2)
-15:6-15 (2)   15:16-20 (1) 15:21-28 (6) 15:42-47 (4)  16:1-8 (1)   16:9-13 (3)
-16:14-18 (1)
+13:21-27 (1)  14:3-9 (1)   14:10-11 (1) 14:22-25 (3)  14:32-42 (3)  14:43-52 (3)
+14:53-59 (2)  14:66-72 (2) 15:1-5 (2)   15:6-15 (2)   15:16-20 (1)  15:21-28 (6)
+15:42-47 (4)  16:1-8 (1)   16:9-13 (3)  16:14-18 (1)
 ```
 
 The loop that works, six to eight icons at a time, one commit each:
@@ -2129,4 +2128,50 @@ Luke's 63 icons are also still untouched.
 
 **Next.** Continue the Mark loop at `entry` (11:1-10, 4 icons), `figtree` (11:11-14, 2) and
 `temple` (11:15-18, 2) — a natural eight-icon batch since all three sit in one chapter.
+
+## Session 2026-09-21e (Mark readings and markers, batch 6: 11:1-18)
+
+**Did.** Eight icons, three passages, 46 markers, one commit, the same loop as batch 5: `grid.py`
+on each key and read the grid image itself, prose into `hotspots2.js`, markers into
+`hotspots3.js`, `quotes.js` before committing, `assemble.js` + `overlay.py` after, `make check`
+and `make mark` at the end.
+- `entry` (11:1-10, 4 icons: Baiophoros Dionysiou, 005 Langadas, 18 Adam, the Afon icon) — each
+  reading was given a distinct Markan hook rather than repeating one across all four: the singular
+  colt against Matthew's ass-and-colt pair; the "tied by the door … where two ways met" detail
+  Mark gives before the procession the icons paint; the anticlimax of v.11, where Mark has Christ
+  enter, look round on everything, and withdraw to Bethany with nothing done, which the plainest
+  of the four icons (Adam, all city and no wilderness) was used to carry; and "the Lord hath need
+  of him" with Mark's own acclamation clause, "Blessed be the kingdom of our father David," which
+  the other three Synoptics do not share.
+- `figtree` (11:11-14, 2 icons) — the Langadas panel's tree in full leaf is *more* right for Mark
+  than it would be for Matthew: Mark alone gives the reason the tree disappoints, *for the time of
+  figs was not yet*, so a leafy, fruitless tree is exactly the state the verse describes. The
+  Ferapontov fresco's bare tree, by contrast, is proleptic for Mark specifically — the withering it
+  shows belongs to 11:20, a full day and a different passage later (`faith`, not yet written), and
+  the reading says so rather than treating the two Gospels' timelines as interchangeable.
+- `temple` (11:15-18, 2 icons) — checked Matthew's kjv.json directly to confirm Mark's *of all
+  nations* is really absent from Matthew's own version of the same Isaiah quotation before
+  claiming the contrast in prose. The Monreale mosaic's rod and dove-cage (John's scourge, not
+  Mark's) were located by name only after a targeted crop — the first overlay pass had both
+  markers sitting on bare gold. The Rossano Gospels page's four prophet busts (David x2, Hosea,
+  Isaiah) were read as the manuscript's own typological scheme, not a one-to-one match to Mark's
+  own quotation (which names neither Hosea nor David, and alludes to Jeremiah without painting
+  him) — the same caution Matthew's reading of the same page already took.
+
+**Verified**
+- `BOOK=mark node src/tools/quotes.js`: 15 clauses to read after this batch, same 15 as before it
+  — zero new flags, meaning every verbatim KJV clause in these eight readings and their markers
+  matched `kjv.json` cleanly on the first pass.
+- `overlay.py` on all eight keys, two full passes. First pass: four markers landed clamped to 9%
+  (titles/inscriptions placed above the grid's own top edge) and three more sat on empty ground —
+  the Baiophoros title, the fig-tree-fresco's reclining figure, and the Monreale rod and dove-cage
+  both missed their targets until a fresh crop of the mosaic's upper-right corner located the cage
+  precisely. All eight were corrected and re-verified on a second overlay pass.
+- `make check`: green, no new failures, no clamp warnings. `make mark`: rebuilt clean, 13.04 MB.
+
+**Not done.** The other 36 Mark icons across 16 passages, starting at Mark 13:21-27 (1 icon).
+Luke's 63 icons are also still untouched.
+
+**Next.** Continue the Mark loop at 13:21-27 (1), 14:3-9 (1) and 14:10-11 (1) — a short three-passage
+batch since none of the surrounding passages has more than one icon until 14:22-25.
 
