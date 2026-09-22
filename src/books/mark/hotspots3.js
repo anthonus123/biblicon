@@ -490,4 +490,87 @@ module.exports={
  ["The drawn sword", "At the far left a man in a red mantle holds a long sword up, and strikes nothing. One of them that stood by drew a sword — Mark does not say who — and the painter stops at the drawing: no servant is down and no ear is cut here.", "24%", "9%"],
 ],
 
+"File:Krinomenos Christou Dionysiou.jpg":[
+ ["The title", "Ο ΧΣ ΚΡΙΝΟΜΕΝΟΣ ΥΠΟ ΑΝΝΑ ΚΑΙ ΚΑΙΑΦΑ — Christ judged by Annas and Caiaphas. Mark names neither man: they led Jesus away to the high priest, and the high priest is all Mark ever calls him.", "9%", "55%"],
+ ["The rent garment", "The nearer judge, bald and white-bearded in a red cloak, pulls his tunic open down the breast with both hands. It is the gesture of the next passage, which has no icon of its own: Then the high priest rent his clothes, and saith, What need we any further witnesses?", "54%", "22%"],
+ ["The second judge", "Hooded in red over purple, he sits beside the first and lifts his open hand. The inscription gives the scene two judges; Mark gives it one high priest, and with him were assembled all the chief priests and the elders and the scribes.", "42%", "31%"],
+ ["The scribe's desk", "A scribe with a reed pen stands at a slanted desk with an inkpot and a written sheet, its words too small to read. Mark mentions no record, but he says twice what one would have held: their witness agreed not together.", "57%", "55%"],
+ ["The crowd", "Bearded and beardless heads press in behind the scribe. The chief priests and all the council sought for witness against Jesus to put him to death; and found none — though many bare false witness against him.", "36%", "45%"],
+ ["Christ", "Haloed, in a blue mantle over a dark red tunic, both hands held out together toward the desk and his face turned from the judges. He says nothing in these seven verses; the only words given him are the witnesses' report, I will destroy this temple that is made with hands — and made with hands and made without hands are Mark's alone.", "40%", "71%"],
+ ["The guard", "A soldier in green under a curling crested helmet stands at the right edge, one hand raised to grip a tall staff. Mark's seven verses have no soldier in them; the blows come in the next passage, when the servants did strike him with the palms of their hands.", "40%", "88%"],
+],
+
+"File:Christ before Caiaphas, GRACANICA 1 090A7764.jpg":[
+ ["The high priest", "Enthroned at the left in a tall rounded cap, his face worn to the underpaint and the front of his robe torn into pale strips, a hand still at the tear. That is Mark's next passage: Ye have heard the blasphemy: what think ye? The photograph is called Christ before Caiaphas; Mark calls him only the high priest.", "45%", "25%"],
+ ["The accusers", "Men in pale robes and dark mantles fill the middle of the wall, some with their hands thrust out toward the throne, some pointing back the other way. For many bare false witness against him, but their witness agreed not together.", "44%", "44%"],
+ ["The soldier", "In a scaled collar with a sword at his side, he has Christ by the wrist and brings him forward. And they led Jesus away to the high priest: and with him were assembled all the chief priests and the elders and the scribes.", "46%", "62%"],
+ ["Christ", "Haloed, in a dark blue mantle, his head a little bowed. He is silent all through Mark's seven verses, and the one saying in them is the one his accusers report: I will destroy this temple that is made with hands.", "54%", "71%"],
+ ["The cock below", "In a black band under the ground line a cock stands on a column beside a Slavonic title ending ПЕТРОВО, of Peter: the top of the denial, painted beneath this scene and cut off by the photograph. Mark puts Peter just there — as Peter was beneath in the palace.", "90%", "17%"],
+ ["Another saint", "The stylite in the niche under the scene, arms spread above the railing of his pillar, belongs to another part of the church's painting. He has nothing to do with the trial.", "68%", "50%"],
+],
+
+"File:Alektor Petrou Dionysiou.jpg":[
+ ["Η ΑΡΝΗΣΙΣ ΤΟΥ ΠΕΤΡΟΥ", "The denial of Peter, across the night sky. Peter is painted three times in the one fresco, in ochre over blue each time: at the fire, at the door, and weeping.", "10%", "33%"],
+ ["Peter at the fire", "Seated low at the left, one hand held out to the flames and the other raised, palm outward, to the men round the fire. The maid first finds him so: when she saw Peter warming himself.", "58%", "29%"],
+ ["The fire", "A fire of crossed sticks on the bare ground. Mark mentions it twice — here, and when Peter first came in and warmed himself at the fire — and Matthew's account not once.", "82%", "16%"],
+ ["They that stood by", "The armoured pair and the youth in blue who share the fire. In Mark the third challenge is theirs: Surely thou art one of them: for thou art a Galilaean, and thy speech agreeth thereto. Matthew's account has thy speech bewrayeth thee.", "40%", "12%"],
+ ["Peter at the door", "Standing, one hand pressed to his breast and the other lifted. I know not, neither understand I what thou sayest — and at the last he began to curse and to swear, saying, I know not this man of whom ye speak.", "40%", "41%"],
+ ["The maid", "A young woman in red in a doorway, pointing straight at him. The doorway is John's damsel that kept the door; Mark's is one of the maids of the high priest, and she comes back — a maid saw him again — where Matthew's second challenger is another maid.", "30%", "53%"],
+ ["Peter weeping", "Folded over a green-veined drum, his head hidden in his crossed arms. Mark's ending is plainer than this: when he thought thereon, he wept. The going apart is Matthew's and Luke's, who say he went out.", "18%", "71%"],
+ ["The cock", "One bird, on the roof of a little building. Mark's cock crows twice — once when Peter went out into the porch, and again at the end, And the second time the cock crew — just as the Lord had said: Before the cock crow twice, thou shalt deny me thrice.", "13%", "87%"],
+ ["The opening", "The black arch at the lower right is a real opening in the wall; the room that shows dimly through it is no part of the denial.", "70%", "62%"],
+],
+
+"File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 07.1 rinnegamento di pietro.jpg":[
+ ["The maid", "In a doorway with a white curtain looped up behind her, in a red tunic under an olive-brown mantle. The door is John's detail, the damsel that kept the door; Mark calls her one of the maids of the high priest, and she is the only challenger this mosaic gives.", "45%", "26%"],
+ ["Her hand", "Stretched out toward the apostle. She looked upon him, and said, And thou also wast with Jesus of Nazareth — of Nazareth, where Matthew's first challenger says of Galilee.", "42%", "41%"],
+ ["Peter's raised hand", "Lifted palm outward before his face. I know not, neither understand I what thou sayest: Mark gives two denials in one breath, where Matthew's account has only I know not what thou sayest.", "27%", "54%"],
+ ["Peter", "Grey-haired and short-bearded, in white with a dark stripe falling from the shoulder, his left hand laid on his breast. Mark's second challenge can come from this same woman: a maid saw him again, and in his Greek she is the maid, the one already met.", "55%", "63%"],
+ ["The palace", "A long building with arched windows under a red-tiled roof stands behind Peter. Peter followed him afar off, even into the palace of the high priest.", "24%", "80%"],
+ ["What is not here", "Bare green ground between the two. No fire, though Mark twice has Peter warming himself; no bystanders, though his last challenge is theirs; and no cock, in the one Gospel where it crows twice.", "72%", "45%"],
+],
+
+// ---- chapter 15 ----
+
+"File:Pilate judgement (icon).jpg":[
+ ["ПРИВЕДЕНИЕ КЪ ПИЛАТУ", "The bringing to Pilate, lettered in the gold. Mark's first verse ends the same way: bound Jesus, and carried him away, and delivered him to Pilate.", "11%", "50%"],
+ ["Christ", "Haloed, in a robe so dark it is nearly black, standing at the foot of the dais. No cord can be made out on his hands. In Mark he says three words here, and then answered nothing.", "60%", "15%"],
+ ["The soldiers", "Tall green crested helmets behind Christ, with spear-shafts rising over them. Mark names no soldiers in these five verses; they first appear in the next passage but one.", "38%", "24%"],
+ ["The old man at his side", "In grey-green, close beside Christ, his hand reaching to Christ's. The handing over is the council's: the chief priests held a consultation with the elders and scribes and the whole council — and delivered him.", "55%", "29%"],
+ ["Pilate", "On a gold-backed throne up on the dais, in a jewelled cap and a green robe crossed by a broad gold band, his face turned to the accusers and one hand reaching back toward the prisoner. Art thou the King of the Jews? — and the answer, Thou sayest it, is the last thing Christ says to him.", "48%", "55%"],
+ ["The accuser at his face", "A figure in dark green with a gold head-cloth leans in close to Pilate. And the chief priests accused him of many things: but he answered nothing.", "40%", "71%"],
+ ["The chief priests", "A bearded man in red with his hand on his breast, and a young man speaking at his ear. Pilate turns their charges on the prisoner: Answerest thou nothing? behold how many things they witness against thee.", "58%", "80%"],
+ ["Behind the throne", "A tall figure in red with a gold head-cloth bends toward Pilate, something small and round in both hands at the breast. The icon does not say who it is or what is held; if it is water, the washing is Matthew's, and Mark does not tell it.", "32%", "44%"],
+ ["The empty steps", "The gold steps of the dais between Christ and Pilate, with no one on them. But Jesus yet answered nothing; so that Pilate marvelled — marvelled, where Matthew's account has the governor marvelled greatly.", "76%", "40%"],
+],
+
+"File:Cathedral (Monreale) - Right wing transept - Before Pilate.jpg":[
+ ["IHS DVCTVS E ANTE PYLATV", "Jesus was led before Pilate. Mark says more: bound Jesus, and carried him away, and delivered him to Pilate.", "15%", "25%"],
+ ["The elders", "A crowd in white head-cloths, the nearest with his hand at his chin and the next lifting a finger. The chief priests held a consultation with the elders and scribes and the whole council, and the whole council has come along.", "50%", "13%"],
+ ["Christ", "Cross-haloed, in a dark blue mantle, walking forward free. The binding of Mark's first verse is not shown.", "62%", "40%"],
+ ["His hand held out", "A speaker's gesture toward the throne. In Mark it answers one question only — Thou sayest it — and after that he answered nothing.", "47%", "52%"],
+ ["Pilate", "Enthroned under a columned canopy, bearded, in a gold mantle over white, with PYLAT… over his head. Mark calls him Pilate and nothing else; he never uses the title governor.", "58%", "72%"],
+ ["Pilate's hand", "Held open toward the prisoner. Art thou the King of the Jews? — and then, Answerest thou nothing? behold how many things they witness against thee.", "44%", "63%"],
+ ["The soldier", "A young soldier in scale armour with a spear and a drawn sword stands behind the throne. Mark brings soldiers into the story two passages later: the soldiers led him away into the hall, called Praetorium.", "48%", "87%"],
+],
+
+"File:Mastigosis Dionysiou.jpg":[
+ ["Η ΜΑΣΤΙΓΩΣΙΣ", "The scourging, lettered across the top, with ΙΣ ΧΣ on either side of the column. In Mark it is a clause at the end of the passage: when he had scourged him.", "9%", "62%"],
+ ["The bound hands", "His arms stretched up and his hands clasped round the shaft under the capital, a cord round the wrist. Mark uses bound twice in this chapter — the council bound Jesus, and Barabbas lay bound with them that had made insurrection with him — and it is Barabbas who goes free.", "15%", "52%"],
+ ["Christ", "Haloed, in a loincloth, his head turned toward the man at the left. Pilate had asked the crowd, Why, what evil hath he done? And they cried out the more exceedingly, Crucify him.", "45%", "47%"],
+ ["The cords at his feet", "His ankles are tied to the column with a double cord above its stepped base. It is Pilate's last act before he hands him over: delivered Jesus, when he had scourged him, to be crucified.", "86%", "50%"],
+ ["The youth", "In a red tunic with his blue cloak flying, his whip with its yellow lashes raised high. Mark does not say who did the scourging; the soldiers first appear in the verse after it.", "46%", "22%"],
+ ["The bald scourger", "In green with a red sash, leaning back with his arm drawn behind him for the stroke. Pilate's question hangs over the whole scene: What will ye then that I shall do unto him whom ye call the King of the Jews?", "48%", "72%"],
+ ["The stars", "The painter keeps the starred night sky he gives the trial and the denial. By Mark's reckoning it was day: the council met straightway in the morning, and he counts the hours from there — it was the third hour, and they crucified him.", "22%", "61%"],
+],
+
+"File:Flagellation of Christ (icon).jpg":[
+ ["У СТОЛПА", "At the pillar — the right half of the red title the column splits in two; the word before it is too faint here to read with confidence. Mark's word is scourged, and he gives it one clause: delivered Jesus, when he had scourged him, to be crucified.", "11%", "73%"],
+ ["The column", "A dark shaft from the ground to a white cup-shaped capital with a slab laid on top. No Gospel mentions a pillar; it is the Church's picture of the scourging, not Mark's word.", "72%", "51%"],
+ ["Christ", "Pressed against the column with his head tipped back, looking up the shaft, his halo drawn in thin red lines. Pilate knew why he was there: For he knew that the chief priests had delivered him for envy.", "30%", "41%"],
+ ["The hands at the column", "His arms go round the shaft and his hands meet at its side. The chief priests moved the people, that he should rather release Barabbas unto them — and the one released was not this one.", "52%", "53%"],
+ ["The young man in white", "A short white tunic, a red sash and bound leggings, the whip lifted as high as his arm will go. Mark had it foretold on the road: they shall mock him, and shall scourge him.", "56%", "19%"],
+ ["The man in grey", "In grey with a red cloak, his raised arm crossing over his head and two knotted thongs hanging behind him. The crowd's cry in Mark is the bare command, Crucify him, where Matthew's account has Let him be crucified.", "58%", "73%"],
+],
+
 };
