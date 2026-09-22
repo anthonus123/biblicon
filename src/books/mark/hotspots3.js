@@ -573,4 +573,88 @@ module.exports={
  ["The man in grey", "In grey with a red cloak, his raised arm crossing over his head and two knotted thongs hanging behind him. The crowd's cry in Mark is the bare command, Crucify him, where Matthew's account has Let him be crucified.", "58%", "73%"],
 ],
 
+"File:Empaigmos Dionysiou.jpg":[
+ ["Ο ΤΥ ΧΥ ΕΜΠΑΙΓΜΟΣ", "The mocking of Christ, in white across the night sky. Christ had used the word himself on the road up to Jerusalem — they shall mock him — and Mark closes this passage with it: when they had mocked him.", "9%", "47%"],
+ ["The crown of thorns", "A dark twisted band round his head, inside the halo. And platted a crown of thorns, and put it about his head.", "21%", "46%"],
+ ["The red cloak", "Fastened at the throat over a darker robe. Mark and John call it purple and Matthew a scarlet robe; either way it is a king's colour, and the greeting that goes with it is Hail, King of the Jews!", "44%", "56%"],
+ ["The reed in his hand", "A long stalk held at his waist, its leafy end splayed below the hand. That is Matthew's detail, a reed in his right hand. Mark never gives him the reed; it is only what they strike him with.", "48%", "47%"],
+ ["The reed raised", "A bearded man in green points a reed up at Christ's head. And they smote him on the head with a reed, and did spit upon him.", "38%", "67%"],
+ ["The horns", "A young man blows a long straight horn at the upper left, and another answers him at the upper right. Mark says only that they began to salute him, Hail, King of the Jews! The painter makes the greeting a king's welcome.", "22%", "11%"],
+ ["The cymbals", "Held up in pairs at the right, and a drum carried by a youth at the left. No Gospel has music in the hall; it is the painter's mock court, not Mark's.", "50%", "86%"],
+ ["The mockers", "No one here wears armour or carries a weapon. In Mark it was the soldiers, who led him away into the hall, called Praetorium; and they call together the whole band.", "33%", "24%"],
+ ["Bowing the knee", "A bearded man kneels at the left, his hands at his breast, looking up. Mark: bowing their knees worshipped him. Worshipped is his word; Matthew's account has they bowed the knee before him.", "70%", "27%"],
+ ["The two young men", "Two more on their knees at the right, their faces turned up to him. The homage is mockery, but the title they give him is the one that will be written over the cross.", "70%", "73%"],
+],
+
+"File:Stavrosis Dionysiou.jpg":[
+ ["Η ΣΤΑΥΡΩΣΙΣ", "The Crucifixion, split across the dark sky. Mark alone gives the hour: And it was the third hour, and they crucified him.", "9%", "38%"],
+ ["Christ", "Dead on the cross, his head fallen to his right, ΙΣ ΧΣ on the crossbar. Mark's passage leaves him living; the death comes at the ninth hour: And Jesus cried with a loud voice, and gave up the ghost.", "15%", "50%"],
+ ["The thief on his right hand", "Roped to a low T-shaped cross, his head sunk on his chest. The one on his right hand, and the other on his left — And he was numbered with the transgressors.", "27%", "14%"],
+ ["The thief on his left", "Roped to his cross, his head thrown back. Mark does not tell the two apart: And they that were crucified with him reviled him.", "27%", "86%"],
+ ["The club", "A soldier in red swings a club at the thief's legs, and another does the same at the right. The breaking of the legs is John's account; Mark does not tell it.", "47%", "9%"],
+ ["The lance", "A soldier behind the women holds his spear to Christ's side, and the blood runs from the wound. That is John's too: one of the soldiers with a spear pierced his side.", "24%", "44%"],
+ ["The Mother of God", "ΜΡ ΘΥ over her head; she leans into the arms of a woman in yellow, with others behind. Mark does not mention her at the cross, and the women he names were looking on afar off.", "40%", "29%"],
+ ["St John", "Ο ΑΓ(ΙΟΣ) ΙΩ(ΑΝΝΗΣ) Ο ΘΕΟΛΟΓΟΣ over his head, his hand at his cheek. His place here is from his own Gospel; in Mark's the disciples had gone at the arrest — they all forsook him, and fled.", "38%", "64%"],
+ ["The centurion", "Haloed, with a round shield, his right hand raised. The letters above him begin Ο ΑΓ(ΙΟΣ) Λ…; the Church knows him as St Longinus. In Mark he is the centurion, which stood over against him.", "30%", "74%"],
+ ["The sponge", "A young man with a reed, a sponge at its tip, and a small pail. That is the vinegar of the ninth hour. The drink of this passage was offered before the nails: wine mingled with myrrh: but he received it not.", "50%", "59%"],
+ ["The place of a skull", "A black cave in the split rock under the cross, a skull inside it, and the blood from the feet running down onto it. Golgotha, which is, being interpreted, The place of a skull; the Church's tradition says the skull is Adam's.", "88%", "52%"],
+],
+
+"File:Crucifixion Icon Sinai 12th century.jpg":[
+ ["IC XC", "His name, on the short board at the top of the cross. Mark says what was written there: the superscription of his accusation was written over, THE KING OF THE JEWS.", "20%", "51%"],
+ ["The angels", "Two small angels fly in above the crossbar, the one at the left with his hands at his face. No Gospel puts angels at the cross.", "22%", "35%"],
+ ["Christ", "His body bent in a long curve, his head fallen on his shoulder, the blood running from his hands. He is dead, which in Mark comes after the darkness, at the ninth hour.", "31%", "48%"],
+ ["Η ΣΤΑΥΡΩΣΙΣ", "The Crucifixion, in red letters on either side of him. Mark's verse for the moment: And when they had crucified him, they parted his garments, casting lots upon them.", "37%", "61%"],
+ ["The Mother of God", "In a dark maphorion, one hand at her breast and the other lifted toward him. She stands by the cross in John's Gospel; Mark does not mention her there.", "52%", "30%"],
+ ["St John", "In green, his cheek on his hand. Mark's account has no disciple at Golgotha at all.", "55%", "68%"],
+ ["Golgotha", "A small dark hill with a black hollow at its foot, the blood running down the cross into it. Mark names the place and translates it, The place of a skull; no skull is painted here.", "81%", "49%"],
+ ["The frame of saints", "Apostles, archangels, bishops and martyrs in medallions all round, and along the bottom a crowned emperor and empress. Their names are written in red beside them, too small to read in this photograph.", "90%", "69%"],
+],
+
+"File:024 Crucifixion of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The title", "Four letters between points, the shape of ΙΝΒΙ: Jesus of Nazareth the King of the Jews, as John gives it. Mark's is the bare charge, THE KING OF THE JEWS.", "13%", "49%"],
+ ["Christ", "Dead on the cross, his head sunk forward. Mark's account of this passage has not yet reached his death; it comes at the ninth hour.", "23%", "46%"],
+ ["The wound in the side", "A stripe of red and blue from his side, the blood and water of John's account. Mark tells no lance.", "31%", "47%"],
+ ["The city wall", "Red brick, with a crenellated tower at each end. John says the place was nigh to the city; Mark says only, they bring him unto the place Golgotha.", "33%", "13%"],
+ ["The women", "Three haloed women close under the cross. Mark's women were looking on afar off, and he names them: Mary Magdalene, and Mary the mother of James the less and of Joses, and Salome.", "60%", "22%"],
+ ["St John", "Looking up at Christ, his hand at his cheek. His place under the cross is in his own Gospel.", "57%", "69%"],
+ ["The centurion", "A haloed soldier in gold armour behind John. Mark's centurion stood over against him, and speaks two passages on.", "55%", "86%"],
+ ["The skull", "A skull with its bones in an arched opening at the foot of the cross, two streams of blood running down the wood into it. Golgotha, which is, being interpreted, The place of a skull.", "84%", "50%"],
+],
+
+"File:Double-sided icon - Crucifixion and Hodegetria (9-13th c., Byzantine museum).jpg":[
+ ["ΜΙΧΑΗΛ", "The archangel Michael, named in red, flying in with a white cloth held out. The museum dates him, his companion, the cross and the body to the ninth century, the oldest layer on the panel.", "12%", "20%"],
+ ["ΓΑΒΡΙΗΛ", "Gabriel, named at the right, a white cloth over his arms. No Gospel puts angels at the cross.", "13%", "77%"],
+ ["Ο ΒΑΣΙΛΕΥΣ ΤΗΣ ΔΟΞΗΣ", "The King of Glory, on either side of Christ under the arms of the cross. Every other King in Mark's chapter is in an enemy's mouth, down to the words written over him: THE KING OF THE JEWS.", "29%", "19%"],
+ ["Christ", "His head fallen on his shoulder, his eyes closed, with Η ΣΤΑΥΡΩΣΙΣ written below the title on both sides of him.", "26%", "45%"],
+ ["The stream from the side", "A thin line of blood arcs out of his side toward his mother. The lance is John's; Mark does not tell it.", "38%", "36%"],
+ ["The Mother of God", "In a dark maphorion marked with small stars, looking up, one hand at her breast and the other held out. Mark does not mention her at the cross.", "48%", "22%"],
+ ["St John", "His cheek on one hand, the other open. In Mark the disciples had scattered, as they were told they would: I will smite the shepherd, and the sheep shall be scattered.", "50%", "72%"],
+ ["The worn lower half", "Below the waist the figures and the foot of the cross are dark shapes on the gold. Whether a skull was painted here, for Mark's The place of a skull, can no longer be seen.", "80%", "50%"],
+],
+
+"File:Great Lavra Monastery Katholikon Church Crucifixion, Theophanes the Cretan 1535.jpg":[
+ ["Christ", "Dead, his head bowed on his breast, with IC XC on the arms of the cross. In Mark he dies at the ninth hour: And Jesus cried with a loud voice, and gave up the ghost.", "12%", "58%"],
+ ["The nail in the hand", "Blood runs down from the nail in his right hand. Mark's word for it all is the plainest: when they had crucified him.", "11%", "24%"],
+ ["The angel with the chalice", "A small angel in pink holds a gold chalice out toward Christ's side. No Gospel reports it; it is the Church reading the Cross through the Supper — This is my blood of the new testament, which is shed for many.", "24%", "45%"],
+ ["The angel at the right", "In green with a pink cloak, one hand lifted. A third, cut off by the edge of the photograph at the upper left, has his hands wrapped in his cloak.", "22%", "85%"],
+ ["The lance", "A soldier in a crested helmet and a red doublet, a sword at his hip, looks up and lifts a lance toward Christ's side. The piercing is in John's account; Mark does not tell it.", "40%", "24%"],
+ ["The sponge on the reed", "Lifted high beside the cross. Mark has it later, at the ninth hour: one ran and filled a spunge full of vinegar, and put it on a reed, and gave him to drink.", "29%", "75%"],
+ ["The pail", "Hanging from the young man's other hand. The drink of this passage was another, offered before the nails: wine mingled with myrrh: but he received it not.", "70%", "91%"],
+ ["The feet", "Nailed side by side on a slanting footboard, the blood running onto it. And it was the third hour, and they crucified him.", "75%", "59%"],
+],
+
+"File:Cathedral (Monreale) - Left wing transept - West wall - Crucifixion.jpg":[
+ ["CRVCIFIXIO IESV CHRISTI", "The Crucifixion of Jesus Christ, in Latin across the gold. Mark is the one Evangelist who gives its hour: And it was the third hour, and they crucified him.", "9%", "60%"],
+ ["INRI", "Iesus Nazarenus Rex Iudaeorum, Jesus of Nazareth the King of the Jews, in John's wording. Mark's is the bare charge: THE KING OF THE JEWS.", "15%", "50%"],
+ ["The angel at the left", "Coming down with one arm flung out. No Gospel puts angels at the cross.", "14%", "24%"],
+ ["The angel at the right", "His hand at his face in grief, the other arm reaching toward the cross.", "15%", "75%"],
+ ["The wound in the side", "Open under his ribs, his head fallen on his shoulder. The lance is John's; Mark tells no wound.", "40%", "44%"],
+ ["The Mother of God", "In a dark mantle, her hand to her face. Mark does not mention her at the cross: his women were looking on afar off.", "55%", "24%"],
+ ["The women", "One in white looking up, one in pale blue leaning her head against the Mother's. Mark names three: Mary Magdalene, and Mary the mother of James the less and of Joses, and Salome.", "62%", "12%"],
+ ["St John", "Weeping into his hand. In Mark no disciple comes to Golgotha; the last of them seen is Peter in the high priest's palace, and when he thought thereon, he wept.", "55%", "64%"],
+ ["The centurion", "Grey-bearded, haloed, holding a spear, his open hand lifted toward the cross. Mark says he stood over against him, and gives his confession two passages on: Truly this man was the Son of God.", "52%", "86%"],
+ ["The place of a skull", "The rock bursts open in pale rays where the cross goes into it, and in the cave below lies a skull. Golgotha, which is, being interpreted, The place of a skull.", "90%", "52%"],
+],
+
 };
