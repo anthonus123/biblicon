@@ -15,6 +15,12 @@
 # One row per MARKER, not per icon — per-icon rows are how 47 bad marker texts hid behind 65
 # "checked" ones the first time.
 #
+# A FOURTH KIND OF ERROR, named 2026-09-21 at batch 10: the marker that makes NO CLAIM
+# ABOUT THE PICTURE AT ALL - pure Scripture, a homily, or colour symbolism the painting does
+# not carry. It can never be falsified, so it reads `holds` forever, and the tab it sits in is
+# called Deciphering the Icon. From batch 10 such markers are given what is under their circle
+# and their note begins NO PICTURE CLAIM. Batches 1-9 did not look for this kind.
+#
 # key	n	marker label	verdict	note   (verdict: holds | fixed-DATE)
 1700683b5e46	1	Christ at the table	fixed-2026-09-21	he does not recline and his hand is not raised: he sits upright on a cushioned seat and his right hand is down at his knee, fingers reaching toward the woman. Prose in hotspots2.js said 'reclines' too and was fixed with it
 1700683b5e46	2	The woman at his feet	fixed-2026-09-21	position right, but her hair is bound under a white cloth — nothing is wiped with it. Added what is there: face turned up, hands at his bare foot
@@ -301,3 +307,18 @@ d3cd28ed2081	1	The Sower	fixed-2026-09-21	the sower is HALOED — he is painted 
 d3cd28ed2081	2	The birds on the wayside	holds	black birds on the beaten path at the left
 d3cd28ed2081	3	The stony ground	fixed-2026-09-21	the stones are bare on the surface with seed lying on them, not 'just under a thin skin of earth'
 d3cd28ed2081	4	The thorns and the good ground	fixed-2026-09-21	there is no good ground in the picture: the thistles run to the panel's border and no harvest is painted anywhere
+18b841ec8665	1	The caption ΟΙΚΟΔΕΣΠΟΤΗΣ	fixed-2026-09-21	the red caption, cut short after ΟΙΚΟΔ, stands at ~42% over the standing man in grey who PAYS - not over the seated man at ~25%
+18b841ec8665	2	The householder -> The man at the door	fixed-2026-09-21	by the painter's own caption the seated man is not the householder: no caption names him. 'does not go into the field' dropped. Relabelled
+18b841ec8665	3	The steward paying out -> The householder paying out	fixed-2026-09-21	Matthew 20:8 gives the paying to the steward, but the painter wrote householder over the man who pays. He puts a gold coin into cupped hands and holds a looped cord. Relabelled
+18b841ec8665	4	The queue of labourers	fixed-2026-09-21	five men, and the first is being paid, not waiting
+18b841ec8665	5	The caption ΟΙ ΓΕΩΡΓΟΙ	fixed-2026-09-21	γεωργοί is husbandmen, the word of 21:33, not the ἐργάται of 20:1. And not 'five men bent over the vines with their hoes': one drives a long-handled tool into the ground with his foot, the rest cut with short curved blades, and two stand upright. A second red caption at the right is too abbreviated to read here
+18b841ec8665	6	The vines	fixed-2026-09-21	NO PICTURE CLAIM - it was the Paschal homily and nothing else. Added what is there: bare leafless stocks, no grapes anywhere
+d4f530364ab1	1	Christ the Judge	holds	seated, beardless, cross-nimbus, right hand held out open toward the sheep. THE READING WAS WRONG ABOUT THE OBJECT: image_meta.json dates it 'early 20th century (original dated early 6th century)', desc 'Reproductions-Mosaics' - a copy at the Metropolitan Museum, and the reader's own credit line already prints that date under a label saying 'Ravenna, 6th c.'. Reading fixed; the LABEL is left for the owner. The Commons page does not name the church - the Sant'Apollinare Nuovo identification rests on the composition
+d4f530364ab1	2	The angel in red	fixed-2026-09-21	'robed in the colour of divine life' is symbolism the mosaic does not carry. Now what is there: winged, standing behind the sheep, right hand raised palm out before his breast
+d4f530364ab1	3	The angel in blue	fixed-2026-09-21	'the colour of the created and the far side' likewise dropped. Same wings, same gesture as the red angel
+d4f530364ab1	4	The sheep on the right	fixed-2026-09-21	NO PICTURE CLAIM - the text was Matthew 25:34 alone. Two white sheep, facing him, his open hand over the upper one's head
+d4f530364ab1	5	The goats on the left	fixed-2026-09-21	NO PICTURE CLAIM. Only ONE goat is made out at full crop: grey, dark along the back, where the sheep are white
+90bb6dd72243	1	The empty Cross	fixed-2026-09-21	no ladder leans against it - the ladder is on the shoulder of the man at the far right. Added the title-board, the stars and the city walls
+90bb6dd72243	2	The Theotokos	fixed-2026-09-21	text right (cheek pressed to his, ΜΡ ΘΥ by her halo, now said), but the marker sat at 40% left on Christ's chest by the ΙΣ ΧΣ letters. Moved to her, 27%
+90bb6dd72243	3	The stone of unction	fixed-2026-09-21	the body is NOT wrapped: bare but for a loincloth, on a white linen sheet over a red slab. Wounds in both feet confirmed by crop. 'anointed' dropped - no anointing is painted and Matthew reports none
+90bb6dd72243	4	Joseph and Nicodemus	fixed-2026-09-21	they do not come together 'with the ladder and the linen': the haloed grey-bearded man bends over the feet holding the linen, the unhaloed dark-bearded one stands with the ladder, cheek in hand. The fresco letters neither. 'dared' is Mark 15:43, not Matthew; Nicodemus is John's
