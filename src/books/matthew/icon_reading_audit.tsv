@@ -63,10 +63,10 @@ ae630c177c4b	The Synaxis of the Twelve Apostles — Constantinople, early 14th c
 d3cd28ed2081	The Parable of the Sower — Orthodox mosaic	checked-2026-08-22	seed-fold at the waist, seed cast, birds on the path, thorns, stony ground - all four grounds present
 fd69652893db	The Beheading of the Forerunner — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; the gold disc round the fallen head is his HALO, which is what makes the 'head on the charger' misreading easy
 8b7f7d9d5bf8	The Blessing of the Five Loaves — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; he holds five loaves with the two fishes laid across them and his face turned UP - the painter chose 'looking up to heaven'
-eeb8331bcc9e	Christ Saving Peter from the Waves — Monreale, 12th c.	checked-2026-08-22	hands actually clasp; Peter chest-deep - reading holds
+eeb8331bcc9e	Christ Saving Peter from the Waves — Monreale, 12th c.	fixed-2026-09-21	found by the marker audit, batch 10: Peter is painted whole down to his feet, not 'half in the water' (this row had said 'chest-deep - reading holds'). Reading rewritten
 bced617a4e30	The Canaanite Woman — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; and the daughter is IN the fresco on a red couch, not 'at home' as the reading said
 d5a17108ebef	The Multiplication of the Loaves — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; ALSO its Latin counts five loaves/two fishes/five thousand/twelve baskets - Matthew 14, not the 15:29-39 it stands under. Owner's call, see HANDOFF
-0c81d57a20b0	The Transfiguration — Sinai, 12th c.	checked-2026-08-22	mandorla, Moses and Elias either side, three disciples down - holds
+0c81d57a20b0	The Transfiguration — Sinai, 12th c.	fixed-2026-09-21	found by the marker audit, batch 10: 'Orthodox iconography always paints them falling' - this panel does not; Peter sits and speaks, James sits, only John hides his face. Reading rewritten
 b5aeb19e98db	The Good Shepherd — Great Palace, Constantinople, 5th–6th c.	fixed-2026-09-21	applied 2026-09-21; and the 'pail' is a woven basket with two round pale things in it
 18b841ec8665	The Labourers in the Vineyard — Byzantine Gospel book, 11th c.	fixed-2026-09-21	found by the marker audit, batch 10: 'hires labourers at the gate' - the upper register is the PAYING, a coin into the first man's hands, and the caption householder stands over the man who pays. Reading rewritten
 afa7c09513ff	The Blind Men of Jericho — Monreale, 12th c.	fixed-2026-09-21	applied 2026-09-21; inscription is MISERERE NOSTRI not NOBIS, and the blind men's eyes are set as blank white ovals
@@ -81,7 +81,7 @@ d4f530364ab1	The Separation of the Sheep and the Goats — Ravenna, 6th c.	fixed
 90bb6dd72243	The Lamentation at the Tomb — Dionysiou, Athos, 1547	checked-2026-08-22	Theotokos cheek to cheek, myrrhbearers with raised hands, empty cross on a starred sky - holds
 c8cde9e68f3f	“Behold the Place Where the Lord Lay” — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; marker label 'sleeping guard' now 'guard struck down'; two angels named in the reading
 d8d0e2a8233a	The Second Coming — Georgios Klontzas, Crete, late 16th c.	fixed-2026-09-21	applied 2026-09-21; the lake holds chained souls, black winged devils with hooks, green scaly beasts, and a ribbed flank closing it at the right
-c73d837b2a2b	The Cleansing of the Temple — Monreale, 12th c.	checked-2026-08-22	hanging dove cage, scattered coins, sellers drawing back - all present
+c73d837b2a2b	The Cleansing of the Temple — Monreale, 12th c.	fixed-2026-09-21	found by the marker audit, batch 10: the inscription claim is not legible in this photograph, the 'scourge of cords raised in his right hand' is John 2:15 and cannot be assigned, and the oxen and sheep are John's. Reading rewritten
 5f0302871958	The Tree of Jesse — Theodore Poulakis, Crete, 1666	checked-2026-08-22	Theotokos and Child central in the vine, Jesse asleep at the root, prophets with scrolls - holds
 0653624bed65	The Tree of Jesse — Russian, 17th c.	fixed-2026-09-21	applied 2026-09-21; and there is NO trunk and no reclining Jesse - two markers claimed both. Vine survives only as the roundels
 42da5561e5f8	The Nativity — Langadas, Greece, before 1900	fixed-2026-09-21	fix recorded 2026-08-22 was never applied to hotspots2.js; applied 2026-09-21, and the marker 'she lies at rest' corrected too
