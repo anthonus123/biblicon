@@ -290,8 +290,9 @@ Gospel order being `baptism` (4), `temptation` (2), `petersmother` (1), `leper` 
 
 1. **First, readings and markers for the remaining 63, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
-   reading was adapted to Luke rather than copied from Matthew's or Mark's. Two files carry a
-   caveat the reading must honour, both recorded in `picks.js`:
+   reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
+   caveat the reading must honour — the first two recorded in `picks.js`, the third found while
+   writing Mark's readings (2026-09-22c):
    - `Ide Topos pou Ekato Dionysiou` (24:1–12) paints the **fallen guard**, and the watch at the
      sepulchre is Matthew's alone (27:62–66, 28:4). Luke reports none. Its **two** angels, on the
      other hand, are Luke 24:4 against Matthew's and Mark's one, which is why it fits Luke better
@@ -299,6 +300,10 @@ Gospel order being `baptism` (4), `temptation` (2), `petersmother` (1), `leper` 
    - `Iomenos Gon Ekatonarchou Dionysiou` (7:1–10): Luke's centurion never comes in person — he
      sends the elders of the Jews, then friends. If the fresco puts him at Christ's feet, that is
      Matthew 8:5, and the reading has to say so rather than pass it off as Luke.
+   - `Etesatou Ioseph Somatou Christou` (23:50–56): a young soldier stands at Pilate's shoulder.
+     Pilate summoning the centurion to confirm the death is **Mark's alone** (15:44–45); Luke has
+     no such exchange, so the soldier must not be read into Luke. Mark's reading already declines
+     to call him that centurion. The inscription's ᾐτήσατο (*begged*) is Luke 23:52's Greek too.
 2. **Then a real Commons harvest, which Luke is the first book to genuinely require.** Mark could
    reuse Matthew's files wholesale because its scenes were Matthew's. Luke's own material is
    the **Infancy and the Feast cycle** — the Annunciation to Zacharias, the Annunciation to the
@@ -409,6 +414,10 @@ which is the verb of Matthew 28:6, not of Mark 16:6. So Mark's caption renders M
 than the picture's writing. That is a defensible per-Gospel choice and it is **not** being called a
 bug, but it is the one place where three readers show one picture under two names, and it is
 recorded here so nobody has to rediscover it. Noted 2026-09-20d; no reader was changed for it.
+The same pattern at `Epitaphios Threnos Dionysiou` (2026-09-22c): Matthew's reading calls it *the
+Epitaphios Threnos of Holy Friday*, Mark's ties the name to the lamentations of *the Matins of Holy
+Saturday* — which is the service's own name, sung by anticipation on Friday evening. Both are
+defensible; Mark's is the precise one. Nothing changed for it.
 
 **Three icons in Matthew's reader depict a different Gospel from the passage they stand under —
 and two of them are the same passage.** Found in the 2026-09-21 audit; all three now say so in
@@ -587,6 +596,20 @@ every session regardless of whether anything was really done. If they are ever j
 keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
+
+- **Some Dionysiou photographs have a solid black rectangle low in the frame — a hole in the
+  photograph, not paint.** Seen so far in `Etesatou Ioseph Somatou Christou` (~90% top, 40% left),
+  `Apokalthelosis Dionysiou` (~88%, 66%) and `Ide Topos pou Ekato Dionysiou` (~88%, 13%);
+  `Epitaphios Threnos` has none. The rest of the ~40 Dionysiou files in the pool were **not**
+  surveyed — a pixel scan cannot tell these from the dark paint of the night scenes. Never
+  describe one, and never put a marker near one: the overlay will show a circle on a black
+  square and it will look plausible.
+- **Joseph of Arimathaea is named in the Dionysiou burial frescoes by costume, not by lettering.**
+  None of `Etesatou`, `Apokalthelosis` or `Epitaphios Threnos` letters him. The painter gives the
+  same grey-haired, grey-bearded, haloed man in green in all three — the one before Pilate, the one
+  lowering the body, the one with the linen at the feet — and Mark's readings rest on that
+  continuity and say so. Likewise the dark-bearded man with pincers or ladder is the painters'
+  Nicodemus, unlettered. Any reader reusing these files should state the basis the same way.
 
 - **A passage with no icon shows no commentary either, in every reader.** The drawer — and with
   it *Wisdom of the Fathers* — opens only from an icon card: `app.js` gives a tier-c passage its
