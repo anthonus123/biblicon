@@ -94,7 +94,7 @@ and this file did not.
     differs (see the Gotcha below). **All 78 have a prose reading and positioned markers, 513
     markers in all** — finished 2026-09-22d with batch 12 (16:9–18), every set checked by drawing
     it back onto the picture. **The Mark reader is content-complete**; what remains for it is the
-    scripture stories and a search for the eleven subjects that have no icon in the pool.
+    scripture stories and a search for the **15** subjects `make check` still lists as wanting one.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -2635,10 +2635,13 @@ the photograph. The readings describe the gesture and leave the mark unnamed.
 - `BOOK=mark node src/tools/quotes.js`: 55 KJV clauses to read (51 before — the four new ones are
   John 20:15 in the reading and in three markers, each named as John's), 0 wrong Father, 0 no
   source, 0 drift.
-- `overlay.py` on all four keys, three passes. First pass moved ten markers; the ΡΑΒΒΟΥΝΙ, the
-  hands, the scroll and the Ο ΑΓΙΟΣ ΤΑΦΟΣ lettering were each re-measured from a tight crop at the
-  marker's own coordinates when the overlay and the arithmetic disagreed — **the crop is the
-  authority, the overlay only shows where the circle landed**. Final pass all 38 on their referents.
+- `overlay.py` on all four keys, five passes in all — the last one after the final coordinate
+  change, so every shipped coordinate has been drawn back and read. Twelve markers moved. The
+  ΡΑΒΒΟΥΝΙ, the hands, the scroll and the Ο ΑΓΙΟΣ ΤΑΦΟΣ lettering were each re-measured from a
+  tight crop at the marker's own coordinates when the overlay and the arithmetic disagreed —
+  **the crop is the authority; the overlay only shows where the circle landed**, and reading a
+  circle's position off the montage by eye was wrong three times running. Final state: all 38 on
+  their referents, none inside the photograph hole, and no two crowding each other.
 - `make check` green: Mark 78/78 readings, 78 with markers, no clamp from this batch.
   `make mark`: 12.55 MB.
 - Browser, served on 8731: both passages open; each of the three Magdalene thumbnails shows its own
@@ -2650,3 +2653,15 @@ the photograph. The readings describe the gesture and leave the mark unnamed.
 
 **Next.** Luke, 63 icons across 30 passages, next `baptism` (4), `temptation` (2), `petersmother`
 (1), `leper` (1), `paralytic` (2).
+
+**Follow-up, same day.** Three things a reviewer caught after the first commit, none of which any
+check in this repo can see. (1) **The `commission` markers contradicted themselves on handedness** —
+*His right hand* sat at left 26% and *The company at the left* at left 16%, the same side of the
+fresco under two opposite names, and Matthew's markers on the same file use Christ-relative naming
+for the groups. Renamed to *The apostles at his right* / *at his left*, and the two hand markers now
+use the same words. **Everything in these readers is Christ-relative; say "at his right", never "at
+the left".** (2) `make check` lists **15** Mark subjects with no icon, not the eleven this file said —
+the count had been read off a truncated grep. (3) Six coordinates had been patched after the last
+overlay run, so the verification line claimed a pass that had not covered them; redrawn and read.
+Also *beside Christ's shoulder* → *beside his head* for ΜΗ ΜΟΥ ΑΠΤΟΥ, which is lettered at ~19% top
+where the shoulder is at ~30%.
