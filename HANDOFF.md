@@ -91,8 +91,10 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **74 of the 78 have a prose reading and positioned markers,
-    475 markers in all**; the other 4 are the work in progress.
+    differs (see the Gotcha below). **All 78 have a prose reading and positioned markers, 513
+    markers in all** — finished 2026-09-22d with batch 12 (16:9–18), every set checked by drawing
+    it back onto the picture. **The Mark reader is content-complete**; what remains for it is the
+    scripture stories and a search for the eleven subjects that have no icon in the pool.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,26 +168,37 @@ and this file did not.
 
 ## Next
 
-**Active work — the 4 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 74 of the 78 icons are finished — batch 11
-(2026-09-22c) did the Burial and the tomb (15:42-16:8), five icons and 47 markers (`1c0ef6e`). The trap that has held through every Passion batch: **Matthew's reader already has a
-reading of each shared file built on Matthew's words**, and his wording is often load-bearing in
-it — *Friend, wherefore art thou come?* at the kiss, *Caiaphas* at the trial, *the governor
-marvelled greatly*, the washing of the hands. The remaining 2 passages, with how many icons each
-still needs:
+**Mark's readings are finished — 78 of 78, 513 markers, twelve batches.** Batch 12 (2026-09-22d)
+did 16:9-18: the three appearances to Mary Magdalene (`magdalene`) and the Dionysiou `Christos
+Apostolois` (`commission`, tier b), 38 markers. **The active work is now the Luke reader**, whose
+63 remaining icons are described below; it uses the same loop, set out here because every Mark
+batch was run from it.
 
-```
-16:9-13 (3)  16:14-18 (1)
-```
+**16:9-20 is the longer ending**, and it was handled as the Church reads it: the Mark Catena
+comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings treat it as Scripture and
+do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
+followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-Next batch: 16:9-18, four icons — the three appearances to Mary Magdalene (`magdalene`) and the
-Dionysiou `Christos Apostolois` (`commission`, tier b). It finishes Mark. **16:9-20 is the longer
-ending**, and the Mark Catena comments on it as Mark's (blocks 9–13, 14–18, 19–20). The
-suggestion — not the owner's ruling — is to read it as the Church reads it, as Scripture, and not
-raise the manuscript question in an icon reading. The Magdalene icons will paint
-John 20:17 (*Touch me not*), which Mark does not have — Mark 16:9 has only *he appeared first to
-Mary Magdalene, out of whom he had cast seven devils*. That is the `council`/`betrayer` shape
-again: say whose words the picture paints.
+**Active work — the Luke readings.** See the Luke section further down: 63 of 68 icons still want
+a reading and markers, next in Gospel order `baptism` (4), `temptation` (2), `petersmother` (1),
+`leper` (1) and `paralytic` (2). The trap that held through every Mark batch holds there too, one
+book further on: **Matthew's, Mark's and John's readers already have a reading of each shared file
+built on their own Gospel's words**, and that wording is often load-bearing in it. Draft Luke's
+first, dump the others afterwards, and read them side by side before committing.
+
+**For the owner, from batch 12 (2026-09-22d) — nothing changed in any other reader.**
+- **John's reader says the two Cretan `Noli me tangere` panels letter the words of both.** Of the
+  Lambardos panel it says *a column of painted text between them gives her words and his*, and of
+  the sixteenth-century Cretan one, *a painted inscription at her shoulder records the words that
+  pass between them*. On both panels every legible inscription is **hers**: the four-line
+  Κ(ΥΡΙ)Ε ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ ΑΥΤΟΝ … (John 20:15) and ΡΑΒΒΟΥΝΗ, plus the name-labels Ο ΑΓ(ΙΟΣ) ΤΑΦΟΣ
+  and Η ΑΓΙΑ ΜΑΡΙΑ Η ΜΑΓΔΑΛΙΝΗ. Christ's side of each panel carries only ΙC ΧC — checked by crop
+  on both (Cretan 4–40% top, 56–98% left; Lambardos 12–46%, 56–82%). **Only the Dionysiou fresco
+  letters ΜΗ ΜΟΥ ΑΠΤΟΥ**, and Mark's readings say so of each.
+- **John's transcription of the Dionysiou title is normalised, not what the wall says.** John's
+  reader gives Η ΜΕΤΑ ΤΗΝ ΕΓΕΡΣΙΝ ΠΡΟΣ ΤΗΝ ΜΑΓΔΑΛΗΝΗΝ ΜΑΡΙΑΝ ΤΟΥ ΣΩΤΗΡΟΣ ΕΜΦΑΝΕΙΑ; the fresco
+  letters ΠΡΟΣ ΤΗ ΜΑΓΔΑΛΙΝΗ ΜΑΡΙΑ … ΕΜΦΑΝΙΑ, without the accusative endings and with the painter's
+  own spelling. Small, but the readings elsewhere quote inscriptions as painted.
 
 **For the owner, from batch 11 (2026-09-22c) — nothing changed in any other reader.**
 - **Matthew's reading of `Ide Topos pou Ekato Dionysiou` misdescribes both angels.** It says the
@@ -600,7 +613,12 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 - **Some Dionysiou photographs have a solid black rectangle low in the frame — a hole in the
   photograph, not paint.** Seen so far in `Etesatou Ioseph Somatou Christou` (~90% top, 40% left),
   `Apokalthelosis Dionysiou` (~88%, 66%) and `Ide Topos pou Ekato Dionysiou` (~88%, 13%);
-  `Epitaphios Threnos` has none. The rest of the ~40 Dionysiou files in the pool were **not**
+  `Epitaphios Threnos` has none. **`Emphania Soteros Dionysiou` has one that is not low in the
+  frame** (found 2026-09-22d): a black blob at ~57% top, 46% left, four points below Christ's
+  outstretched hand and immediately above the lettered ΚΥΡΙΕ ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ block — exactly where
+  a marker on the hand wants to sit. It is round rather than rectangular, larger than the painted
+  detail around it and dead black with a bright rim, where the small dark point on the back of the
+  hand just above it is sharp and has a warm edge. Crop before placing anything in that band. The rest of the ~40 Dionysiou files in the pool were **not**
   surveyed — a pixel scan cannot tell these from the dark paint of the night scenes. Never
   describe one, and never put a marker near one: the overlay will show a circle on a black
   square and it will look plausible.
@@ -2576,3 +2594,59 @@ Apokalthelosis, Ide Topos) are holes in the photographs and carry no marker.
   marker count (7/10/9/11; 10), 38 images decode via `new Image()`, no console errors.
 
 **Next.** Mark 16:9-13 (3) and 16:14-18 (1), which finishes Mark.
+
+## Session 2026-09-22d (Mark readings and markers, batch 12: 16:9-18 — Mark finished)
+
+**Did.** Four icons, two passages, 38 markers, one commit, the loop under "Active work". About
+twenty crops before writing. John's and Matthew's texts for the same files were dumped and read
+only after Mark's were drafted.
+- `magdalene` (16:9-13, three icons). The tier question was settled before a word was written and
+  it stays **a**: Mark 16:9 reports this event, so an icon of it is an icon of this scene, even
+  though every legible feature in all three panels is John's. Each reading says so and names the
+  lettering as John's — Κ(ΥΡΙ)Ε ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ ΑΥΤΟΝ … (John 20:15), ΡΑΒΒΟΥΝΗ (20:16), and on the
+  Dionysiou fresco alone ΜΗ ΜΟΥ ΑΠΤΟΥ (20:17) — and the grave-clothes with the head-cloth folded
+  apart, which is John 20:7 and which Mark never describes. What the readings claim for Mark is the
+  event, the order and the woman: first, before any apostle, and named by what she had been. **St
+  Bede in Mark's own Catena is the warrant for reading John alongside** (*John tells us most fully
+  how and when this appearance took place*), which is the "don't set one Evangelist against
+  another" Gotcha satisfied from the source rather than by our own judgement. The three panels are
+  one composition in three hands — Dionysiou 1547, a 16th-c. Cretan panel, and Lambardos at Corfu —
+  and the readings say that too.
+- `commission` (16:14-18, tier b, the Dionysiou `Christos Apostolois`). The reading states the
+  tier-b case from the picture: Mark has the eleven *as they sat at meat* and the fresco has no
+  table, nothing eaten and no rebuke, only Christ standing frontal with both arms flung wide over
+  two ranked companies. What it does hold is the sending, and the reading anchors there — *Go ye
+  into all the world, and preach the gospel to every creature* — with Blessed Theophylact from
+  Mark's Catena on *every creature*. The inscription is an epigram, not a verse; the legible words
+  are given and the sense with them. The cushion and footstool are named as **16:19's** glory, the
+  next passage's, not this one's.
+
+**Decided, not assumed.** The nail-mark. Both Cretan panels and the Dionysiou fresco put a small
+dark point on the back of Christ's extended hand, and it is tempting to call it the wound. It is
+not asserted anywhere: Mark 16:9-13 says nothing of the wounds (Luke 24:39-40 and John 20:20,27
+do), and on the Dionysiou fresco that point sits four percent above a blob that **is** a hole in
+the photograph. The readings describe the gesture and leave the mark unnamed.
+
+**Verified**
+- Scratch clause check (`clauses.js` in the session scratchpad, plus a `quotecheck.js` listing
+  every quotation by its named source): 21 quotations, all verbatim — 11 in `src/books/mark/kjv.json`,
+  5 in John's, 5 in Mark's `catena.json` under the Father named. No quotation attributed to John is
+  also Mark's. 0 unmatched archaic clauses.
+- `BOOK=mark node src/tools/quotes.js`: 55 KJV clauses to read (51 before — the four new ones are
+  John 20:15 in the reading and in three markers, each named as John's), 0 wrong Father, 0 no
+  source, 0 drift.
+- `overlay.py` on all four keys, three passes. First pass moved ten markers; the ΡΑΒΒΟΥΝΙ, the
+  hands, the scroll and the Ο ΑΓΙΟΣ ΤΑΦΟΣ lettering were each re-measured from a tight crop at the
+  marker's own coordinates when the overlay and the arithmetic disagreed — **the crop is the
+  authority, the overlay only shows where the circle landed**. Final pass all 38 on their referents.
+- `make check` green: Mark 78/78 readings, 78 with markers, no clamp from this batch.
+  `make mark`: 12.55 MB.
+- Browser, served on 8731: both passages open; each of the three Magdalene thumbnails shows its own
+  credit, its own reading (3013 / 2243 / 2077 characters) and its own 10 markers, the commission its
+  8; *Wisdom of the Fathers* reaches Theophylact and Augustine on both passages; 38 images decode
+  via `new Image()`; no console errors. (Note for the next session: the drawer node is **replaced**
+  on every tab and thumbnail click, so a cached `document.querySelector('.drawer')` goes stale and
+  reports zero markers — re-query it after each click.)
+
+**Next.** Luke, 63 icons across 30 passages, next `baptism` (4), `temptation` (2), `petersmother`
+(1), `leper` (1), `paralytic` (2).

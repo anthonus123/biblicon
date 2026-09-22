@@ -721,4 +721,54 @@ module.exports={
  ["The guard", "Soldiers sprawled in their armour, one stretched across his shield. The watch at the tomb is Matthew's alone; Mark reports no guard.", "82%", "55%"],
 ],
 
+"File:Emphania Soteros Dionysiou.jpg":[
+ ["Η ΜΕΤΑ ΤΗΝ ΕΓΕΡΣΙΝ … ΕΜΦΑΝΙΑ", "The title across the sky: the appearance of the Saviour to Mary Magdalene after the Resurrection. It names the event of Mark's verse. The words the painter sets inside the picture are John's.", "9%", "30%"],
+ ["ΜΗ ΜΟΥ ΑΠΤΟΥ", "Touch me not, lettered beside Christ's shoulder. The words are John's; Mark reports that the appearance happened and nothing that was said in it.", "19%", "43%"],
+ ["ΡΑΒΒΟΥΝΙ", "Rabboni, which is to say, Master: the one word she answers with when he calls her by her name. John's again.", "41%", "32%"],
+ ["Κ(ΥΡΙ)Ε ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ ΑΥΤΟΝ", "Four lines of her own words on the rock, spoken to the man she supposes to be the gardener: Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away.", "66%", "47%"],
+ ["The open hand", "Bare to the elbow, the fingers spread, held out over her and no nearer. It is the gesture the words beside him name.", "53%", "44%"],
+ ["The scroll", "Held upright against his shoulder in the other hand.", "25%", "77%"],
+ ["Her hands", "Both lifted open toward him, reaching and stopping short. The fresco is built on the space between her hands and his.", "74%", "41%"],
+ ["Mary Magdalene", "Kneeling on the bare rock, haloed, her hair loose and uncovered. Mark names her here by what she had been: out of whom he had cast seven devils.", "55%", "29%"],
+ ["Ο ΑΓΙΟΣ ΤΑΦΟΣ", "The holy sepulchre, lettered across the black mouth of the cave.", "45%", "17%"],
+ ["The grave-clothes", "In the open coffin: the long wrappings at one end, the head-cloth rolled up by itself at the other. Mark describes no grave-clothes. Their parting is John's — the napkin, that was about his head, not lying with the linen clothes, but wrapped together in a place by itself.", "53%", "12%"],
+],
+
+"File:Noli me tangere (16th c., Cretan).jpg":[
+ ["Ο ΑΓ(ΙΟΣ) ΤΑΦΟΣ", "The holy sepulchre, lettered over the dark opening cut in the rock.", "39%", "25%"],
+ ["Η ΑΓΙΑ ΜΑΡΙΑ Η ΜΑΓΔΑΛΙΝΗ", "St Mary Magdalene, lettered beside her halo.", "43%", "36%"],
+ ["Κ(ΥΡΙ)Ε ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ ΑΥΤΟΝ", "Three lines on the gold: Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away. John gives the words of this meeting; Mark gives none of them.", "53%", "52%"],
+ ["ΡΑΒΒΟΥΝΗ", "Her answer, lettered under the three lines.", "57%", "47%"],
+ ["The open hand", "Reaching down and across, bare to the elbow, open above hers. This panel does not letter Touch me not, as the Dionysiou fresco does; it paints it.", "45%", "52%"],
+ ["The scroll", "A white roll held in the closed left hand at his waist, one end of it showing above the fist and one below.", "41%", "87%"],
+ ["Her hands", "Lifted open toward him and stopping short of him.", "69%", "55%"],
+ ["Mary Magdalene", "Kneeling in a red mantle with dark cuffs, haloed, her hair loose past her shoulder.", "51%", "42%"],
+ ["The linen", "Still wound in its bands in the red sarcophagus, keeping the shape of a body that is not in it.", "46%", "20%"],
+ ["The head-cloth", "Folded apart at the near end of the coffin. John: not lying with the linen clothes, but wrapped together in a place by itself.", "46%", "12%"],
+],
+
+"File:Touch Me Not (Noli me tangere), Lambardos Emmanuel, Municipal Gallery of Corfu, 04.jpg":[
+ ["The segment of heaven", "A dark half-circle at the apex of the arch, letting three rays down over the whole scene.", "10%", "47%"],
+ ["Christ", "Gold-ochre robes on a gold ground, the halo a thin incised circle, ΙC ΧC beside his head. He bows far over toward her.", "24%", "69%"],
+ ["The open hand", "Let down toward her, and no nearer than that.", "46%", "50%"],
+ ["The scroll", "A small white roll in his other hand, held at his side.", "41%", "76%"],
+ ["Κ(ΥΡΙ)Ε ΕΙ ΣΥ ΕΒΑΣΤΑΣΑΣ ΑΥΤΟΝ", "The same lines the other two panels carry, and John's: Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away.", "55%", "54%"],
+ ["ΡΑΒΒΟΥΝΗ", "Her answer, lettered under them.", "61%", "52%"],
+ ["Mary Magdalene", "Kneeling in dull red, haloed, her hair loose. Mark: he appeared first to Mary Magdalene.", "51%", "43%"],
+ ["Her hands", "Out toward him, open, and not touching him.", "64%", "52%"],
+ ["The grave-clothes", "Wound in their bands in the sarcophagus, with the head-cloth folded by itself at the end. John's detail, not Mark's.", "45%", "26%"],
+ ["The mouth of the tomb", "Cut black into the gold rock above the coffin.", "35%", "29%"],
+],
+
+"File:Christos Apostolois Dionysiou.jpg":[
+ ["The inscription", "An epigram across the top, not a verse. Worn, but ΕΚ ΝΕΚΡΩΝ and ΕΓΕΡΣΙΝ, ΕΜΦΑΝΙΣΑΣ, Ο ΚΤΙΣΤΗΣ and ΤΟΙΣ ΥΠ ΑΥΤΟΥ ΓΕΝΟΜΕΝΟΙΣ can be read: the Creator, having manifested the rising from the dead to those who were made by him.", "9%", "22%"],
+ ["Christ", "Frontal, in a white-grey himation over red, the cross in his halo and ΙC ΧC on either side of his head. He is standing; Mark's verse has him appearing to the eleven as they sat at meat.", "16%", "46%"],
+ ["His right hand", "Flung wide over the first company, the palm open.", "19%", "26%"],
+ ["His left hand", "The same, over the other company. The breadth of the two arms is the breadth of the sending: Go ye into all the world, and preach the gospel to every creature.", "20%", "65%"],
+ ["The company at the left", "Apostles ranked shoulder to shoulder, haloed, grey heads and young ones together.", "30%", "16%"],
+ ["The company at the right", "The same on the other side, symmetrically ranked. The fresco gives the apostolic college, not a count of men at a table.", "30%", "78%"],
+ ["The books", "Several of the apostles carry one. They are the standing mark of the college in Byzantine painting, and here they are also what came of these verses.", "45%", "16%"],
+ ["The cushion and the footstool", "He stands on a red cushion laid over a stepped footstool: the furniture of the enthroned Lord. Mark's next passage is where that glory is named — he was received up into heaven, and sat on the right hand of God.", "82%", "46%"],
+],
+
 };
