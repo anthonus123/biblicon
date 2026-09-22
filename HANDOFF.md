@@ -450,12 +450,14 @@ Then, in the owner's priority order:
    - **The markers were not clean either.** 47 marker texts were wrong alongside the readings, and
      several times the *marker* was right where the *reading* contradicted it (the Monreale loaves,
      the Sinai Transfiguration, the two paralytics). Audit both together from now on.
-   - **And the marker audit is the part still outstanding.** Marker text was examined only on the
-     48 icons touched on 2026-09-21. **The other 65** — the 45 rows marked `checked-2026-08-21b`
-     and the 20 marked `checked-2026-08-22` — had their *readings* read against the pictures and
-     their *marker texts* never examined by anyone. Roughly one marker in three was wrong on the
-     48 that were checked, so assume something like twenty bad markers are still shipping. That is
-     the next sweep, and `icon_placement_audit.tsv` covers where markers sit, not what they say.
+   - **The marker audit is FINISHED too, 2026-09-21 — every marker on the 65 has been read.**
+     `icon_marker_audit.tsv` has one row per marker on those 65 icons, **347 rows, 177 changed**,
+     checked mechanically against the shipped `hot` arrays (no marker without a row, none twice).
+     Half the markers nobody had examined were wrong or empty — far worse than the one-in-three
+     guessed here before the sweep. Two follow-ups it leaves: (a) **batches 1–9 did not look for
+     markers that make no claim about the picture** (pure Scripture, a homily, colour symbolism),
+     the kind named at batch 10, so some of their `holds` rows are that kind; (b) the 48 icons the
+     *reading* audit touched had their markers checked then, not in this file, at the older standard.
    - One icon, `33237ce33d7b`, had **no row in the file at all** — 112 rows for 113 images — so it
      was invisible to both sweeps. Read 2026-09-21 and its row added; the reading stands.
    Start with `BOOK=matthew node src/tools/quotes.js`: it lists 44 KJV clauses to read, almost all
@@ -1989,7 +1991,7 @@ Forerunner is already shut up in prison.
 
 ## Session 2026-09-21c (the marker-text audit — the sweep the reading audit named as outstanding)
 
-**Did** — in progress; this block is updated as batches land.
+**Did** — finished the same day, 11 batches, one commit each.
 - Opened `src/books/matthew/icon_marker_audit.tsv`: one row per **marker**, not per icon, because
   per-icon rows are how 47 bad marker texts hid behind 65 "checked" ones the first time. Every
   `fixed` row is written **after** the edit lands in `hotspots.js`/`hotspots3.js` and after the old
@@ -2026,6 +2028,11 @@ Forerunner is already shut up in prison.
   be falsified, so it would read `holds` forever. The audit file's header now names it and such
   notes begin NO PICTURE CLAIM. **Batches 1–9 did not look for it**, so an unknown number of
   `holds` rows there are this kind.
+- Batch 11 (`e115938`): 6 icons, 33 markers, **16 changed**. Poulakis's Jesse is **awake**, looking
+  up at the tree, where the marker had him asleep; the Menologion soldier's sword is already
+  **through** the child; the mother "apart, bowed" looks up at a second soldier with her child alive
+  on her knee; the Ohrid Forerunner **holds his own head**; the Monreale devil is as tall as Christ,
+  not "small". Two KJV misquotations fixed — "he arose, and took" (2:14) and "In Ramah" (2:18).
 
 **What the errors are actually like** — three kinds, over and over:
 1. **The marker narrates the Gospel and credits the narration to the picture.** Peter "among the
@@ -2041,8 +2048,33 @@ Forerunner is already shut up in prison.
   painted in the Dionysiou Gethsemane and nothing had ever named it; the fresco letters ΙȢΔΑС
   beside the hanged Judas; ΙΣ ΧΣ is lettered either side of the lantern pole at St Nicholas Orphanos.
 
-**Next.** The last six icons of the 65 — `5f0302871958` Poulakis Jesse, `4f9aa3206d34` Kastoria
-Flight, `892e33ad2d95` Menologion Innocents, `a775939956b4` Ohrid Forerunner, `686af8bf09a5` Russian
-North Theophany, `6e1639e806a6` Monreale Second Temptation — same loop. Then rebuild `Matthew Reader.html` once — the reader
-is deliberately left a build behind while the sweep runs, so history takes one 17 MB copy and not
-thirteen.
+**Totals.** 65 icons, **347 markers, 177 changed, 170 hold**. Eleven readings were rewritten along
+the way because the marker check proved the prose false as well; the seven from batches 10–11 have
+their rows in `icon_reading_audit.tsv` changed to `fixed` with the reason. **Three KJV misquotations
+were fixed, and `quotes.js` had caught only one of them**: "When the two came in, the wind ceased"
+(14:32) sat in its review list among the false positives, but "he arose, and took" (2:14) and "In
+Ramah" (2:18) were **never flagged at all** — checked by running it on the pre-batch-11 source. So
+`quotes.js` passing a marker is not evidence the marker quotes the KJV; the scratch-script check of
+every clause against `kjv.json` is what found them.
+
+**Verified**
+- Per batch: every changed marker read against `overlay.py` and `crop.py` at full size; every new KJV
+  clause checked against `kjv.json` by a scratch script; old wording grepped out of `hotspots*.js`
+  before any `fixed` row was written; `make check` green on all four books.
+- `BOOK=matthew node src/tools/quotes.js`: **45** clauses to read, down from 47 at the start of the
+  session. 0 wrong Father, 0 no source, 0 drift. The three remaining flags on icons touched here
+  were read and are false positives: two are our prose leading into a verbatim quotation, and the
+  third is the Ravenna reading's first sentence, which quotes nothing.
+- `make` once at the end: **only `Matthew Reader.html` changed** (18.0 MB); John, Mark and Luke rebuilt
+  byte-identical. Served and opened in Playwright: no console errors, 57 of 57 card images decode, the
+  new texts are in the page and the old ones gone, and the Lamentation's moved Theotokos marker
+  lands on her.
+
+**Not done**
+- The Ravenna label, for the owner (`## Next`). The copy is corrected in the reading only.
+- The `holds` rows of batches 1–9 were not re-read for the no-picture-claim kind.
+- Luke's 63 and Mark's 50 icons without readings are untouched this session.
+
+**Next.** Luke batch 2 — `baptism` (4) and `temptation` (2) — by the loop under "Active work". Mark's
+50 are the other standing batch of the same work.
+
