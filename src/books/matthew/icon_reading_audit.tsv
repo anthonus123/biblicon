@@ -34,7 +34,7 @@ e40bae1d0d4c	The Epitaphios Threnos — Agios Vasileios, Greece, before 1900	che
 86649de5aa5c	The Sealing of the Tomb — Russia, late 19th c.	checked-2026-08-21b	
 a26a6cc7fc74	The Sleeping Guard — Mileševa, Serbia, 13th c.	checked-2026-08-21b	
 1bb3cddc1741	The Last Judgment — John Tokhabi, Sinai, c. 1100	checked-2026-08-21b	
-62def5aec815	The Tree of Jesse — Victor of Crete, 1674	checked-2026-08-21b	
+62def5aec815	The Tree of Jesse — Victor of Crete, 1674	fixed-2026-09-21	 | 2026-09-21, end of the marker audit: 'sleeps at the root' was asserted, not seen - the face is too small to show the eyes - now 'lies at the root'
 97ae5ddb1d89	The Adoration of the Magi — Monreale, 12th c.	checked-2026-08-21b	
 ffe73c2bdb6a	The Flight into Egypt — Menologion of Basil II, c. 1000	checked-2026-08-21b	
 ce97ce9df2bc	The Holy Innocents — Ionian school, 17th c.	checked-2026-08-21b	
@@ -75,7 +75,7 @@ afa7c09513ff	The Blind Men of Jericho — Monreale, 12th c.	fixed-2026-09-21	app
 542679055fe0	The Cursing of the Fig Tree — Langadas, Greece, 19th c.	fixed-2026-09-21	applied 2026-09-21; scroll writing not legible; the Ferapontov fresco beside it paints the SAME tree already bare
 769af079a9d9	The Wedding Feast — Dionisius, Ferapontov Monastery, 1502	fixed-2026-09-21	applied 2026-09-21; marker added for the man cast out; the king stands under an arch giving orders, not enthroned
 d7585bf8fa5e	The Wise and Foolish Virgins — Rossano Gospels, 6th c.	fixed-2026-09-21	applied 2026-09-21; every torch on the right ends in a red flame and not one on the left has any - that is the legible contrast
-d4f530364ab1	The Separation of the Sheep and the Goats — Ravenna, 6th c.	fixed-2026-09-21	found by the marker audit, batch 10: the reading called the object a sixth-century mosaic; it is an early-20th-c. copy at the Metropolitan Museum (image_meta.json says so, and so does the reader's own credit line). Reading rewritten. Label 'Ravenna, 6th c.' left for the owner
+d4f530364ab1	The Separation of the Sheep and the Goats — Ravenna, 6th c.	fixed-2026-09-21	found by the marker audit, batch 10: the reading called the object a sixth-century mosaic; it is an early-20th-c. copy at the Metropolitan Museum (image_meta.json says so, and so does the reader's own credit line). Reading rewritten. Label 'Ravenna, 6th c.' left for the owner And 'the goats on his left': one goat is painted - now 'two white sheep … one grey goat'
 2f9b9ae9e6e4	The Mystical Supper — Dionysiou, Athos, 1547	checked-2026-08-22	sigma table with the near side open, beloved disciple on the breast, hand at the dish - holds
 22a3d28c32fa	The Crucifixion — Dionysiou, Athos, 1547	fixed-2026-09-21	applied 2026-09-21; and the fresco paints Matthew 27:51-52 at the foot of the cross - rent rock, skull, figures climbing out in grave-bands. Three markers added
 90bb6dd72243	The Lamentation at the Tomb — Dionysiou, Athos, 1547	checked-2026-08-22	Theotokos cheek to cheek, myrrhbearers with raised hands, empty cross on a starred sky - holds

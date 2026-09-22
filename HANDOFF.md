@@ -2065,10 +2065,16 @@ every clause against `kjv.json` is what found them.
   session. 0 wrong Father, 0 no source, 0 drift. The three remaining flags on icons touched here
   were read and are false positives: two are our prose leading into a verbatim quotation, and the
   third is the Ravenna reading's first sentence, which quotes nothing.
-- `make` once at the end: **only `Matthew Reader.html` changed** (18.0 MB); John, Mark and Luke rebuilt
+- `make` once at the end: **only `Matthew Reader.html` changed** (17.2 MB); John, Mark and Luke rebuilt
   byte-identical. Served and opened in Playwright: no console errors, 57 of 57 card images decode, the
   new texts are in the page and the old ones gone, and the Lamentation's moved Theotokos marker
   lands on her.
+
+**Found in the final review, and fixed** — the Ravenna reading still said *the goats on his left*
+after its own marker had been corrected to one goat; now *two white sheep … one grey goat*. And
+**Victor's Tree of Jesse**, the other Jesse at 1:1–17, asserted twice that Jesse *sleeps*. Poulakis's
+proved awake, so it was cropped: the pose is the sleeping one, but the face is a few pixels and the
+eyes cannot be seen either way. Marker and reading now say what can be seen and no more.
 
 **Not done**
 - The Ravenna label, for the owner (`## Next`). The copy is corrected in the reading only.

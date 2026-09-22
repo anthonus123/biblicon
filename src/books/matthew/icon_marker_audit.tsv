@@ -21,6 +21,9 @@
 # called Deciphering the Icon. From batch 10 such markers are given what is under their circle
 # and their note begins NO PICTURE CLAIM. Batches 1-9 did not look for this kind.
 #
+# A row with `-` in the n column is not a marker: it records a READING (prose) finding or an
+# open question against that icon. There are three; filter them out when counting markers.
+#
 # key	n	marker label	verdict	note   (verdict: holds | fixed-DATE)
 1700683b5e46	1	Christ at the table	fixed-2026-09-21	he does not recline and his hand is not raised: he sits upright on a cushioned seat and his right hand is down at his knee, fingers reaching toward the woman. Prose in hotspots2.js said 'reclines' too and was fixed with it
 1700683b5e46	2	The woman at his feet	fixed-2026-09-21	position right, but her hair is bound under a white cloth — nothing is wiped with it. Added what is there: face turned up, hands at his bare foot
@@ -184,7 +187,7 @@ a26a6cc7fc74	5	The edge of the tomb above	fixed-2026-09-21	the photograph shows 
 1bb3cddc1741	5	The cells of punishment	fixed-2026-09-21	right, and now says what they look like: dark blue squares packed with pale faces, red squares with figures in flame, each with a red Greek line over it
 1bb3cddc1741	6	The written bands	fixed-2026-09-21	the bands are there but the words cannot be read at any available resolution — the marker asserted the text. It now says what is visible and what such bands carry
 62def5aec815	1	The Theotokos and the Child	holds	centre of the panel, enthroned with the Child on her lap, the tree growing round her
-62def5aec815	2	Jesse asleep at the root	fixed-2026-09-21	right, and the painter signed the ground beside him — ΧΕΙΡ ΒΙΚΤΩΡΟΣ · ΑΧΟΔ ·, the hand of Victor, 1674 in Greek numerals — which nobody had read
+62def5aec815	2	Jesse asleep at the root -> Jesse at the root	fixed-2026-09-21	right, and the painter signed the ground beside him — ΧΕΙΡ ΒΙΚΤΩΡΟΣ · ΑΧΟΔ ·, the hand of Victor, 1674 in Greek numerals — which nobody had read. RE-OPENED at the end of the sweep, after Poulakis's Jesse (batch 11) proved awake: the pose here is the sleeping one, head propped on hand, but at full crop the face is a few pixels and the eyes cannot be seen either way. 'asleep' was asserted, not seen - now qualified, and the reading's 'sleeps at the root' is 'lies at the root'
 62def5aec815	3	The kings crowned above	holds	crowned figures in the upper branches
 62def5aec815	4	The prophets with scrolls	fixed-2026-09-21	the scrolls do not carry prophecies: each carries a NAME from Matthew's list — ΑΒΡΑΑΜ, ΡΟΒΟΑΜ, ΑΒΙΑ were read at full crop. 'The words by which he foretold the Child' was the standard Tree of Jesse read onto a panel that does something else
 97ae5ddb1d89	1	The star and its ray	holds	a pale disc at the top left with one long ray running down behind the house
@@ -371,3 +374,4 @@ a775939956b4	5	His own head on the charger	fixed-2026-09-21	not 'at his feet': h
 6e1639e806a6	3	Christ on the pinnacle	holds	upright on the roof tiles, scroll in his left hand
 6e1639e806a6	4	The tempter beside him	fixed-2026-09-21	'painted small' is false here: he is as tall as Christ and his wings spread wider. Now: hanging in the air, naked, grey-green, ribbed, flame-like hair; Christ's hand held out against him
 6e1639e806a6	5	The temple beneath his feet	holds	a small arcaded building. The READING called it domed: the roof is tiled and pitched - fixed
+d4f530364ab1	-	(prose, hotspots.js)	fixed-2026-09-21	THE OBJECT: an early-20th-c. copy at the Metropolitan Museum, not the sixth-century mosaic the reading named (see row 1). And after the final review, the reading's 'divides the flock: the sheep on his right hand, the goats on his left' - one goat is painted, as marker 5 says; now 'two white sheep … one grey goat'
