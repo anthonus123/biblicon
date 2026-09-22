@@ -246,4 +246,62 @@ module.exports={
  ["No crowd at all", "There is nobody here but Christ and four disciples — no grass, no companies, no baskets. The mosaic is made out of the one clause at the centre of the miracle: gave them to his disciples to set before them.", "70%", "50%"],
 ],
 
+// ---- chapters 7-9 ----
+
+"File:Christos Iomenos Thygatera Xananaias Dionysiou.jpg":[
+ ["The inscription", "Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ ΤΗΝ ΘΥΓΑΤΕΡΑ ΤΗΣ ΧΑΝΑΝΑΙΑΣ — Christ healing the daughter of the Canaanite. That is Matthew's name for her; Mark's own word is a Greek, a Syrophenician by nation.", "10%", "33%"],
+ ["Christ's hand", "Already stretched out toward her before her answer comes. Mark gives the picture no gesture in the text; the painter supplies the reach.", "46%", "42%"],
+ ["The disciples", "Three crowd in at Christ's shoulder. Mark says only that he entered into an house, and would have no man know it: but he could not be hid.", "25%", "10%"],
+ ["The mother", "Both hands open, arguing rather than kneeling. Her answer is Mark's own wording, not Matthew's: Yes, Lord: yet the dogs under the table eat of the children’s crumbs.", "30%", "76%"],
+ ["The house", "A tiled roof over a pale wall — the house Mark says Christ entered, wanting no man to know it.", "16%", "82%"],
+ ["The daughter", "Painted already recovering on the bed, though Mark's healing happens at a distance, out of her sight: she found the devil gone out, and her daughter laid upon the bed only once the mother is home again.", "48%", "82%"],
+],
+
+"File:Monreale - Multiplication of the Loaves and Fishes.jpg":[
+ ["The Latin inscription", "IHS DE QVINQVE PANIBVS ET DVOBVS PISCIBVS QVINQVE MILIA HOMINVM SATIAVIT ET DE FRAGMENTIS DVODECIM COPHINI IMPLETI SVNT. Every number in it is the earlier feeding's — five loaves, two fishes, five thousand, twelve baskets — not this passage's seven, a few, four thousand, and seven.", "40%", "50%"],
+ ["Christ and Peter", "A small white bundle of bread passing between their hands: he took the seven loaves, and gave thanks, and brake, and gave to his disciples to set before them.", "65%", "14%"],
+ ["The disciples carrying it out", "Down the length of the mosaic toward the multitude. Mark adds what went with the loaves: they had a few small fishes: and he blessed, and commanded to set them also before them.", "68%", "42%"],
+ ["The multitude", "Banked row on row on a green hillside. Mark counts them at the end: they that had eaten were about four thousand.", "52%", "78%"],
+ ["The baskets", "Woven baskets along the bottom edge, a man bending to fill them: they took up of the broken meat that was left seven baskets — not the twelve the inscription above names.", "92%", "55%"],
+],
+
+"File:Transfiguration of Christ Icon Sinai 12th century.jpg":[
+ ["Christ", "Stands alone on the peak at the centre. The verse this scene is built toward is its last: they saw no man any more, save Jesus only with themselves.", "12%", "48%"],
+ ["Elias", "Old and grey-bearded, his hands hidden in his mantle. Mark names him first — there appeared unto them Elias with Moses — the prophet before the lawgiver, where Matthew gives the order the other way.", "28%", "25%"],
+ ["Moses", "Younger and dark-haired, a pale tablet in one hand and the other reaching toward Christ — the Law brought up the mountain in the lawgiver's own hands.", "28%", "73%"],
+ ["Peter", "Kneeling with a hand raised: Master, it is good for us to be here: and let us make three tabernacles.", "72%", "15%"],
+ ["John", "Bowed low at the centre, in the most damaged part of the lower field.", "78%", "53%"],
+ ["James", "Kneeling at the right, turned aside. Mark's own reason for all three: for he wist not what to say; for they were sore afraid.", "78%", "76%"],
+],
+
+"File:042 Transfiguration of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["Christ", "In a pale oval mandorla on bare gold, blessing with his raised right hand.", "10%", "48%"],
+ ["Moses", "Kneels on a cloud with a pale tablet open on his knee, looking down at the Law rather than at Christ.", "22%", "20%"],
+ ["Elias", "Kneels on a cloud opposite him, one hand drawn to his breast. And there appeared unto them Elias with Moses is Mark's own order — the prophet named before the lawgiver.", "22%", "78%"],
+ ["Peter", "Both arms thrown up, on the mountain's near side.", "70%", "15%"],
+ ["John", "Fallen face-upward at the centre.", "78%", "45%"],
+ ["James", "Recoiling at the right, his name still legible beside his halo: ΙΑΚ.", "62%", "77%"],
+ ["The signature", "1885 · χείρ Σταύρου Μαργαρίτη εκ Κολακιάς — by the hand of Stavros Margaritis of Kolakia.", "91%", "55%"],
+],
+
+"File:Icon of the Transfiguration from Saint Catherine's, Sinai.jpg":[
+ ["Christ, without a halo", "No mandorla and hardly even a halo — three or four thin red strokes behind his head and then bare gold. What answers to his raiment became shining, exceeding white as snow is the white of the paint itself, not any light drawn round it.", "10%", "45%"],
+ ["Elias", "Old and white-bearded, one hand drawn to his chest.", "20%", "15%"],
+ ["Moses", "Young and dark-haired, his hand simply held out — no tablet in it here, unlike the icon beside this one in the gallery.", "20%", "78%"],
+ ["The shaft of light", "A narrow wedge of gold running down between two green rocky humps, from Christ's feet to the ground.", "68%", "50%"],
+ ["Peter", "Kneeling with a hand raised, as if still speaking.", "75%", "12%"],
+ ["John", "Collapsed entirely, face buried in his own robe — nothing of him left visible but the curve of his back.", "88%", "38%"],
+ ["James", "Seated rather than fallen, one hand on a drawn-up knee, looking down and away.", "75%", "73%"],
+],
+
+"File:Icon of transfiguration (Spaso-Preobrazhensky Monastery, Yaroslavl).jpg":[
+ ["The mandorla", "A dark blue-green disc shaped almost like an eight-pointed star, long gold rays breaking out of it and small gold stars scattered through the dark.", "18%", "50%"],
+ ["Elias", "Leans in from a crag at the left, a hand raised.", "18%", "25%"],
+ ["Moses", "Leans in from a crag at the right, an object wrapped in cloth held against his chest — the Law carried rather than opened.", "20%", "78%"],
+ ["The ascent", "Painted small: Christ leads the three up the mountain before any of this happens — Mark gives it in one clause, leadeth them up into an high mountain apart by themselves.", "52%", "15%"],
+ ["The descent", "Painted small on the other side: Christ brings them down again — the verse just after this passage, not part of it.", "50%", "82%"],
+ ["Peter", "Both hands thrown up to shield his face from the light, still turned toward it.", "78%", "15%"],
+ ["The falling apostles", "One pitched forward almost head-first down the slope, one crouched low and turning away: and suddenly, when they had looked round about, they saw no man any more, save Jesus only with themselves.", "80%", "55%"],
+],
+
 };
