@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **54 of the 78 have a prose reading and positioned markers,
-    308 markers in all**; the other 24 are the work in progress.
+    differs (see the Gotcha below). **62 of the 78 have a prose reading and positioned markers,
+    365 markers in all**; the other 16 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,22 +166,40 @@ and this file did not.
 
 ## Next
 
-**Active work — the 24 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 54 of the 78 icons are finished — batch 8
-(2026-09-21g) did the Mystical Supper, Gethsemane and the Betrayal (14:22-52), nine icons and 58
-markers (`1efd126`), and fixed four false claims batch 7 had left in Mark's reader (`6b4eb18`). All nine files are shared with Matthew's reader, and the one
-trap worth knowing before the Passion batches: **Mark gives Christ no words at the kiss** —
-*Friend, wherefore art thou come?* is Matthew's and is load-bearing in three of Matthew's marker
-texts for these files. The same care applies from here on: the trial, the denial, Pilate and the
-Crucifixion are all scenes where Matthew's reader already has a reading built on Matthew's words.
-The remaining 10 passages, with how many icons each still needs:
+**Active work — the 16 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 62 of the 78 icons are finished — batch 9
+(2026-09-22) did the council, the denial, Pilate and the scourging (14:53-15:15), eight icons and
+57 markers (`8754f1c`). The trap that has held through every Passion batch: **Matthew's reader
+already has a reading of each shared file built on Matthew's words**, and his wording is often
+load-bearing in it — *Friend, wherefore art thou come?* at the kiss, *Caiaphas* at the trial,
+*the governor marvelled greatly*, the washing of the hands. The same care applies to the
+Crucifixion. The remaining 6 passages, with how many icons each still needs:
 
 ```
-14:53-59 (2)  14:66-72 (2)  15:1-5 (2)   15:6-15 (2)   15:16-20 (1)
-15:21-28 (6)  15:42-47 (4)  16:1-8 (1)   16:9-13 (3)   16:14-18 (1)
+15:16-20 (1)  15:21-28 (6)  15:42-47 (4)  16:1-8 (1)  16:9-13 (3)  16:14-18 (1)
 ```
 
-Next batch: 14:53-59, 14:66-72, 15:1-5 and 15:6-15 — eight icons, two each.
+Next batch: 15:16-20 (1) and 15:21-28 (6), the mocking and the six Crucifixions — seven icons.
+Then 15:42-47 (4) with 16:1-8 (1), and 16:9-18 (4) last.
+
+**For the owner, from batch 9 (2026-09-22) — nothing changed for any of these.**
+- **Both icons of Mark 14:53-59 (`council`) paint verse 63, the rending of the garment**, which
+  belongs to 14:60-65 (`highpriest`, "Art Thou the Christ?"), and that passage has no icon. The
+  Dionysiou judge pulls his tunic open with both hands; the Gračanica high priest's robe hangs in
+  torn strips with his hand at the tear. It is the `betrayer`/`supper` shape again. The readings
+  anchor on 53-59 (the witnesses who agreed not together, *made with hands … made without hands*)
+  and name the rending as the next passage's; nothing was moved.
+- **Mark's reader labels the Gračanica fresco "Christ before Caiaphas", and Mark never names
+  Caiaphas** (nor Annas, whom the Dionysiou inscription adds). The reading says so. The label is
+  the icon's name across readers, like the Ravenna copy's; something like "Christ before the High
+  Priest" is one line in `labels.js` if you want Mark's reader to match Mark.
+- **Two more of Matthew's texts contradict their pictures.** The Dionysiou `Krinomenos` marker *The
+  soldier* says his *arms folded across his chest*; at crop his right arm is raised, gripping a tall
+  staff at the frame's edge. And the Russian `Pilate judgement` marker *The vessel for the washing*
+  names a vessel in the hands of the figure behind the throne; at 660 px it is something small and
+  round held at the breast that cannot be identified, so Matthew's reader asserts his own Gospel's
+  washing on thin evidence. Mark's reading describes it and says that *if* it is water, it is
+  Matthew's. Both belong with the post-audit list below.
 
 **For the owner, from batch 8 (2026-09-21g) — two things, neither changed.**
 - **Mark 14:17-21 (`betrayer`, "One of You Shall Betray Me") has no icon, and the three Mystical
@@ -2317,3 +2335,61 @@ SessionStart hook will show them.
 
 **Next.** Continue the Mark loop at 14:53-59 (2), 14:66-72 (2), 15:1-5 (2) and 15:6-15 (2). Then
 15:16-20 (1) with 15:21-28 (6), the Crucifixions, as their own batch.
+
+## Session 2026-09-22 (Mark readings and markers, batch 9: 14:53-59, 14:66-72, 15:1-5, 15:6-15)
+
+**Did.** Eight icons, four passages, two icons each, 57 markers, one commit (`8754f1c`), the loop
+under "Active work". Five files are shared with Matthew's reader and three with John's; their texts
+were dumped to a scratch file and read only after Mark's were drafted, and two phrases that had
+come across in shape (Peter *bent double over a green drum with his face buried in his arms*, and
+the armoured pair at the fire) were rewritten. About thirty crops, including a second round on
+every point where Matthew's text and the draft disagreed about the picture.
+- `council` (14:53-59). **Mark never names the high priest**, and never names Annas or Caiaphas at
+  all; the Dionysiou inscription names both and the Gračanica file title names Caiaphas, and both
+  readings say whose names those are. Hooks: the witness that *agreed not together* (said twice,
+  56 and 59), *made with hands … made without hands* (Matthew 26:61 has neither), and Christ silent
+  through all seven verses. Both icons paint 14:63, the rending — see `## Next`. Gračanica's lower
+  band is the top of its own denial scene (a cock on a column, a Slavonic title ending ПЕТРОВО), and
+  Mark alone says Peter was *beneath in the palace*. The stylite in the niche below is another
+  part of the church's painting and is marked as such.
+- `denial` (14:66-72). Hooks: the fire (Matthew never mentions one), *Jesus of Nazareth* where
+  Matthew's first challenger says *of Galilee*, *I know not, neither understand I*, *a maid saw him
+  again* (Mark's Greek has *the* maid; Matthew's is *another*), *thy speech agreeth thereto*, and the
+  cock crowing **twice** — Dionysiou paints one bird, Ravenna none, and no fire either. The maid in a
+  doorway is John's *damsel that kept the door*; Mark's ending *when he thought thereon, he wept*
+  has no going out, which the Dionysiou fresco paints from Matthew and Luke.
+- `pilate` (15:1-5). Hooks: *Thou sayest it* the only words, then *answered nothing* twice, *so that
+  Pilate marvelled* (Matthew: *the governor marvelled greatly* — Mark never uses *governor*). The
+  Russian title reads ПРИВЕДЕНИЕ КЪ ПИЛАТУ, *the bringing to Pilate*; its Pilate faces the accusers
+  with one hand reaching back toward Christ. The green shapes behind Christ are soldiers' crested
+  helmets with spear-shafts, not angels. Monreale gives Christ a speaker's hand, which in Mark
+  fits verse 2 only, and shows no binding.
+- `barabbas` (15:6-15). **Neither icon shows Barabbas, Pilate or the crowd** — both paint only the
+  last participle, *when he had scourged him*. Hooks: *willing to content the people* (Mark's only
+  reason; Matthew has the washing, which this reader does not show), *Crucify him* where Matthew has
+  *Let him be crucified*, Barabbas *lay bound* and goes free, and Mark 10:34's foretelling. The
+  Novgorod title's right half reads У СТОЛПА; the left word is too faint to claim and is not claimed.
+
+**Corrected before committing, all by crop.** The Dionysiou soldier grips a tall staff — the draft
+had him raising his arm for a blow. The Gračanica high priest's robe is torn into strips with his
+hand at the tear — the draft had a staff at his hand and no rending. The Russian Pilate is not
+turned wholly from Christ. The Novgorod left word was first read as БИЕНИЕ; it cannot be read.
+
+**Verified**
+- Scratch clause check (`clauses.js` in the session scratchpad): 72 quoted clauses, every one
+  verbatim in `src/books/mark/kjv.json`, or Matthew's or John's for the contrast quotations, and
+  every one present in the drafted text; the three it flagged were sentence-initial capitals and a
+  paraphrase that is not a quotation.
+- `BOOK=mark node src/tools/quotes.js`: 50 clauses to read (36 before), 0 wrong Father, 0 no source,
+  0 drift. Of the 14 new, one was a real near-paraphrase — *who looked upon him* for the KJV's *she
+  looked upon him* — fixed; the rest are prose leading into verbatim quotations or deliberate
+  Matthew contrasts.
+- `overlay.py` on all eight keys, two passes. First pass: 54 of 57 on target; 3 moved (the
+  Dionysiou rent garment onto the bared breast, the Mastigosis stars marker off a balcony onto a
+  star, the Novgorod title marker onto У СТОЛПА); second pass all 57 on their referents.
+- `make check` green; no clamp from any marker in this batch (every clamp line listed is Matthew's).
+  `check.js` reports Mark 62/78 readings, 62 with markers. `make mark`: 12.50 MB.
+- Browser, served on 8731: all four passages open, each thumbnail shows its reading and its full
+  marker count (7/6, 9/6, 9/7, 7/6), every image decodes via `new Image()`, no console errors.
+
+**Next.** Mark 15:16-20 (1) and 15:21-28 (6): the mocking and the six Crucifixions, one batch.
