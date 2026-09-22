@@ -2537,8 +2537,11 @@ centred off his head, not a halo. Three black rectangles low in three of the fil
 Apokalthelosis, Ide Topos) are holes in the photographs and carry no marker.
 
 **Verified**
-- Scratch clause check (`clauses.js` in the session scratchpad): 37 candidate clauses, every one in
-  the text verbatim in `src/books/mark/kjv.json` or Matthew's for the three contrasts.
+- Scratch clause check (`clauses.js` in the session scratchpad): 37 candidate clauses; the 34 in
+  the text are all verbatim in `src/books/mark/kjv.json`, or Matthew's for the two contrasts, and
+  the other 3 are unused (the two pre-fix forms above and Matthew's *begged*). A follow-up commit
+  took the colon off the `Ide Topos` flasks marker, which had again framed *they had bought sweet
+  spices* as though it were the KJV's words.
 - `BOOK=mark node src/tools/quotes.js`: 51 to read (50 before), 0 wrong Father, 0 no source, 0
   drift; the one new line is the rendering of the fresco's inscription, *behold the place where the
   Lord lay*, which is Matthew's wording on purpose.

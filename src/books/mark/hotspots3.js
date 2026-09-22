@@ -712,7 +712,7 @@ module.exports={
  ["ΙΔΕ Ο ΤΟΠΟΣ", "Behold the place — the opening words are Mark's Greek exactly: behold the place where they laid him.", "9%", "47%"],
  ["ΟΠΟΥ ΕΚΕΙΤΟ Ο Κ(ΥΡΙΟ)Σ", "Where the Lord lay — the ending is Matthew's, not Mark's. Matthew's angel says, Come, see the place where the Lord lay.", "9%", "75%"],
  ["The women", "Two, haloed, pressed together, each with a hand at her face. Mark names three: Mary Magdalene, and Mary the mother of James, and Salome.", "27%", "15%"],
- ["The flasks", "Two small gold vessels held between the women. Matthew says they came to see the sepulchre; Mark says what they carried, and why: they had bought sweet spices, that they might come and anoint him.", "46%", "18%"],
+ ["The flasks", "Two small gold vessels held between the women. Matthew says they came to see the sepulchre; in Mark the women had bought sweet spices, that they might come and anoint him.", "46%", "18%"],
  ["The stone", "Huge and red, thrown down across the rock. Mark alone gives the women's question — Who shall roll us away the stone — and what they found: the stone was rolled away: for it was very great.", "62%", "40%"],
  ["The angel on the stone", "Seated on the stone with a staff, his face turned toward the women and one hand laid out on the rock toward the tomb. The angel on the stone is Matthew's: he rolled back the stone from the door, and sat upon it.", "24%", "41%"],
  ["The angel within", "Seated behind the open coffin, before the mouth of the cave, his hands on his knees, in a long pale robe over rose — the nearer of the two to Mark's words: a young man sitting on the right side, clothed in a long white garment.", "25%", "80%"],
