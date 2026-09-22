@@ -351,6 +351,19 @@ takes its commentary away with it. The owner's call.**
   to 14:13–21, which already has two icons, and let 15:29–39 fall to tier c.
 - The related open question, `Christos Iomenos Typhlon` at 9:27–31, is below and unchanged.
 
+**For the owner — the Ravenna sheep and goats at Matthew 25:31–46 is a modern copy, and its label
+says otherwise.** `Separation of Sheep and Goats MET cdi24-144-4s1.jpg` is dated in
+`image_meta.json` *early 20th century (original dated early 6th century)*, catalogued
+*Reproductions-Mosaics*: it is the Metropolitan Museum's copy of the Sant'Apollinare Nuovo panel,
+not the panel. The drawer's credit line already prints that date — directly under the label
+`The Separation of the Sheep and the Goats — Ravenna, 6th c.`, so the reader contradicts itself on
+one line. The reading was corrected in the marker audit, batch 10 (it had called the object a
+sixth-century mosaic). **The label in `labels.js` was not changed**, because it is the icon's name
+in the gallery; something like `— copy after Ravenna, early 20th c.` is one line. Whether a copy
+belongs in the reader at all, or should give way to a photograph of the wall itself, is the larger
+question. The Commons page does not name the church; the identification rests on the composition.
+Found 2026-09-21.
+
 **FIXED 2026-09-21 at the owner's word ("fix the nativity") — Matthew's prose readings for all
 three Nativity icons contradicted the pictures.** Found the same day while writing Luke's
 readings for the same three files at 2:1–7, which is the only time anyone will have had the
@@ -1991,6 +2004,28 @@ Forerunner is already shut up in prison.
 - Batch 1 (`4f870c9`): 5 icons, 27 markers, **16 wrong**.
 - Batch 2 (`d561092`): 6 icons, 34 markers, **21 wrong**.
 - Batch 3 (`2e36bfc`): 6 icons, 35 markers, **16 wrong**.
+- Batch 4 (`730d469`): 6 icons, 38 markers, **15 wrong**, and four things found that no marker had named.
+- Batch 5 (`c4bd45d`): 6 icons, 35 markers, **24 wrong** — two icons whose counts nobody had ever made.
+- Batch 6 (`e9ec987`): 6 icons, 28 markers, **15 wrong**.
+- Batch 7 (`9aeaf83`): 6 icons, 33 markers, **14 wrong** — three markers claimed a touch the mosaic does not paint.
+- Batch 8 (`436cc7b`): 6 icons, 33 markers, **12 wrong**. The Monreale Jairus is lettered IHS FILIAM
+  IAYRI … SVSCITAT: the wall **names Jairus**, which Matthew never does (the name is Mark's and
+  Luke's). Nothing moved; the marker says what the wall says. Same family as the three icons in
+  `## Next` whose picture names another Gospel, but milder — it is Matthew's event, only the name is not his.
+- Batch 9 (`f56ecbc`): 5 icons, 25 markers, **8 wrong**.
+- Batch 10 (`0eef10f`, `47649a0`): 7 icons, 32 markers, **29 changed** — about 20 false, the rest
+  understated or saying nothing about the picture. The worst: the Monreale **Cleansing** was wrong
+  in all six, and its reading imported St John's scourge and St John's oxen and sheep; the
+  **Ravenna** sheep-and-goats panel is an early-20th-century copy at the Metropolitan Museum (see
+  `## Next`); the Dionysiou **Lamentation** had a ladder against the cross that is on a mourner's
+  shoulder and a wrapped body that lies bare. Five readings were rewritten with their markers, and
+  their rows in `icon_reading_audit.tsv` changed from `checked` to `fixed` — including one that said
+  "Peter chest-deep — reading holds" of a Peter painted whole down to his feet.
+- **A fourth kind of error, named at batch 10:** the marker that makes no claim about the picture
+  at all — pure Scripture, a homily, or colour symbolism the painting does not carry. It can never
+  be falsified, so it would read `holds` forever. The audit file's header now names it and such
+  notes begin NO PICTURE CLAIM. **Batches 1–9 did not look for it**, so an unknown number of
+  `holds` rows there are this kind.
 
 **What the errors are actually like** — three kinds, over and over:
 1. **The marker narrates the Gospel and credits the narration to the picture.** Peter "among the
@@ -2006,6 +2041,8 @@ Forerunner is already shut up in prison.
   painted in the Dionysiou Gethsemane and nothing had ever named it; the fresco letters ΙȢΔΑС
   beside the hanged Judas; ΙΣ ΧΣ is lettered either side of the lantern pole at St Nicholas Orphanos.
 
-**Next.** Icons 18–65 of the list, same loop. Then rebuild `Matthew Reader.html` once — the reader
+**Next.** The last six icons of the 65 — `5f0302871958` Poulakis Jesse, `4f9aa3206d34` Kastoria
+Flight, `892e33ad2d95` Menologion Innocents, `a775939956b4` Ohrid Forerunner, `686af8bf09a5` Russian
+North Theophany, `6e1639e806a6` Monreale Second Temptation — same loop. Then rebuild `Matthew Reader.html` once — the reader
 is deliberately left a build behind while the sweep runs, so history takes one 17 MB copy and not
 thirteen.
