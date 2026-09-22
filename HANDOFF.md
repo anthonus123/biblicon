@@ -91,8 +91,8 @@ and this file did not.
     Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
     carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **42 of the 78 have a prose reading and positioned markers,
-    234 markers in all**; the other 36 are the work in progress.
+    differs (see the Gotcha below). **45 of the 78 have a prose reading and positioned markers,
+    250 markers in all**; the other 33 are the work in progress.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -166,21 +166,20 @@ and this file did not.
 
 ## Next
 
-**Active work — the 36 Mark icons that still have no reading and no markers.** `picks.js`,
-`labels.js` and `overrides.js` are done and committed; 42 of the 78 icons are finished — batch 6
-(2026-09-21e) did all four Entry icons, both fig-tree icons and both temple-cleansing icons at
-11:1-18, 46 markers, one commit. Two gotchas from that batch, in case the pattern repeats: Mark's
-temple-cleansing prophecy keeps a clause ("of all nations") that Matthew's and Luke's versions of
-the same quotation both drop, so a reading adapted from either would silently lose it; and Mark
-splits the fig tree into two mornings a full passage apart (cursed at 11:12-14, found withered
-only at 11:20 inside the next passage, `faith`), so the Ferapontov fresco's already-bare tree is
-compressing two of Mark's own days into one image — worth saying, not silently inheriting from
-Matthew's single-day account. The remaining 19 passages, with how many icons each still needs:
+**Active work — the 33 Mark icons that still have no reading and no markers.** `picks.js`,
+`labels.js` and `overrides.js` are done and committed; 45 of the 78 icons are finished — batch 7
+(2026-09-21f) did the three single-icon passages `coming` (13:21-27), `anointing` (14:3-9) and
+`judas` (14:10-11), 16 markers, one commit. All three files are shared with Matthew's reader
+(the Klontzas Second Coming, the Monreale anointing mosaic, the Yaroslavl Judas icon), so each
+reading had to be written fresh against Mark's own wording rather than adapted from Matthew's —
+see that session's block for what came out of it, including one paraphrase (`quotes.js` does not
+catch a changed direct object) that was caught and fixed before committing. The remaining 16
+passages, with how many icons each still needs:
 
 ```
-13:21-27 (1)  14:3-9 (1)   14:10-11 (1) 14:22-25 (3)  14:32-42 (3)  14:43-52 (3)
-14:53-59 (2)  14:66-72 (2) 15:1-5 (2)   15:6-15 (2)   15:16-20 (1)  15:21-28 (6)
-15:42-47 (4)  16:1-8 (1)   16:9-13 (3)  16:14-18 (1)
+14:22-25 (3)  14:32-42 (3)  14:43-52 (3)  14:53-59 (2)  14:66-72 (2) 15:1-5 (2)
+15:6-15 (2)   15:16-20 (1)  15:21-28 (6)  15:42-47 (4)  16:1-8 (1)   16:9-13 (3)
+16:14-18 (1)
 ```
 
 The loop that works, six to eight icons at a time, one commit each:
@@ -2174,4 +2173,55 @@ Luke's 63 icons are also still untouched.
 
 **Next.** Continue the Mark loop at 13:21-27 (1), 14:3-9 (1) and 14:10-11 (1) — a short three-passage
 batch since none of the surrounding passages has more than one icon until 14:22-25.
+
+## Session 2026-09-21f (Mark readings and markers, batch 7: 13:21-27, 14:3-9, 14:10-11)
+
+**Did.** Three passages, three icons (all singles), 16 markers, one commit, the same loop as
+batches 5 and 6: `grid.py` on each key and read the grid image itself, prose into `hotspots2.js`,
+markers into `hotspots3.js`, `quotes.js` before committing, `assemble.js` + `overlay.py` after,
+`make check` and `make mark` at the end. All three files are shared with Matthew's reader, so each
+reading had to find what is actually Mark's own in a picture Matthew's reader already describes.
+- `coming` (13:21-27, Second Coming by G. Klontzas) — cropped both upper corners to check what the
+  small winged heads in the gold background are doing before describing them: they are rolling up
+  a dark band across the sky, the Church's own picture for the powers that are in heaven shall be
+  shaken, a verse no artist could paint literally. Mark's own last verse pairs earth and heaven in
+  one merism, from the uttermost part of the earth to the uttermost part of heaven, where Matthew's
+  parallel keeps to one end of heaven to the other — split across two markers, one low on the panel
+  (the dead rising) and one high (the enthroned apostles), which the icon's own two-register
+  composition happens to support.
+- `anointing` (14:3-9, Monreale — Anointing at Bethany) — the same mosaic Matthew's reader shows for
+  his own account. Mark's specific verbs are its own: she brake the box (Matthew's account never
+  says the vessel was broken), and Mark leaves the murmuring disciples unnamed — some — where
+  Matthew's account of the same supper calls them his disciples outright.
+- `judas` (14:10-11, Judas receiving money, Yaroslavl) — the same icon Matthew's reader shows. Mark's
+  two verses name no sum and give Judas no words: he went unto the chief priests, to betray him
+  unto them, and when they heard it, they were glad, and promised to give him money — the offer is
+  theirs, not his, and no price is named. The icon's counted coins and its own Church Slavonic title
+  naming thirty pieces belong to the fuller story the Church reads behind Mark's sparer account, not
+  to anything these two verses state; the reading says so rather than letting the picture's own
+  caption stand for the text.
+
+**Verified**
+- `BOOK=mark node src/tools/quotes.js`: caught one real fix before the first commit attempt — the
+  anointing reading had paraphrased Mark's clause as "poured *the ointment* on his head" where the
+  verse reads poured *it* on his head. `quotes.js` did not itself flag the wrong word (it only checks
+  that the clause it recognises is *somewhere* in the source), so this was caught by rereading the
+  verse against the prose, not by the tool — the same caution the audit sessions record: a near-
+  paraphrase with the verses right can still pass every mechanical check. Fixed in both
+  `hotspots2.js` and `hotspots3.js` before committing. After the fix: 20 total clauses flagged for
+  reading, 5 new; all 5 read clean — three are verbatim Mark clauses the splitter cannot auto-verify
+  because they cross a comma, two are deliberate quotations of Matthew's differing wording (what
+  will ye give me) used for contrast, which the tool correctly cannot find in Mark's own kjv.json.
+- `overlay.py` on all three keys: every one of the 16 markers landed correctly on the first pass —
+  no second pass needed, the first time that has happened in this loop. The one placement worth a
+  second look, the alabaster vessel on the anointing mosaic (a small vase tucked into the bottom-left
+  corner near the frame), was checked with a tight pixel crop before trusting the percentage.
+- `make check`: green, no new failures, no clamp warnings, the Luke and orphan-image warnings
+  unchanged. `make mark`: rebuilt clean, 12.44 MB.
+
+**Not done.** The other 33 Mark icons across 13 passages, starting at Mark 14:22-25 (3 icons, the
+Mystical Supper). Luke's 63 icons are also still untouched.
+
+**Next.** Continue the Mark loop at 14:22-25 (3), 14:32-42 (3) and 14:43-52 (3) — the next batch of
+comparable size to the ones already done.
 

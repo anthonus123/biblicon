@@ -376,4 +376,31 @@ module.exports={
  ["Isaiah", "One of four prophet busts below the scene, each holding nothing, his own words written in a column beneath him — the prophet Mark is quoting when Christ calls the temple the house of prayer.", "50%", "80%"],
 ],
 
+// ---- chapter 13 ----
+
+"File:Second Coming by G.Klontzas (16th c.).jpg":[
+ ["Christ in the mandorla", "Enthroned at the head of the panel in a red mandorla with two winged angels close beside him. And then shall they see the Son of man coming in the clouds with great power and glory — Mark's own order of the two words, where Matthew's parallel reverses them.", "10%", "48%"],
+ ["The scroll-bearing cherubs", "In each upper corner a pair of bodiless winged heads rolls up a dark band across the gold — the sky itself taken up like a scroll. It is the Church's own picture for a verse no artist could paint literally: the stars of heaven shall fall, and the powers that are in heaven shall be shaken.", "4%", "10%"],
+ ["The wheeled chariot", "Below the throne, two fiery many-eyed wheels out of Ezekiel's vision carry the whole scene. Nothing in Mark's own text names them; this is the Church's iconography for the throne of judgment, not a picture drawn from these verses.", "24%", "48%"],
+ ["The apostles enthroned", "Two ranks of apostles and saints sit to either side of Christ, high on the panel. His elect are gathered here from the uttermost part of heaven — Mark's own second half of the pairing.", "30%", "78%"],
+ ["The ranks of the elect", "Rows of the redeemed fill the whole left side below the enthroned apostles, gathered from the four winds that Mark's text names but cannot itself show.", "62%", "16%"],
+ ["The earth and the sea giving up their dead", "Along the bottom edge the ground opens and naked figures rise from it. Mark's own phrase reaches this low: from the uttermost part of the earth to the uttermost part of heaven — one merism spanning the whole board, top to bottom, that Matthew's version of the same saying does not use.", "90%", "30%"],
+],
+
+"File:Monreale - Anointing at Bethany.jpg":[
+ ["Christ reclining", "He sits upright at the left on a cushioned couch, haloed, his right hand low with the fingers reaching down toward the woman on the floor — Mark sets this as he sat at meat in the house of Simon the leper at Bethany.", "38%", "17%"],
+ ["The woman at his feet", "Stretched full length on the floor, the only figure in the mosaic not upright. Mark says she brake the box, and poured it on his head; the mosaicist has followed John's Gospel instead in setting her at Christ's feet, with no wiping of them shown here.", "78%", "29%"],
+ ["The alabaster vessel", "A small white two-handled vase stands on the floor below the couch, where she set it down after breaking it open. Mark alone, with John, names what was in it — ointment of spikenard very precious — and gives its price, above three hundred pence.", "86%", "11%"],
+ ["The murmuring disciples", "Packed at the right with their hands raised in argument. Mark leaves them unnamed — some that had indignation within themselves ... and they murmured against her — where Matthew's account of this same supper calls them his disciples outright.", "40%", "72%"],
+ ["The dish on the table", "One dish at the centre of the spread cloth. She hath done what she could: she is come aforehand to anoint my body to the burying — Mark's own word aforehand, before the deed itself is done.", "57%", "42%"],
+],
+
+"File:Judas receiving money, icon of Yaroslavl (19 c, priv.coll).jpg":[
+ ["Judas", "He stands at the left, bearded and unhaloed, his bare hand laid on the edge of the cloth. Mark gives him no words at all here — he went unto the chief priests, to betray him unto them — where Matthew has him open the bargain himself with what will ye give me.", "45%", "21%"],
+ ["The high priest", "At the centre in the hood of his office, both hands on the money. And when they heard it, they were glad, and promised to give him money — the gladness and the promise are theirs in Mark's own telling, not a price Judas is shown demanding.", "37%", "49%"],
+ ["The coins being counted", "Small coins lie spread and counted on the white cloth. Mark's two verses name no sum at all; the thirty pieces this scene traditionally stands for is the fuller story the Church reads behind Mark's sparer account, not a number these verses themselves give.", "55%", "50%"],
+ ["The elders", "A press of capped and bearded heads at the right, with a scribe and a beardless attendant nearer the priest. Mark speaks of the chief priests as the body Judas goes to, without naming who else was present.", "42%", "77%"],
+ ["The canopy and curtain", "A draped canopy between two towers marks the scene as held indoors, under cover — the arrangement Mark says was kept from the crowd that had so lately hailed him at the temple.", "13%", "49%"],
+],
+
 };
