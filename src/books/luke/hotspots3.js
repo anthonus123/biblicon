@@ -261,4 +261,74 @@ module.exports={
  ["A second cross in a second halo", "At the far right, past the crowd, another haloed figure carries a cross of his own — Christ again, on the same wall. Whether this is the same moment or the next one along it, none of the three readings of this fresco settles.", "9%", "80%"],
 ],
 
+// ---- chapter 9 ----
+
+"File:Evlogesis Pente Arton Dionysiou.jpg":[
+ ["The title", "Η ΕΥΛΟΓΗΣΙΣ ΤΩΝ ΠΕΝΤΕ ΑΡΤΩΝ, lettered across the top — the blessing of the five loaves.", "9%", "46%"],
+ ["Christ holding the loaves and the fish", "The five loaves stacked in his hands with the two fishes laid across them, reaching the pile out before the blessing itself: looking up to heaven, he blessed them, and brake.", "33%", "20%"],
+ ["The apostle who receives them", "Grey-bearded, taking the pile in both bare hands — the instant just before gave to the disciples to set before the multitude.", "36%", "38%"],
+ ["The desert place", "A jagged white mountain fills the sky behind Christ, standing for the place Luke alone names: a desert place belonging to the city called Bethsaida.", "16%", "32%"],
+ ["The seated ranks", "The crowd sits banked in ordered rows on the slope, answering Luke's own instruction: Make them sit down by fifties in a company.", "12%", "82%"],
+ ["A woman among the ranks", "Fair-haired and bare-headed in green, seated with the men in the same rank, though Luke's own count of the day takes in men alone: they were about five thousand men.", "20%", "68%"],
+ ["The baskets", "Wicker cylinders stacked with broken bread, five or six of them countable here — short of Luke's own twelve baskets taken up of fragments that remained.", "82%", "24%"],
+],
+
+"File:Feeding the multitude, Sant'Apollinare Nuovo, Ravenna.jpg":[
+ ["Christ, young and beardless", "A cross set in his halo, both arms stretched out sideways at once toward the loaves and the fish alike.", "22%", "48%"],
+ ["The loaves, crossed", "Two disciples in white hold up a cloth of round golden loaves, each one scored with a cross.", "28%", "22%"],
+ ["The two fishes", "Carried head to tail across the hands of the two disciples at the right — dark against the gold ground.", "35%", "75%"],
+ ["No crowd at all", "The mosaic gives five figures and a bare gold ground — nothing of he received them, and spake unto them of the kingdom of God, and healed them that had need of healing is shown before this moment.", "60%", "50%"],
+ ["The giving itself", "Christ's fingertips reach what each pair of hands offers him — he blessed them, and brake, and gave to the disciples to set before the multitude, caught before the disciples have turned to carry it anywhere.", "45%", "50%"],
+],
+
+"File:Transfiguration of Christ Icon Sinai 12th century.jpg":[
+ ["Christ on the peak", "One hand raised, a scroll in the other, standing where after six days he was transfigured before them.", "18%", "48%"],
+ ["Elias, at the left", "Old and grey-bearded, his hands drawn into the folds of a dark mantle.", "20%", "17%"],
+ ["Moses, at the right", "Younger and dark-haired, a pale tablet held against him, his free hand reaching toward Christ — the Law brought up the mountain in the lawgiver's own hands.", "22%", "80%"],
+ ["Peter, seated with a hand raised", "As if still speaking — the wreck of Master, it is good for us to be here: and let us make three tabernacles.", "68%", "18%"],
+ ["The apostle bowed low at the centre", "Face down against the damaged gold, one of the three thrown down at the sight.", "78%", "48%"],
+ ["The third apostle, turned aside", "Kneeling, one hand near his own chest, his face turned away from the light rather than toward it.", "75%", "78%"],
+],
+
+"File:Icon of the Transfiguration from Saint Catherine's, Sinai.jpg":[
+ ["No mandorla at all", "Only three or four thin red strokes behind Christ's head and then bare gold — the plainest of the four in what it gives him.", "10%", "50%"],
+ ["The clothing itself", "White chiton and mantle, carrying the glory the missing mandorla does not: his raiment was white and glistering.", "35%", "48%"],
+ ["Elias, at the left", "Old, white-bearded, one hand drawn to his chest.", "18%", "15%"],
+ ["Moses, at the right", "Young, dark-haired, his hand simply held out toward Christ — no tablet in it here, unlike the icon beside it in this gallery.", "20%", "82%"],
+ ["Peter, kneeling with a hand raised", "As if still speaking, at the left of the three fallen disciples.", "68%", "13%"],
+ ["John, collapsed entirely", "Face buried in his own robe, nothing of him visible but the curve of his back — heavy with sleep before ever he saw the glory.", "78%", "45%"],
+ ["James, seated rather than fallen", "Looking down and away, one hand resting on a drawn-up knee.", "75%", "80%"],
+],
+
+"File:Icon of transfiguration (Spaso-Preobrazhensky Monastery, Yaroslavl).jpg":[
+ ["The star-shaped mandorla", "Dark blue-green, gold rays breaking outward through it and small stars scattered in the dark.", "18%", "50%"],
+ ["Elias, leaning in from the left", "One hand raised — appeared in glory, and spake of his decease which he should accomplish at Jerusalem.", "22%", "16%"],
+ ["Moses, leaning in from the right", "An object wrapped in cloth held against his chest — the Law carried rather than opened.", "22%", "82%"],
+ ["Peter, hands thrown up", "Shielding his face from the light, still turned toward it and, on Luke's telling elsewhere, still the one who spoke.", "68%", "16%"],
+ ["The other two, still falling", "One pitched forward with a hand over his face, the other crouched low and turning away — caught mid-fall rather than fallen.", "72%", "48%"],
+ ["Christ leading them up", "A small scene at the left of the mountain, before any of this happens — a register the other three Transfigurations in this gallery leave out.", "50%", "15%"],
+ ["Christ bringing them down", "A small scene at the right of the mountain — the next passage, which Luke alone dates: on the next day, when they were come down from the hill.", "50%", "82%"],
+],
+
+"File:042 Transfiguration of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The mandorla and the blessing hand", "Christ at the top, a pale oval of light around him, blessing with his right hand and holding a scroll in the left.", "12%", "48%"],
+ ["Moses, kneeling at the left", "Dark-haired, an open pale tablet on his knee, looking down at it rather than at Christ.", "18%", "15%"],
+ ["Elias, kneeling at the right", "White-bearded, one hand drawn to his breast — reversed from the other three Transfigurations in this gallery, where Elias stands at the left.", "18%", "82%"],
+ ["Both together", "The Law open on the one knee and the Prophet beside him, speaking of what no other Gospel reports: spake of his decease which he should accomplish at Jerusalem.", "20%", "50%"],
+ ["The disciple with both arms thrown up", "Kneeling at the left of the fallen three.", "68%", "18%"],
+ ["The disciple fallen face-upward", "At the centre of the slope, flat on his back.", "75%", "48%"],
+ ["James, named beside his halo", "Recoiling at the right, ΙΑΚ still legible — the only one of the three the panel itself names.", "70%", "80%"],
+],
+
+// ---- chapter 11 ----
+
+"File:Christos Iomenos Daimonon Takophon Dionysiou.jpg":[
+ ["The title, broken across the line", "ΤΟΝ ΔΑΙΜΟΝΩΝ ΤΑΚΩΦΟΝ, the word for the man's affliction split by the line-break — Christ healing the demon-possessed dumb man.", "9%", "42%"],
+ ["Christ's hand on the man's head", "Laid directly on him — nothing in Luke's own account describes a touch at all, only that the devil was gone out.", "38%", "42%"],
+ ["The apostles crowded behind", "Four of them, pressed close at Christ's shoulder.", "28%", "10%"],
+ ["The healed man, calm and richly dressed", "Standing upright in the archway, untroubled — the painter's own addition to a text that gives him nothing but the one word, dumb.", "58%", "55%"],
+ ["The man with both hands lifted", "No halo, standing in a second doorway — the gesture Luke's own text supplies: and the people wondered.", "48%", "76%"],
+ ["The archway between them", "A pale portico of stone, the only setting Luke's spare account is given here.", "18%", "82%"],
+],
+
 };

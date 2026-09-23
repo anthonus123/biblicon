@@ -186,13 +186,24 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 40 of 69 icons still want
-a reading and markers, across 17 passages. Batch 5 (2026-09-22i) did `sower` (8:4-15), `storm`
-(8:22-25), `gadarene` (8:26-39) and the three Jairus icons at `jairus` (8:49-56), 6 icons, 38
-markers — closing chapter 8's first four passages. Next in Gospel order: `fivethousand` (9:10-17,
-2 icons), `transfiguration` (9:28-36, 4 icons), `beelzebub` (11:14-26, 1 icon). `nain` (7:11-17,
-the widow's son) still sits earlier in Gospel order than all of these but has **no file wired at
-all** — that is a harvest task, not a reading task; see the Luke section further down.
+**Active work — the Luke readings.** See the Luke section further down: 33 of 69 icons still want
+a reading and markers, across 14 passages. Batch 6 (2026-09-23) did `fivethousand` (9:10-17, 2
+icons), `transfiguration` (9:28-36, 4 icons) and `beelzebub` (11:14-26, 1 icon), 7 icons, 26
+markers — closing out chapters 9 and 11's icon-bearing passages. Next in Gospel order: `lostsheep`
+(15:1-7, tier b, 2 icons), `entry` (19:28-36, 4 icons), and `temple` (19:45-48, 2 icons) if a
+fuller batch is wanted. `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than
+all of these but has **no file wired at all** — that is a harvest task, not a reading task; see
+the Luke section further down.
+
+**For the owner, from Luke batch 6 (2026-09-23).** Nothing changed in any other reader; two things
+worth recording. The Dionysiou `Evlogesis Pente Arton` fresco paints a fair-haired, bare-headed
+woman seated among the men in one of the seated ranks, and a boy standing apart with one hand
+raised — Luke's own count of the day is spare where Matthew's is not, *they were about five
+thousand men*, with no *women and children* added to the tally as Matthew 14:21 has it; the
+reading notes the mismatch rather than resolving it. And of the four Transfiguration icons, the
+1885 Langadas panel has Moses kneeling at the **left** and Elias at the **right** — reversed from
+the other three in this gallery, where Elias stands left and Moses right — confirmed by crop, not
+assumed; worth knowing before anyone reads the four side by side.
 `issueofblood` (8:40-48, the woman with the issue of blood) has no icon and stays a plain verse
 row, the `betrayer`/`council` shape recurring inside a single Gospel — the small kneeling figure(s)
 at Christ's feet in the Ferapontov Jairus fresco belong to 8:41, in the passage before `jairus`,
@@ -3244,5 +3255,39 @@ after, whichever the next session prefers.
   not settled from the crop available this session.
 
 **Next.** `fivethousand`, `transfiguration` and `beelzebub` (all three already wired), same loop:
+grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
+`crop.py` spot-checks → `make luke` → commit.
+
+## Session 2026-09-23 (Luke batch 6 — `fivethousand`, `transfiguration`, `beelzebub`, 7 icons)
+
+**Did.** Wrote readings and markers for the three passages named as next in Gospel order at the
+end of the last session: `fivethousand` (9:10-17, 2 icons), `transfiguration` (9:28-36, 4 icons)
+and `beelzebub` (11:14-26, 1 icon) — 7 icons, 26 markers, one commit. Used `grid.py` to read all
+seven icons fresh, then `crop.py` to confirm the details that mattered most: the receiving
+apostle's bare hands and the fresco's own basket count on `Evlogesis Pente Arton`; the Moses/Elias
+side on all four Transfiguration icons (three have Elias left, Moses right — the fourth, Langadas,
+has them reversed, confirmed by crop rather than assumed from the other three); and the exact
+three-line break of the Dionysiou beelzebub fresco's own title, ΤΟΝ ΔΑΙΜΟΝΩΝ / ΤΑΚΩΦΟΝ.
+
+**Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; these three passages were
+named next in Gospel order at the end of Luke batch 5.
+
+**Verified.** `BOOK=luke node src/tools/quotes.js`: 8 KJV clauses to read, all pre-existing
+false-positive splits or already hand-checked against `src/books/luke/kjv.json` (verified the two
+transfiguration quotes and the fivethousand quote directly against the source verses before
+committing). `BOOK=luke node src/assemble.js && python3 src/tools/overlay.py` on all seven icons,
+twice — the first pass caught the fivethousand "woman among the ranks" marker sitting on the wrong
+figure (moved onto the actual fair-haired woman after a targeted crop) and the "title" marker
+nearly overlapping the "desert place" marker (separated); `make check` then caught both new title
+markers clamped from below the stated 9% floor, fixed at the source rather than left to the
+clamp. `make luke`: 11.05 MB, 69 images, no clamp warnings, every other check line unchanged from
+before this session's edit.
+
+**Not done.** 33 of Luke's 69 icons still have no reading and no markers, across 14 passages. Next
+in Gospel order: `lostsheep` (15:1-7, tier b, 2 icons), `entry` (19:28-36, 4 icons), `temple`
+(19:45-48, 2 icons) if a fuller batch is wanted. `nain` (7:11-17) still has no file wired at all —
+unchanged this session, a harvest task, not a reading task.
+
+**Next.** `lostsheep` and `entry` (six icons, both already wired in `picks.js`), same loop:
 grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
 `crop.py` spot-checks → `make luke` → commit.
