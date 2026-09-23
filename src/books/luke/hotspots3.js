@@ -203,4 +203,62 @@ module.exports={
  ["The servant, sitting up", "Fair-haired on the red coverlet, face turned up, touched by no one in the scene — the same distance Christ's own healing keeps in Luke's own words: a certain centurion’s servant, who was dear unto him, was sick, and ready to die.", "62%", "90%"],
 ],
 
+// ---- chapter 8 ----
+
+"File:Representation of the Sower's parable.JPEG":[
+ ["The Romanian title", "PILDA SEMĂNĂTORULUI, lettered across the top, with the number 21 beside it — one panel in a series rather than a single commission.", "9%", "48%"],
+ ["Christ as the sower", "Given his own face and halo, an identification the panel makes on its own — Luke's text simply opens A sower went out to sow his seed, leaving the figure unnamed.", "18%", "50%"],
+ ["The throwing arm", "Swung out ahead of him, the hand already open. Luke's disciples ask about the parable without any note of privacy: his disciples asked him, saying, What might this parable be?", "40%", "63%"],
+ ["The birds on the path", "Four on a close count, pecking at the fallen seed. Luke's own clause adds one detail Matthew and Mark do not: and it was trodden down — the birds devouring the seed after it is in both of theirs too.", "48%", "16%"],
+ ["The bare rock", "Grey stone with almost no soil on it, at the upper right. Where Matthew and Mark both blame no depth of earth, Luke's own verse names a cause neither uses: it withered away, because it lacked moisture.", "20%", "78%"],
+ ["The thorns", "A flowering thicket, red-blossomed, crowding the right-hand margin. Luke's own explanation of this ground names a third thing that chokes, missing from Matthew's two things and different from Mark's own third, the lusts of other things: pleasures of this life.", "55%", "82%"],
+ ["The round pale shapes", "Stones, perhaps, or a harvest already reaped, flecked like the seed scattered elsewhere in the panel — which ground, if any, they belong to is not clear at this resolution.", "80%", "78%"],
+],
+
+"File:Hrist utišava buru na moru, manastir Gračanica.jpg":[
+ ["Christ standing in the bow", "One arm stretched above the waves, on his feet already. Luke moves from his falling asleep to the storm's own arrival inside one verse, naming no pillow and no part of the ship for either, as Mark's fuller account does.", "45%", "27%"],
+ ["Christ asleep in the stern", "His cheek rests against one open palm, apart from the standing figure — the same person, an earlier moment held in the same frame.", "55%", "82%"],
+ ["The apostle who wakes him", "Turned back with his hands open toward the sleeper. Luke gives the cry its own shape, doubled: Master, master, we perish.", "52%", "66%"],
+ ["The man at the rigging", "In a red tunic, both hands reached up as the boat rides low. Luke's own clause makes the danger the men's: they were filled with water, and were in jeopardy — Mark's fuller account gives that same filling to the ship itself.", "47%", "50%"],
+ ["The sail", "Still spread and full, though the storm has already come down. Luke's own word for the water throughout this passage is lake, never sea.", "22%", "33%"],
+ ["The sea", "Curling grey brushwork, ridge on ridge, under a sky gone almost black. Luke ends the passage on the disciples' own question, not the calm: What manner of man is this! for he commandeth even the winds and water, and they obey him.", "85%", "45%"],
+],
+
+"File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg":[
+ ["The young Christ", "Beardless still, a cross set in his halo — Ravenna's own convention for this early date.", "25%", "38%"],
+ ["One man, not two", "A single kneeling figure, not the two Matthew's own Gospel gives this country. Luke's man is the one Legion speaks through: he said, Legion: because many devils were entered into him.", "60%", "55%"],
+ ["The tunic", "Sleeved to the wrist, with a dark stripe down the front — no bare skin above it. Luke's own description of him before this moment goes further than the mosaic follows: ware no clothes, neither abode in any house, but in the tombs.", "65%", "60%"],
+ ["Christ's hand", "Held toward the man at chest height, neither withdrawn nor lifted above him. Luke gives the request that follows its own place: they besought him that he would not command them to go out into the deep.", "42%", "47%"],
+ ["The three swine", "Already running for the water — the mosaic's whole herd, however large Luke's own herd of many swine feeding on the mountain may have been; he gives no count.", "62%", "80%"],
+ ["The water", "A strip of turquoise glass at the frame's edge, the direction the herd is running. Luke's word for it, as in the passage just before this one, is lake: the herd ran violently down a steep place into the lake, and were choked.", "45%", "89%"],
+ ["The unhaloed companion", "One man stands at Christ's shoulder, given no halo of his own. Luke ends the passage with two names for one act of healing: Christ tells the man, shew how great things God hath done unto thee, and the man goes and publishes how great things Jesus had done unto him.", "30%", "20%"],
+],
+
+"File:Daughter of the head of synagogue is resurrected by Christ.jpg":[
+ ["The inscription", "IHS FILIAM IAYRI PRINCIPIS SYNAG..., cut off at the edge of this photograph; Matthew's own reading completes it, IN DOMO EIVS SVSCITAT. The painter's own spelling, IAYRI, is not the classical Iairi. Luke's own text gives the name only in the passage before this one.", "9%", "50%"],
+ ["Their two hands", "His fingers close over hers at the coverlet's edge, at the word that ends the passage's central sentence: took her by the hand, and called, saying, Maid, arise.", "63%", "52%"],
+ ["The child sitting up", "Already upright in a jewelled gown, looking past Christ. Luke's own next clause moves faster than the picture does: her spirit came again, and she arose straightway.", "52%", "75%"],
+ ["The bearded man at the bed's head", "One hand pressed to his breast, closer to a father's own grief than to a ruler pleading. Luke names both parents present: the father and the mother of the maiden.", "45%", "62%"],
+ ["The three companions", "An elder, a dark-bearded man, and a fair youth stand behind Christ, unhaloed. Luke names exactly three let in with him, though not by these faces: Peter, and James, and John.", "42%", "14%"],
+ ["The crowded room", "Far more than the five Luke's own text admits press in around the bed. His own account puts the rest outside before this: he put them all out.", "28%", "72%"],
+],
+
+"File:Raising of Jairus' daughter 03-19.jpg":[
+ ["Christ at the bedside", "Haloed, his hand reaching down to meet hers. This is the moment the passage holds: he put them all out, and took her by the hand, and called, saying, Maid, arise.", "33%", "40%"],
+ ["The dimmed face", "Worn to a faint brown ghost rather than gone altogether, its features still just traceable at this size, five hundred years after Dionisy painted it.", "30%", "35%"],
+ ["The girl's own hand", "Raised to meet his, the two overlapping at the wrist. Luke's next clause moves on quickly from the touch itself: her spirit came again, and she arose straightway.", "47%", "38%"],
+ ["The father and mother", "A veiled woman and a bearded man stand together at the bed's head. Luke names them among the few Christ did admit: and the father and the mother of the maiden.", "28%", "12%"],
+ ["Christ arriving, a second time", "A second haloed Christ, hand raised in speech, with a cluster of apostles behind him — the same wall holding two moments in one space.", "25%", "68%"],
+ ["The kneeling figures at his feet", "One or two small figures, low at the edge of the group — the moment this passage does not cover: he fell down at Jesus’ feet, and besought him that he would come into his house, in the passage before this one.", "50%", "62%"],
+],
+
+"File:Tokalı Kilise Raising of daughter of Jairus - 2004 6964.jpg":[
+ ["Christ, cross-halo just legible", "Leaning in from the left, his hand reaching to the wrapped edge of the bed. Luke's own sentence for this instant is short and gives no words in another tongue: took her by the hand, and called, saying, Maid, arise.", "11%", "41%"],
+ ["No hand of hers to meet it", "Swathed to the crown in her striped wrapping, not a finger of hers is left uncovered — nothing on her side answers the hand Christ reaches toward it.", "50%", "40%"],
+ ["The great red bed", "Covering most of the lower wall, its dark scrollwork and zigzag trim drawn with more care than anything else nearby. Luke's own account of the message that first brought this news is short too: Thy daughter is dead; trouble not the Master.", "75%", "45%"],
+ ["A second halo behind Christ", "Plain, not cross-marked — a companion rather than Christ himself. Luke names three let in with him at the door: save Peter, and James, and John.", "14%", "49%"],
+ ["The unnamed man at the door", "An unhaloed figure stands apart at the left, one hand raised; the Greek lettering beside him is too broken at this resolution to read, so this reading does not name him.", "18%", "10%"],
+ ["A second cross in a second halo", "At the far right, past the crowd, another haloed figure carries a cross of his own — Christ again, on the same wall. Whether this is the same moment or the next one along it, none of the three readings of this fresco settles.", "9%", "80%"],
+],
+
 };

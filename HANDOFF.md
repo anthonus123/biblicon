@@ -186,14 +186,17 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 46 of 69 icons still want
-a reading and markers. Batch 4 (2026-09-22h) did `draught` (1), `centurion` (1) and the three
-Synaxis-of-the-Twelve icons at `twelve` (3), 5 icons, 22 markers — closing chapter 7's first
-passage and fixing a gap batch 3 had left open in chapter 6 (see "For the owner" below). Next in
-Gospel order, four icons already wired with no reading yet: `sower` (8:4-15), `storm` (8:22-25),
-`gadarene` (8:26-39) and `jairus` (3 icons, 8:49-56). `nain` (7:11-17, the widow's son) sits
-between `centurion` and these four in Gospel order but has **no file wired at all** — that is a
-harvest task, not a reading task; see the Luke section further down. The trap that
+**Active work — the Luke readings.** See the Luke section further down: 40 of 69 icons still want
+a reading and markers, across 17 passages. Batch 5 (2026-09-22i) did `sower` (8:4-15), `storm`
+(8:22-25), `gadarene` (8:26-39) and the three Jairus icons at `jairus` (8:49-56), 6 icons, 38
+markers — closing chapter 8's first four passages. Next in Gospel order: `fivethousand` (9:10-17,
+2 icons), `transfiguration` (9:28-36, 4 icons), `beelzebub` (11:14-26, 1 icon). `nain` (7:11-17,
+the widow's son) still sits earlier in Gospel order than all of these but has **no file wired at
+all** — that is a harvest task, not a reading task; see the Luke section further down.
+`issueofblood` (8:40-48, the woman with the issue of blood) has no icon and stays a plain verse
+row, the `betrayer`/`council` shape recurring inside a single Gospel — the small kneeling figure(s)
+at Christ's feet in the Ferapontov Jairus fresco belong to 8:41, in the passage before `jairus`,
+not to `issueofblood` itself, which has no icon of its own to paint. The trap that
 held through every Mark batch holds there too, one book further on: **Matthew's, Mark's and
 John's readers already have a reading of each shared file built on their own Gospel's words**,
 and that wording is often
@@ -258,6 +261,38 @@ traps are likely to recur.
   *Matthew made use of a general mode of expression* (coming through others counts as coming),
   not an appeal to "faith alone" — a Reformation formula with no place in this reader. All three
   caught and fixed before commit.
+
+**For the owner, from Luke batch 5 (2026-09-22i).** Seven findings surfaced while
+reading these six files fresh against Luke's own verses and against Matthew's and Mark's existing
+prose for the same files. None of Luke's own text was affected; nothing was changed in Matthew's
+or Mark's readers.
+- **Matthew's Gadarene reading says the demoniac "kneels bare to the waist."** A tight crop shows
+  a full tan tunic sleeved to the wrist, with a dark stripe down the front — no cord, no bare skin
+  anywhere above it.
+- **Matthew's same reading says the herd is "five or six" swine.** The mosaic's water panel, cropped
+  edge to edge, holds exactly three, no more hidden off-frame.
+- **Mark's Sower reading calls the green behind Christ "standing green corn," and calls the panel
+  a "modern Orthodox mosaic."** At crop the green is a cluster of dark, cone-shaped growth — trees
+  or shrubs more than grain — and nothing in the panel is confirmably tesserae at this resolution;
+  Commons itself catalogues the file only as "An icon." Neither claim was checked against the
+  image before this batch. (A cluster of round pale disks lower right, flecked like the scattered
+  seed, may or may not be meant for the good ground — this reading does not choose.)
+- **Mark's Jairus/Monreale reading says the mosaicist "kept the room small and crowded to match"**
+  Christ's restriction of who was let in. At crop the room holds a good ten figures, well past the
+  five Luke names (three apostles and two parents) — the crowding argues against the restriction
+  sooner than for it.
+- **Mark's Ferapontov reading says the bedside face "has flaked away entirely, leaving a bare ring
+  of ochre."** At crop it is dimmed to a faint brown ghost, not gone — features still just
+  traceable, closer to Matthew's own "barely legible" of the same face.
+- **A new find no earlier reading of the Tokalı fresco has made:** a second cross-haloed figure
+  stands at the far right of the same wall, past the crowd around the bed. Whether he is Christ
+  again in the same scene or the first figure of the next one along the wall was not settled from
+  the crop available; flagged here rather than guessed at.
+- **Both Luke's and Mark's `labels.js` caption the sower panel "Orthodox mosaic."** No tesserae
+  are visible at this resolution and Commons itself catalogues the file only as "An icon." Left
+  unchanged in both readers — changing only Luke's would create the same "one fresco, two
+  captions" mismatch the Gotchas already record for other files — but the caption is unverified
+  in both, same family as the Ravenna sheep-and-goats copy above.
 
 **For the owner, from Luke batch 3 (2026-09-22g).** One correctness finding, fixed on sight rather
 than carried forward: Matthew's reader (and only Matthew's — Mark's own reading of the same file
@@ -3062,3 +3097,132 @@ onward, same loop: grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes
 grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
 `crop.py` spot-checks → `make luke` → commit. A Commons search for `nain` can happen alongside or
 after, whichever the next session prefers.
+
+## Session 2026-09-22i (Luke batch 5: sower, storm, gadarene, jairus x3 — 6 icons, 38 markers)
+
+**Did**
+- Wrote fresh prose readings and markers in `src/books/luke/hotspots2.js` / `hotspots3.js` for
+  the four passages that follow `centurion` in Gospel order: `sower` (8:4-15, 1 icon), `storm`
+  (8:22-25, 1 icon), `gadarene` (8:26-39, 1 icon) and `jairus` (8:49-56, 3 icons) — 6 icons, 38
+  markers, closing chapter 8's first four passages.
+- All six files are shared with Matthew's and/or Mark's readers (the sower panel with Mark's
+  only; the other five with both). Read every existing reading of the same file in both other
+  readers before drafting, per the standing trap, and found six cross-reader errors and one new,
+  unresolved find in the process — recorded under "For the owner, from Luke batch 5" above rather
+  than fixed, matching
+  precedent for anything beyond a bare one-clause slip.
+- Anchored each reading on a clause genuinely Luke's own rather than Mark's or Matthew's:
+  "it was trodden down" (sower, 8:5, the fowls devouring the seed being in all three Synoptics),
+  "because it lacked moisture" against Matthew's and Mark's "no depth of earth" (sower, 8:6 —
+  Luke's own 8:13 has "no root" too, so that comparison holds only at the one verse), "pleasures
+  of this life," a third thing choking the word that is neither Matthew's two things nor Mark's
+  own third, "the lusts of other things" (sower, 8:14), and Luke's own naming of the good ground
+  "with patience" (sower, 8:15); "the raging of the water" as what Luke's one rebuke names besides
+  the wind, where Matthew's is "the winds and the sea" and Mark's two separate acts address wind
+  then sea (storm, 8:24); "lake" against "sea" throughout (storm and gadarene both); and "into the
+  deep" (gadarene, 8:31). The two-name closing sentence at gadarene 8:39 — Christ's own charge
+  naming God, the man's own preaching naming Jesus — reads Luke's own text accurately but is not
+  a Luke-only pattern: Mark 5:19-20 pairs "the Lord" with "Jesus" the same way.
+- Kept the passage boundary between `jairus` (8:49-56) and the tier-c `issueofblood` (8:40-48):
+  the small kneeling figure(s) at the second Christ's feet in the Ferapontov fresco belong to
+  Jairus falling down at 8:41, in the passage before this one begins, and the reading says so
+  rather than claiming them for 8:49-56.
+
+**Why.** Continuing the owner's "repeat the process" instruction for Luke, in Gospel order,
+`sower`/`storm`/`gadarene`/`jairus` being the next four wired passages after `centurion`.
+
+**Verified**
+- A first advisor pass, before any prose was written, flagged four tentative reads that would
+  have repeated batch 4's own kind of error: the sower's round pale shapes read as loaves rather
+  than described plainly; the gadarene man's clothed state read as a settled "post-healing
+  moment" rather than a compressed frame; the Tokalı far-left figure named as Jairus off an
+  unread inscription fragment; and the Tokalı bed read as showing a visible hand where Matthew's
+  own reading says there is none. All four were re-cropped and corrected before drafting — the
+  Tokalı hands crop in particular confirmed Matthew's reading over the tentative first read.
+- A second advisor pass, after a full draft, caught a wrong marker (the Tokalı "Christ" marker
+  had landed on the unnamed bystander rather than on Christ, whose cross-halo sits further right
+  — a bad crop read, corrected and reconfirmed by a fresh crop) and a run of claims no tool
+  checks: two false Gospel comparisons in the storm reading (Matthew's and Mark's Christ do not
+  "speak to the sea alone" — Matthew rebukes the winds *and* the sea, Mark rebukes the wind and
+  then speaks to the sea) and a reversed one (Luke's own clause makes the flooding the *men's*,
+  grammatically; it is Mark who gives it to the ship); an overclaim that Luke's sower gives a
+  ground-clause "neither Matthew nor Mark repeats" when only "trodden down" is actually unique;
+  an invented "cord at the waist" and "arms bare from the elbow" on the Gadarene demoniac that a
+  tighter crop shows is a full sleeve with no cord; the Monreale inscription normalised to
+  classical spelling and completed past what the photograph shows (the painter's own IAYRI, and
+  a first line cut off at the frame edge, not a reconstructed IN DOMO RESUSCITAT); the Ferapontov
+  mourners wrongly tied to "they laughed him to scorn" — Luke 8:51 names them the parents, whom
+  Christ admitted, not the crowd he put out, and their "hand at her own face" turned out to be
+  carried over from the unrelated Monreale crowd; an unsourced "Dionisy gives a scene twice again
+  elsewhere in this church"; a straight apostrophe on "Jesus' feet" where the KJV's is curly; a
+  self-contradicting "wound to the wrist" beside "no hand showing at all" on the Tokalı marker;
+  and several runs of five or more words lifted essentially verbatim from Mark's or Matthew's own
+  prose (the sower's sowing-hand and title-marker phrasing, the storm's sailors and "grey
+  scallops," the Gadarene "held out low, not raised in command," and, worst, several sentences of
+  the Tokalı reading copied outright from Matthew's). All of this was rewritten before commit; a
+  scratch n-gram script comparing every six-word run in Luke's new text against Mark's and
+  Matthew's confirmed no unattributed overlap survived — the only remaining shared runs are KJV
+  quotations, the painted titulus text, and passages explicitly framed as quoting the other
+  reader's own claim for contrast.
+- Bird count on the sower panel (four, not three) and swine count on the Ravenna mosaic (three,
+  confirmed edge to edge) were settled by crop before writing, each cited as an exact number.
+- `BOOK=luke node src/tools/quotes.js`: 5 KJV flags, 3 pre-existing (Princeton "Art Museum", and
+  the centurion's Matthew-tagged clause in both `hotspots2` and `hotspots3`), 2 new (both the
+  Gadarene's God/Jesus closing sentence), all read by eye against `kjv.json` and confirmed exact
+  — the clause splitter flags them only because this batch's own connecting prose sits inside the
+  quoted span.
+- `make check`: 0 fails, 0 clamps (the sower's title and Tokalı's second-cross marker were nudged
+  from 5%/8% to the legal minimum, 9%, rather than left to be silently clamped).
+- Three rounds of `BOOK=luke python3 src/tools/overlay.py` and reading the sheets: the first found
+  six markers off-target (the Monreale "crowded room" marker sat in an empty window rather than
+  on the crowd; the Ferapontov "dimmed face" marker sat beside the halo rather than on it, and its
+  "kneeling figure" marker sat one grid-square off; the Tokalı "Christ," "haloed companions" and
+  "unnamed man" markers all sat left of or below their figures, this fresco's heavy wear making
+  the first estimate the least reliable of the six); the second advisor pass then caught that the
+  "corrected" Tokalı Christ marker had swapped places with the unnamed bystander, fixed with a
+  fresh, correctly-bounded crop; a third overlay pass confirmed all six files clean by eye.
+- A third advisor pass, after that draft, caught a seventh mislabelled marker no overlay sheet by
+  itself would have flagged (the storm's "man at the mast" sat on the red-tunic rigger, not the
+  mast, and the text said "both hands" of a figure who has only one hand on the pole — renamed
+  "The man at the rigging" and re-cropped to its correct figure), a further run of overclaims the
+  first pass had introduced while fixing the first (Luke 8:13's own "no root" undercuts the
+  reading's "not Matthew's and Mark's... no root," Mark 4:19's own third thing that chokes
+  undercuts "missing from Matthew and Mark both," Mark 5:2-5 is the longest demoniac description
+  of the three so "goes further than either of theirs" is backwards, and Matthew 8:26 rebukes
+  "the winds and the sea" in one clause too, so "holds both together in one clause" does not mark
+  Luke out — only "the raging of the water" does), the Monreale inscription's second line restored
+  from Matthew's own already-audited transcription (`IHS FILIAM IAYRI PRINCIPIS SYNAGE IN DOMO
+  EIVS SVSCITAT`, HANDOFF's batch-8 record) rather than guessed at past what this session's own
+  crop could read, and two further n-gram matches the six-word script had missed at five words
+  ("head propped on his hand," "lower half of the wall"). All fixed, and the n-gram check re-run
+  at five words found nothing left but Scripture quotations, the painted titulus and inscription
+  text, and attributed quotations of the other readers' own claims.
+- A fourth advisor pass, on that draft, caught that the sower reading and one of its markers still
+  claimed Luke's own text identifies the sower with Christ ("names him the same way"); Luke 8:5
+  only ever says a sower, unnamed, and the identification is the panel's alone. It also caught an
+  overclaim on the good ground's own wording (Mark 4:20 has hear the word and bring forth fruit
+  too; only heart, keep it and with patience are Luke's alone), a clause quoted twice in a row in
+  the storm reading, and a hand-count for the grey-bearded man at the mast that this session's own
+  two crops of him disagreed on (dropped rather than guessed). It also would not let the Monreale
+  inscription's second line stand as read by this session's own crop: a fresh crop at maximum zoom
+  still could not distinguish EIVS from what look like other letters, so the reading now attributes
+  that line to Matthew's own transcription by name rather than claiming it as this session's own
+  reading. All fixed; `quotes.js`, `make luke` and the five-word n-gram check were run once more
+  clean before commit.
+- `make luke`: 11.04 MB, 69 images, 0 errors. Browser check via Playwright on a local server: 0
+  console errors or warnings; chapter 8 opens all four new sub-passages; the Sower card opens with
+  its icon, KJV text and "Deciphering the Icon" prose visible.
+
+**Not done**
+- **40 of Luke's 69 icons still have no reading and no markers, across 17 passages.** Next in
+  Gospel order: `fivethousand` (9:10-17, 2 icons), `transfiguration` (9:28-36, 4 icons),
+  `beelzebub` (11:14-26, 1 icon).
+- **`nain` (7:11-17) still has no file wired at all** — unchanged this session; a harvest task.
+- The six cross-reader findings above are recorded, not fixed, in Matthew's and Mark's readers.
+- The new find about the Tokalı fresco's second cross-haloed figure is recorded as an open
+  question, not resolved — whether he belongs to this scene or the next one along the wall was
+  not settled from the crop available this session.
+
+**Next.** `fivethousand`, `transfiguration` and `beelzebub` (all three already wired), same loop:
+grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
+`crop.py` spot-checks → `make luke` → commit.
