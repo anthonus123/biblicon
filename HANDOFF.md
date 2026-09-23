@@ -188,22 +188,122 @@ followed; the owner can still rule otherwise, and nothing in the two readings de
 
 **Active work — the Luke readings.** See the Luke section further down: 33 of 69 icons still want
 a reading and markers, across 14 passages. Batch 6 (2026-09-23) did `fivethousand` (9:10-17, 2
-icons), `transfiguration` (9:28-36, 4 icons) and `beelzebub` (11:14-26, 1 icon), 7 icons, 26
+icons), `transfiguration` (9:28-36, 4 icons) and `beelzebub` (11:14-26, 1 icon), 7 icons, 46
 markers — closing out chapters 9 and 11's icon-bearing passages. Next in Gospel order: `lostsheep`
 (15:1-7, tier b, 2 icons), `entry` (19:28-36, 4 icons), and `temple` (19:45-48, 2 icons) if a
 fuller batch is wanted. `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than
 all of these but has **no file wired at all** — that is a harvest task, not a reading task; see
 the Luke section further down.
 
-**For the owner, from Luke batch 6 (2026-09-23).** Nothing changed in any other reader; two things
-worth recording. The Dionysiou `Evlogesis Pente Arton` fresco paints a fair-haired, bare-headed
-woman seated among the men in one of the seated ranks, and a boy standing apart with one hand
-raised — Luke's own count of the day is spare where Matthew's is not, *they were about five
-thousand men*, with no *women and children* added to the tally as Matthew 14:21 has it; the
-reading notes the mismatch rather than resolving it. And of the four Transfiguration icons, the
-1885 Langadas panel has Moses kneeling at the **left** and Elias at the **right** — reversed from
-the other three in this gallery, where Elias stands left and Moses right — confirmed by crop, not
-assumed; worth knowing before anyone reads the four side by side.
+**For the owner, from Luke batch 6 (2026-09-23).** Nothing changed in any other reader. An
+advisor pass before commit was skipped in error; the batch shipped in `7bb8806` with the errors
+below still in it, and an advisor pass called right after found all of them. Kept here because
+the same traps are likely to recur.
+- **The Dionysiou `Evlogesis Pente Arton` fresco has Christ's own face already turned up**, not
+  about to be — the crop shows it plainly, and the early draft had it backwards ("not yet
+  raised"). The apostle before him has his own hands lost in his sleeve, not "bare hands taking"
+  the loaves as the early draft claimed with no crop to support it. And "no Gospel puts a hill in
+  this scene" was flatly wrong: John 6:3 does, *Jesus went up into a mountain* — corrected to
+  credit John rather than deny it to everyone.
+- **The Ravenna mosaic does not show "the clause every Gospel that tells this story shares."**
+  Quoting Luke's own wording as though the other two used it too is the batch 4 error recurring.
+  Matthew and Mark both leave the blessing bare, *blessed, and brake*; only Luke's own text adds
+  an object, *he blessed them* — a real Lukan hook, used in the corrected reading instead.
+- **All four Transfiguration readings said the fallen disciples were something Luke's own text
+  explains.** The three-men-thrown-down composition is closer to Matthew's *they fell on their
+  face* (17:6); Luke never has them fall at all, only a sleep before the glory (9:32) and fear
+  entering the cloud (9:34). One reading had it backwards outright, crediting Luke with
+  "explaining" a collapse his own text does not narrate. And "a conversation neither Matthew nor
+  Mark reports" was wrong twice over: both report Moses and Elias *talking with him* (Matthew
+  17:3, Mark 9:4) — only the subject, *his decease … at Jerusalem*, is Luke's alone. Fixed in all
+  four readings, and an early draft's self-contradiction on the Langadas panel ("the Prophet
+  silent beside him, speaking together") is gone.
+- **All four Transfiguration readings, and the Ravenna feeding, were also too close to Matthew's
+  and Mark's own prose for the same files** — an n-gram check against both readers turned up
+  several near-verbatim sentences (a wholesale copy of Matthew's Ravenna description, "the wreck
+  of Peter's offer," "caught mid-fall rather than fallen," and more). All were rewritten in fresh
+  structure; a second pass of the same check came back clean apart from unavoidable overlap —
+  Greek inscriptions, painters' signatures, and verbatim KJV clauses shared word-for-word between
+  Synoptic Gospels.
+- **The beelzebub fresco is not Luke's own healing and no one else's, and Christ's hand is not on
+  the man's head.** `Christos Iomenos Daimonon Takophon Dionysiou.jpg` is the same file Matthew's
+  reader already shows at 9:32-34, its own dumb demoniac (`grep -rn "Daimonon Takophon"` across
+  every reader's `picks.js` finds it in one search; an early pass searched image hashes instead of
+  filenames and found nothing). The hand is laid on the man's **ear**, confirmed by crop, and
+  Luke's own *a house divided against a house falleth* (11:17) is not Matthew's and Mark's *a
+  house divided against itself* — a different clause for the same image, now quoted correctly.
+- The Langadas panel's Moses/Elias reversal (Moses left, Elias right, against the other three's
+  Elias-left) survived all three advisor passes and is confirmed by crop, not assumed.
+
+**A second advisor pass, called before committing the fixes above, caught a further round — the
+rewrite done to fix the first round introduced these, and none of the new wording had been
+re-checked against a crop or a verse yet.** None of this round shipped; it was caught and fixed in
+the same follow-up commit as the round-one fixes. Kept here as a record of the trap: the second round's errors
+were themselves all introduced while dodging the n-gram check, which is exactly the failure mode
+to watch for next time that check is run.
+- **Left and right were inconsistent.** Rewording to dodge the n-gram check produced "at Christ's
+  left" and "to Christ's left" in two readings, which — read as Christ's own anatomical left,
+  facing the viewer — is the *opposite* side from the plain "at the left" every marker in this
+  batch already uses (viewer's left). Both readings now say "at the left" / "at the right" plainly,
+  with no possessive, matching the markers. The Yaroslavl rewrite had also dropped the names Moses
+  and Elias entirely while removing the flagged phrase; both are back.
+- **The Chrysostom quote was misattributed.** Matthew's own marker on this fresco explains the
+  ear with the double sense of κωφός (deaf and dumb together); the Chrysostom line in that same
+  marker explains something else — why Christ asked the man for no faith before healing him — not
+  the choice of the ear. Luke's own reading now cites Theophylact's comment on this verse in
+  Luke's own Catena instead, *He who was brought before the Lord was both dumb in speech, and deaf
+  in hearing*, which does support the ear.
+- **The beelzebub harmony question was settled where it should have been left, or handed to the
+  Catena, which already settles it.** "Its own day and, on either telling, its own man" was an
+  invented harmonization, the same trap as the `draught` finding in batch 4. Luke's own Catena on
+  11:14 has Bede reading this as the *same* miracle Matthew tells at greater length at 12:22 (blind
+  and dumb together, the same discourse following) — not the shorter, separate dumb-alone notice
+  at 9:32-34 that the shared fresco happens to illustrate in Matthew's own reader. The reading now
+  says so and quotes Bede. A "Luke's wondered is plainer than Matthew's marvelled" contrast was
+  also cut unverified — the underlying Greek may well be the same verb in both places, making the
+  difference the KJV translators', not Luke's.
+- **New picture claims that hadn't been cropped:** the Ravenna mosaic does have a strip of green
+  ground with a plant at each end (missed on the first pass, corrected against a fresh crop); the
+  cross inside Christ's halo there is not "the mark this early date always leaves" — no such rule
+  was checked, and the claim was cut; the beelzebub healed man stands **bowed**, one hand at his
+  chest, matching Matthew's own audited marker — not "upright and calm," which the second draft
+  still had; and his archway is not "the only architecture in the fresco" — a red-roofed building
+  and a plain wall are also on the wall, now named.
+- The Langadas marker claiming the other three Transfigurations have "Moses kneeling at the right"
+  was wrong — none of the three do; two have him standing, one leaning. Now says so.
+- The n-gram check itself had been run at six words; the project's own standard (Luke batch 5) is
+  five. Re-run at five against both `hotspots2.js` and `hotspots3.js`, which caught several more
+  reused phrases in the markers that the six-word pass had missed, all rewritten.
+
+**A third advisor pass, on that round's own fixes, caught that dodging the n-gram check had
+introduced new picture claims nobody had cropped to check — the exact failure the second pass'
+own closing note warned about, one round later.** None of this shipped either; all fixed in the
+same commit.
+- Several marker rewrites had invented detail no crop supported: Elias's hands "not showing at
+  all" on the Sinai festal-beam icon (a crop shows one hand, half-open, at his waist); "resting
+  flat" for two different Elias figures' hands on two other icons (both are curled, not flat, by
+  crop); "nothing at all in the other hand" for Moses on the second Sinai panel (the other hand
+  isn't visible at all, so nothing can be said about it); and "neither has landed yet" / "refusing
+  to look away" for the falling apostles on the Yaroslavl icon (both are down on hands and knees
+  already, and a picture cannot show refusal). All walked back to what the crop actually shows,
+  cropping `138e81c8252b` and `26e109805b11` for the first time this batch to check them, rather
+  than continuing to trust readings inherited from Mark's unaudited ones.
+- Two Evlogesis markers were mispositioned against the geometry of the session's own crops: the
+  "face already raised" marker sat on the ΧC label above the halo, not the face; the "seated
+  ranks" marker sat in dark sky between two figure markers. Both moved.
+- Beelzebub: Bede's Matthew cross-reference is three chapters on (9:32 to 12:22), not two — cited
+  by verse instead of by chapter-count. A crowd count, "four apostles," was asserted in both the
+  reading and a marker without cropping; a crop shows at least five heads, so both now say a crowd
+  without a number. The healed man's tunic and mantle colours are now given in the same order
+  Matthew's own audited marker gives them, since it is the same figure on the same fresco.
+
+**For the owner — a gap in Matthew's own reader, found while writing Luke's Transfiguration
+readings, not fixed here.** Matthew's `picks.js` lists four Transfiguration files, but Matthew's
+`hotspots2.js` has no entry at all for `Transfiguration of Christ Icon Sinai 12th century.jpg` —
+one of Matthew's four Transfigurations has no prose reading, and its neighbour's own reading
+calls itself "the strangest of the three" rather than one of four. Worth a look next time Matthew's
+reader is open; nothing in Luke's or Mark's readers depends on it.
+
 `issueofblood` (8:40-48, the woman with the issue of blood) has no icon and stays a plain verse
 row, the `betrayer`/`council` shape recurring inside a single Gospel — the small kneeling figure(s)
 at Christ's feet in the Ferapontov Jairus fresco belong to 8:41, in the passage before `jairus`,
@@ -445,18 +545,19 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 5, 40 of its 69
-icons across 17 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
+**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 6, 33 of its 69
+icons across 14 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
 written 2026-09-20d from the survey table below: **33 passages, 68 icons**, tiers 28a / 5b / 119c,
 `make check` green, and the reader's commentary is reachable on those 33 passages — **99 of its
-455 quotations**, where before it reached none. Five batches of readings and markers have been
+455 quotations**, where before it reached none. Six batches of readings and markers have been
 written since: 2026-09-21 (`nativity`, `forerunnerpreach`, `fruits`), 2026-09-22e (`baptism`,
 `temptation`, `petersmother`), 2026-09-22g (`leper`, `paralytic`, `levi`, `witheredhand`),
-2026-09-22h (`draught`, `centurion`, `twelve`), and batch 5, 2026-09-22i (`sower`, `storm`,
-`gadarene`, `jairus`). What is left is 40 icons across 17 passages, next in Gospel order being
-`fivethousand` (2), `transfiguration` (4) and `beelzebub` (1). What it needs, in order:
+2026-09-22h (`draught`, `centurion`, `twelve`), batch 5, 2026-09-22i (`sower`, `storm`,
+`gadarene`, `jairus`), and batch 6, 2026-09-23 (`fivethousand`, `transfiguration`, `beelzebub`).
+What is left is 33 icons across 14 passages, next in Gospel order being `lostsheep` (2, tier b),
+`entry` (4) and `temple` (2). What it needs, in order:
 
-1. **First, readings and markers for the remaining 40, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 33, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
    caveat the reading must honour — the first two recorded in `picks.js`, the third found while
@@ -3262,26 +3363,52 @@ grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.
 
 **Did.** Wrote readings and markers for the three passages named as next in Gospel order at the
 end of the last session: `fivethousand` (9:10-17, 2 icons), `transfiguration` (9:28-36, 4 icons)
-and `beelzebub` (11:14-26, 1 icon) — 7 icons, 26 markers, one commit. Used `grid.py` to read all
-seven icons fresh, then `crop.py` to confirm the details that mattered most: the receiving
-apostle's bare hands and the fresco's own basket count on `Evlogesis Pente Arton`; the Moses/Elias
-side on all four Transfiguration icons (three have Elias left, Moses right — the fourth, Langadas,
-has them reversed, confirmed by crop rather than assumed from the other three); and the exact
-three-line break of the Dionysiou beelzebub fresco's own title, ΤΟΝ ΔΑΙΜΟΝΩΝ / ΤΑΚΩΦΟΝ.
+and `beelzebub` (11:14-26, 1 icon) — 7 icons, 46 markers, two commits: the first shipped with a
+full round of errors in it (an advisor pass that should have run before that commit was skipped),
+and everything since is one follow-up commit fixing round one plus two further rounds of errors
+that the fixes themselves introduced, both caught before the follow-up commit was made. See the
+three "For the owner"
+notes above the Luke section for the complete lists. Used `grid.py` to read all seven icons fresh,
+then `crop.py` repeatedly, across every round, to confirm details earlier passes got wrong or
+never checked at all: Christ's own face already raised on `Evlogesis Pente Arton`, a green strip
+of ground under the Ravenna mosaic's feet, the beelzebub healed man's bowed rather than upright
+posture and his tunic-and-mantle colours, the exact ear-contact point of Christ's hand on that
+same fresco, and the Moses/Elias side and hand postures on all four Transfiguration icons (three
+have Elias left, Moses right — the fourth, Langadas, has them reversed; two of the four,
+`138e81c8252b` and `26e109805b11`, had never been individually cropped before the third round,
+only read off the shared grid image and Mark's own unaudited prose).
 
 **Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; these three passages were
 named next in Gospel order at the end of Luke batch 5.
 
-**Verified.** `BOOK=luke node src/tools/quotes.js`: 8 KJV clauses to read, all pre-existing
-false-positive splits or already hand-checked against `src/books/luke/kjv.json` (verified the two
-transfiguration quotes and the fivethousand quote directly against the source verses before
-committing). `BOOK=luke node src/assemble.js && python3 src/tools/overlay.py` on all seven icons,
-twice — the first pass caught the fivethousand "woman among the ranks" marker sitting on the wrong
-figure (moved onto the actual fair-haired woman after a targeted crop) and the "title" marker
-nearly overlapping the "desert place" marker (separated); `make check` then caught both new title
-markers clamped from below the stated 9% floor, fixed at the source rather than left to the
-clamp. `make luke`: 11.05 MB, 69 images, no clamp warnings, every other check line unchanged from
-before this session's edit.
+**Verified.** An advisor pass before the first commit was skipped in error; the batch shipped
+(`7bb8806`) with a full round of correctness problems still in it that no mechanical check
+catches — `quotes.js` verifies Luke's own words are quoted right, never what a reading claims
+about the picture or the other Gospels. Calling advisor right after found all of round one. Fixing
+it, mostly by rewording to dodge an n-gram overlap check, introduced a second round of errors
+without anyone re-verifying the new wording against a crop or a verse first (left and right
+swapped in two readings, a misattributed Chrysostom quote, an invented harmonization where the
+Catena already had an answer, on Bede, for this exact question) — caught by a second advisor pass
+before committing. Fixing *that* round, again mostly by rewording, introduced a third round of
+invented picture details nobody had cropped to check (hands described as "not showing at all" or
+"resting flat" where a crop shows otherwise, a falling apostle's motive — "refusing to look away"
+— asserted from a still image, an apostle count guessed rather than counted) — caught by a third
+advisor pass, also before committing. All three rounds are recorded above the Luke section in
+full, on the theory that the same traps are likely to recur, especially the second and third:
+dodging a mechanical check by rewording is itself a way of writing prose nobody has verified.
+Re-checked after every round: `BOOK=luke node src/tools/quotes.js`; `assemble.js` + `overlay.py`
+on every icon whose markers moved; and an n-gram overlap script written this session to compare
+every reading and marker against Matthew's, Mark's and John's for the same shared files. Run first
+at six words, it found a near-verbatim copy of Matthew's Ravenna sentence and several reused
+Transfiguration phrases ("the wreck of Peter's offer," "caught mid-fall rather than fallen"); run
+again at five, the project's own stated standard, it found several more in the markers. All
+rewritten; the final run came back clean apart from unavoidable overlap — Greek inscriptions, a
+painter's signature, verbatim KJV clauses two Synoptics share word for word. `make check`: no
+clamp warnings, no new lines beyond the pre-existing no-icon list. `make luke`: 11.06 MB, 69
+images. This session is the argument for calling advisor before the *first* commit, not only when
+stuck or when declaring a batch done, and for treating each advisor fix as a new draft that needs
+its own verification pass — three rounds in a row here were checkable and none were checked the
+first time through, including the fixes for the previous round's own mistakes.
 
 **Not done.** 33 of Luke's 69 icons still have no reading and no markers, across 14 passages. Next
 in Gospel order: `lostsheep` (15:1-7, tier b, 2 icons), `entry` (19:28-36, 4 icons), `temple`
