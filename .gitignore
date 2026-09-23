@@ -6,3 +6,9 @@ node_modules/
 # "Matthew Reader.html" is deliberately NOT ignored: it is the deliverable, and someone
 # cloning this repo should get a reader they can double-click.
 src/books/*/icons.json
+
+# Scratch output of the harvest pipeline (src/tools/fetch_images.js, encode_images.py) —
+# raw downloads and per-run title lists, not meant to be committed.
+src/tools/raw/
+src/tools/new_fetch.json
+src/tools/titles_*.json

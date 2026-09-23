@@ -57,6 +57,11 @@ module.exports = {
  preaching:       {tier:'c', subj:'', kw:[]},
 
  // ---- chapter 5 ----
+ // 2026-09-22: the only fishing-boat file found is the Sant'Apollinare Nuovo mosaic a specialist
+ // source identifies as the Calling of Peter and Andrew (Matthew 4:18-20 / Mark 1:16-18). Kept
+ // tier a like `centurion` — the Fathers themselves leave open whether this and Luke's own
+ // longer calling are one event or two (Augustine, in the Catena, offers both readings without
+ // choosing); Luke has no other image of the calling either way. See HANDOFF.
  draught:         {tier:'a', subj:'The miraculous draught of fishes and the calling of Peter', kw:[['draught','fish'],['fisher'],['nets'],['klesis']]},
  leper:           {tier:'a', subj:'The cleansing of the leper', kw:[['leper'],['lepros'],['leprosy']]},
  paralytic:       {tier:'a', subj:'The paralytic let down through the tiles', kw:[['paralyt'],['paralyton']]},

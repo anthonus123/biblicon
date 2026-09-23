@@ -15,8 +15,11 @@
 // HANDOFF by name: no scourging (Luke has Pilate say only "I will therefore chastise him" and
 // never reports it carried out), no Pilate washing his hands (Matthew 27:24), no two blind men
 // at Jericho where Luke names one, no fig tree (the pool's are the cursing, not Luke's parable),
-// no draught of fishes (the pool's are John 21's catch at Tiberias), no anointing at Bethany for
-// the sinful woman of Luke 7, and no second leper file for the ten.
+// no anointing at Bethany for the sinful woman of Luke 7, and no second leper file for the ten.
+// `draught` (5:1-11) is NOT the pool's John 21 catch at Tiberias (Monreale, used in John's own
+// reader) — it is a fresh find, the Ravenna miracle-cycle panel. It stages Matthew's and Mark's
+// simpler calling of Peter and Andrew, not Luke's own longer telling; see the chapter-5 comment
+// below and HANDOFF for why it is kept tier a rather than dropped or tierB.
 module.exports={
 
   // ---- chapter 2 ----
@@ -62,6 +65,23 @@ module.exports={
   ],
 
   // ---- chapter 5 ----
+  // The Ravenna miracle-cycle panel, catalogued on Commons as "Miraculous Draught of Fish". NOT
+  // the pool's John 21 catch (the Monreale panel used in John's own reader, "Le apparizioni
+  // presso il lago di Tiberiade") — this one sits in Sant'Apollinare Nuovo's pre-Passion miracle
+  // register with `fivethousand` and `gadarene`. A dedicated source (christianiconography.info)
+  // identifies the same mosaic as the Calling of Peter and Andrew, Matthew 4:18-20 / Mark
+  // 1:16-18 — a single boat, one net, none of Luke's own longer staging (the second ship, the
+  // breaking net, Peter's confession). Kept tier a, like `centurion`, because Luke's Gospel has
+  // no other image of the calling — Augustine's own Catena comment on this passage sets Matthew's
+  // and Mark's telling beside Luke's own without deciding whether it is one event or two, so the
+  // tier a call rests on there being no alternative icon, not on a settled harmonization. The
+  // only Orthodox file a title search found
+  // for it, 2026-09-22h — category browsing of eight more fresco cycles turned up nothing to
+  // search within (most of those category names return zero members; not a thorough check),
+  // and free-text Commons searches for "calling of Peter and Andrew" found only Western art.
+  "draught": [
+    "File:Miraculous catch of fish - Sant'Apollinare Nuovo - Ravenna 2016.jpg",
+  ],
   "leper": [
     "File:Christ cleans leper man.jpg",
   ],

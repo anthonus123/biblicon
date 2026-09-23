@@ -20,7 +20,7 @@ and this file did not.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
-  `Mark Reader.html` (~12.4 MB) and `Luke Reader.html` (~11 MB) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+  `Mark Reader.html` (~12.6 MB) and `Luke Reader.html` (~11 MB) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
@@ -123,23 +123,28 @@ and this file did not.
     the source; nothing differs.
   - **The source is the isidore.co edition, as John's is** — CCEL hosts only the Matthew and
     Mark volumes (`catena3` and `catena4` are 404). `book.json`'s footer says so.
-  - **33 passages have an icon and they show 68 icons between them; 20 show more than one.**
-    Tiers: **28 (a), 5 (b), 119 (c)**. Wired 2026-09-20d from the survey table below — every one
-    of the 68 is a file Matthew, Mark or John already carries, chosen against what the picture
+  - **34 passages have an icon and they show 69 icons between them; 20 show more than one.**
+    Tiers: **29 (a), 5 (b), 118 (c)**. Wired 2026-09-20d from the survey table below — all but one
+    of the 69 is a file Matthew, Mark or John already carries, chosen against what the picture
     shows of *Luke's* verses, and thirteen scenes the pool does hold were deliberately **not**
-    reused (the list is below, and it is not Mark's list). **The reader now reaches 99 of its 455
-    quotations**, up from none: the drawer opens only from an icon card (first Gotcha), so wiring
+    reused (the list is below, and it is not Mark's list). The one new file, found 2026-09-22h,
+    is `Miraculous catch of fish - Sant'Apollinare Nuovo - Ravenna 2016.jpg`, wired to `draught`
+    (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
+    quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **18 of the 68 now have a prose reading and positioned markers, 97 markers in all** (batch 1,
+  - **23 of the 69 now have a prose reading and positioned markers, 119 markers in all** (batch 1,
     2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou `Prodromos
     Didaskon`; batch 2, 2026-09-22e: the four Baptisms, both Temptations and `petersmother`; batch
     3, 2026-09-22g: `leper`, both `paralytic` icons, both Levi/Matthew portraits and
-    `witheredhand`). The other 50 are the work in progress, in batches of six to eight, the loop
-    Mark uses.
+    `witheredhand`; batch 4, 2026-09-22h: `draught`, `centurion` and the three Synaxis-of-the-
+    Twelve icons at 6:12–19 — the last of these closes a gap batch 3's own "chapters 5 and 6 fully
+    covered" claim missed: `twelve` had no reading until this batch). The other 46 are the work in
+    progress, in batches of six to eight, the loop Mark uses.
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
-    the lost sheep, and Christ manifest among the apostles at 24:36–43.
-  - `assign.js` still names a subject with no icon for **40** passages, and `make check` lists
+    the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
+    session) is **not** one of these — see the caveat below for why it stayed tier a.
+  - `assign.js` still names a subject with no icon for **39** passages, and `make check` lists
     every one. They are Luke's own material: the Infancy, the Feast cycle, Emmaus, the Ascension,
     and the parables Orthodox painting does take up.
   - **No scripture stories yet**, same as Mark.
@@ -181,16 +186,78 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 50 of 68 icons still want
-a reading and markers. Batch 3 (2026-09-22g) did `leper` (1), `paralytic` (2), `levi` (2) and
-`witheredhand` (1), 6 icons, 22 markers — closing chapters 5 and 6. Next in Gospel order:
-`draught` (1, the miraculous draught of fishes, 5:1-11 — checked in `assign.js` as tier a but
-not yet in `picks.js`; confirm a file before drafting), `centurion` (1, 7:1-10, already picked)
-and whatever the survey table further down lists after it. The trap that held through every Mark
-batch holds there too, one book further on: **Matthew's, Mark's and John's readers already have a
-reading of each shared file built on their own Gospel's words**, and that wording is often
+**Active work — the Luke readings.** See the Luke section further down: 46 of 69 icons still want
+a reading and markers. Batch 4 (2026-09-22h) did `draught` (1), `centurion` (1) and the three
+Synaxis-of-the-Twelve icons at `twelve` (3), 5 icons, 22 markers — closing chapter 7's first
+passage and fixing a gap batch 3 had left open in chapter 6 (see "For the owner" below). Next in
+Gospel order, four icons already wired with no reading yet: `sower` (8:4-15), `storm` (8:22-25),
+`gadarene` (8:26-39) and `jairus` (3 icons, 8:49-56). `nain` (7:11-17, the widow's son) sits
+between `centurion` and these four in Gospel order but has **no file wired at all** — that is a
+harvest task, not a reading task; see the Luke section further down. The trap that
+held through every Mark batch holds there too, one book further on: **Matthew's, Mark's and
+John's readers already have a reading of each shared file built on their own Gospel's words**,
+and that wording is often
 load-bearing in it. Draft Luke's first, dump the others afterwards, and read them side by side
 before committing.
+
+**For the owner, from Luke batch 4 (2026-09-22h).** This batch went through several rounds of
+colleague-model review before commit — called for before declaring the session done, and again
+whenever a fix to one round's finding needed checking rather than trusted. Every round caught
+real errors, several of them introduced by the previous round's own fix. Nothing below reached
+the committed text; it is the record of what had to be corrected and why, kept because the same
+traps are likely to recur.
+- **`draught` (5:1-11) is wired to a mosaic that stages the event Matthew and Mark tell, not the
+  event Luke tells.** The only fishing-boat file findable — `Miraculous catch of fish -
+  Sant'Apollinare Nuovo - Ravenna 2016.jpg`, from the same pre-Passion miracle register as this
+  pool's `fivethousand` and `gadarene`, catalogued on Commons as "Miraculous Draught of Fish" —
+  is identified by a dedicated source (christianiconography.info) as **the Calling of Peter and
+  Andrew**, Matthew 4:18-20 / Mark 1:16-18: one boat, Peter (grey-haired) at the net, Andrew
+  (dark-haired) beside him. None of Luke's own longer staging is painted — no second boat, no
+  breaking net, no near-sinking, no Peter at Christ's knees. **Kept tier a**, on the same footing
+  as `centurion` below, chiefly because Luke's Gospel has no other image of the calling at all —
+  **not** because the question of whether this is the same event as Luke's is settled. Luke's own
+  Catena sets the two tellings side by side — *Matthew and Mark here briefly state the matter,
+  and how it was done. Luke explains it more at large* — but then explicitly allows the other
+  reading too, that the calling Matthew and Mark report came *later*, a second call after the one
+  in Luke: *so that afterwards that might happen which Matthew and Mark speak of.* An early draft
+  claimed the Catena settled this as one event; it does not, and the reading was corrected to say
+  so. **Whether `draught` belongs at tier a or tierB is genuinely the owner's call, not a
+  correctness question this session could settle** — this reader keeps it at tier a only because
+  there is no other icon for Luke's own calling, and says so in the reading rather than asserting
+  a harmonization the Fathers themselves leave open. Other early-draft errors since corrected: claiming the mosaic's raised
+  hand depicts a gesture no Gospel actually describes; quoting one Gospel's exact wording for the
+  call (*Follow me...*) as though it were shared with the other (Mark's own is *Come ye after
+  me...*); calling the net "laden" or its breaking a matter of "its own weight," when Luke's text
+  has one net breaking under a catch, not two nets or a weight claim the mosaic doesn't show;
+  calling Christ "alone" on the bank in the same sentence as the unnamed second man standing
+  behind him; and a claim that a small shape in the water is "purely decorative" when it may be a
+  fish, in a scene about fishermen — cut rather than resolved.
+- **`twelve` (6:12-19) had no reading before this batch**, despite batch 3's own closing claim
+  that "chapters 5 and 6" were fully covered. All three Synaxis icons (Pushkin, Rila, Princeton)
+  now have one, reusing Matthew's and Mark's own descriptions of the same three photographs —
+  re-cropped this session for Rila and re-read for Pushkin's own titulus, though Princeton's own
+  (its detail already gone to "uniform brown," per its own marker) was not independently
+  re-cropped — with Luke's own textual differences: the night of prayer before the choosing
+  (6:12, which Mark also puts on a mountain but never gives a vigil for), and one changed name in
+  Luke's own list, Judas the brother of James where Matthew and Mark both have Thaddaeus — **his
+  eleventh name, not his twelfth** as an early draft had it three times over (Judas Iscariot is
+  the twelfth and last). Two markers also carried over a wrong claim about when Luke's own sermon
+  and sending happen relative to the choosing, and the front-rank marker said "scrolls" for a
+  rank a crop shows holding books too — the same slip was already in Mark's own reader for the
+  same photograph and is fixed there as well.
+- **The centurion fresco's Greek titulus reads "son," where Matthew's own underlying word for
+  him, παῖς, can mean either boy or servant** — Matthew's own reading of this same fresco already
+  notes the painter's choice. The genuine Luke-only detail used in the final reading is *who was
+  dear unto him* (7:2), absent from Matthew's account entirely; an early draft instead built a
+  false Luke-versus-Matthew contrast on "servant, never son," which is true of both Gospels'
+  English text equally and proves nothing about Luke specifically. A separate early draft
+  invented a claim that the fresco's inscription "borrows" the friends' words from Matthew —
+  *trouble not thyself ... enter under my roof* is Luke 7:6's own wording, not Matthew's, and the
+  titulus carries no dialogue at all, only the scene's name. A third round caught that the
+  reading's own paraphrase of St Augustine's resolution was wrong: his actual answer is that
+  *Matthew made use of a general mode of expression* (coming through others counts as coming),
+  not an appeal to "faith alone" — a Reformation formula with no place in this reader. All three
+  caught and fixed before commit.
 
 **For the owner, from Luke batch 3 (2026-09-22g).** One correctness finding, fixed on sight rather
 than carried forward: Matthew's reader (and only Matthew's — Mark's own reading of the same file
@@ -974,6 +1041,28 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 - **A green `make check` says nothing about whether a marker is on the right thing.** It
   validates that coordinates parse and fall in 0–100; it cannot see that "Christ in judgment"
   is sitting on an apostle. Only drawing the stored coordinates back onto the picture does.
+- **A Commons category name is not an identification — it is one editor's guess, and it can be
+  wrong about which Gospel scene a picture shows.** `draught` (2026-09-22h) was first wired
+  straight from a category titled "Miraculous Draught of Fish mosaic in Sant'Apollinare Nuovo,"
+  and a reading was drafted around Luke 5:1-11 before a second look — the picture itself (one
+  boat, one net, Christ on the bank, no second ship, no breaking net) matches Matthew's and
+  Mark's much simpler calling of Peter and Andrew far better than Luke's own longer miracle, and
+  a dedicated source (christianiconography.info) confirms that identification by name. Checking
+  what the picture actually shows against *all three* Synoptic accounts — not just the one the
+  pericope belongs to — before writing the reading would have caught this before it was drafted,
+  not after. The file stayed tier a chiefly because Luke's Gospel has no other image of the
+  calling at all, not because the Catena settles whether this is Luke's own event or an earlier
+  one — Augustine, weighing the two tellings, offers both readings and chooses neither. An early
+  fix claimed he does choose ("one history at two lengths, not two events"); that overstated him
+  too, caught only on a later pass that printed his whole comment rather than trusting the one
+  line already quoted. **Fixing one round's finding is not the same as being right afterward** —
+  every fix in this batch that rephrased a flagged claim rather than deleting it (a "gesture
+  every account shares" standing in for a cut claim about crowds; "laden" standing in for a cut
+  claim about fullness; a Father's own resolution simplified into a claim he never made)
+  introduced a new claim that also could not be checked, caught only on a further review pass.
+  When a claim about a picture, a text, or a patristic source can't be pointed at a crop, a
+  verse, or the source's own full wording, delete it; do not
+  rephrase it and move on.
 - **The HTML is ~17.3 MB and regenerated wholesale**, so every commit that touches it adds
   a full copy to git history. It stays tracked deliberately — it is what someone clones the
   repo for — but the build is byte-deterministic, so a rebuild with no content change leaves
@@ -2874,3 +2963,102 @@ fresh from the textual hooks above (don't assume any prior draft survived), then
 `picks.js`, `labels.js` and `overrides.js` before drafting its reading; then `centurion` and
 onward, same loop: grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` →
 `assemble.js` + `overlay.py` → `crop.py` spot-checks → `make luke` → commit.
+
+## Session 2026-09-22h (Luke batch 4: draught, centurion, and the Synaxis of the Twelve — 5 icons, 22 markers)
+
+**Did**
+- **Found and wired a `draught` icon (5:1-11)**: `Miraculous catch of fish - Sant'Apollinare Nuovo
+  - Ravenna 2016.jpg`, from Sant'Apollinare Nuovo's pre-Passion miracle register (same cycle as
+  `fivethousand`, `gadarene`). First drafted as a straightforward Luke 5:1-11 reading; review
+  caught that the mosaic is identified by a dedicated source as the Calling of Peter and Andrew
+  (Matthew 4:18-20 / Mark 1:16-18), not Luke's own later, longer miracle. Settled at tier **a**,
+  chiefly because Luke's Gospel has no other image of the calling — not because the question is
+  settled: Luke's own Catena on this passage sets Matthew's and Mark's brief telling beside
+  Luke's own fuller one, then explicitly allows the other reading too, that Matthew and Mark
+  report a later, second calling. An early fix claimed the Catena resolves this as one event;
+  printing the Father's whole comment rather than trusting one quoted line showed that it does
+  not, and the reading was corrected. Several further review passes caught other claims that
+  could not be pointed at a crop or a verse — a gesture no Gospel describes, one Gospel's exact
+  call-wording attributed to both, a net's fullness and "own weight" the picture doesn't show,
+  Christ called "alone" beside a second, unnamed man in the same sentence, a shape in the water
+  called "purely decorative" that may be a fish — cut rather than rephrased. Final state: tier a,
+  a reading grounded in two genuine Catena quotations on this exact passage, five markers.
+- **Wrote `centurion`'s reading and five markers (7:1-10)**, the Dionysiou fresco Matthew's
+  reader already shows. Review caught three errors here: an early draft had the titulus backwards
+  (claimed it read Matthew's own ambiguous παῖς; it actually reads "son," which the reading now
+  attributes correctly to the painter's reading of παῖς); it invented a claim that the fresco's
+  inscription "borrows" the friends' words from Matthew, when *trouble not thyself ... enter
+  under my roof* is Luke 7:6's own wording — the titulus carries no dialogue at all, only the
+  scene's name; and it paraphrased St Augustine's own resolution wrong, giving him an appeal to
+  "faith alone" (a Reformation formula, out of place here) where his actual answer is that
+  *Matthew made use of a general mode of expression*. The genuine Luke-only detail used in the
+  final reading is 7:2's *who was dear unto him*, absent from Matthew's account entirely.
+- **Wrote readings and markers for all three Synaxis-of-the-Twelve icons at `twelve` (6:12-19)**,
+  closing a gap batch 3's own "chapters 5 and 6 fully covered" claim had missed. Reused Matthew's
+  and Mark's own physical descriptions and marker coordinates (same three photographs); Rila's
+  objects and Pushkin's titulus were re-cropped and re-read this session, Princeton's was not (its
+  own marker already calls its detail "gone almost uniformly brown," and nothing in its reading
+  depends on anything closer than that). Luke's own textual differences used: the night of prayer
+  before the choosing (6:12 — Mark also puts this choosing on a mountain, but gives no vigil for
+  it), and one changed name in Luke's own list, Judas the brother of James where Matthew and Mark
+  both have Thaddaeus — his **eleventh** name, not his twelfth as an early draft had it three
+  times (Judas Iscariot is the twelfth). Two markers also carried a wrong claim about when Luke's
+  own sermon and sending happen relative to the choosing, and the front-rank marker said
+  "scrolls" for a rank a crop shows holding books too — the same slip already in Mark's own
+  reader for the same photograph, fixed there as well. A closer crop of the Pushkin titulus also
+  found the inherited transcription wrong: the fresco reads Η ΣΥΝΑΞΙΣ ΤΩΝ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΩΝ, with
+  no room on the line for ΑΓΙΩΝ ("holy") between ΤΩΝ and ΔΩΔΕΚΑ — both Luke's and Mark's readers
+  had carried "the assembly of the **holy** twelve apostles" for this same file; both corrected
+  to "the Synaxis of the Twelve Apostles," and "each man's name in gold" softened to "lettered
+  above his head, against the gold ground" since the letters themselves read dark, not gold. All
+  caught and fixed before commit.
+- Fixed three `quotes.js` sentence-merges the same way batch 2 and batch 3 both had to — a
+  verbatim KJV clause sitting in the same tool-detected "sentence" as adjoining prose because a
+  comma, not a period or colon, sat between them.
+- Cleaned up the harvest scratch files (`src/tools/raw/`, `new_fetch.json`, `titles_draught.json`)
+  and added them to `.gitignore` so a future harvest session doesn't leave them for `git status`
+  to flag.
+
+**Why**
+- HANDOFF's own `## Next`, left by the previous (2026-09-22g) session, named `draught` and
+  `centurion` as the next two icons in Gospel order and gave the loop.
+- Several colleague-model review rounds — one before declaring the session done, and further
+  rounds because each fix needed checking rather than trusted — caught every error listed above
+  before it reached the committed text.
+
+**Verified**
+- `BOOK=luke node src/tools/quotes.js`: 0 wrong-Father, 0 drifted sentences, 3 KJV flags
+  remaining, all confirmed by eye as expected — two are Matthew 8:5's own wording, correctly
+  tagged `IN MATTHEW` since Luke never has the centurion in the room; one is the Princeton
+  file's own name ("Art Museum") tripping the archaic-word filter on "art". "Fathers quoted 0"
+  means the tool's own `St Name:` attribution check found no quotations in that literal form in
+  this batch — it does not mean no Father was cited; the Augustine quotations in `draught` (two,
+  both from Luke 5's own Catena block on verses 8-11) and `centurion` (one, from Luke 7's) were
+  checked by eye, word for word, against the Catena source, not by the tool.
+- `BOOK=luke node src/check.js`: 0 fails, 0 clamps, after two rounds of `overlay.py` fixes —
+  first pass on the centurion fresco found "the centurion, present in person" sitting in empty
+  background left of the actual figure, and "The servant, sitting up" sitting on what turned out,
+  on closer crop, to be the servant himself (fair-haired, upright, per Matthew's own reading of
+  the same fresco) rather than a separate attendant; both corrected, second pass clean.
+- `make check`: all four Gospels, 0 errors, 0 clamps. `make luke`: 11.02 MB, 69 images. `make
+  mark`: 12.55 MB, 78 images, rebuilt because `mark/hotspots2.js`/`hotspots3.js` changed (the
+  Synaxis titulus and front-rank fixes above).
+- Browser, served on 8731, via Playwright: `Luke Reader.html` loads with 0 console
+  errors/warnings; both `draught` and `centurion` cards open with their icons, KJV text and
+  correct "Miracle" tag; `The Centurion and the Widow of Nain` chapter entry shows the new
+  `Luke 7:1-10` sub-passage.
+
+**Not done**
+- **46 of Luke's 69 icons still have no reading and no markers.** Next in Gospel order, already
+  wired: `sower` (8:4-15), `storm` (8:22-25), `gadarene` (8:26-39), `jairus` (3 icons, 8:49-56).
+- **`nain` (7:11-17, the widow's son) has no file wired at all** — a harvest task, not a reading
+  task, and it sits between `centurion` and the four above in Gospel order. Whoever picks a file
+  for it should check what the picture actually shows against Luke's own verses (this batch's
+  `draught` gotcha, in the Gotchas above) before wiring a tier, not after.
+- No harvest beyond the one `draught` file, no scripture stories. Both still as every prior Luke
+  session left them.
+
+**Next.** `sower`, `storm`, `gadarene` and `jairus` (all four already wired), same loop:
+grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
+`crop.py` spot-checks → `make luke` → commit. A Commons search for `nain` can happen alongside or
+after, whichever the next session prefers.

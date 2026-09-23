@@ -120,6 +120,14 @@ module.exports={
 
 // ---- chapter 5 ----
 
+"File:Miraculous catch of fish - Sant'Apollinare Nuovo - Ravenna 2016.jpg":[
+ ["Peter, at the net", "Grey hair and a short beard. Both hands are already in the net — the calling Matthew and Mark both open with the same clause: casting a net into the sea: for they were fishers.", "40%", "33%"],
+ ["Andrew, beside him", "Dark-haired and wilder, working the boat at his brother's side. The mosaic gives him a face; Luke's own account of this calling never names him — a silence St Augustine notices in the Catena: he does not mention Andrew by name, who however is thought to have been in that ship, according to the accounts of Matthew and Mark.", "22%", "15%"],
+ ["Christ, on the bank", "He stands on the shore here rather than seated with Peter, as Luke's own text has him through most of this story: he entered into one of the ships, which was Simon's.", "27%", "60%"],
+ ["A second man, unnamed", "Standing behind Christ in a plain mantle, without a halo. Neither the fresco nor this reading can say who he is meant to be.", "30%", "88%"],
+ ["The net", "A single net over the boat's side. Luke's own catch fills two boats, and the net breaks under it.", "62%", "45%"],
+],
+
 "File:Christ cleans leper man.jpg":[
  ["The plea", "POTES ME MVNDARE — thou canst make me clean. Luke gives the whole sentence: Lord, if thou wilt, thou canst make me clean — a confession before it is a request, the same as in Matthew's and Mark's readings of this mosaic.", "9%", "55%"],
  ["A man full of leprosy", "Dark spots run from his throat down his bare chest and arm. Luke's own phrase for him is fuller than Matthew's or Mark's bare a leper: a man full of leprosy — and the mosaicist has covered the body to match it, where the other two readers of this picture single out only his hand.", "42%", "77%"],
@@ -162,6 +170,37 @@ module.exports={
  ["He knew their thoughts", "Christ, seated at the left, is shown before he has spoken. Luke alone gives him this knowledge ahead of any question asked aloud: but he knew their thoughts, and said to the man which had the withered hand, Rise up, and stand forth in the midst.", "36%", "18%"],
  ["The man standing forth", "Alone in the centre of the floor, his arm already lifting. He has done exactly what Luke's Christ told him, in the order Luke tells it: and he arose and stood forth.", "55%", "44%"],
  ["Looking round about, without anger", "Three elders wait along the right wall, one with a hand raised in objection. Luke keeps Mark's gesture — looking round about upon them all — but drops what Mark hangs on it, the anger and the grief for hardened hearts; and where Mark's men go out to the Herodians, Luke's are filled with madness, with no ally and no plan yet named.", "50%", "76%"],
+],
+
+"File:Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg":[
+ ["The title", "Η ΣΥΝΑΞΙΣ ΤΩΝ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΩΝ — the Synaxis of the Twelve Apostles. It is the name of a feast, kept on the thirtieth of June, not the name of anything Luke narrates.", "17%", "45%"],
+ ["The names", "The apostles' own names run on after the title, in the same band. Luke 6:14-16 is where this Gospel gives the list entire, and it changes one name from Matthew's and Mark's own lists: Judas the brother of James, where they both have Thaddaeus.", "17%", "30%"],
+ ["The front rank", "Four apostles with their haloes overlapping, holding scrolls and books. Luke's own account gives the reason for their being chosen before any sending: he called unto him his disciples: and of them he chose twelve, whom also he named apostles.", "45%", "27%"],
+ ["The rank behind", "Eight more heads fill the gold above them. Painting all twelve together answers Luke's own count exactly — twelve chosen out of a wider company of disciples, not the whole of it.", "27%", "55%"],
+ ["The Gospel book", "A dark red binding held against the chest by the apostle at the right of the front rank — the Church's own token of what these men later became, not a picture of anything in the choosing itself. Luke's own verses give each apostle a name and nothing to hold.", "47%", "67%"],
+],
+
+"File:Synaxis of the Twelve Apostles Dimitar Molerov Rila Monastery 1835.jpg":[
+ ["The row of haloes", "Five of the twelve fill this photograph, each with his own disc of gold. Dimitar Molerov painted them at Rila in 1835, in a late half-Western manner, on an arrangement far older than his own century.", "15%", "45%"],
+ ["The scroll", "A white roll held closed — a preacher's attribute, not anything Luke's own choosing hands anyone. The sermon that follows a few verses later, once Christ has come down and stood in the plain, is spoken, not written; the roll belongs to the years after this Gospel closes.", "60%", "27%"],
+ ["The jewelled Gospel", "A Gospel bound in gold and stones, carried like a shield. It belongs to the years after this chapter, not to the choosing Luke reports in it.", "63%", "62%"],
+ ["The martyr's cross", "A small silver cross on a long stem, held upright against the chest — the Church's own mark of a martyr, given to none of the twelve in Luke's own list three verses earlier. Only one man there is named for what he would do rather than for who he was: Judas Iscariot, which also was the traitor.", "60%", "82%"],
+],
+
+"File:The Twelve Apostles, with later gilding, Greek, Late Byzantine, early 1300s, tempera and gold leaf on wood panel - Princeton University Art Museum - DSC06701.jpg":[
+ ["Three ranks of haloes", "Rows of punched gold discs, one behind another, with the faces under them nearly gone. Luke's own next verse gathers a still larger company around this same twelve: the company of his disciples, and a great multitude of people.", "45%", "45%"],
+ ["The regilded ground", "Tempera and gold leaf on wood, Greek work of the early 1300s, with the gilding renewed at some later date, which is why the ground is brighter than anything under it.", "18%", "22%"],
+ ["Darkened past reading", "Below the haloes the panel has gone almost uniformly brown; the robes, the hands, whatever each man once held can no longer be made out. What is left is the company itself, which is what Luke 6:13 names: he chose twelve, whom also he named apostles.", "58%", "70%"],
+],
+
+// ---- chapter 7 ----
+
+"File:Iomenos Gon Ekatonarchou Dionysiou.jpg":[
+ ["The centurion, present in person", "Standing at the wall directly before Christ — Matthew's own scene: there came unto him a centurion, beseeching him. Luke's centurion never enters the room in his own Gospel: he sends the elders first, then friends, and appears nowhere in this account in person.", "35%", "67%"],
+ ["The Greek titulus", "Names him son — Matthew's own underlying word for him, παῖς, can mean either boy or servant, and the painter has read it as son. Luke's own text calls him only servant, and gives him a detail Matthew's account never does: who was dear unto him.", "9%", "55%"],
+ ["The open doorway", "Behind the servant's bed. The fresco paints neither of Luke's two errands — the elders sent first, then friends: he sent unto him the elders of the Jews, beseeching him that he would come and heal his servant.", "30%", "82%"],
+ ["His hands raised in speech", "Luke gives the centurion's own words to friends sent a second time, not to Christ's face: say in a word, and my servant shall be healed — a message sent by friends, not spoken here in person as the fresco stages it.", "48%", "68%"],
+ ["The servant, sitting up", "Fair-haired on the red coverlet, face turned up, touched by no one in the scene — the same distance Christ's own healing keeps in Luke's own words: a certain centurion’s servant, who was dear unto him, was sick, and ready to die.", "62%", "90%"],
 ],
 
 };

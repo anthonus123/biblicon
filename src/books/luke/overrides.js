@@ -50,6 +50,7 @@ module.exports={
  petersmother:{type:'Miracle',keyVerse:39},
 
  // ---- chapter 5 ----
+ draught:{type:'Miracle',keyVerse:11},
  leper:{type:'Miracle',keyVerse:13},
  // The tiling, which is what the Monreale mosaic paints.
  paralytic:{type:'Miracle',keyVerse:19},

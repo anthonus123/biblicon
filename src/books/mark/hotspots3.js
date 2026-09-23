@@ -131,9 +131,9 @@ module.exports={
 ],
 
 "File:Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg":[
- ["The title", "Η ΣΥΝΑΞΙΣ ΤΩΝ ΑΓΙΩΝ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΩΝ — the assembly of the holy twelve apostles. It is the name of a feast, kept on the thirtieth of June, not the name of an event in Mark.", "17%", "45%"],
- ["The names in gold", "Each man's name is lettered above his head. Mark 3:16-19 is where the twelve are first named one by one in this Gospel, and two of the surnames there are his alone: Simon he surnamed Peter, and the sons of Zebedee, Boanerges, which is, The sons of thunder.", "21%", "25%"],
- ["The front rank", "Four apostles with their haloes overlapping, holding scrolls. They stand shoulder to shoulder doing nothing, which is the first thing Mark says they were ordained for — that they should be with him.", "45%", "27%"],
+ ["The title", "Η ΣΥΝΑΞΙΣ ΤΩΝ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΩΝ — the Synaxis of the Twelve Apostles. It is the name of a feast, kept on the thirtieth of June, not the name of an event in Mark.", "17%", "45%"],
+ ["The names", "The apostles' own names run on after the title, in the same band. Mark 3:16-19 is where the twelve are first named one by one in this Gospel, and two of the surnames there are his alone: Simon he surnamed Peter, and the sons of Zebedee, Boanerges, which is, The sons of thunder.", "17%", "30%"],
+ ["The front rank", "Four apostles with their haloes overlapping, holding scrolls and books. They stand shoulder to shoulder doing nothing, which is the first thing Mark says they were ordained for — that they should be with him.", "45%", "27%"],
  ["The rank behind", "Eight more heads fill the gold above them. Painting all twelve at once is the icon's way of saying what Mark's list says: not disciples in general, but these men, counted.", "27%", "55%"],
  ["The Gospel book", "A dark red binding held up against the chest by the apostle at the right of the front rank. The second half of Mark's sentence is in it — that he might send them forth to preach, and to have power to heal sicknesses, and to cast out devils.", "47%", "67%"],
 ],

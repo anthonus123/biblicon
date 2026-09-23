@@ -25,6 +25,7 @@ module.exports={
 "File:Christ's temptation (Monreale).jpg":"The Temptation of Christ — Monreale, 12th c.",
 "File:Cathedral (Monreale) - Right wing transept - 2nd Temptation of Christ.jpg":"The Second Temptation — Monreale, 12th c.",
 "File:Monreale - Jesus heals Simon's mother in law.jpg":"Healing of Peter’s Mother-in-law — Monreale, 12th c.",
+"File:Miraculous catch of fish - Sant'Apollinare Nuovo - Ravenna 2016.jpg":"The Calling of Peter and Andrew — Sant’Apollinare Nuovo, Ravenna, 6th c.",
 "File:Christ cleans leper man.jpg":"The Cleansing of the Leper — Monreale, 12th c.",
 "File:Monreale - healing of paralytic.jpg":"The Healing of the Paralytic — Monreale, 12th c.",
 "File:Healing of the Paralytic 04-17.jpg":"The Healing of the Paralytic — Dionisy, Ferapontov, 1502",
