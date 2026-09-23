@@ -186,14 +186,14 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 33 of 69 icons still want
-a reading and markers, across 14 passages. Batch 6 (2026-09-23) did `fivethousand` (9:10-17, 2
-icons), `transfiguration` (9:28-36, 4 icons) and `beelzebub` (11:14-26, 1 icon), 7 icons, 46
-markers — closing out chapters 9 and 11's icon-bearing passages. Next in Gospel order: `lostsheep`
-(15:1-7, tier b, 2 icons), `entry` (19:28-36, 4 icons), and `temple` (19:45-48, 2 icons) if a
-fuller batch is wanted. `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than
-all of these but has **no file wired at all** — that is a harvest task, not a reading task; see
-the Luke section further down.
+**Active work — the Luke readings.** See the Luke section further down: 27 of 69 icons still want
+a reading and markers, across 12 passages. Batch 7 (2026-09-23b) did `lostsheep` (15:1-7, tier b,
+2 icons) and `entry` (19:28-36, 4 icons), 6 icons, 34 markers — closing out chapter 15's only
+icon-bearing passage and all of chapter 19's Entry icons. Next in Gospel order: `temple`
+(19:45-48, 2 icons), `coming` (21:25-33, 1 icon), and `supper` (22:14-20, 3 icons) if a fuller
+batch is wanted. `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of
+these but has **no file wired at all** — that is a harvest task, not a reading task; see the Luke
+section further down.
 
 **For the owner, from Luke batch 6 (2026-09-23).** Nothing changed in any other reader. An
 advisor pass before commit was skipped in error; the batch shipped in `7bb8806` with the errors
@@ -302,7 +302,92 @@ readings, not fixed here.** Matthew's `picks.js` lists four Transfiguration file
 `hotspots2.js` has no entry at all for `Transfiguration of Christ Icon Sinai 12th century.jpg` —
 one of Matthew's four Transfigurations has no prose reading, and its neighbour's own reading
 calls itself "the strangest of the three" rather than one of four. Worth a look next time Matthew's
-reader is open; nothing in Luke's or Mark's readers depends on it.
+reader is open; nothing in Luke's or Mark's readers depends on it. A second gap of the same kind
+turned up in batch 7, below: `Baiophoros Dionysiou.jpg` is in Matthew's own `picks.js` for `entry`
+but has no `hotspots2` entry either — the same failure mode twice now, worth a `grep -c` sweep of
+every picks.js entry against its own hotspots2.js keys next time Matthew's reader is open, rather
+than waiting for a third one to turn up by accident.
+
+**For the owner, from Luke batch 7 (2026-09-23b — `lostsheep` and `entry`, 6 icons).** Three
+advisor passes ran before the first commit this time, per batch 6's own closing lesson: the first
+found a full round of errors in the draft; the second, called on that round's own fixes, found a
+further round the fixes themselves had introduced; the third, called on the second round's fixes,
+found one more small round the fix for the fix had introduced. Nothing shipped with any round
+still open — the record below is kept because several of these are traps batch 6's own notes
+already named, recurring one batch later.
+
+*Round one:*
+- **The Baiophoros fresco carried two claims read off nobody's crop, inherited from Mark's own
+  unaudited reading of that file** — Mark's shipped reading still says "Red letters on the gold
+  ground" and "a boy has climbed a bare tree"; a crop this session shows white letters on the dark
+  sky and a tree in full green leaf with two boys cutting together. Nothing was changed in Mark's
+  reader.
+- **The Adam Entry panel's "no tree at all, no one climbs anywhere" was the same kind of inherited,
+  uncropped claim, also Mark's own** — Mark's shipped reading still says "no rock, no wilderness,
+  no tree at all." A crop of the panel's own left edge shows a low mountain range and a small palm
+  behind the walls; nobody is in the tree, which is the real distinction from its three companions
+  in the gallery, but "no tree" itself was false. Nothing was changed in Mark's reader.
+- **The lost-sheep parable's own geography was misread in both directions.** Luke 15:4 has the
+  ninety and nine left standing *in the wilderness* while the shepherd goes after the one that is
+  lost; it is not, as an early draft had it, where the search itself happens — that clause is
+  Matthew's own *into the mountains*. The Ravenna reading's own "moved from a hillside into a
+  home" invented a place-word neither Gospel uses. Both fixed to contrast what each Gospel actually
+  names rather than treating "wilderness" and "search" as the same word.
+- **The Ravenna mosaic gained a seventh sheep in the retelling.** "His hand touches the nearest
+  one. Six more are gathered…" makes seven when Matthew's own audited count, and the mosaic
+  itself, give six in all. Fixed to five more beside the one he touches. The same draft also had
+  the mosaic paint "the parable's own close" — friends and neighbours, a homecoming — none of
+  which this tier-b type icon shows any more than the plainer floor beside it shows the parable's
+  opening; corrected to say plainly that neither icon in this passage's gallery pictures the
+  parable, only stands over it.
+- **The Afon icon's reading tied Luke's own acclaiming multitude to the wrong figures in the
+  picture.** The crowd painted at Jerusalem's gate is a city coming out to meet him, which is
+  nearer to John 12:12-13 than to Luke, whose whole multitude of the disciples is the file of
+  travelling companions at the left — exactly where this reading's own marker had already put it,
+  before the reading text caught up. The same draft claimed both "the King" and the whole
+  acclamation belonged to Luke alone; *that cometh in the name of the Lord* is in all four
+  Gospels, and only *the King*, the missing Hosanna, and *peace in heaven, and glory in the
+  highest* are Luke's own among the Synoptics. A "forty deep" head-count in a marker was never
+  actually counted and was cut. The echo back to the Nativity was also relocated — Luke's angels
+  sing to shepherds in a field (2:8-14), not over the manger itself.
+
+*Round two, on round one's own fixes:*
+- **The Adam panel's far-right figure was rewritten as a "watcher on the wall… to see the
+  procession come in," a motive and a location no crop had settled.** A closer crop of his hand
+  shows a pale angular shape that reads, at this resolution, as the building's own roofline rather
+  than a blade, but what he is actually standing on was not settled either way. Reworded a second
+  time to give his position and pose only — a figure in pink, above the crowd, one arm stretched
+  out — with no name and no motive for what he is.
+- **The Constantinople floor's "carrying his catch home" (a kriophoros carries a ram, not a
+  generic catch) and the basket "at his feet" (it sits at his side, as this session's own first
+  crop and Matthew's audited reading both already had it) were this batch's own errors, introduced
+  while rewording to dodge the n-gram check, not inherited from anywhere.** Both fixed; the first
+  attempt at fixing them only corrected one and overcorrected the other into a new invented claim,
+  "bringing his flock's own stray home on his back," which reads Luke's own parable back into a
+  pre-Christian pose that has nothing to do with a lost stray.
+- **The Ravenna fix reintroduced "hillside"** — a place-word neither Gospel's parable uses for
+  where this scene is set — while removing the sheep-count error, and added an uncropped "gold and
+  marble court." Both cut; only the sheep-count fix stood.
+- **The Baiophoros title is Η ΒΑΙΟΦΟΡΟΣ, not ΒΑΙΟΦΟΡΟΣ** — the initial article was dropped in the
+  round-one fix and is now given as painted, in both the reading and its marker.
+- **The Afon claim that "the King" belongs to Luke alone needed scoping.** Matthew 21:5 also has
+  *thy King*, but as the Evangelist's own quotation of Zechariah, not the crowd's cry (21:9's own
+  acclamation has no King at all). Reworded to say what the crowd itself cries, not what either
+  Gospel's narration ever says.
+
+*Round three, on round two's own fixes:*
+- **The round-two fix for the Adam figure still asserted more than the crop settled** — "no blade,
+  no foliage, nothing to tie him to the palm," "no tree at that edge of the board," and "reaching
+  out over the road below" (the arm actually runs left toward the rooftops, not down toward the
+  road). All four claims cut; the reading and its marker now say only that he is in pink, above the
+  crowd, one arm stretched to the left.
+- **The Baiophoros sentence naming who spread the garments came out garbled** ("the disciples who
+  had just set him on the colt, not a crowd, being the nearest word this same sentence has for who
+  did it") and its "shares with two of its three companions" line still credited the Adam panel
+  with something it had just been corrected to lack. Both rewritten plainly.
+- The n-gram check (five words, per the batch 5 standard, not chased past prose-level matches into
+  short factual labels) came back clean after all three rounds, apart from proper names, painters'
+  inscriptions, and verbatim KJV clauses shared across Gospels.
 
 `issueofblood` (8:40-48, the woman with the issue of blood) has no icon and stays a plain verse
 row, the `betrayer`/`council` shape recurring inside a single Gospel — the small kneeling figure(s)
@@ -545,19 +630,19 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 6, 33 of its 69
-icons across 14 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
+**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 7, 27 of its 69
+icons across 12 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
 written 2026-09-20d from the survey table below: **33 passages, 68 icons**, tiers 28a / 5b / 119c,
 `make check` green, and the reader's commentary is reachable on those 33 passages — **99 of its
-455 quotations**, where before it reached none. Six batches of readings and markers have been
+455 quotations**, where before it reached none. Seven batches of readings and markers have been
 written since: 2026-09-21 (`nativity`, `forerunnerpreach`, `fruits`), 2026-09-22e (`baptism`,
 `temptation`, `petersmother`), 2026-09-22g (`leper`, `paralytic`, `levi`, `witheredhand`),
 2026-09-22h (`draught`, `centurion`, `twelve`), batch 5, 2026-09-22i (`sower`, `storm`,
-`gadarene`, `jairus`), and batch 6, 2026-09-23 (`fivethousand`, `transfiguration`, `beelzebub`).
-What is left is 33 icons across 14 passages, next in Gospel order being `lostsheep` (2, tier b),
-`entry` (4) and `temple` (2). What it needs, in order:
+`gadarene`, `jairus`), batch 6, 2026-09-23 (`fivethousand`, `transfiguration`, `beelzebub`), and
+batch 7, 2026-09-23b (`lostsheep`, `entry`). What is left is 27 icons across 12 passages, next in
+Gospel order being `temple` (2), `coming` (1) and `supper` (3). What it needs, in order:
 
-1. **First, readings and markers for the remaining 33, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 27, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
    caveat the reading must honour — the first two recorded in `picks.js`, the third found while
@@ -3418,3 +3503,50 @@ unchanged this session, a harvest task, not a reading task.
 **Next.** `lostsheep` and `entry` (six icons, both already wired in `picks.js`), same loop:
 grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
 `crop.py` spot-checks → `make luke` → commit.
+
+## Session 2026-09-23b (Luke batch 7 — `lostsheep`, `entry`, 6 icons)
+
+**Did.** Wrote readings and markers for `lostsheep` (15:1-7, tier b, 2 icons) and `entry`
+(19:28-36, 4 icons) — 6 icons, 34 markers, one commit. Used `grid.py` on all six keys, then
+`crop.py` repeatedly — on the draft's own claims, not only on the picture, and again on each
+round's own fixes — across three advisor passes before anything was committed. The first found
+claims inherited from Mark's own unaudited prose (the Baiophoros title's colour, its tree's leaf
+state, the Adam panel's "no tree at all"), invented detail from dodging the n-gram check the way
+batch 6's own third round did, and two textual misreadings of the lost-sheep parable's own
+geography. The second, on that round's fixes, found a further round the fixes themselves had
+introduced. The third, on the second round's fixes, found one more small round the fix for the fix
+had introduced — mostly the same pattern each time: a correction that removed one overclaim while
+adding another. See the "For the owner" note above the Luke section for the complete, round-by-
+round list.
+
+**Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; these two passages were
+named next in Gospel order at the end of Luke batch 6.
+
+**Verified.** Advisor called *before* the first commit this time, per batch 6's own closing
+lesson — it took three rounds of findings to reach a version with nothing left in it, one more
+than batch 6 needed. Nothing shipped with any round still open.
+`BOOK=luke node src/tools/quotes.js`: 9 KJV clauses to read, all pre-existing false-positive
+splits or hand-verified against `src/books/luke/kjv.json` before committing. A 5-gram overlap
+script (this session's version of the one batch 6 wrote) run against Matthew's, Mark's and John's
+readings for all six shared files, twice — the first pass found heavy prose overlap on every one
+of the six (a full paragraph of the Ravenna description was close to Matthew's own, and all four
+Entry readings leaned hard on Mark's own sentences); rewritten from scratch in different structure
+and re-checked clean apart from proper names, inscriptions and shared KJV clauses. `assemble.js` +
+`overlay.py` on all six icons after every round of text changes, catching one crowd-marker
+sitting on a building instead of the crowd (Afon icon) and one title marker clamped below the 9%
+floor (Baiophoros, `left 8%`) that `tail -5` had hidden from the first `make check` run, same
+trap as batch 6 — `grep -i clamp` explicitly this time, not just the summary line. `make luke`:
+11.07 MB, 69 images, no clamp warnings.
+
+**Not done.** 27 of Luke's 69 icons still have no reading and no markers, across 12 passages. Next
+in Gospel order: `temple` (19:45-48, 2 icons), `coming` (21:25-33, 1 icon), `supper` (22:14-20, 3
+icons) if a fuller batch is wanted. `nain` (7:11-17) still has no file wired at all — unchanged
+this session, a harvest task, not a reading task. The two Matthew `picks.js`/`hotspots2.js` gaps
+found across this batch and the last (`Transfiguration of Christ Icon Sinai 12th century.jpg`,
+`Baiophoros Dionysiou.jpg`) are recorded above but not fixed — Matthew's reader was not opened
+this session.
+
+**Next.** `temple` and `coming` (three icons, both already wired in `picks.js`), same loop:
+grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
+5-gram check against Matthew's/Mark's/John's prose → `crop.py` spot-checks → `make luke` with
+`grep -i clamp` → advisor *before* committing → commit.

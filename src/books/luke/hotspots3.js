@@ -332,4 +332,60 @@ module.exports={
  ["His archway", "Pale stone, a scalloped canopy over the top of it — one of three buildings on this wall, and the only one behind the second man; the healed man stands against the plain green wall instead.", "18%", "82%"],
 ],
 
+// ---- chapter 15 ----
+
+"File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg":[
+ ["No halo, no cross", "This figure carries nothing to mark him for Christ — the pavement's own way of giving a type rather than a portrait.", "15%", "42%"],
+ ["What he carries home", "Its legs gripped fore and aft, one in each hand. Only Luke gives the shepherd this exact clause for it: he layeth it on his shoulders, rejoicing.", "22%", "35%"],
+ ["The basket at his side", "Two pale rounded shapes set in a woven basket.", "42%", "20%"],
+ ["The worn tesserae", "Coarse enough at this size to leave the animal a shape rather than a countable sheep.", "60%", "45%"],
+],
+
+"File:Ravenna — The Good Shepherd mosaic.jpg":[
+ ["Gold rosettes on blue", "A night sky worked into the vault above the scene.", "15%", "50%"],
+ ["Young and beardless, ringed in gold", "The disc of light behind his head is full and unbroken, unlike the bare-headed figure on the floor in this same gallery.", "45%", "50%"],
+ ["A cross, not a crook", "Held upright in his left hand.", "55%", "49%"],
+ ["Fingers at a muzzle", "His right hand touches rather than carries — no shoulder bears any weight in this mosaic.", "65%", "58%"],
+ ["Six faces, none of them grazing", "Every one turned to look at him instead.", "78%", "25%"],
+],
+
+// ---- chapter 19 ----
+
+"File:Baiophoros Dionysiou.jpg":[
+ ["The title", "Η ΒΑΙΟΦΟΡΟΣ, white letters against the dark sky — the Church's own name for the feast, no Gospel's own word.", "9%", "50%"],
+ ["Christ, one animal beneath him", "Blessing with his right hand, ΙΣ ΧΣ set beside his halo.", "32%", "20%"],
+ ["A file of haloed heads behind him", "Pressed close, following.", "30%", "10%"],
+ ["Two boys in the green palm", "Working branches loose together — no such branch is anywhere in Luke's own account of this ride.", "13%", "36%"],
+ ["Jerusalem's gate already open", "Its people spilling out to meet him.", "35%", "80%"],
+ ["Cloth already flat in the road", "One figure down on the ground ahead of the advancing hoof — Luke's own word for who laid it is they, the same disciples who had just set him on the colt.", "85%", "25%"],
+],
+
+"File:005 Entry into Jerusalem Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The title", "Η ΒΑΙΟΦΟΡΟΣ, red letters at the upper left.", "12%", "14%"],
+ ["Christ's own head, turned backward", "Away from the walls ahead of him — against the direction Luke's own text gives this road, he went before.", "52%", "45%"],
+ ["The company he watches instead", "Gathered close under a run of gold haloes.", "45%", "14%"],
+ ["Someone worked into the palm", "Nothing in Luke's own account puts anyone in this tree at all.", "18%", "47%"],
+ ["The city waiting", "Roofs and towers at the upper right, its own people already at the gate.", "15%", "80%"],
+ ["Cloth spread under the advancing feet", "Already flat on the ground.", "88%", "44%"],
+],
+
+"File:18 Triumphal entry into Jerusalem Icon from Saint Paraskevi Church in Adam..jpg":[
+ ["The title", "Η ΒΑΙΟΦΟΡΟΣ, pale letters across the top.", "9%", "48%"],
+ ["Mountains behind the walls", "A low range in the distance, easy to miss beside the city in front of it.", "10%", "20%"],
+ ["A small palm, empty of anyone", "Nobody is in it; every other Entry icon in this gallery puts someone in its tree.", "18%", "12%"],
+ ["A face set toward the city", "His gaze fixed ahead rather than turned on his own company — unlike the Langadas panel beside it in the gallery, where Christ looks back.", "42%", "47%"],
+ ["Hands raised at the gate", "The city's own people coming out to greet him.", "40%", "80%"],
+ ["Three haloed men, unwatched", "Trailing at the left edge of the board.", "45%", "14%"],
+ ["A dark cloth already down", "Laid at the animal's own advancing hoof.", "78%", "74%"],
+ ["A figure in pink, above the crowd", "One arm stretched out to the left.", "12%", "88%"],
+],
+
+"File:Entry into Jerusalem (Afon icon).jpg":[
+ ["Christ, scroll closed in one hand", "Blessing with the other.", "45%", "30%"],
+ ["A branch worked loose in red", "Cut from the dark tree that fills the middle ground — no such branch is anywhere in Luke's own telling of this ride.", "22%", "38%"],
+ ["Rows of onlooking faces", "Packed at the gate — a city coming out to meet him, nearer to John's account of this day than to Luke's.", "42%", "82%"],
+ ["The file that is Luke's own multitude", "Not the crowd at the gate, but this packed company itself: the whole multitude of the disciples Luke names as the ones crying out here.", "45%", "10%"],
+ ["Clothes already flat at the hooves", "Laid down by figures kneeling in the road.", "88%", "55%"],
+],
+
 };
