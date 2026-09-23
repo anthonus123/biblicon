@@ -262,7 +262,7 @@ traps are likely to recur.
   not an appeal to "faith alone" — a Reformation formula with no place in this reader. All three
   caught and fixed before commit.
 
-**For the owner, from Luke batch 5 (2026-09-22i).** Seven findings surfaced while
+**For the owner, from Luke batch 5 (2026-09-22i).** Eight findings surfaced while
 reading these six files fresh against Luke's own verses and against Matthew's and Mark's existing
 prose for the same files. None of Luke's own text was affected; nothing was changed in Matthew's
 or Mark's readers.
@@ -288,6 +288,14 @@ or Mark's readers.
   stands at the far right of the same wall, past the crowd around the bed. Whether he is Christ
   again in the same scene or the first figure of the next one along the wall was not settled from
   the crop available; flagged here rather than guessed at.
+- **The Monreale inscription's second line is unresolved between this reader and Matthew's.**
+  Matthew's `hotspots3.js` currently transcribes it `SYNAGE IN DOMO EIVS SVSCITAT`; batch 8's own
+  record of that same transcription has an ellipsis at exactly that point (`IHS FILIAM IAYRI …
+  SVSCITAT`), so it is not itself confirmation. This session's own repeated crops of the second
+  line, at the resolution available, read `RES`, not `EIVS`, three times over. Luke's reading now
+  transcribes only the clearly legible first line and glosses the sense of the second without
+  picking a side. Worth a fresh crop from someone starting from the original Commons file rather
+  than the pool's downsized copy.
 - **Both Luke's and Mark's `labels.js` caption the sower panel "Orthodox mosaic."** No tesserae
   are visible at this resolution and Commons itself catalogues the file only as "An icon." Left
   unchanged in both readers — changing only Luke's would create the same "one fresco, two
@@ -426,17 +434,18 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has 33 icons and 56 of its 68 still want a reading.** `picks.js`,
-`labels.js` and `overrides.js` were written 2026-09-20d from the survey table below: **33
-passages, 68 icons**, tiers 28a / 5b / 119c, `make check` green, and the reader's commentary is
-reachable on those 33 passages — **99 of its 455 quotations**, where before it reached none.
-The first batch of readings and markers was written 2026-09-21 — `nativity` (3), `forerunnerpreach`
-(1) and `fruits` (1), 33 markers — and batch 2, 2026-09-22e, did `baptism` (4), `temptation` (2)
-and `petersmother` (1), 42 markers. What is left is 56 icons across 27 passages, next in
-Gospel order being `leper` (1), `paralytic` (2), `levi` (2) and `witheredhand` (1). What it needs,
-in order:
+**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 5, 40 of its 69
+icons across 17 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
+written 2026-09-20d from the survey table below: **33 passages, 68 icons**, tiers 28a / 5b / 119c,
+`make check` green, and the reader's commentary is reachable on those 33 passages — **99 of its
+455 quotations**, where before it reached none. Five batches of readings and markers have been
+written since: 2026-09-21 (`nativity`, `forerunnerpreach`, `fruits`), 2026-09-22e (`baptism`,
+`temptation`, `petersmother`), 2026-09-22g (`leper`, `paralytic`, `levi`, `witheredhand`),
+2026-09-22h (`draught`, `centurion`, `twelve`), and batch 5, 2026-09-22i (`sower`, `storm`,
+`gadarene`, `jairus`). What is left is 40 icons across 17 passages, next in Gospel order being
+`fivethousand` (2), `transfiguration` (4) and `beelzebub` (1). What it needs, in order:
 
-1. **First, readings and markers for the remaining 56, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 40, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
    caveat the reading must honour — the first two recorded in `picks.js`, the third found while
@@ -3107,8 +3116,8 @@ after, whichever the next session prefers.
   markers, closing chapter 8's first four passages.
 - All six files are shared with Matthew's and/or Mark's readers (the sower panel with Mark's
   only; the other five with both). Read every existing reading of the same file in both other
-  readers before drafting, per the standing trap, and found six cross-reader errors and one new,
-  unresolved find in the process — recorded under "For the owner, from Luke batch 5" above rather
+  readers before drafting, per the standing trap, and found six cross-reader errors and two
+  unresolved finds in the process — recorded under "For the owner, from Luke batch 5" above rather
   than fixed, matching
   precedent for anything beyond a bare one-clause slip.
 - Anchored each reading on a clause genuinely Luke's own rather than Mark's or Matthew's:
@@ -3183,32 +3192,43 @@ after, whichever the next session prefers.
   fresh, correctly-bounded crop; a third overlay pass confirmed all six files clean by eye.
 - A third advisor pass, after that draft, caught a seventh mislabelled marker no overlay sheet by
   itself would have flagged (the storm's "man at the mast" sat on the red-tunic rigger, not the
-  mast, and the text said "both hands" of a figure who has only one hand on the pole — renamed
-  "The man at the rigging" and re-cropped to its correct figure), a further run of overclaims the
-  first pass had introduced while fixing the first (Luke 8:13's own "no root" undercuts the
-  reading's "not Matthew's and Mark's... no root," Mark 4:19's own third thing that chokes
-  undercuts "missing from Matthew and Mark both," Mark 5:2-5 is the longest demoniac description
-  of the three so "goes further than either of theirs" is backwards, and Matthew 8:26 rebukes
-  "the winds and the sea" in one clause too, so "holds both together in one clause" does not mark
-  Luke out — only "the raging of the water" does), the Monreale inscription's second line restored
-  from Matthew's own already-audited transcription (`IHS FILIAM IAYRI PRINCIPIS SYNAGE IN DOMO
-  EIVS SVSCITAT`, HANDOFF's batch-8 record) rather than guessed at past what this session's own
-  crop could read, and two further n-gram matches the six-word script had missed at five words
-  ("head propped on his hand," "lower half of the wall"). All fixed, and the n-gram check re-run
-  at five words found nothing left but Scripture quotations, the painted titulus and inscription
-  text, and attributed quotations of the other readers' own claims.
-- A fourth advisor pass, on that draft, caught that the sower reading and one of its markers still
-  claimed Luke's own text identifies the sower with Christ ("names him the same way"); Luke 8:5
-  only ever says a sower, unnamed, and the identification is the panel's alone. It also caught an
-  overclaim on the good ground's own wording (Mark 4:20 has hear the word and bring forth fruit
-  too; only heart, keep it and with patience are Luke's alone), a clause quoted twice in a row in
-  the storm reading, and a hand-count for the grey-bearded man at the mast that this session's own
-  two crops of him disagreed on (dropped rather than guessed). It also would not let the Monreale
-  inscription's second line stand as read by this session's own crop: a fresh crop at maximum zoom
-  still could not distinguish EIVS from what look like other letters, so the reading now attributes
-  that line to Matthew's own transcription by name rather than claiming it as this session's own
-  reading. All fixed; `quotes.js`, `make luke` and the five-word n-gram check were run once more
-  clean before commit.
+  mast — renamed "The man at the rigging" and re-cropped to its correct figure), a further run of
+  overclaims the first pass had introduced while fixing the first (Luke 8:13's own "no root"
+  undercuts the reading's "not Matthew's and Mark's... no root," Mark 4:19's own third thing that
+  chokes undercuts "missing from Matthew and Mark both," Mark 5:2-5 is the longest demoniac
+  description of the three so "goes further than either of theirs" is backwards, and Matthew
+  8:26 rebukes "the winds and the sea" in one clause too, so "holds both together in one clause"
+  does not mark Luke out — only "the raging of the water" does), an attempt to complete the
+  Monreale inscription's second line from Matthew's own transcription (batch 8's own record has
+  it as `IHS FILIAM IAYRI … SVSCITAT`, an ellipsis where the middle should be; Matthew's current
+  marker fills that gap with `SYNAGE IN DOMO EIVS SVSCITAT`, which this session took on trust
+  rather than re-derive), and two further n-gram matches the six-word script had missed at five
+  words ("head propped on his hand," "lower half of the wall"). All fixed at the time, and the
+  n-gram check re-run at five words found nothing left but Scripture quotations, the painted
+  titulus and inscription text, and attributed quotations of the other readers' own claims — but
+  see the fourth pass below, which found the inscription fix itself still wrong.
+- A fourth advisor pass, on that draft, caught an overclaim on the good ground's own wording
+  (Mark 4:20 has hear the word and bring forth fruit too; only heart, keep it and with patience
+  are Luke's alone), a clause quoted twice in a row in the storm reading, and a hand-count for the
+  grey-bearded man at the mast that this session's own two crops of him disagreed on (dropped
+  rather than guessed). It flagged, correctly, that attributing the Monreale inscription's second
+  line to "Matthew's own marker audit" read as internal process language, and it flagged, wrongly,
+  that Luke's own reading claimed Christ-as-sower as Luke's text — this session's own fix
+  overcorrected into the opposite error, below.
+- A fifth advisor pass caught that fix's overcorrection: the sower reading and marker now said the
+  identification of the sower with Christ was "the panel's alone," which forgets that this same
+  card's own Catena comment makes the identification too — St John Chrysostom, on Luke 8:5, But
+  Christ fitly denominates His advent, His going forth. Both now quote him rather than claim the
+  identification belongs to no one but the painter. This pass also caught that the inscription fix
+  from the round before was still wrong twice over: this session's own repeated crops of the second
+  line read RES, not EIVS, contradicting Matthew's current marker (which the fourth-round fix had
+  leaned on) — so rather than adjudicate a discrepancy this session cannot resolve at this
+  resolution, the reading now transcribes only the fully legible first line, notes that a second
+  line follows, and glosses the sense (Jesus raises the daughter of Jairus, ruler of the synagogue,
+  in the house) without asserting the second line's exact wording either way; and it caught that
+  the same round's Ferapontov edit had accidentally moved the apostles from behind Christ to in
+  front of him ("he is met by"), restored to "with... behind him." `quotes.js`, `make luke` and the
+  five-word n-gram check were run once more clean before this commit.
 - `make luke`: 11.04 MB, 69 images, 0 errors. Browser check via Playwright on a local server: 0
   console errors or warnings; chapter 8 opens all four new sub-passages; the Sower card opens with
   its icon, KJV text and "Deciphering the Icon" prose visible.

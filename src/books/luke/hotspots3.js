@@ -207,7 +207,7 @@ module.exports={
 
 "File:Representation of the Sower's parable.JPEG":[
  ["The Romanian title", "PILDA SEMĂNĂTORULUI, lettered across the top, with the number 21 beside it — one panel in a series rather than a single commission.", "9%", "48%"],
- ["Christ as the sower", "Given his own face and halo, an identification the panel makes on its own — Luke's text simply opens A sower went out to sow his seed, leaving the figure unnamed.", "18%", "50%"],
+ ["Christ as the sower", "Given his own face and halo. Luke's own text leaves him unnamed — A sower went out to sow his seed — but the Catena already reads Christ's own advent into that clause: St John Chrysostom, But Christ fitly denominates His advent, His going forth.", "18%", "50%"],
  ["The throwing arm", "Swung out ahead of him, the hand already open. Luke's disciples ask about the parable without any note of privacy: his disciples asked him, saying, What might this parable be?", "40%", "63%"],
  ["The birds on the path", "Four on a close count, pecking at the fallen seed. Luke's own clause adds one detail Matthew and Mark do not: and it was trodden down — the birds devouring the seed after it is in both of theirs too.", "48%", "16%"],
  ["The bare rock", "Grey stone with almost no soil on it, at the upper right. Where Matthew and Mark both blame no depth of earth, Luke's own verse names a cause neither uses: it withered away, because it lacked moisture.", "20%", "78%"],
@@ -235,7 +235,7 @@ module.exports={
 ],
 
 "File:Daughter of the head of synagogue is resurrected by Christ.jpg":[
- ["The inscription", "IHS FILIAM IAYRI PRINCIPIS SYNAG..., cut off at the edge of this photograph; Matthew's own reading completes it, IN DOMO EIVS SVSCITAT. The painter's own spelling, IAYRI, is not the classical Iairi. Luke's own text gives the name only in the passage before this one.", "9%", "50%"],
+ ["The inscription", "IHS FILIAM IAYRI PRINCIPIS SYNAG..., cut off at the edge of this photograph, continuing onto a second line: Jesus raises the daughter of Jairus, ruler of the synagogue, in the house. The painter's own spelling, IAYRI, is not the classical Iairi. Luke's own text gives the name only in the passage before this one.", "9%", "50%"],
  ["Their two hands", "His fingers close over hers at the coverlet's edge, at the word that ends the passage's central sentence: took her by the hand, and called, saying, Maid, arise.", "63%", "52%"],
  ["The child sitting up", "Already upright in a jewelled gown, looking past Christ. Luke's own next clause moves faster than the picture does: her spirit came again, and she arose straightway.", "52%", "75%"],
  ["The bearded man at the bed's head", "One hand pressed to his breast, closer to a father's own grief than to a ruler pleading. Luke names both parents present: the father and the mother of the maiden.", "45%", "62%"],
