@@ -132,11 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **60 of the 69 now have a prose reading and positioned markers, 350 markers in all**, across
-    30 of the 34 icon-bearing passages, in thirteen batches from 2026-09-21 to 2026-09-24 (see
-    `## Next` for the batch-by-batch list). The other **9 icons, across 4 passages, are the work
-    in progress**, in batches of six to eight, the loop Mark uses — all four of them are the rest
-    of the Passion sequence, `crucifixion` through `peace` (23:33 to 24:43).
+  - **64 of the 69 now have a prose reading and positioned markers, 382 markers in all**, across
+    31 of the 34 icon-bearing passages, in fourteen batches from 2026-09-21 to 2026-09-24 (see
+    `## Next` for the batch-by-batch list). The other **5 icons, across 3 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — all three of them are the rest
+    of the Passion sequence, `burial` through `peace` (23:50 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -183,14 +183,87 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 9 of 69 icons still want
-a reading and markers, across 4 passages — counts taken from a script over `icons.json`, not by
-eye. Batch 13 (2026-09-24d) did `pilate` (23:1-5, 2 icons, 13 markers), the fifth of the Passion
-sequence — Christ before Pilate. What is left is every icon from `crucifixion` through `peace`
-(23:33 to 24:43): `crucifixion` (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
+**Active work — the Luke readings.** See the Luke section further down: 5 of 69 icons still want
+a reading and markers, across 3 passages — counts taken from a script over `icons.json`, not by
+eye. Batch 14 (2026-09-24e) did `crucifixion` (23:33-43, 4 icons, 11 markers), the sixth of the
+Passion sequence — the Crucifixion and the penitent malefactor. What is left is every icon from
+`burial` through `peace` (23:50 to 24:43): `burial` (3), `myrrhbearers` (1), `peace` (1).
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 14 (2026-09-24e — `crucifixion`, 4 icons).** Drafted in one
+session; three advisor passes ran before commit, each catching a different class of problem — not
+the same shape recurring, as some earlier batches saw.
+- **The first pass caught plain arithmetic and a wrong Gospel-order claim.** "Luke's nine verses"
+  was carried over from the previous batch's passage (22:63-71, which is nine verses); this one is
+  23:33-43, eleven verses, and the error had spread into four sentences and two markers before it
+  was caught. The centurion's confession (23:47) was placed "two passages on" when it is one
+  passage on, in `death` (23:44-49), which does not yet have an icon. A closing sentence claiming
+  Luke's own darkened-sun-and-veil order differs from Matthew's and Mark's was cut outright rather
+  than fixed a second time, once a fuller check showed only the veil's placement actually differs
+  and that the point belongs to the next passage regardless.
+- **The second pass caught the trap named in the batch 12 and 13 notes, in a new form: fixing an
+  overclaim without checking what the fix newly claimed.** "Luke alone reports the charge in three
+  tongues" is false — John 19:20 gives the same three languages — and every instance was corrected
+  to say so. A harder version of the same trap: the centurion's *Certainly this was a righteous
+  man* had been set against Matthew's and Mark's *Son of God* as if the two conflicted, exactly the
+  case the "don't set one Evangelist against another" gotcha warns about. The Catena's own block on
+  23:47-49 has Augustine harmonizing the two directly; the reading now quotes him rather than
+  asserting a resolution in its own voice. A run of "Luke's own women... keep their own distance"
+  clauses were also wrong on the calendar: no woman is named or shown at all in 23:33-43, Luke's
+  own women first appear six verses later at 23:49, not three (the death, at 23:46, is three verses
+  on) — every instance was corrected to cite 23:49 directly rather than count verses in prose.
+- **The third pass caught two claims a full-resolution crop could not support and one it could.**
+  Fetching the Commons originals (1066px for the Dionysiou fresco, 1053×1396 for the Sinai panel)
+  rather than trusting the 660px local cache settled that the fresco's title is split by the
+  cross's own upright, not by the architecture, and that ΜΡ ΘΥ really is legible over the Mother of
+  God — both kept. But the two malefactors' heads, drafted as "turned toward" and "turned away"
+  from Christ on the strength of a small crop, turned out under the full-resolution one to be a
+  bowed head and a profile turn, neither one clearly toward or away from anything; the claim was
+  dropped rather than reworded a second time, keeping only Bede's own sourcing for the traditional
+  placement. Three unexplained figures at the fresco's foot, one bare-chested with arms raised,
+  were drafted as "Matthew's risen saints... wrapped in their grave-bands" on the strength of
+  Matthew's own reader's identification and phrase; the crop showed clothed, standing figures with
+  no grave-wrappings visible, so the identification was hedged rather than asserted or invented
+  outright. The Sinai panel's small hollow at the foot of the cross, initially described as absent
+  ("no ground opened at the foot"), was corrected to present-but-empty once the full-resolution
+  crop showed a small dark hollow with blood in it and no skull, matching Mark's own reader of the
+  same file.
+- A fresh 5-gram overlap script (rewritten this session; see the Gotcha, none survive between
+  sessions) against Matthew's and Mark's own readings of all four shared files caught heavy reuse on
+  the first draft and again after the first round of rewording — Mark's own "in the field over two
+  arches," Sinai's "small angels fly in above the crossbar" and its frame-of-saints sentence
+  structure, and Langadas's "small green mound with an arched opening," among others. Every flagged
+  phrase was reworded across at least two further rounds; the final pass is clean apart from the
+  sanctioned exceptions — the KJV title clauses (`THE KING OF THE JEWS`, John's own fuller
+  `Jesus of Nazareth the King of the Jews`, both quoted for contrast), the inscription translated
+  the same way twice (`the King of Glory`), and the proper names `St Catherine's on Sinai` and
+  `Byzantine Museum`.
+- `BOOK=luke node src/tools/quotes.js`: clean, ordinary run-on false positives only, every round.
+  The Bede, Athanasius and Theophylact quotations don't use the script's `Name:` format, so all
+  three were checked by hand against the 23:33 and 23:34-37 Catena blocks instead, and the
+  Augustine quotation (added in the second pass) against the 23:47-49 block; all four verbatim.
+  `make luke` with its full output grepped for `clamp`, re-run after every round: the four warnings
+  printed belong to the `arrest` batch's own markers from an earlier session, unchanged by this
+  one; none of the four new files produced a warning. `BOOK=luke python3 src/tools/overlay.py` on
+  all four keys, after every round including a coordinate correction on the Sinai panel's hollow
+  marker (first placed on the blood streak above the hollow rather than on the hollow itself):
+  all 11+6+6+7 markers land on the described figure or detail in the final pass. Playwright, served
+  locally across two rounds: the drawer, the four-icon thumbnail strip, all three tabs on the lead
+  icon and the Wisdom of the Fathers tab were checked by screenshot; `browser_console_messages`
+  came back at zero every time it was checked. `make check`: green, 64/69 icon readings, 69 unique
+  images, 34 icon-bearing passages, 382 markers in the reader overall — all counts from a script
+  over `icons.json`, not by hand.
+- **For the owner, not fixed in this batch:** the built `icons.json` ships a Wisdom-tab quotation
+  on this very passage (Athanasius, on 23:34-37) with a stray trailing "GREEK" — a parse artifact
+  from the 1842 source's own margin note, not something this batch introduced or repaired; see the
+  quotes-parsing Gotchas for the general pattern. Also worth a look if a better copy ever turns up:
+  Mark's reader has the Stavrosis right-hand thief's head "thrown back," where the full-resolution
+  original shows it turned in profile with the chin down; Matthew's reader calls the fresco's three
+  unexplained lower figures "wrapped in their grave-bands," where the same original shows them
+  clothed and standing; and both siblings give the Langadas soldier-or-centurion figure a halo that
+  does not resolve at either reader's own working resolution.
 
 **For the owner, from Luke batch 13 (2026-09-24d — `pilate`, 2 icons).** Drafted in one session;
 four advisor passes ran before commit. Each of the first three caught a real round of errors; the
@@ -1395,6 +1468,14 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
 
+- **The local `src/img/*.webp` cache can be smaller than the Commons original, or larger — check
+  before trusting either one over a sibling reader.** Batch 14 (2026-09-24e, `crucifixion`) found
+  the local Stavrosis copy at 660px against a 1066px original, and the larger file settled three
+  disputed details (the title's split, a thief's head-turn, ΜΡ ΘΥ's legibility) that the small one
+  couldn't. But the local Langadas copy is *larger* than its own Commons original (395px) — the
+  cache isn't uniformly a downscale. Fetch `image_meta.json`'s own `url` field serially with a
+  browser-like User-Agent and `file -b` before trusting a crop enough to overrule a sibling
+  reader's claim, and don't assume which direction the resolution difference runs.
 - **The 5-gram overlap script every Luke batch since 6 has run is not saved anywhere in `src/tools/`
   — each session writes it fresh into its own scratchpad.** It is short (norm, tokenize into
   5-word windows, build a set from Matthew's and Mark's `hotspots*.js` for the shared file, diff
@@ -4250,6 +4331,44 @@ Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i c
 when a rewrite is driven by an n-gram check rather than a fresh look at the picture, re-crop every
 visual clause it touches before shipping — the phrase-overlap fix is exactly where this batch's
 new errors got in, the same shape batches 8–11 already recorded for other causes.
+
+## Session 2026-09-24e (Luke batch 14 — `crucifixion`, 4 icons, 11 markers)
+
+**Did.** Wrote the reading and markers for Luke 23:33-43 ("The Crucifixion, and the Thief"), the
+sixth batch of the Passion sequence — the four files already shared with Matthew's and/or Mark's
+readers (`Stavrosis Dionysiou.jpg`, `Crucifixion Icon Sinai 12th century.jpg`, the Langadas 1855
+icon, and the ninth-to-thirteenth-century double-sided processional icon). No `overrides.js` change
+needed: `crucifixion`'s `keyVerse:43` (the promise of paradise) was already right. Corrected the
+`picks.js` comment above the entry, which had asserted "the thief on the right hand" as if it were
+Luke's own text rather than Bede's tradition.
+
+**Why.** Continuing the Luke reading loop from batch 13; `crucifixion` was next in Gospel order.
+
+**Verified.** See the full account in `## Next` above and the "For the owner" note there — three
+advisor passes, the first catching plain arithmetic (a "nine verses" count carried over from the
+previous batch's own passage) and a wrong Gospel-order claim later cut outright, the second
+catching a false exclusivity claim on the trilingual title and a Synoptic-harmonization error the
+Catena's own Augustine already resolves, the third catching two visual claims a full-resolution
+Commons crop could not support (the malefactors' head-turns, the "grave-bands" on three unexplained
+lower figures) and confirming two others it could (the title's split, ΜΡ ΘΥ's legibility). A fresh
+5-gram overlap script against Matthew's and Mark's own readings of all four files caught reuse
+across at least two rounds of rewording; `quotes.js` clean; the four Father quotations (Bede,
+Athanasius, Theophylact, Augustine) checked by hand against their Catena blocks and verbatim;
+`overlay.py` on all four keys after every round, including one coordinate fix; four Playwright
+passes served locally with zero console errors. `make check`: green, 64/69 icon readings, 69 unique
+images, 34 icon-bearing passages, 382 markers in the reader overall.
+
+**Next.** `burial` (23:50-56, 3 icons) is next in Gospel order — the Dionysiou burial sequence
+already shared with Matthew's and/or Mark's readers. After that, `myrrhbearers` (24:1-12, 1 icon,
+already used by both siblings — the two-angels-and-the-fallen-guard fresco, guard scene not Luke's)
+and `peace` (24:36-43, 1 icon, tier b, Christ among the apostles) finish the Luke reader's icon
+readings at 69/69. Record for the owner: the shipped Wisdom-tab quotation from Athanasius on
+23:34-37 carries a stray trailing "GREEK" from the source's own 1842 parse, not fixed here; and
+three cross-reader discrepancies turned up against the full-resolution Commons originals (Mark's
+reader's thief head "thrown back" vs. profile-with-chin-down; Matthew's reader's "grave-bands" vs.
+clothed standing figures; both siblings' halo on the Langadas soldier-or-centurion figure, which
+does not resolve at either reader's own working resolution) — worth a look if anyone revisits those
+readers, not blocking anything here.
 
 ## Session 2026-09-24d (Luke batch 13 — `pilate`, 2 icons, 13 markers)
 

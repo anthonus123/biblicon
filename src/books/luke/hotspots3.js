@@ -560,4 +560,48 @@ module.exports={
  ["The soldier", "In fish-scale mail behind the throne, a bared blade held upright at his own shoulder and a spear braced in his other hand — the only armed man on the whole wall. Luke's own five verses here name no soldier at all; his next soldier, in the passage just after this, is Herod's own men of war.", "38%", "87%"],
 ],
 
+"File:Stavrosis Dionysiou.jpg":[
+ ["The inscription", "Η ΣΤΑΥΡΩΣΙΣ, the Crucifixion, split down the middle by the cross's own upright. Pilate's own charge is nowhere painted here; Luke's own three-tongued wording of it is words only.", "9%", "48%"],
+ ["Christ", "ΙΣ ΧΣ lettered beside him, the body upright, the head bowed only a little. He is dead in this picture; in Luke's own eleven verses he has not yet spoken his last word.", "16%", "50%"],
+ ["The malefactor at his right", "Head bowed low against his chest. Old convention puts here the man Bede calls \"the thief on the right hand,\" though Luke's own text never says which side he hung on.", "30%", "13%"],
+ ["The malefactor at his left", "Head turned in profile, chin down. Luke calls both men only malefactors, and tells which one railed and which rebuked him without ever naming a side.", "25%", "88%"],
+ ["The clubs", "A soldier lifts one against the bound legs at each outer cross. That maiming is John's own report, not Luke's; no soldier comes this close to either man in Luke's own eleven verses.", "58%", "9%"],
+ ["The spear", "A striped shaft angled up toward his ribs, held by a helmeted soldier stationed beside the women. That wound is John's alone; none of the Synoptics, Luke included, tells of it.", "27%", "45%"],
+ ["The women", "A haloed woman, lettered ΜΡ ΘΥ, sinks against the shoulder of another in gold, with more behind them. Luke names no woman anywhere in these eleven verses; his own acquaintance and the women stand afar off only at 23:49.", "38%", "27%"],
+ ["St John", "Lettered Ο ΘΕΟΛΟΓΟΣ, one hand pressed to his jaw. His place at the base of the cross is his own Gospel's; Luke names none of the Twelve here.", "40%", "60%"],
+ ["The reed and the sponge", "A young man in gold holds up a rod tipped with a sponge, a small pail at his feet. That belongs to the vinegar Matthew's, Mark's and John's own accounts give at the very end — not the vinegar Luke's own soldiers already carry when they come mocking him at 23:36.", "45%", "56%"],
+ ["The centurion", "Haloed, in a red hood and scale armour, a round shield strapped at his side. In Luke's next passage he says Certainly this was a righteous man; Augustine reads no conflict with Matthew's and Mark's Son of God, whether both were said or one meant only that he judged him just.", "35%", "72%"],
+ ["The split rock", "A skull sits in the dark hollow where the ground opens beneath the cross. Below it stand three more figures, one bare-chested with both arms raised — too small in this photograph to say with any confidence whether they are Matthew's risen saints, a scene Luke's own Gospel does not tell in any case.", "85%", "49%"],
+],
+
+"File:Crucifixion Icon Sinai 12th century.jpg":[
+ ["IC XC", "His name, lettered on the short board above him. None of Luke's own charge, in Greek, and Latin, and Hebrew, is written here.", "18%", "50%"],
+ ["The angels", "A small pair rise against the gold ground just over the crossbar, hands veiled. No Evangelist places one anywhere near this scene; Luke's own pair wait at the empty tomb.", "17%", "33%"],
+ ["Christ", "Alone on the cross — no malefactor at either side, no soldier, no crowd. Everything Luke tells of this moment is words this small panel does not paint.", "30%", "50%"],
+ ["The Mother of God", "One hand lifted toward him. Her place at the cross is John's Gospel; Luke's own acquaintance and women stand afar off only at 23:49.", "50%", "28%"],
+ ["St John", "His own cheek set against his upturned palm. Luke names none of the Twelve at the cross.", "50%", "68%"],
+ ["The hollow at the foot", "A small dark opening in the rock, blood already running into it. Nothing shaped like a skull sits inside it, unlike this reader's other two icons of the same scene.", "79%", "50%"],
+ ["The medallions of saints", "A ring of sainted witnesses — apostles paired with archangels, rows of bishops and martyrs, a robed emperor and empress among monastics at the base — the panel's own devotion, no part of this chapter.", "90%", "70%"],
+],
+
+"File:024 Crucifixion of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The title", "Four letters between points, worn to little more than a shape — closer to John's fuller wording than to Luke's own six words.", "12%", "45%"],
+ ["Christ", "Dead before a backdrop of red brick. No malefactor hangs at either side of him here.", "25%", "47%"],
+ ["The city wall", "Red brick with a tower rising at each corner — the setting the painter builds behind him, no detail from Luke's own eleven verses.", "30%", "18%"],
+ ["The women", "Three haloed women gathered shoulder to shoulder. Luke's own text does not tell of them until 23:49, and even there leaves them unnamed.", "55%", "23%"],
+ ["St John and the soldier", "John raises his eyes toward Christ, one hand pressed to his jaw, beside a bearded man in scaled gold and a pale cap — perhaps the centurion, though nothing legible here marks him out for certain.", "48%", "75%"],
+ ["The skull", "Set in a mound of pale green stone, two lines of blood already reaching it. Luke's own word for this place is Calvary; he never calls it Golgotha, as Matthew, Mark and John all do.", "83%", "50%"],
+],
+
+"File:Double-sided icon - Crucifixion and Hodegetria (9-13th c., Byzantine museum).jpg":[
+ ["Michael", "ΜΙΧΑΗΛ, in red lettering, swoops down with veiled hands. No Gospel places an angel at this scene.", "12%", "20%"],
+ ["Gabriel", "ΓΑΒΡΙΗΛ at the right, his own hands veiled too.", "12%", "80%"],
+ ["The King of Glory", "Ο ΒΑΣΙΛΕΥΣ ΤΗΣ ΔΟΞΗΣ, lettered on both sides of the beam that crosses it — the Church's own confession, not the charge Pilate had written, which Luke gives in three tongues (John's own Gospel gives the same three).", "30%", "15%"],
+ ["Christ", "Head fallen to one side. Dead already; Luke's own text at this point in the passage still has him speaking.", "25%", "48%"],
+ ["The wound", "A fine red line runs from his side. None of the three Synoptics tells of it; only John's own lance explains it.", "35%", "40%"],
+ ["The Theotokos", "In a star-marked mantle, one hand curled at her throat and the other open beneath it. Luke's own acquaintance and women stand afar off only at 23:49.", "48%", "20%"],
+ ["St John", "A palm cupping his own jaw. Luke names none of the Twelve at the cross.", "48%", "72%"],
+ ["The worn lower half", "John's own robe still falls below his waist in folds; Mary's side has worn to a dark, unreadable shape. The plain gold ground at the very foot of the cross shows no rock or skull now.", "88%", "50%"],
+],
+
 };

@@ -216,7 +216,9 @@ module.exports={
     "File:Cathedral (Monreale) - Right wing transept - Before Pilate.jpg",
     "File:Pilate judgement (icon).jpg",
   ],
-  // Luke alone gives the thief on the right hand his words and the promise of paradise.
+  // Luke alone gives the penitent malefactor his words and the promise of paradise — Luke
+  // himself never says which side he hung on; "the right hand" is Bede's own tradition, not
+  // the text (see HANDOFF batch 14).
   "crucifixion": [
     "File:Stavrosis Dionysiou.jpg",
     "File:Crucifixion Icon Sinai 12th century.jpg",
