@@ -132,14 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **23 of the 69 now have a prose reading and positioned markers, 119 markers in all** (batch 1,
-    2026-09-21: the three Nativities, the Ohrid Angel of the Desert and the Dionysiou `Prodromos
-    Didaskon`; batch 2, 2026-09-22e: the four Baptisms, both Temptations and `petersmother`; batch
-    3, 2026-09-22g: `leper`, both `paralytic` icons, both Levi/Matthew portraits and
-    `witheredhand`; batch 4, 2026-09-22h: `draught`, `centurion` and the three Synaxis-of-the-
-    Twelve icons at 6:12–19 — the last of these closes a gap batch 3's own "chapters 5 and 6 fully
-    covered" claim missed: `twelve` had no reading until this batch). The other 46 are the work in
-    progress, in batches of six to eight, the loop Mark uses.
+  - **48 of the 69 now have a prose reading and positioned markers, 275 markers in all**, across
+    25 of the 34 icon-bearing passages, in eight batches from 2026-09-21 to 2026-09-23c (see
+    `## Next` for the batch-by-batch list). The other **21 icons, across 9 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — all nine of them are the
+    Passion sequence, `gethsemane` through `peace` (22:39 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -186,14 +183,62 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 27 of 69 icons still want
-a reading and markers, across 12 passages. Batch 7 (2026-09-23b) did `lostsheep` (15:1-7, tier b,
-2 icons) and `entry` (19:28-36, 4 icons), 6 icons, 34 markers — closing out chapter 15's only
-icon-bearing passage and all of chapter 19's Entry icons. Next in Gospel order: `temple`
-(19:45-48, 2 icons), `coming` (21:25-33, 1 icon), and `supper` (22:14-20, 3 icons) if a fuller
-batch is wanted. `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of
-these but has **no file wired at all** — that is a harvest task, not a reading task; see the Luke
-section further down.
+**Active work — the Luke readings.** See the Luke section further down: 21 of 69 icons still want
+a reading and markers, across 9 passages — verified against `picks.js` by script, not by eye, this
+session. Batch 8 (2026-09-23c) did `temple` (19:45-48, 2 icons), `coming` (21:25-33, 1 icon) and
+`supper` (22:14-20, 3 icons), 6 icons, 25 markers — closing out chapter 19's Temple icon and all of
+chapters 21 and 22's icons short of the Passion narrative proper. What is left is every icon from
+`gethsemane` through `peace` (22:39 to 24:43): `gethsemane` (3), `arrest` (3), `denial` (2),
+`council` (2), `pilate` (2), `crucifixion` (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
+`nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
+**no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
+down.
+
+**For the owner, from Luke batch 8 (2026-09-23c — `temple`, `coming`, `supper`, 6 icons).** This
+batch was drafted in a session that ended before it could be verified or committed; the next
+session picked it up, ran the full loop against it, and found three rounds of errors before
+committing, the same shape batches 6 and 7 record. Nothing changed in any other reader.
+- **The Monreale rod-holder was drafted as "a haloed figure."** A crop (`temple_heads.png`) shows
+  him plainly unhaloed, standing beside an equally unhaloed grey-haired figure and the haloed
+  Christ — three distinct heads, the arm traced from shoulder to fist. Matthew's and Mark's own
+  readers call the same rod "raised behind Christ's head" without saying whose hand holds it; this
+  is the first of the three readers to look closely enough to say. Worth a glance next time either
+  of those readers is open, though neither claims what Luke's draft claimed, so nothing in them is
+  contradicted.
+- **The same draft had the dove-cage "hanging by a strap under the arcade."** A crop shows it
+  hung from the tip of a long pole one of the sellers holds, well clear of the arcade — not fixed
+  to the architecture at all.
+- **The Klontzas corner marked "gold ground... bare" is packed with cherub heads** at every corner
+  checked, top-left and top-right alike — not bare anywhere.
+- **The Kirillo-Belozersky second cup marker claimed its Eucharistic wording, this cup is the new
+  testament in my blood, is "a cup no other Gospel gives this table at all."** That is Luke's own
+  22:20; Matthew 26:28 and Mark 14:24 both give this same table a cup at this same point, in their
+  own words, this is my blood of the new testament. What is Luke's alone is the *first* cup, before
+  the bread, not the wording of the second.
+- **The Rossano prophets' row was misread as three named prophets — "David twice crowned, then
+  Hosea, then Isaiah" — when the crowned bust at the left and the third bust share an identical
+  crown and an identical overlined caption.** David is quoted twice, not crowned twice over; Hosea
+  sits between his two appearances and Isaiah after them. A first attempt at fixing this decoded
+  the caption as ΑΛΛΑ ("again") to explain the second citation; the overline is a titlos, which
+  marks an abbreviation, not an ordinary word, so the specific reading was dropped rather than
+  shipped unverified — the crown-and-caption match is enough to support "twice" on its own.
+- **The Rossano Isaiah marker's "Matthew and Mark both keep... shall be called; Luke... drops both
+  that tense and the phrase for all people" implied Matthew shares a phrase it does not have.**
+  Mark's own reader already settles this: "Mark's own wording of the prophecy... is his alone in
+  full: My house shall be called of all nations the house of prayer — Matthew and Luke both give
+  the same quotation with of all nations left out." Only the tense is Luke's own difference from
+  both; the phrase is Mark's alone to begin with.
+- **A flask was drafted as standing "between two small cups"** on the Adam Last Supper icon, when
+  a crop shows the great bowl, not the flask, between the two cups — the flask sits beside only the
+  nearer one.
+- A first round of fixes for the Monreale reading wrote "at Christ's left," the exact batch-6 trap
+  (the apostle is at the *viewer's* left, which reads as Christ's right); corrected to the plain
+  "at the left" the project's own markers already use throughout.
+- `BOOK=luke node src/tools/quotes.js`, `make luke` with `grep -i clamp`, and a 5-gram overlap
+  script (this session's version of the one batches 6 and 7 wrote) against Matthew's, Mark's and
+  John's readings for all six shared files were run after every round; all came back clean apart
+  from unavoidable overlap — Greek inscriptions translated the same way twice, and verbatim KJV
+  clauses the Institution narratives and the Olivet discourse share across Synoptics.
 
 **For the owner, from Luke batch 6 (2026-09-23).** Nothing changed in any other reader. An
 advisor pass before commit was skipped in error; the batch shipped in `7bb8806` with the errors
@@ -630,19 +675,20 @@ Three cautions that have already cost time:
   - The subjects with no icon anywhere in the pool (the widow's mites, the deaf-mute, Bartimaeus,
     walking on the sea, the Ascension) need a real search; Mark has had none.
 
-**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 7, 27 of its 69
-icons across 12 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
+**Also open — the Luke reader has 33 icon-bearing passages, and, as of batch 8, 21 of its 69
+icons across 9 passages still want a reading.** `picks.js`, `labels.js` and `overrides.js` were
 written 2026-09-20d from the survey table below: **33 passages, 68 icons**, tiers 28a / 5b / 119c,
 `make check` green, and the reader's commentary is reachable on those 33 passages — **99 of its
-455 quotations**, where before it reached none. Seven batches of readings and markers have been
+455 quotations**, where before it reached none. Eight batches of readings and markers have been
 written since: 2026-09-21 (`nativity`, `forerunnerpreach`, `fruits`), 2026-09-22e (`baptism`,
 `temptation`, `petersmother`), 2026-09-22g (`leper`, `paralytic`, `levi`, `witheredhand`),
 2026-09-22h (`draught`, `centurion`, `twelve`), batch 5, 2026-09-22i (`sower`, `storm`,
-`gadarene`, `jairus`), batch 6, 2026-09-23 (`fivethousand`, `transfiguration`, `beelzebub`), and
-batch 7, 2026-09-23b (`lostsheep`, `entry`). What is left is 27 icons across 12 passages, next in
-Gospel order being `temple` (2), `coming` (1) and `supper` (3). What it needs, in order:
+`gadarene`, `jairus`), batch 6, 2026-09-23 (`fivethousand`, `transfiguration`, `beelzebub`),
+batch 7, 2026-09-23b (`lostsheep`, `entry`), and batch 8, 2026-09-23c (`temple`, `coming`,
+`supper`). What is left is 21 icons across 9 passages, every one of them the Passion sequence,
+`gethsemane` through `peace` (22:39 to 24:43). What it needs, in order:
 
-1. **First, readings and markers for the remaining 27, in batches of six to eight** — the loop Mark uses,
+1. **First, readings and markers for the remaining 21, in batches of six to eight** — the loop Mark uses,
    step by step under "Active work" above. `BOOK=luke node src/tools/quotes.js` is what proves a
    reading was adapted to Luke rather than copied from Matthew's or Mark's. Three files carry a
    caveat the reading must honour — the first two recorded in `picks.js`, the third found while
@@ -3550,3 +3596,52 @@ this session.
 grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` →
 5-gram check against Matthew's/Mark's/John's prose → `crop.py` spot-checks → `make luke` with
 `grep -i clamp` → advisor *before* committing → commit.
+
+## Session 2026-09-23c (Luke batch 8 — `temple`, `coming`, `supper`, 6 icons)
+
+**Did.** A prior session drafted readings and markers for `temple` (19:45-48, 2 icons), `coming`
+(21:25-33, 1 icon) and `supper` (22:14-20, 3 icons) — 6 icons, 25 markers — and rebuilt the reader,
+but the session ended before the draft was verified or committed. This session picked it up cold,
+ran the full loop against it, found and fixed three rounds of errors, and committed once nothing
+was left open. See the "For the owner" note above the Luke section for the complete round-by-round
+list.
+
+**Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; these three passages were
+named next in Gospel order at the end of Luke batch 7.
+
+**Verified.** `BOOK=luke node src/tools/quotes.js`: 11 KJV clauses to read, one new since batch 7
+(Kirillo-Belozersky's `he took bread, and gave thanks, and brake it, and gave unto them`), checked
+verbatim against `src/books/luke/kjv.json` 22:19. `grid.py`, then `crop.py` repeatedly on all six
+keys — the crops are kept in the session scratchpad (`temple_heads.png`, `klontzas_corner.png`,
+`adam_table.png`, `kirillo_table_full.png`, and more) rather than shipped anywhere in the repo. A
+first pass found a full round of errors the draft shipped with (see the "For the owner" note): the
+Monreale rod-holder called haloed when a crop shows him plainly unhaloed, its dove-cage called
+fixed under the arcade when it hangs from a carried pole, the Klontzas corner called bare when
+cherub heads fill it, the Kirillo second-cup marker putting Luke's own 22:20 wording in Matthew's
+and Mark's mouths, the Rossano prophets' row read as three named busts when two of the four share
+one crown and one caption, and a flask drafted as standing between two cups when the great bowl
+stands between them instead. A second round, on that round's own fixes, introduced the batch-6
+"at Christ's left" trap word for word, and a Rossano marker that had Matthew sharing a phrase
+(*of all nations*) it never had, corrected against Mark's own reader, which already settles the
+point. A third round caught mental-state language ("asks," "question... without words") the batch
+just removed from one marker reappearing in a neighbouring one, an unresolved Greek transliteration
+(ΑΛΛΑ) shipped without the titlos overline it carries being accounted for, and "seats no one by
+name" / "names no one's place" language implying Luke gives Simon a seat, which he never does — he
+only names him. `assemble.js` + `overlay.py` on all six icons: no clamp warnings, marker positions
+unchanged from the original draft throughout, since every fix was to wording, not placement. A
+5-gram overlap script (this session's version of the one batches 6 and 7 wrote) against Matthew's,
+Mark's and John's readings for all six shared files, run after every round: clean apart from
+unavoidable overlap — the Rossano inscription's translation, and verbatim KJV clauses the
+Institution narrative and the Olivet discourse share across Synoptics. `make luke` with
+`grep -i clamp` explicitly: 11.08 MB, 69 images, no clamp warnings.
+
+**Not done.** 21 of Luke's 69 icons still have no reading and no markers, across 9 passages,
+verified against `picks.js` by script this session — every one of them the Passion sequence,
+`gethsemane` (3) through `peace` (1). `nain` (7:11-17) still has no file wired at all — unchanged
+this session, a harvest task, not a reading task.
+
+**Next.** `gethsemane` (3 icons, already wired in `picks.js`), first of the Passion sequence, same
+loop: grid/crop → write `hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py`
+→ 5-gram check against Matthew's/Mark's/John's prose → `crop.py` spot-checks → `make luke` with
+`grep -i clamp` → advisor *before* committing, and again after every round of fixes, since this
+session's own errors kept surfacing one round after the fix that removed the last one.

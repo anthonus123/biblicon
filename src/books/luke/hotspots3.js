@@ -388,4 +388,64 @@ module.exports={
  ["Clothes already flat at the hooves", "Laid down by figures kneeling in the road.", "88%", "55%"],
 ],
 
+"File:Christ banish tradesmen from Temple (Monreale).jpg":[
+ ["The raised rod", "The man's fist and the rod in it — he stands beside an older, grey-haired figure, and unlike Christ next to him, neither man wears a halo. Nothing in Luke's own two verses for this act puts a weapon or a rod in anyone's hand.", "22%", "14%"],
+ ["Christ's arm at the table", "Luke's own verb for the scene, began to cast out, is the same one Mark opens his own telling with — but Luke's sentence closes before any table is overturned.", "58%", "40%"],
+ ["Coins in a scattered heap", "Luke's own account never says whose coins these are or who kept them: only them that sold and them that bought.", "64%", "48%"],
+ ["Men gathered at the right", "No trader is named anywhere in Luke's own two verses for the act itself.", "40%", "76%"],
+ ["A dove-cage on a pole", "Hung from the end of a long pole running down to one of the sellers at the right. The dove trade is a detail this scene owes to Matthew and Mark, not to Luke, whose own two verses never name a bird or a trade of any kind.", "27%", "66%"],
+ ["Hoofed animals at the lower edge", "John's own animals. Luke's two verses for the cleansing have no beast in them anywhere.", "88%", "88%"],
+],
+
+"File:Rossano Gospels - Cleansing of the Temple.jpg":[
+ ["The inscription", "ΠΕΡΙ ΤΩΝ ΕΚΒΛΗΘΕΝΤΩΝ ΕΚ ΤΟΥ ΙΕΡΟΥ — concerning those cast out of the temple.", "9%", "45%"],
+ ["Christ", "Robed in gold, standing for the prophecy the lower band writes out in full. Luke's own sentence for the act gives him no gesture beyond the bare verb cast out.", "18%", "34%"],
+ ["A trade Luke never names", "Bent over his table. Matthew and Mark both use the word moneychangers; Luke's own two verses never use it at all.", "25%", "56%"],
+ ["A cage carried out", "One more particular that belongs to this page's two Evangelists and not to Luke, whose own account has no bird in it anywhere.", "23%", "81%"],
+ ["Animals led from the courts", "At the right edge, John's own detail — as absent from Luke's two verses as from Mark's own list of what was overturned.", "22%", "92%"],
+ ["David, crowned", "At the left end of the row of witnesses beneath the scene. The same crown, and the same overlined caption, recur at the third bust along — David quoted a second time.", "50%", "15%"],
+ ["Isaiah", "His own column of words sits beneath the scene. Mark alone keeps the prophecy's reach to the nations, of all nations; Matthew leaves it out, same as Luke. Where Luke differs from both is the verb: Matthew and Mark keep the prophecy's future tense, shall be called, and Luke flattens it to a plain is.", "50%", "80%"],
+],
+
+// ---- chapter 21 ----
+
+"File:Second Coming by G.Klontzas (16th c.).jpg":[
+ ["Christ in the mandorla", "Luke's own noun for the moment is singular where the other two are not: and then shall they see the Son of man coming in a cloud with power and great glory — one cloud, not Matthew's clouds of heaven nor Mark's own plural.", "10%", "48%"],
+ ["The wheeled, many-eyed chariot", "Ezekiel's own vision, set beneath the throne — nothing here comes from Luke's own nine verses.", "24%", "48%"],
+ ["A double file of haloed apostles", "Seated to either side. Luke's own discourse in these verses closes on a parable and a promise, not a court of judgment.", "30%", "78%"],
+ ["A wide band of flame", "Falls the height of the panel below the throne — the Church's own Last Judgment, a scene these nine verses of Luke's never name.", "55%", "55%"],
+ ["Cherub heads filling the corner", "Even here, at the panel's own edge, the gold ground is packed with faces and wings, not left bare — no branch anywhere near them either. Ambrose, reading this passage in the Catena, notices what Luke does to the parable that follows: Matthew speaks of the fig-tree only, Luke of all the trees — a distinction this Last Judgment was never painted to illustrate.", "10%", "10%"],
+ ["The dead rising from open ground", "Along the very bottom edge — bare earth and open graves, not water. Luke's own list of signs, three registers above this ground, names something this register does not touch: the sea and the waves roaring.", "90%", "30%"],
+],
+
+// ---- chapter 22 ----
+
+"File:Deipnos Mystikos Dionysiou.jpg":[
+ ["The title", "Ο ΔΕΙΠΝΟΣ Ο ΜΥΣΤΙΚΟΣ, lettered above the table — the Church's own name for the meal; Luke's own seven verses never use it.", "9%", "55%"],
+ ["Christ's hand, raised", "Gave thanks is Luke's own verb for both the cup and the bread at this table; Matthew and Mark both bless the bread instead and keep giving thanks for the cup alone.", "36%", "47%"],
+ ["A single fish in the bowl", "The painter's own addition to the centre of the cloth — Luke's own words for the meal's start go no further than they made ready the passover, and name no dish.", "57%", "47%"],
+ ["A crowded cloth", "Jugs, knives and more than one cup already set out. Luke's own text gives this table two cups in sequence, not a spread laid out all at once.", "64%", "42%"],
+ ["A head bowed at his side", "The gesture belongs to John's own Gospel, not to this one. Nothing in Luke's account of the meal fixes where any man sat.", "38%", "56%"],
+ ["The reach across the cloth", "Luke's own sign for this same moment names no dish at all: the hand of him that betrayeth me is with me on the table. The dipping into a dish is Matthew's and Mark's detail, not his.", "52%", "64%"],
+ ["Bread, whole and unbroken", "Round shapes still scattered flat on the cloth. Luke's own words for the breaking carry a charge no other Gospel adds here: this do in remembrance of me.", "63%", "20%"],
+],
+
+"File:05 Last Supper Icon from Saint Paraskevi Church in Adam.jpg":[
+ ["A hanging lamp, and the title beside it", "ὁ δεῖπνος ὁ μυστικός is lettered either side of the flame. Luke's own seven verses for this meal never once name the supper this way.", "12%", "49%"],
+ ["Christ's raised hand", "Gave thanks is Luke's own verb for this gesture, used twice in his own telling of the meal — once for the first cup, once for the bread that follows it.", "35%", "45%"],
+ ["The two cups", "Set to either flank of the great bowl, apart from each other — a pair that matches an arithmetic that is Luke's alone: two cups over this table, not one.", "59%", "33%"],
+ ["The disciple at his side", "Head low, close against the Lord. It is John's own figure; Luke's account of this meal names no one at the table until Simon, several verses on.", "43%", "38%"],
+ ["The reach toward the bowl", "A sleeve crosses to the bowl's rim. Luke's own words for this same warning never mention what the hand is near, only where: the hand of him that betrayeth me is with me on the table. The bowl itself is Matthew's and Mark's detail.", "56%", "59%"],
+ ["An open, empty hand", "One apostle raises it, palm out. Whatever the gesture means, it is not the last thing at Luke's own table — his text still has Simon warned by name, and two swords produced, before anyone leaves it.", "36%", "27%"],
+],
+
+"File:Kirillo-Belozersky iconostasis 12 - Last Supper.jpg":[
+ ["Christ, apart from the table's centre", "The corner is his, not the middle — but Luke's own seven verses give him every act at this table regardless: he took, he gave thanks, he brake, he gave, and he spoke.", "31%", "23%"],
+ ["The disciple bowed beside him", "Head lowered against the Lord — John's own figure. Luke's account of this meal names no one at the table until Simon, several verses further on.", "41%", "25%"],
+ ["A bread-piece pinched in two fingers", "One apostle, at the table's far side, already holds a small triangular piece — the nearest this icon comes to painting Luke's own he took bread, and gave thanks, and brake it, and gave unto them.", "47%", "61%"],
+ ["A hand reaching for the footed cup", "One figure, in a green mantle, leans across to it from the table's opposite edge. Luke's own sentence for this same moment puts the hand on the table, not in any vessel: the hand of him that betrayeth me is with me on the table.", "51%", "39%"],
+ ["A second cup, outline only", "Sketched at the right but never painted in. Two cups on this cloth, one finished and one only drawn, sit closer to Luke's own count than a single cup would: Matthew and Mark both give this table a single cup after the bread, this is my blood of the new testament in their own words — Luke's own first cup, before the bread is even touched, is his alone.", "53%", "67%"],
+ ["Two faces, and two open hands", "A pair of apostles at the front, each with an open, empty hand raised toward the other. Whatever the gesture, it is not where Luke's own account of this table ends — Simon is still warned by name, and two swords produced, before anyone leaves it.", "65%", "29%"],
+],
+
 };
