@@ -540,4 +540,24 @@ module.exports={
  ["No blindfold here", "No blindfold appears anywhere on this wall, though Luke opens his own passage with it: And when they had blindfolded him, they struck him on the face. Both walls in this reader paint the scene Matthew and Mark set beside it instead.", "35%", "70%"],
 ],
 
+
+"File:Pilate judgement (icon).jpg":[
+ ["The inscription", "ПРИВЕДЕНИЕ КЪ ПИЛАТУ, the bringing to Pilate. Luke's own words for it: the whole multitude of them arose, and led him unto Pilate.", "9%", "45%"],
+ ["Christ", "Gold-haloed, in a mantle gone almost black with age, head bowed a little. Luke gives him one answer in this whole passage, Thou sayest it, and no second exchange follows it.", "47%", "13%"],
+ ["The helmets behind him", "Three green-crested helmets rise over his shoulder, spear-shafts above them. Luke's own five verses here name no soldier at all.", "36%", "20%"],
+ ["Pilate on the dais", "Raised on the seat, a studded gold band striping the green of his robe, his face turned away from Christ toward the men beside him, while one hand is laid back over the throne behind him, on the prisoner's own side of it — a gesture Christ's own hands, kept at his waist, never answer.", "52%", "50%"],
+ ["Behind the seat", "A red-robed figure leans close, a rounded gold hood framing the head. Whatever it holds, Luke tells no washing of the hands — that detail is Matthew's own.", "29%", "43%"],
+ ["Beside the throne", "One in a plain white head-cloth, two more in red leaning shoulder to shoulder. What Luke's own accusers press is the charge his second verse alone lays open in full: perverting the nation, forbidding tribute, claiming to be Christ a King.", "47%", "78%"],
+ ["The steps", "The dais rises in painted steps between the judge and the prisoner. Luke tells no second question here and no answering silence, only a verdict, I find no fault in this man, that Matthew's and Mark's own Pilate is never given at this point in their trials.", "78%", "40%"],
+],
+
+"File:Cathedral (Monreale) - Right wing transept - Before Pilate.jpg":[
+ ["The inscription", "IHS DVCTVS E(ST) ANTE PYLATV(M) — Jesus was led before Pilate, its own passive voice naming no one. Luke's own verb puts the multitude itself in motion: they arose, and led him.", "14%", "28%"],
+ ["The elders", "Row on row in pale head-cloths, pressed close together — the foremost with a hand raised to his own mouth and, right at the front beside Christ, another with his hand lifted chest-high, still arguing. Nothing on this wall can carry the words Luke alone gives in full — the actual charges brought against him.", "40%", "13%"],
+ ["Christ", "Cross-haloed, his right hand reaching only as far as the doorway's own plain jamb, and no further. Luke's Christ answers one question only here, and is never again said either to answer or to be silent in this passage.", "40%", "37%"],
+ ["Between the columns", "Christ's hand stops at the doorway's plain jamb; Pilate's reaches only to the twisted column on his own side of the dark recess beyond it — the two never quite match. Where John's own account explains the gap between them — lest they should be defiled — Luke gives no reason for it at all.", "48%", "55%"],
+ ["Pilate", "Enthroned beyond the columns, PYLAT… lettered over his head, one hand reaching to the twisted column on his own side of the doorway. Thou sayest it is the last word Luke gives Christ to say to him here; Luke's own Pilate asks him no second question in this passage.", "42%", "71%"],
+ ["The soldier", "In fish-scale mail behind the throne, a bared blade held upright at his own shoulder and a spear braced in his other hand — the only armed man on the whole wall. Luke's own five verses here name no soldier at all; his next soldier, in the passage just after this, is Herod's own men of war.", "38%", "87%"],
+],
+
 };

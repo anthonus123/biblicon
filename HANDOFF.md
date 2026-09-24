@@ -132,11 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **58 of the 69 now have a prose reading and positioned markers, 337 markers in all**, across
-    29 of the 34 icon-bearing passages, in twelve batches from 2026-09-21 to 2026-09-24 (see
-    `## Next` for the batch-by-batch list). The other **11 icons, across 5 passages, are the work
-    in progress**, in batches of six to eight, the loop Mark uses — all five of them are the rest
-    of the Passion sequence, `pilate` through `peace` (23:1 to 24:43).
+  - **60 of the 69 now have a prose reading and positioned markers, 350 markers in all**, across
+    30 of the 34 icon-bearing passages, in thirteen batches from 2026-09-21 to 2026-09-24 (see
+    `## Next` for the batch-by-batch list). The other **9 icons, across 4 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — all four of them are the rest
+    of the Passion sequence, `crucifixion` through `peace` (23:33 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -183,15 +183,115 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 11 of 69 icons still want
-a reading and markers, across 5 passages — counts taken from a script over `icons.json`, not by
-eye. Batch 12 (2026-09-24c) did `council` (22:63-71, 2 icons, 12 markers), the fourth of the
-Passion sequence — Christ mocked and before the council. What is left is every icon from `pilate`
-through `peace` (23:1 to 24:43): `pilate` (2), `crucifixion` (4), `burial` (3), `myrrhbearers` (1),
-`peace` (1).
+**Active work — the Luke readings.** See the Luke section further down: 9 of 69 icons still want
+a reading and markers, across 4 passages — counts taken from a script over `icons.json`, not by
+eye. Batch 13 (2026-09-24d) did `pilate` (23:1-5, 2 icons, 13 markers), the fifth of the Passion
+sequence — Christ before Pilate. What is left is every icon from `crucifixion` through `peace`
+(23:33 to 24:43): `crucifixion` (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 13 (2026-09-24d — `pilate`, 2 icons).** Drafted in one session;
+four advisor passes ran before commit. Each of the first three caught a real round of errors; the
+fourth caught two string-level bugs the third round's own edits had left behind — a vessel
+sentence that claimed to be "collapsed" but in fact still carried the old sentence alongside the
+new one, and an inscription frame that kept Mark's own skeleton after only its wording had been
+swapped — recorded honestly below rather than smoothed over.
+- **The first pass caught the widest round:** a claim that the Russian panel was specifically
+  "Novgorod" work, unsourced in `image_meta.json` or either sibling reader (both just say
+  "Russian"); a false "no soldier anywhere before the cross" built on an argument from silence
+  against Luke's own 22:52 and 22:63; a chronology error ("passes straight from the answer to a
+  verdict") that turns Luke's own order of *telling* into a claim about the night's real-time
+  order, the same error batch 12 had to fix twice; a Bede quotation reattached to the wrong verse
+  (the no-fault verdict, when his own comment is about the answer, "Thou sayest it"); an
+  unhedged identification of the Russian panel's counsellor-figures with Luke's own accusing
+  "multitude"; and a `keyVerse` (4) that fails the header's own "only Luke says" rule, since John
+  18:38 has the same finding in its own words — moved to verse 2, the actual charges, which
+  Augustine's own comment in this block says only Luke spells out.
+- **The second pass caught the same shape of error surviving the first round's own fixes:** the
+  fix for Pilate's hand on the Russian panel went too far, from "reaching toward the prisoner" to
+  "resting on a lectern reaching toward no one" — a tighter crop of the actual brushwork could not
+  settle the question either way, so the reading now follows Mark's and Matthew's own readers,
+  which already have the hand reaching back over the throne toward the prisoner while his face
+  turns the other way, rather than asserting an independent reading of an inconclusive crop; the
+  Monreale fix claimed Christ's and Pilate's hands meet "level with each other," when a crop shows
+  Christ's hand stopping at the doorway's plain jamb while Pilate's reaches only to the twisted
+  column on his own side of the gap, the two never actually matching; a hedge on the Monreale
+  elders ("counsellors or accusers, the wall does not say") had been carried over from the Russian
+  panel's own note where it belongs — at Monreale the elders walk in with Christ himself, outside
+  the hall, so the hedge does not apply there and is now cut; a false "no other Gospel spells out"
+  charge claim (John 19:12 has one too, later in his own account); and "the nearest soldier"
+  language that counted backward into 22:52/22:63 instead of forward from this passage.
+- **The third pass caught wording the second round's own fixes had introduced:** "crossing past
+  the dark recess" for Pilate's hand at Monreale implied it crossed the gap, when the crop shows
+  it stopping at the near column on his own side of the recess; the Cyrillic inscription's gloss
+  ("the bringing to Pilate") had been dropped while removing Mark's own frame sentence around it,
+  leaving the transliteration with no translation; "opens Luke's own first verse" was backwards —
+  the leading is how the verse *ends*; the hedge on the Russian panel's counsellor-figures was kept
+  in the reading but undone in its own marker, whose title ("The counsellors") and body both
+  asserted the identification the reading had just hedged — retitled "Beside the throne," the body
+  now attributes the charge to "Luke's own accusers" rather than the painted figures; the John
+  18:38 sentence tied the "same finding" idea to Augustine's own recapitulation comment, which is
+  about Luke retelling the morning generally, not about John's verdict specifically — simplified to
+  a plain hedge, whether the two are one finding or two, this Catena block does not say; the Bede
+  sentence carried an added clause contrasting *Ye say that I am* (before the council) with *Thou
+  sayest it* (before Pilate) as if correcting Bede against the KJV, when the Catena's own English
+  translation of 23:3 is *You say*, not a KJV artifact to correct a Father against; the Theophylact
+  quote on the charges had "of that same charge" appended, when his own "they" are the accusers,
+  as his next comment in the same block makes clear; "kept at his waist throughout" claimed a
+  duration a still image cannot show; the Monreale inscription was placed "across the top," when
+  that band is the ornamental frieze and the Latin sits in the gold ground below it; and the red
+  figure behind the Russian throne was gendered ("his head") where neither sibling reader commits
+  to one, now "the head." The vessel sentence was meant to collapse to the one point Luke's own
+  text makes, since its structure — a small shape at the breast, held in both hands, "if it is
+  water… [Gospel] never tells it" — still tracked Mark's own sentence for the same figure clause
+  for clause under a five-word reordering; the edit that round added the collapsed sentence
+  *after* the old one rather than replacing it, so both survived into the file together, caught
+  only on the fourth pass (see below).
+- **The fourth pass caught two string-level bugs left by the third round's own edits, not new
+  content errors:** the vessel fix above had left Mark's old sentence and Luke's own new one
+  sitting back to back in the same reading; and the inscription's frame sentence, "set into the
+  gold across the top — close to how Luke's own first verse ends," was still Mark's own frame
+  ("lettered in the gold … first verse ends") with its words swapped rather than actually dropped,
+  and it quoted the whole of verse 1 immediately after claiming to describe only how it *ends*.
+  Both reading and both markers now give the plain gloss and nothing more: *ПРИВЕДЕНИЕ КЪ ПИЛАТУ,
+  the bringing to Pilate. Luke's own words for it: the whole multitude of them arose, and led him
+  unto Pilate.* The vessel sentence now reads only for Luke's own point: *Whatever the red-robed
+  figure leaning in behind the throne holds, Luke tells no washing.*
+- A 5-gram overlap script (rewritten fresh this session — none of the earlier ones persist between
+  sessions) against Matthew's, Mark's and John's own readings of the two shared files caught heavy
+  reuse on the first draft (Mark's own inscription-transcription-plus-translation sentence
+  structure, "a green robe crossed by a broad gold band," "elders in white head-cloths packed
+  shoulder to shoulder," "a young soldier in scale armour with a spear and a drawn sword," John's
+  "reach toward each other across the columns"); every flagged phrase was reworded, and the final
+  pass after each round came back clean apart from the sanctioned exceptions — the Cyrillic and
+  Latin inscriptions each translated the same way twice, and KJV clauses (`Art thou the King of
+  the Jews`, Mark's own `Answerest thou nothing? behold how many things they witness against
+  thee?`, John's own `lest they should be defiled`) shared word for word on purpose, for contrast.
+- `BOOK=luke node src/tools/quotes.js`: clean, ordinary run-on false positives only, every round
+  it was run. The four Father quotations (Augustine, Bede, two of Theophylact) don't use the
+  `Name:` format the script's Father pass keys on, so all four were checked by hand against the
+  23:1-5 Catena block instead, three times across the first three rounds, and are verbatim every
+  time; the fourth round's own fixes were string-level only and touched no Father quotation, so no
+  fourth hand-check was needed. `make luke` with its full output grepped for `clamp` (not piped
+  through `tail`, which silently drops warnings — the mistake batch 10's own note made and batch
+  12 had to flag), re-run after every round including the fourth: the only four warnings printed
+  belong to the `arrest` batch's own markers, unchanged by this session; neither Pilate file
+  produced one. `overlay.py` on both keys, after every round: all thirteen markers land on the
+  described figure or detail in the final pass — marker text changed across rounds, marker
+  coordinates never did. Playwright, served locally across the first three rounds: the drawer, the
+  two-icon thumbnail strip, the updated key-verse card (now quoting 23:2), the Deciphering tab on
+  both icons and the Wisdom of the Fathers tab were each checked by screenshot at least once, with
+  the Russian panel's own card reopened after the third round's text changes specifically to
+  confirm them; the fourth round's fixes were re-verified with the mechanical checks above rather
+  than a further Playwright pass, since nothing about the drawer's own behavior changed. The
+  Scripture Story tab was not screenshotted separately from the key-verse-card checks, since the
+  two render from the same `keyVerse` field. `browser_console_messages(level: "error", all: true)`
+  came back at zero every time it was checked. `make check`: green, 60/69 icon readings, 69 unique
+  images,
+  34 icon-bearing passages, 350 markers in the reader overall — all counts from a script over
+  `icons.json`, not by hand.
 
 **For the owner, from Luke batch 12 (2026-09-24c — `council`, 2 icons).** Drafted in one session;
 three advisor passes ran before commit. The first caught a wide round of errors, mostly visual
@@ -4150,3 +4250,55 @@ Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i c
 when a rewrite is driven by an n-gram check rather than a fresh look at the picture, re-crop every
 visual clause it touches before shipping — the phrase-overlap fix is exactly where this batch's
 new errors got in, the same shape batches 8–11 already recorded for other causes.
+
+## Session 2026-09-24d (Luke batch 13 — `pilate`, 2 icons, 13 markers)
+
+**Did.** Wrote the reading and markers for Luke 23:1-5 ("Before Pilate"), the fifth batch of the
+Passion sequence — the Russian panel and the Monreale mosaic already shared with Matthew's and/or
+Mark's readers (`Pilate judgement (icon).jpg`, `Cathedral (Monreale) - Right wing transept -
+Before Pilate.jpg`). Fixed `overrides.js`'s `pilate` entry: `keyVerse` moved from 4 (the no-fault
+verdict, which John 18:38 also gives in its own words) to 2, the actual charges, which Augustine's
+own comment in this block says only Luke spells out.
+
+**Why.** Continuing the Luke reading loop from batch 12; `pilate` was next in Gospel order.
+
+**Verified.** See the full account in `## Next` above and the "For the owner" note there — four
+advisor passes, the first catching a wide round (an unsourced "Novgorod" attribution, an argument
+from silence about soldiers, a chronology error, a misattached Bede quote, an unhedged figure
+identification, and the `keyVerse` fix), the second catching the same shape of error surviving the
+first round's own fixes (an overcorrected hand gesture the crop could not actually settle, a
+wrongly "matched" pair of hands in the mosaic, a hedge carried over to a place it did not belong,
+an overclaimed "no other Gospel," and backward-counted soldier references), the third catching
+wording the second round's own fixes had introduced (a hand described as "crossing" a gap it only
+reached the near edge of, a dropped translation gloss, a hedge kept in the reading but undone in
+its own marker, a Father quotation corrected against a KJV artifact that was never his own words to
+begin with, and a still image given a claim about duration), and the fourth catching two
+string-level bugs the third round's own edits had left behind — a vessel sentence added alongside
+the one it was meant to replace rather than in place of it, and an inscription frame that kept
+Mark's own skeleton after only its wording had been swapped. Every round rewrote against fresh
+crops or the Catena block itself, not against the previous draft's own wording. `BOOK=luke node
+src/tools/quotes.js`: clean every round it was run; all four Father quotations checked by hand
+against the 23:1-5 Catena block, three times across the first three rounds, verbatim every time —
+the fourth round touched no Father quotation. A 5-gram overlap script (rewritten fresh
+this session) against Matthew's, Mark's and John's own readings of both shared files caught heavy
+reuse on the first draft, all reworded; the final pass after each round came back clean apart from
+the sanctioned exceptions. `make luke` with its full output grepped for `clamp`: the only four
+warnings belong to the `arrest` batch's own markers, unchanged; neither Pilate file produced one.
+`overlay.py` on both keys, after every round: all thirteen markers land on the described figure or
+detail — only the marker text changed across rounds, never the coordinates. Playwright, served
+locally across all three rounds: the drawer, the two-icon thumbnail strip, the updated key-verse
+card (now quoting 23:2), the Deciphering tab on both icons and the Wisdom of the Fathers tab were
+each checked by screenshot at least once, with the Russian panel's own card reopened after the
+third round specifically to confirm its text changes; `browser_console_messages(level: "error",
+all: true)` came back at zero every time it was checked. `make check`: green, 60/69 icon readings,
+69 unique images, 34 icon-bearing passages, 350 markers overall — all counts from a script over
+`icons.json`, not by hand.
+
+**Not done.** 9 of Luke's 69 icons still have no reading and no markers, across 4 passages, every
+one the rest of the Passion sequence, `crucifixion` (23:33-43) through `peace` (24:36-43). `nain`
+(7:11-17) still has no file wired at all — unchanged this session, a harvest task, not a reading
+task.
+
+**Next.** `crucifixion` (4 icons, already wired in `picks.js`), same loop, with this session's own
+lesson carried forward: re-crop every visual clause a fix touches, in every round, not just the
+first draft's own claims.

@@ -97,7 +97,10 @@ module.exports={
  council:{type:'Event',keyVerse:68},
 
  // ---- chapter 23 ----
- pilate:{type:'Event',keyVerse:4},
+ // Augustine's own comment on this block says Matthew and Mark affirm the accusing but
+ // never give its words, where Luke has laid open the very charges themselves — a clause
+ // in this passage that passes the header's own "only Luke says" test.
+ pilate:{type:'Event',keyVerse:2},
  // Luke alone gives the thief on the right hand his words and the promise of paradise.
  crucifixion:{type:'Event',keyVerse:43},
  burial:{type:'Event',keyVerse:53},
