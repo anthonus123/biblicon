@@ -132,11 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **51 of the 69 now have a prose reading and positioned markers, 294 markers in all**, across
-    26 of the 34 icon-bearing passages, in nine batches from 2026-09-21 to 2026-09-23d (see
-    `## Next` for the batch-by-batch list). The other **18 icons, across 8 passages, are the work
-    in progress**, in batches of six to eight, the loop Mark uses — all eight of them are the rest
-    of the Passion sequence, `arrest` through `peace` (22:47 to 24:43).
+  - **54 of the 69 now have a prose reading and positioned markers, 312 markers in all**, across
+    27 of the 34 icon-bearing passages, in ten batches from 2026-09-21 to 2026-09-24 (see
+    `## Next` for the batch-by-batch list). The other **15 icons, across 7 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — all seven of them are the rest
+    of the Passion sequence, `denial` through `peace` (22:54 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -183,15 +183,120 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 18 of 69 icons still want
-a reading and markers, across 8 passages — verified against `picks.js` by script, not by eye, this
-session. Batch 9 (2026-09-23d) did `gethsemane` (22:39-46, 3 icons, 19 markers), the first of the
-Passion sequence — the agony in the garden. What is left is every icon from `arrest` through
-`peace` (22:47 to 24:43): `arrest` (3), `denial` (2), `council` (2), `pilate` (2), `crucifixion`
+**Active work — the Luke readings.** See the Luke section further down: 15 of 69 icons still want
+a reading and markers, across 7 passages — verified against `picks.js` by script, not by eye, this
+session. Batch 10 (2026-09-24) did `arrest` (22:47-53, 3 icons, 18 markers), the second of the
+Passion sequence — the betrayal and the arrest. What is left is every icon from `denial` through
+`peace` (22:54 to 24:43): `denial` (2), `council` (2), `pilate` (2), `crucifixion`
 (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 10 (2026-09-24 — `arrest`, 3 icons).** Drafted in one session;
+five advisor passes ran before commit. Nothing shipped with any round still open, and nothing
+changed in any other reader.
+- **"His right ear" was drafted as something "Luke alone" gives, in the Prodosia marker, the
+  Monreale reading and the Monreale marker.** John 18:10 names the same ear. What is genuinely
+  Luke's alone is the healing that follows, he touched his ear, and healed him — no other Gospel
+  has it. All three now say "neither Matthew nor Mark" for the side, and reserve "alone" for the
+  healing.
+- **A Cyril of Alexandria comment was shipped attributed to "the Gloss."** The Catena's own first
+  comment on this block (the Gloss) only introduces the passage; it is the second comment, Cyril's,
+  that reads he that was called Judas as holding the name in abhorrence. Fixed in the reading and in
+  "The inscription" marker.
+- **A Chrysostom quote was spliced badly**, dropping rather like from rather like one lamenting and
+  recalling him, than one provoked to anger and leaving than dangling with nothing for it to compare
+  against. Restored the Catena's own wording.
+- **The two watchers on the Dionysiou fresco were identified as the disciples who ask, Lord, shall
+  we smite with the sword?**, an identification nothing on the wall supports — the same overreach
+  Mark's own reader already avoids for figures like these. Hedged, Theophylact's own contrast (the
+  other disciples ask leave; Peter does not wait for it) cited rather than asserted as narration, and
+  the marker's own title, "Those who did not draw," retitled "Two watchers at the top left" since it
+  presupposed the same identification the body now hedges.
+- **A large theological claim — that the chief priests, captains and elders "came in person" to the
+  arrest — was backwards**, asserted six times across the three readings and their markers, on a
+  400-character reading of Bede's own comment that stopped short of his actual answer. Read in full,
+  Bede raises this exact difficulty and answers it the other way: these men stayed at the high
+  priest's house and sent others, so Luke's own which were come to him means they came in the
+  persons of the men they sent. All six instances rewritten to cite Bede's resolution.
+- **The Prodosia blow was drafted, then redrafted to dodge an n-gram match with Matthew's and Mark's
+  readers, losing the blade the crop plainly shows in the process** ("bending a second man's head
+  back," no blade mentioned). The blade is back in both the reading and "The blow" marker, in fresh
+  wording; the head's own position, re-checked against the crop, is bent down, not back, and both
+  places call the thing painted "the blade," not "the wound," since a blade is what the crop shows
+  and no wound or cut is actually visible.
+- **The Monreale blow was drawn accurately as a hand on a head, no blade visible, but two different
+  wordings for the motion overclaimed what a still image can show** ("forces… down and back," then a
+  borrowed "bent down" from Prodosia's own fix, applied here without a fresh crop of this file).
+  Settled on "one hand closed over the crown of a second man's head," no direction claimed. The
+  marker's own title, "The wound in the corner," implied a visible wound where the body already said
+  none is legible; retitled "No blade in the corner."
+- **The collar-gripping hand in the Monreale mosaic was placed on the wrong side and then only
+  partly corrected.** The first draft had it reaching "from past Judas's own shoulder" (Judas is at
+  the right); a crop shows the arm starting at the left of the crowd. The first fix for this moved it
+  to "off at the left edge," overstating both its position (its owner is the second figure from the
+  left, not the one standing at the edge) and how legible its owner's face is at this resolution. Reworded to cite
+  Mark's own reader's identification of the same figure ("a beardless man") rather than assert the
+  description independently, and "the whole width of the crowd" for the arm's reach, more than the
+  crop supports, is dropped. The sentence was also moved into "Held apart," the marker that actually
+  sits on the hand.
+- **The peaked-cap figure at the Monreale panel's right edge was overclaimed in several directions
+  across two rounds of fixes:** "unlike any other in the crowd" (a second pointed shape rises behind
+  a head further left, undecided); "unarmed faces" two clauses after "a crowd of spearpoints"; a
+  marker titled "A cap, not a helmet" asserting a resolution the reading itself called ambiguous; and
+  "neither figure carries a weapon," contradicted by Matthew's own reader, which gives this same
+  figure "a pole in his raised hand." Retitled "A pointed head-covering"; both the reading and the
+  marker now quote Matthew's reader directly, in quotation marks, for the pole and the armour, and both
+  note that a fresh crop here shows only an open, raised hand nearby, not clearly this figure's own
+  and not clearly holding anything — the citation stands, the independent visual claim does not.
+- **A lantern was twice put in Christ's own mouth.** "The very thing Luke's own Christ will name…
+  swords and staves" credited him with naming a light he never names. "Christ says here, need not
+  have come after dark" was Chrysostom's own comment (explaining why the arrest happened by night at
+  all), not a saying of Christ's. Both fixed: the lantern ties to Luke's own closing line, this is
+  your hour, and the power of darkness, and the Nicolas Orphanos lantern marker credits Chrysostom by
+  name for the night explanation, worded the same way in the reading and the marker.
+- **The Monreale lantern was also drafted as "lit," and its pole "hangs from a crooked pole" nearly
+  word for word from Mark's own reader.** A crop shows a dark bell shape with no flame visible at
+  this resolution. Now "a lantern is fixed to a bent pole… no flame
+  visible in it at this resolution."
+- **"Byzantine craftsmen… into Monreale cathedral's right transept" was true of the Gethsemane
+  Monreale mosaic, not this one** — this file's own Commons record gives no transept, and the claim
+  had been carried over from the neighbouring file by association, unchecked. Now says only Monreale
+  cathedral, in Sicily.
+- **"Luke alone closes the passage with… when I was daily with you in the temple" overclaimed**; that
+  clause is close to Mark's own wording of the same night (14:49). Only ye stretched forth no hands
+  against me: but this is your hour, and the power of darkness is Luke's alone, and the Nicolas
+  Orphanos reading and its scroll marker now say so.
+- **Two smaller phrasing fixes:** "the sentence that closes the block" credited Suffer ye thus far
+  (v51) with closing a passage that actually ends at v53; reworded. The Nicolas Orphanos "No blow
+  struck here" marker opened "the same robed figure," a marker read on its own with nothing for "the
+  same" to point back to; dropped.
+- `BOOK=luke node src/tools/quotes.js` caught a leftover wrong-subject KJV misquote in the Monreale
+  "Judas, betrayest thou" marker ("He drew near unto Jesus to kiss him") that an earlier fix pass had
+  missed in three other spots but not this one, and a false Father-quote flag from a colon after
+  "Bede" that read as a direct-quote opener to the checker; both fixed. A 5-gram overlap script
+  against Matthew's and Mark's readings and markers for all three shared files, run after every
+  round, caught most of the picture and attribution errors above at the moment they were introduced —
+  every round of dodging a flagged phrase in this batch wrote a new, unchecked claim, the trap
+  earlier Luke batches already named. The one overlap left standing on purpose is the Matthew
+  citation for the pointed-cap figure, in quotation marks as a citation rather than silent reuse; the
+  rest is the verbatim KJV clauses as against a thief, with swords and staves and I was daily with
+  you in the temple, both shared word-for-word across all three Synoptics, and the church's own
+  proper name, St Nicholas Orphanos.
+- `BOOK=luke python3 src/tools/overlay.py` on all three keys, after every round: no clamp warnings at
+  any point, and every marker was on the right figure or detail throughout — every fix in this batch
+  was to wording, never to position. Four Playwright passes over the session confirmed the drawer,
+  the three-icon thumbnail strip and the credit lines switch correctly for all three icons and work
+  without console errors; the final wording above was checked in the source files and by `make
+  check`, not read live after the last round of fixes. `make luke`: 11.11 MB, 69 images, no clamp
+  warnings. `make check`: green, 54/69 icon readings, 69 unique images, 34 icon-bearing passages, no
+  change in passage or icon counts, 312 markers in the reader overall, both counts taken from a
+  script over `hotspots.js` and `hotspots3.js` rather than by hand.
+- **For the owner, unresolved:** Matthew's own reader gives the Monreale pointed-cap figure "a pole
+  in his raised hand." A fresh crop this session found an open, raised hand near that figure but
+  could not confirm whose it is or what it holds. Worth a look next time Matthew's reader is open;
+  nothing in Luke's reading depends on the answer either way.
 
 **For the owner, from Luke batch 9 (2026-09-23d — `gethsemane`, 3 icons).** Drafted and verified
 in one session; two advisor passes before commit each found a further round of errors, the same
@@ -3721,3 +3826,55 @@ Matthew's/Mark's/John's prose → `crop.py` spot-checks → `make luke` with `gr
 *before* committing, and again after every round of fixes — this session needed two full advisor
 rounds, each catching a different class of error (miscounted figures and misplaced markers on the
 first pass; Synoptic misattribution on the second), so budget for both rather than stopping after one.
+
+## Session 2026-09-24 (Luke batch 10 — `arrest`, 3 icons, 18 markers)
+
+**Did.** Wrote readings and markers for all three `arrest` (22:47-53) icons — Prodosia Dionysiou,
+Judas's Kiss (Monreale) and Kiss of Judas (St Nicholas Orphanos), the betrayal and the arrest — 18
+markers, one commit. Five advisor passes ran before committing; nothing shipped with any round
+still open. See the "For the owner" note above the Luke section for the full, flat list of what was
+wrong and how it was fixed.
+
+**Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; `arrest` was named next in
+Gospel order at the end of Luke batch 9.
+
+**Verified.** `python3 src/tools/grid.py` and repeated `crop.py` crops on all three keys across every
+round, including crops that traced the Monreale collar-gripping hand to the left side of the crowd
+(not past Judas's own shoulder as first drafted) and a tight crop of the pointed-cap figure that
+found an open, raised hand nearby without settling whose it is. `BOOK=luke node src/tools/quotes.js`:
+caught a leftover wrong-subject KJV misquote and a false Father-quote flag from a colon after "Bede"
+that read as a direct-quote opener to the checker; both fixed, clean after. `BOOK=luke node
+src/assemble.js` and `BOOK=luke python3 src/tools/overlay.py` on all three keys after every round: no
+clamp warnings at any point, and every marker was on the right figure or detail throughout — every
+fix in this batch was to wording, never to position. A 5-gram overlap script against Matthew's and
+Mark's readings and markers for all three shared files, run after every round: caught heavy reuse in
+the first draft (an entire provenance sentence near-verbatim from Matthew's own Nicolas Orphanos
+reading, several sentences built on Mark's own word order), and then caught a further round of
+reused phrasing each time the fix for a flagged phrase introduced a new one without a fresh crop —
+the trap earlier Luke batches already named, hit three times in this one batch. The overlap left
+standing on purpose in the final pass is a citation: Matthew's own reader is quoted directly, in
+quotation marks, for "a pole in his raised hand" and "no cuirass on him and no armour anywhere in the
+panel," describing what looks to be the same Monreale figure. The rest of the final pass is clean
+apart from the verbatim KJV clauses as against a thief, with swords and staves and I was daily with
+you in the temple, both shared word-for-word across all three Synoptics, and the church's own proper
+name, St Nicholas Orphanos. Four Playwright passes through `Luke Reader.html`, served locally,
+confirmed the drawer, the three-icon thumbnail strip and the credit lines switch correctly for all
+three icons and work without console errors; the final wording was checked in the source files and
+by `make check`, not read live after the last round of fixes. `make luke`: 11.11 MB, 69 images, no
+clamp warnings. `make check`: green, 54/69 icon readings, 69 unique images, 34 icon-bearing
+passages, no change in passage or icon counts, 312 markers in the reader overall — both counts taken
+from a script over `hotspots.js` and `hotspots3.js`, not by hand.
+
+**Not done.** 15 of Luke's 69 icons still have no reading and no markers, across 7 passages, every
+one of them the rest of the Passion sequence, `denial` (22:54-62) through `peace` (24:36-43).
+`nain` (7:11-17) still has no file wired at all — unchanged this session, a harvest task, not a
+reading task.
+
+**Next.** `denial` (2 icons, already wired in `picks.js`), same loop: grid/crop → write
+`hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` → 5-gram check against
+Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i clamp` → advisor *before*
+committing, and again after every round of fixes. This session's lesson for next time: when a
+Catena comment answers a real exegetical difficulty (here, Bede on whether the chief priests came
+in person), read the whole comment before building a reading's theology on the first sentence of it
+— the 400-character dump this session first pulled cut Bede off before his own answer, and the
+draft asserted the opposite of what he says.
