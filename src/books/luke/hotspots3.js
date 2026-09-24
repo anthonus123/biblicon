@@ -448,4 +448,32 @@ module.exports={
  ["Two faces, and two open hands", "A pair of apostles at the front, each with an open, empty hand raised toward the other. Whatever the gesture, it is not where Luke's own account of this table ends — Simon is still warned by name, and two swords produced, before anyone leaves it.", "65%", "29%"],
 ],
 
+"File:Gethsemane Dionysiou.jpg":[
+ ["The inscription", "Η ΠΡΟΣΕΥΧΗ ΤΟΥ ΧΥ, the Prayer of Christ, lettered across the dark sky above the ridge, with the same monogram ΙΣ ΧΣ repeated beside every figure of the one Lord.", "9%", "25%"],
+ ["The angel", "A small winged, haloed shape hangs in the dark near the title's own lettering, hard to pick out against the black ground: there appeared an angel unto him from heaven, strengthening him — Luke's verse alone among the four Gospels.", "9%", "42%"],
+ ["The first prayer", "Kneeling at the left with both hands spread flat on the stone. Luke gives this whole prayer as one continuous act, not three: he was withdrawn from them about a stone’s cast, and kneeled down, and prayed.", "20%", "15%"],
+ ["Grief deepening", "The second figure holds himself upright, a hand pressed to his own face. What follows is the same prayer, not a second one, growing more urgent: being in an agony he prayed more earnestly: and his sweat was as it were great drops of blood falling down to the ground — Luke's own verse, and no other Gospel's.", "20%", "32%"],
+ ["Christ returning", "He stands once more, further along the ridge, turned back toward the sleepers with one arm reached out over them. And when he rose up from prayer, and was come to his disciples, he found them sleeping for sorrow.", "24%", "82%"],
+ ["The one still awake", "Of the sleeping company one sits upright, in orange, both hands raised open toward the Lord. What Christ says here he says to the whole company together — not to one man turned to and named, as Peter is in Matthew's telling and Simon in Mark's: Why sleep ye? rise and pray, lest ye enter into temptation.", "45%", "67%"],
+ ["The sleeping company", "The rest lie heaped past the black arch below the ridge, given over to a reason for sleep that is Luke's own: not Matthew's and Mark's their eyes were heavy, but he found them sleeping for sorrow.", "72%", "80%"],
+],
+
+"File:Cathedral (Monreale) - Right wing transept - Agony in the Garden.jpg":[
+ ["The angel", "A great winged figure enters from the gold at the left, wings spread, one hand reaching down to the kneeling Christ — the plainest painting of Luke's own angel this reader shows anywhere: there appeared an angel unto him from heaven, strengthening him.", "12%", "48%"],
+ ["Christ at prayer", "Partway up the slope, his hands raised together toward the angel. Father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done.", "20%", "65%"],
+ ["The Latin titulus", "Cut into the gold near the top edge and badly damaged; what can still be read of it answers to the warning Matthew and Mark both give at this point — watch and pray, in Matthew's own words. Luke drops watch and keeps pray, saying it twice: before the prayer and after it.", "9%", "78%"],
+ ["The sleeping company", "Packed across the whole lower half of the slope, slumped against one another under their mantles.", "60%", "35%"],
+ ["Christ returning", "Further along the scene he appears once more, a scroll kept in one hand, the other reaching out toward the sleepers. And when he rose up from prayer, and was come to his disciples, he found them sleeping for sorrow.", "55%", "90%"],
+ ["One still awake", "An old man with a pale beard cut close sits upright among the sleepers, one hand raised to his own chest, his face turned to meet the returning Christ. Luke's own word to the company here names no one: Why sleep ye? rise and pray, lest ye enter into temptation — not one man turned to and named, as Peter is in Matthew's telling of this return and Simon in Mark's.", "50%", "63%"],
+],
+
+"File:The Lord's prayer in Gethsemane - Stavronikita monastery, Mt Athos - Theophanes of Crete, 16th c..jpg":[
+ ["Bowed to the stone", "In the first pose Christ's head is bent so low that only the rim of the halo shows, his face lost against the rock.", "27%", "25%"],
+ ["Upright at the ridge", "The second figure stands straight, halo turned full toward the viewer, at the crown of the rock.", "16%", "47%"],
+ ["No angel", "The plaster above the four figures is badly damaged, and nothing legible in it answers to there appeared an angel unto him from heaven, strengthening him — a detail Luke alone gives, and the one icon of the three in this reader where it cannot be made out.", "9%", "60%"],
+ ["Face lifted", "Kneeling at the far side with his head thrown back. Luke gives this whole prayer as one continuous act: he was withdrawn from them about a stone’s cast, and kneeled down, and prayed — and it only grows more intense from there, being in an agony he prayed more earnestly, not another departure.", "30%", "80%"],
+ ["Christ returning", "Lower on the rock, on his feet again, one arm reaching down toward the men below.", "48%", "47%"],
+ ["The sleeping company", "Every way a body can give way to sleep: one hidden entirely inside a red cloak but for his face, another lying full length in a plain green robe, a third sitting upright in yellow with a hand still raised. Luke's own reason for their sleep is not Matthew's and Mark's their eyes were heavy, but he found them sleeping for sorrow. And what Christ says to them is addressed to the whole company: Why sleep ye? rise and pray, lest ye enter into temptation.", "72%", "50%"],
+],
+
 };
