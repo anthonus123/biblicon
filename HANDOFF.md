@@ -132,11 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **54 of the 69 now have a prose reading and positioned markers, 312 markers in all**, across
-    27 of the 34 icon-bearing passages, in ten batches from 2026-09-21 to 2026-09-24 (see
-    `## Next` for the batch-by-batch list). The other **15 icons, across 7 passages, are the work
-    in progress**, in batches of six to eight, the loop Mark uses — all seven of them are the rest
-    of the Passion sequence, `denial` through `peace` (22:54 to 24:43).
+  - **58 of the 69 now have a prose reading and positioned markers, 337 markers in all**, across
+    29 of the 34 icon-bearing passages, in twelve batches from 2026-09-21 to 2026-09-24 (see
+    `## Next` for the batch-by-batch list). The other **11 icons, across 5 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — all five of them are the rest
+    of the Passion sequence, `pilate` through `peace` (23:1 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -183,14 +183,118 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 13 of 69 icons still want
-a reading and markers, across 6 passages — counts taken from a script over `icons.json`, not by
-eye. Batch 11 (2026-09-24b) did `denial` (22:54-62, 2 icons, 13 markers), the third of the Passion
-sequence — Peter's denial. What is left is every icon from `council` through `peace` (22:63 to
-24:43): `council` (2), `pilate` (2), `crucifixion` (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
+**Active work — the Luke readings.** See the Luke section further down: 11 of 69 icons still want
+a reading and markers, across 5 passages — counts taken from a script over `icons.json`, not by
+eye. Batch 12 (2026-09-24c) did `council` (22:63-71, 2 icons, 12 markers), the fourth of the
+Passion sequence — Christ mocked and before the council. What is left is every icon from `pilate`
+through `peace` (23:1 to 24:43): `pilate` (2), `crucifixion` (4), `burial` (3), `myrrhbearers` (1),
+`peace` (1).
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 12 (2026-09-24c — `council`, 2 icons).** Drafted in one session;
+three advisor passes ran before commit. The first caught a wide round of errors, mostly visual
+claims introduced while rewording the draft away from Mark's own phrasing of the same two files —
+the trap named in every batch since 8, hit here in a new form: the fix for phrase-overlap is what
+broke the visual accuracy, not the first draft. The second pass, after those fixes, caught a
+further round of the same shape plus a chronology error and a set of overclaimed HANDOFF notes.
+The third pass caught one more visual claim flipped the wrong way while fixing the second round,
+plus two lines still open to an argument-from-silence or a theological overreach.
+- **Both icons paint Matthew's and Mark's night session, not Luke's own morning council** — the
+  torn garment, the false witnesses being written down, the crowd disputing testimony are all
+  absent from Luke's own nine verses, which call no witnesses, Christ's own answer being witness
+  enough on its own: What need we any further witness? for we ourselves have heard of his own
+  mouth. Both readings now lead with that mismatch rather than describing the frescoes as if they
+  were Luke's own scene.
+- **The rewrite that cleared the n-gram check put the rending gesture on the wrong judge.** The
+  bald judge who tears his tunic sits farther from the prisoner, not nearer, as the marker
+  coordinates themselves already showed (19% against 31%, with Christ at 71%); the first draft had
+  the labels backwards. Fixed by rereading a fresh wide crop rather than trusting the paraphrase.
+- **The "scribe" at the Dionysiou lectern was drafted kneeling; he stands**, the foremost of the
+  same row of men beside Christ, a stylus in one hand and the other on the page — not a separate,
+  differently-posed clerk, which the first draft implied by giving him his own sentence apart from
+  "the crowd."
+- **Christ's own face at Dionysiou went through two drafts before it was checked closely enough.**
+  The first draft carried over Mark's reader's "turned away from the judges" without its own crop;
+  a round-two rewrite, also uncropped, flipped it to "turned toward" the two elders. A tight head
+  crop (25–42% top, 60–78% left) finally settled it — the hair mass and the hanging curled lock
+  sit on the viewer's left of the face, the eye and beard to the right, the geometry of a head
+  turned toward its own right, away from the bench — so Mark's reader had it right from the start,
+  and the reading now says so in its own words rather than copying that reader's phrase.
+- **Gračanica's fresco was drafted as two enthroned judges; only one sits.** The other stands
+  beside the throne. Both faces are lost to worn green underpaint, not bare plaster or bare ground
+  as two successive drafts had it — Mark's own reader's "torn strips" on the seated judge's robe
+  could not be confirmed at this photograph's resolution either way; worth a look if a better copy
+  of the file ever turns up.
+- **The Gračanica soldier and crowd were still undescribed from any crop after the first fix
+  round** — "overlapping scale mail" and "some reaching toward the throne, others turning away"
+  were both carried over from the first draft's own guesses. Fresh crops show a scaled collar and
+  a hilt at his side over a rose, cross-patterned tunic, and one hand reaching from each side of the
+  crowd to meet in the gap between the two groups, not a throne-directed split. Both reworded to
+  what the crops actually show.
+- **"The largest single share of speech Christ has anywhere across the four Gospels' account of
+  this night" overclaimed twice over** — John 18:20-23 gives him more, and Luke's own exchange
+  falls in the morning session, not the night one his own passage opens in. Rewritten to "more
+  than Matthew or Mark allow him at this point in their own accounts."
+- **"Painted lower on this wall for a reason proper to Mark alone" was simply wrong** — Matthew
+  tells the mocking after the night's verdict too, and the reading's own Augustine quote two
+  sentences later already says so ("Matthew and Mark first mention those, then Peter's
+  temptation"). The second advisor pass then caught that the replacement wording ("Peter's denial
+  closes before the men that held Jesus so much as mock him") turned Luke's own order *of telling*
+  into a claim about the night's actual chronology, which Augustine's own comment — quoted two
+  sentences later — explicitly does not make. Both now say plainly that Luke tells the denial
+  first and the mocking after, an order of telling, per Augustine, not an order of events asserted
+  over Matthew's and Mark's.
+- **A four-Gospel diff over Mark 14:65 caught a false "Luke alone" on the blindfold** — Mark's own
+  "to cover his face" is the same detail in different words, so neither reading claims the
+  blindfold for Luke uniquely; both now simply note that neither fresco paints it, without saying
+  why.
+- **Cyril of Alexandria's own comment on the throne verse was used backwards, twice.** The first
+  fix already had him denying a literal judgment-seat for Christ while arguing the Son's equal
+  honor by nature; the draft nonetheless built a contrast that had the fresco's own two enthroned
+  judges standing in for what his comment supposedly rules out — but the Church paints Christ
+  enthroned constantly (Matthew's own reading of this very file already says so, calling the
+  standing Christ here "deliberately reversed from the icons of Christ enthroned"), so denying him
+  a throne on Cyril's authority was theologically backwards for an Orthodox reader. The whole
+  contrast is cut; Cyril's own comment still shows in the passage's Wisdom of the Fathers tab
+  (`icons.json`'s own `fathers` field), so nothing patristic is lost, and the reading now says only
+  the plain fact: the one throne on the wall belongs to the judges, and the seat Luke's own Christ
+  speaks of a few verses later is not on it anywhere.
+- **`overrides.js`'s `council` entry used keyVerse 64 (the blindfolding) and called it "what the
+  mocking frescoes paint," which stopped being true once this batch's own readings established
+  that neither fresco shows it — and the verse itself failed the header's own "only Luke says"
+  rule anyway, since Mark 14:65 has the same act in other words.** Moved to keyVerse 68, which is
+  Luke's alone and unpainted by either icon; the card's own key-verse quote changed as a result.
+  The entry's own comment was also corrected on the second pass: v68 is part of Christ's answer to
+  the council's *first* question, not "this whole second exchange."
+- A fresh 5-gram overlap script (rewritten this session; none of the earlier ones survive between
+  sessions, see the new Gotcha) against Matthew's and Mark's own readings of both shared files
+  caught extensive reuse on the first draft — whole clauses lifted from Mark's descriptions of the
+  same two frescoes ("two judges sit side by side," "the nearer, bald and white-bearded," "between
+  the judges and the prisoner a scribe," "his feet on a red cushion," and Mark's entire opening
+  sentence for the Gračanica file among them). Every flagged phrase was reworded, which is what
+  introduced the visual errors both advisor passes then caught; the final overlap pass came back
+  clean apart from the sanctioned exceptions — the inscription translated the same way twice, and
+  KJV clauses shared word for word (`but their witness agreed not together`, `the high priest rent
+  his clothes`, both cited as Matthew's and Mark's own wording, not Luke's).
+- `BOOK=luke node src/tools/quotes.js`: clean, ordinary run-on false positives only. The two Father
+  quotations that survived to commit (Bede, Augustine — Cyril was cut) don't use the `Name:`
+  format the script's Father pass keys on, so both were checked by hand against the 22:63-71
+  Catena block instead, and verbatim. `BOOK=luke python3 src/tools/overlay.py` on both keys, after
+  every round of fixes: every marker lands on the right figure or detail in the final pass, and no
+  clamp warning printed from `overlay.py` itself, which draws already-clamped coordinates and
+  cannot show a clamp on its own — the two actual clamp warnings (a title marker at 3% and a
+  soldier marker at 93%, both against this file's 9%-92% band) came from `make check`'s own
+  `assemble.js` pass, and were fixed by nudging both to 9% and 92%; `make luke` prints none for
+  either council file on the final build (it still prints four unrelated pre-existing warnings
+  from batch 10's `arrest` markers, unchanged by this session — see that batch's own note, which
+  made the same unqualified "no clamp warnings" claim). Playwright, served locally: the drawer, the
+  two-icon thumbnail strip, the updated key-verse card and all three tabs were checked by screenshot
+  across two passes (before and after the second round of fixes), and
+  `browser_console_messages(level: "error", all: true)` came back at zero for the whole session.
+  `make check`: green, 58/69 icon readings, 69 unique images, 34 icon-bearing passages, 337 markers
+  in the reader overall, all counts from a script over `icons.json` rather than by hand.
 
 **For the owner, from Luke batch 11 (2026-09-24b — `denial`, 2 icons).** Drafted in one session;
 two advisor passes ran before commit, each catching a different class of error; nothing shipped
@@ -1191,6 +1295,14 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
 
 ## Gotchas (learned)
 
+- **The 5-gram overlap script every Luke batch since 6 has run is not saved anywhere in `src/tools/`
+  — each session writes it fresh into its own scratchpad.** It is short (norm, tokenize into
+  5-word windows, build a set from Matthew's and Mark's `hotspots*.js` for the shared file, diff
+  against the new Luke text) but rewriting it from a description rather than from a working copy
+  risks a silent bug — batch 12 (2026-09-24c) first ran a version that didn't print which book a
+  match came from, and every hit looked like it was Luke matching itself until the label was
+  fixed. If this check is ever going to be trusted without rereading its own source each time, it
+  belongs in `src/tools/` as a real script, `BOOK`-aware like the others; nobody has done that yet.
 - **Some Dionysiou photographs have a solid black rectangle low in the frame — a hole in the
   photograph, not paint.** Seen so far in `Etesatou Ioseph Somatou Christou` (~90% top, 40% left),
   `Apokalthelosis Dionysiou` (~88%, 66%) and `Ide Topos pou Ekato Dionysiou` (~88%, 13%);
@@ -3973,3 +4085,68 @@ committing, and again after every round of fixes. This session's lesson for next
 has more than one denial or more than one challenger, work out on paper which verse's words go with
 which figure *before* drafting — both this batch's blocking errors were mismatches between a quoted
 line and the figure it was attached to, not a misreading of any single verse in isolation.
+
+## Session 2026-09-24c (Luke batch 12 — `council`, 2 icons, 12 markers)
+
+**Did.** Wrote the reading and markers for Luke 22:63–71 ("Mocked, and Before the Council"), the
+fourth batch of the Passion sequence — the two Dionysiou/Gračanica frescoes already shared with
+Matthew's and Mark's readers (`Krinomenos Christou Dionysiou.jpg`, `Christ before Caiaphas,
+GRACANICA 1 090A7764.jpg`). Fixed `overrides.js`'s `council` entry: `keyVerse` moved from 64 (the
+blindfolding, which Mark 14:65 also has in other words) to 68, Luke's own unshared material, and
+its stale comment ("the blindfolding, which is what the mocking frescoes paint") corrected — this
+batch's own readings establish that neither fresco paints the blindfolding at all.
+
+**Why.** Continuing the Luke reading loop from batch 11; `council` was next in Gospel order.
+
+**Verified.** A four-Gospel diff pulled fresh from each book's own `kjv.json` (Matt 26:57–68,
+27:1; Mark 14:53–65, 15:1; John 18:13–24; Luke 22:63–71) before drafting, specifically to check
+every "Luke alone" claim against the other three texts rather than from memory — this caught that
+Mark 14:65 already has the blindfold in other words ("to cover his face"), so the draft never
+claims it for Luke uniquely. The Catena block for 22:63–71 was read end to end and each Father
+quotation checked by hand against it since none uses the `Name:` format `quotes.js`'s Father pass
+keys on. `BOOK=luke node src/tools/quotes.js`: clean, ordinary run-on false positives only
+throughout. A 5-gram overlap script (rewritten fresh this session — see the new Gotcha) against
+Matthew's and Mark's own readings of both shared files caught heavy reuse on the first draft
+(whole clauses lifted from Mark's own descriptions, including its entire opening sentence for the
+Gračanica file); rewording to clear it introduced a run of visual errors that took **three**
+advisor passes to catch in full — the first round found the wrong judge assigned the rending
+gesture, a standing figure drafted as kneeling, two enthroned judges at Gračanica where only one
+sits, an overclaimed "largest share of Christ's speech in the four Gospels," a "for a reason
+proper to Mark alone" contradicted two sentences later by the reading's own Augustine quote, and
+Cyril of Alexandria's own comment on the throne verse used backwards; the second round, after
+those fixes, caught that the replacement wording for the Mark-alone error had quietly turned
+Luke's own order *of telling* the denial and the mocking into a claim about which happened first
+on the actual night — contradicted by the very Augustine quote sitting two sentences later — plus
+two Gračanica visual claims (the soldier's armor, the crowd's gesture) that had never actually
+been cropped, and a second, theologically backwards use of the same Cyril comment, cut from the
+reading entirely rather than repaired a third time (his own words still surface in the passage's
+Wisdom of the Fathers tab regardless); the third round caught that the round-two fix for Christ's
+own face at Dionysiou had flipped it the wrong way — a tight head crop settled it, and Mark's
+reader's own original phrasing turns out to have been right all along — plus a leftover argument
+from silence ("the council… gathers only the elders") and a line about Christ's own promised
+throne ("only in words") that read as diminishing it, both reworded. All fixed and reverified
+against fresh crops, a further 5-gram pass, `overlay.py` on both keys, `make luke`, `make check`,
+two rounds of Playwright screenshots over the served reader confirming the drawer, the thumbnail
+strip, the updated key-verse card and all three tabs, and
+`browser_console_messages(level: "error", all: true)` at zero for the session. The two
+`assemble.js` clamp warnings this batch produced (a title marker at 3%, a soldier marker at 93%,
+against this file's 9%–92% band) were fixed by nudging both to 9% and 92%; `overlay.py` itself
+never reports a clamp, since it only draws coordinates `icons.json` has already clamped — a
+distinction blurred in earlier batches' own notes, including batch 10's, which claimed "no clamp
+warnings" for a build that in fact printed four, still present and unrelated to this session.
+`make luke`: 11.13 MB, 69 images, no clamp warnings from either council file. `make check`: green,
+58/69 icon readings, 69 unique images, 34 icon-bearing passages, 337 markers overall — all counts
+from a script over `icons.json`, not by hand.
+
+**Not done.** 11 of Luke's 69 icons still have no reading and no markers, across 5 passages, every
+one the rest of the Passion sequence, `pilate` (23:1–5) through `peace` (24:36–43). `nain`
+(7:11-17) still has no file wired at all — unchanged this session, a harvest task, not a reading
+task.
+
+**Next.** `pilate` (2 icons, already wired in `picks.js`), same loop: grid/crop → write
+`hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` → 5-gram check against
+Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i clamp` → advisor
+*before* committing, and again after every round of fixes. This session's lesson for next time:
+when a rewrite is driven by an n-gram check rather than a fresh look at the picture, re-crop every
+visual clause it touches before shipping — the phrase-overlap fix is exactly where this batch's
+new errors got in, the same shape batches 8–11 already recorded for other causes.

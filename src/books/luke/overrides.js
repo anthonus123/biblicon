@@ -92,8 +92,9 @@ module.exports={
  arrest:{type:'Event',keyVerse:48},
  // Luke alone has the Lord turn and look upon Peter.
  denial:{type:'Event',keyVerse:61},
- // The blindfolding, which is what the mocking frescoes paint.
- council:{type:'Event',keyVerse:64},
+ // Luke alone gives Christ this clause of his answer to the council's first question;
+ // neither icon paints it, but it is part of the largest block of his own words in either scene.
+ council:{type:'Event',keyVerse:68},
 
  // ---- chapter 23 ----
  pilate:{type:'Event',keyVerse:4},

@@ -522,4 +522,22 @@ module.exports={
  ["What is not here", "Nothing but bare tesserae fill the ground between the two figures. No fire, though Luke's own text gives the first denial beside one; no second or third challenger, unnamed men in Luke's own account; and no look — And the Lord turned, and looked upon Peter is Luke's alone among the four Gospels, and nothing in this panel can carry it.", "72%", "45%"],
 ],
 
+"File:Krinomenos Christou Dionysiou.jpg":[
+ ["The inscription", "Christ judged by Annas and Caiaphas — the fresco's own title names both men, and both are strangers to this passage; Luke never names the high priest anywhere in it.", "9%", "45%"],
+ ["The farther judge", "He grips his own collar in both fists and pulls the cloth wide at the chest. Rending the garment is Matthew's and Mark's moment for the high priest, not Luke's; his own nine verses have no such gesture in them anywhere.", "57%", "19%"],
+ ["The nearer judge", "One open hand lifted before his own chest. Luke's high priest never speaks a line of his own in this passage; both questions put to Christ come from the assembly together, not from either man on this bench.", "50%", "31%"],
+ ["The writing-stand", "A reed pen, an inkhorn, a page already filled. Luke alone of the three Synoptics calls no witnesses in this passage — nothing here for a scribe of his own to set down.", "58%", "55%"],
+ ["The prisoner's own hands", "Reached out toward the writing-stand, his own profile turned away from the two elders — where Luke's own Christ is given more to say than either Matthew or Mark allow him at this point in their own accounts.", "52%", "71%"],
+ ["Those beside him", "A press of unhaloed heads at his shoulder: the elders of the people and the chief priests and the scribes, in Luke's own phrase, though the painting gives them no separate word, where Luke has them put their question twice over.", "35%", "52%"],
+ ["The guard", "Crested and armoured, set right at the picture's own border. Luke's own text names no soldier among the elders of the people and the chief priests and the scribes who came together, as soon as it was day.", "40%", "92%"],
+],
+
+"File:Christ before Caiaphas, GRACANICA 1 090A7764.jpg":[
+ ["The enthroned judge", "A tall, domed cap on his head; he is the one of the pair who sits, nothing of his own face surviving in the worn green underpaint below it; a cushion of red lies under his feet. Luke names him nowhere in these nine verses; Christ before Caiaphas is a cataloguer's own title, not a word legible on this wall.", "53%", "26%"],
+ ["Arms going two ways", "One hand from each side reaches to meet in the gap between the two groups — close to a pair of clauses Mark repeats almost word for word, that the witnesses could not be made to agree, testimony belonging to Matthew's and Mark's night session, not to Luke's, whose own council calls no witness beyond Christ's own answer.", "43%", "52%"],
+ ["The prisoner and his guard", "He advances with a halo over him and his head bowed a little; a soldier beside him wears a scaled collar and carries a hilt at his side. In this passage, Luke's own word for the men who hold him goes no further than the men that held Jesus.", "47%", "69%"],
+ ["The scene below", "Sliced away at the very foot of the photograph, the top edge of the denial, painted lower on this same wall. Mark's reader already reads the stacking as trial above, denial below — Matthew and Mark both tell the trial before the denial closes; Luke tells the denial first and the mocking after, an order of telling, as Augustine says in the Catena on this same passage.", "92%", "13%"],
+ ["No blindfold here", "No blindfold appears anywhere on this wall, though Luke opens his own passage with it: And when they had blindfolded him, they struck him on the face. Both walls in this reader paint the scene Matthew and Mark set beside it instead.", "35%", "70%"],
+],
+
 };
