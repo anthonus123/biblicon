@@ -175,7 +175,7 @@ and this file did not.
 **Mark's readings are finished — 78 of 78, 513 markers, twelve batches.** Batch 12 (2026-09-22d)
 did 16:9-18: the three appearances to Mary Magdalene (`magdalene`) and the Dionysiou `Christos
 Apostolois` (`commission`, tier b), 38 markers. **The active work is now the Luke reader**, whose
-56 remaining icons are described below; it uses the same loop, set out here because every Mark
+remaining icons are described below; it uses the same loop, set out here because every Mark
 batch was run from it.
 
 **16:9-20 is the longer ending**, and it was handled as the Church reads it: the Mark Catena
@@ -183,15 +183,64 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 15 of 69 icons still want
-a reading and markers, across 7 passages — verified against `picks.js` by script, not by eye, this
-session. Batch 10 (2026-09-24) did `arrest` (22:47-53, 3 icons, 18 markers), the second of the
-Passion sequence — the betrayal and the arrest. What is left is every icon from `denial` through
-`peace` (22:54 to 24:43): `denial` (2), `council` (2), `pilate` (2), `crucifixion`
-(4), `burial` (3), `myrrhbearers` (1), `peace` (1).
+**Active work — the Luke readings.** See the Luke section further down: 13 of 69 icons still want
+a reading and markers, across 6 passages — counts taken from a script over `icons.json`, not by
+eye. Batch 11 (2026-09-24b) did `denial` (22:54-62, 2 icons, 13 markers), the third of the Passion
+sequence — Peter's denial. What is left is every icon from `council` through `peace` (22:63 to
+24:43): `council` (2), `pilate` (2), `crucifixion` (4), `burial` (3), `myrrhbearers` (1), `peace` (1).
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 11 (2026-09-24b — `denial`, 2 icons).** Drafted in one session;
+two advisor passes ran before commit, each catching a different class of error; nothing shipped
+with either round still open.
+- **The first draft answered the wrong challenger with the wrong word, on both icons.** Luke's
+  Peter answers his first denial *Woman* (22:57) and his second and third *Man* (22:58, 60) — the
+  draft had it backwards on the Dionysiou fresco, putting *Woman* in his mouth toward the armed men
+  at the fire (who include no woman) and *Man* toward the woman pointing at the door. Fixed by
+  reassigning the fire group to Luke's later two, unnamed exchanges and the woman at the door to
+  Luke's own *certain maid* — though her exchange is Luke's own first denial, which his text sets
+  at the fire, not at any door; the fresco paints her at a door regardless, and both readings say so.
+- **"Peter never leaves the fire until his third refusal" and "sits still through all of them" were
+  arguments from silence, and the Catena block printed in this same session already contradicts
+  them.** Augustine's own harmony has Peter go out and come back between the first denial and the
+  second — *that, as John says, he might again deny standing by the fire* — citing Mark for the
+  going and John for the return. Both readings now say Luke's own text narrates no such leaving,
+  and credit the leaving-and-return to the Church's harmonizers reading Luke beside Mark and John,
+  not to Luke himself.
+- **An Ambrose quote silently dropped a clause with a semicolon**, and a nearby paraphrase swapped
+  *our Lord* for *the Lord* — the first and second time he denied and wept not, for as yet **our**
+  Lord had not looked upon him. Both restored to the Catena's own wording in full, in the reading
+  and the "Peter weeping" marker alike.
+- **"Chrysostom reads Peter's grief as the look's consequence, not the bird's" invented a contrast
+  Chrysostom never makes** — Bede, in the same Catena block, gives the cock-crow its own real part
+  (*Peter... repented at cock-crow*). "Not the bird's" is deleted from both readings.
+- **The cock was drafted as "a small dark bird" on a "whitewashed roof," neither checked against a
+  crop.** `crop.py` on 0–12%/78–100% shows a red-combed, ochre-and-white bird, beak open, on a
+  plain pale block — corrected in the reading and the "The cock" marker, and the earlier crop
+  (3–22%) had clipped its head, which is why the second crop widened the top edge to 0%.
+- **"None of the other three Evangelists' challengers speak in the third person" overclaimed** —
+  true only of each Gospel's *first* challenger; Matthew's and Mark's own second challengers speak
+  of Peter to bystanders, not to his face, exactly as Augustine notes in this same Catena block.
+  The Ravenna "Her pointing hand" marker now says "first challengers."
+- A 5-gram overlap script against Matthew's, Mark's and John's readings for both shared files, run
+  after every round, caught reused descriptive phrasing three separate times as fixes for other
+  findings were drafted (a lifted "beardless youth in blue," a lifted "fire of crossed sticks on the
+  bare ground," a lifted "he calls her the damsel that kept the door") — the same trap named in
+  batch 10, hit again in this one. The final pass is clean apart from the sanctioned exceptions:
+  the Greek inscription translated the same way twice, and KJV clauses — *went out and wept
+  bitterly*, *I know not what thou sayest*, *began to curse and to swear* (this last quoted from
+  Matthew's and Mark's own text on purpose, for contrast, not reused silently) — shared word for
+  word across the Synoptics.
+- `BOOK=luke node src/tools/quotes.js` after every round: clean. `BOOK=luke node src/assemble.js`
+  and `BOOK=luke python3 src/tools/overlay.py` on both keys: no clamp warnings, both icons' markers
+  land on the right figure or detail throughout — every fix in this batch was to wording, never to
+  position. Four Playwright passes over `Luke Reader.html`, served locally, confirmed the drawer,
+  the two-icon thumbnail strip and both tabs switch correctly and read as fixed, with no console
+  errors. `make luke`: 11.12 MB, 69 images, no clamp warnings. `make check`: green, 56/69 icon
+  readings, 69 unique images, 34 icon-bearing passages, 325 markers in the reader overall — all
+  counts from a script over `icons.json`, not by hand.
 
 **For the owner, from Luke batch 10 (2026-09-24 — `arrest`, 3 icons).** Drafted in one session;
 five advisor passes ran before commit. Nothing shipped with any round still open, and nothing
@@ -3878,3 +3927,49 @@ Catena comment answers a real exegetical difficulty (here, Bede on whether the c
 in person), read the whole comment before building a reading's theology on the first sentence of it
 — the 400-character dump this session first pulled cut Bede off before his own answer, and the
 draft asserted the opposite of what he says.
+
+## Session 2026-09-24b (Luke batch 11 — `denial`, 2 icons, 13 markers)
+
+**Did.** Wrote readings and markers for both `denial` (22:54-62) icons — Alektor Petrou Dionysiou
+and the Ravenna mosaic, Peter's threefold denial and the Lord's look — 13 markers, one commit. Two
+advisor passes ran before committing; nothing shipped with either round still open. See the "For
+the owner" note above the Luke section for the full list of what was wrong and how it was fixed —
+briefly: a first draft answered the wrong challenger with the wrong word on both icons (Luke's
+Peter says *Woman* only to his first challenger, *Man* to the other two), and separately claimed
+Peter never left the fire before his third denial, which the Catena's own Augustine comment,
+printed in this same session, already contradicts.
+
+**Why.** Continuing the Luke reading loop the owner set up 2026-09-20d; `denial` was named next in
+Gospel order at the end of Luke batch 10.
+
+**Verified.** `python3 src/tools/crop.py` on both keys, including a re-crop of the cock at 0–12% top
+after a first crop at 3% turned out to clip its head. `BOOK=luke node src/tools/quotes.js` after
+every round: clean throughout, no misquotes or drift once the Ambrose splice (a dropped clause,
+*our Lord* silently written as *the Lord*) was restored to the Catena's own wording. `BOOK=luke node
+src/assemble.js` and `BOOK=luke python3 src/tools/overlay.py` on both keys after every round: no
+clamp warnings, and every marker sat on the right figure or detail throughout — every fix in this
+batch was to wording, never to position. A 5-gram overlap script against Matthew's, Mark's and
+John's readings and markers for both shared files, run after every round, caught reused descriptive
+phrasing three times as other findings were being fixed (a lifted "beardless youth in blue," a
+lifted "fire of crossed sticks on the bare ground," a lifted "he calls her the damsel that kept the
+door") — the same trap batch 10 named, hit again here. The final pass is clean apart from the
+translated Greek inscription and KJV clauses shared word-for-word across the Synoptics, plus one
+deliberate citation of Matthew's and Mark's own text for contrast (*began to curse and to swear*,
+which Luke's own third denial omits). Four Playwright passes through `Luke Reader.html`, served
+locally, confirmed the drawer, the two-icon thumbnail strip and both tabs switch correctly and read
+as fixed, with no console errors. `make luke`: 11.12 MB, 69 images, no clamp warnings. `make check`:
+green, 56/69 icon readings, 69 unique images, 34 icon-bearing passages, 325 markers in the reader
+overall — all counts from a script over `icons.json`, not by hand.
+
+**Not done.** 13 of Luke's 69 icons still have no reading and no markers, across 6 passages, every
+one of them the rest of the Passion sequence, `council` (22:63-71) through `peace` (24:36-43).
+`nain` (7:11-17) still has no file wired at all — unchanged this session, a harvest task, not a
+reading task.
+
+**Next.** `council` (2 icons, already wired in `picks.js`), same loop: grid/crop → write
+`hotspots2.js`/`hotspots3.js` → `quotes.js` → `assemble.js` + `overlay.py` → 5-gram check against
+Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i clamp` → advisor *before*
+committing, and again after every round of fixes. This session's lesson for next time: when a scene
+has more than one denial or more than one challenger, work out on paper which verse's words go with
+which figure *before* drafting — both this batch's blocking errors were mismatches between a quoted
+line and the figure it was attached to, not a misreading of any single verse in isolation.

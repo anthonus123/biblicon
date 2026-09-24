@@ -503,4 +503,23 @@ module.exports={
  ["Bare heads, no mail", "Every head pressed in under the raised spears and blades goes bare, with not one helmet or coat of mail anywhere on the wall, at least in what this photograph keeps of it — closer, on this reading, to a crowd of townsmen than to Roman soldiers, though the wall itself does not say who any of them are.", "22%", "52%"],
 ],
 
+"File:Alektor Petrou Dionysiou.jpg":[
+ ["The inscription", "Η ΑΡΝΗΣΙΣ ΤΟΥ ΠΕΤΡΟΥ, the denial of Peter, across the night sky. One field holds his whole night — as many turns as Luke gives him challenges, though the painter's arrangement of a fire, a door and a weeping figure is drawn from the four Gospels together, not a literal map of Luke's own three.", "10%", "33%"],
+ ["Peter at the fire", "Seated among armed men and an unbearded young man, one hand toward the fire. This group suits Luke's later two exchanges better than his first — another saw him, and said, Thou art also of them, and about the space of one hour after, another — since Peter answers both Man, not Woman.", "58%", "29%"],
+ ["The fire itself", "Sticks laid crosswise on the bare earth, alight. Luke's own text puts his first denial at this fire — a certain maid beheld him as he sat by the fire — though on this reading the painter gives that exchange to the woman at the door instead.", "82%", "16%"],
+ ["Peter at the door", "Peter reappears here, before the woman who points at him. On this reading she is Luke's own certain maid, though his own sentence keeps her challenge at the fire, not at any door; hers is the only one of the three he answers Woman, I know him not.", "40%", "41%"],
+ ["The maid", "A woman in red points straight at him: This man was also with him. She is the only one of Luke's three challengers he calls a maid; the other two are simply another.", "30%", "53%"],
+ ["Peter weeping", "Bent over a green column, his face hidden in his own crossed arms. What no figure here can show is the verse just before this one, And the Lord turned, and looked upon Peter — there is no Christ on this wall for the look to come from. Ambrose reads the tears as its evidence: the first and second time he denied and wept not, for as yet our Lord had not looked upon him. He denied the third time, Jesus looked upon him, and he wept bitterly.", "18%", "71%"],
+ ["The cock", "Red-combed, its plumage ochre and white, beak open, standing on a low pale block beside him. Immediately, while he yet spake, the cock crew — once, in Luke's own telling; Mark's own reader already notes that his Gospel alone makes it crow twice.", "13%", "87%"],
+],
+
+"File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 07.1 rinnegamento di pietro.jpg":[
+ ["The maid", "In a doorway, an olive-brown mantle over red, pointing at Peter. Luke's own first denial does not happen at a door at all: a certain maid beheld him as he sat by the fire, and earnestly looked upon him, and said, This man was also with him.", "45%", "26%"],
+ ["Her pointing hand", "Stretched toward Peter. Luke gives her words in the third person, said of him rather than to him — This man was also with him — where the other three Evangelists' first challengers all speak straight to his face.", "42%", "41%"],
+ ["Peter's raised hand", "His right hand lifted, turned toward her, refusing rather than greeting. Woman, I know him not — the one word Luke alone puts in his mouth at this first denial; none of the other three Evangelists give it.", "27%", "54%"],
+ ["Peter", "Grey-haired, in white, his free hand pressed flat to his chest. Luke's own text narrates no going out and returning before his third refusal closes the scene; the leaving and coming back the Church's harmonizers set between the first denial and the second comes from reading Luke beside Mark and John, not from Luke's own words.", "55%", "63%"],
+ ["The palace", "Behind him rises a roofed hall pierced by a row of arches. Peter followed afar off — Luke's own account of how he came to be here at all.", "24%", "80%"],
+ ["What is not here", "Nothing but bare tesserae fill the ground between the two figures. No fire, though Luke's own text gives the first denial beside one; no second or third challenger, unnamed men in Luke's own account; and no look — And the Lord turned, and looked upon Peter is Luke's alone among the four Gospels, and nothing in this panel can carry it.", "72%", "45%"],
+],
+
 };
