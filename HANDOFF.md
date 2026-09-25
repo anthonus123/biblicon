@@ -95,7 +95,8 @@ and this file did not.
     differs (see the Gotcha below). **All 78 have a prose reading and positioned markers, 513
     markers in all** — finished 2026-09-22d with batch 12 (16:9–18), every set checked by drawing
     it back onto the picture. **The Mark reader is content-complete**; what remains for it is the
-    scripture stories and a search for the **15** subjects `make check` still lists as wanting one.
+    rest of the scripture stories (8 of 38 done, see below) and a search for the **15** subjects
+    `make check` still lists as wanting one.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -106,9 +107,11 @@ and this file did not.
   - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
     1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
     Christ among the apostles at 16:14–18.
-  - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
-    *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
-    improvement, not a hole.
+  - **Scripture stories: 8 of 38 icon-bearing passages, started 2026-09-25i.** `app.js` falls back
+    to printing the passage's verses in the *Scripture Story* tab when `story` is empty, so the tab
+    is never blank for the 30 remaining; stories are an improvement, not a hole. Batch 1 —
+    `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`, `paralytic`, `levi`
+    (chapters 1–2). See `## Next` for the remaining 30, in order.
 - **Luke content, as of 2026-09-25h:**
   - **Scripture stories: 48 of 48 icon-bearing passages now have one — Luke's stories are finished.**
     Batch 4 (2026-09-25h) closed the reader: `samaritan`, `beelzebub`, `lostsheep`, `tenlepers`,
@@ -123,8 +126,8 @@ and this file did not.
     "held Jesus"). Both restored to "Jesus." A third, non-blocking fix: `burial`'s own keyVerse
     (23:51) had lost the KJV's parenthesis around "the same had not consented," turning "who" into
     a dangling modifier — restored. `make`, `make check` and a Playwright pass on `arrest`,
-    `burial` and `ascension` (console errors: zero) all ran clean before commit. **Mark still has
-    no scripture stories** — same gap, untouched.
+    `burial` and `ascension` (console errors: zero) all ran clean before commit. **Mark's own
+    scripture stories started 2026-09-25i** — see above.
   - **Superseded 2026-09-25g's count below** — three batches. Batch 1 —
     `prologue`, `zacharias`, `annunciation`, `visitation`, `forerunnerbirth`, `nativity`,
     `circumcision`, `meeting` (chapters 1–2 up to the Hypapante). Batch 2 — `forerunnerpreach`,
@@ -240,7 +243,7 @@ and this file did not.
     session) is **not** one of these — see the caveat below for why it stayed tier a.
   - `assign.js` named a subject with no icon for **39** passages at this date; **26** after the
     2026-09-25c harvest (see above).
-  - **No scripture stories yet**, same as Mark.
+  - **Scripture stories: done, 48 of 48** — see the current Luke block above.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
   tier. The owner's rule of 2026-08-20 (*no reuse; if there is no relevant icon, remove it
@@ -307,9 +310,13 @@ Luke, in order:
    in `arrest` and `council` — so also read every added "so"/"that"/"because" and every quoted
    speech's pronouns and proper names by eye), plus an advisor pass before commit (see the
    2026-09-25e through 2026-09-25h Session blocks for the error classes caught so far). **Mark
-   still has no scripture stories** — same gap, untouched; `app.js` falls back to the passage's own
-   verses in the tab, so nothing is blank, but Mark's 78 icon-bearing passages are the next
-   candidate if the owner wants to repeat this pass there.
+   scripture stories: started 2026-09-26, batch 1 done, 8 of 38.** Correction to this file's own
+   prior estimate: Mark's `overrides.js` declares all 104 anchors (unlike Luke's, which lists only
+   the 48 icon-bearing ones), so the earlier "78 icon-bearing passages" line here was wrong — 78 is
+   `make check`'s *icon* count (`showing 78 icons`), not the passage count; the real denominator is
+   `with an icon 38`, the same field Luke's 48 matched. Batch 1 covered chapters 1-2: `forerunner`,
+   `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`, `paralytic`, `levi`. 30 left,
+   chapters 3 onward — see the Session block below for the remaining key list in passage order.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5231,3 +5238,67 @@ parenthesis), zero console errors throughout.
 **Next.** Luke's scripture stories are done, 48/48. Mark has none yet — 78 icon-bearing passages,
 same convention, same tooling (`story_check.js` already reads `BOOK=mark`), same advisor-pass
 discipline. No icon search, no reading or marker work this session.
+
+## Session 2026-09-25i (Mark scripture stories, batch 1: chapters 1-2, 8 of 38)
+
+**Did.** Wrote the first 8 Mark scripture stories: `forerunner` (1:2-8), `baptism` (1:9-11),
+`temptation` (1:12-13), `kingdom` (1:14-15), `petersmother` (1:29-31), `leper` (1:40-45),
+`paralytic` (2:1-12) and `levi` (2:13-17), added as `story:` fields on their existing `overrides.js`
+declarations (every Mark anchor already has an entry there, unlike Luke's trimmed file — see
+below). Also added a `story` convention paragraph to `overrides.js`'s header comment, matching
+Matthew/Luke/John's own.
+
+**Why.** Closes the `## Next` item left after Luke's scripture stories finished (2026-09-25h): "same
+convention, same tooling" for Mark, the owner's standing "repeat the process" request.
+
+**Correcting a prior HANDOFF estimate.** The `## Next` line inherited from Luke's closeout said
+"Mark's 78 icon-bearing passages." That number was wrong. Luke's `overrides.js` lists only its 48
+icon-bearing passages (its own header says so: entries for the other 104 would be dead weight), so
+for Luke "keys in overrides.js," "with an icon" and "scripture stories" all agreed at 48 and the
+distinction never had to be made. Mark's `overrides.js` was written earlier and declares all 104
+anchors regardless of icon status, so the same shortcut silently picks the wrong number: `make
+check`'s own report reads `with an icon 38   showing 78 icons from 78 unique images` — 78 is icon
+*count* (several passages carry more than one icon, "galleries"), not passage count. The advisor
+caught this before any drafting started. **The real target is 38**, the same field Luke's 48
+matched (`with an icon`), confirmed by cross-checking `picks.js`'s 38 keys against `check.js`'s own
+assembled tiers (`a:33 b:5`). `assign.js` itself names 54 passages tier a/b — 16 more than actually
+have an icon — because it records what *should* have one, not what the pool actually supplied. Of
+those 16, 15 are tier a (no matching file found in the pool; these are the "15 subjects `make
+check` still lists as wanting one," elsewhere in this file) and one, `sending` (6:7-13, the sending
+out of the Twelve), is tier b in `assign.js` but was never given a `tierB` declaration in
+`overrides.js`, so it renders as a plain verse row despite `assign.js` calling it tier b — a small
+data inconsistency between the two files, flagged here for the owner rather than fixed, since
+fixing it means deciding what type icon Mark's `sending` should share (Matthew and Luke both have
+their own `sending` passages; whether one of their type icons applies to Mark's has not been
+checked). Fixed the `## Next` section above; this session block is the record of why.
+
+**Verified.** `BOOK=mark node src/tools/story_check.js forerunner baptism temptation kingdom
+petersmother leper paralytic levi` — clean on first pass; all 8 stories stay close to Mark's own
+verse order and wording (closer to transcription than retelling, the same shape Luke's `centurion`
+and `gadarene` batches used), so there was little room for invented vocabulary. Read every
+pronoun by eye against the printed verses: all 8 keep "he"/"Jesus" exactly where Mark's own text
+has each one, no swap introduced. `BOOK=mark node src/assemble.js` and `node src/check.js` both
+clean (`scripture stories 8`, no new warnings), a full `make` touched only `Mark Reader.html`.
+Playwright against `python3 -m http.server 8731`: opened the Cleansing of the Leper drawer,
+confirmed the Scripture Story tab shows the drafted prose, zero console messages of any level.
+An advisor pass ran before this batch (on the denominator question above) and again after the first
+draft was complete but before commit — the second pass, unlike the vocabulary diff, caught a real
+error the script cannot see: `paralytic`'s own 2:10 is itself a parenthetical aside ("(he saith to
+the sick of the palsy,)") marking that Jesus, still one sentence into answering the scribes ("that
+ye may know..."), turns mid-clause to address the paralytic instead ("I say unto thee, arise..."),
+dropped in the first draft — without it, "I say unto thee" reads as still spoken to the scribes,
+the same punctuation-loses-a-speech-boundary error Luke's `burial` 23:51 had. Restored the
+parenthesis and reran `story_check`, `assemble.js`, `check.js` and `BOOK=mark node src/build.js`,
+all clean.
+
+**Next.** 30 of Mark's 38 icon-bearing passages remain, in passage order: `witheredhand`, `twelve`
+(ch. 3); `sower`, `storm` (ch. 4); `gerasene`, `jairus` (ch. 5); `beheading`, `fivethousand`
+(ch. 6); `syrophoenician` (ch. 7); `fourthousand` (ch. 8); `transfiguration` (ch. 9); `entry`,
+`figtree`, `temple` (ch. 11); `coming` (ch. 13); `anointing`, `judas`, `supper`, `gethsemane`,
+`arrest`, `council`, `denial` (ch. 14); `pilate`, `barabbas`, `mocking`, `crucifixion`, `burial`
+(ch. 15); `myrrhbearers`, `magdalene`, `commission` (ch. 16). Same tooling, same advisor-pass
+discipline. Watch the Passion-week batches (`gethsemane`, `arrest`, `council`, `denial`, `pilate`,
+`crucifixion`, `burial`) and the miracle batches (`gerasene`, `jairus`, `storm`, `transfiguration`)
+for contamination from Luke's parallel stories, which are close in the model's own context from
+this session and phrase the same events differently — the vocabulary-diff script cannot catch a
+Luke-borrowed phrase whose individual words all happen to occur in Mark's own verse range too.
