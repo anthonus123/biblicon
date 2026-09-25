@@ -12,13 +12,22 @@
 // Key verses lean on what only Luke says, where he says something only he says: the soldiers at
 // the Jordan, the tiling of the roof, the angel in the garden, the Lord turning to look upon
 // Peter, the thief promised paradise, and "Why seek ye the living among the dead?"
+//
+// `story` retells the passage's own verses — it adds nothing the text does not say, keeps KJV
+// spelling (`shewed`, not `shown`) and curly apostrophes, and folds KJV clauses in without
+// quotation marks, the same convention Matthew's and John's own `story` fields use. Check every
+// batch with `BOOK=luke node src/tools/story_check.js` before commit, then read every "so",
+// "that" or "because" the story adds and every quoted speech whose pronouns changed by eye
+// against the printed verses — the script catches invented vocabulary, not an invented relation
+// between two words that are both already in the text.
 module.exports={
 
  // ---- the six type icons ----
  // The Angel of the Desert is the Church's icon of the Forerunner himself — winged, with his
  // own severed head already in the charger — not a scene from these verses. Mark declares the
  // same file tierB at 1:2-8.
- forerunnerpreach:{tierB:true,type:'Prophet',keyVerse:4},
+ forerunnerpreach:{tierB:true,type:'Prophet',keyVerse:4,
+  story:"In the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judaea and Herod being tetrarch of Galilee, the word of God came unto John the son of Zacharias in the wilderness. He came into all the country about Jordan, preaching the baptism of repentance for the remission of sins, as it is written in the book of the words of Esaias the prophet: The voice of one crying in the wilderness, Prepare ye the way of the Lord, make his paths straight. Every valley shall be filled, and every mountain and hill shall be brought low, and the crooked shall be made straight, and the rough ways shall be made smooth; and all flesh shall see the salvation of God."},
  // The Church identifies Levi at the receipt of custom with the Apostle Matthew, and these are
  // his own icons, not a picture of the receipt of custom.
  levi:{tierB:true,type:'Event',keyVerse:32},
@@ -66,22 +75,30 @@ module.exports={
  // ---- chapter 3 ----
  // The fresco's right-hand group is soldiers in mail, and 3:14 is the only place in the four
  // Gospels where soldiers come to John and ask what they shall do.
- fruits:{type:'Teaching',keyVerse:14},
- baptism:{type:'Feast',keyVerse:22},
+ fruits:{type:'Teaching',keyVerse:14,
+  story:"To the multitude that came forth to be baptized John said, O generation of vipers, who hath warned you to flee from the wrath to come? Bring forth therefore fruits worthy of repentance, and begin not to say within yourselves, We have Abraham to our father, for God is able of these stones to raise up children unto Abraham; now also the axe is laid unto the root of the trees, and every tree that bringeth not forth good fruit is hewn down and cast into the fire. Asked what they should do, he told the people, He that hath two coats, let him impart to him that hath none, and he that hath meat, let him do likewise; he told the publicans, Exact no more than that which is appointed you; and he told the soldiers, Do violence to no man, neither accuse any falsely, and be content with your wages."},
+ baptism:{type:'Feast',keyVerse:22,
+  story:"When all the people were baptized, Jesus also being baptized, and praying, the heaven was opened, and the Holy Ghost descended in a bodily shape like a dove upon him, and a voice came from heaven: Thou art my beloved Son; in thee I am well pleased."},
 
  // ---- chapter 4 ----
  // Luke's own close to the forty days, and his own order: the stones, the kingdoms, the pinnacle.
- temptation:{type:'Event',keyVerse:13},
- petersmother:{type:'Miracle',keyVerse:39},
+ temptation:{type:'Event',keyVerse:13,
+  story:"Jesus, full of the Holy Ghost, returned from Jordan and was led by the Spirit into the wilderness, forty days tempted of the devil; he did eat nothing in those days, and when they were ended he afterward hungered. If thou be the Son of God, said the devil, command this stone that it be made bread — but Jesus answered, It is written, That man shall not live by bread alone, but by every word of God. Taking him up into an high mountain, the devil shewed him all the kingdoms of the world in a moment of time, and offered him all this power and the glory of them if he would worship him; Jesus answered, Get thee behind me, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve. Then the devil set him on a pinnacle of the temple and said, If thou be the Son of God, cast thyself down from hence, for it is written, He shall give his angels charge over thee, to keep thee; and Jesus answered, It is said, Thou shalt not tempt the Lord thy God. When the devil had ended all the temptation, he departed from him for a season."},
+ petersmother:{type:'Miracle',keyVerse:39,
+  story:"Jesus arose out of the synagogue and entered into Simon’s house, where Simon’s wife’s mother was taken with a great fever, and they besought him for her. He stood over her, and rebuked the fever, and it left her; immediately she arose and ministered unto them. When the sun was setting, all they that had any sick with divers diseases brought them unto him, and he laid his hands on every one of them and healed them; devils also came out of many, crying out, Thou art Christ the Son of God, but he rebuked them and suffered them not to speak, for they knew that he was Christ."},
 
  // ---- chapter 5 ----
- draught:{type:'Miracle',keyVerse:11},
- leper:{type:'Miracle',keyVerse:13},
+ draught:{type:'Miracle',keyVerse:11,
+  story:"As the people pressed upon him to hear the word of God, Jesus stood by the lake of Gennesaret and saw two ships standing by the lake, the fishermen gone out of them and washing their nets. He entered into Simon’s ship, and prayed him to thrust out a little from the land, and sat down and taught the people out of the ship; when he had left speaking he told Simon, Launch out into the deep, and let down your nets for a draught. Simon answered, Master, we have toiled all the night and taken nothing, nevertheless at thy word I will let down the net — and they inclosed a great multitude of fishes, and their net brake; and they beckoned unto their partners in the other ship, that they should come and help them, and they came, and filled both the ships, so that they began to sink. Simon Peter, astonished, fell down at Jesus’ knees, saying, Depart from me, for I am a sinful man, O Lord; and Jesus told him, Fear not, from henceforth thou shalt catch men. And when they had brought their ships to land, they forsook all, and followed him."},
+ leper:{type:'Miracle',keyVerse:13,
+  story:"In a certain city was a man full of leprosy who, seeing Jesus, fell on his face and besought him, saying, Lord, if thou wilt, thou canst make me clean. Jesus put forth his hand and touched him, saying, I will: be thou clean — and immediately the leprosy departed from him. He charged him to tell no man, but to go and shew himself to the priest and offer for his cleansing according as Moses commanded, for a testimony unto them; yet so much the more went there a fame abroad of him, and great multitudes came together to hear him and to be healed of their infirmities, and he withdrew himself into the wilderness, and prayed."},
  // The tiling, which is what the Monreale mosaic paints.
- paralytic:{type:'Miracle',keyVerse:19},
+ paralytic:{type:'Miracle',keyVerse:19,
+  story:"As Jesus taught, with Pharisees and doctors of the law sitting by who had come out of every town of Galilee and Judaea and Jerusalem, and the power of the Lord was present to heal them, men brought in a bed a man taken with a palsy, and sought means to bring him in and lay him before Jesus. Finding no way in because of the multitude, they went upon the housetop and let him down through the tiling with his couch into the midst before Jesus; and when Jesus saw their faith he said, Man, thy sins are forgiven thee. The scribes and Pharisees began to reason, Who is this which speaketh blasphemies? who can forgive sins but God alone? — but Jesus, perceiving their thoughts, asked them, Whether is easier, to say, Thy sins be forgiven thee, or to say, Rise up and walk? and, that they might know that the Son of man hath power upon earth to forgive sins, he said to the man sick of the palsy, Arise, and take up thy couch, and go into thine house. Immediately he rose up before them, took up that whereon he lay, and departed to his own house, glorifying God; and they were all amazed, and glorified God, and were filled with fear, saying, We have seen strange things to day."},
 
  // ---- chapter 6 ----
- witheredhand:{type:'Miracle',keyVerse:10},
+ witheredhand:{type:'Miracle',keyVerse:10,
+  story:"On another sabbath Jesus entered into the synagogue and taught, and there was a man whose right hand was withered; the scribes and Pharisees watched him, whether he would heal on the sabbath day, that they might find an accusation against him. Knowing their thoughts, he said to the man with the withered hand, Rise up, and stand forth in the midst, and he arose and stood forth. Then Jesus said unto them, I will ask you one thing: is it lawful on the sabbath days to do good, or to do evil? to save life, or to destroy it? and looking round about upon them all, he said to the man, Stretch forth thy hand; and he did so, and his hand was restored whole as the other. But they were filled with madness, and communed one with another what they might do to Jesus."},
 
  // ---- chapter 7 ----
  centurion:{type:'Miracle',keyVerse:9},
