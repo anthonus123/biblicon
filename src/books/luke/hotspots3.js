@@ -784,6 +784,43 @@ module.exports={
  ["The guard", "Soldiers in full mail and helmets, down at the tomb's foot — one pitched forward, head bowed near his own shield with a sword crossed on it, an arm flung wide; another gripping his own head. The watch is Matthew's alone to set and Matthew's alone to fell: the keepers did shake, and became as dead men. Luke's own twelve verses report no guard at this tomb at all.", "82%", "55%"],
 ],
 
+"File:Cathedral (Monreale) - Left wing transept - 1 Apparition.jpg":[
+ ["The inscription", "Abbreviated past a confident transcription at its start, resolving toward the end into words close to the Vulgate's own for Luke 24:17: ...CONFERTIS AD INVICEM AMBULANTES ... ESTIS TRISTES — what manner of communications are these that ye have one to another, as ye walk, and are sad.", "10%", "45%"],
+ ["Christ", "Haloed, bearded, a pilgrim's staff in hand, walking with the two: Jesus himself drew near, and went with them.", "35%", "10%"],
+ ["The two companions", "Two of them went that same day to a village called Emmaus. One raises a hand in speech; their eyes were holden that they should not know him.", "33%", "30%"],
+ ["The city", "A towered building fills the right half of the panel — Emmaus itself, or the same walled-town convention this reader's other icons use for any settlement; Luke's own word for the place is a village, not a city.", "20%", "75%"],
+],
+
+"File:Cathedral (Monreale) - Left wing transept - 2 Apparition (Emmaus).jpg":[
+ ["The inscription", "COGNOVERVNT EVM IN FRACTIONE PANIS — they knew him in breaking of bread, Luke's own closing clause for this passage.", "9%", "35%"],
+ ["Christ", "Haloed, his hand at the loaf: he took bread, and blessed it, and brake, and gave to them.", "35%", "48%"],
+ ["The broken bread", "Pieces set out on the white cloth with a small bowl between the two disciples.", "58%", "48%"],
+ ["The two disciples", "Each turned toward Christ with a hand raised: and their eyes were opened, and they knew him.", "45%", "22%"],
+],
+
+"File:The Supper at Emmaus PRIZREN 2 IMG 4853-2.jpg":[
+ ["Christ", "Haloed, seated under a canopy, his hand extended with a piece of bread.", "40%", "35%"],
+ ["The disciple", "Both hands raised to receive the bread, his face turned up toward Christ rather than down toward it.", "68%", "60%"],
+ ["The plaster loss", "A broad area of damage across the lower left of the scene; whatever else the fresco once showed there is gone.", "70%", "18%"],
+],
+
+"File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The inscription", "Η ΑΝΑΛΗΨΙC ΤΟΥ ΧΡΙΣΤΟΥ, the Ascension of Christ, and beneath it the angels' own words from Acts 1:11: Ye men of Galilee, why stand ye gazing.", "9%", "20%"],
+ ["Christ", "Ascending inside a grey mandorla, ΙC and ΧC lettered either side of his halo.", "12%", "48%"],
+ ["The two angels carrying the mandorla", "Winged, supporting the cloud Christ ascends within.", "28%", "40%"],
+ ["The Theotokos", "Haloed like the apostles around her, both hands raised in prayer at the centre of the company — a place Luke's own text does not give her at the Ascension itself; his next chapter has her only afterward, in the upper room.", "60%", "48%"],
+ ["Two figures in white", "Standing just behind her, their robes lettered with script this reading cannot resolve — most likely the two men in white apparel of Acts 1:10, given no separate speech of their own here.", "55%", "58%"],
+ ["The apostles", "Ranked to either side, hands raised or pressed to their own faces, looking up.", "62%", "15%"],
+],
+
+"File:Cathedral (Monreale) - Left wing transept - Ascension.jpg":[
+ ["The inscription", "ASCENSIO DOMINI — a title, not a quotation, unlike the Emmaus panels in this same transept.", "12%", "10%"],
+ ["Christ", "Rising in a blue mandorla, two flying angels either side of it, his right hand raised to bless.", "15%", "48%"],
+ ["The Theotokos", "Haloed like the apostles who flank her, both hands raised in prayer — the same central place Luke's own text does not give her; Acts 1:14 puts her only in the upper room afterward.", "50%", "48%"],
+ ["The two angels beside her", "Each holding a staff — nearer to the two men in white apparel of Acts 1:10 than to anything in Luke's own Gospel.", "50%", "38%"],
+ ["The apostles", "Filling both wings of the panel, several with a hand raised to the face — the gesture, though not the words, of why stand ye gazing up into heaven?", "50%", "15%"],
+],
+
 "File:Christos Apostolois Dionysiou.jpg":[
  ["The inscription", "An epigram across the top, worn, and only part of it legible: the Creator, having manifested the rising from the dead to those who were made by him. Luke's own greeting for this meeting, peace be unto you, is spoken in the text, not lettered on the wall.", "9%", "30%"],
  ["Christ", "Standing upright between the two ranks, both arms opened. Luke's own account has him standing too — Jesus himself stood in the midst of them — though nothing in these eight verses says he raised his arms; that gesture is the painter's own.", "16%", "46%"],
