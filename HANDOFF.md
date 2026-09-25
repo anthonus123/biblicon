@@ -109,7 +109,23 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
-- **Luke content, as of 2026-09-25d:**
+- **Luke content, as of 2026-09-25e:**
+  - **Scripture stories started: 8 of 48 icon-bearing passages now have one** (`prologue`,
+    `zacharias`, `annunciation`, `visitation`, `forerunnerbirth`, `nativity`, `circumcision`,
+    `meeting` — all of chapters 1–2 up to the Hypapante). Same convention Matthew's and John's
+    `story` field already use: a prose retelling that adds nothing the verses do not say, KJV
+    clauses folded in without quotation marks, KJV spelling kept (`shewed`, not `shown`), curly
+    apostrophes. An advisor pass on the first draft caught four real overclaims before commit —
+    "among Christians" for "among us" (the word never occurs in Luke), "the sacrifice the law
+    allowed" importing Leviticus's poverty clause onto a verse that doesn't have it, an invented
+    causal link in the Nunc Dimittis's sword clause, and a grammar snag from a name substituted
+    into first-person angel speech — see the Session block below. A new tool,
+    `BOOK=<book> node src/tools/story_check.js [key...]`, flags a story's 4-word windows that are
+    not a substring of its own verse range; it is noisy (word reordering across verse boundaries
+    flags constantly) but useful for a first pass — a second, vocabulary-only diff (words in the
+    story absent from the verse range entirely) cuts the noise a lot and is what actually caught
+    nothing new after the advisor's four fixes were applied. **40 passages still want a story**;
+    see `## Next`.
   - **All 89 icons now have a prose reading and positioned markers (89/89), finishing the readings
     the 2026-09-25c harvest left undone.** Five batches (17 through 21, see the Session block
     below), each verified against its picture with `overlay.py` before commit, each built and
@@ -233,13 +249,13 @@ Luke, in order:
    2026-09-25c (English, Greek, Cyrillic, and by category), still nothing; see the Session block
    for what was tried. Likely stays tier c permanently; no fixed Orthodox icon type exists for it,
    unlike the Feasts.
-2. **An open question for the owner: Christ at twelve years (2:42-52).** The one candidate found,
-   `Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`, is catalogued by its own iconostasis's
-   panel list as the Mid-Pentecost feast image (John 7:14), which Byzantine iconography paints
-   with the same composition Luke 2:46 describes — see the Gotcha. Retracted to tier c rather than
-   kept with a caveat; the same shape of open question as `Christos Iomenos Typhlon` and the
-   Bethesda fresco in Matthew's reader (`## Next`, that reader's own section), and one line to
-   reverse if the owner judges the resemblance is enough.
+2. **Christ at twelve years (2:42-52): settled by the owner 2026-09-25e — stays tier c.** The one
+   candidate found, `Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`, is catalogued by its
+   own iconostasis's panel list as the Mid-Pentecost feast image (John 7:14), which Byzantine
+   iconography paints with the same composition Luke 2:46 describes — see the Gotcha. The owner
+   chose not to use it, on the same reasoning the retraction itself gave: the catalogue entry
+   doesn't confirm the panel depicts this scene. No further work needed here unless the owner
+   reopens it.
 3. **26 passages still want an icon** (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
@@ -249,7 +265,16 @@ Luke, in order:
    in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
    pool this pass; what's left is either genuinely unpainted in Orthodox tradition or would need a
    source outside the categories already enumerated (see the Session block for the search method).
-4. Scripture stories for Luke (none written yet, same gap Mark has) and for Mark.
+4. **Scripture stories for Luke: started 2026-09-25e, 8 of 48 done** (chapters 1–2 through the
+   Hypapante). The remaining 40, in canonical order starting from `forerunnerpreach` (3:1-6):
+   `forerunnerpreach`, `fruits`, `baptism`, `temptation`, `petersmother`, `draught`, `leper`,
+   `paralytic`, `witheredhand`, `levi`, `twelve`, `centurion`, `sower`, `storm`, `gadarene`,
+   `issueofblood`, `jairus`, `fivethousand`, `transfiguration`, `samaritan`, `beelzebub`,
+   `lostsheep`, `tenlepers`, `publican`, `entry`, `temple`, `coming`, `supper`, `gethsemane`,
+   `arrest`, `denial`, `council`, `pilate`, `crucifixion`, `burial`, `myrrhbearers`,
+   `emmausroad`, `breaking`, `peace`, `ascension` — use `BOOK=luke node src/tools/story_check.js`
+   after each batch, plus an advisor pass before commit (see the 2026-09-25e Session block for
+   the error classes it caught on the first eight). Same gap remains untouched for Mark.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -4974,3 +4999,77 @@ is the owner's to settle, not a search task; the other 24 unillustrated passages
 genuinely unpainted in Orthodox tradition on the record this project has built so far, though a
 fresh source might still turn one up; and scripture stories, for both Luke and Mark, remain the
 standing gap behind every reader's own readings.
+
+## Session 2026-09-25e (Christ-at-twelve-years settled by the owner; Luke scripture stories started, 8 of 48)
+
+**Did.** Asked the owner two questions left open by the prior session's handoff: whether to use
+the Kirillo-Belozersky Mid-Pentecost panel for Christ at twelve years (2:42-52) anyway, and
+where to focus next given `nain`/Zacchaeus are likely permanent no-icon cases and the other 24
+unillustrated Luke passages are likely genuinely unpainted. Answers: leave 2:42-52 tier c (no
+change — it already was), and start Luke's scripture stories, the standing gap named in every
+session since Mark's reader closed. Wrote the `story` field for the first 8 of Luke's 48
+icon-bearing passages in canonical order — `prologue`, `zacharias`, `annunciation`, `visitation`,
+`forerunnerbirth`, `nativity`, `circumcision`, `meeting` (chapters 1–2 through the Hypapante) —
+following the convention Matthew's and John's own `story` fields already set: a prose retelling
+that adds nothing the verses do not say, KJV clauses folded in without quotation marks.
+
+**Why.** The owner's own priority order (icons and their explanation first) is satisfied — all
+four readers are content-complete for icons, readings and markers — and scripture stories are
+the next-most-visible gap: `app.js` falls back to printing plain verses in that tab, so the tab
+is never blank, but a written story is a real improvement the owner can see immediately per
+passage, the same shape of incremental, verifiable content work the reading batches have been
+since 2026-09-21.
+
+**Verified, and what the verification actually caught.** An advisor pass on the first draft of
+all 8 stories, before commit, found four real overclaims that a same-session eyeball read of
+each story against its own verse range had missed:
+- `prologue`: "most surely believed among **Christians**" for the KJV's "among us" — the word
+  "Christian" never occurs anywhere in Luke's Gospel. Also cut a narrator's gloss, "not to tell a
+  new story, but," which the text doesn't say either.
+- `meeting`: "the sacrifice the law **allowed**" imports Leviticus 12:8's poverty clause onto a
+  verse that says only "according to that which is said in the law of the Lord" — Luke never says
+  which offering this couple actually made. Also: "a sign... **so that** a sword should pierce..."
+  invented a causal link the KJV doesn't have; the sword clause is a parenthesis inside the
+  sentence about the sign, and the "that the thoughts of many hearts may be revealed" clause
+  belongs to the sign, not the sword. Restored the KJV's own clause structure.
+- `zacharias`: "the angel, naming himself Gabriel, **that stand** in the presence of God" mixed
+  first-person quoted grammar into third-person narration. Rewritten as direct speech, "the angel
+  answered, I am Gabriel, that stand in the presence of God."
+- Mechanical: the new stories used straight apostrophes throughout (`Elisabeth's`) where the KJV
+  source and every existing Matthew/John story use curly ones (`Elisabeth’s`) — replaced across
+  all 8. One further tightening on the advisor's non-blocking note: gave the Nunc Dimittis (2:29
+  -32) whole rather than trimmed, since Vespers sings it in full and an Orthodox reader would
+  notice the cut.
+
+**New tool: `src/tools/story_check.js`.** `BOOK=<book> node src/tools/story_check.js [key...]`
+flags a story's 4-word windows that are not a literal substring of its own passage's verse-range
+text. Run against the fixed 8, it is noisy — normal paraphrase word-reordering across verse
+boundaries flags constantly, since the check has no way to know a rearranged clause is still
+faithful — but it is not useless: a second pass, a plain vocabulary diff (words in the story
+absent from the verse range's own words entirely, stopwords excluded), cuts the noise down to
+almost nothing and is what actually confirmed no new fabrication survived the advisor's four
+fixes. Neither script replaces reading the story against its verses by eye; both are here so a
+future session doesn't have to write either one from a description again, the same gotcha the
+5-gram overlap script for the reading batches already names.
+
+Build and check: `BOOK=luke node src/assemble.js` (`with story 8`, confirming the field reaches
+the passage record), `BOOK=luke node src/check.js` (clean, only the pre-existing clamp warnings
+and the 26-passage no-icon list, unchanged), `make luke`, then a full `make` — `git status`
+showed only `Luke Reader.html` and `src/books/luke/overrides.js` changed; Matthew, Mark and John
+rebuilt byte-identical. Playwright against `make BOOK=luke serve`: opened the Nativity's drawer,
+confirmed the Scripture Story tab shows the new prose (not the verse-fallback), zero console
+errors.
+
+**Not done.** No icon search, no reading or marker work — this session only added `story` text
+to passages that already had a reading. 40 of Luke's 48 icon-bearing passages still have no
+story; Mark's 78 have none at all. `nain`, Zacchaeus, the 26 unillustrated passages, and
+scripture stories for Mark are all exactly where the prior session left them.
+
+**Next.** Continue Luke's scripture stories in canonical order from `forerunnerpreach` (3:1-6);
+the full remaining list of 40 keys is in `## Next` above. Run `story_check.js` after every batch
+and an advisor pass before each commit — the four error classes this session found (an invented
+word with no basis anywhere in the book, an imported clause from a different verse, an invented
+causal link between two clauses the KJV keeps separate, and person/grammar mismatches when
+quoted speech is rewrapped in narration) are exactly the kind a same-session self-read missed
+twice in a row now, first in the reading batches and now in these stories. Mark's stories are the
+same task, untouched, whenever this session or a later one turns to that book.
