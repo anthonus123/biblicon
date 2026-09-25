@@ -639,4 +639,24 @@ module.exports={
  ["The basket", "Under the slab, holding the dark tools of the unnailing, echoing the basket in the icon beside this one.", "90%", "47%"],
 ],
 
+"File:Ide Topos pou Ekato Dionysiou.jpg":[
+ ["The inscription", "ΙΔΕ Ο ΤΟΠΟΣ ΟΠΟΥ ΕΚΕΙΤΟ Ο Κ(ΥΡΙΟ)Σ — behold the place where the Lord lay. The form ἴδε ὁ τόπος is Mark's; where the Lord lay closes Matthew's own sentence. Luke's own two men never issue the invitation at all; they ask a question instead: why seek ye the living among the dead?", "9%", "60%"],
+ ["The angel on the stone", "Seated on the fallen slab, a staff upright in his hand, his head turned back to the women even as his open hand reaches the other way, toward the rock. That seat echoes Matthew's own angel — rolled back the stone from the door, and sat upon it — though Luke's own two men are never seated at all: they stood by them.", "24%", "41%"],
+ ["The angel within", "Seated further back on the rock beside the open coffin, a second staff upright in his own hand. Two seated figures answer Luke's own count, two, and John's; St Augustine's own harmony keeps all three of the Gospels' angels — one seated without, two standing within — a shape this two-figure fresco cannot quite hold either way.", "25%", "80%"],
+ ["The women", "Two: the one in green has a hand raised to her own chin, the one in dark red has her own hand raised too, resting near her companion's shoulder rather than her own face. Between them is a tall gold vessel, or a pair of them stacked hand over hand — the resolution will not settle which. Luke's own named list — Mary Magdalene, and Joanna, and Mary the mother of James — comes only once they have already returned and told the eleven.", "27%", "15%"],
+ ["The stone", "Thrown down whole before the coffin. Luke's own clause for it is the shortest of the three Synoptics': they found the stone rolled away from the sepulchre, with none of Mark's own comment that it was very great.", "62%", "40%"],
+ ["The grave-clothes", "Lying empty in the open coffin. Luke gives the women themselves no sight of them at all — his three verses here end at found not the body of the Lord Jesus — and saves the linen clothes laid by themselves for Peter's own visit at the passage's close.", "61%", "82%"],
+ ["The guard", "Soldiers in full mail and helmets, down at the tomb's foot — one pitched forward, head bowed near his own shield with a sword crossed on it, an arm flung wide; another gripping his own head. The watch is Matthew's alone to set and Matthew's alone to fell: the keepers did shake, and became as dead men. Luke's own twelve verses report no guard at this tomb at all.", "82%", "55%"],
+],
+
+"File:Christos Apostolois Dionysiou.jpg":[
+ ["The inscription", "An epigram across the top, worn, and only part of it legible: the Creator, having manifested the rising from the dead to those who were made by him. Luke's own greeting for this meeting, peace be unto you, is spoken in the text, not lettered on the wall.", "9%", "30%"],
+ ["Christ", "Standing upright between the two ranks, both arms opened. Luke's own account has him standing too — Jesus himself stood in the midst of them — though nothing in these eight verses says he raised his arms; that gesture is the painter's own.", "16%", "46%"],
+ ["His open hands", "Reaching toward the apostles at his right; the palm is too small at this resolution to show a wound either way. Luke's own words name flesh and bone, not a wound — for a spirit hath not flesh and bones, as ye see me have — though Cyril and St Gregory the Dialogist both read the print of the nails into this same showing.", "19%", "27%"],
+ ["The apostles at his right", "Standing close together, no apostle drawing back or shielding his face. Luke's own first word from this company is the opposite: they were terrified and affrighted, and supposed that they had seen a spirit.", "30%", "16%"],
+ ["The apostles at his left", "The same ranked company at his other side. This passage's own eight verses give them no name and no count, only they and them throughout; the eleven gathered together belongs to the passage just before this one.", "30%", "78%"],
+ ["The books", "Several carry a book or a scroll, held close against the chest. The passage just after this one has Christ opening their understanding instead: then opened he their understanding, that they might understand the scriptures.", "45%", "16%"],
+ ["The footrest", "A red cushion raised on a stepped footstool beneath his feet, marking him enthroned rather than merely standing in a room. Luke's own scene names no such furniture: only that he stood in the midst of them.", "82%", "46%"],
+],
+
 };
