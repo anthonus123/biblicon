@@ -109,7 +109,31 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
+- **Luke content, as of 2026-09-25d:**
+  - **All 89 icons now have a prose reading and positioned markers (89/89), finishing the readings
+    the 2026-09-25c harvest left undone.** Five batches (17 through 21, see the Session block
+    below), each verified against its picture with `overlay.py` before commit, each built and
+    spot-checked in Playwright (console errors: zero throughout) before the next batch started.
+    **48 icon-bearing passages, 89 icons; tiers 42 (a), 6 (b), 104 (c)** — unchanged from
+    2026-09-25c, since this work only wrote readings and markers for icons the harvest had
+    already wired. **Two real errors caught reading the pictures, not just the prose, and fixed
+    before commit**: the Nativity-of-the-Forerunner inscription's own transcription (ΓΕΝΗCΗΣ, not
+    a typo'd ΓΕΝΗCΙC) and a false "same painter" claim across two Langadas panels whose artists
+    are both actually unknown; a paraphrased KJV splice in the Hypapante reading (Symeon's own
+    two verses, 2:25–26, were quoted with an invented connective); the Gračanica "wide" Publican
+    photograph turned out to show the parable's two figures painted twice, mirrored either side
+    of the temple, not once as first assumed — the reading and both readers' markers were rewritten
+    to match once this was seen. **One new finding, not previously recorded**: the Langadas
+    Ascension panel gives the Theotokos the same central, orant place among the apostles that the
+    2026-09-25c harvest notes had recorded only for the Monreale Ascension mosaic — both readers'
+    readings now say so, and both say her presence there is the icon's own developed tradition
+    (Acts 1:14 puts her in the upper room afterward), not a citation of Luke's or Acts's own words.
+    **26 passages still want an icon** — unchanged; this session did not run the harvest, only
+    wrote what the harvest had already found. `make check`, `make luke` and a full `make` all ran
+    clean after every batch; the other three readers are untouched.
 - **Luke content, as of 2026-09-25c:**
+  - **Superseded 2026-09-25d** — see the block above: all 13 of this harvest's icons, plus the
+    `prologue` bonus find, now have prose readings and positioned markers.
   - **The Feast-cycle harvest ran this session** (see `## Next` and the Session block below for
     the method and the full survey). **13 more passages gained an icon** — the two Annunciations,
     the Visitation, the Nativity of the Forerunner, the Circumcision, the Meeting in the Temple,
@@ -202,40 +226,21 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Luke's readings were finished at 69/69 through batch 16 (2026-09-25b); the Feast-cycle harvest
-then ran 2026-09-25c and gave 13 more passages an icon (19 images, plus the bonus `prologue`),
-none with a reading yet — so the reader is at 69/89 readings, and closing that gap is first.**
-What is left for Luke, in order:
-1. **Readings and markers for the 13 passages the 2026-09-25c harvest wired**, in Gospel order:
-   `zacharias` (1:5-25, 1 icon), `annunciation` (1:26-38, 2), `visitation` (1:39-45, 1),
-   `forerunnerbirth` (1:57-66, 1), `circumcision` (2:21, 2), `meeting` (2:22-38, 1),
-   `issueofblood` (8:40-48, 2), `samaritan` (10:25-37, 1), `tenlepers` (17:11-19, 1), `publican`
-   (18:9-14, 2), `emmausroad` (24:13-24, 1), `breaking` (24:25-35, 2), `ascension` (24:50-53, 2)
-   — 19 icons in all — plus the bonus `prologue` (1:1-4, tier b, 1 icon, St Luke's own): 20 images
-   in use, out of 21 new `.webp` files on disk — the 21st is the retracted Kirillo file, kept as
-   the evidence for item 3 below (see the orphan-images note in the Gotchas). Use the same batch
-   loop Mark and the first 69 used
-   (`## Active work` above), and see the Session 2026-09-25c block below for what each file
-   actually shows, what its inscription says (several are abbreviated or worn past a confident
-   letter-by-letter transcription — don't assert more than was actually legible), and the traps
-   already found (the Rossano Samaritan, the two Gračanica publican crops, the Adam/Langadas
-   Circumcision pair and its uninvolved St Basil, the Ascension's caveat — the angels are Acts
-   1:10-11's, not Luke's, and the Theotokos is the icon's own tradition, in neither — and the
-   Kirillo "Among doctors" panel, catalogued as the iconostasis's own Mid-Pentecost feast image
-   and pending the owner's word before it goes back to `twelveyears` — see the Gotcha and
-   `## Next` item 3 below).
-2. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
+**Luke's readings are finished — 89/89, all 89 icons across 57 passages, closed in five batches
+(17 through 21, 2026-09-25d) after the 2026-09-25c harvest left them undone.** What is left for
+Luke, in order:
+1. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
    2026-09-25c (English, Greek, Cyrillic, and by category), still nothing; see the Session block
    for what was tried. Likely stays tier c permanently; no fixed Orthodox icon type exists for it,
    unlike the Feasts.
-3. **An open question for the owner: Christ at twelve years (2:42-52).** The one candidate found,
+2. **An open question for the owner: Christ at twelve years (2:42-52).** The one candidate found,
    `Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`, is catalogued by its own iconostasis's
    panel list as the Mid-Pentecost feast image (John 7:14), which Byzantine iconography paints
    with the same composition Luke 2:46 describes — see the Gotcha. Retracted to tier c rather than
    kept with a caveat; the same shape of open question as `Christos Iomenos Typhlon` and the
    Bethesda fresco in Matthew's reader (`## Next`, that reader's own section), and one line to
    reverse if the owner judges the resemblance is enough.
-4. **26 passages still want an icon** (down from 39, net unchanged from the harvest's own first
+3. **26 passages still want an icon** (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
    13:10-17 (Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
@@ -244,7 +249,7 @@ What is left for Luke, in order:
    in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
    pool this pass; what's left is either genuinely unpainted in Orthodox tradition or would need a
    source outside the categories already enumerated (see the Session block for the search method).
-5. Scripture stories for Luke (none written yet, same gap Mark has) and for Mark.
+4. Scripture stories for Luke (none written yet, same gap Mark has) and for Mark.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -4891,3 +4896,81 @@ and `forerunnerpreach` are the reader's existing type icons, unchanged) plus the
 `## Next` above. After that, `nain`, Zacchaeus and Christ at twelve years are unlikely to reward
 another search without a new source; scripture stories for Luke and Mark remain the standing gap
 behind the readings.
+
+## Session 2026-09-25d (Luke batches 17-21 — readings and markers for all 19 harvested icons plus the `prologue` bonus, closing the reader at 89/89)
+
+**Did.** Picked up the uncommitted draft this session's own predecessor had left (batch 17's
+five chapter-1 readings — the Prologue was still missing) and ran the batch loop through to the
+end: batch 17 (1:1-4, 1:5-25, 1:26-38, 1:39-45, 1:57-66 — the Prologue, both Annunciations, the
+Visitation, the Nativity of the Forerunner, 6 icons), batch 18 (2:21-21, 2:22-38 — the
+Circumcision, both icons, and the Meeting in the Temple, 3 icons), batch 19 (8:40-48 — the Woman
+with the Issue of Blood, both icons), batch 20 (10:25-37, 17:11-19, 18:9-14 — the Good
+Samaritan, the Ten Lepers, the Pharisee and the Publican, both icons, 4 icons — the first icons
+this reader has ever shown for chapters 10, 17 and 18), and batch 21 (24:13-24, 24:25-35,
+24:50-53 — the Road to Emmaus, Known in the Breaking of Bread, both icons, and the Ascension,
+both icons, 5 icons). 19 readings and marker sets in all, matching every image the 2026-09-25c
+harvest wired. Every batch: `BOOK=luke node src/assemble.js`, `BOOK=luke python3
+src/tools/overlay.py` on every new key and the overlay read back by eye, `BOOK=luke node
+src/check.js` grepped for `clamp` (four pre-existing warnings throughout, on files this session
+never touched, and nothing new survived past a first draft), a full `make` to confirm the other
+three readers stayed untouched, `BOOK=luke node src/build.js`, then Playwright against
+`make BOOK=luke serve` — one passage's drawer opened per batch, `Deciphering the Icon` where
+relevant, `browser_console_messages(level: "error", all: true)` checked every time (zero,
+throughout every batch). Every quoted KJV clause in every new reading was grepped against
+`kjv.json` (case-insensitive) before commit, not just read by eye.
+
+**Why.** The prior session's own handoff named this as the very next task, and the memory note
+on file for this project (`biblicon-fork-commit-guardrail`) says not to let a fork run this kind
+of batch work unsupervised, so it was done inline, batch by batch, the same shape every session
+since 2026-09-21 has used.
+
+**Verified, and what the verification actually caught** (not just clean passes — three real
+errors were found and fixed before commit, all by checking the picture and the KJV text against
+the drafted prose rather than trusting a first draft):
+- **Batch 17.** The Nativity-of-the-Forerunner reading's inscription was mistyped ΓΕΝΗCΙC where
+  Commons' own transcription (and the HANDOFF record from the harvest itself) both give ΓΕΝΗCΗΣ
+  — caught by checking `image_meta.json`'s own `desc` field, not by eye. The same reading's claim
+  that the washing-of-the-child convention was "this same painter's own" turned out to be
+  unsupported: `image_meta.json` gives both Langadas Nativity panels an unknown artist, not a
+  shared one — corrected to "the same church's own."
+- **Batch 18.** Drafted first with a `Symeon`-adjacent reading for the Langadas Circumcision
+  panel's haloed elder; a closer crop of the fresco showed the composition actually has five
+  figures, not the three first assumed, and none of them is named by any lettering on this
+  panel (only the companion Adam panel, harvested the same session, names Mary and Joseph in its
+  own inscription) — rewritten to call the elder "Joseph" only by the same convention the
+  reader's Nativity icons already use, explicitly not a confirmed identity, since Symeon belongs
+  to the Presentation forty days later, not this scene.
+- **Batch 20.** The Gračanica "wide" Publican-and-Pharisee photograph was drafted assuming it
+  showed the same single pair the tight crop shows, just pulled back; a full read of the overlay
+  showed the fresco actually paints the pair twice, mirrored either side of the temple building
+  — both the reading and both sets of markers were rewritten once this was seen, not just the
+  markers' coordinates. The tight-crop Pharisee was also corrected from "both hands raised" to
+  "one hand raised" after the picture showed only one.
+- **Batch 21.** A citation typo, Luke 24:17 mistyped as "10:17," in the Emmaus-road reading.
+  Two KJV splices caught by the grep pass rather than by eye: the Emmaus-road reading had
+  merged 24:13 and 24:15 with an unquoted "and" where the two verses do not actually run
+  together, and Symeon's own two verses (2:25-26, from batch 18) had the same shape of error,
+  an invented "to whom" bridging two separate KJV sentences. All four were rewritten to quote
+  verbatim, using `...` where a real gap in the source is being skipped over rather than papered
+  across. **One finding not on record before this session**: the Langadas Ascension panel's own
+  central figure, a haloed woman with both hands raised in prayer among the apostles, is the
+  Theotokos — the 2026-09-25c harvest notes had recorded that detail only for the Monreale
+  Ascension mosaic beside it in this same gallery, on the strength of a first look that didn't
+  crop in close enough to check the Langadas panel the same way. Both readings now carry the
+  same caveat: her place there is the icon's own developed tradition, not Luke's or Acts's own
+  text, which puts her only in the upper room afterward (Acts 1:14).
+
+**Not done.** No new icons were searched for or wired — `nain`, the Zacchaeus tree, and the 26
+passages `make check` still lists as wanting an icon are exactly where the 2026-09-25c harvest
+left them; this session only wrote what that harvest had already found. Christ at twelve years
+(2:42-52) still has its open question on record, unchanged, pending the owner. Scripture stories
+for Luke and Mark remain untouched.
+
+**Next.** The Luke reader is content-complete: 89/89 icons have a reading and positioned
+markers, matching the shape "content-complete" already meant for Matthew, John and Mark. What
+remains, in order: `nain` and the Zacchaeus tree are unlikely to reward another search without a
+new source outside what this project has already enumerated; the Christ-at-twelve-years question
+is the owner's to settle, not a search task; the other 24 unillustrated passages are likely
+genuinely unpainted in Orthodox tradition on the record this project has built so far, though a
+fresh source might still turn one up; and scripture stories, for both Luke and Mark, remain the
+standing gap behind every reader's own readings.
