@@ -604,4 +604,39 @@ module.exports={
  ["The worn lower half", "John's own robe still falls below his waist in folds; Mary's side has worn to a dark, unreadable shape. The plain gold ground at the very foot of the cross shows no rock or skull now.", "88%", "50%"],
 ],
 
+"File:Etesatou Ioseph Somatou Christou.jpg":[
+ ["The inscription", "ΗΤΗΣΑΤΟ ΙΩΣΗΦ ΤΟ ΣΩΜΑ ΤΟΥ Ι(ΗΣΟ)Υ — Joseph asked for the body of Jesus, the verb Luke's own text renders begged: This man went unto Pilate, and begged the body of Jesus.", "9%", "50%"],
+ ["Pilate", "Crowned, in red, enthroned at the left, one hand lifted. Luke names him only as the man Joseph went unto; nothing here is his own text's detail.", "35%", "25%"],
+ ["His raised hand", "Held up before him, toward the soldier at his shoulder. Matthew, Mark and John all record Pilate granting the body; Luke's own seven verses record no answer from him at all.", "45%", "43%"],
+ ["The soldier", "Young, in armour, a spear held aslant and a round shield behind his arm. Luke names no soldier anywhere in this passage.", "35%", "55%"],
+ ["Joseph", "Grey-bearded, haloed, in a green mantle. Luke calls him a good man, and a just, of Arimathaea — and, in a clause none of the other three Evangelists give, one who had not consented to the counsel and deed of them. Bede identifies his city: \"Arimathea is the same as Ramatha, the city of Helcanah and Samuel.\"", "32%", "80%"],
+ ["His open hands", "Spread and turned upward, empty, before Pilate. Augustine reads the boldness of the asking as coming from Joseph's own rank: he did this \"from confidence in his rank, by which he might be privileged to enter familiarly into Pilate's presence.\"", "47%", "72%"],
+ ["The building", "A tower with a window above Joseph, part of the court's own painted setting, not a place named in the text.", "15%", "85%"],
+ ["The starred sky", "Scattered stars above the throne, as the two Dionysiou frescoes beside this one also have. Luke gives no hour for this asking, unlike Matthew's and Mark's when the even was come; his own day is not named until two verses on.", "12%", "9%"],
+],
+
+"File:Apokalthelosis Dionysiou.jpg":[
+ ["Η ΑΠΟΚΑΘΗΛΩΣΙΣ", "The unnailing, split either side of the cross's own upright, a small plaque fixed above it. Luke's own verb for it is bare: he took it down.", "9%", "35%"],
+ ["ΙΣ ΧΣ", "His name, lettered close to the descending body.", "17%", "20%"],
+ ["Joseph", "The same green-mantled elder from the icon beside this one, gathering the body against himself as it comes free. Luke names no one else in this work.", "20%", "45%"],
+ ["The Theotokos", "She presses her face to her Son's as the body comes free. Luke's own seven verses do not name her here.", "25%", "22%"],
+ ["The girded cloth", "Still knotted at the hips — the garment painted on him since the cross, not the burial linen Luke's own next clause gives him: wrapped it in linen.", "40%", "48%"],
+ ["The mourning women", "A woman in gold holds his loose hand to her own cheek, more women in scarlet and blue behind her. Luke's own witnesses, the women that followed him from Galilee, stood only afar off at 23:49, and at 23:55 still only followed after, and beheld — watching, not embracing as these women do.", "40%", "12%"],
+ ["The young disciple", "His own hand is pressed to his own cheek. Luke names no disciple anywhere near the cross or the burial in this passage.", "38%", "63%"],
+ ["Freeing the nails", "A man kneeling at the foot works a nail loose with pincers, two already drawn and standing upright in the basket at his knee. Of the driving of them, Luke's own eleven verses on the crucifixion say only, there they crucified him.", "68%", "63%"],
+ ["Calvary", "A small dark hollow opens beneath the cross, a skull set inside it — the same tradition two of this reader's Crucifixion icons also paint. Luke's own word for the place is Calvary; he never calls it Golgotha, as Matthew, Mark and John all do.", "92%", "48%"],
+],
+
+"File:Epitaphios Threnos Dionysiou.jpg":[
+ ["Ο ΕΠΙΤΑΦΙΟΣ ΘΡΗΝΟΣ", "The burial lament — the Church's own name for the scene. Luke's text moves from the tomb's hewing, by way of the preparation day, to the women who watched it, with not a word of weeping anywhere between.", "9%", "40%"],
+ ["The bare cross", "Empty above the body, two angels attending it, a small plaque above the crossbeam, its lettering crisp but not resolving into any word this reader can identify.", "15%", "48%"],
+ ["The body on the linen", "Stretched full length on pale cloth over a red stone bier. Luke's own tomb is hewn in stone, wherein never man before was laid — a detail Bede reads as an argument, lest it be suspected that some other had risen again.", "68%", "50%"],
+ ["The Theotokos", "ΜΡ ΘΥ beside her. She bows low until her face touches his. Luke's own text does not name her at this scene.", "62%", "22%"],
+ ["St John", "ΙΩ beside his halo. His own hand is pressed to his own cheek as he bends low over the body. Luke names no disciple at this scene anywhere in the passage.", "60%", "48%"],
+ ["Joseph", "The same grey-bearded elder from the two icons beside this one, his hands still in the cloth at the feet, folding it over. Of everyone gathered round the body here, only he is named by Luke: the clause he wrapped it in linen is painted here, if it is painted anywhere in this reader's three icons of the burial.", "60%", "70%"],
+ ["The woman in red", "One arm thrown high in grief. Luke's own witnesses only beheld the sepulchre, and how his body was laid — a watching, in his own text, not the lament painted here.", "47%", "12%"],
+ ["The man with the ladder", "He bears it over his own shoulder, one cheek set against his raised hand: the place Byzantine painting reserves for Nicodemus, a name Luke's own Gospel never once uses.", "48%", "88%"],
+ ["The basket", "Under the slab, holding the dark tools of the unnailing, echoing the basket in the icon beside this one.", "90%", "47%"],
+],
+
 };

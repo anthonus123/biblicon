@@ -132,11 +132,11 @@ and this file did not.
     (5:1–11) at tier **a** — see the caveat below. **The reader now reaches 102 of its 455
     quotations**, up from 99: the drawer opens only from an icon card (first Gotcha), so wiring
     an icon is what turns a passage's commentary on.
-  - **64 of the 69 now have a prose reading and positioned markers, 382 markers in all**, across
-    31 of the 34 icon-bearing passages, in fourteen batches from 2026-09-21 to 2026-09-24 (see
-    `## Next` for the batch-by-batch list). The other **5 icons, across 3 passages, are the work
-    in progress**, in batches of six to eight, the loop Mark uses — all three of them are the rest
-    of the Passion sequence, `burial` through `peace` (23:50 to 24:43).
+  - **67 of the 69 now have a prose reading and positioned markers, 408 markers in all**, across
+    33 of the 34 icon-bearing passages, in fifteen batches from 2026-09-21 to 2026-09-25 (see
+    `## Next` for the batch-by-batch list). The other **2 icons, across 2 passages, are the work
+    in progress**, in batches of six to eight, the loop Mark uses — both are the close of the
+    Passion and Resurrection sequence, `myrrhbearers` and `peace` (24:1 to 24:43).
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
@@ -183,14 +183,60 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Active work — the Luke readings.** See the Luke section further down: 5 of 69 icons still want
-a reading and markers, across 3 passages — counts taken from a script over `icons.json`, not by
-eye. Batch 14 (2026-09-24e) did `crucifixion` (23:33-43, 4 icons, 11 markers), the sixth of the
-Passion sequence — the Crucifixion and the penitent malefactor. What is left is every icon from
-`burial` through `peace` (23:50 to 24:43): `burial` (3), `myrrhbearers` (1), `peace` (1).
+**Active work — the Luke readings.** See the Luke section further down: 2 of 69 icons still want
+a reading and markers, across 2 passages — counts taken from a script over `icons.json`, not by
+eye. Batch 15 (2026-09-25) did `burial` (23:50-56, 3 icons, 26 markers), the seventh of the
+Passion sequence — Joseph before Pilate, the unnailing, and the lamentation. What is left is
+`myrrhbearers` (1, tier a) and `peace` (1, tier b) that finish the Passion and Resurrection
+sequence at 69/69.
 `nain` (7:11-17, the widow's son) still sits earlier in Gospel order than all of these but has
 **no file wired at all** — that is a harvest task, not a reading task; see the Luke section further
 down.
+
+**For the owner, from Luke batch 15 (2026-09-25 — `burial`, 3 icons).** Three advisor passes ran
+before commit; each caught a different class of error, and two findings are worth the owner's own
+look rather than just a fix.
+- **A sibling-reader discrepancy, on the same fresco.** `Apokalthelosis Dionysiou.jpg`'s haloed
+  mourner at Christ's right — the figure Byzantine convention gives to the beloved disciple — has
+  his own hand pressed to his own cheek, not resting on Christ's hanging hand. Mark's reader
+  describes it the second way ("rests his cheek on Christ's left hand"); John's reader already has
+  it the first way ("his hand at his cheek," "the same gesture he has at the cross"). A full crop
+  (roughly top 28–50, left 55–72 on this file) settled it for Luke's own reading, and the same
+  check on `Epitaphios Threnos Dionysiou.jpg`'s own ΙΩ figure found the same thing: his own hand at
+  his own cheek, not Christ's. Mark's reader is very likely wrong on both counts; not fixed there,
+  since that is a different book's file, but worth a look if anyone revisits it.
+- **The advisor caught two classes of error the self-checks (quotes.js, the n-gram overlap script,
+  overlay.py, `make check`) cannot see at all: wrong Synoptic attribution, and claims about what a
+  figure *is* rather than what it looks like — across four separate rounds, each fix round
+  introducing its own new instance of one or the other.** The first blocking-findings pass caught
+  errors in the batch's own first draft — Luke's own text does have "he took it down" (23:53) and
+  the verb was wrongly called Mark's alone; the crucifixion loincloth on the descending body was
+  described as burial linen; the disciples' flight at the arrest, which Luke never reports, was
+  invented to explain an icon detail; the grey-bearded elder folding linen at the feet in the
+  Epitaphios was left unidentified when he is Joseph, the one figure in that icon Luke's own text
+  actually names. The second pass, after that round's own rewrite, caught contradictions the
+  rewrite itself introduced — a reading and its own marker disagreeing about who is "Luke's own,"
+  and an exclusion claim ("Luke gives her no place... at the cross") restated for a passage that
+  has no cross in it at all. The third pass caught a further round of the same: Matthew dropped
+  from a Golgotha comparison that should have named all three Synoptics, a fixed claim about the
+  plaque on the cross undone by the very next sentence, and an identification (Ο ΒΑΣΙΛΕΥΣ ΤΗΣ
+  ΔΟΞΗΣ, the King of Glory) asserted for a plaque whose actual letters, transcribed by a full crop,
+  do not clearly support that reading — a small titulus board on both `Apokalthelosis` and
+  `Epitaphios`, legibly lettered but resolving into no word or phrase this reader could confirm,
+  left as an open question rather than a guess. The fourth pass caught smaller leftovers from all
+  three earlier rounds at once: Matthew dropped again, this time from an "even was come" contrast;
+  a claim that Luke's text moves straight from the tomb's hewing to the women, skipping the
+  preparation-day verse between them; the beloved disciple's hand and position in the Epitaphios,
+  carried over from an earlier, already-corrected claim on the sister fresco; and a red slab
+  described as draped cloth where the crop shows stone. The lesson carried forward: after any fix
+  that touches a Synoptic-attribution or
+  figure-identity claim, re-derive the claim from the Catena block and the crop directly, rather
+  than patching the previous draft's own wording.
+- **`keyVerse` moved from 53 to 51.** 53's own clauses are shared — "he took it down... wrapped it
+  in linen" with Mark 15:46, "wherein never man before was laid" with John 19:41 — where 51's
+  parenthesis, that Joseph "had not consented to the counsel and deed of them," has no parallel in
+  Matthew, Mark or John at all (checked against all three kjv.json files directly), matching the
+  header's own "only Luke says" rule the way `pilate`'s and `crucifixion`'s key verses already do.
 
 **For the owner, from Luke batch 14 (2026-09-24e — `crucifixion`, 4 icons).** Drafted in one
 session; three advisor passes ran before commit, each catching a different class of problem — not
@@ -4331,6 +4377,61 @@ Matthew's/Mark's prose → `crop.py` spot-checks → `make luke` with `grep -i c
 when a rewrite is driven by an n-gram check rather than a fresh look at the picture, re-crop every
 visual clause it touches before shipping — the phrase-overlap fix is exactly where this batch's
 new errors got in, the same shape batches 8–11 already recorded for other causes.
+
+## Session 2026-09-25 (Luke batch 15 — `burial`, 3 icons, 26 markers)
+
+**Did.** Wrote the reading and markers for Luke 23:50-56 ("The Burial"), the seventh batch of the
+Passion sequence — the three Dionysiou frescoes already shared with Mark's reader (and two of the
+three with John's): `Etesatou Ioseph Somatou Christou.jpg` (Joseph before Pilate), `Apokalthelosis
+Dionysiou.jpg` (the unnailing) and `Epitaphios Threnos Dionysiou.jpg` (the lamentation). Moved
+`overrides.js`'s `burial` entry from `keyVerse:53` to `keyVerse:51` — see the owner note above.
+
+**Why.** Continuing the Luke reading loop from batch 14; `burial` was next in Gospel order.
+
+**Verified.** Four advisor passes before commit — see the "For the owner" note above for what each
+one caught in full. In brief: the first pass surfaced the batch's own drafting errors (a wrong
+Synoptic attribution on the "took it down" verb, the crucifixion loincloth mistaken for burial
+linen, an invented detail about the disciples fleeing that belongs to Matthew's and Mark's own
+accounts of the arrest, not Luke's, and Joseph left unidentified in the Epitaphios); the second
+pass caught contradictions the first round's own rewrite introduced (a reading and its own marker
+disagreeing about who is "Luke's own," and an exclusion claim restated for a passage with no cross
+in it); the third pass caught a further round of the same shape, including a wrong plaque
+identification; the fourth pass caught smaller leftovers from all three rounds — a Synoptic
+comparison still missing Matthew, an intervening verse skipped in a "moves directly to" claim, a
+carried-over hand-and-posture claim on a sister fresco, and cloth described where the crop shows
+stone. Every visual claim disputed across the four passes was re-cropped against the full local
+image (`src/tools/crop.py` and `grid.py`, not the 660px thumbnail alone) before being kept, changed
+or dropped — including, in the third pass, cropping the same figure on two different frescoes
+(`Apokalthelosis`'s beloved-disciple figure and `Epitaphios`'s ΙΩ figure) to settle a disagreement
+between Mark's and John's own readers about whose hand is at whose cheek. A 5-gram overlap script
+(rewritten fresh this session, not committed — the method is in HANDOFF's `## Next`, not a
+checked-in tool) against Matthew's, Mark's and John's own readings of the shared files caught heavy
+reuse on the first draft, all reworded across two more rounds; the only overlaps left in the final
+version are literal KJV clauses and the fresco's own Greek inscription, both unavoidable.
+`BOOK=luke node src/tools/quotes.js`: 37 KJV clauses flagged book-wide, this batch's own 2 both
+false positives (a long sentence embedding a full verbatim clause, and prose using "went unto"
+outside any quotation) checked by hand against `kjv.json`; all eight Father quotations (Bede ×4,
+Ambrose ×2, Augustine, Theophylact) checked by hand against the 23:50-56 Catena block, verbatim
+every time. `make luke` with output grepped for `clamp`: none from this batch's own markers (four were, briefly, in an intermediate round, at 8%
+where the floor is 9%; moved to 9% and the warnings cleared). `overlay.py` on all three keys, run
+whenever a coordinate changed (the first two rounds; text-only fixes after that did not re-run
+it): every marker lands on the figure or detail it names. Four Playwright passes served
+locally — the drawer, the three-icon thumbnail strip, the key-verse card (now quoting 23:51), the
+Deciphering tab on all three icons and the Wisdom of the Fathers tab were each checked by
+screenshot at least once; `browser_console_messages(level: "error", all: true)` came back at zero
+every time it was checked. `make check`: green, 67/69 icon readings, 69 unique images, 34
+icon-bearing passages, 408 markers overall — all counts from a script over `icons.json`, matching
+the counts predicted before the count was actually run.
+
+**Next.** `myrrhbearers` (24:1-12, 1 icon, tier a, the two-angels-and-fallen-guard fresco — the
+guard is Matthew's alone, not Luke's, already flagged in the picks.js comment) and `peace`
+(24:36-43, 1 icon, tier b, Christ among the apostles) are the last two icons of the Passion and
+Resurrection sequence; after them Luke's 69 icon readings are complete and the remaining work is
+the harvest tasks recorded elsewhere in this file (`nain` and the 39 passages with no icon pool at
+all). Same loop for both remaining batches, with this session's own lesson carried forward: a fix
+that touches who a figure *is*, not just what it looks like, needs its own fresh crop and its own
+check against the Catena and the parallel Gospels — patching the previous round's wording is where
+this batch's own second-round errors came from.
 
 ## Session 2026-09-24e (Luke batch 14 — `crucifixion`, 4 icons, 11 markers)
 

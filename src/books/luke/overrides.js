@@ -103,7 +103,9 @@ module.exports={
  pilate:{type:'Event',keyVerse:2},
  // Luke alone gives the thief on the right hand his words and the promise of paradise.
  crucifixion:{type:'Event',keyVerse:43},
- burial:{type:'Event',keyVerse:53},
+ // None of Matthew, Mark or John says Joseph dissented from the council that condemned Christ;
+ // only Luke's own parenthesis at 23:51 does.
+ burial:{type:'Event',keyVerse:51},
 
  // ---- chapter 24 ----
  // The two angels of 24:4 speak it, and the Dionysiou fresco paints two where Matthew and Mark
