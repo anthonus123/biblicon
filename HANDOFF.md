@@ -109,8 +109,23 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
-- **Luke content, as of 2026-09-25g:**
-  - **Scripture stories: 27 of 48 icon-bearing passages now have one**, three batches. Batch 1 —
+- **Luke content, as of 2026-09-25h:**
+  - **Scripture stories: 48 of 48 icon-bearing passages now have one — Luke's stories are finished.**
+    Batch 4 (2026-09-25h) closed the reader: `samaritan`, `beelzebub`, `lostsheep`, `tenlepers`,
+    `publican`, `entry`, `temple`, `coming`, `supper`, `gethsemane`, `arrest`, `denial`, `council`,
+    `pilate`, `crucifixion`, `burial`, `myrrhbearers`, `emmausroad`, `breaking`, `peace`,
+    `ascension` (chapters 10–24). The vocabulary diff caught one stray word (`tenlepers` had
+    "saying" where 17:13 says "and said"); an advisor pass afterward caught two pronoun slips the
+    diff can't see, both the same shape and both the opposite direction of batch 3's fix — the
+    verse's own "Jesus" replaced with "he," moving the antecedent: `arrest` (22:51, "he touched his
+    ear" read back onto the swordsman, not Christ, after the swordsman was the more recent
+    subject) and `council` (22:63, opened with no antecedent at all where 22:63 itself says
+    "held Jesus"). Both restored to "Jesus." A third, non-blocking fix: `burial`'s own keyVerse
+    (23:51) had lost the KJV's parenthesis around "the same had not consented," turning "who" into
+    a dangling modifier — restored. `make`, `make check` and a Playwright pass on `arrest`,
+    `burial` and `ascension` (console errors: zero) all ran clean before commit. **Mark still has
+    no scripture stories** — same gap, untouched.
+  - **Superseded 2026-09-25g's count below** — three batches. Batch 1 —
     `prologue`, `zacharias`, `annunciation`, `visitation`, `forerunnerbirth`, `nativity`,
     `circumcision`, `meeting` (chapters 1–2 up to the Hypapante). Batch 2 — `forerunnerpreach`,
     `fruits`, `baptism`, `temptation`, `petersmother`, `draught`, `leper`, `paralytic`,
@@ -145,7 +160,7 @@ and this file did not.
     "that stand" first-person slip) that no script would have flagged. The manual step the tool
     cannot replace: read every "so", "that" or "because" a story adds, and every quoted speech
     whose pronouns changed, against the printed verses by eye.
-  - **31 passages still want a story**; see `## Next`.
+  - **31 passages still want a story** at this date; closed by batch 4, 2026-09-25h, above.
   - **All 89 icons now have a prose reading and positioned markers (89/89), finishing the readings
     the 2026-09-25c harvest left undone.** Five batches (17 through 21, see the Session block
     below), each verified against its picture with `overlay.py` before commit, each built and
@@ -285,16 +300,16 @@ Luke, in order:
    in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
    pool this pass; what's left is either genuinely unpainted in Orthodox tradition or would need a
    source outside the categories already enumerated (see the Session block for the search method).
-4. **Scripture stories for Luke: 27 of 48 done, three batches (2026-09-25g).** The remaining 21,
-   in canonical order starting from `samaritan` (10:25-37): `samaritan`, `beelzebub`, `lostsheep`,
-   `tenlepers`, `publican`, `entry`, `temple`, `coming`, `supper`, `gethsemane`, `arrest`,
-   `denial`, `council`, `pilate`, `crucifixion`, `burial`, `myrrhbearers`, `emmausroad`,
-   `breaking`, `peace`, `ascension` — use `BOOK=luke node src/tools/story_check.js` after each
-   batch (vocabulary diff by default; it cannot see an invented relation built from stopwords or
-   a person/grammar slip, so also read every added "so"/"that"/"because" and every quoted
-   speech's pronouns by eye), plus an advisor pass before commit (see the 2026-09-25e,
-   2026-09-25f and 2026-09-25g Session blocks for the error classes caught so far). Same gap
-   remains untouched for Mark.
+4. **Scripture stories for Luke: done — 48 of 48, four batches, closed 2026-09-25h.** Use
+   `BOOK=luke node src/tools/story_check.js` after any future edit (vocabulary diff by default; it
+   cannot see an invented relation built from stopwords, a person/grammar slip, or the verse's own
+   name swapped for a pronoun that moves the antecedent — batch 4 found one of the last of these
+   in `arrest` and `council` — so also read every added "so"/"that"/"because" and every quoted
+   speech's pronouns and proper names by eye), plus an advisor pass before commit (see the
+   2026-09-25e through 2026-09-25h Session blocks for the error classes caught so far). **Mark
+   still has no scripture stories** — same gap, untouched; `app.js` falls back to the passage's own
+   verses in the tab, so nothing is blank, but Mark's 78 icon-bearing passages are the next
+   candidate if the owner wants to repeat this pass there.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5175,3 +5190,44 @@ still have no story; Mark's 78 have none.
 quoted-speech pronouns it can't check by eye — including any place a key verse and a story
 retell the same clause, which is now a second thing worth eyeballing side by side — and run an
 advisor pass before each commit.
+
+## Session 2026-09-25h (Luke scripture stories, batch 4: chapters 10-24, 48 of 48 — Luke's stories finished)
+
+**Did.** Wrote the remaining 21 scripture stories: `samaritan` (10:25-37), `beelzebub`
+(11:14-26), `lostsheep` (15:1-7), `tenlepers` (17:11-19), `publican` (18:9-14), `entry`
+(19:28-36), `temple` (19:45-48), `coming` (21:25-33), `supper` (22:14-20), `gethsemane`
+(22:39-46), `arrest` (22:47-53), `denial` (22:54-62), `council` (22:63-71), `pilate` (23:1-5),
+`crucifixion` (23:33-43), `burial` (23:50-56), `myrrhbearers` (24:1-12), `emmausroad` (24:13-24),
+`breaking` (24:25-35), `peace` (24:36-43) and `ascension` (24:50-53). These 21 verse ranges are
+mostly a single continuous scene or discourse each, with far fewer clause reorderings across
+verse boundaries than earlier chapters' stories needed, so the drafts read closer to a KJV
+transcription than a retelling — deliberate, not a shortcut: `centurion` and `gadarene` (earlier
+batches) are the same shape.
+
+**Why.** Closes the `## Next` item left after batch 3 (2026-09-25g); the owner's standing request
+to "repeat the process" implies finishing what a pass starts.
+
+**Verified.** `BOOK=luke node src/tools/story_check.js` on all 21 flagged one stray word
+(`tenlepers` had "saying" where 17:13 says "and said" — fixed). An advisor pass then caught two
+pronoun slips the diff can't see, both the mirror image of batch 3's fix: batch 3 corrected
+"Jesus" wrongly introduced where a verse only says "he"; this batch had the opposite error —
+"he" wrongly substituted where the verse itself says "Jesus," which moves the antecedent. In
+`arrest` (22:51), "and he touched his ear" landed on the swordsman (the nearer subject) instead
+of Christ once "Jesus answered and said" had been thinned to "he answered and said." In `council`
+(22:63), "The men that held him mocked him" opened the story with no antecedent at all, where
+22:63 itself says "held Jesus." Both restored to "Jesus." A third, non-blocking fix: `burial`'s
+own keyVerse (23:51) had dropped the KJV's parenthesis around "the same had not consented,"
+turning the colon before "who also himself waited" into a comma and letting "who" misattach to
+"a city of the Jews" — restored the original punctuation. Also caught before the advisor pass:
+moving `lostsheep`'s and `peace`'s new `story:` fields out of the "six type icons" block at the
+top of the file (to sit near their chapter, matching where every other story sits) had created
+duplicate keys for both — `make check` would have caught it, but it was fixed by hand first and
+both stories were put back on their original declarations instead. `make`, `make BOOK=luke
+check` (scripture stories 48/48, no new warnings), and a full `make` all ran clean. Playwright
+against `python3 -m http.server 8731`: opened `arrest`, `burial` and `ascension`'s drawers,
+confirmed the Scripture Story tab shows the corrected prose (the restored "Jesus," the restored
+parenthesis), zero console errors throughout.
+
+**Next.** Luke's scripture stories are done, 48/48. Mark has none yet — 78 icon-bearing passages,
+same convention, same tooling (`story_check.js` already reads `BOOK=mark`), same advisor-pass
+discipline. No icon search, no reading or marker work this session.
