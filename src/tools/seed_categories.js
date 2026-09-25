@@ -17,7 +17,7 @@ async function categoriesOf(titles){
   return out;
 }
 (async()=>{
-  const titles=[...new Set(Object.values(picks))].filter(t=>t.startsWith('File:'));
+  const titles=[...new Set(Object.values(picks).flat())].filter(t=>t.startsWith('File:'));
   const cats=await categoriesOf(titles);
   fs.writeFileSync(OUT,JSON.stringify(cats,null,1));
   const missing=titles.filter(t=>!cats[t]);

@@ -20,7 +20,8 @@ and this file did not.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
-  `Mark Reader.html` (~12.6 MB) and `Luke Reader.html` (~11 MB) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
+  `Mark Reader.html` (~12.6 MB) and `Luke Reader.html` (~14.6 MB, up from ~11 MB after the
+  2026-09-25c icon harvest) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
   ```
@@ -108,6 +109,24 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
+- **Luke content, as of 2026-09-25c:**
+  - **The Feast-cycle harvest ran this session** (see `## Next` and the Session block below for
+    the method and the full survey). **13 more passages gained an icon** — the two Annunciations,
+    the Visitation, the Nativity of the Forerunner, the Circumcision, the Meeting in the Temple,
+    the woman with the issue of blood, the Good Samaritan, the ten lepers, the Pharisee and the
+    Publican, and both the road to and the supper at Emmaus — plus a bonus find, St Luke's own
+    icon at the Prologue (tier b, `assign.js` had named it since 2026-09-20b but no file had ever
+    been wired). **A fourteenth candidate, for Christ at twelve years (2:42-52), was wired and
+    retracted the same session** — it is catalogued as the Kirillo-Belozersky iconostasis's own
+    Mid-Pentecost panel, not confirmed as a Finding-in-the-Temple icon; see the Gotcha below and
+    `## Next` for the open question. That passage stays tier c for now, pending the owner.
+    **48 icon-bearing passages, 89 icons; tiers 42 (a), 6 (b), 104 (c)**, up from 34/69/29/5/118.
+    **None of the 13 has a prose reading yet** — this session was survey-and-wire only, the
+    pattern 2026-09-20b/d set for the first pass; readings are next. **26 passages still want an
+    icon**: `nain` and Zacchaeus (searched again, still no Orthodox image found either time), the
+    woman bowed together at 13:10-17 (Monreale's own Commons record turned out to hold only half
+    the mosaic — see the Session block), and the rest of the Infancy/parables/Luke-only-Passion
+    list the harvest could not supply.
 - **Luke content, as of 2026-09-20d:**
   - **152 passages**, all 24 chapters, every verse in exactly one of them — `luke_anchors.js`
     refused to write the file otherwise. Unlike Mark's, these are **not** the Catena's own
@@ -136,15 +155,16 @@ and this file did not.
     all 34 icon-bearing passages, in sixteen batches from 2026-09-21 to 2026-09-25 (see
     `## Next` for the batch-by-batch list). Batch 16 (2026-09-25b) finished the set with
     `myrrhbearers` (24:1–12) and `peace` (24:36–43, tier b), the close of the Passion and
-    Resurrection sequence. **The Luke reader is content-complete for its 34 icon-bearing
-    passages**; what remains is the harvest below and the 39 passages with no icon at all.
+    Resurrection sequence. **As of this date, the Luke reader was content-complete for its 34
+    icon-bearing passages**; what remained was the harvest below and the 39 passages with no icon
+    at all. **Superseded 2026-09-25c** — see the block above: the harvest ran, 13 more passages
+    now have an icon (none with a reading yet), and 26 passages remain unillustrated.
   - The five type icons (`tierB`): the Angel of the Desert at 3:1–6, the Apostle Matthew's own
     icons at the calling of Levi, the Synaxis of the Twelve at the choosing, the Good Shepherd at
     the lost sheep, and Christ manifest among the apostles at 24:36–43. `draught` (new this
     session) is **not** one of these — see the caveat below for why it stayed tier a.
-  - `assign.js` still names a subject with no icon for **39** passages, and `make check` lists
-    every one. They are Luke's own material: the Infancy, the Feast cycle, Emmaus, the Ascension,
-    and the parables Orthodox painting does take up.
+  - `assign.js` named a subject with no icon for **39** passages at this date; **26** after the
+    2026-09-25c harvest (see above).
   - **No scripture stories yet**, same as Mark.
 - **Tier system.** Tier is a property of the **passage**, not of an image: every icon a
   passage shows is of that passage's own scene, so a second or third one cannot change the
@@ -182,17 +202,49 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Luke's readings are now finished too — 69 of 69, 422 markers, sixteen batches.** Batch 16
-(2026-09-25b) did `myrrhbearers` (24:1-12, tier a, 7 markers) and `peace` (24:36-43, tier b, 7
-markers), the close of the Passion and Resurrection sequence. **The Luke reader is
-content-complete for its 34 icon-bearing passages.** What is left for Luke, in order:
-1. `nain` (7:11-17, the widow's son) sits earlier in Gospel order than any of the above but has
-   **no file wired at all** — a harvest task, not a reading task; see the Luke section further
-   down.
-2. The real Commons harvest for Luke's own material — the Infancy, the Feast cycle, Emmaus, the
-   Ascension — which no earlier book's pool touched. 39 passages still want an icon; the Luke
-   section below has the full list and the search strategy.
-3. Scripture stories for Luke (none written yet, same gap Mark has) and for Mark.
+**Luke's readings were finished at 69/69 through batch 16 (2026-09-25b); the Feast-cycle harvest
+then ran 2026-09-25c and gave 13 more passages an icon (19 images, plus the bonus `prologue`),
+none with a reading yet — so the reader is at 69/89 readings, and closing that gap is first.**
+What is left for Luke, in order:
+1. **Readings and markers for the 13 passages the 2026-09-25c harvest wired**, in Gospel order:
+   `zacharias` (1:5-25, 1 icon), `annunciation` (1:26-38, 2), `visitation` (1:39-45, 1),
+   `forerunnerbirth` (1:57-66, 1), `circumcision` (2:21, 2), `meeting` (2:22-38, 1),
+   `issueofblood` (8:40-48, 2), `samaritan` (10:25-37, 1), `tenlepers` (17:11-19, 1), `publican`
+   (18:9-14, 2), `emmausroad` (24:13-24, 1), `breaking` (24:25-35, 2), `ascension` (24:50-53, 2)
+   — 19 icons in all — plus the bonus `prologue` (1:1-4, tier b, 1 icon, St Luke's own): 20 images
+   in use, out of 21 new `.webp` files on disk — the 21st is the retracted Kirillo file, kept as
+   the evidence for item 3 below (see the orphan-images note in the Gotchas). Use the same batch
+   loop Mark and the first 69 used
+   (`## Active work` above), and see the Session 2026-09-25c block below for what each file
+   actually shows, what its inscription says (several are abbreviated or worn past a confident
+   letter-by-letter transcription — don't assert more than was actually legible), and the traps
+   already found (the Rossano Samaritan, the two Gračanica publican crops, the Adam/Langadas
+   Circumcision pair and its uninvolved St Basil, the Ascension's caveat — the angels are Acts
+   1:10-11's, not Luke's, and the Theotokos is the icon's own tradition, in neither — and the
+   Kirillo "Among doctors" panel, catalogued as the iconostasis's own Mid-Pentecost feast image
+   and pending the owner's word before it goes back to `twelveyears` — see the Gotcha and
+   `## Next` item 3 below).
+2. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
+   2026-09-25c (English, Greek, Cyrillic, and by category), still nothing; see the Session block
+   for what was tried. Likely stays tier c permanently; no fixed Orthodox icon type exists for it,
+   unlike the Feasts.
+3. **An open question for the owner: Christ at twelve years (2:42-52).** The one candidate found,
+   `Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`, is catalogued by its own iconostasis's
+   panel list as the Mid-Pentecost feast image (John 7:14), which Byzantine iconography paints
+   with the same composition Luke 2:46 describes — see the Gotcha. Retracted to tier c rather than
+   kept with a caveat; the same shape of open question as `Christos Iomenos Typhlon` and the
+   Bethesda fresco in Matthew's reader (`## Next`, that reader's own section), and one line to
+   reverse if the owner judges the resemblance is enough.
+4. **26 passages still want an icon** (down from 39, net unchanged from the harvest's own first
+   pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
+   (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
+   13:10-17 (Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
+   side, not the woman's, so there is nothing to point
+   a marker at), and the rest of the Infancy/parables/Luke-only-Passion list `make check` prints
+   in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
+   pool this pass; what's left is either genuinely unpainted in Orthodox tradition or would need a
+   source outside the categories already enumerated (see the Session block for the search method).
+5. Scripture stories for Luke (none written yet, same gap Mark has) and for Mark.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -1551,14 +1603,16 @@ Mnemeion removal and the rebuilt reader). Before that, `f4a87b5` carries the mul
 galleries and `09bb6f5` carries `src/tools/`. The 2026-09-18 and 2026-09-19 work is committed
 on `main` locally (`15c58e3` onward) and **not pushed**.
 
-**The eight orphan images in `src/img/` are tracked on purpose, and `make check` warns about
+**The nine orphan images in `src/img/` are tracked on purpose, and `make check` warns about
 them on purpose.** They are rejected candidates kept as the evidence for the rejections the
 Gotchas below describe by name — `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
-Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`. There were
+Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`, and
+`6cc1c1be2fcf` (added 2026-09-25c) is the Kirillo-Belozersky Mid-Pentecost panel, wired to
+`twelveyears` and retracted the same session (see the Gotcha). There were
 ten until 2026-09-18, when the John reader took two of them into use: `66e7620d02cb` (the
 Langadas St John the **Evangelist** mislabelled as the Baptist) is John's Prologue icon, and
 `d5b36ae3319a` (the Dionysiou `Mnemeion Christou`, inscribed with John 20:3) is John 20:1–10's.
-No passage of either reader shows the remaining eight; none is embedded in a reader, because
+No passage of either reader shows the remaining nine; none is embedded in a reader, because
 `assemble.js` deletes image records nothing shows. They cost ~1 MB in the repo and nothing in
 the deliverables. Tracking them also keeps `git status` clean, which matters: the `Stop` hook tests
 `git status --porcelain -- src '*.html'`, so a stray untracked file in `src/img/` makes it fire
@@ -1765,7 +1819,31 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   titled `Fig tree cursed 04-16.jpg`, `Ten virgins 05-15.jpg` — no place name anywhere in the
   title. Probing the pool for "Ferapontov" returned 8 files; the category itself holds 39, and
   it is one of the very few Orthodox programmes that paints parables. Enumerate the category,
-  never grep the titles.
+  never grep the titles. **The same trap caught Luke's Road-to-Emmaus search 2026-09-25c**, in a
+  numbered-sequence form: a keyword search for `emmaus` found Monreale's own "2 Apparition
+  (Emmaus)" but not its siblings "1 Apparition," "3 Apparition" and "4 Apparition" — the first of
+  which is the Road to Emmaus itself (Luke 24:17, inscribed), sitting one file before the one the
+  keyword found. `prop=categories` on the file already trusted, then `catMembers` on what comes
+  back, surfaced all four; the keyword pass alone would have missed three of them.
+- **MediaWiki category titles are case-sensitive past the first letter, and `catMembers` fails
+  silently on a mismatch.** `catMembers("Museum of Dionisy's frescos")` (lowercase "frescos")
+  returned 0; `catMembers("Museum of Dionisy's Frescos")` (capital "F", copied verbatim from a
+  `catSearch` result) returned all 39 — including Luke's `Visitation 04-18.jpg`, which
+  `harvest_pool.js`'s own `CYCLES` list already names correctly and so had already enumerated
+  this category on the first, successful harvest run. Don't retype a category name from memory;
+  copy it from `catSearch` or `pool.json` output.
+- **A Byzantine "Christ among the doctors" composition can be Mid-Pentecost, not Luke 2:42-52, and
+  the two are not easy to tell apart from the picture alone.** The Kirillo-Belozersky
+  iconostasis's panel 6 (`Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`) shows the
+  composition Luke 2:46 describes — a haloed figure seated among two ranked groups of temple
+  elders — and was wired to `twelveyears` on that strength, 2026-09-25c. The iconostasis's own
+  24-panel list (at the credit URL, `icon-art.info/group.php?grp_id=40`) names panel 6, in order,
+  "Преполовение" — Mid-Pentecost, the feast of John 7:14, whose own icon type is conventionally
+  painted the same way (a youthful Christ teaching among elders), which is exactly why the
+  resemblance is not conclusive either way. Retracted to tier c pending the owner rather than kept
+  with a caveat — the same shape of open question as `Christos Iomenos Typhlon` and the Bethesda
+  fresco in Matthew's reader, and one line to reverse if the owner judges the composition decides
+  it. No other candidate for the Finding in the Temple was found this session.
 - **`upload.wikimedia.org` rate-limits into 429s, and a 429 is not a dead candidate.** A first
   pass fetching 177 thumbnails got 21 files and 156 "failures". With `Retry-After` honoured and
   an exponential backoff (6 attempts, ~1.5s growing), the same list returned 172 of 172. Never
@@ -4630,3 +4708,186 @@ Ascension, and the three parables Orthodox painting does take up) still want the
 describe — `prop=categories` on the Dionysiou, Monreale, Langadas and Ferapontov files already in
 the pool, not free text — starting with the Great Feasts (`nain`'s own search is separate, since it
 has no fixed Orthodox icon type the way the Feasts do; see the Luke section above for what to try).
+
+## Session 2026-09-25c (the Luke Feast-cycle harvest — 13 passages gained an icon, survey only, no readings)
+
+**Did.** Ran the Commons harvest `## Next` had been pointing at since batch 1 (2026-09-21): seeded
+categories from Luke's 69 already-trusted files (`BOOK=luke node src/tools/seed_categories.js`,
+patched to flatten `picks.js`'s arrays — it was written for a single-string-per-passage shape
+Luke never had), enumerated a 55,368-file candidate pool (`node src/tools/harvest_pool.js`,
+patched with Luke's own `SUBJECT_QUERIES` in place of Matthew's — Annunciation, Visitation,
+Hypapante, Ascension, Nain, Zacchaeus, the named parables — and `catMembers` raised from 400 to
+1000 per the truncation Gotcha), then filtered the pool by keyword in a scratch script (kept in
+the session scratchpad, not `src/tools/` — same as the 5-gram overlap script's own Gotcha, a
+future session would have to rewrite it from this description) and looked at every survivor at
+500px, then at 900px for the ones wired. A second pass, after an advisor review, found one more
+(the Road to Emmaus, below) by enumerating a Commons category directly rather than trusting the
+keyword filter. **13 passages gained an icon net** (14 wired, one retracted — see below), all
+fetched, encoded and checked against Commons' own inscription or description before wiring, not
+title alone — see the list in `## Status` above. **Wired `picks.js`, `labels.js` and
+`overrides.js` only — no readings, no markers.** `assign.js` needed no changes for the 13 that
+stuck: each was already declared at its correct tier with the right `subj` line back on
+2026-09-20b/c; the harvest only had to find the file.
+
+**Why.** This was the one task every Luke session since batch 1 deferred to "next," and it was
+the largest block of unwritten content left in any of the four readers (39 passages, a third of
+the book). The owner's stated priority (icons and their explanation matter most) makes finding
+real icons before writing more prose the right order, and matches how Mark's reuse pass and
+Luke's own first wiring pass (2026-09-20b/d) were both done: wire first, read after, in batches.
+
+**Verified.** Every file below was confirmed by *both* a visual check and Commons' own metadata
+or the fresco's own inscription — not by title alone, because titles lie (the standing Gotcha).
+Two 30-file contact sheets (500px, via `montage`) were built and read, then the ~20 files about to
+be wired were re-fetched at 900px and checked individually. What each shows, and how it was
+checked:
+- `Evangelismos Zachariou Dionysiou.jpg` — Commons' own description reads "Fresco of the
+  Annunciation to Zachariah from Dionysiou Monastery"; the picture shows a haloed priest at a
+  dark sanctuary recess with a winged figure inside it, exactly Luke 1:11.
+- `017 Annunciation Icon … Langadas.jpg` (Commons desc „Благовещение", 1790) and `Annunciation
+  Icon Sinai 12th century.jpg` (Commons desc "Mary's Annunciation, late Komnenos icon") — both the
+  classic two-figure Gabriel-and-Mary composition.
+- `Visitation 04-18.jpg` — surfaced on the very first keyword pass (the `visitation` bucket's
+  first hit), because `harvest_pool.js`'s own `CYCLES` list already names its category, "Museum
+  of Dionisy's Frescos" (39 files — probing the pool for the place name "Ferapontov" instead
+  returns only 8, the existing Gotcha). Commons desc: "the Visitation, Ferapontovo." Picture: two
+  haloed women embracing under an archway.
+- `052 Nativity of Saint John the Baptist Icon … Langadas.jpg` — Commons desc gives its own
+  inscription, „Η ΓΕΝΗCΗΣ ΤΟΥ Π[ΡΟΔΡΟΜΟΥ]" (the Birth of the Forerunner). Picture: Elisabeth
+  reclining attended by midwives, an infant bathed at bottom left, Zacharias seated at the left
+  writing on a tablet — Luke's own detail (1:63). **A second file almost went in beside it and was
+  caught and dropped**: `Gennemata Prodromou Dionysiou.jpg`'s Commons *title* names the Forerunner
+  ("Prodromou"), but its own painted inscription reads ΓΕΝΝΗΜΑΤΑ ΕΧΙΔΝΩΝ — "O generation of
+  vipers" (Luke 3:7) — and the picture is John rebuking a crowd, not his own nativity. The title
+  names the wrong word, not a mistransliteration of the right one; visual + inscription check
+  caught it before it was wired to the wrong passage. It belongs beside `fruits` (3:7-14) if
+  anyone wants a second icon there; not added this session to keep the scope to the harvest itself.
+- `039 Circumcision … Langadas.jpg` and `02 Circumcision … Adam.jpg` — both inscribed <Η> ΠΕΡΙΤΟΜΗ
+  ΤΟΥ ΧΡΙΣΤΟΥ ("The Circumcision of Christ"), the Adam panel additionally labelling Mary and Joseph
+  in its own lettering (ΜΗΤΗΡ ΘΕΟΥ, ΙΩσήφ) and signed and dated by its painter, Athanasios
+  Vasilikos, 1877. The Adam panel's inscription also names a second, unrelated figure, Ο ΑΓΙΟΣ
+  ΒΑΣΙΛΕΙΟΣ (St Basil the Great, whose feast falls the same day, 1 January) — recorded in
+  `picks.js` so a future reading doesn't call him the priest of Luke 2:21.
+- `050 Presentation of Jesus at the Temple Icon … Langadas.jpg` — inscribed ΗΠΑΠΑΝΤΗ ΤΟΥ [ΧΡΙΣΤΟΥ],
+  the Hypapante's own name. Picture: Symeon receiving the Child under a ciborium, Mary and Joseph
+  flanking.
+- **Wired, then retracted — an open question left for the owner**: `Kirillo-Belozersky
+  iconostasis 06 - Among doctors.jpg` — 1497, part of the Dormition Cathedral's festal tier,
+  drafted for `twelveyears` (2:42-52) on the strength of its composition (a haloed figure seated
+  on temple steps between two ranked groups of elders — Luke 2:46's own scene, visually).
+  Retracted after checking the iconostasis's own 24-panel list (the credit URL's page,
+  `icon-art.info/group.php?grp_id=40`): panel 6, in this file's own numbering, is catalogued as
+  **"Преполовение"** — Mid-Pentecost, the feast of John 7:14. Byzantine iconography paints both
+  scenes the same way, which is exactly why the resemblance alone can't settle which one this
+  panel is; see the Gotcha below. `twelveyears` stays tier c for now, the same shape of open
+  question as `Christos Iomenos Typhlon` and the Bethesda fresco in Matthew's reader.
+- `Haemorrhoissa Dionysiou.jpg` (Commons desc: "healing of the Haemorrhoissa") and `Monreale -
+  Healing of the Woman with an Issue of Blood.jpg` — both show a woman kneeling at Christ's hem in
+  a crowd; the Monreale mosaic additionally shows an elder with a scroll at the right, unlettered
+  — a reading should not call him Jairus (whose own story frames this one, 8:41-42, 49-56) without
+  something in the picture itself to say so.
+- `RossanoGospelsFolio007vGoodSamaritan.jpg` — captioned in its own strip-miniature title, ΠΕΡΙ ΤΟΥ
+  ΕΜΠΕΣΟΝΤΟΣ ΕΙΣ ΤΟΥΣ ΛΗΣΤΑΣ, "concerning him who fell among thieves" — Luke 10:30 itself. Shows a
+  wounded man bandaged beside a city gate, a beast and a leader toward an inn.
+- `Monreale - Christ cleans ten leper men in Samaria.jpg` — Latin inscription legible in the full
+  photograph, OCCVRRERVNT EI... OSTENDITE VOS SACERDOTIBVS... MVNDATI SVNT, Luke 17:12-14 word for
+  word, with visibly lesioned skin on the ten men. **A second, darker phone-photo of the same
+  mosaic under the un-prefixed title `Christ cleans ten leper men in Samaria.jpg` was compared and
+  dropped as redundant** — same object, much worse photograph.
+- The two Gračanica Publican-and-Pharisee photographs — one a tight crop (an elder with hands
+  raised at the top of the temple steps, a bowed man with hands crossed below), one a wider view of
+  the same fresco. Both kept as a gallery of two.
+- `Cathedral (Monreale) - Left wing transept - 2 Apparition (Emmaus).jpg` — Latin title
+  COGNOVERVNT EVM IN FRACTIONE PANIS, Luke 24:35 exactly. `The Supper at Emmaus PRIZREN 2 IMG
+  4853-2.jpg` — damaged (plaster loss at lower left) but Christ's gesture, handing bread to a
+  seated disciple under a canopy, is legible.
+- **The Road to Emmaus (24:13-24), first recorded tier c, then found.** Two Prizren files,
+  captioned as this scene, were fetched and rejected in the first pass: only one of two figures is
+  haloed, and nothing there settled whether that figure was meant for Christ. An advisor pass
+  caught that this reasoning was backwards — one haloed figure beside an unhaloed companion is
+  exactly what Christ walking with a single disciple looks like — and pointed at the Monreale
+  mosaic's own numbered sequence (it titles its Emmaus supper "**2** Apparition"), which a
+  keyword search for `emmaus` had missed because "1 Apparition" and "3/4 Apparition" don't contain
+  the word. Enumerating that Commons category directly (`Cathedral (Monreale) - Christ mosaics
+  (Left wing transept)`) found `Cathedral (Monreale) - Left wing transept - 1 Apparition.jpg`: a
+  haloed, bearded Christ with a pilgrim's staff walking beside two travelling companions toward a
+  walled city. Its first line is abbreviated past a confident reading, but the second and third
+  are legible as "...CONFERTIS AD I[N]VICE[M] AM/BVLANTES ... ESTIS TRISTES" — the Vulgate's own
+  words for Luke 24:17, "ye have one to another, as ye walk, and are sad." Wired to `emmausroad`.
+  Two further panels in the same numbered
+  sequence, "3 Apparition" (the disciples at table after Christ vanishes, Luke 24:32) and
+  "4 Apparition" (their return to report to the Eleven, 24:33-34), were found but not wired —
+  `breaking` already has two icons and neither adds a scene the other doesn't cover. The lesson:
+  enumerate the category, don't grep the titles, the same
+  rule the Ferapontov undercount already taught, now confirmed for numbered sequences too.
+- `016 Ascension of Jesus Icon … Langadas.jpg` — inscribed Η ΑΝΑΛΗΨΙC ΤΟΥ ΧΡΙΣΤΟΥ and begins
+  quoting Acts 1:11 in Greek (Ἄνδρες Γαλιλαῖοι, τί ἑστήκατε ἐμβλέποντες...; the rest is not clearly
+  legible). `Cathedral (Monreale) - Left wing transept - Ascension.jpg` — titled ASCENSIO DOMINI
+  ("the Ascension of the Lord," a title, not a quotation). Both show Christ ascending in a
+  mandorla, apostles (and, in the Monreale panel, the Theotokos at centre) looking up — the two
+  men/angels are Acts 1:10-11's own detail, not Luke's (how many either panel actually paints
+  wasn't counted here); the Theotokos's place at the Ascension is in neither Luke nor Acts (1:14
+  puts her in the upper room afterward) but is the icon's own developed tradition. `picks.js`
+  records both caveats now, in the same form as `Ide Topos`'s fallen-guard note.
+- `051 Saint Luke Icon … Langadas.jpg` — inscribed ΛΟΥΚΑΣ, Commons desc „Свети Лука." Picture: a
+  seated saint with an ox at his feet, his own symbol. `assign.js` had declared `prologue` tier b
+  since 2026-09-20b (`subj:'St Luke the Evangelist writing his Gospel'`) but no file was ever
+  wired to it until now.
+- **Rejected, and worth recording so nobody re-finds it and wires it wrongly**:
+  `Iosymiosion Herodon Dionysiou.jpg` reads like a Christ-before-Herod candidate for 23:6-12 but
+  the picture is a banquet with a dancing woman in red — Herod's birthday feast at the beheading of
+  the Forerunner (Matthew 14 / Mark 6), not Luke's own scene. `Monreale - Healing of the Infirm
+  Woman p.2.jpg` (searched for 13:10-17, the woman bowed together) shows only the crowd of
+  onlookers — a `search` for its own title found no companion "p.1" anywhere on Commons, so the
+  only surviving photograph of this mosaic doesn't actually show the healing. `Lesson of the
+  widow's mite--Healing of two blind men 04-15.jpg` (Ferapontov) was fetched but not wired: its two
+  registers are hard to read with confidence at this resolution and neither the widow nor a mite
+  is clearly legible; a full-resolution crop might settle it, not done this session.
+- After the first wiring: `BOOK=luke node src/assemble.js` and `BOOK=luke node src/check.js`
+  caught one real error before it shipped — **the two Gračanica files got the same label**, which
+  `make check` hard-fails on ("two icons in one gallery must not carry the same name"); fixed by
+  naming the wider crop "...wider view." A second `make check` ran clean, then a full `make` (all
+  four books) to confirm the shared `image_meta.json` and `pick_keys.json` changes didn't touch
+  Matthew, Mark or John — they didn't; only `Luke Reader.html` changed. Loaded in Playwright:
+  chapter 1's rail listed the Prologue, the two Annunciations, the Visitation and the Nativity of
+  the Forerunner as icon-bearing rows instead of plain text; opened the Prologue drawer and
+  confirmed the St Luke icon, its credit line, the tier-b caption, and zero console errors (only
+  the harmless favicon 404 every reader has). **A second round, after the advisor pass above,**
+  retracted `twelveyears`'s icon and wired `emmausroad`'s; `assemble.js` and `check.js` both ran
+  clean again at the same 42/6/104 tiers, 89 icons (one out, one in), and a full `make` confirmed
+  the other three readers still untouched. Re-checked in Playwright after the second round too:
+  the Road to Emmaus card renders and opens correctly, `twelveyears` (2:42-52) now shows as a
+  plain verse row with its subject title still printed (tier c, as intended), and console errors
+  were still zero (just the favicon 404).
+- **For the owner, cheap and not blocking:** several of the new credit lines will print the
+  photograph's or the upload's own date next to the icon's actual date, not in place of it —
+  `app.js` prints `label · title · image_meta.date`, and Rossano's `image_meta` carries no artist
+  and an upload timestamp of 2026-07-29; the two Gračanica photographs are dated 2021; the Prizren
+  photograph, 2019. This is not a new flaw and not a one-off: the existing Gračanica Caiaphas file
+  (`council`, wired 2026-09-20) has the *same* 2021 BLAGO-photograph date in `image_meta.json`
+  already (checked directly — `090A7764`'s `date` field reads "2021-09-06 16:00:38"), so this is
+  the same shape of self-contradiction the Ravenna Sheep-and-Goats label has on record (`## Next`,
+  batch 10), just not previously noticed on a Gračanica file. Not fixed here since it touches how
+  `image_meta.json` dates are chosen project-wide, not just this session's five files.
+- **For the owner, also cheap:** `circumcision` and `forerunnerbirth` are typed `'Feast'` in
+  `overrides.js`, which prints app.js's "Great Feast" ribbon, and neither is one of the Twelve.
+  Neither is that a clean rule already, though — `supper`, `thomas` (John) and `myrrhbearers`
+  (Mark) are typed `'Feast'` too, and none of those three is one of the Twelve either, while
+  `beheading` (Matthew, Mark) — a feast with its own fixed day, like these two — is typed
+  `'Event'`. Flagged in `overrides.js` with a comment; not changed, since the existing convention
+  isn't consistent enough to say what "correct" would be without the owner's own ruling.
+
+**Not done.** No readings or markers for any of the 13 new icons — `make check` reports 69/89 and
+lists all 20 new images under "no prose reading" as a warning, not a failure, exactly as designed.
+`nain` and Zacchaeus were searched again (English, Greek/Cyrillic transliterations, and by
+category) and still have nothing; treat both as likely permanent tier c unless a future session
+finds a source this one didn't touch. Christ at twelve years (2:42-52) has an open question on
+record above rather than a blank search — the Kirillo Mid-Pentecost panel, pending the owner. 26
+passages total still want an icon; the full list is in `## Status` and printed by `make check`.
+Scripture stories: untouched, same gap as always.
+
+**Next.** Readings and markers for the 19 new icons (13 passages, none of them tier-b — `peace`
+and `forerunnerpreach` are the reader's existing type icons, unchanged) plus the bonus `prologue`
+(tier b), in the batch loop the first 69 used — the list with icon counts is at the top of
+`## Next` above. After that, `nain`, Zacchaeus and Christ at twelve years are unlikely to reward
+another search without a new source; scripture stories for Luke and Mark remain the standing gap
+behind the readings.

@@ -27,24 +27,22 @@ const CYCLES=[
  'Life of Jesus Christ in art','Gospel of Jesus Christ in icons',
 ];
 // Scene keyword sets -> used only to name subject-category searches here.
+// Luke's own harvest (2026-09-25c): the Infancy and Feast cycle no earlier book's
+// pool touched, plus the handful of Luke-only miracles and parables Orthodox
+// programmes do paint. Transliterated-Greek and Slavonic variants are added
+// separately in the match-by-hand pass (English category names miss the Feasts).
 const SUBJECT_QUERIES=[
- 'Tree of Jesse icons','Nativity of Jesus icons','Adoration of the Magi icons',
- 'Flight into Egypt','Massacre of the Innocents icons','John the Baptist icons',
- 'Baptism of Jesus icons','Temptation of Jesus','Sermon on the Mount','Beatitudes icons',
- 'Cleansing of the Leper','Healing the Centurion servant','Healing Peter Mother-in-Law',
- 'Christ calming the storm','Healing of the demon-possessed','Healing of the paralytic',
- 'Saint Matthew calling','Raising of Jairus daughter','Healing of the blind',
- 'Twelve Apostles icons','Christ Pantocrator icons','Healing the withered hand',
- 'Jonah prophet icons','Parable of the Sower','Beheading of John the Baptist',
- 'Multiplication of the loaves','Jesus walking on water','Canaanite woman',
- 'Transfiguration of Jesus icons','Good Shepherd','Workers in the vineyard',
- 'Entry into Jerusalem icons','Cleansing of the Temple','Cursing the fig tree',
- 'Parable of the Wedding Feast','Second Coming icons','Wise and Foolish Virgins',
- 'Last Judgment icons','Anointing at Bethany','Judas Iscariot icons','Last Supper icons',
- 'Denial of Peter','Agony in the Garden','Arrest of Jesus','Christ before Caiaphas',
- 'Pilate washing hands','Crucifixion of Jesus icons','Lamentation of Christ',
- 'Myrrhbearers icons','Resurrection of Jesus icons','Great Commission',
- 'Christ healing the sick','Christ teaching icons','Transfiguration frescoes',
+ 'Annunciation to Zacharias','Annunciation icons','Evangelismos icons',
+ 'Visitation icons','Nativity of John the Baptist icons','Circumcision of Jesus icons',
+ 'Presentation of Jesus at the Temple','Hypapante icons','Meeting of the Lord icons',
+ 'Christ among the doctors','Finding in the Temple','Mesopentecost icons',
+ 'Raising of the son of the widow of Nain','Widow of Nain',
+ 'Woman with the issue of blood','Healing of the bent woman','Healing of the dropsical man',
+ 'Zacchaeus icons','Publican and Pharisee icons','Prodigal Son icons',
+ 'Rich man and Lazarus icons','Good Samaritan icons','Ten lepers icons',
+ 'Christ before Herod','Simon of Cyrene','Road to Emmaus icons','Supper at Emmaus icons',
+ 'Ascension of Jesus icons','Analepsis icons','Christ in Glory icons',
+ 'Saint Luke the Evangelist icons',
 ];
 const sleep=ms=>new Promise(z=>setTimeout(z,ms));
 (async()=>{
@@ -74,7 +72,7 @@ const sleep=ms=>new Promise(z=>setTimeout(z,ms));
   const pool={};
   let i=0;
   for(const c of withSubs){
-    const m=await C.catMembers(c,400);
+    const m=await C.catMembers(c,1000);
     for(const t of m) (pool[t]=pool[t]||[]).push(c);
     if(++i%40===0) console.error('  ',i,'/',withSubs.size,'files',Object.keys(pool).length);
     await sleep(50);

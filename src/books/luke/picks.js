@@ -4,12 +4,13 @@
 // also stand beside their accounts of the same event — but "one icon, one passage" still holds
 // inside this reader, and each file was chosen against what the picture shows of LUKE's verses.
 //
-// This is the first pass: the 32 passages the shared pool already covers (surveyed 2026-09-20b
-// and recorded in HANDOFF), plus `fruits`, found while looking at the Forerunner files for this
-// session. Luke's own material — the two Annunciations, the Visitation, the Nativity of the
-// Forerunner, the Circumcision, the Meeting in the Temple, Christ at twelve years, Emmaus and
-// the Ascension — is the Feast cycle, which no earlier harvest touched because Matthew and John
-// do not tell those events. That harvest is still to come.
+// The first pass, 2026-09-20b/d, wired the 32 passages the shared pool already covers, plus
+// `fruits`. Luke's own material — the Feast cycle no earlier harvest touched because Matthew and
+// John do not tell those events — was harvested 2026-09-25c: the two Annunciations, the
+// Visitation, the Nativity of the Forerunner, the Circumcision, the Meeting in the Temple, and
+// the Ascension are wired below; Emmaus is wired in both its own moments (the road and the
+// supper); Christ at twelve years is not (see HANDOFF Gotchas — the one candidate found is
+// catalogued as a different feast).
 //
 // Where Luke's account differs, the file is deliberately NOT reused, and the reasons are in
 // HANDOFF by name: no scourging (Luke has Pilate say only "I will therefore chastise him" and
@@ -22,6 +23,36 @@
 // below and HANDOFF for why it is kept tier a rather than dropped or tierB.
 module.exports={
 
+  // ---- chapter 1 ----
+  // St Luke's own icon (inscribed ΛΟΥΚΑΣ), shown seated with an ox — his own symbol, not a
+  // depiction of these four verses. Bonus find, harvested 2026-09-25c: `assign.js` already
+  // named this passage tier b (`prologue`) but no file had ever been wired to it.
+  "prologue": [
+    "File:051 Saint Luke Icon from Saint Paraskevi Church in Langadas.jpg",
+  ],
+  // Harvested 2026-09-25c (see HANDOFF): the priest inside the sanctuary at the altar of
+  // incense, an angel within the dark recess, the people waiting outside — Luke 1:10-11.
+  // Commons' own description confirms it: "Fresco of the Annunciation to Zachariah".
+  "zacharias": [
+    "File:Evangelismos Zachariou Dionysiou.jpg",
+  ],
+  // The classic two-figure composition — Gabriel with wings and staff, the Theotokos before a
+  // lectern with an open book, her hand raised at "Behold the handmaid of the Lord" (1:38).
+  "annunciation": [
+    "File:017 Annunciation Icon from Saint Paraskevi Church in Langadas.jpg",
+    "File:Annunciation Icon Sinai 12th century.jpg",
+  ],
+  // Two haloed women embracing under an archway — the Theotokos and St Elisabeth, Luke 1:40.
+  "visitation": [
+    "File:Visitation 04-18.jpg",
+  ],
+  // Elisabeth reclining attended by midwives, an infant washed at bottom left, and — at the
+  // left of the panel — Zacharias seated, writing. That last detail is Luke's own (1:63), and
+  // it is what the Church's icon of this feast always shows beside the birth itself.
+  "forerunnerbirth": [
+    "File:052 Nativity of Saint John the Baptist Icon from Saint Paraskevi Church in Langadas.jpg",
+  ],
+
   // ---- chapter 2 ----
   // The Nativity icon is mostly Luke's text: the manger, the swaddling clothes, the ox and the
   // ass over the cave, the shepherds on the hillside. All three stand under Matthew 1:18-25 too,
@@ -31,6 +62,31 @@ module.exports={
     "File:12 Nativity of Jesus Icon in Assumption of Mary Church in Agios Vasileios.jpg",
     "File:Nativity Icon Panagia Evraidos Church 19 Century.jpg",
   ],
+  // Harvested 2026-09-25c. Both inscribed "Η ΠΕΡΙΤΟΜΗ ΤΟΥ ΧΡΙΣΤΟΥ" — the Circumcision of
+  // Christ — a priest at an altar with the child, Mary and Joseph named in the Adam panel's
+  // own lettering. That panel's inscription also names a second, unrelated figure, "Ο ΑΓΙΟΣ
+  // ΒΑΣΙΛΕΙΟΣ" (St Basil the Great) — his feast falls on the same day, 1 January, and Orthodox
+  // panels of this feast often pair the two. A reading must not call him anyone from Luke 2:21.
+  "circumcision": [
+    "File:039 Circumcision of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
+    "File:02 Circumcision of Jesus Icon from Saint Paraskevi Church in Adam.jpg",
+  ],
+  // Inscribed "ΗΠΑΠΑΝΤΗ ΤΟΥ ΧΡΙΣΤΟΥ" — the Hypapante, the Church's own name for this feast.
+  // Symeon receives the Child under a ciborium; Mary and Joseph flank him.
+  "meeting": [
+    "File:050 Presentation of Jesus at the Temple Icon from Saint Paraskevi Church in Langadas.jpg",
+  ],
+  // NOT wired — an open question for the owner, the same shape as `Christos Iomenos Typhlon`
+  // and the Bethesda fresco in Matthew's reader. `Kirillo-Belozersky iconostasis 06 - Among
+  // doctors.jpg` was drafted here 2026-09-25c on the strength of its composition (a haloed figure
+  // enthroned among two ranked groups of elders, which is exactly Luke 2:46's scene) but
+  // retracted the same session on finding that the iconostasis's own 24-panel list (the
+  // icon-art.info page the credit line points to) catalogues panel 6, in order, as
+  // "Преполовение" — Mid-Pentecost, the feast of John 7:14, whose own icon type is
+  // conventionally painted the same way. That does not settle which event this particular panel
+  // shows, only that the composition alone can't. No other Orthodox icon of Christ at twelve
+  // years was found this session; tier c for now, pending the owner's word on whether the
+  // resemblance is enough to keep it here with a caveat.
 
   // ---- chapter 3 ----
   // The Angel of the Desert: the Church's icon of the Forerunner himself, winged, with his own
@@ -133,6 +189,13 @@ module.exports={
   "gadarene": [
     "File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg",
   ],
+  // A woman kneeling at Christ's hem in a crowd of apostles — Luke 8:44. The Dionysiou fresco's
+  // own Commons description names the Haemorrhoissa; the Monreale mosaic's own title does.
+  // Harvested 2026-09-25c.
+  "issueofblood": [
+    "File:Haemorrhoissa Dionysiou.jpg",
+    "File:Monreale - Healing of the Woman with an Issue of Blood.jpg",
+  ],
   "jairus": [
     "File:Daughter of the head of synagogue is resurrected by Christ.jpg",
     "File:Raising of Jairus' daughter 03-19.jpg",
@@ -151,6 +214,13 @@ module.exports={
     "File:042 Transfiguration of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
   ],
 
+  // ---- chapter 10 ----
+  // Rossano's own strip-miniature title, "ΠΕΡΙ ΤΟΥ ΕΜΠΕΣΟΝΤΟΣ ΕΙΣ ΤΟΥΣ ΛΗΣΤΑΣ" — "concerning
+  // him who fell among thieves" — is Luke 10:30 itself. Harvested 2026-09-25c.
+  "samaritan": [
+    "File:RossanoGospelsFolio007vGoodSamaritan.jpg",
+  ],
+
   // ---- chapter 11 ----
   // The DUMB demoniac, which is exactly Luke 11:14. Its neighbour in the pool, `Iomenos
   // Daimonizomenon`, is Matthew 12:22 — blind AND dumb, a detail Luke does not give.
@@ -164,6 +234,24 @@ module.exports={
   "lostsheep": [
     "File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg",
     "File:Ravenna — The Good Shepherd mosaic.jpg",
+  ],
+
+  // ---- chapter 17 ----
+  // Latin OCCVRRERVNT EI... OSTENDITE VOS SACERDOTIBVS... MVNDATI SVNT — "they met him...
+  // shew yourselves to the priests... they were cleansed," Luke 17:12-14 word for word. The
+  // clean, well-lit photograph; a second, darker phone photo of the same mosaic was dropped
+  // as redundant. Harvested 2026-09-25c.
+  "tenlepers": [
+    "File:Monreale - Christ cleans ten leper men in Samaria.jpg",
+  ],
+
+  // ---- chapter 18 ----
+  // Two crops of the same Gračanica fresco: an elder with hands raised at the top of the
+  // temple steps (the Pharisee) and a bowed man with hands crossed on his breast below (the
+  // publican, "smote upon his breast," 18:13). Harvested 2026-09-25c.
+  "publican": [
+    "File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 1 090A7601.jpg",
+    "File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 4 IMG 8016.jpg",
   ],
 
   // ---- chapter 19 ----
@@ -240,11 +328,53 @@ module.exports={
   "myrrhbearers": [
     "File:Ide Topos pou Ekato Dionysiou.jpg",
   ],
+  // The first of Monreale's own numbered "Apparition" sequence (1 of 4, after the Resurrection —
+  // panel 2 is the confirmed `breaking` mosaic below): a haloed, bearded, barefoot Christ with a
+  // pilgrim's staff walks beside two travelling companions toward a walled city. Its first line
+  // is abbreviated past a confident reading, but the second and third are legible as "...
+  // CONFERTIS AD I[N]VICE[M] AM/BVLANTES ... ESTIS TRISTES" — the Vulgate's own words for "ye
+  // have one to another, as ye walk, and are sad," Luke 24:17. Found 2026-09-25c on a second pass,
+  // by enumerating
+  // the mosaic's own Commons category rather than keyword-matching titles — the first pass's
+  // keyword search missed it because "Apparition" alone doesn't match `/emmaus/`. Two Prizren
+  // "remnants" photographs captioned as this same scene were looked at and NOT used: only one
+  // figure is haloed, and nothing there settles whether that figure is meant for Christ.
+  "emmausroad": [
+    "File:Cathedral (Monreale) - Left wing transept - 1 Apparition.jpg",
+  ],
+  // The Monreale mosaic's own Latin title settles it: COGNOVERVNT EVM IN FRACTIONE PANIS —
+  // "they knew him in breaking of bread," Luke 24:35 exactly. It is the very next panel in the
+  // same numbered sequence as `emmausroad` above (2 of 4). The Prizren fresco is damaged
+  // (plaster loss at lower left) but the gesture — Christ handing bread to a seated disciple
+  // under a canopy — is legible. Harvested 2026-09-25c. Two further panels in Monreale's own
+  // sequence (3: the disciples at table after Christ vanishes, Luke 24:32; 4: their return to
+  // report to the Eleven, 24:33-34) were found but not wired — this passage already has two
+  // icons, and neither adds a scene the other doesn't cover.
+  "breaking": [
+    "File:Cathedral (Monreale) - Left wing transept - 2 Apparition (Emmaus).jpg",
+    "File:The Supper at Emmaus PRIZREN 2 IMG 4853-2.jpg",
+  ],
   // Christ standing in the midst of the apostles. Looked at 2026-09-20d: a frontal Christ on a
   // footstool between two ranked groups who carry books, no wounds shown and no detail of these
   // verses — no table, no broiled fish, no fear. It is the Church's image of the risen Lord
   // among his own, so tierB here as in Matthew and Mark.
   "peace": [
     "File:Christos Apostolois Dionysiou.jpg",
+  ],
+  // The Langadas panel is inscribed Η ΑΝΑΛΗΨΙΣ ΤΟΥ ΧΡΙΣΤΟΥ ("the Ascension of Christ") and begins
+  // quoting the angels' own words in Greek, "Ανδρες Γαλιλαίοι, τι εστήκατε εμβλέποντες..." — Acts
+  // 1:11, not Luke (the rest of the inscription is not clearly legible). The Monreale mosaic is
+  // titled ASCENSIO DOMINI ("the Ascension of the Lord," a title, not a quotation). Christ
+  // ascends in a mandorla with the apostles below; the Monreale panel also gives the Theotokos a
+  // place at their centre. The two men/angels are Acts 1:10-11's own detail, not Luke's (how many
+  // either panel actually paints was not counted here — leave that to the crop when the reading
+  // is written). The Theotokos at the Ascension is in neither Luke nor Acts (1:14 puts her in the
+  // upper room afterward): that figure is the icon's own developed tradition, not a citation.
+  // Luke's own text has Bethany, the lifted hands and the blessing (24:50-51) — a reading must
+  // draw the angel(s) from Acts and the Theotokos from tradition, not claim either for Luke's own
+  // words, the same caveat `Ide Topos` carries for its fallen guard. Harvested 2026-09-25c.
+  "ascension": [
+    "File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
+    "File:Cathedral (Monreale) - Left wing transept - Ascension.jpg",
   ],
 };

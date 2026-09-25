@@ -12,3 +12,6 @@ src/books/*/icons.json
 src/tools/raw/
 src/tools/new_fetch.json
 src/tools/titles_*.json
+src/tools/file_cats.json
+src/tools/pool.json
+src/tools/cats_used.json

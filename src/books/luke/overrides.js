@@ -5,7 +5,7 @@
 // Only the passages that have an icon are listed. A tier-c passage of Luke has no card and no
 // opener, so `app.js` never reaches `p.type` or `p.keyText` for it — checked against the four
 // call sites (app.js:176, :209, :297, :312), all of which sit inside `card()` or
-// `renderDrawer()`. Entries for the other 119 passages would be dead weight in a hand-edited
+// `renderDrawer()`. Entries for the other 104 passages would be dead weight in a hand-edited
 // literal that `make check` already guards for duplicate keys because a duplicate once cost a
 // session's corrections.
 //
@@ -14,7 +14,7 @@
 // Peter, the thief promised paradise, and "Why seek ye the living among the dead?"
 module.exports={
 
- // ---- the five type icons ----
+ // ---- the six type icons ----
  // The Angel of the Desert is the Church's icon of the Forerunner himself — winged, with his
  // own severed head already in the charger — not a scene from these verses. Mark declares the
  // same file tierB at 1:2-8.
@@ -34,9 +34,26 @@ module.exports={
  // table, no broiled fish, no fear. So it is the Church's image of the risen Lord among his own,
  // tierB here as in Matthew and Mark, and `assign.js` was moved to tier b to agree.
  peace:{tierB:true,type:'Event',keyVerse:39},
+ // St Luke's own icon, shown with his symbol the ox — not a picture of the prologue's four
+ // verses. Harvested 2026-09-25c, the bonus find alongside the Feast-cycle harvest.
+ prologue:{tierB:true,type:'Event',keyVerse:3},
+
+ // ---- chapter 1 ----
+ zacharias:{type:'Event',keyVerse:13},
+ annunciation:{type:'Feast',keyVerse:38},
+ visitation:{type:'Event',keyVerse:42},
+ // Luke's own detail, and the one the icon paints beside the birth itself. `type:'Feast'` prints
+ // the "Great Feast" ribbon (app.js), and this is not one of the Twelve — but neither are
+ // `supper`, `thomas` (John) or `myrrhbearers` (Mark), already typed 'Feast' by earlier sessions,
+ // where `beheading` (Matthew, Mark) is typed 'Event' despite having its own fixed feast day. The
+ // convention is not perfectly consistent; flagged for the owner rather than changed here.
+ forerunnerbirth:{type:'Feast',keyVerse:63},
 
  // ---- chapter 2 ----
  nativity:{type:'Feast',keyVerse:7},
+ circumcision:{type:'Feast',keyVerse:21}, // same ribbon caveat as forerunnerbirth above
+ // The Hypapante, one of the Twelve Great Feasts — Symeon's Nunc Dimittis.
+ meeting:{type:'Feast',keyVerse:29},
 
  // ---- chapter 3 ----
  // The fresco's right-hand group is soldiers in mail, and 3:14 is the only place in the four
@@ -65,6 +82,7 @@ module.exports={
  sower:{type:'Parable',keyVerse:11},
  storm:{type:'Miracle',keyVerse:24},
  gadarene:{type:'Miracle',keyVerse:35},
+ issueofblood:{type:'Miracle',keyVerse:44},
  jairus:{type:'Miracle',keyVerse:54},
 
  // ---- chapter 9 ----
@@ -73,9 +91,18 @@ module.exports={
  // countenance was altered."
  transfiguration:{type:'Feast',keyVerse:29},
 
+ // ---- chapter 10 ----
+ samaritan:{type:'Parable',keyVerse:34},
+
  // ---- chapter 11 ----
  // The devil that was dumb — exactly what the Dionysiou fresco is inscribed for.
  beelzebub:{type:'Miracle',keyVerse:14},
+
+ // ---- chapter 17 ----
+ tenlepers:{type:'Miracle',keyVerse:14},
+
+ // ---- chapter 18 ----
+ publican:{type:'Parable',keyVerse:13},
 
  // ---- chapter 19 ----
  entry:{type:'Feast',keyVerse:36},
@@ -111,4 +138,7 @@ module.exports={
  // The two angels of 24:4 speak it, and the Dionysiou fresco paints two where Matthew and Mark
  // give one.
  myrrhbearers:{type:'Event',keyVerse:5},
+ emmausroad:{type:'Event',keyVerse:17},
+ breaking:{type:'Event',keyVerse:35},
+ ascension:{type:'Feast',keyVerse:51},
 };
