@@ -315,6 +315,23 @@ module.exports={
  ["The unhaloed companion", "One man stands at Christ's shoulder, given no halo of his own. Luke ends the passage with two names for one act of healing: Christ tells the man, shew how great things God hath done unto thee, and the man goes and publishes how great things Jesus had done unto him.", "30%", "20%"],
 ],
 
+"File:Haemorrhoissa Dionysiou.jpg":[
+ ["The inscription", "Damaged along the curve of the arch, too worn to transcribe past the subject Commons' own description already confirms.", "9%", "45%"],
+ ["Christ", "Haloed, ΙC ΧC lettered either side of his head, turning as he asks: Who touched me?", "20%", "47%"],
+ ["The apostles", "Pressed close around him — the multitude throng thee and press thee, Peter's own answer two verses later.", "28%", "68%"],
+ ["A second crowd", "Painted apart at the far left in gold-brown robes. Luke gives no second crowd of his own; this reading does not guess what it was meant to add.", "35%", "15%"],
+ ["The woman", "Kneeling in a green mantle, reaching toward the hem of Christ's garment.", "70%", "20%"],
+ ["Her hand, and the hem", "In front of Christ rather than behind him, as Luke's own clause has it: came behind him, and touched the border of his garment. The fresco simplifies her approach so her face and her touch can both be shown.", "68%", "35%"],
+],
+
+"File:Monreale - Healing of the Woman with an Issue of Blood.jpg":[
+ ["Christ", "Haloed, turning his head back over his shoulder toward the woman.", "18%", "48%"],
+ ["The apostles", "Crowding in front of him, several with hands raised in speech: Who touched me? ... Master, the multitude throng thee and press thee.", "15%", "38%"],
+ ["The woman", "Kneeling in a green mantle, gazing up at Christ's face.", "60%", "18%"],
+ ["Her hands, and the hem", "Reaching toward the fold of Christ's garment near his feet — in front of him rather than behind, as Luke's own clause has it: came behind him, and touched the border of his garment.", "58%", "30%"],
+ ["An elder with a scroll", "Standing immediately behind Christ. No inscription names him, so this reading does not call him Jairus, whose own request opens this passage three verses earlier — nothing here marks him as that ruler rather than simply another of the crowd.", "30%", "80%"],
+],
+
 "File:Daughter of the head of synagogue is resurrected by Christ.jpg":[
  ["The inscription", "IHS FILIAM IAYRI PRINCIPIS SYNAG..., cut off at the edge of this photograph, continuing onto a second line: Jesus raises the daughter of Jairus, ruler of the synagogue, in the house. The painter's own spelling, IAYRI, is not the classical Iairi. Luke's own text gives the name only in the passage before this one.", "9%", "50%"],
  ["Their two hands", "His fingers close over hers at the coverlet's edge, at the word that ends the passage's central sentence: took her by the hand, and called, saying, Maid, arise.", "63%", "52%"],
