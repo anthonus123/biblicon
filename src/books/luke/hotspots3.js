@@ -3,6 +3,58 @@
 // Keep every coordinate inside 9-92; assemble.js clamps outside that.
 module.exports={
 
+// ---- chapter 1 ----
+
+"File:051 Saint Luke Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The medallion", "ΛΟΥΚΑΣ, confirmed by Commons' own transcription — the saint's own name.", "18%", "17%"],
+ ["The second medallion", "A second roundel at the upper right, its lettering not legible enough at this resolution to name with confidence.", "18%", "78%"],
+ ["St Luke", "Grey-bearded, haloed, enthroned in a dark tunic under a red mantle.", "30%", "48%"],
+ ["The quill", "Held above the page, showing him in the act the Gospel's own opening sentence implies: many have taken in hand to set forth in order a declaration.", "48%", "35%"],
+ ["The book", "An open page lettered with Greek text, not transcribable at this resolution, opened just as the Gospel itself opens.", "52%", "58%"],
+ ["The ox", "Couched and haloed at his footstool — the Evangelist's own symbol, read from the four living creatures, given to Luke for the priestly note his Gospel opens on.", "72%", "83%"],
+],
+
+"File:Evangelismos Zachariou Dionysiou.jpg":[
+ ["The inscription", "Ο ΕΥΑΓΓΕΛΙCΜΟC, lettered along the curve of the vault — the Annunciation, Zacharias's own.", "29%", "46%"],
+ ["Zacharias", "Named beside his halo, ΖΑΧΑΡΙΑC. His lot was to burn incense when he went into the temple of the Lord, and the censer swings from the chain in his hand.", "48%", "31%"],
+ ["The angel", "A small winged figure, haloed, within the dark recess of the sanctuary: there appeared unto him an angel of the Lord.", "50%", "49%"],
+ ["The altar of incense", "A ribbed, reddish canopy raised on a row of slender columns, painted foreshortened into the curve of the apse — the ciborium over the altar.", "75%", "52%"],
+ ["The people waiting", "Three figures at the temple court, one with both hands raised in prayer: the whole multitude of the people were praying without at the time of incense.", "62%", "80%"],
+],
+
+"File:017 Annunciation Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["Gabriel", "Wings raised, a green tunic under a red mantle, his hand lifted toward Mary: the angel came in unto her, and said, Hail, thou that art highly favoured.", "52%", "24%"],
+ ["The Theotokos", "Both hands raised before her, not one alone: when she saw him, she was troubled at his saying, and cast in her mind what manner of salutation this should be.", "52%", "78%"],
+ ["The book", "A green lectern with an open book between them, its text not legible at this resolution.", "72%", "58%"],
+ ["The city behind them", "Red-roofed towers under a length of red cloth strung between them like a canopy — the standard backdrop of a Byzantine Annunciation, not a detail Luke's own text gives.", "14%", "50%"],
+],
+
+"File:Annunciation Icon Sinai 12th century.jpg":[
+ ["The inscription", "Ο ΧΑΙΡΕΤΙCΜΟC, the Salutation, worn but legible in red across the top.", "14%", "52%"],
+ ["The dove", "A small white dove, wings spread, descending on a narrow ray of light between the two figures.", "24%", "51%"],
+ ["Gabriel", "One hand raised toward Mary as he approaches from the left.", "55%", "22%"],
+ ["The herald's staff", "A thin rod rests against his halo, its lower end lost against his shoulder.", "32%", "23%"],
+ ["Mary, and the thread", "Her visible hand holds a slender rod against her shoulder with a skein of dark red thread looped over it — the Protoevangelium of James's spinning of the temple veil, not a detail Luke's own text gives.", "42%", "78%"],
+ ["The building behind her", "A tower hung with a curtain in its own archway.", "18%", "85%"],
+],
+
+"File:Visitation 04-18.jpg":[
+ ["The inscription", "Church Slavonic lettering across the sky, too worn to transcribe with confidence.", "15%", "39%"],
+ ["Mary", "The dark maroon mantle over blue, at the left. Her near hand rests on Elisabeth's shoulder.", "38%", "42%"],
+ ["Elisabeth", "Green over red-brown, at the right. Her own hand comes up close beside Mary's at the waist, not at either woman's face.", "40%", "57%"],
+ ["The canopy", "A length of rose-coloured cloth strung between the two buildings, over the embrace.", "22%", "45%"],
+ ["The curtain", "A pale rose curtain hangs in an open archway behind Elisabeth's own house — no detail Luke's text supplies.", "44%", "83%"],
+],
+
+"File:052 Nativity of Saint John the Baptist Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The inscription", "Worn, but legible enough to confirm the subject: Η ΓΕΝΗCΗΣ ΤΟΥ Π[ΡΟΔΡΟΜΟΥ], the Nativity of the Forerunner.", "11%", "45%"],
+ ["Zacharias, writing", "Seated and haloed at the left, bent over an open tablet on a stand, a boy attendant beside him: he asked for a writing table, and wrote, saying, His name is John.", "50%", "24%"],
+ ["The angel at the window", "A haloed, winged figure leans in through an archway above Zacharias. No inscription names him, and this reading does not guess which moment he marks.", "38%", "48%"],
+ ["Elisabeth", "Reclining on a red-covered bed, haloed, holding the swaddled child: her neighbours and her cousins heard how the Lord had shewed great mercy upon her; and they rejoiced with her.", "58%", "78%"],
+ ["The women attending her", "Three figures bring gifts and dress the bed beside her.", "56%", "53%"],
+ ["The washing of the child", "At the lower left, a seated woman holds the naked infant while a second tests the water in a gold basin — the same convention this painter's own Nativity of Christ icon uses, and nothing Luke's own text describes.", "80%", "24%"],
+],
+
 // ---- chapter 2 ----
 
 "File:031 Nativity of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
