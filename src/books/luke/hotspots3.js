@@ -419,6 +419,17 @@ module.exports={
  ["James, named beside his halo", "Recoiling at the right, ΙΑΚ still legible — the only one of the three the panel itself names.", "70%", "80%"],
 ],
 
+// ---- chapter 10 ----
+
+"File:RossanoGospelsFolio007vGoodSamaritan.jpg":[
+ ["The inscription", "ΠΕΡΙ ΤΟΥ ΕΜΠΕΣΟΝΤΟΣ ΕΙΣ ΤΟΥΣ ΛΗΣΤΑΣ — concerning him who fell among thieves — Luke 10:30 itself, lettered along the top of the page.", "9%", "40%"],
+ ["The city", "A walled, towered city at the left — Jerusalem, the journey's start: a certain man went down from Jerusalem to Jericho.", "15%", "12%"],
+ ["The Samaritan, tending the wounds", "Bending over the wounded man, pouring from a small vessel: and went to him, and bound up his wounds, pouring in oil and wine.", "27%", "32%"],
+ ["The wounded man", "Lying on the ground where the thieves left him: stripped him of his raiment, and wounded him, and departed, leaving him half dead.", "30%", "38%"],
+ ["The priest and Levite", "Two haloed figures standing just beyond the Samaritan, marked with no office of their own — Luke names both, a certain priest... he passed by on the other side, and likewise a Levite... passed by on the other side, and this reading takes them to be those two on the strength of the text alone.", "20%", "48%"],
+ ["The journey to the inn", "The wounded man astride a dark pack animal, led on foot toward an archway where a figure waits: and set him on his own beast, and brought him to an inn... he took out two pence, and gave them to the host.", "20%", "78%"],
+],
+
 // ---- chapter 11 ----
 
 "File:Christos Iomenos Daimonon Takophon Dionysiou.jpg":[
@@ -445,6 +456,32 @@ module.exports={
  ["A cross, not a crook", "Held upright in his left hand.", "55%", "49%"],
  ["Fingers at a muzzle", "His right hand touches rather than carries — no shoulder bears any weight in this mosaic.", "65%", "58%"],
  ["Six faces, none of them grazing", "Every one turned to look at him instead.", "78%", "25%"],
+],
+
+// ---- chapter 17 ----
+
+"File:Monreale - Christ cleans ten leper men in Samaria.jpg":[
+ ["The inscription", "Legible in Latin across the gold ground: ...OSTENDITE VOS SACERDOTIBVS... MVNDATI SVNT — shew yourselves unto the priests... they were cleansed.", "12%", "35%"],
+ ["Christ", "Haloed, one hand raised toward the men before him: go shew yourselves unto the priests.", "40%", "20%"],
+ ["His companions", "Two unhaloed figures standing close behind him.", "42%", "9%"],
+ ["The lepers", "Bare to the waist, marked all over with small red lesions — there met him ten men that were lepers, though the mosaic does not trouble to paint the full count.", "48%", "58%"],
+ ["The gated building", "A dark doorway crowded with more heads — the village Luke names only in passing, or perhaps the priests themselves; the mosaic does not distinguish the two.", "20%", "85%"],
+],
+
+// ---- chapter 18 ----
+
+"File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 1 090A7601.jpg":[
+ ["The Pharisee", "An elder in a dark red mantle, one hand raised at his own shoulder: God, I thank thee, that I am not as other men are.", "22%", "28%"],
+ ["The publican", "Standing lower on the steps, hands crossed on his own breast, head bowed: would not lift up so much as his eyes unto heaven, but smote upon his breast.", "55%", "13%"],
+ ["The temple", "A domed ciborium over an altar with an open book, at the top of the steps behind the Pharisee.", "15%", "65%"],
+],
+
+"File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 4 IMG 8016.jpg":[
+ ["The temple", "A domed building on a flight of steps at the centre — two men went up into the temple to pray.", "20%", "48%"],
+ ["The Pharisee, left", "One hand raised at his shoulder, above the steps.", "27%", "18%"],
+ ["The publican, left", "Bowed, hands crossed, lower on the same steps.", "45%", "9%"],
+ ["The Pharisee, right", "The same pair repeated on the temple's other side.", "27%", "77%"],
+ ["The publican, right", "Bowed and crossed-handed, below him.", "45%", "87%"],
 ],
 
 // ---- chapter 19 ----
