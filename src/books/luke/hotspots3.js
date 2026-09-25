@@ -86,6 +86,35 @@ module.exports={
  ["The Child, and no manger", "He lies swaddled in white bands directly on the grass, with thin gold rays spreading from him across it. There is no crib here, no cave and no ox and ass — which leaves out the one detail of the birth Luke actually gives. Two pale beasts lie on the grass below his feet, the nearer with a long muzzle and a drooping ear.", "70%", "46%"],
 ],
 
+"File:039 Circumcision of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The ciborium", "A domed canopy raised on slender columns over the altar — the same device the Hypapante icon builds sixteen verses later.", "15%", "50%"],
+ ["The priest", "A tall gold mitre, a small blade held between two fingers, performing the rite: and when eight days were accomplished for the circumcising of the child, his name was called Jesus. No lettering on this panel names him.", "48%", "37%"],
+ ["The Child", "Haloed, laid on the altar before the priest.", "59%", "57%"],
+ ["The Theotokos", "Hands crossed on her breast at the left.", "51%", "21%"],
+ ["A haloed elder", "Reaching a hand toward the Child from the altar's other side — Joseph, by the same convention this reader's Nativity icons follow, though no lettering here confirms it.", "50%", "66%"],
+ ["The bearded witness", "An unhaloed man at the far left edge, named by no inscription.", "49%", "9%"],
+ ["The young attendant", "An unhaloed woman at the far right, named by no inscription.", "48%", "84%"],
+],
+
+"File:02 Circumcision of Jesus Icon from Saint Paraskevi Church in Adam.jpg":[
+ ["The inscription", "Η ΠΕΡΙΤΟΜΗ ΤΟΥ ΧΡΙΣΤΟΥ, the Circumcision of Christ, and the painter's own signature beside it: χειρ Αθ. Β. 1877, \"the hand of Ath. B., 1877\" — Athanasios Vasilikos.", "18%", "45%"],
+ ["The priest", "Mitred, bent low over the Child on the altar, performing the rite.", "44%", "44%"],
+ ["The Child", "Laid on a red-and-gold cloth on the altar.", "59%", "43%"],
+ ["An attendant", "Unhaloed, in a gold conical hat like the priest's own, hand raised at the left. No lettering names him.", "52%", "20%"],
+ ["The Theotokos", "Named by the panel's own lettering beside her halo, Μ(ΗΤ)ΗΡ Θ(Ε)ΟΥ, Mother of God.", "49%", "68%"],
+ ["Joseph", "Named by the panel's own lettering beside his halo, ΙΩ(σήφ).", "47%", "84%"],
+ ["St Basil", "A separate roundel in the lower corner, its own haloed figure named by the panel's own lettering, Ο ΑΓΙΟΣ ΒΑΣΙΛΕΙΟΣ — St Basil the Great, whose feast falls the same day, 1 January. He has no part in Luke's own eight verses.", "92%", "88%"],
+],
+
+"File:050 Presentation of Jesus at the Temple Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The ciborium", "A domed canopy raised on a ring of columns over the altar.", "20%", "50%"],
+ ["Joseph", "Haloed, holding a pair of white doves — a pair of turtledoves, or two young pigeons, Luke's own detail for the offering the law required.", "48%", "12%"],
+ ["The Theotokos", "Both hands still reaching toward the Child she has just given up to Symeon.", "46%", "24%"],
+ ["The Child", "Small and haloed, held between Mary's hands and Symeon's own.", "52%", "42%"],
+ ["Symeon", "Receiving the Child with his hands covered by the fold of his own mantle — just and devout, waiting for the consolation of Israel... it was revealed unto him by the Holy Ghost, that he should not see death, before he had seen the Lord's Christ.", "46%", "58%"],
+ ["Anna", "Holding a scroll — a prophetess... coming in that instant gave thanks likewise unto the Lord, and spake of him to all them that looked for redemption in Jerusalem. The scroll is the icon's own way of marking her office; Luke's own text does not describe her holding one.", "46%", "80%"],
+],
+
 // ---- chapter 3 ----
 
 "File:St John the Baptist Late XVII - Early XVIII Cenury St Mary Blonichka Church, Ohris Icon Gallery.jpg":[
