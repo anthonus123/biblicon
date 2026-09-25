@@ -109,16 +109,30 @@ and this file did not.
   - **No scripture stories yet.** `app.js` falls back to printing the passage's verses in the
     *Scripture Story* tab when `story` is empty, so the tab is never blank; stories are an
     improvement, not a hole.
-- **Luke content, as of 2026-09-25e:**
-  - **Scripture stories: 17 of 48 icon-bearing passages now have one**, two batches. Batch 1 —
+- **Luke content, as of 2026-09-25g:**
+  - **Scripture stories: 27 of 48 icon-bearing passages now have one**, three batches. Batch 1 —
     `prologue`, `zacharias`, `annunciation`, `visitation`, `forerunnerbirth`, `nativity`,
     `circumcision`, `meeting` (chapters 1–2 up to the Hypapante). Batch 2 — `forerunnerpreach`,
     `fruits`, `baptism`, `temptation`, `petersmother`, `draught`, `leper`, `paralytic`,
-    `witheredhand` (chapters 3–6, `levi` and `twelve` skipped over by an ordering slip — they
-    come next). Same convention Matthew's and John's `story` field already use, now stated in
-    `overrides.js`'s own header comment: a prose retelling that adds nothing the verses do not
-    say, KJV clauses folded in without quotation marks, KJV spelling kept (`shewed`, `this
-    power`, not `shown`, `that power`), curly apostrophes.
+    `witheredhand` (chapters 3–6). Batch 3 (2026-09-25g) — `levi`, `twelve`, `centurion`, `sower`,
+    `storm`, `gadarene`, `issueofblood`, `jairus`, `fivethousand`, `transfiguration` (chapters
+    5–9), closing the ordering slip batch 2 left (`levi` and `twelve` skipped over). Same
+    convention Matthew's and John's `story` field already use, stated in `overrides.js`'s own
+    header comment: a prose retelling that adds nothing the verses do not say, KJV clauses folded
+    in without quotation marks, KJV spelling kept (`shewed`, `this power`, not `shown`, `that
+    power`), curly apostrophes. Batch 3's vocabulary diff first flagged six passages for a stray
+    `Jesus` where the verse range itself only ever says "he" (`twelve`, `sower`, `storm`,
+    `fivethousand`), a stray `where` in `levi` not in the verse, and `seeing` in `gadarene` for a
+    participle the verse doesn't use (it says "When he saw Jesus") — all six fixed to `he` or the
+    verse's own wording and the check re-run clean. The `Jesus`-for-`he` flag is a checker false
+    positive, not an error class — `petersmother` (batch 2) already names him where its own verse
+    range says only "he" and was never revisited — reworded around here rather than fixed there.
+    An advisor pass afterward, reading the connectives and quoted speech the script can't check,
+    found three verbatim drifts the diff couldn't see because every word it added is a stopword:
+    `centurion` had dropped Christ's own "I say unto you," from 7:9; `issueofblood` and
+    `fivethousand` each added a `But` (8:46's and 9:11's own KJV word is `And`) that set the
+    following clause against the one before it as if the two conflicted — the same shape as batch
+    1's invented Nunc Dimittis causality. All three fixed and the check re-run clean.
   - **`src/tools/story_check.js`** (`BOOK=<book> node src/tools/story_check.js [key...]`)
     defaults to a vocabulary diff — every content word in a story absent from its own verse
     range's own words — after batch 2's advisor pass found the 4-gram mode (now `--ngram`) too
@@ -271,17 +285,16 @@ Luke, in order:
    in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
    pool this pass; what's left is either genuinely unpainted in Orthodox tradition or would need a
    source outside the categories already enumerated (see the Session block for the search method).
-4. **Scripture stories for Luke: 17 of 48 done, two batches (2026-09-25e).** The remaining 31,
-   in canonical order starting from `levi` (5:27-32) — skipped by an ordering slip in batch 2,
-   next in line: `levi`, `twelve`, `centurion`, `sower`, `storm`, `gadarene`, `issueofblood`,
-   `jairus`, `fivethousand`, `transfiguration`, `samaritan`, `beelzebub`, `lostsheep`,
+4. **Scripture stories for Luke: 27 of 48 done, three batches (2026-09-25g).** The remaining 21,
+   in canonical order starting from `samaritan` (10:25-37): `samaritan`, `beelzebub`, `lostsheep`,
    `tenlepers`, `publican`, `entry`, `temple`, `coming`, `supper`, `gethsemane`, `arrest`,
    `denial`, `council`, `pilate`, `crucifixion`, `burial`, `myrrhbearers`, `emmausroad`,
    `breaking`, `peace`, `ascension` — use `BOOK=luke node src/tools/story_check.js` after each
    batch (vocabulary diff by default; it cannot see an invented relation built from stopwords or
    a person/grammar slip, so also read every added "so"/"that"/"because" and every quoted
-   speech's pronouns by eye), plus an advisor pass before commit (see the 2026-09-25e Session
-   blocks for the error classes caught so far). Same gap remains untouched for Mark.
+   speech's pronouns by eye), plus an advisor pass before commit (see the 2026-09-25e,
+   2026-09-25f and 2026-09-25g Session blocks for the error classes caught so far). Same gap
+   remains untouched for Mark.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5120,3 +5133,45 @@ still have no story; Mark's 78 have none.
 above, already reordered to put `levi` and `twelve` first. Run `story_check.js` (default mode)
 after every batch, read the connectives and quoted-speech pronouns it can't check by eye, and run
 an advisor pass before each commit.
+
+## Session 2026-09-25g (Luke scripture stories, batch 3: chapters 5-9, 27 of 48)
+
+**Did.** Wrote `story` for `levi`, `twelve`, `centurion`, `sower`, `storm`, `gadarene`,
+`issueofblood`, `jairus`, `fivethousand` and `transfiguration` — 27 of 48 done in all, closing
+the ordering slip batch 2 left (`levi` and `twelve` had been skipped).
+
+**Verified.** `BOOK=luke node src/tools/story_check.js` (default vocabulary-diff mode) first
+flagged six items: a stray `Jesus` in `twelve`, `sower`, `storm` and `fivethousand` where their
+own verse ranges only ever say "he," a stray `where` in `levi`, and `seeing` in `gadarene` for a
+participle the verse doesn't use. All six reworded (`Jesus`→`he` or the verse's own wording,
+`seeing`→"When he saw Jesus," matching 8:28) and the check re-run clean.
+
+An advisor pass on the draft afterward found three drifts the vocabulary diff can't see because
+every word involved is a stopword: `centurion` had dropped Christ's own "I say unto you," from
+7:9 (leaving the drawer showing the fuller key verse directly above a shortened retelling of the
+same line — caught by comparing the two, not by the script); `issueofblood` and `fivethousand`
+had each turned KJV's own `And` (8:46, 9:11) into `But`, setting the following clause against the
+one before it as if the two conflicted — the same shape as batch 1's invented Nunc Dimittis
+causality. All three fixed and the check re-run clean. The advisor also flagged that
+`petersmother` (batch 2) already names Jesus where its own verse range says only "he" and was
+never revisited; left as is and recorded here rather than reopening a prior batch's file, since
+the `Jesus`-for-`he` flag is a checker false positive, not an error the project's rule against
+invented content actually covers.
+
+`BOOK=luke node src/check.js` (clean, same warnings as before, `scripture stories 27`), `make
+luke`, a full `make` — confirmed by stashing the working tree, building on the pre-batch commit,
+popping the stash and rebuilding again: only `HANDOFF.md`, `Luke Reader.html` and
+`src/books/luke/overrides.js` differ, so Matthew's, Mark's and John's readers rebuilt
+byte-identical. Playwright against `python3 -m http.server 8731`: opened `centurion`,
+`issueofblood` and `fivethousand`'s drawers after the fixes, confirmed the Scripture Story tab
+shows the corrected prose and the `centurion` key verse no longer duplicates a clause the story
+had dropped; zero console errors throughout.
+
+**Not done.** No icon search, no reading or marker work. 21 of Luke's 48 icon-bearing passages
+still have no story; Mark's 78 have none.
+
+**Next.** Continue from `samaritan` (10:25-37); the full remaining list of 21 keys is in
+`## Next` above. Run `story_check.js` (default mode) after every batch, read the connectives and
+quoted-speech pronouns it can't check by eye — including any place a key verse and a story
+retell the same clause, which is now a second thing worth eyeballing side by side — and run an
+advisor pass before each commit.
