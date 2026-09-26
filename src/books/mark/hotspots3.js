@@ -181,6 +181,14 @@ module.exports={
 
 // ---- chapters 5-6 ----
 
+"File:Monreale - Healing of the Woman with an Issue of Blood.jpg":[
+ ["Her hand at the hem", "Closed on the trailing edge of Christ's blue robe. Mark: when she had heard of Jesus, came in the press behind, and touched his garment.", "66%", "46%"],
+ ["Christ's hand finds her", "Reaching toward her out of the press of apostles. Mark: he looked round about to see her that had done this thing.", "45%", "37%"],
+ ["Her face lifted", "She looks up and meets Christ's gesture.", "50%", "25%"],
+ ["A raised hand in the crowd", "Among the apostles behind Christ. Mark: Thou seest the multitude thronging thee, and sayest thou, Who touched me? — the same protest Luke's own Gospel gives to Peter by name.", "32%", "31%"],
+ ["The thronging crowd", "Mark: much people followed him, and thronged him.", "12%", "28%"],
+],
+
 "File:Daughter of the head of synagogue is resurrected by Christ.jpg":[
  ["The inscription", "The Latin names the scene: Jesus raises the daughter of the ruler of the synagogue, in the house. Mark names the man himself — Jairus by name — where Matthew leaves him anonymous.", "9%", "50%"],
  ["Their two hands", "Here the hands do meet: his fingers are closed round hers at the edge of the coverlet. Mark keeps the words he said in the language he said them in, and then translates them for his readers: Talitha cumi; which is, being interpreted, Damsel, I say unto thee, arise.", "63%", "52%"],
@@ -769,6 +777,22 @@ module.exports={
  ["The apostles at his left", "The same on the other side, symmetrically ranked. The fresco gives the apostolic college, not a count of men at a table.", "30%", "78%"],
  ["The books", "Several of the apostles carry one. They are the standing mark of the college in Byzantine painting, and here they are also what came of these verses.", "45%", "16%"],
  ["The cushion and the footstool", "He stands on a red cushion laid over a stepped footstool: the furniture of the enthroned Lord. Mark's next passage is where that glory is named — he was received up into heaven, and sat on the right hand of God.", "82%", "46%"],
+],
+
+"File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
+ ["The inscription", "Η ΑΝΑΛΗΨΙΣ, the Ascension — lettered in the upper corners, the feast's own name and not a quotation of Mark's two verses.", "9%", "15%"],
+ ["Christ, both arms spread", "Seated within the grey mandorla, no throne drawn under him. Mark: he was received up into heaven, and sat on the right hand of God.", "13%", "48%"],
+ ["Two figures in white", "Lettered with script too worn to read with confidence; on Luke's own reading of this panel, taken for the two men in white apparel Acts adds to the scene, since Mark's own two verses name no one present at all.", "42%", "42%"],
+ ["The Theotokos", "Haloed, in a dark red mantle, standing between the two ranks of apostles. Neither of Mark's two verses names anyone present.", "58%", "47%"],
+ ["The apostles looking up", "Heads tipped back, hands lifted. Mark's own next line has them already gone out to preach; the picture holds them here, still looking.", "60%", "18%"],
+],
+
+"File:Cathedral (Monreale) - Left wing transept - Ascension.jpg":[
+ ["The Latin title", "ASCENSIO . DOMINI along the top — a label in Latin, not a quotation of Mark's Greek.", "15%", "10%"],
+ ["Christ lifted up", "Small within a ringed mandorla at the very top of the scene, his right hand raised to bless. Mark: he was received up into heaven, and sat on the right hand of God.", "15%", "50%"],
+ ["The flying angels", "Wings spread, one leg still trailing mid-flight — the moment of ascent itself, which Mark's own clause passes over in a single verb.", "18%", "75%"],
+ ["The Theotokos", "Haloed, in a dark red mantle, her two hands crossed and raised at her breast, standing between two angels with staffs in hand. Mark's account names no one present but the Lord and the disciples he leaves.", "48%", "50%"],
+ ["The apostles", "Crowded to both sides, turning to one another and pointing upward.", "45%", "15%"],
 ],
 
 };

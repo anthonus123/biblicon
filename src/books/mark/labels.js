@@ -23,6 +23,7 @@ module.exports={
 "File:Representation of the Sower's parable.JPEG":"The Parable of the Sower — Orthodox mosaic",
 "File:Hrist utišava buru na moru, manastir Gračanica.jpg":"Christ Stilling the Storm — Gračanica, 14th c.",
 "File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg":"The Gerasene Demoniac — Sant’Apollinare Nuovo, Ravenna, 6th c.",
+"File:Monreale - Healing of the Woman with an Issue of Blood.jpg":"The Woman with the Issue of Blood — Monreale, 12th c.",
 "File:Daughter of the head of synagogue is resurrected by Christ.jpg":"The Daughter of Jairus — Monreale, 12th c.",
 "File:Raising of Jairus' daughter 03-19.jpg":"The Daughter of Jairus — Dionisy, Ferapontov, 1502",
 "File:Tokalı Kilise Raising of daughter of Jairus - 2004 6964.jpg":"The Daughter of Jairus — Tokalı Kilise, Cappadocia, 10th c.",
@@ -81,4 +82,6 @@ module.exports={
 "File:Noli me tangere (16th c., Cretan).jpg":"Touch Me Not — Cretan icon, 16th c.",
 "File:Touch Me Not (Noli me tangere), Lambardos Emmanuel, Municipal Gallery of Corfu, 04.jpg":"Touch Me Not — Emmanuel Lambardos, Corfu",
 "File:Christos Apostolois Dionysiou.jpg":"Christ with the Apostles — Dionysiou, Athos, 1547",
+"File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":"The Ascension — Langadas, Greece, before 1900",
+"File:Cathedral (Monreale) - Left wing transept - Ascension.jpg":"The Ascension — Monreale, 12th c.",
 };

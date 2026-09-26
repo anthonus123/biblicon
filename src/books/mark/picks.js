@@ -56,6 +56,9 @@ module.exports={
   "gerasene": [
     "File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg",
   ],
+  "issueofblood": [
+    "File:Monreale - Healing of the Woman with an Issue of Blood.jpg",
+  ],
   "jairus": [
     "File:Daughter of the head of synagogue is resurrected by Christ.jpg",
     "File:Raising of Jairus' daughter 03-19.jpg",
@@ -168,5 +171,9 @@ module.exports={
   ],
   "commission": [
     "File:Christos Apostolois Dionysiou.jpg",
+  ],
+  "ascension": [
+    "File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
+    "File:Cathedral (Monreale) - Left wing transept - Ascension.jpg",
   ],
 };

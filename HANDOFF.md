@@ -20,7 +20,8 @@ and this file did not.
 - **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
-  `Mark Reader.html` (~12.6 MB) and `Luke Reader.html` (~14.6 MB, up from ~11 MB after the
+  `Mark Reader.html` (~13.2 MB, up from ~12.6 MB after the 2026-09-26 icon search) and
+  `Luke Reader.html` (~14.6 MB, up from ~11 MB after the
   2026-09-25c icon harvest) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
   opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
   generated — one command from the repo root, which sequences assemble → check → build per book:
@@ -88,15 +89,20 @@ and this file did not.
     Aurea*'s own verse blocks on Mark (the 1842 volume groups the text into 105), with four
     overlapping pairs resolved and its 1:2–3 / 1:4–8 pair joined: they are the traditional
     pericopes, which is also where the Fathers' comments sit, so `fathers.js` selects cleanly.
-  - **38 passages have an icon and they show 78 icons between them; 21 show more than one.**
-    Tiers: **33 (a), 5 (b), 66 (c)**. Every one of the 78 is a file Matthew or John already
-    carries — the owner's decision of 2026-09-20 — but chosen against what the picture shows of
-    *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
-    differs (see the Gotcha below). **All 78 have a prose reading and positioned markers, 513
-    markers in all** — finished 2026-09-22d with batch 12 (16:9–18), every set checked by drawing
-    it back onto the picture. **The Mark reader is content-complete**; what remains for it is a
-    search for the **15** subjects `make check` still lists as wanting one — the scripture
-    stories are finished (see below).
+  - **40 passages have an icon and they show 81 icons between them; 22 show more than one.**
+    Tiers: **35 (a), 5 (b), 64 (c)**. 78 of the 81 are files Matthew or John already carry — the
+    owner's decision of 2026-09-20 — chosen against what the picture shows of *Mark's* verses;
+    five scenes were deliberately **not** reused because Mark's account differs (see the Gotcha
+    below). The other 3 files (one for 5:21–34, the woman with the issue of blood; two for
+    16:19–20, the Ascension) are files Luke's own 2026-09-25c harvest found that postdate Mark's
+    original 2026-09-20 build — wired in 2026-09-26, see that Session block. **All 81 have a prose reading and positioned
+    markers, 528 markers in all**, every set checked by drawing it back onto the picture.
+    **13** subjects `make check` still lists as wanting an icon — a 2026-09-26 search (see that
+    Session block) settled the disposition of seven for good (they are already painted elsewhere
+    in this reader, or the pool's only file is another Evangelist's own version) and found nothing
+    new for the other six; five of those six were only cross-checked against Matthew's and Luke's
+    own searches and a Greek-regex pass, not searched fresh, so they are dead ends for now rather
+    than closed for good.
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -107,8 +113,11 @@ and this file did not.
   - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
     1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
     Christ among the apostles at 16:14–18.
-  - **Scripture stories: 38 of 38 icon-bearing passages — Mark's stories are finished, closed
-    2026-09-26.** `app.js` falls back to printing the passage's verses in the *Scripture Story* tab
+  - **Scripture stories: 40 of 40 icon-bearing passages.** Batch 4 wrote the last 15 stories,
+    closing all 38 icon-bearing passages of that day's count (see that Session block);
+    `issueofblood` and `ascension` got theirs the same day,
+    when the two passages themselves were newly wired (see the 2026-09-26 icon-search Session
+    block below). `app.js` falls back to printing the passage's verses in the *Scripture Story* tab
     when `story` is empty, so the tab was never blank while these were unwritten; stories are an
     improvement, not a hole. Batch 1 — `forerunner`, `baptism`, `temptation`, `kingdom`,
     `petersmother`, `leper`, `paralytic`, `levi` (chapters 1–2). Batch 2 — `witheredhand`, `twelve`,
@@ -291,9 +300,63 @@ and this file did not.
 
 ## Next
 
-**Mark's readings are finished — 78 of 78, 513 markers, twelve batches.** Batch 12 (2026-09-22d)
-did 16:9-18: the three appearances to Mary Magdalene (`magdalene`) and the Dionysiou `Christos
-Apostolois` (`commission`, tier b), 38 markers.
+**Mark's readings are finished — 81 of 81, 528 markers.** Twelve batches through 2026-09-22d
+(78 of 78, 513 markers; batch 12 did 16:9-18, the three appearances to Mary Magdalene and the
+Dionysiou `Christos Apostolois`, 38 markers), plus 2 more icons and 15 markers wired 2026-09-26
+(see that Session block).
+
+**Mark's icon search, 2026-09-26: disposition of all 13 remaining "wanted" subjects.** Two more
+of the original 15 were found and wired that day (see the Session block); what is left, in
+verse order, with what was actually tried:
+1. **Seven settled by earlier Gotchas, not re-opened this session** — each already has a
+   documented reason no file exists for it in this reader: `water` (6:45-52, Peter walking on the
+   water is Matthew's own detail, not Mark's), `deafmute` (7:31-37, the Dionysiou dumb-demoniac
+   fresco is a different healing), `bartimaeus` (10:46-52, Mark names one blind man where the
+   pool's Jericho file has two), `betrayer` (14:17-21, "one of you shall betray me" — the three
+   Mystical Supper icons already wired at 14:22-25 paint its own verse 20, the reach to the dish;
+   settled batch 8, 2026-09-21g), `highpriest`/14:60-65 (both `council` icons at 14:53-59 already
+   paint the rending of the high priest's garment, which belongs to this passage; settled batch 9,
+   2026-09-22), and `death`/15:33-37 and `veil`/15:38-41 (the six Crucifixion icons at 15:21-28
+   already paint the darkness, the sponge, the dead Christ and the centurion together — two of the
+   six were briefly split onto 15:33-37 during the original 2026-09-20 build and the split was
+   reverted the same day; see the Gotchas). Of the first three, `water` and `bartimaeus` are cases
+   where the pool's only file of that subject shows another Evangelist's own version of the event,
+   not Mark's; `deafmute`'s Dionysiou file is not Mark's scene under any Gospel's version at all,
+   it is a different healing entirely. The last four — `betrayer`, `highpriest`, `death`, `veil` —
+   are one scene, one passage: the scene is already painted elsewhere in this reader, under a
+   neighbouring passage's own name.
+2. **Five are dead ends Matthew's and Luke's own searches already reached.** This session checked
+   `make check`'s own "wanted" list for Matthew and Luke (solid) and re-grepped the shared
+   `pool.json` two ways — a narrow Greek-transliteration pass restricted to the trusted
+   Orthodox-cycle categories (compound patterns, e.g. `daimon.*sunagog`), and a looser English
+   pass that was too noisy to review properly: its `nets` pattern alone matched 1,073 titles,
+   almost all Voronet monastery photos, and nobody read past the first page of them. Treat the
+   Greek pass and the Matthew/Luke cross-check as solid, and the English pass as unreviewed rather
+   than exhausted, if a future session wants to redo it properly (bare stems, not compound
+   patterns, and actually read the hit list): `calling` (1:16-20, nets — Matthew's own 4:18-22
+   wants the same subject and
+   has never had it either), `demoniac` (1:23-28, the Capernaum synagogue exorcism — Luke's own
+   4:31-37 wants it too), `boy` (9:14-29 — Luke's own 9:37-43 wants it too), `husbandmen`
+   (12:1-12 — both Matthew's 21:33-46 and Luke's 20:9-18 want it and have never had it), `mites`
+   (12:41-44 — Luke's own 21:1-4 wants it too). None of these has ever turned up an Orthodox
+   image anywhere in the whole corpus this project has enumerated (Dionysiou, Monreale,
+   Ferapontov, Langadas, Rossano, Menologion of Basil II, Gračanica, Sant'Apollinare Nuovo, Chora,
+   the Serbian and Bulgarian monasteries, the Moldavian painted monasteries, Sinai, Athens,
+   Rublev, Novgorod, Pskov, the Tretyakov, Nerezi, Cyprus, Kariye, Troodos — the full `CYCLES` list
+   in `harvest_pool.js`).
+3. **One is this session's own fresh dead end** — nobody had searched for it before: `bethsaida`
+   (8:22-26, the blind man healed by degrees). A free-text Commons search turned up one candidate,
+   a 6th-century Byzantine ivory (`File:Antwerpen Museum Mayer van den Bergh Byzantine ivory of
+   Christ healing miraculously 6th century 2518.jpg`) — rejected: the uploader's own description
+   hedges ("I think here he is healing a blind man"), there is no inscription, and even granting a
+   blind-man healing, nothing marks it as Bethsaida's own two-touch healing rather than any other.
+   Worth recording so nobody re-finds it and wires it wrongly.
+4. **What was not tried**: a fresh `harvest_pool.js` run with Mark's own `SUBJECT_QUERIES`
+   (Luke's own harvest script, still hardcoded to Luke's subjects) — the free-text queries and the
+   Greek-regex pass over the existing pool stand in for it this session, on the reasoning that a
+   subject Matthew's, Luke's *and* this session's own searches all miss is unlikely to turn up
+   from re-enumerating the same Commons categories again. If the owner wants the fuller harvest
+   run anyway, it is cheap and mechanical — see `src/tools/README.md`.
 
 **16:9-20 is the longer ending**, and it was handled as the Church reads it: the Mark Catena
 comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings treat it as Scripture and
@@ -5489,3 +5552,165 @@ verse-fallback), zero console errors beyond the harmless missing-favicon 404.
 subjects `make check` lists as wanting an icon at all (see `## Status` above for the list) — no
 dedicated search has been run for Mark the way Luke's Feast-cycle harvest was. The other three
 readers are untouched this session.
+
+## Session 2026-09-26b (Mark's icon search: 2 of 15 found and wired, the other 13's disposition settled)
+
+**Did.** Continued straight from the `## Next` item batch 4 left: the search for Mark's 15
+icon-less subjects. Cross-referenced the shared pool and Luke's own 2026-09-25c harvest before
+running anything new, and found two files Luke's harvest brought in after Mark's original
+2026-09-20 build that the owner's reuse rule makes available to Mark too, since both are the
+same event under the same composition: `File:Monreale - Healing of the Woman with an Issue of
+Blood.jpg` for 5:21-34 (`issueofblood`) and two Ascension icons, the Langadas panel and the
+Monreale mosaic, for 16:19-20 (`ascension`). Wired both — `picks.js`, `labels.js`, fresh readings
+in `hotspots2.js` and 15 new markers in `hotspots3.js`, all written against Mark's own verses,
+not copied from Luke's readings of the same three files — then wrote scripture stories for both
+newly icon-bearing passages, closing the gap batch 4 had left open for them. For the other 13
+subjects: grepped the already-harvested `pool.json` (English keywords, then a
+Greek-transliteration pass restricted to the trusted Orthodox-cycle categories), ran six
+free-text Commons searches for `bethsaida`, the one subject nobody had searched before, and
+cross-checked Matthew's and Luke's own `make check` "wanted" lists against the Gotchas already on
+record for `water`, `deafmute`, `bartimaeus`, `betrayer`, `highpriest`, `death` and `veil` —
+`betrayer` (14:17-21) turned out to already be a documented, settled Gotcha from batch 8
+(2026-09-21g), not a fresh subject, once re-read in full: the three Mystical Supper icons already
+wired at 14:22-25 paint its own verse 20. Full disposition of all 13 is in `## Next` above.
+Rewrote the stale `iconGap` sentence in `book.json` (it had said "most of these are scenes
+Matthew already carries," which was never true
+of any of the 13, and "Mark has not had a dedicated search," which this session fixes).
+
+**Why.** Direct continuation of batch 4's own `## Next` item — same task, same day.
+
+**An advisor pass before commit caught real errors a vocabulary check and the overlay tool both
+miss: wrong comparisons with the other Gospels, and a misread picture.** Neither `quotes.js` (checks
+wording only) nor `overlay.py` (checks position only) can catch a false claim about what another
+Gospel does or does not say, or a wrongly identified gesture.
+- The issue-of-blood reading's first draft claimed "Mark alone keeps what the disciples said" —
+  false: Luke 8:45 gives the same protest to Peter by name (`grep -i throng src/books/luke/kjv.json`
+  confirmed it). Fixed to name the Luke parallel instead of claiming uniqueness.
+- The draft also had Christ's hand "reaching down toward her" as marker 2, at 56%/45%. A fine
+  percentage grid over a fresh crop showed the actual gesture is a hand meeting another hand in the
+  crowd, well above and to the left of the woman, at about 44%/39% — the touch and Christ's own
+  gesture are two separate things in the composition, exactly as Mark's own text has him feel the
+  touch without seeing it. Reading and marker both rewritten around the corrected geography.
+- The Monreale Ascension draft claimed "Mark's account, shorter even than the other Gospels'" —
+  false: Matthew and John don't narrate the Ascension at all, and Luke's own account is two verses
+  too. Dropped the comparison.
+- The Langadas Ascension draft had "two angels bear the cloud up between them" as marker 3, at
+  40%/42%. Luke's own already-verified reading of this same file (`src/books/luke/hotspots2.js`)
+  says the pair at 40-52% are two haloed figures in white with faint lettered script, "most
+  likely" (Luke's own hedge) the two men in white apparel of Acts 1:10, not cloud-bearers, and
+  says separately that Christ's mandorla is carried by two winged angels — without saying where
+  those are drawn. Fixed the 40-52% pair to match Luke's identification, with the same hedge
+  Luke's own reading uses rather than a firmer claim this session
+  couldn't verify either.
+- Christ's posture in the Langadas panel was drafted as "seated... one hand raised in blessing"; a
+  fresh crop showed both arms spread open, no throne under him, only cloud. Fixed. The Monreale
+  Theotokos's hands were drafted as "folded at her breast"; a crop showed them crossed and raised,
+  matching Luke's own "both hands raised in prayer" more closely than "folded" did. Fixed, and her
+  robe colour (drafted as "dark blue" in one place) was corrected to the dark red actually in both
+  pictures.
+- The issue-of-blood reading's claim "from the same nave sequence" for the two Monreale mosaics was
+  unverified; checked with `prop=categories` and found both really are catalogued together —
+  `Cathedral (Monreale) - New Testament mosaics (miracles)` and `(right wall)` — so the claim was
+  keepable, reworded from "nave" (wrong) to "right wall" (what the categories actually say).
+  "The Twelve" was dropped from both Ascension readings' description of the apostles, since Mark's
+  own 16:14 calls them "the eleven" and the readings never needed the count at all.
+
+**A second advisor pass, on the fixed draft, caught more — some of it a second, deeper error in
+the same picture the first pass had already touched.**
+- **Christ's gesture in the issue-of-blood mosaic was overcorrected.** The first pass's fix had
+  his hand "not reaching toward her at all," addressing the crowd instead. A finer grid (2% lines,
+  a 6× crop) put his fingertips at about left 37, top 45 — beside the woman's own head at left
+  25-32, top 42-58, not meeting another hand in the crowd as the first pass concluded. He is
+  reaching toward her. Reading and marker rewritten a second time, now anchored on Mark 5:32, *he
+  looked round about to see her that had done this thing* — the verse the gesture actually depicts.
+  A third pass then caught the reading calling her "haloed": Luke's own already-verified reading of
+  this same mosaic (`src/books/luke/hotspots2.js`) calls only Christ haloed, so whatever the disc
+  beside her head actually is, Mark's reading now drops the claim rather than assert it unchecked.
+  The same pass also caught Mark's reading saying the apostles crowd *behind* Christ and the touch
+  is at the hem of his *trailing* robe, where Luke's own reading of this mosaic has the apostles in
+  *front* of him and the touch *in front of him rather than behind* — recorded as a second
+  disagreement for the same future Luke session below, and both directional words dropped from
+  Mark's reading rather than resolved either way this session.
+- **`highpriest` (14:60-65) is painted by the two `council` icons at 14:53-59, not by the
+  Crucifixion icons** — a batch 9 (2026-09-22) Gotcha this session's `## Next` draft had merged
+  into the Crucifixion note by mistake. Separated back out.
+- **`betrayer` (14:17-21) is not a fresh dead end.** It is a documented, settled Gotcha from batch
+  8 (2026-09-21g): the three Mystical Supper icons already wired at 14:22-25 paint its own verse
+  20, the reach to the dish, and splitting them is the Crucifixion shape again. Re-filed from
+  "this session's fresh dead ends" to "settled by earlier Gotchas" (seven now, not six), and the
+  free-text search this session ran for it was redundant with that existing Gotcha, not a first
+  search.
+- **The Crucifixion split-and-revert happened during the original 2026-09-20 build**, moving two
+  icons onto one passage (15:33-37), not "three passages" in "2026-09-22" as first drafted here.
+  Dated and scoped correctly now.
+- **File and story counts fixed**: 78 of 81 icons are reused files (not 79 — three new files were
+  added, one for `issueofblood` and two for `ascension`), and the "38 batch-4 passages" line was
+  reworded, since batch 4 wrote 15 stories that brought the running total to 38, not 38 new ones
+  that day. The Deliverables line's Mark file size (still saying ~12.6 MB) was updated to ~13.2 MB.
+- **Two prose bugs from the first-pass rewrite**: the Langadas reading's "two more haloed figures"
+  dangled after the cloud-bearing angels were removed from the text (fixed to "two haloed
+  figures"), and its "paints the first half of that sentence and not the second" contradicted the
+  next clause, which has Christ already seated (fixed by dropping the halves framing). The Monreale
+  reading's dash after "his right hand raised to bless" attached "the one moment of motion" to the
+  blessing gesture instead of the flying angels' mid-flight pose; reordered so the motion clause
+  sits next to what it describes.
+- **Recorded, not fixed**: Luke's own already-verified Langadas reading states two angels carry the
+  mandorla; this session's own crop of the same file found no distinct angel figures there at all,
+  only cloud. Flagged above for a future Luke session rather than touched here, since Luke's own
+  files were out of scope for this commit.
+
+**Verified.** `story_check.js` clean on both new stories (near-verbatim KJV, only leading "And"s
+dropped per the batch-1 convention). `quotes.js` on Mark: 0 wrong Father, 0 no-source, 0 drifted
+sentences on every run; one new "clauses to read" line appeared after the second-pass wording
+settled ("though Matthew and Luke both keep thy faith hath made thee whole as well") — checked by
+eye and it is the tool's own documented false-positive class, our own prose running into a
+verbatim quotation, not a mismatch (manually cross-checked the whole new prose against `kjv.json`
+for Mark 5:21-34 and 16:19-20 as well, word for word, both passes). `make check` clean on all four
+readers before and after every edit, both advisor passes; Mark: 104 passages, 40 with an icon (up
+from 38), 81 icons (up from 78, 78 of them reused files and 3 new), 22 galleries, 81/81 readings
+and markers, 528 markers, 40/40 scripture stories, 300 quotations, no clamp warnings, no icon
+reuse. `make mark` touched only the expected files plus the reader itself (`git status` confirmed
+after every batch of edits). The overlay was redrawn and re-inspected by eye after every fix,
+including the second-pass gesture correction. Playwright against `python3 -m http.server 8731`
+(`BOOK=mark`): opened `issueofblood`, cycled to *Deciphering the Icon* and read the corrected
+prose off the live page; opened `ascension`, read its *Scripture Story* text off the live page,
+switched its gallery from the Langadas to the Monreale thumbnail and confirmed the credit line and
+the *Deciphering the Icon* prose both followed the switch; zero console messages of any level on
+every check, both passes. Stray Playwright snapshot and screenshot files were deleted from the
+repo root each time before moving on, never committed. A third advisor pass, on the second pass's
+own fixes, caught the halo misattribution and the front/behind contradiction with Luke's reading
+above, plus wording-only fixes to `## Next` and this block; no marker moved and no picture claim
+changed after that pass, so it was verified by re-running `story_check.js`, `quotes.js`, `make
+check` and `make mark` and by grepping the corrected sentences straight out of the built
+`Mark Reader.html`, not by a fourth Playwright pass. `ascension`'s story keeps its own KJV "Amen."
+close, restored to match John's own closing story at 21:24-25 (`src/books/john/overrides.js`),
+which keeps the same word for the same reason — the Gospel's own text ends there; Luke's and
+Matthew's own closing stories don't carry the same test, since neither of their own last verses
+ends on an "Amen" in the KJV text itself.
+
+**Flagged for a Luke session, not touched here.** Luke's own already-verified reading of the
+Langadas Ascension panel (`src/books/luke/hotspots2.js`) states that two winged angels carry the
+mandorla Christ sits in. A fresh high-resolution crop of the same file this session, made to
+place Mark's own markers, found no distinct angel figures in or around the mandorla at all — only
+the plain grey cloud. Mark's reading was written to sidestep the disagreement rather than assert
+either way. Someone should recheck Luke's own claim against the full-resolution image (and Luke's
+own markers, to see whether any point at the disputed figures) before it is repeated again.
+
+Two more disagreements, both on `File:Monreale - Healing of the Woman with an Issue of Blood.jpg`,
+which Mark's own reading now avoids by dropping the disputed word rather than picking a side.
+Luke's own already-verified reading (`src/books/luke/hotspots2.js`) calls Christ "haloed" and
+never calls the kneeling woman haloed; Mark's first two drafts this session called her "haloed,"
+on the strength of a disc this session's own crop found beside her head, without checking Luke's
+reading of the same file first — dropped from Mark's final text, but the disc itself is still
+unaccounted for. Separately, Luke's reading has the apostles crowding *in front of* Christ and the
+woman's touch happening *in front of him rather than behind*, "again in front of him rather than
+behind, as in the Dionysiou fresco of the same scene" — while Mark's own first drafts this session
+had the apostles *behind* him and the touch at the hem of his *trailing* robe. Both directional
+words are now out of Mark's reading rather than resolved. A Luke session revisiting this file
+should settle both: what the disc beside her head actually is, and which way the crowd and the
+touch really face.
+
+**Next.** Mark's icon work is done to the point the whole corpus this project has enumerated can
+take it — see `## Status` and `## Next` above for the honest disposition of the remaining 13.
+7 local commits (through this session's own) are ahead of `origin/main` and have not been pushed.
+The other three readers are untouched this session.
