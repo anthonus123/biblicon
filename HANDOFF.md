@@ -310,13 +310,23 @@ Luke, in order:
    in `arrest` and `council` — so also read every added "so"/"that"/"because" and every quoted
    speech's pronouns and proper names by eye), plus an advisor pass before commit (see the
    2026-09-25e through 2026-09-25h Session blocks for the error classes caught so far). **Mark
-   scripture stories: started 2026-09-26, batch 1 done, 8 of 38.** Correction to this file's own
-   prior estimate: Mark's `overrides.js` declares all 104 anchors (unlike Luke's, which lists only
-   the 48 icon-bearing ones), so the earlier "78 icon-bearing passages" line here was wrong — 78 is
-   `make check`'s *icon* count (`showing 78 icons`), not the passage count; the real denominator is
-   `with an icon 38`, the same field Luke's 48 matched. Batch 1 covered chapters 1-2: `forerunner`,
-   `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`, `paralytic`, `levi`. 30 left,
-   chapters 3 onward — see the Session block below for the remaining key list in passage order.
+   scripture stories: started 2026-09-25, 16 of 38 done in two batches.** Correction to this file's
+   own prior estimate: Mark's `overrides.js` declares all 104 anchors (unlike Luke's, which lists
+   only the 48 icon-bearing ones), so the earlier "78 icon-bearing passages" line here was wrong —
+   78 is `make check`'s *icon* count (`showing 78 icons`), not the passage count; the real
+   denominator is `with an icon 38`, the same field Luke's 48 matched. Batch 1 (2026-09-25i)
+   covered chapters 1-2: `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`,
+   `paralytic`, `levi`. Batch 2 (2026-09-25j) covered chapters 3-6: `witheredhand`, `twelve`,
+   `sower`, `storm`, `gerasene`, `jairus`, `beheading`, `fivethousand`. 22 left, in passage order:
+   `syrophoenician` (ch. 7); `fourthousand` (ch. 8); `transfiguration` (ch. 9); `entry`, `figtree`,
+   `temple` (ch. 11); `coming` (ch. 13); `anointing`, `judas`, `supper`, `gethsemane`, `arrest`,
+   `council`, `denial` (ch. 14); `pilate`, `barabbas`, `mocking`, `crucifixion`, `burial` (ch. 15);
+   `myrrhbearers`, `magdalene`, `commission` (ch. 16). Same tooling, same advisor-pass discipline —
+   see the 2026-09-25j Session block for a new error class the advisor caught there: a KJV
+   sentence-ending period turned into a comma so the following "they"/"he" picks up a new, wrong
+   antecedent, or a "for"-clause absorbs a clause that KJV's own period keeps separate.
+   `story_check` cannot see this; read every KJV period a draft turns into a comma by eye, in
+   addition to the pronoun/speech-boundary check the convention already names.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5302,3 +5312,47 @@ discipline. Watch the Passion-week batches (`gethsemane`, `arrest`, `council`, `
 for contamination from Luke's parallel stories, which are close in the model's own context from
 this session and phrase the same events differently — the vocabulary-diff script cannot catch a
 Luke-borrowed phrase whose individual words all happen to occur in Mark's own verse range too.
+
+## Session 2026-09-25j (Mark scripture stories, batch 2: chapters 3-6, 16 of 38)
+
+**Did.** Wrote 8 more Mark scripture stories as `story:` fields in `overrides.js`: `witheredhand`
+(3:1-6), `twelve` (3:13-19), `sower` (4:1-20), `storm` (4:35-41), `gerasene` (5:1-20), `jairus`
+(5:35-43), `beheading` (6:17-29) and `fivethousand` (6:35-44).
+
+**Why.** Continues the `## Next` item from batch 1 (2026-09-25i): same convention, same tooling,
+next chapters in order.
+
+**A new error class, caught by the advisor before commit, not by `story_check`.** The vocabulary
+diff cannot see a KJV sentence break turned into a comma — every word is still in range, but the
+merge can hand a clause to the wrong antecedent. Three real instances this batch:
+- `jairus` 5:42: the first draft read "...walked, for she was of the age of twelve years, and they
+  were astonished..." — folding "they were astonished" into the *for*-clause, as if the astonishment
+  were part of the reason she walked. KJV's own period keeps the astonishment a separate sentence.
+- `gerasene` 5:14: "They that fed the swine fled, and told it..., and they went out to see what it
+  was that was done" made the swineherds go out to see the very thing they had just fled from. KJV's
+  period marks that the second "they" is the people of the city and country, not the swineherds.
+- `fivethousand` 6:39-40 and 6:42-43: two commas each pulled an unspecified "they" (the sitting-down,
+  the eating) toward the disciples rather than leaving it to the crowd, which is who Mark's own verses
+  mean.
+Both `gerasene` 5:6 and `beheading` 6:18 had also dropped a KJV connective that was not "And" —
+"But" and "For" respectively — which batch 1's convention (drop "And", keep the rest) says to keep;
+restored both. All five fixes were punctuation and connective restorations only, no wording changed.
+
+**Verified.** `BOOK=mark node src/tools/story_check.js witheredhand twelve sower storm gerasene
+jairus beheading fivethousand` clean before and after the fixes. `BOOK=mark node src/assemble.js`
+(`with story 16`) and `BOOK=mark node src/check.js` clean, `make mark` touched only `Mark
+Reader.html` (`git status` confirmed no other file moved). Playwright against `python3 -m
+http.server 8731`: opened the Daughter of Jairus drawer, confirmed the Scripture Story tab shows
+the corrected "...twelve years. They were astonished..." text with the sentence break restored,
+zero console messages of any level. One advisor pass ran before commit and caught the three
+blocking errors above; a second pass was judged unnecessary since the only changes after it were
+the punctuation/connective restorations it specified.
+
+**Next.** 22 of Mark's 38 icon-bearing passages remain, in passage order: `syrophoenician` (ch. 7);
+`fourthousand` (ch. 8); `transfiguration` (ch. 9); `entry`, `figtree`, `temple` (ch. 11); `coming`
+(ch. 13); `anointing`, `judas`, `supper`, `gethsemane`, `arrest`, `council`, `denial` (ch. 14);
+`pilate`, `barabbas`, `mocking`, `crucifixion`, `burial` (ch. 15); `myrrhbearers`, `magdalene`,
+`commission` (ch. 16). Same tooling, same advisor discipline, plus the new check this batch added:
+read every KJV period a draft turns into a comma, not just every "so"/"that"/"because" and every
+pronoun. Watch the Passion-week and miracle batches for Luke-parallel contamination, as batch 1's
+`## Next` already flagged.
