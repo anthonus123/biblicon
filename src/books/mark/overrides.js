@@ -93,18 +93,21 @@ module.exports={
  // ---- chapter 7 ----
  tradition:{type:'Teaching',keyVerse:8},
  defile:{type:'Teaching',keyVerse:15},
- syrophoenician:{type:'Miracle',keyVerse:28},
+ syrophoenician:{type:'Miracle',keyVerse:28,
+  story:"From thence he arose, and went into the borders of Tyre and Sidon, and entered into an house, and would have no man know it, but he could not be hid. For a certain woman, whose young daughter had an unclean spirit, heard of him, and came and fell at his feet. The woman was a Greek, a Syrophenician by nation, and she besought him that he would cast forth the devil out of her daughter. But Jesus said unto her, Let the children first be filled: for it is not meet to take the children’s bread, and to cast it unto the dogs. She answered and said unto him, Yes, Lord: yet the dogs under the table eat of the children’s crumbs. He said unto her, For this saying go thy way; the devil is gone out of thy daughter. When she was come to her house, she found the devil gone out, and her daughter laid upon the bed."},
  deafmute:{type:'Miracle',keyVerse:37},
 
  // ---- chapter 8 ----
- fourthousand:{type:'Miracle',keyVerse:8},
+ fourthousand:{type:'Miracle',keyVerse:8,
+  story:"In those days the multitude being very great, and having nothing to eat, Jesus called his disciples unto him, and saith unto them, I have compassion on the multitude, because they have now been with me three days, and have nothing to eat: and if I send them away fasting to their own houses, they will faint by the way: for divers of them came from far. His disciples answered him, From whence can a man satisfy these men with bread here in the wilderness? He asked them, How many loaves have ye? And they said, Seven. He commanded the people to sit down on the ground, and he took the seven loaves, and gave thanks, and brake, and gave to his disciples to set before them, and they did set them before the people. They had a few small fishes, and he blessed, and commanded to set them also before them. So they did eat, and were filled, and they took up of the broken meat that was left seven baskets. They that had eaten were about four thousand, and he sent them away."},
  leaven:{type:'Teaching',keyVerse:15},
  bethsaida:{type:'Miracle',keyVerse:25},
  confession:{type:'Event',keyVerse:29},
  takecross:{type:'Teaching',keyVerse:34},
 
  // ---- chapter 9 ----
- transfiguration:{type:'Feast',keyVerse:7},
+ transfiguration:{type:'Feast',keyVerse:7,
+  story:"He said unto them, Verily I say unto you, That there be some of them that stand here, which shall not taste of death, till they have seen the kingdom of God come with power. After six days Jesus taketh with him Peter, and James, and John, and leadeth them up into an high mountain apart by themselves, and he was transfigured before them. His raiment became shining, exceeding white as snow, so as no fuller on earth can white them. There appeared unto them Elias with Moses, and they were talking with Jesus. Peter answered and said to Jesus, Master, it is good for us to be here: and let us make three tabernacles; one for thee, and one for Moses, and one for Elias. For he wist not what to say, for they were sore afraid. There was a cloud that overshadowed them, and a voice came out of the cloud, saying, This is my beloved Son: hear him. Suddenly, when they had looked round about, they saw no man any more, save Jesus only with themselves."},
  elias:{type:'Teaching',keyVerse:13},
  dumbspirit:{type:'Miracle',keyVerse:24},
  greatest:{type:'Teaching',keyVerse:35},
@@ -122,9 +125,12 @@ module.exports={
  bartimaeus:{type:'Miracle',keyVerse:52},
 
  // ---- chapter 11 ----
- entry:{type:'Feast',keyVerse:9},
- figtree:{type:'Event',keyVerse:14},
- temple:{type:'Event',keyVerse:17},
+ entry:{type:'Feast',keyVerse:9,
+  story:"When they came nigh to Jerusalem, unto Bethphage and Bethany, at the mount of Olives, he sendeth forth two of his disciples, and saith unto them, Go your way into the village over against you: and as soon as ye be entered into it, ye shall find a colt tied, whereon never man sat; loose him, and bring him. And if any man say unto you, Why do ye this? say ye that the Lord hath need of him, and straightway he will send him hither. They went their way, and found the colt tied by the door without in a place where two ways met, and they loose him. Certain of them that stood there said unto them, What do ye, loosing the colt? They said unto them even as Jesus had commanded, and they let them go. They brought the colt to Jesus, and cast their garments on him, and he sat upon him. Many spread their garments in the way, and others cut down branches off the trees, and strawed them in the way. They that went before, and they that followed, cried, saying, Hosanna; Blessed is he that cometh in the name of the Lord: Blessed be the kingdom of our father David, that cometh in the name of the Lord: Hosanna in the highest."},
+ figtree:{type:'Event',keyVerse:14,
+  story:"Jesus entered into Jerusalem, and into the temple, and when he had looked round about upon all things, and now the eventide was come, he went out unto Bethany with the twelve. On the morrow, when they were come from Bethany, he was hungry, and seeing a fig tree afar off having leaves, he came, if haply he might find any thing thereon, and when he came to it, he found nothing but leaves; for the time of figs was not yet. Jesus answered and said unto it, No man eat fruit of thee hereafter for ever. His disciples heard it."},
+ temple:{type:'Event',keyVerse:17,
+  story:"They come to Jerusalem, and Jesus went into the temple, and began to cast out them that sold and bought in the temple, and overthrew the tables of the moneychangers, and the seats of them that sold doves, and would not suffer that any man should carry any vessel through the temple. He taught, saying unto them, Is it not written, My house shall be called of all nations the house of prayer? but ye have made it a den of thieves. The scribes and chief priests heard it, and sought how they might destroy him, for they feared him, because all the people was astonished at his doctrine."},
  faith:{type:'Teaching',keyVerse:24},
  bywhat:{type:'Teaching',keyVerse:33},
 
@@ -142,7 +148,8 @@ module.exports={
  sorrows:{type:'Teaching',keyVerse:8},
  persecution:{type:'Teaching',keyVerse:13},
  desolation:{type:'Teaching',keyVerse:20},
- coming:{type:'Teaching',keyVerse:26},
+ coming:{type:'Teaching',keyVerse:26,
+  story:"Then if any man shall say to you, Lo, here is Christ; or, lo, he is there; believe him not. For false Christs and false prophets shall rise, and shall shew signs and wonders, to seduce, if it were possible, even the elect. But take ye heed: behold, I have foretold you all things. But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light, and the stars of heaven shall fall, and the powers that are in heaven shall be shaken. Then shall they see the Son of man coming in the clouds with great power and glory. And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven."},
  figparable:{type:'Parable',keyVerse:31},
  watch:{type:'Teaching',keyVerse:37},
 

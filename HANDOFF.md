@@ -107,11 +107,14 @@ and this file did not.
   - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
     1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
     Christ among the apostles at 16:14–18.
-  - **Scripture stories: 8 of 38 icon-bearing passages, started 2026-09-25i.** `app.js` falls back
+  - **Scripture stories: 23 of 38 icon-bearing passages, started 2026-09-25i.** `app.js` falls back
     to printing the passage's verses in the *Scripture Story* tab when `story` is empty, so the tab
-    is never blank for the 30 remaining; stories are an improvement, not a hole. Batch 1 —
+    is never blank for the 15 remaining; stories are an improvement, not a hole. Batch 1 —
     `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`, `paralytic`, `levi`
-    (chapters 1–2). See `## Next` for the remaining 30, in order.
+    (chapters 1–2). Batch 2 — `witheredhand`, `twelve`, `sower`, `storm`, `gerasene`, `jairus`,
+    `beheading`, `fivethousand` (chapters 3–6). Batch 3 (2026-09-25k) — `syrophoenician`,
+    `fourthousand`, `transfiguration`, `entry`, `figtree`, `temple`, `coming` (chapters 7–13).
+    See `## Next` for the remaining 15, in order.
 - **Luke content, as of 2026-09-25h:**
   - **Scripture stories: 48 of 48 icon-bearing passages now have one — Luke's stories are finished.**
     Batch 4 (2026-09-25h) closed the reader: `samaritan`, `beelzebub`, `lostsheep`, `tenlepers`,
@@ -310,23 +313,29 @@ Luke, in order:
    in `arrest` and `council` — so also read every added "so"/"that"/"because" and every quoted
    speech's pronouns and proper names by eye), plus an advisor pass before commit (see the
    2026-09-25e through 2026-09-25h Session blocks for the error classes caught so far). **Mark
-   scripture stories: started 2026-09-25, 16 of 38 done in two batches.** Correction to this file's
+   scripture stories: started 2026-09-25, 23 of 38 done in three batches.** Correction to this file's
    own prior estimate: Mark's `overrides.js` declares all 104 anchors (unlike Luke's, which lists
    only the 48 icon-bearing ones), so the earlier "78 icon-bearing passages" line here was wrong —
    78 is `make check`'s *icon* count (`showing 78 icons`), not the passage count; the real
    denominator is `with an icon 38`, the same field Luke's 48 matched. Batch 1 (2026-09-25i)
    covered chapters 1-2: `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`,
    `paralytic`, `levi`. Batch 2 (2026-09-25j) covered chapters 3-6: `witheredhand`, `twelve`,
-   `sower`, `storm`, `gerasene`, `jairus`, `beheading`, `fivethousand`. 22 left, in passage order:
-   `syrophoenician` (ch. 7); `fourthousand` (ch. 8); `transfiguration` (ch. 9); `entry`, `figtree`,
-   `temple` (ch. 11); `coming` (ch. 13); `anointing`, `judas`, `supper`, `gethsemane`, `arrest`,
-   `council`, `denial` (ch. 14); `pilate`, `barabbas`, `mocking`, `crucifixion`, `burial` (ch. 15);
-   `myrrhbearers`, `magdalene`, `commission` (ch. 16). Same tooling, same advisor-pass discipline —
-   see the 2026-09-25j Session block for a new error class the advisor caught there: a KJV
-   sentence-ending period turned into a comma so the following "they"/"he" picks up a new, wrong
-   antecedent, or a "for"-clause absorbs a clause that KJV's own period keeps separate.
+   `sower`, `storm`, `gerasene`, `jairus`, `beheading`, `fivethousand`. Batch 3 (2026-09-25k)
+   covered chapters 7-13: `syrophoenician`, `fourthousand`, `transfiguration`, `entry`, `figtree`,
+   `temple`, `coming`. 15 left, in passage order: `anointing`, `judas`, `supper`, `gethsemane`,
+   `arrest`, `council`, `denial` (ch. 14); `pilate`, `barabbas`, `mocking`, `crucifixion`, `burial`
+   (ch. 15); `myrrhbearers`, `magdalene`, `commission` (ch. 16). Same tooling, same advisor-pass
+   discipline — see the 2026-09-25j Session block for a new error class the advisor caught there:
+   a KJV sentence-ending period turned into a comma so the following "they"/"he" picks up a new,
+   wrong antecedent, or a "for"-clause absorbs a clause that KJV's own period keeps separate.
    `story_check` cannot see this; read every KJV period a draft turns into a comma by eye, in
-   addition to the pronoun/speech-boundary check the convention already names.
+   addition to the pronoun/speech-boundary check the convention already names. **Batch 3 found the
+   same error class inside quoted speech**: a colon or semicolon *within* a speaker's own words
+   (Christ's, Peter's) flattened to a comma, which lets one clause's reason bleed into the next —
+   caught by an advisor pass in `fourthousand` (the compassion clause and the "they will faint"
+   warning are two separate statements in the KJV, joined by a colon, not one cause) and echoed in
+   `transfiguration` and `entry`. Rule going forward: narration may flatten KJV punctuation for
+   flow; a speaker's own quoted words keep their KJV colons and semicolons exactly.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5356,3 +5365,51 @@ the punctuation/connective restorations it specified.
 read every KJV period a draft turns into a comma, not just every "so"/"that"/"because" and every
 pronoun. Watch the Passion-week and miracle batches for Luke-parallel contamination, as batch 1's
 `## Next` already flagged.
+
+## Session 2026-09-25k (Mark scripture stories, batch 3: chapters 7-13, 23 of 38)
+
+**Did.** Wrote 7 more Mark scripture stories as `story:` fields in `overrides.js`: `syrophoenician`
+(7:24-30), `fourthousand` (8:1-9), `transfiguration` (9:1-8), `entry` (11:1-10), `figtree`
+(11:11-14), `temple` (11:15-18) and `coming` (13:21-27).
+
+**Why.** Continues the `## Next` item from batch 2 (2026-09-25j): same convention, same tooling,
+next chapters in order.
+
+**A new form of batch 2's error class, caught by an advisor pass before commit, not by
+`story_check`.** Batch 2 found KJV sentence *periods* flattened to commas outside quoted speech.
+This batch's first draft flattened KJV *colons and semicolons inside a speaker's own words* the
+same way: in `fourthousand` 8:2-3, Christ's "I have compassion... because they have now been with
+me three days, and have nothing to eat**:**" was joined to the next sentence, "and if I send them
+away fasting..., they will faint by the way**:** for divers of them came from far," with commas —
+which lets the fainting risk read as part of the reason for His compassion, rather than the two
+separate statements the KJV's own colons keep them as. The same flattening had happened in
+`transfiguration` (Peter's "it is good for us to be here**:** and let us make three tabernacles**;**
+one for thee...") and `entry` (Christ's "over against you**:** and as soon as ye be entered...", and
+"never man sat**;** loose him"). All four restored to the KJV's own colons and semicolons. `figtree`
+also had its "he found nothing but leaves**;** for the time of figs was not yet" flattened to a
+comma; restored, since the semicolon keeps the "for"-clause limited to the leaves rather than
+running loose over the whole sentence, and this verse draws heavy patristic comment. Rule for
+future batches: narration may flatten KJV punctuation for flow; a speaker's own quoted words keep
+their KJV colons and semicolons exactly, the same way batch 2's fix protected sentence periods.
+The advisor also checked `coming` (13:21-27, pure discourse with no speaker named in range) against
+Luke's own `coming` story, which opens exactly as bare, with no added frame — so this one was left
+bare too, matching the sibling reader's own precedent rather than inventing an attribution.
+
+**Verified.** `BOOK=mark node src/tools/story_check.js syrophoenician fourthousand transfiguration
+entry figtree temple coming` clean before and after the fixes. `make mark` and `make check` both
+clean — no new `clamp` warnings, no new "wanted" subjects, only the pre-existing 15 unfound
+subjects. Playwright against `python3 -m http.server 8731`: opened the `fourthousand` and `coming`
+drawers, confirmed the Scripture Story tab shows the new prose (not the verse-fallback) in both,
+zero console errors beyond the harmless missing-favicon 404. One advisor pass ran before commit and
+caught the four blocking colon/semicolon flattenings above, plus the `coming` precedent check; a
+second pass was judged unnecessary since the only changes after it were the punctuation
+restorations it specified.
+
+**Next.** 15 of Mark's 38 icon-bearing passages remain, all in the Passion narrative: `anointing`,
+`judas`, `supper`, `gethsemane`, `arrest`, `council`, `denial` (ch. 14); `pilate`, `barabbas`,
+`mocking`, `crucifixion`, `burial` (ch. 15); `myrrhbearers`, `magdalene`, `commission` (ch. 16).
+Same tooling, same advisor discipline, plus this batch's new check: read every KJV colon or
+semicolon inside quoted speech that a draft turned into a comma, not just sentence-ending periods.
+Batch 1's `## Next` already flagged the Passion-week batches specifically for risk of Luke-parallel
+contamination (Luke's own Passion stories are close in context and phrase the same events
+differently) — watch for it here, since this next batch is entirely Passion-week.
