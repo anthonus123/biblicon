@@ -94,9 +94,9 @@ and this file did not.
     *Mark's* verses, and five scenes were deliberately **not** reused because Mark's account
     differs (see the Gotcha below). **All 78 have a prose reading and positioned markers, 513
     markers in all** — finished 2026-09-22d with batch 12 (16:9–18), every set checked by drawing
-    it back onto the picture. **The Mark reader is content-complete**; what remains for it is the
-    rest of the scripture stories (8 of 38 done, see below) and a search for the **15** subjects
-    `make check` still lists as wanting one.
+    it back onto the picture. **The Mark reader is content-complete**; what remains for it is a
+    search for the **15** subjects `make check` still lists as wanting one — the scripture
+    stories are finished (see below).
   - **300 patristic quotations, every one verbatim** from the *Catena Aurea* on Mark, Volume II
     of the Oxford translation (1842, public domain), parsed from the CCEL plain-text cache —
     which, unlike John's source, **is** the Oxford text. Checked mechanically: all 2,541 parsed
@@ -107,14 +107,31 @@ and this file did not.
   - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
     1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
     Christ among the apostles at 16:14–18.
-  - **Scripture stories: 23 of 38 icon-bearing passages, started 2026-09-25i.** `app.js` falls back
-    to printing the passage's verses in the *Scripture Story* tab when `story` is empty, so the tab
-    is never blank for the 15 remaining; stories are an improvement, not a hole. Batch 1 —
-    `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`, `paralytic`, `levi`
-    (chapters 1–2). Batch 2 — `witheredhand`, `twelve`, `sower`, `storm`, `gerasene`, `jairus`,
-    `beheading`, `fivethousand` (chapters 3–6). Batch 3 (2026-09-25k) — `syrophoenician`,
-    `fourthousand`, `transfiguration`, `entry`, `figtree`, `temple`, `coming` (chapters 7–13).
-    See `## Next` for the remaining 15, in order.
+  - **Scripture stories: 38 of 38 icon-bearing passages — Mark's stories are finished, closed
+    2026-09-26.** `app.js` falls back to printing the passage's verses in the *Scripture Story* tab
+    when `story` is empty, so the tab was never blank while these were unwritten; stories are an
+    improvement, not a hole. Batch 1 — `forerunner`, `baptism`, `temptation`, `kingdom`,
+    `petersmother`, `leper`, `paralytic`, `levi` (chapters 1–2). Batch 2 — `witheredhand`, `twelve`,
+    `sower`, `storm`, `gerasene`, `jairus`, `beheading`, `fivethousand` (chapters 3–6). Batch 3
+    (2026-09-25k) — `syrophoenician`, `fourthousand`, `transfiguration`, `entry`, `figtree`,
+    `temple`, `coming` (chapters 7–13). Batch 4 (2026-09-26) closed the reader: `anointing`,
+    `judas`, `supper`, `gethsemane`, `arrest`, `council`, `denial`, `pilate`, `barabbas`, `mocking`,
+    `crucifixion`, `burial`, `myrrhbearers`, `magdalene`, `commission` (chapters 14–16, plus the
+    tierB `commission`). The vocabulary diff was clean on the first draft; an advisor pass
+    afterward caught a real error class the diff cannot see at all — three stories (`anointing`,
+    `barabbas`, `crucifixion`) open with the passage's own first verses stripped of what precedes
+    them, so the first masculine noun a reader meets is not Christ, and every following "he/him/his"
+    then attaches to the wrong man (Simon the leper in `anointing`, Barabbas in `barabbas`, Simon of
+    Cyrene in `crucifixion`) even though every word is already in the verse range — the same
+    antecedent-shift class Luke batch 4 found in `arrest` and `council`, but caused here by an
+    opening cut rather than a swapped pronoun. Fixed by naming the true antecedent once each: "as
+    Jesus sat at meat" in `anointing`, "Pilate released" and "desire Pilate" in `barabbas`, "to bear
+    the cross of Jesus" in `crucifixion` (echoing John 19:25's own phrase "the cross of Jesus" for
+    the same relation Mark's own "his cross" leaves ambiguous once the passage stands alone). The
+    `crucifixion` fix makes `story_check` flag `jesus` as a word not in 15:21–28's own verses — the
+    same known false positive as Luke's `petersmother` precedent, not a real error. `make`,
+    `make check` and a Playwright pass on `anointing`, `crucifixion` and `commission` (console
+    errors: zero, one benign favicon 404) all ran clean before commit.
 - **Luke content, as of 2026-09-25h:**
   - **Scripture stories: 48 of 48 icon-bearing passages now have one — Luke's stories are finished.**
     Batch 4 (2026-09-25h) closed the reader: `samaritan`, `beelzebub`, `lostsheep`, `tenlepers`,
@@ -313,29 +330,32 @@ Luke, in order:
    in `arrest` and `council` — so also read every added "so"/"that"/"because" and every quoted
    speech's pronouns and proper names by eye), plus an advisor pass before commit (see the
    2026-09-25e through 2026-09-25h Session blocks for the error classes caught so far). **Mark
-   scripture stories: started 2026-09-25, 23 of 38 done in three batches.** Correction to this file's
+   scripture stories: done — 38 of 38, four batches, closed 2026-09-26.** Correction to this file's
    own prior estimate: Mark's `overrides.js` declares all 104 anchors (unlike Luke's, which lists
-   only the 48 icon-bearing ones), so the earlier "78 icon-bearing passages" line here was wrong —
+   only the 48 icon-bearing ones), so an earlier "78 icon-bearing passages" line here was wrong —
    78 is `make check`'s *icon* count (`showing 78 icons`), not the passage count; the real
    denominator is `with an icon 38`, the same field Luke's 48 matched. Batch 1 (2026-09-25i)
    covered chapters 1-2: `forerunner`, `baptism`, `temptation`, `kingdom`, `petersmother`, `leper`,
    `paralytic`, `levi`. Batch 2 (2026-09-25j) covered chapters 3-6: `witheredhand`, `twelve`,
    `sower`, `storm`, `gerasene`, `jairus`, `beheading`, `fivethousand`. Batch 3 (2026-09-25k)
    covered chapters 7-13: `syrophoenician`, `fourthousand`, `transfiguration`, `entry`, `figtree`,
-   `temple`, `coming`. 15 left, in passage order: `anointing`, `judas`, `supper`, `gethsemane`,
-   `arrest`, `council`, `denial` (ch. 14); `pilate`, `barabbas`, `mocking`, `crucifixion`, `burial`
-   (ch. 15); `myrrhbearers`, `magdalene`, `commission` (ch. 16). Same tooling, same advisor-pass
-   discipline — see the 2026-09-25j Session block for a new error class the advisor caught there:
-   a KJV sentence-ending period turned into a comma so the following "they"/"he" picks up a new,
-   wrong antecedent, or a "for"-clause absorbs a clause that KJV's own period keeps separate.
-   `story_check` cannot see this; read every KJV period a draft turns into a comma by eye, in
-   addition to the pronoun/speech-boundary check the convention already names. **Batch 3 found the
-   same error class inside quoted speech**: a colon or semicolon *within* a speaker's own words
-   (Christ's, Peter's) flattened to a comma, which lets one clause's reason bleed into the next —
-   caught by an advisor pass in `fourthousand` (the compassion clause and the "they will faint"
-   warning are two separate statements in the KJV, joined by a colon, not one cause) and echoed in
-   `transfiguration` and `entry`. Rule going forward: narration may flatten KJV punctuation for
-   flow; a speaker's own quoted words keep their KJV colons and semicolons exactly.
+   `temple`, `coming`. Batch 4 (2026-09-26) closed the reader, chapters 14-16: `anointing`,
+   `judas`, `supper`, `gethsemane`, `arrest`, `council`, `denial`, `pilate`, `barabbas`, `mocking`,
+   `crucifixion`, `burial`, `myrrhbearers`, `magdalene`, `commission`. See the Mark bullet above for
+   the antecedent-shift error the batch 4 advisor pass caught and fixed in `anointing`, `barabbas`
+   and `crucifixion` — a new shape of the same class batch 2's Session block describes below, this
+   time from an opening cut rather than a swapped pronoun. See the 2026-09-25j Session block for
+   the KJV-period-to-comma error class the advisor caught there: a KJV sentence-ending period
+   turned into a comma so the following "they"/"he" picks up a new, wrong antecedent, or a
+   "for"-clause absorbs a clause that KJV's own period keeps separate. `story_check` cannot see
+   this; read every KJV period a draft turns into a comma by eye, in addition to the
+   pronoun/speech-boundary check the convention already names. **Batch 3 found the same error class
+   inside quoted speech**: a colon or semicolon *within* a speaker's own words (Christ's, Peter's)
+   flattened to a comma, which lets one clause's reason bleed into the next — caught by an advisor
+   pass in `fourthousand` (the compassion clause and the "they will faint" warning are two separate
+   statements in the KJV, joined by a colon, not one cause) and echoed in `transfiguration` and
+   `entry`. Rule going forward: narration may flatten KJV punctuation for flow; a speaker's own
+   quoted words keep their KJV colons and semicolons exactly.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5413,3 +5433,59 @@ semicolon inside quoted speech that a draft turned into a comma, not just senten
 Batch 1's `## Next` already flagged the Passion-week batches specifically for risk of Luke-parallel
 contamination (Luke's own Passion stories are close in context and phrase the same events
 differently) — watch for it here, since this next batch is entirely Passion-week.
+
+## Session 2026-09-26 (Mark scripture stories, batch 4: chapters 14-16, 38 of 38 — Mark's stories finished)
+
+**Did.** Wrote the last 15 Mark scripture stories as `story:` fields in `overrides.js`, all of
+Mark's Passion and Resurrection: `anointing` (14:3-9), `judas` (14:10-11), `supper` (14:22-25),
+`gethsemane` (14:32-42), `arrest` (14:43-52), `council` (14:53-59), `denial` (14:66-72), `pilate`
+(15:1-5), `barabbas` (15:6-15), `mocking` (15:16-20), `crucifixion` (15:21-28), `burial` (15:42-47),
+`myrrhbearers` (16:1-8), `magdalene` (16:9-13) and `commission` (16:14-18, tierB — the fourth of
+Mark's four type icons, alongside `kingdom`, `levi` and `twelve`, all of which already carry a
+story despite being tierB). This closes the reader: 38 of 38 icon-bearing passages now have one.
+
+**Why.** Continues the `## Next` item from batch 3 (2026-09-25k): same convention, same tooling,
+the last chapters in order, watched for the Luke-parallel contamination batch 1 flagged (checked;
+none found — the wording stayed inside Mark's own verses throughout).
+
+**The Luke-parallel watch this batch checked for did not turn up anything, but a different,
+related error did: an antecedent lost not by a swapped pronoun (Luke batch 4's shape) but by
+cutting the passage's own opening.** An advisor pass before commit caught it in three stories.
+Read alone, with nothing of the preceding passage in view, each one's first masculine noun is not
+Christ, so every following "he/him/his" attaches to the wrong man, even though every word in the
+story is already present in its own verse range (so `story_check`'s vocabulary diff, which only
+checks word membership, passed all three on the first draft):
+- `anointing` (14:3-9): "in the house of Simon the leper, as he sat at meat, there came a woman...
+  and poured it on his head" reads as Simon anointed, since Jesus is not named until v6. Fixed:
+  "as **Jesus** sat at meat."
+- `barabbas` (15:6-15): "Now at that feast he released unto them one prisoner" has no referent
+  until Pilate is named in v9 (from the prior passage, `pilate`, not this one's own verses); then
+  "the multitude... began to desire **him** to do as he had ever done unto them" lands on Barabbas,
+  the nearest masculine noun (v7), asking Barabbas to do what he'd always done, rather than asking
+  Pilate to do as was his custom. Fixed: "Pilate released" and "desire **Pilate**."
+- `crucifixion` (15:21-28): "They compel one Simon a Cyrenian... to bear **his** cross" reads as
+  Simon's own cross, and everything after ("they bring **him** unto... place Golgotha," "crucified
+  **him**") stays pinned to Simon, the only man named in the story until this point — Jesus is
+  never named anywhere in 15:21-28 itself. Fixed: "to bear **the cross of Jesus**," echoing John
+  19:25's own phrase "the cross of Jesus" for the same relation Mark's "his cross" leaves ambiguous
+  the moment the passage stands alone. This fix makes `story_check` report `crucifixion: jesus` —
+  a word the tool correctly says isn't in 15:21–28's own verses, the same known false positive as
+  the `petersmother` precedent noted in earlier Session blocks, not a real error.
+The advisor named `gethsemane`, `mocking`, `arrest` and `myrrhbearers` as openings with no named
+referent but also no competing masculine noun to steal the antecedent, so those were left as
+written. `burial`'s "he gave the body to Joseph. And he bought fine linen" was also checked and
+left alone — Joseph is the only candidate either pronoun could mean.
+
+**Verified.** `BOOK=mark node src/tools/story_check.js anointing judas supper gethsemane arrest
+council denial pilate barabbas mocking crucifixion burial myrrhbearers magdalene commission` clean
+on the first draft; re-run clean after the three fixes (with the one expected `crucifixion: jesus`
+false positive explained above). `make mark` (`with story 38`, `scripture stories 38`) and a full
+`make check` across all four readers: clean, same pre-existing warnings, no new ones. Playwright
+against `python3 -m http.server 8731` (`make BOOK=mark serve`): opened `anointing`, `crucifixion`
+and `commission`, confirmed each drawer's Scripture Story tab shows the corrected prose (not the
+verse-fallback), zero console errors beyond the harmless missing-favicon 404.
+
+**Next.** Mark's scripture stories are done. What remains for Mark is the search for the 15
+subjects `make check` lists as wanting an icon at all (see `## Status` above for the list) — no
+dedicated search has been run for Mark the way Luke's Feast-cycle harvest was. The other three
+readers are untouched this session.
