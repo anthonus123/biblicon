@@ -92,6 +92,25 @@ and this file did not.
   Pages) and opened locally by double-click, as long as the sibling files sit in the same folder —
   exactly how the project already ships all five files together. No pipeline logic changed beyond
   this; `assemble.js`, `check.js` and every passage's data are untouched.
+- **Hosting setup (since 2026-09-27f), matched to the owner's other GitHub Pages site,
+  `remtex.ca`.** Domain is **biblicon.ca**, owned by the owner. Added at the repo root: `CNAME`
+  (just the domain, the file GitHub Pages reads to serve a custom domain), `robots.txt`
+  (`Allow: /`, points at the sitemap), `sitemap.xml` (lists `index.html` and all four readers),
+  and `llms.txt` (a plain-language summary for LLM crawlers, same convention `remtex.ca` uses).
+  `index.html`'s `<head>` gained a full SEO block matching `remtex.ca`'s own pattern — canonical
+  link, `robots`/`author`/`theme-color`/`keywords` meta, Open Graph and Twitter-card tags — all
+  pointing at `https://biblicon.ca/`. **Two things `remtex.ca` has that this repo does not, both
+  deliberately deferred:** a Google Search Console verification file (needs the domain live on
+  Pages first — the verification flow can't run before then) and Google Analytics 4 (owner said
+  "will do it after," so nothing is wired in; if it's added later, scope it to `index.html` only —
+  the four `Reader.html` files are deliberately offline/no-network and should stay that way). One
+  deliberate difference kept, not matched: `remtex.ca` has no `.nojekyll`, but this repo's own
+  (2026-09-27c) stays, since Jekyll's default Liquid processing risk (stray `{{`/`{%` sequences
+  inside hundreds of thousands of characters of embedded patristic text) is a real concern for
+  these pages in a way it isn't for `remtex.ca`'s much smaller, simpler HTML. **GitHub Pages
+  itself is not enabled yet** — no `gh` CLI is installed in this environment and the GitHub MCP
+  connection in this session failed to authenticate, so it could not be turned on from here; see
+  `## Next` for the exact manual steps handed to the owner.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
   `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|luke|john`
   through `src/book.js` (default Matthew). Adding a Gospel is a new `src/books/<book>/` folder
@@ -373,14 +392,27 @@ provenance, and Mark blocked regardless (no complete patristic source on Mark ex
 all, translator aside). Don't re-run that research from scratch — read the 2026-09-27d Session
 block first for exactly what was checked and where each candidate failed.
 
-**Website:** `index.html` + `.nojekyll` are committed and pushed (`f7952cc`) — see `## Status`.
-1. Owner enables GitHub Pages on `github.com` (repo Settings → Pages, source = `main`, root
-   folder) — gives a live site at `https://anthonus123.github.io/biblicon/` with no other work.
-2. Owner registers the `.ca` domain, then tells a future session the exact domain so it can add a
-   `CNAME` file at the repo root and hand back the DNS records to enter at the registrar (apex →
-   GitHub Pages' four A records; `www` → CNAME to `anthonus123.github.io`) and enable "Enforce
-   HTTPS" in Pages settings once DNS resolves.
-3. Once the domain is live, add the URL to `README.md`.
+**Website: domain is chosen (`biblicon.ca`), hosting files are in place, GitHub Pages itself
+still needs the owner.** `index.html`, `.nojekyll`, `CNAME`, `robots.txt`, `sitemap.xml` and
+`llms.txt` are all committed — see `## Status`, 2026-09-27f. In order:
+1. **Owner enables GitHub Pages** on `github.com`: repo Settings → Pages → Source: "Deploy from a
+   branch" → Branch: `main`, folder: `/ (root)` → Save. The Custom domain field should already
+   show `biblicon.ca` (read from the committed `CNAME`); if not, type it in and Save again.
+2. **Owner adds DNS records** at whatever registrar holds `biblicon.ca` — this is an apex/root
+   domain, not a subdomain, so it needs four A records, not a CNAME record:
+   `@ → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153`. If a `www.biblicon.ca`
+   redirect is also wanted, add `www → CNAME → anthonus123.github.io` and GitHub Pages will offer
+   to redirect it to the apex automatically.
+3. Once DNS resolves (can take minutes to a day), **owner enables "Enforce HTTPS"** in the same
+   Pages settings panel — greyed out until GitHub finishes issuing the certificate.
+4. Once live, add the URL to `README.md`.
+5. **Google Search Console**: can't be verified before the site is actually live on the domain: once
+   step 3 is done, the owner adds the property in Search Console and gives a future session the
+   verification file/meta tag it generates, to commit at the repo root the same way `remtex.ca`
+   has `google11ca6c32d9c55e41.html`.
+6. **Google Analytics 4**: owner said "will do it after" — deferred, not forgotten. When ready,
+   scope the `gtag.js` snippet to `index.html` only, matching `remtex.ca`'s own snippet — the four
+   `Reader.html` files must stay network-free.
 Deliberately out of scope for now (see the 2026-09-27c Session block for the reasoning): splitting
 the shared fonts/images out of each `Reader.html` so the four files stop duplicating ~60 MB of
 embedded assets between them, and any mobile/responsive redesign of the readers themselves.
@@ -6140,3 +6172,49 @@ expecting by default rather than re-diagnosing each time.
 **Next.** Nothing further flagged. Both this session's nav work and 2026-09-27d's credit-line
 reword are sitting uncommitted together at session end — same situation 2026-09-27b closed with:
 ready to commit together once the owner says go.
+
+## Session 2026-09-27f (hosting setup matched to the owner's other GitHub Pages site, remtex.ca)
+
+**Did.** The owner asked to enable GitHub Pages and match "the absolute same setup" as their other
+project, `/home/anthony/Documents/GitRepos/remtex.ca/`. Two things blocked doing this unilaterally,
+resolved by asking first: the domain (owner has `biblicon.ca` already, confirmed) and whether to
+add Google Analytics 4 like `remtex.ca` does (owner: "will do it after" — deferred). Could not
+enable GitHub Pages itself — no `gh` CLI in this environment, and the GitHub MCP connection this
+session failed to authenticate (`AUTH_HEADER_REJECTED`) — so that step is handed to the owner as
+exact manual instructions (see `## Next`).
+1. Inspected `remtex.ca`'s actual repo rather than assume: plain GitHub Pages from `main`/root, no
+   Actions workflow, a `CNAME` file (bare domain, no scheme/slash), `robots.txt`, `sitemap.xml`, an
+   `llms.txt`, a Google Search Console verification file, GA4 via `gtag.js`, and a full SEO
+   meta-tag block in `<head>` (canonical, `robots`/`author`/`theme-color`/`keywords`, Open Graph,
+   Twitter card).
+2. Added to biblicon's repo root: `CNAME` (`biblicon.ca`), `robots.txt` (points at the sitemap),
+   `sitemap.xml` (lists `index.html` and all four readers), `llms.txt` (Biblicon's own summary,
+   same shape as `remtex.ca`'s).
+3. `index.html`'s `<head>` gained the same SEO block `remtex.ca` has — canonical, `robots`,
+   `author`, `theme-color` (`#a8792c`, the project's own gold rather than remtex's navy),
+   `keywords`, Open Graph (`type`/`url`/`site_name`/`title`/`description`/`locale`) and Twitter
+   card tags, all pointing at `https://biblicon.ca/`. No `og:image`/`twitter:image` — biblicon has
+   no dedicated share image yet (`remtex.ca` uses a real JPG; biblicon's only visual assets are
+   inside the four multi-megabyte readers, not a standalone shareable image) — flagged as an
+   optional future addition, not done here.
+4. Regenerated via the same one-off `gen_index.js` (still in the scratchpad, not committed) used
+   for every prior `index.html` change this week — one line was appended to its edit history, not
+   rewritten.
+5. **Two things `remtex.ca` has that were deliberately not added**: the Google Search Console
+   verification file (its flow needs the live domain to already resolve, which isn't true yet) and
+   GA4 (owner deferred it). **One difference deliberately kept, not matched**: `remtex.ca` has no
+   `.nojekyll`; this repo's own stays, for the reason recorded in `## Status`.
+
+**Why.** Direct request — match the owner's other site's hosting setup as closely as reasonable.
+Two decisions genuinely needed the owner rather than a guess: whether the domain was ready (it
+was) and whether tracking belonged on a project whose core deliverables are explicitly designed to
+run with "no server and no network" (owner: not yet).
+
+**Verified.** `python3 -m http.server`: `index.html`, `robots.txt`, `sitemap.xml`, `llms.txt` and
+`CNAME` all served 200; grepped the rebuilt `index.html` for the canonical tag and confirmed it
+reads `https://biblicon.ca/`. Not yet checked live (Pages isn't enabled yet, so there is nothing
+at the real domain to check against) — that verification has to happen after the owner completes
+the manual steps in `## Next`.
+
+**Next.** See the hosting block at the top of `## Next` above — GitHub Pages, DNS, HTTPS, Search
+Console and (deferred) GA4, in the order the owner needs to do them. Nothing else flagged.

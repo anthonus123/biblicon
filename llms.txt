@@ -1,0 +1,28 @@
+# Biblicon
+
+> Biblicon pairs every passage of the four Gospels (Matthew, Mark, Luke and John, King James
+> Version) with an Eastern Orthodox icon of the scene and with commentary quoted verbatim from
+> the Church Fathers venerated in the Orthodox Church.
+
+## About
+
+- Name: Biblicon
+- Type: Bible-study reader / Eastern Orthodox icon reader for the four Gospels
+- Content: KJV Gospel text, Eastern Orthodox iconography, patristic commentary
+- Format: four self-contained readers, one per Gospel; each also works fully offline
+  (double-click, no server, no network required)
+
+## The four readers
+
+- Matthew: 28 chapters, 118 passages, 113 icons, 354 patristic quotations
+- Mark: 16 chapters, 104 passages, 81 icons, 300 patristic quotations
+- Luke: 24 chapters, 152 passages, 89 icons, 455 patristic quotations
+- John: 21 chapters, 64 passages, 73 icons, 192 patristic quotations
+
+Every quotation names its own Father (restricted to those venerated in the Orthodox Church) and
+the specific homily or work it is drawn from. Every icon carries positioned markers identifying
+its details ("Deciphering the Icon").
+
+## Source
+
+Source code and full build pipeline: https://github.com/anthonus123/biblicon
