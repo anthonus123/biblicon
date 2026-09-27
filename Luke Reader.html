@@ -262,6 +262,38 @@ footer a{color:var(--gold);text-decoration:none}
 .lbnav.prev{left:20px}
 .lbnav.next{right:20px}
 
+/* ---------- responsive ---------- */
+/* Below this, the sidebar-plus-reading two-column layout and the text-plus-icon passage grid
+   compound into columns too narrow to read (see HANDOFF.md, "Mobile/tablet responsiveness").
+   Both grids collapse to one column; the rail stops being a sticky, viewport-height panel (which
+   would otherwise force a long scroll through the whole chapter list before reaching any text)
+   and becomes a normal block with its own short, scrollable chapter list instead. */
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;gap:28px;padding:22px 18px 70px}
+  aside{position:static;max-height:none}
+  .chapters{max-height:280px}
+  .passage{grid-template-columns:1fr;gap:16px}
+  .card{position:static}
+  .card .frame img{height:200px}
+  .plate .frame img{height:280px}
+  footer{padding:0 18px 60px}
+  footer ul{columns:1}
+}
+@media (max-width:560px){
+  header{flex-wrap:wrap;justify-content:center;row-gap:6px;padding:10px 16px}
+  header h1{flex:1 1 auto;min-width:150px;font-size:16.5px}
+  header .badge{font-size:11px;padding:3px 11px}
+  .mast h2{margin:6px 0 4px}
+  .verses{font-size:16.5px;padding-left:12px;line-height:1.74}
+  .plate .frame img{height:220px}
+  .plate .cap{margin-top:-92px;padding:52px 16px 14px}
+  .plate .cap .nm{font-size:23px}
+  .drawer{padding:18px 16px 50px;width:100%}
+  .drawer h3{font-size:24px}
+  .keyq{padding:11px 14px}
+  .tabs button{font-size:11.5px;padding:9px 2px}
+}
+
 </style>
 </head>
 <body>

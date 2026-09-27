@@ -17,7 +17,8 @@ and this file did not.
   reader later the same day on the same request; each follows every rule the Matthew one does. Owner's priority order, stated 2026-08-20: **the icons and the explanation of
   each icon matter most**, then theological correctness on Orthodox terms, then visual
   polish. Catena Bible (catenabible.com) is the model for multi-Father commentary.
-- **Scope.** Desktop web only for now; a native app "only if we see that it's worth it."
+- **Scope.** Started as desktop web only; **responsive down to phone width since 2026-09-27g**
+  (see `## Status` below) — a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
   `Mark Reader.html` (~13.2 MB, up from ~12.6 MB after the 2026-09-26 icon search) and
@@ -107,10 +108,37 @@ and this file did not.
   deliberate difference kept, not matched: `remtex.ca` has no `.nojekyll`, but this repo's own
   (2026-09-27c) stays, since Jekyll's default Liquid processing risk (stray `{{`/`{%` sequences
   inside hundreds of thousands of characters of embedded patristic text) is a real concern for
-  these pages in a way it isn't for `remtex.ca`'s much smaller, simpler HTML. **GitHub Pages
-  itself is not enabled yet** — no `gh` CLI is installed in this environment and the GitHub MCP
-  connection in this session failed to authenticate, so it could not be turned on from here; see
-  `## Next` for the exact manual steps handed to the owner.
+  these pages in a way it isn't for `remtex.ca`'s much smaller, simpler HTML. **Update, same day:
+  `gh` got installed and authenticated** (owner ran the official Ubuntu install + `gh auth login`
+  mid-session) — **GitHub Pages is now enabled** (`gh api repos/anthonus123/biblicon/pages -X POST
+  ...`, source `main`/root, confirmed `"status":"built"`), and the owner added the four A records
+  at their registrar (Register.ca). DNS is correctly configured at the authoritative nameserver
+  (`dns5.name-services.com` returns only the four GitHub IPs, confirmed directly) but was still
+  finishing propagation through public resolvers' stale caches (Google's 8.8.8.8 in particular) as
+  of session end — see `## Next` for how to check and what's left (Enforce HTTPS, Search Console,
+  deferred GA4).
+- **Mobile/tablet responsiveness (since 2026-09-27g).** The owner asked directly ("is the website
+  mobile and tablet friendly?") and the honest answer, checked with Playwright at real viewport
+  widths rather than guessed, was: the landing page yes, the four readers no — `src/page.css` had
+  **zero `@media` breakpoints**, so the sidebar-plus-reading two-column `.layout` grid and the
+  text-plus-icon `.passage` grid never collapsed, and at phone width (390px) the reader was
+  unusable (horizontal scroll, only a sliver of text visible). Fixed with two breakpoints added to
+  the end of `src/page.css` (new "responsive" section): **≤900px** collapses `.layout` and
+  `.passage` to one column each, takes `aside` off `position:sticky`/`max-height` (a sticky,
+  viewport-height sidebar stacked full-width would otherwise force scrolling through the whole
+  chapter list before reaching any text) and caps `.chapters` at a short scrollable height instead,
+  un-stickies `.card`, and drops the footer's credit list from 2 columns to 1; **≤560px** stacks
+  the header (mark+title wrap, badge drops to its own line), trims a few font sizes, and widens the
+  drawer to the full viewport. Deliberately *not* touched: the drawer (`.scrim`/`.drawer`) already
+  had `max-width:95vw` and needed no fix; `.plate` (Icons-lead mode) was already fluid. Verified at
+  375px, 390px and 820px (iPad portrait) on both Matthew and John: no horizontal overflow at any
+  width, zero console errors, drawer and Icons-lead mode both checked directly, not assumed to
+  follow from the passage-grid fix. The 820px case was a deliberate call, not just a side effect:
+  pre-fix it technically fit without overflowing (grid columns can shrink below their content's
+  comfortable width), but the reading column was cramped next to the fixed-width icon card; putting
+  the ≤900px breakpoint above real tablet widths gives portrait iPads the full-width single-column
+  reading experience instead of a technically-fitting-but-tight one. Landscape tablets and up
+  (≥1024px) are unaffected — still the original two-column desktop layout.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
   `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|luke|john`
   through `src/book.js` (default Matthew). Adding a Gospel is a new `src/books/<book>/` folder
@@ -392,30 +420,33 @@ provenance, and Mark blocked regardless (no complete patristic source on Mark ex
 all, translator aside). Don't re-run that research from scratch — read the 2026-09-27d Session
 block first for exactly what was checked and where each candidate failed.
 
-**Website: domain is chosen (`biblicon.ca`), hosting files are in place, GitHub Pages itself
-still needs the owner.** `index.html`, `.nojekyll`, `CNAME`, `robots.txt`, `sitemap.xml` and
-`llms.txt` are all committed — see `## Status`, 2026-09-27f. In order:
-1. **Owner enables GitHub Pages** on `github.com`: repo Settings → Pages → Source: "Deploy from a
-   branch" → Branch: `main`, folder: `/ (root)` → Save. The Custom domain field should already
-   show `biblicon.ca` (read from the committed `CNAME`); if not, type it in and Save again.
-2. **Owner adds DNS records** at whatever registrar holds `biblicon.ca` — this is an apex/root
-   domain, not a subdomain, so it needs four A records, not a CNAME record:
-   `@ → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153`. If a `www.biblicon.ca`
-   redirect is also wanted, add `www → CNAME → anthonus123.github.io` and GitHub Pages will offer
-   to redirect it to the apex automatically.
-3. Once DNS resolves (can take minutes to a day), **owner enables "Enforce HTTPS"** in the same
-   Pages settings panel — greyed out until GitHub finishes issuing the certificate.
-4. Once live, add the URL to `README.md`.
-5. **Google Search Console**: can't be verified before the site is actually live on the domain: once
-   step 3 is done, the owner adds the property in Search Console and gives a future session the
-   verification file/meta tag it generates, to commit at the repo root the same way `remtex.ca`
-   has `google11ca6c32d9c55e41.html`.
-6. **Google Analytics 4**: owner said "will do it after" — deferred, not forgotten. When ready,
+**Website: GitHub Pages is enabled and built; DNS is configured correctly but was still
+propagating through public resolver caches at session end (2026-09-27f/g) — check before assuming
+it isn't done.** `gh` is now installed and authenticated in this environment (owner ran the
+install + `gh auth login` mid-session — `gh auth status` confirms `anthonus123`), so a future
+session can use it directly rather than re-hitting the "no GitHub access" wall earlier sessions
+recorded. In order, what's left:
+1. **Check DNS first, before doing anything else**: `dig biblicon.ca A @dns5.name-services.com`
+   (the domain's own authoritative server, bypasses every cache) should show only the four
+   `185.199.10x.153` addresses — if it does, the owner's config is correct and any stale answer
+   from `dig ... @8.8.8.8` or `@1.1.1.1` is just public-resolver cache lag, not a real problem;
+   give it more time rather than re-touching the registrar. `curl -sI http://biblicon.ca/` should
+   return the GitHub Pages response once caches clear.
+2. Once `biblicon.ca` resolves cleanly and consistently: `gh api -X PATCH
+   repos/anthonus123/biblicon/pages -f https_enforced=true` (or the Settings → Pages UI toggle) —
+   fails until GitHub has actually issued the certificate, which needs correct DNS first.
+3. Once live, add the URL to `README.md`.
+4. **Google Search Console**: needs the live domain to verify against. Once it's up, the owner
+   adds the property and gives a future session the verification file/meta tag it generates, to
+   commit at the repo root the way `remtex.ca` has `google11ca6c32d9c55e41.html`.
+5. **Google Analytics 4**: owner said "will do it after" — deferred, not forgotten. When ready,
    scope the `gtag.js` snippet to `index.html` only, matching `remtex.ca`'s own snippet — the four
    `Reader.html` files must stay network-free.
+
 Deliberately out of scope for now (see the 2026-09-27c Session block for the reasoning): splitting
 the shared fonts/images out of each `Reader.html` so the four files stop duplicating ~60 MB of
-embedded assets between them, and any mobile/responsive redesign of the readers themselves.
+embedded assets between them. **Mobile/responsive redesign is done, not out of scope any more** —
+see `## Status`, 2026-09-27g; that line here was accurate as of 2026-09-27c/f and is now stale.
 
 **Mark's readings are finished — 81 of 81, 528 markers.** Twelve batches through 2026-09-22d
 (78 of 78, 513 markers; batch 12 did 16:9-18, the three appearances to Mary Magdalene and the
@@ -6218,3 +6249,62 @@ the manual steps in `## Next`.
 
 **Next.** See the hosting block at the top of `## Next` above — GitHub Pages, DNS, HTTPS, Search
 Console and (deferred) GA4, in the order the owner needs to do them. Nothing else flagged.
+
+## Session 2026-09-27g (gh CLI installed and used to actually enable GitHub Pages; DNS wired up; mobile/tablet fixed)
+
+**Did.** Continuation of 2026-09-27f, same conversation. Two things landed.
+1. **GitHub access.** The owner asked why I couldn't enable Pages myself; I explained `gh` wasn't
+   installed and the GitHub MCP connection had failed auth. Gave the Ubuntu install command; the
+   owner ran it plus `gh auth login` (browser device-code flow) in their own terminal, pasting the
+   output back. `gh auth status` then confirmed `anthonus123`, `repo` scope included. With that:
+   `gh api repos/anthonus123/biblicon/pages -X POST -f "source[branch]=main" -f "source[path]=/"`
+   enabled Pages (it auto-read the committed `CNAME` and set `cname: biblicon.ca`); polled
+   `gh api repos/anthonus123/biblicon/pages/builds/latest` until `"status":"built"`. The owner then
+   added the four A records at Register.ca (their registrar) themselves, screenshotting the panel
+   to confirm; I misread the resulting DNS-propagation flakiness as a leftover duplicate record at
+   the registrar and told the owner so — **wrong**, corrected in the same session after actually
+   querying the domain's authoritative nameserver (`dns5.name-services.com`) directly, which showed
+   only the four correct GitHub IPs. The real cause was public-resolver cache staleness (Google's
+   8.8.8.8 in particular kept round-robining between the old parking IP and the new ones across its
+   different edge nodes for a while) — not a config error. Two background polls
+   (`run_in_background`, checked every 2 minutes) were used to watch for convergence rather than
+   manually re-running `dig` on request each time; the first one's success condition was too loose
+   (declared done on a single clean answer) and had to be replaced with a second, stricter one
+   requiring three consecutive clean checks against both Google's and Cloudflare's resolvers. DNS
+   was still not fully converged at session end.
+2. **Mobile/tablet responsiveness.** The owner asked directly whether the site was mobile/tablet
+   friendly. Checked with Playwright at real viewport widths rather than guessed: the landing page
+   was fine (it already had one `@media` breakpoint from when it was built, 2026-09-27c), but the
+   four readers were not — `src/page.css` had zero `@media` rules at all, so at phone width (390px)
+   the two-column `.layout` grid and the two-column `.passage` (text+icon) grid inside it produced
+   a page with a horizontal scrollbar and only a sliver of readable text. Fixed by adding two
+   breakpoints to the end of `src/page.css`: `≤900px` collapses both grids to one column, takes
+   `aside` off `position:sticky`/unbounded height (would otherwise force scrolling through the
+   entire chapter list before reaching any reading text) and gives `.chapters` a short capped
+   height instead, un-stickies `.card`, and drops the footer credit list to one column; `≤560px`
+   stacks the header, trims a few font sizes, and widens the drawer to the full viewport. Rebuilt
+   all four readers via `make`.
+
+**Why.** Direct requests, in order: "why do you not have github access," "what is the command to
+install gh," continuing the DNS setup already in progress from 2026-09-27f, then "is the website
+mobile and tablet friendly?" followed by "fix mobile go ahead."
+
+**Verified.** GitHub Pages: `gh api .../pages` response showed `"status":"built"` after the POST;
+confirmed `anthonus123.github.io/biblicon/` 301-redirects to `http://biblicon.ca/` (expected,
+since the `CNAME` file is present). DNS: queried the domain's actual authoritative nameserver
+directly (bypassing every cache) and got a clean, correct answer; separately confirmed Cloudflare's
+1.1.1.1 had fully converged to the correct answer while Google's 8.8.8.8 was still flapping.
+Mobile: `make` (all four books) — same 39 pre-existing warnings, `make check` clean. Playwright at
+390×844 (iPhone), 375×812 (iPhone SE, spot-checked on John to confirm the shared CSS fix applies
+uniformly) and 820×1180 (iPad portrait) on Matthew: zero horizontal overflow at any width
+(`document.documentElement.scrollWidth > window.innerWidth` checked directly, not eyeballed),
+verses and icon card both render full-width and correctly stacked, the drawer opens at full
+viewport width, the thumbnail strip and tabs all fit, and Icons-lead mode (the `.plate` layout,
+untouched by this fix) still renders correctly. Zero console messages, any level, across every
+page load at every width tested. `git status -s`: only `src/page.css` and the four `Reader.html`
+files changed by the mobile fix — `app.js`, `build.js` and all passage data untouched. Stray
+screenshot files deleted before finishing, never committed.
+
+**Next.** DNS convergence (background-polled, not yet confirmed complete at session end — see
+`## Next` above for the direct-nameserver check to run first), then Enforce HTTPS, Search Console,
+and deferred GA4, in that order. Nothing else flagged for the mobile fix — it's done, not partial.
