@@ -42,9 +42,56 @@ and this file did not.
   favicon `src/build.js` inlines into every reader. An empty `.nojekyll` at the repo root tells
   GitHub Pages to skip Jekyll processing, since this is a plain static site. Target host is
   GitHub Pages (`main` branch, root folder) under a `.ca` domain the owner is registering; neither
-  Pages nor the domain/DNS/`CNAME` is wired up yet — see `## Next`. Verified locally only, over
-  `python3 -m http.server` and Playwright (zero console errors, all four links resolve); not yet
-  committed.
+  Pages nor the domain/DNS/`CNAME` is wired up yet — see `## Next`. Committed and pushed
+  (`f7952cc`), verified locally over `python3 -m http.server` and Playwright (zero console errors,
+  all four links resolve).
+- **Patristic-commentary credit lines (since 2026-09-27d) — read this before touching `book.json`'s
+  `catenaShort`/`catenaLong` fields or `index.html`'s footer.** All four readers' commentary is,
+  and remains, sourced from Thomas Aquinas's 13th-century *Catena Aurea* — `catena.json`,
+  `src/fathers.js` and every passage's `fathers[]` array are **unchanged**. What changed is only
+  the credit copy: the owner ruled that the UI must never name Aquinas or "Catena Aurea," because
+  the point of the project is Orthodox sources, not a Catholic compiler's anthology of Orthodox
+  Fathers, however faithfully quoted. Two research passes this session (forked, not done inline)
+  checked whether a real source swap is possible: the first found Chrysostom's homilies on
+  Matthew/John and Cyril of Alexandria's commentaries on Luke/John are complete, public-domain, and
+  translated directly from the Fathers' own Greek/Syriac rather than through Aquinas — but Mark has
+  no comparable source at all (Bede's own commentary on Mark was never translated into English;
+  Theophylact and Victor of Antioch's ancient catena on Mark exist only in copyrighted modern
+  editions). The owner then raised the bar: the *translator*, not just the Father, must be
+  Orthodox too. A second research pass found **nothing clears that bar, for any Father, on any
+  Gospel** — 19th-century English patristic translation (NPNF, the Library of the Fathers) was
+  entirely an Anglican/Oxford-Movement undertaking, and large-scale Orthodox English-language
+  patristic publishing is a 20th-century phenomenon, still under copyright throughout. Blessed
+  Theophylact of Ohrid — arguably the most distinctly Orthodox voice currently in the project —
+  has no public-domain English translation at all, confirmed by fetching Holy Trinity Orthodox
+  Mission's own hosted copy directly: its own header says to buy the printed edition from
+  Chrysostom Press. **Decision, until a genuinely Orthodox-translated public-domain source
+  surfaces: hold the quoted text exactly as it is, but never name the source in any UI text.**
+  `catenaShort` (the "Wisdom of the Fathers" tab's closing note, `src/app.js:319-321`) and
+  `catenaLong` (each reader's own footer, `src/build.js:113`) were reworded in all four
+  `src/books/<book>/book.json` files to name the book's actual lead Fathers and state plainly that
+  every quotation is verbatim and Orthodox-venerated-only (already true, already enforced by
+  `fathers.js`'s whitelist) — without naming Aquinas, the *Catena Aurea*, the Oxford volumes, or
+  the Dominican House of Studies anywhere. `index.html`'s meta description, intro paragraph and
+  footer were rewritten the same way. **What this does *not* change**: `src/app.js:253` already
+  renders each quotation's Father name and specific work (e.g. "Hom. III") right under the text —
+  that per-quotation sourcing was already there and needed no fix. One buried, harmless exception:
+  a footnote inside an actual verbatim Mark quotation cites "Catena Aurea in Matt., p 58, note c"
+  as part of the Father's own 1842 apparatus — that's inside the quoted text itself, which this
+  pass deliberately did not touch, not a credit line, and grepping for it will still find it.
+- **Cross-reader navigation (since 2026-09-27e).** The owner pointed out each reader was a dead
+  end — no way back to the landing page or across to another Gospel once inside one. Fixed in the
+  shared template, `src/build.js`, so it reaches all four readers automatically: the header's gold
+  cross mark is now a link to `index.html` (`.marklink`, `src/page.css`), and the sidebar (`aside`)
+  gets a new block below `railnote` — "Other Gospels," an "All four Gospels" link to `index.html`
+  plus a row of pill links to the other three readers, with the current book shown as a filled,
+  non-linked pill (`.booknav`/`.booklinks`, both new in `page.css`). `build.js` reads all four
+  `src/books/<id>/book.json` files (not just the current book's) to get each one's `name` and
+  `reader` filename — the first place any reader's build has needed to know about the other three.
+  All links are relative (`Mark%20Reader.html`, etc.), so this works identically hosted (GitHub
+  Pages) and opened locally by double-click, as long as the sibling files sit in the same folder —
+  exactly how the project already ships all five files together. No pipeline logic changed beyond
+  this; `assemble.js`, `check.js` and every passage's data are untouched.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
   `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|luke|john`
   through `src/book.js` (default Matthew). Adding a Gospel is a new `src/books/<book>/` folder
@@ -316,16 +363,24 @@ and this file did not.
 
 ## Next
 
-**Website: `index.html` + `.nojekyll` are built and verified locally but not committed, and
-GitHub Pages/the domain are not wired up — see `## Status`.** In order:
-1. Commit `index.html` and `.nojekyll` (owner asked to confirm before this session commits them).
-2. Owner enables GitHub Pages on `github.com` (repo Settings → Pages, source = `main`, root
+**Patristic sourcing: the credit lines are fixed (see `## Status`, 2026-09-27d); the underlying
+source is not, and may never be under current constraints.** If a future session ever finds a
+public-domain English patristic Gospel commentary translated by an Orthodox translator (not just
+an Orthodox author), that is the trigger to revisit an actual source swap for Matthew, Luke and/or
+John — two research passes this session (2026-09-27c/d) already scoped what a swap would look like
+(Chrysostom on Matthew/John, Cyril of Alexandria on Luke/John) and found it blocked on translator
+provenance, and Mark blocked regardless (no complete patristic source on Mark exists in English at
+all, translator aside). Don't re-run that research from scratch — read the 2026-09-27d Session
+block first for exactly what was checked and where each candidate failed.
+
+**Website:** `index.html` + `.nojekyll` are committed and pushed (`f7952cc`) — see `## Status`.
+1. Owner enables GitHub Pages on `github.com` (repo Settings → Pages, source = `main`, root
    folder) — gives a live site at `https://anthonus123.github.io/biblicon/` with no other work.
-3. Owner registers the `.ca` domain, then tells a future session the exact domain so it can add a
+2. Owner registers the `.ca` domain, then tells a future session the exact domain so it can add a
    `CNAME` file at the repo root and hand back the DNS records to enter at the registrar (apex →
    GitHub Pages' four A records; `www` → CNAME to `anthonus123.github.io`) and enable "Enforce
    HTTPS" in Pages settings once DNS resolves.
-4. Once the domain is live, add the URL to `README.md`.
+3. Once the domain is live, add the URL to `README.md`.
 Deliberately out of scope for now (see the 2026-09-27c Session block for the reasoning): splitting
 the shared fonts/images out of each `Reader.html` so the four files stop duplicating ~60 MB of
 embedded assets between them, and any mobile/responsive redesign of the readers themselves.
@@ -5973,3 +6028,115 @@ duplicating ~60 MB of embedded assets across the four files, and any mobile-resp
 were both explicitly scoped out of this pass — the first reverses a deliberate design choice
 (`README.md`'s "self-contained... no server and no network") that would need its own decision, the
 second is already ruled out by this file's own Scope line ("Desktop web only for now").
+
+## Session 2026-09-27d (drop Aquinas/Catena Aurea from every credit line; underlying source held, not swapped)
+
+**Did.** The owner asked what the landing page's "compiled by St Thomas Aquinas" line meant, given
+the project is explicitly Orthodox. That question turned into two forked research passes and a
+final scope decision.
+1. **First research pass** (forked): checked whether Matthew, Mark, Luke and John's commentary
+   could be recompiled from patristic sources translated directly from the Fathers' own Greek/
+   Syriac, instead of through Aquinas's *Catena Aurea*. Found: Chrysostom's *Homilies on Matthew*
+   and *on John* (NPNF, complete, public domain) and Cyril of Alexandria's commentaries on *Luke*
+   (Payne Smith, from the Syriac) and *John* (Pusey/Randell) are all real, complete, direct-from-
+   source candidates. Mark has none — Bede's own commentary on Mark was never translated into
+   English (only a 1998 copyrighted edition exists), Theophylact's translation is a copyrighted
+   1993 Chrysostom Press text (confirmed by reading its own front matter on an archive.org upload),
+   and the ancient Greek catena on Mark (Victor of Antioch) exists in English only as a 2012 Brill
+   scholarly edition, also copyrighted.
+2. **The owner raised the bar** before accepting that plan: the *translator*, not just the Father
+   quoted, has to be Orthodox too — otherwise it is the same problem in a different shape. Second
+   research pass (forked): checked whether any public-domain English patristic Gospel commentary,
+   for any Father, on any Gospel, was ever translated by an Orthodox individual or institution.
+   Found none. The two 19th-century English patristic translation projects that produced
+   essentially all public-domain material in this space — NPNF (ed. Philip Schaff) and the
+   *Library of the Fathers* (Pusey/Newman/Keble's Oxford Movement) — were both Anglican/Anglo-
+   Catholic undertakings. Large-scale Orthodox English-language patristic publishing (St
+   Vladimir's, Holy Cross, Chrysostom Press, Ancient Faith) is a 20th-century phenomenon and
+   everything from it remains under copyright. Checked Blessed Theophylact of Ohrid specifically,
+   by fetching Holy Trinity Orthodox Mission's own hosted copy of his commentary on Matthew
+   directly rather than trusting a search snippet: its own header reads "please buy the printed
+   copy... from Fr. Christopher Stade / chrysostompress.org" — a courtesy excerpt with the
+   publisher's evident knowledge, not a public-domain release, and no older translation of him
+   exists at all, by anyone.
+3. **Owner's decision: hold the quoted text exactly as it is; stop naming Aquinas or "Catena
+   Aurea" in the UI; describe the commentary as the Church Fathers' own words directly, and lean
+   on what already shows the source.** `src/app.js:253` already renders each quotation's Father
+   and specific work (e.g. "Hom. III") — that needed no change. What changed: `catenaShort` and
+   `catenaLong` in all four `src/books/<book>/book.json` files (rewritten to name each book's
+   actual lead Fathers and state the Orthodox-venerated-only restriction, dropping every mention
+   of Aquinas, the *Catena Aurea*, the Oxford volumes and the Dominican House of Studies), and
+   `index.html`'s meta description, intro paragraph and footer (same change, regenerated through
+   the same one-off `gen_index.js` used to build it originally — not committed, since it isn't
+   part of the tracked pipeline). All four readers rebuilt via plain `make` — no pipeline code
+   touched, `catena.json` and `fathers.js` untouched, every passage's `fathers[]` array byte-
+   identical to before.
+
+**Why.** Direct continuation of the landing-page question. The owner's own framing, stated
+plainly: "the main idea is to have orthodox resources doing this, not a catholic source quoting
+orthodox fathers." Two research passes established that the ideal (Orthodox author *and* Orthodox
+translator, public domain, complete) doesn't exist for any of the four Gospels today, so the owner
+chose the available middle path — honest about what it is (still Aquinas's own historical
+anthology, unstated) rather than either overclaiming a fix that isn't real or leaving the
+misleading Aquinas credit in place.
+
+**Verified.** `make` (all four books): 39 pre-existing warnings, nothing new, "ok — every
+structural invariant holds" on `make check` for each. Grepped all four `Reader.html` files and
+`index.html` for "aquinas" (0 everywhere), "dominican" (0 everywhere), and "catena aurea" (0 in
+Matthew/Luke/John/index.html; 1 remaining in Mark, confirmed by inspection to be a footnote inside
+an actual verbatim quotation's own 1842 apparatus — not a credit line, and out of this pass's own
+scope, which explicitly held `catena.json` unchanged). `BOOK=<book> node src/tools/quotes.js` on
+all four: identical wrong-Father/no-source/drift counts to before this session's edits (John's
+pre-existing 3 drifted sentences are unrelated to this change and untouched by it) — confirms
+`catena.json`, `hotspots*.js` and every quoted Father text are byte-identical to before.
+Playwright, `python3 -m http.server`: opened every reader, opened a passage's "Wisdom of the
+Fathers" tab in each, read the new `srcnote` text and the first quotation's own Father/work line
+directly off the live DOM (a hard reload was needed partway through — the browser was serving a
+cached copy of Matthew and John from before the rebuild; `location.reload(true)` fixed it and is
+worth remembering for the next session that hits the same thing) — matches the edited `book.json`
+text exactly in all four. Opened `index.html`, read the new footer text off the live DOM. Zero
+console messages, any level, across all five page loads. `git diff --stat`: only the four
+`catenaShort`/`catenaLong` fields, `index.html`, and the four `Reader.html` files changed — nothing
+in `src/fathers.js`, `catena.json`, `hotspots*.js`, or any passage data. Stray `.playwright-mcp`
+snapshots deleted before finishing, never committed.
+
+**Next.** See the patristic-sourcing block at the top of `## Next` above. Nothing further flagged
+for this pass; not yet committed at session end (owner had not yet said go, consistent with this
+project's pattern of confirming before every commit).
+
+## Session 2026-09-27e (cross-reader navigation: a way back to the landing page, and across to the other Gospels)
+
+**Did.** The owner pointed out each reader was a dead end once opened — no way back to
+`index.html` and no way to another Gospel without editing the URL by hand. Added, in the shared
+`src/build.js` template so every reader picks it up: the header's gold cross mark is now a link to
+`index.html` (new `.marklink` wrapper, styled in `src/page.css`); and a new block at the bottom of
+the sidebar (`aside`, below `railnote`) titled "Other Gospels" — an "All four Gospels" link to
+`index.html`, plus a row of small pill links to the other three readers, with the current book
+rendered as a filled, non-linked pill rather than a link to itself. `build.js` now reads all four
+`src/books/<id>/book.json` files (previously it only ever read the one book it was building) to
+get each Gospel's `name` and `reader` filename for these links. All four readers rebuilt via plain
+`make`.
+
+**Why.** Direct request. The four readers and the new landing page (2026-09-27c) were, until now,
+only linked one way — `index.html` → each reader — with nothing going back or across, which the
+owner correctly read as a dead end for anyone landing inside a reader first (a bookmark, a shared
+link, or the "double-click the file" path this project has always supported).
+
+**Verified.** `make` (all four books): same 39 pre-existing warnings as every prior session this
+week, nothing new, `make check` clean. Playwright over `python3 -m http.server`: confirmed on
+Matthew's live DOM that the sidebar shows Matthew as the current (non-linked) pill and Mark/Luke/
+John as real links to their own `<Name>%20Reader.html`, and that the header mark links to
+`index.html`; clicked the Mark pill from Matthew and landed on `Mark Reader.html`; clicked the
+header mark from there and landed on `index.html` — both real navigations, not just correct
+`href` attributes. Screenshot of John's sidebar confirms the block reads cleanly under the chapter
+list, matching the reader's existing visual language. Zero console messages, any level, across
+every page load. `git status -s`: only `src/build.js`, `src/page.css`, and the four `Reader.html`
+files changed by this piece of work (plus `HANDOFF.md`) — `assemble.js`, `check.js` and every
+passage's own data untouched. A hard reload (`location.reload(true)`) was needed once more this
+session to see a rebuilt file in the browser — the same browser-cache behavior 2026-09-27d already
+noted; recording it again here since it has now recurred twice in two sessions and is worth just
+expecting by default rather than re-diagnosing each time.
+
+**Next.** Nothing further flagged. Both this session's nav work and 2026-09-27d's credit-line
+reword are sitting uncommitted together at session end — same situation 2026-09-27b closed with:
+ready to commit together once the owner says go.

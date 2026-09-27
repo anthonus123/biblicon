@@ -21,6 +21,8 @@ img{display:block;max-width:100%}
 header{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:18px;
   padding:12px 26px;background:rgba(239,233,220,.94);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--rule);box-shadow:0 1px 0 rgba(255,255,255,.6) inset}
+header .marklink{display:block;flex:0 0 auto;width:26px;height:26px;border-radius:6px;transition:background .15s}
+header .marklink:hover{background:var(--gold-l)}
 header .mark{width:26px;height:26px;flex:0 0 auto}
 header h1{flex:1;text-align:center;font-size:19px;font-weight:600;letter-spacing:.02em}
 header h1 em{font-style:normal;color:var(--gold)}
@@ -66,6 +68,13 @@ aside .sub{font-size:13px;color:var(--muted);margin:2px 0 16px}
 .sublist .rg{font-size:11px;color:var(--gold);display:block}
 .railnote{font-size:13px;color:var(--muted);font-style:italic;margin-top:14px;
   border-top:1px solid var(--rule);padding-top:12px;line-height:1.45}
+.booknav{margin-top:16px;border-top:1px solid var(--rule);padding-top:14px}
+.booknav .home{display:block;font-size:13.5px;font-weight:600;color:var(--gold);margin-bottom:10px}
+.booklinks{display:flex;flex-wrap:wrap;gap:6px}
+.booklinks a,.booklinks .cur{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid var(--rule)}
+.booklinks a{color:var(--ink2);transition:background .15s,border-color .15s}
+.booklinks a:hover{background:#eae2ce;border-color:var(--gold-l)}
+.booklinks .cur{color:#fff;background:var(--gold);border-color:var(--gold);font-weight:600}
 
 /* ---------- main ---------- */
 .mast{text-align:center;margin-bottom:30px}

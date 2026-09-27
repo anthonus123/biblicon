@@ -57,6 +57,17 @@ const attribs=Object.values(D.images).filter(i=>i.license!=='user-supplied')
   .sort((a,b)=>a.title.localeCompare(b.title))
   .map(i=>`<li>${esc(i.title)}${i.date?' · '+esc(i.date):''}${i.artist?' · '+esc(i.artist):''} · ${esc(i.license)}${i.page?` · <a href="${i.page}" target="_blank" rel="noopener">Commons</a>`:''}</li>`).join('\n');
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+// Every reader links to the other three and to the landing page, so opening one Gospel
+// doesn't strand a reader with no way back or across — all relative, so it works both hosted
+// and opened locally as long as the sibling files sit in the same folder, exactly how the
+// project ships them (see HANDOFF.md, Status, "Website" and "Cross-reader navigation").
+const ALL_BOOKS=['matthew','mark','luke','john'];
+const booklinksHtml=ALL_BOOKS.map(id=>{
+  if(id===book.id) return `<span class="cur" aria-current="page">${esc(book.name)}</span>`;
+  const m=JSON.parse(fs.readFileSync(__dirname+'/books/'+id+'/book.json','utf8'));
+  return `<a href="${encodeURI(m.reader)}">${esc(m.name)}</a>`;
+}).join('\n      ');
 const jsonSafe=o=>JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
 
 const html=`<!DOCTYPE html>
@@ -74,8 +85,9 @@ ${css}
 <body>
 <div class="wrap">
 <header>
+  <a class="marklink" href="index.html" aria-label="All four Gospels" title="All four Gospels">
   <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="#a8792c" stroke-width="1.6" aria-hidden="true">
-    <path d="M12 2v20M6 7h12M8.5 12h7M9.5 17.5h5"/></svg>
+    <path d="M12 2v20M6 7h12M8.5 12h7M9.5 17.5h5"/></svg></a>
   <h1>The Gospel of <em>${book.name}</em></h1>
   <span class="badge">${book.chapters} Chapters · King James Version</span>
 </header>
@@ -94,6 +106,13 @@ ${css}
     <div class="lab" style="margin-bottom:6px">Chapters · open to see its icons</div>
     <div class="chapters" id="chapters"></div>
     <div class="railnote" id="railnote">The menu follows you as you read; open a chapter to see its icons.</div>
+    <div class="booknav">
+      <div class="lab" style="margin-bottom:8px">Other Gospels</div>
+      <a class="home" href="index.html">☨&nbsp; All four Gospels</a>
+      <div class="booklinks">
+      ${booklinksHtml}
+      </div>
+    </div>
   </aside>
 
   <main>
