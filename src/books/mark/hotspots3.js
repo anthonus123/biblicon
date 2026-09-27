@@ -780,9 +780,9 @@ module.exports={
 ],
 
 "File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
- ["The inscription", "Η ΑΝΑΛΗΨΙΣ, the Ascension — lettered in the upper corners, the feast's own name and not a quotation of Mark's two verses.", "9%", "15%"],
- ["Christ, both arms spread", "Seated within the grey mandorla, no throne drawn under him. Mark: he was received up into heaven, and sat on the right hand of God.", "13%", "48%"],
- ["Two figures in white", "Lettered with script too worn to read with confidence; on Luke's own reading of this panel, taken for the two men in white apparel Acts adds to the scene, since Mark's own two verses name no one present at all.", "42%", "42%"],
+ ["The inscription", "The right corner is legible as ΤΟΥ ΧΡ, the abbreviation for Χριστοῦ; the left, presumably naming the Ascension itself, is too worn to transcribe with confidence. Neither is a quotation of Mark's two verses.", "9%", "15%"],
+ ["Christ, both arms spread", "His glory a deep orange-red, resting on plain grey cloud with no throne under him. Mark: he was received up into heaven, and sat on the right hand of God.", "13%", "48%"],
+ ["Two winged figures in white", "Each holds a scroll, its lettering too small to read at this size; on Luke's own reading of this panel, taken for the two men in white apparel Acts adds to the scene, since Mark's own two verses name no one present at all.", "42%", "42%"],
  ["The Theotokos", "Haloed, in a dark red mantle, standing between the two ranks of apostles. Neither of Mark's two verses names anyone present.", "58%", "47%"],
  ["The apostles looking up", "Heads tipped back, hands lifted. Mark's own next line has them already gone out to preach; the picture holds them here, still looking.", "60%", "18%"],
 ],

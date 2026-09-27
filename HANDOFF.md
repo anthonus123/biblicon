@@ -206,11 +206,14 @@ and this file did not.
     two verses, 2:25–26, were quoted with an invented connective); the Gračanica "wide" Publican
     photograph turned out to show the parable's two figures painted twice, mirrored either side
     of the temple, not once as first assumed — the reading and both readers' markers were rewritten
-    to match once this was seen. **One new finding, not previously recorded**: the Langadas
-    Ascension panel gives the Theotokos the same central, orant place among the apostles that the
-    2026-09-25c harvest notes had recorded only for the Monreale Ascension mosaic — both readers'
-    readings now say so, and both say her presence there is the icon's own developed tradition
-    (Acts 1:14 puts her in the upper room afterward), not a citation of Luke's or Acts's own words.
+    to match once this was seen. **Two findings recorded here at the time turned out to be wrong and
+    were corrected 2026-09-27/2026-09-27b**: this block originally said the Langadas Ascension panel
+    gives the Theotokos the same central, orant place the Monreale mosaic gives her — a fresh crop of
+    Langadas found her hands held low, not raised, and a further crop of Monreale (2026-09-27b) found
+    her hands crossed at her breast there too, not raised in prayer as first read; **neither panel is
+    orant**. Both panels do give her the same central place among the company, which is the icon's own
+    developed tradition (Acts 1:14 puts her in the upper room afterward), not a citation of Luke's or
+    Acts's own words.
     **26 passages still want an icon** — unchanged; this session did not run the harvest, only
     wrote what the harvest had already found. `make check`, `make luke` and a full `make` all ran
     clean after every batch; the other three readers are untouched.
@@ -419,6 +422,15 @@ Luke, in order:
    statements in the KJV, joined by a colon, not one cause) and echoed in `transfiguration` and
    `entry`. Rule going forward: narration may flatten KJV punctuation for flow; a speaker's own
    quoted words keep their KJV colons and semicolons exactly.
+5. **Both items 2026-09-26b flagged for a Luke session on `553e9b759de0` (the Monreale
+   issue-of-blood mosaic) were closed 2026-09-27**, using a full-resolution fetch of the Commons
+   original (1939×2084) rather than the 660×710 local cache: Christ's own stride, traced in one
+   unbroken line from his robe to a sandaled foot, settles the front/behind direction in favour of
+   Luke's existing reading; and the round outline beside the woman's own head, first misread at low
+   resolution as a nearby apostle's halo, turned out at full resolution to be her own — the same
+   face's neck runs down into her green mantle, and it is beardless. 2026-09-26b's own first-draft
+   instinct to call her haloed was right; Luke's reading now says so. See the 2026-09-27 Session
+   block.
 
 **For the owner, from Luke batch 16 (2026-09-25b — `myrrhbearers` and `peace`).** Two advisor
 passes ran before commit; the first caught the same two error classes every batch since 12 has
@@ -5714,3 +5726,169 @@ touch really face.
 take it — see `## Status` and `## Next` above for the honest disposition of the remaining 13.
 7 local commits (through this session's own) are ahead of `origin/main` and have not been pushed.
 The other three readers are untouched this session.
+
+## Session 2026-09-27 (Luke: both disagreements 2026-09-26b flagged are now closed)
+
+**Did.** Picked up the two items 2026-09-26b flagged for a future Luke session (above). Several
+advisor passes ran across this session's successive fix rounds, and each pass kept finding real
+errors the round before it had introduced or left standing — including, once, a tight crop of a
+face alone that was misread even at full resolution, and only corrected by a wider crop that
+followed the same face down to its body and garment. The lesson worth keeping, stated plainly: work
+through a pass's whole list before re-running the build and calling it done, and identify a figure
+from a wide crop that shows its body and dress, not from a tight crop of the face alone, however
+high the resolution.
+1. **The Langadas Ascension (`016 Ascension of Jesus Icon…`, key `626419fb0b06`): closed.** A grid
+   crop shows exactly one pair of winged, haloed angels in the whole panel, standing among the
+   apostles directly behind the Theotokos (top ~40–52%, left ~40–60%) — not a second pair up at the
+   mandorla, which rests on cloud alone. Luke's own reading and markers had split this one pair into
+   two: "two winged angels carrying the mandorla" (a marker at 28%/40%, sitting on bare cloud) and,
+   separately, "two more haloed figures in white" behind the Theotokos. Merged to one marker, "The
+   two winged angels," at 44%/48%, between the two haloed heads the crop actually shows. **Mark's own
+   reading of this file was also wrong** — "grey mandorla," and "robes lettered with script" where the
+   figures actually hold scrolls — and, once fixed, the fix itself copied Luke's own new sentences
+   ("red-orange … grey cloud," "a scroll … too worn") almost verbatim, which the owner's 2026-09-20
+   rule (a shared file gets its own prose in each reader) does not allow — reworded a second time
+   around the same corrected facts in different words. A 5-gram diff of the two books' final Langadas
+   entries prints 8 hits in the prose and 3 in the markers, all of them either the five-word Acts 1:10
+   phrase "two men in white apparel" (which both readers necessarily quote the same way) or short
+   positional phrases ("at the top of the panel," "the rest of the panel is," "in a red mantle
+   stands") that both readers already shared before this session — none of them an invented visual
+   claim, so none were reworded further. **Luke's own reading needed three more rounds of fixing
+   beyond the merge above, an advisor pass catching something wrong in each round's own rewrite**:
+   the mandorla itself is red-orange and brick-textured, the grey belongs only to the cloud it rests
+   on, not the mandorla itself; the claim that the title reads "ΙC ΧΡ" was invented, not read off the
+   panel — a crop of each top corner shows the title lettered where the cloud sweeps into both
+   corners, the right one legible as ΤΟΥ ΧΡ (the abbreviation for Χριστοῦ, the tail of Η ΑΝΑΛΗΨΙΣ ΤΟΥ
+   ΧΡΙΣΤΟΥ), the left too worn to transcribe — a separate, genuine ΙC ΧC beside Christ's own halo is
+   untouched by this; the Acts 1:11 words were first presented as this reading's own transcription of
+   the angels' scrolls, which neither this session's crops nor the panel's own resolution can actually
+   read — reworded to attribute the words to the file's own Commons record, which separately
+   transcribes them with the second clause ending in a plural, into the heavens, against Acts 1:11's
+   own Greek singular, a difference the reading now flags rather than silently resolving either way;
+   and the Theotokos's gesture, first wrongly claimed as "both hands raised in prayer" (which
+   Monreale's own Theotokos does show, unaffected), was then over-corrected to "the other hidden
+   beneath her own mantle," asserting more than the crop shows — settled to "her hands are held low
+   before her, not raised as an orant," the minimum the crop actually supports.
+2. **Verse-count check, both Langadas and the Monreale Ascension mosaic.** Both readings called
+   Luke's own account of the Ascension "three verses long"; `luke/kjv.json` 24:50–53 is four verses
+   (the ascending itself only two, 50–51). Fixed in both. The Monreale reading's "name no one present
+   but Christ and the eleven" was also reworded to "has Christ lead out only them" — 24:33's "them
+   that were with them" means the group at v.50 is not confirmed as the eleven alone.
+3. **The Monreale issue-of-blood file (`553e9b759de0`): closed, both items.** 2026-09-26b had
+   recorded two disagreements with Luke's own reading of this mosaic. The scroll a wide crop was
+   asked to check does belong to the elder's own arm, traced in one unbroken line from his shoulder to
+   his hand, not to Christ — confirmed, unchanged. **Direction: Luke's own pre-existing marker text
+   had a real self-contradiction, found before any edit to this file.** It called Christ's posture
+   "turning his head back over his shoulder toward the woman" in the same paragraph that calls her
+   position "in front of him rather than behind." What settles which is true is the stride itself, and
+   Christ's own feet were not visible in the local image cache (`src/img/553e9b759de0.webp`, 660×710)
+   — but `image_meta.json` records the Commons original at 1939×2084, considerably larger, so this
+   session fetched it directly
+   (`https://upload.wikimedia.org/wikipedia/commons/3/3b/Monreale_-_Healing_of_the_Woman_with_an_Issue_of_Blood.jpg`)
+   rather than settling for the local cache's limit. At full resolution, Christ's blue mantle and gold
+   tunic run in one unbroken line down to a single sandaled foot, toe pointing toward the woman's own
+   side: the foot alone settles it — Christ steps toward her, confirming Luke's existing "in front of
+   him rather than behind." The marker's own "back over his shoulder" clause was reworded to "looking
+   down toward the kneeling woman," which the gaze crop supports directly and which no longer
+   contradicts the direction the foot has now settled. **The disc beside the woman's head, the second
+   thing 2026-09-26b asked a Luke session to settle, took three crops to get right, and higher
+   resolution alone did not fix the first two.** A low-resolution crop of the disc read it as a
+   bearded male face, an apostle's own halo; a tighter crop of the same spot at full resolution
+   corrected the beard (the face is plainly beardless there) but kept the same wrong identification, a
+   nearby apostle. Both were tight crops of the face alone. Only a *wider* crop, following the same
+   face down to its neck and shoulders, showed the neck running straight into the woman's own green
+   mantle. **The disc is the kneeling woman's own halo.** 2026-09-26b's own first-draft instinct to
+   call her haloed was right after all; both readers' prior text simply never mentioned it either way.
+   Added "haloed" to her description in Luke's reading and
+   marker for this file (`src/books/luke/hotspots2.js`, `hotspots3.js`) — a small, confirmed addition,
+   not a hedge.
+
+**Why.** Direct continuation of the two items 2026-09-26b's own `## Next`-equivalent flagged for
+"a future Luke session," not touched in that session because the files belong to Luke's own reader.
+
+**Several advisor passes ran across this session**, catching, in order: the verse-count error and the
+"Christ and the eleven" overclaim; the Monreale "back-over-his-shoulder"/"in front of him"
+self-contradiction already sitting in Luke's own prior text; the Langadas mandorla's wrong colour and
+Mark's own already-wrong "grey mandorla"/"robes lettered" reading, both left unfixed by an earlier
+round; an invented corner-title transcription, an unverifiable scroll quotation presented as directly
+read, and an overreaching "hidden beneath her mantle" claim, all three introduced by a round meant to
+fix the items just before them; Mark's fix having copied Luke's new sentences rather than writing its
+own; and, last, the disc misreading, caught only once a wider crop followed the same face down to its
+body and garment rather than reading the face alone. The through-line is the same one 2026-09-26b's
+own note already drew: fixing
+a flagged error and introducing a fresh one in the same stroke is the normal failure mode here, not
+an exception, and each pass exists to catch the fresh one.
+
+**Verified.** Grid crops (`src/tools/grid.py`) and targeted crops (`src/tools/crop.py`) of both
+files at every claim touched, across every round, plus one full-resolution fetch of the Monreale
+original (see above) to settle Christ's own stride and the disc. `overlay.py` on `626419fb0b06`,
+both books: all markers land on the figures they name, none on bare cloud. The 5-gram overlap check
+described in item 1 above: 8 prose hits, 3 marker hits, none an invented shared claim. `make check`:
+39 warnings, all pre-existing (the same 26-passage icon gap, the same 7 pick_keys/clamp lines),
+nothing new. `make luke` and `make mark`: both built clean — one edit round briefly broke `make luke`
+with an unescaped quote inside a JS string literal (`has Christ lead out only "them,"`), caught
+immediately by the build's own `SyntaxError` and fixed before anything else ran. `BOOK=mark node
+src/tools/quotes.js` and `BOOK=luke node src/tools/quotes.js`: both clean, 0 wrong Father, 0
+no-source, 0 drifted sentences on both books after the edit. `git status` after the final build
+showed the two Luke `hotspots*.js` files, the two Mark `hotspots*.js` files, and both readers
+changed — nothing else. Five of this session's own final sentences were grepped directly out of the
+built HTML to confirm the source edit reached the shipped file: the Langadas reading's corner-title
+sentence and the Theotokos-hands sentence and the Monreale Ascension's "has Christ lead out only
+them" line, all out of `Luke Reader.html`; the corrected scroll sentence out of `Mark Reader.html`;
+and the woman's own "haloed" addition out of `Luke Reader.html`, found once in the reading and once
+in the marker. Playwright against `python3 -m http.server 8731`, both books: opened the Ascension
+passage in each, read the corrected *Deciphering the Icon* prose and every marker label off the live
+page — matches the edited source exactly in both readers; opened the Monreale issue-of-blood icon in
+Luke's own reader and read the corrected Christ marker off the live page (before the halo addition,
+which was made after this Playwright pass and confirmed by the grep check above rather than a second
+page load). Zero console messages of any level in any of the four page loads.
+Stray `.playwright-mcp` snapshot files were deleted from the repo root before finishing, never
+committed.
+
+**Next.** Both items 2026-09-26b flagged for a Luke session are closed, including the disc, which
+needed a full-resolution fetch and a second look to settle correctly — it is the kneeling woman's own
+halo, not an apostle's, and her reading now says so. No other book or file was touched. The 26 Luke
+passages that still want an icon (see `## Status`/`## Next` above) are unchanged; this session did
+not run a harvest. `git status -sb` at session start showed `main` even with `origin/main` — the
+prior session's "7 local commits ahead, not pushed" note is stale; someone pushed in between.
+
+## Session 2026-09-27b (an advisor pass before committing 2026-09-27's own work found three more errors)
+
+**Did.** Before committing 2026-09-27's work, an advisor pass reviewed the diff against the session's
+own verification claims and found three real problems the session's several rounds had not reached,
+all on the two Ascension files.
+1. **Mark's own Langadas inscription line was never fixed.** 2026-09-27 rewrote Luke's reading of
+   `626419fb0b06` to say the title is legible only as ΤΟΥ ΧΡ in the right corner, the left too worn to
+   transcribe, but left Mark's own reading and marker for the same file still claiming the full title,
+   Η ΑΝΑΛΗΨΙΣ ΤΟΥ ΧΡΙΣΤΟΥ, "lettered in the upper corners" — the very claim the session's own crop had
+   just disproved. Reworded in Mark's own words (`src/books/mark/hotspots2.js`, `hotspots3.js`), not
+   copied from Luke's.
+2. **Luke's Monreale Ascension reading (`bded52218c5a`) had a broken antecedent.** The 2026-09-27 fix
+   for "name no one present but Christ and the eleven" produced "has Christ lead out only them" —
+   "them" names nothing in the sentence. Reworded to name what 24:50's "them" actually is: the
+   unnamed group 24:33 calls, without further name, "them that were with them," not confirmed as the
+   eleven alone (`src/books/luke/hotspots2.js`).
+3. **The Theotokos's gesture on the Monreale mosaic was wrong in both readers, and neither reader's
+   own crop this session had actually checked her hands.** Luke's reading and marker called it "both
+   hands raised in prayer"; a wide crop of `bded52218c5a` (30–75% top, 25–65% left) shows her hands
+   crossed at her breast, not raised apart — the same gesture Mark's own reading already had right
+   ("crossed and raised at her breast"). Luke's text and marker were wrong, not Mark's. Fixed in
+   `src/books/luke/hotspots2.js` and `hotspots3.js`. This also overturns the 2026-09-27 Status
+   correction that called Monreale "the" orant panel: neither Monreale nor Langadas is orant, both
+   have her hands low or crossed, and `## Status` above is corrected accordingly.
+
+**Why.** An advisor review, run on the finished diff before commit rather than after, caught what
+2026-09-27's own several in-session advisor passes had not: two long-standing lines the session
+touched only around, not directly (Mark's inscription, sitting right beside the sentences that
+changed), and one claim (the Theotokos's hands) that had simply never been cropped and checked at
+all, on either reader, despite both readers describing it.
+
+**Verified.** `make mark` and `make luke`: both built clean, no new `make check` warnings.
+`BOOK=mark node src/tools/quotes.js` and `BOOK=luke node src/tools/quotes.js`: both 0 wrong Father, 0
+no source, 0 drifted sentences. All four changed sentences grepped out of the built HTML files
+directly. `overlay.py` on `bded52218c5a` in both books and on `626419fb0b06` in Mark: the Theotokos
+marker in both readers now sits on hands crossed at the breast, matching the crop; the inscription
+marker in Mark sits on the same worn corner text Luke's own marker already pointed at.
+
+**Next.** Nothing further flagged. Ready to commit both this and 2026-09-27's work together, since
+2026-09-27's own diff was never committed before this pass ran.

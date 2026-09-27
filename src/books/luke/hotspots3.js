@@ -325,9 +325,9 @@ module.exports={
 ],
 
 "File:Monreale - Healing of the Woman with an Issue of Blood.jpg":[
- ["Christ", "Haloed, turning his head back over his shoulder toward the woman.", "18%", "48%"],
+ ["Christ", "Haloed, looking down toward the woman.", "18%", "48%"],
  ["The apostles", "Crowding in front of him, several with hands raised in speech: Who touched me? ... Master, the multitude throng thee and press thee.", "15%", "38%"],
- ["The woman", "Kneeling in a green mantle, gazing up at Christ's face.", "60%", "18%"],
+ ["The woman", "Kneeling in a green mantle, haloed, gazing up at Christ's face.", "60%", "18%"],
  ["Her hands, and the hem", "Reaching toward the fold of Christ's garment near his feet — in front of him rather than behind, as Luke's own clause has it: came behind him, and touched the border of his garment.", "58%", "30%"],
  ["An elder with a scroll", "Standing immediately behind Christ. No inscription names him, so this reading does not call him Jairus, whose own request opens this passage three verses earlier — nothing here marks him as that ruler rather than simply another of the crowd.", "30%", "80%"],
 ],
@@ -805,18 +805,17 @@ module.exports={
 ],
 
 "File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
- ["The inscription", "Η ΑΝΑΛΗΨΙC ΤΟΥ ΧΡΙΣΤΟΥ, the Ascension of Christ, and beneath it the angels' own words from Acts 1:11: Ye men of Galilee, why stand ye gazing.", "9%", "20%"],
- ["Christ", "Ascending inside a grey mandorla, ΙC and ΧC lettered either side of his halo.", "12%", "48%"],
- ["The two angels carrying the mandorla", "Winged, supporting the cloud Christ ascends within.", "28%", "40%"],
- ["The Theotokos", "Haloed like the apostles around her, both hands raised in prayer at the centre of the company — a place Luke's own text does not give her at the Ascension itself; his next chapter has her only afterward, in the upper room.", "60%", "48%"],
- ["Two figures in white", "Standing just behind her, their robes lettered with script this reading cannot resolve — most likely the two men in white apparel of Acts 1:10, given no separate speech of their own here.", "55%", "58%"],
+ ["The inscription", "This left corner is too worn at this resolution to transcribe with confidence, presumably naming the Ascension itself; the matching right corner is legible as ΤΟΥ ΧΡ, the abbreviation for Χριστοῦ.", "9%", "20%"],
+ ["Christ", "Ascending inside a red-orange mandorla lifted on grey cloud alone, no angel touching it; ΙC and ΧC lettered either side of his halo.", "12%", "48%"],
+ ["The Theotokos", "Haloed like the apostles around her, her hands held low before her, not raised as an orant, at the centre of the company — a place Luke's own text does not give her at the Ascension itself; his next chapter has her only afterward, in the upper room.", "60%", "48%"],
+ ["The two winged angels", "Standing directly behind her, robed in white, a scroll in the hands of each, the lines on them too worn at this resolution to make out — this file's own Commons record separately transcribes Acts 1:11's own words for the scene. Most likely the two men in white apparel Acts names a verse before their own question.", "44%", "48%"],
  ["The apostles", "Ranked to either side, hands raised or pressed to their own faces, looking up.", "62%", "15%"],
 ],
 
 "File:Cathedral (Monreale) - Left wing transept - Ascension.jpg":[
  ["The inscription", "ASCENSIO DOMINI — a title, not a quotation, unlike the Emmaus panels in this same transept.", "12%", "10%"],
  ["Christ", "Rising in a blue mandorla, two flying angels either side of it, his right hand raised to bless.", "15%", "48%"],
- ["The Theotokos", "Haloed like the apostles who flank her, both hands raised in prayer — the same central place Luke's own text does not give her; Acts 1:14 puts her only in the upper room afterward.", "50%", "48%"],
+ ["The Theotokos", "Haloed like the apostles who flank her, hands crossed at her breast — the same central place Luke's own text does not give her; Acts 1:14 puts her only in the upper room afterward.", "50%", "48%"],
  ["The two angels beside her", "Each holding a staff — nearer to the two men in white apparel of Acts 1:10 than to anything in Luke's own Gospel.", "50%", "38%"],
  ["The apostles", "Filling both wings of the panel, several with a hand raised to the face — the gesture, though not the words, of why stand ye gazing up into heaven?", "50%", "15%"],
 ],
