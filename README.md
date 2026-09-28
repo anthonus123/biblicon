@@ -4,9 +4,11 @@ Readers for the Gospels of Matthew, Mark, Luke and John (KJV) in which every pas
 an Eastern Orthodox icon and with commentary from the Church Fathers, quoted from the
 *Catena Aurea*.
 
-**`Matthew Reader.html`**, **`Mark Reader.html`**, **`Luke Reader.html`** and **`John Reader.html`**
-are the whole thing — one self-contained file each. Fonts, icons, the gospel text and all commentary are embedded, so each opens by
-double-clicking with no server and no network. They are generated; don't hand-edit them.
+**`matthew/index.html`**, **`mark/index.html`**, **`luke/index.html`** and **`john/index.html`**
+are the whole thing — one self-contained file each, served at `biblicon.ca/matthew/` etc. Fonts, icons, the gospel text and all commentary are embedded, so each opens by
+double-clicking with no server and no network. They are generated; don't hand-edit them. Each
+also has an in-page "Download this reader to keep offline" link that saves it under its old
+friendly name (e.g. `Matthew Reader.html`) if you want a single file to keep or share directly.
 
 ```sh
 make          # assemble the data, check it, emit every reader

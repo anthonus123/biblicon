@@ -4,7 +4,7 @@
 [ -f HANDOFF.md ] || cd "$CLAUDE_PROJECT_DIR" 2>/dev/null || exit 0
 [ -f HANDOFF.md ] || exit 0
 
-changed=$(git status --porcelain -- 'src' '*.html' 2>/dev/null)
+changed=$(git status --porcelain -- 'src' '*.html' 'matthew' 'mark' 'luke' 'john' 2>/dev/null)
 [ -z "$changed" ] && exit 0
 
 log_changed=$(git status --porcelain -- HANDOFF.md 2>/dev/null)

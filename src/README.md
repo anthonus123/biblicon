@@ -1,7 +1,8 @@
 # Building the readers
 
-Each reader is a single self-contained HTML file — `Matthew Reader.html`, `Mark Reader.html`,
-`Luke Reader.html`, `John Reader.html`.
+Each reader is a single self-contained HTML file — `matthew/index.html`, `mark/index.html`,
+`luke/index.html`, `john/index.html` (served at `biblicon.ca/matthew/` etc; each also has an
+in-page download link that saves a copy under its old friendly name, e.g. `Matthew Reader.html`).
 Everything (fonts, icons, the KJV text, the patristic commentary) is embedded, so it opens
 by double-clicking with no server and no network.
 
@@ -32,7 +33,7 @@ Per Gospel, in `src/books/<book>/`:
 
 | file | what it holds |
 |---|---|
-| `book.json` | name, Greek title, chapter count, output file name, the commentary's provenance line, and the footer's own examples of this reader's galleries and type icons |
+| `book.json` | name, Greek title, chapter count, the friendly filename used by the page's own download link (the actual build output always goes to `<id>/index.html`), the commentary's provenance line, and the footer's own examples of this reader's galleries and type icons |
 | `anchors.json` | the pericope divisions (chapter, first and last verse, name) |
 | `kjv.json` | the King James text |
 | `catena.json` | the *Catena Aurea* on that Gospel, parsed into attributed patristic comments keyed by verse |

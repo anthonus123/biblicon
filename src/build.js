@@ -66,13 +66,20 @@ const ALL_BOOKS=['matthew','mark','luke','john'];
 const booklinksHtml=ALL_BOOKS.map(id=>{
   if(id===book.id) return `<span class="cur" aria-current="page">${esc(book.name)}</span>`;
   const m=JSON.parse(fs.readFileSync(__dirname+'/books/'+id+'/book.json','utf8'));
-  return `<a href="${encodeURI(m.reader)}">${esc(m.name)}</a>`;
+  return `<a href="../${id}/">${esc(m.name)}</a>`;
 }).join('\n      ');
 const jsonSafe=o=>JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
 
 const html=`<!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHXD9JJ7JR"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-PHXD9JJ7JR');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2ece0'/%3E%3Cpath d='M16 4v24M9 10h14M11 16h10M12 22h8' stroke='%23a8792c' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
@@ -85,7 +92,7 @@ ${css}
 <body>
 <div class="wrap">
 <header>
-  <a class="marklink" href="index.html" aria-label="All four Gospels" title="All four Gospels">
+  <a class="marklink" href="../" aria-label="All four Gospels" title="All four Gospels">
   <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="#a8792c" stroke-width="1.6" aria-hidden="true">
     <path d="M12 2v20M6 7h12M8.5 12h7M9.5 17.5h5"/></svg></a>
   <h1>The Gospel of <em>${book.name}</em></h1>
@@ -108,10 +115,11 @@ ${css}
     <div class="railnote" id="railnote">The menu follows you as you read; open a chapter to see its icons.</div>
     <div class="booknav">
       <div class="lab" style="margin-bottom:8px">Other Gospels</div>
-      <a class="home" href="index.html">☨&nbsp; All four Gospels</a>
+      <a class="home" href="../">☨&nbsp; All four Gospels</a>
       <div class="booklinks">
       ${booklinksHtml}
       </div>
+      <a class="savelink" href="index.html" download="${esc(book.reader)}">⇩ Download this reader to keep offline</a>
     </div>
   </aside>
 
@@ -144,12 +152,23 @@ ${userNote}
 </div></footer>
 <div class="scrim" id="scrim" style="display:none"></div>
 </div>
+<script>
+// Hosted (biblicon.ca), these links are clean ("../", "../mark/") so the address bar never shows
+// a filename. Opened locally with no server, file:// URLs don't resolve a bare folder to its
+// index.html the way a web server does, so this appends the filename back on for that case only.
+if(location.protocol==='file:'){
+  document.querySelectorAll('.marklink,.home,.booklinks a').forEach(function(a){
+    a.setAttribute('href',a.getAttribute('href')+'index.html');
+  });
+}
+</script>
 <script>window.__DATA__=${jsonSafe(D)};window.__IMG__=${jsonSafe(IMG)};</script>
 <script>
 ${app}
 </script>
 </body>
 </html>`;
-const out=process.argv[2]||(__dirname+'/../'+book.reader);
+const out=process.argv[2]||path.join(__dirname,'..',book.id,'index.html');
+fs.mkdirSync(path.dirname(out),{recursive:true});
 fs.writeFileSync(out,html);
 console.log('wrote',out,(fs.statSync(out).size/1048576).toFixed(2)+' MB','images',Object.keys(IMG).length);

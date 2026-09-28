@@ -20,23 +20,42 @@ and this file did not.
 - **Scope.** Started as desktop web only; **responsive down to phone width since 2026-09-27g**
   (see `## Status` below) — a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
-- **Deliverables:** `Matthew Reader.html` (~17.2 MB), `John Reader.html` (~13.0 MB),
-  `Mark Reader.html` (~13.2 MB, up from ~12.6 MB after the 2026-09-26 icon search) and
-  `Luke Reader.html` (~14.6 MB, up from ~11 MB after the
-  2026-09-25c icon harvest) — each a single self-contained file. Fonts, icons, the KJV text and all commentary are embedded; each
-  opens by double-clicking, no server and no network. **Do not hand-edit them.** They are
-  generated — one command from the repo root, which sequences assemble → check → build per book:
+- **Deliverables (paths changed 2026-09-27j, see that Session block):** `matthew/index.html`
+  (~17.2 MB), `john/index.html` (~13.0 MB), `mark/index.html` (~13.2 MB, up from ~12.6 MB after the
+  2026-09-26 icon search) and `luke/index.html` (~14.6 MB, up from ~11 MB after the 2026-09-25c
+  icon harvest) — each a single self-contained file, served hosted at `biblicon.ca/matthew/` etc
+  with a clean, extensionless URL. Fonts, icons, the KJV text and all commentary are embedded; each
+  still opens by double-clicking, no server and no network. Each also carries an in-page "Download
+  this reader to keep offline" link (the `download` attribute) that saves a copy under its old
+  friendly flat filename (e.g. `Matthew Reader.html`) for anyone who wants a single file to keep or
+  share directly, since the on-disk deliverable itself is no longer that flat filename at the repo
+  root. **Do not hand-edit them.** They are generated — one command from the repo root, which
+  sequences assemble → check → build per book:
   ```
   make                 # every reader; src/books/<book>/icons.json is generated, untracked
   make john            # one Gospel (also: make matthew, make mark, make luke)
   make check           # structural check + the content counts below, every book
-  make BOOK=john serve # http://127.0.0.1:8731  (file:// is blocked in the Playwright browser)
+  make BOOK=john serve # http://127.0.0.1:8731/john/  (file:// is blocked in the Playwright browser)
   ```
   The build is deterministic: rebuilding unchanged content reproduces the same bytes.
+- **Google Analytics 4 (since 2026-09-27h, property changed 2026-09-27i).** GA4 tracking is live
+  in `index.html` and all four readers, Measurement ID `G-PHXD9JJ7JR`. First wired up
+  2026-09-27h as a second data stream under the owner's existing anthonymaalouly.com property
+  (`G-GMSLNV1E7F`); the owner then asked for full separation, not just another stream on a shared
+  property, so 2026-09-27i created Biblicon as its own standalone GA4 property (own audiences,
+  conversions, retention and access) and the ID above replaced the old one everywhere — the
+  `G-GMSLNV1E7F` stream under anthonymaalouly.com is now orphaned/unused, never referenced by any
+  file, and can be deleted from GA if the owner wants to tidy up (not done here — no live-account
+  changes without the owner acting on their own login). The owner chose to track the readers too,
+  not just the landing page — a deliberate exception to the "readers stay network-free" default;
+  they still work fully offline since the `gtag.js` load just fails silently with no network.
+  Snippet lives in `src/build.js` (survives rebuilds) and directly in `index.html`
+  (hand-maintained, not generated).
 - **Website (since 2026-09-27c).** A hand-authored `index.html` at the repo root is a landing
   page tying the four readers together — a card per Gospel (name, Greek title, chapter/passage/
   icon/quotation counts pulled from each `src/books/<book>/book.json` plus the counts already in
-  this file) linking to `<Name>%20Reader.html`. It is **not** part of the `assemble`/`build`
+  this file) linking to `<name>/` (clean folder URL since 2026-09-27j — see that Session block).
+  It is **not** part of the `assemble`/`build`
   pipeline — it carries no reader content, just presentation glue — so it is hand-edited directly,
   unlike the four readers. It reuses the readers' own look: the palette and Spectral font subset
   from `src/page.css`/`src/spectral_keep.json`/`src/fonts/`, and the same gold cross mark and
@@ -83,16 +102,17 @@ and this file did not.
 - **Cross-reader navigation (since 2026-09-27e).** The owner pointed out each reader was a dead
   end — no way back to the landing page or across to another Gospel once inside one. Fixed in the
   shared template, `src/build.js`, so it reaches all four readers automatically: the header's gold
-  cross mark is now a link to `index.html` (`.marklink`, `src/page.css`), and the sidebar (`aside`)
-  gets a new block below `railnote` — "Other Gospels," an "All four Gospels" link to `index.html`
-  plus a row of pill links to the other three readers, with the current book shown as a filled,
-  non-linked pill (`.booknav`/`.booklinks`, both new in `page.css`). `build.js` reads all four
-  `src/books/<id>/book.json` files (not just the current book's) to get each one's `name` and
-  `reader` filename — the first place any reader's build has needed to know about the other three.
-  All links are relative (`Mark%20Reader.html`, etc.), so this works identically hosted (GitHub
-  Pages) and opened locally by double-click, as long as the sibling files sit in the same folder —
-  exactly how the project already ships all five files together. No pipeline logic changed beyond
-  this; `assemble.js`, `check.js` and every passage's data are untouched.
+  cross mark is a link back to the landing page (`.marklink`, `src/page.css`), and the sidebar
+  (`aside`) gets a block below `railnote` — "Other Gospels," an "All four Gospels" home link plus a
+  row of pill links to the other three readers, with the current book shown as a filled, non-linked
+  pill (`.booknav`/`.booklinks`, both new in `page.css`). `build.js` reads all four
+  `src/books/<id>/book.json` files (not just the current book's) to get each one's `name` — the
+  first place any reader's build has needed to know about the other three. **Link paths and the
+  `book.json` `reader` field's role changed 2026-09-27j — see that Session block** (readers moved
+  from flat sibling files to `<id>/index.html`, so these are now `../`-relative folder links, clean
+  hosted and appended with `index.html` by a small script when opened as `file://`, since sibling
+  files still need to sit together the way the project ships them). No pipeline logic changed
+  beyond link paths; `assemble.js`, `check.js` and every passage's data are untouched.
 - **Hosting setup (since 2026-09-27f), matched to the owner's other GitHub Pages site,
   `remtex.ca`.** Domain is **biblicon.ca**, owned by the owner. Added at the repo root: `CNAME`
   (just the domain, the file GitHub Pages reads to serve a custom domain), `robots.txt`
@@ -103,8 +123,8 @@ and this file did not.
   pointing at `https://biblicon.ca/`. **Two things `remtex.ca` has that this repo does not, both
   deliberately deferred:** a Google Search Console verification file (needs the domain live on
   Pages first — the verification flow can't run before then) and Google Analytics 4 (owner said
-  "will do it after," so nothing is wired in; if it's added later, scope it to `index.html` only —
-  the four `Reader.html` files are deliberately offline/no-network and should stay that way). One
+  "will do it after," so nothing is wired in — both since done, see the GA4 and reader-path bullets
+  above: GA now covers the readers too, per the owner's later explicit choice). One
   deliberate difference kept, not matched: `remtex.ca` has no `.nojekyll`, but this repo's own
   (2026-09-27c) stays, since Jekyll's default Liquid processing risk (stray `{{`/`{%` sequences
   inside hundreds of thousands of characters of embedded patristic text) is a real concern for
@@ -439,9 +459,12 @@ recorded. In order, what's left:
 4. **Google Search Console**: needs the live domain to verify against. Once it's up, the owner
    adds the property and gives a future session the verification file/meta tag it generates, to
    commit at the repo root the way `remtex.ca` has `google11ca6c32d9c55e41.html`.
-5. **Google Analytics 4**: owner said "will do it after" — deferred, not forgotten. When ready,
-   scope the `gtag.js` snippet to `index.html` only, matching `remtex.ca`'s own snippet — the four
-   `Reader.html` files must stay network-free.
+5. **Google Analytics 4 — done, 2026-09-27h, property changed 2026-09-27i.** Wired into
+   `index.html` and all four readers with Measurement ID `G-PHXD9JJ7JR`, its own standalone GA4
+   property (not just a stream under anthonymaalouly.com's property — the owner asked for full
+   separation). The owner explicitly chose to include the four readers, overriding the
+   network-free-readers default from this list's earlier wording — see the 2026-09-27h/i Session
+   blocks for the reasoning and the snippet's home in `src/build.js`.
 
 Deliberately out of scope for now (see the 2026-09-27c Session block for the reasoning): splitting
 the shared fonts/images out of each `Reader.html` so the four files stop duplicating ~60 MB of
@@ -6308,3 +6331,139 @@ screenshot files deleted before finishing, never committed.
 **Next.** DNS convergence (background-polled, not yet confirmed complete at session end — see
 `## Next` above for the direct-nameserver check to run first), then Enforce HTTPS, Search Console,
 and deferred GA4, in that order. Nothing else flagged for the mobile fix — it's done, not partial.
+
+## Session 2026-09-27h (Google Analytics 4 wired into the landing page and all four readers)
+
+**Did.** Owner asked to set up Google Analytics. Established they already run GA4 for
+anthonymaalouly.com and wanted biblicon.ca tracked as its own data stream under that same account,
+not merged into the existing one. The owner created the stream themselves (GA account access
+needed their Google login) and pasted back its details: Measurement ID `G-GMSLNV1E7F`. Asked
+whether tracking should cover `index.html` only or the four readers too — the owner chose both,
+overriding the network-free-readers assumption this file's `## Next` used to state as the default
+scope. Added the standard `gtag.js` snippet (async loader + inline config, both pointed at
+`G-GMSLNV1E7F`) immediately after `<head>` in two places: `index.html` directly (it's
+hand-maintained, not generated — see `## Status`, 2026-09-27c), and `src/build.js`'s HTML template
+(so the snippet survives every future `make` rebuild rather than needing re-adding by hand). Ran
+`make` to rebuild all four readers from the updated template.
+
+**Why.** Direct request ("i want to create a google analytics"), then two clarifying answers:
+already has GA for anthonymaalouly.com but wants biblicon on its own stream, and wants the four
+readers tracked as well as the landing page.
+
+**Verified.** `git diff --stat`: exactly 7 lines added to each of `index.html`, `src/build.js`, and
+all four `Reader.html` files, nothing else touched. `grep -c G-GMSLNV1E7F` returned 2 (the loader
+`src=` and the `gtag('config', ...)` call) in all five HTML files. `make` output showed only the
+39 pre-existing content warnings (missing icons, unused pool files — all predate this session,
+tied to Luke's icon search) and `check-*` passing clean for every book; no new warnings introduced
+by the snippet. Did not verify actual event delivery — GA won't show data until the site is
+live/pushed and someone loads it with a network connection, which is expected and matches the
+"No data received" state the owner's own GA screenshot showed before any deploy.
+
+**Next.** Nothing pushed or committed yet — left for the owner to review and commit. Once live,
+confirm events land in GA4 Realtime, then Enforce HTTPS and Search Console remain the two other
+open `## Next` items from 2026-09-27f/g.
+
+## Session 2026-09-27i (GA4 moved to its own standalone property, replacing the 2026-09-27h stream)
+
+**Did.** Owner looked at the GA admin screenshots from 2026-09-27h and asked why biblicon.ca
+"doesn't set up its own" and said they'd rather have a different domain/property, not another
+stream on the anthonymaalouly.com property. Explained the trade-off (a separate property fully
+isolates biblicon's audiences/conversions/retention/access; a stream just adds a URL under a
+shared property) and gave the owner the Admin → Create property steps, since creating one needs
+their Google login. The owner created a standalone "Biblicon" GA4 property with its own Web stream
+for `https://biblicon.ca` and pasted back its details: Measurement ID `G-PHXD9JJ7JR` (stream ID
+15855937527), replacing the 2026-09-27h stream's `G-GMSLNV1E7F`. Ran `sed` to swap the old ID for
+the new one in all six places it appeared: `index.html`, `src/build.js`, and all four
+`Reader.html` files (no rebuild needed — the readers were still uncommitted from 2026-09-27h, so
+editing them directly was equivalent to rebuilding, and `make` wasn't re-run this time).
+
+**Why.** Direct owner request: "i rather have a different domain, not another stream."
+
+**Verified.** `grep -c G-PHXD9JJ7JR` returned 2 in each of the six files (loader `src=` and
+`gtag('config', ...)`); `grep -c G-GMSLNV1E7F` returned 0 in all six — no stale references to the
+old ID left anywhere in the repo.
+
+**Next.** The old `G-GMSLNV1E7F` stream is now orphaned under the anthonymaalouly.com property —
+nothing references it, but it wasn't deleted from the GA account itself (no live-account changes
+without the owner acting through their own login); owner may want to delete it from GA to avoid
+confusion. Otherwise unchanged from 2026-09-27h's `Next`: nothing committed/pushed yet: once live,
+confirm events land in the new Biblicon property's Realtime view.
+
+## Session 2026-09-27j (clean, extensionless reader URLs: biblicon.ca/matthew/ instead of Matthew%20Reader.html)
+
+**Did.** Owner said the landing page showing `index.html` in the URL bothered them, and asked for
+`biblicon.ca/matthew`, `/luke`, etc instead of the `Matthew%20Reader.html`-style names. Two things
+were going on: (1) the in-reader "back to home" link pointed at the literal filename `index.html`,
+so clicking it showed `biblicon.ca/index.html` rather than the bare domain (visiting the domain
+directly was already clean — GitHub Pages' own default-document behavior); (2) the reader URLs
+themselves carried the flat `Matthew Reader.html`-style names with `%20` encoding. Asked the owner
+to choose between renaming to flat lowercase files (`matthew.html`) or true extensionless folder
+URLs (`biblicon.ca/matthew/`); owner chose the folder form, accepting the trade-off (a lone
+downloaded copy saves as `index.html` unless a page adds an explicit save-as name).
+Consulted the advisor before touching anything, since this changes the build's output path and the
+offline-navigation contract HANDOFF documents; the advice (keep clean hrefs in the static HTML with
+a small `file:`-only script appending `index.html` back on, rather than the reverse; grep the whole
+tree including `Makefile` and `.claude/hooks/`; don't duplicate content; use a `download=` attribute
+instead of losing the friendly flat filename) shaped everything below.
+1. `git mv "Matthew Reader.html" matthew/index.html` (and the same for Mark, Luke, John), so git
+   recorded renames rather than delete+add.
+2. `src/build.js`: output now goes to `path.join(__dirname,'..',book.id,'index.html')` (via
+   `fs.mkdirSync(...,{recursive:true})` first — the folders didn't exist yet). The header's
+   `.marklink` and `.home` links changed from `href="index.html"` to `href="../"`; the cross-reader
+   `.booklinks` changed from `href="Mark%20Reader.html"`-style to `href="../mark/"`-style (relative,
+   built from `book.id` rather than the now-vestigial `book.reader` filename). Added one new line —
+   a `.savelink` — `<a href="index.html" download="Matthew Reader.html">⇩ Download this reader to
+   keep offline</a>`, so the old flat, easy-to-email filename is still one click away; `book.json`'s
+   `reader` field is now used only for this attribute, nothing else. Added a small inline script,
+   placed after the nav markup so it always finds real elements, that runs only when
+   `location.protocol==='file:'` and appends `index.html` back onto the `.marklink`/`.home`/
+   `.booklinks a` hrefs — these three pages always run JS already (the whole reading pane is
+   client-rendered by `app.js`), so this is not a no-JS regression. The `.savelink` is deliberately
+   excluded from that selector so its `download` attribute is never touched.
+3. `index.html` (the landing page, hand-maintained): the four cards now link to `matthew/`,
+   `mark/`, `luke/`, `john/` instead of `Matthew%20Reader.html` etc, with the matching `file:`-only
+   script appended for the `.card` links.
+4. `src/page.css`: one added rule for `.savelink` (small, muted, under `.home`).
+5. Housekeeping so the rest of the repo doesn't contradict the new layout: `Makefile`'s `serve`
+   target now echoes `http://127.0.0.1:$(PORT)/$(BOOK)/` instead of a `node -e` call that read
+   `book.json`'s `reader` field and encoded its spaces; the header comment naming the four flat
+   filenames was updated; `.claude/hooks/stop_gate.sh`'s change-detection pathspec gained
+   `'matthew' 'mark' 'luke' 'john'` alongside the pre-existing `'src' '*.html'`, since a bare
+   `*.html` pathspec does not match a nested path like `matthew/index.html` — without this the Stop
+   hook would have silently stopped gating on reader changes after this move. `sitemap.xml`'s four
+   reader URLs became `https://biblicon.ca/matthew/` etc (trailing slash, no `%20`). `README.md` and
+   `src/README.md` updated to describe the new paths and the download link.
+6. Ran `make` to rebuild all four readers at their new locations.
+
+**Why.** Direct request: the owner disliked seeing `index.html` in the address bar and asked for
+clean names; then chose the extensionless-folder option over a flat-lowercase-filename option when
+given the trade-off explicitly.
+
+**Verified.** `git status --short`: all four moves show as `RM "X Reader.html" -> x/index.html`
+(git recognizes them as renames), plus the expected modified files (`build.js`, `page.css`,
+`index.html`, `Makefile`, `sitemap.xml`, `README.md`, `src/README.md`, `.claude/hooks/stop_gate.sh`,
+`HANDOFF.md`) — nothing unexpected touched. `make` rebuilt all four books clean (same pre-existing
+39 content warnings as always, `make check` green for every book) and wrote to
+`matthew/index.html`, `mark/index.html`, `luke/index.html`, `john/index.html`. Started
+`python3 -m http.server 8731` and drove it with Playwright: `curl -I /matthew` returned a `301` to
+`/matthew/`, which returned `200`; the landing page's four cards carry `href="matthew/"` etc (not
+`file:`-rewritten, confirming the script correctly no-ops when not `file:`); clicked into
+`/matthew/`, evaluated the DOM and confirmed `.marklink`/`.home`/`.booklinks a` hrefs were the clean
+`../`, `../mark/`, `../luke/`, `../john/` (not appended), and `.savelink` was untouched at
+`index.html`; clicked the Mark pill and landed on `/mark/`; clicked the home link from there and
+landed on the bare `/` (no `index.html` in the URL — the owner's original complaint); zero console
+messages (any level) across every page in the flow. Did **not** verify the `file:` branch itself —
+HANDOFF already notes Playwright here can't drive `file://` — so the local-double-click path (both
+the nav-link rewrite and the new `.savelink` download) is implemented per the advisor's design but
+unverified by browser automation this session; worth a manual double-click check before relying on
+it further.
+
+**Next.** Nothing committed or pushed yet. Once pushed and Pages redeploys: confirm the live
+`biblicon.ca/matthew/` etc resolve the same way (GitHub Pages' static file serving should match
+Python's `http.server` behavior here, but hasn't been checked against the real host), and do the
+one manual offline check noted above — download a reader via its new `.savelink`, then double-click
+the saved file and confirm the home/cross-reader links still work by finding sibling files (they
+won't, alone; see the Deliverables bullet in `## Status` for why that's an accepted trade, not a
+bug). Old bare URLs (`Matthew%20Reader.html`) are not redirected — undecided whether that matters,
+since nothing is indexed by a search engine yet (Search Console isn't set up, DNS was still
+converging as of 2026-09-27g/h).

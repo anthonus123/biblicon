@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHXD9JJ7JR"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-PHXD9JJ7JR');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2ece0'/%3E%3Cpath d='M16 4v24M9 10h14M11 16h10M12 22h8' stroke='%23a8792c' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
@@ -91,31 +98,41 @@ footer a{color:var(--gold);border-bottom:1px solid var(--gold-l)}
 </div>
 
 <div class="grid">
-      <a class="card" href="Matthew%20Reader.html">
+      <a class="card" href="matthew/">
         <div class="cardkick">Κατὰ Ματθαῖον</div>
         <h3>Matthew</h3>
         <div class="cardstats">28 chapters · 118 passages · 113 icons · 354 quotations</div>
         <div class="cardgo">Open the reader <span aria-hidden="true">&rarr;</span></div>
       </a>
-      <a class="card" href="Mark%20Reader.html">
+      <a class="card" href="mark/">
         <div class="cardkick">Κατὰ Μᾶρκον</div>
         <h3>Mark</h3>
         <div class="cardstats">16 chapters · 104 passages · 81 icons · 300 quotations</div>
         <div class="cardgo">Open the reader <span aria-hidden="true">&rarr;</span></div>
       </a>
-      <a class="card" href="Luke%20Reader.html">
+      <a class="card" href="luke/">
         <div class="cardkick">Κατὰ Λουκᾶν</div>
         <h3>Luke</h3>
         <div class="cardstats">24 chapters · 152 passages · 89 icons · 455 quotations</div>
         <div class="cardgo">Open the reader <span aria-hidden="true">&rarr;</span></div>
       </a>
-      <a class="card" href="John%20Reader.html">
+      <a class="card" href="john/">
         <div class="cardkick">Κατὰ Ἰωάννην</div>
         <h3>John</h3>
         <div class="cardstats">21 chapters · 64 passages · 73 icons · 192 quotations</div>
         <div class="cardgo">Open the reader <span aria-hidden="true">&rarr;</span></div>
       </a>
 </div>
+<script>
+// Hosted (biblicon.ca), these links are clean ("matthew/") so the address bar never shows a
+// filename. Opened locally with no server, file:// URLs don't resolve a bare folder to its
+// index.html the way a web server does, so this appends the filename back on for that case only.
+if(location.protocol==='file:'){
+  document.querySelectorAll('.card').forEach(function(a){
+    a.setAttribute('href',a.getAttribute('href')+'index.html');
+  });
+}
+</script>
 
 <footer>
   <p>Patristic commentary quoted verbatim from the Church Fathers venerated in the Orthodox

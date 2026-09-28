@@ -7,25 +7,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://biblicon.ca/Matthew%20Reader.html</loc>
+    <loc>https://biblicon.ca/matthew/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biblicon.ca/Mark%20Reader.html</loc>
+    <loc>https://biblicon.ca/mark/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biblicon.ca/Luke%20Reader.html</loc>
+    <loc>https://biblicon.ca/luke/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biblicon.ca/John%20Reader.html</loc>
+    <loc>https://biblicon.ca/john/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
