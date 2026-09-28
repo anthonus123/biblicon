@@ -6493,3 +6493,11 @@ converging as of 2026-09-27g/h).
   `index.html` intro cut to one sentence, footer to one line, and every em dash removed from the
   page (title/og/twitter titles now use " · "). The self-contained/offline note was dropped from
   the intro; the Download link in each reader's rail still offers it.
+- **Also: no em dashes anywhere on the site, and a new name (owner, same session).** Em dashes are
+  stripped at build time in `src/build.js` just before the write (after a sentence mark → a
+  space, otherwise → ", "; `&mdash;` entities too), so the authored prose in `src/books/` still
+  has them but no page does. Verified the Fathers' text (`catena.json`) and KJV contain none, so
+  no verbatim quotation is altered. "Orthodox Icon Reader(s)" was called "bland and
+  uninformative": the landing page is now **"The Gospels in Icons"** (h2 and title
+  "Biblicon · The Gospels in Icons") and each reader's tab title is "The Gospel of X in Icons ·
+  Biblicon". `llms.txt` still says "icon reader" as a descriptor, left as is.

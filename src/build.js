@@ -83,7 +83,7 @@ gtag('config','G-PHXD9JJ7JR');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2ece0'/%3E%3Cpath d='M16 4v24M9 10h14M11 16h10M12 22h8' stroke='%23a8792c' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
-<title>${book.title} — an Orthodox Icon Reader</title>
+<title>${book.title} in Icons · Biblicon</title>
 <style>
 ${fontCss}
 ${css}
@@ -146,7 +146,7 @@ ${css}
   ${galleryClause}Every icon shown for a passage
   depicts that passage&rsquo;s own scene, and no image appears under two passages. Orthodox
   iconography is built on the feast cycle, the miracles and the saints, and it has no scene-icon
-  for most of the parables and teaching passages &mdash; those passages are given as plain text
+  for most of the parables and teaching passages: those passages are given as plain text
   rather than illustrated with a general image of Christ that would misrepresent them. ${typeClause}</p>
   <h4 style="margin-top:26px">Images</h4>
   <ul>
@@ -174,5 +174,11 @@ ${app}
 </html>`;
 const out=process.argv[2]||path.join(__dirname,'..',book.id,'index.html');
 fs.mkdirSync(path.dirname(out),{recursive:true});
-fs.writeFileSync(out,html);
+// The owner asked for no em dashes anywhere on the site (2026-09-27). The authored prose in
+// src/books/ uses them freely, so they come out here, on the way to the page, rather than by
+// rewriting every source file: after a sentence mark the dash just becomes a space, anywhere
+// else a comma, which is what a parenthetical or appositive dash reads as. The patristic
+// quotations and the KJV text carry none, so nothing quoted verbatim is touched.
+const clean=html.replace(/([?!.:;,])[ \t]*—[ \t]*/g,'$1 ').replace(/[ \t]*—[ \t]*/g,', ').replace(/&mdash;|&#8212;|&#x2014;/g,',');
+fs.writeFileSync(out,clean);
 console.log('wrote',out,(fs.statSync(out).size/1048576).toFixed(2)+' MB','images',Object.keys(IMG).length);

@@ -66,7 +66,7 @@ function strip(p,current,onpick){
   if(ks.length<2) return null;
   var wrap=el('div',{class:'strip'});
   wrap.appendChild(el('div',{class:'striplab',
-    text:ks.length+' icons of this scene — the Church has painted it more than once'}));
+    text:ks.length+' icons of this scene: the Church has painted it more than once'}));
   var row=el('div',{class:'stripthumbs'});
   ks.forEach(function(k,i){
     var im=D.images[k];
@@ -310,7 +310,7 @@ function renderDrawer(keep){
   if(state.tab===1){
     var b=el('div');
     if(p.keyText) b.appendChild(el('div',{class:'keyq'},[
-      el('p',{text:'“'+p.keyText+'”'}),el('cite',{text:'— '+(p.keyRef||p.range)})]));
+      el('p',{text:'“'+p.keyText+'”'}),el('cite',{text:(p.keyRef||p.range)})]));
     if(p.story) b.appendChild(el('div',{class:'story',text:p.story}));
     else b.appendChild(el('div',{class:'story',html:versesHTML(p)}));
     d.appendChild(b);
