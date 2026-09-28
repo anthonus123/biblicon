@@ -28,6 +28,15 @@ header h1{flex:1;text-align:center;font-size:19px;font-weight:600;letter-spacing
 header h1 em{font-style:normal;color:var(--gold)}
 header .badge{font-size:12.5px;color:var(--gold);border:1px solid var(--gold-l);
   border-radius:999px;padding:4px 13px;background:var(--paper2);white-space:nowrap}
+/* Phone-only chapter button and progress strip; shown by the ≤900px breakpoint below. */
+.menubtn,.hprog,.railscrim{display:none}
+.menubtn{align-items:center;gap:8px;flex:0 0 auto;font-size:13.5px;font-weight:600;color:var(--ink);
+  border:1px solid var(--gold-l);border-radius:999px;padding:5px 12px 5px 10px;background:var(--paper2)}
+.menubtn .burger{width:14px;height:10px;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);position:relative}
+.menubtn .burger::after{content:"";position:absolute;left:0;right:0;top:2px;border-top:2px solid var(--gold)}
+.menubtn .mpct{font-weight:400;color:var(--faint);font-size:12px}
+.hprog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:#e2dac6}
+.hprog i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .12s linear}
 
 .layout{max-width:1380px;margin:0 auto;padding:30px 28px 90px;
   display:grid;grid-template-columns:284px minmax(0,1fr);gap:52px;align-items:start}
@@ -253,10 +262,22 @@ footer a{color:var(--gold);text-decoration:none}
    Both grids collapse to one column; the rail stops being a sticky, viewport-height panel (which
    would otherwise force a long scroll through the whole chapter list before reaching any text)
    and becomes a normal block with its own short, scrollable chapter list instead. */
+/* The rail itself becomes an off-canvas panel on the left, opened from the header's chapter
+   button, so the chapter list and the progress bar stay one tap away wherever the reader is;
+   the header's own thin strip keeps the progress visible while it is closed. */
 @media (max-width:900px){
   .layout{grid-template-columns:1fr;gap:28px;padding:22px 18px 70px}
-  aside{position:static;max-height:none}
-  .chapters{max-height:280px}
+  .menubtn{display:inline-flex}
+  .hprog{display:block}
+  aside{position:fixed;top:0;bottom:0;left:0;z-index:56;width:min(340px,86vw);height:100vh;height:100dvh;max-height:none;align-self:auto;
+    overflow-y:auto;overscroll-behavior:contain;background:var(--paper2);padding:22px 18px 40px;
+    box-shadow:4px 0 24px rgba(34,30,24,.25);transform:translateX(-105%);transition:transform .22s ease,visibility 0s linear .22s;
+    visibility:hidden}
+  body.railopen aside{transform:none;visibility:visible;transition:transform .22s ease}
+  .railscrim{position:fixed;inset:0;z-index:55;background:rgba(34,30,24,.45)}
+  body.railopen .railscrim{display:block}
+  body.railopen{overflow:hidden}
+  .chapters{flex:none;overflow:visible;max-height:none}
   .passage{grid-template-columns:1fr;gap:16px}
   .card{position:static}
   .card .frame img{height:200px}
@@ -266,8 +287,10 @@ footer a{color:var(--gold);text-decoration:none}
 }
 @media (max-width:560px){
   header{flex-wrap:wrap;justify-content:center;row-gap:6px;padding:10px 16px}
-  header h1{flex:1 1 auto;min-width:150px;font-size:16.5px}
-  header .badge{font-size:11px;padding:3px 11px}
+  header{gap:10px}
+  header h1{flex:1 1 0;min-width:0;font-size:15.5px}
+  .menubtn{padding:5px 10px 5px 9px;gap:6px}
+  header .badge{display:none}
   .mast h2{margin:6px 0 4px}
   .verses{font-size:16.5px;padding-left:12px;line-height:1.74}
   .plate .frame img{height:220px}

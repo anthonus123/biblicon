@@ -97,10 +97,14 @@ ${css}
     <path d="M12 2v20M6 7h12M8.5 12h7M9.5 17.5h5"/></svg></a>
   <h1>The Gospel of <em>${book.name}</em></h1>
   <span class="badge">${book.chapters} Chapters · King James Version</span>
+  <button class="menubtn" id="menubtn" aria-controls="rail" aria-expanded="false" aria-label="Chapters and progress">
+    <span class="burger" aria-hidden="true"></span><span id="mchap">Ch 1</span><span class="mpct" id="mpct">0%</span></button>
+  <div class="hprog" aria-hidden="true"><i id="hbar" style="width:0%"></i></div>
 </header>
+<div class="railscrim" id="railscrim"></div>
 
 <div class="layout">
-  <aside>
+  <aside id="rail">
     <h2>Reading ${book.name}</h2>
     <div class="sub">All ${book.chapters} chapters · with the icons of the Church</div>
     <div class="progress"><i id="bar" style="width:0%"></i></div>

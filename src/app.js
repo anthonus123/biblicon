@@ -396,12 +396,12 @@ function markActive(){
   });
 }
 function jumpTo(id){
-  state.active=id;markActive();renderRail();
+  state.active=id;markActive();renderRail();closeRail();
   var e=document.getElementById('p-'+id);
   if(e) window.scrollTo({top:e.getBoundingClientRect().top+window.scrollY-90,behavior:'smooth'});
 }
 function jumpChapter(ch){
-  state.chapter=ch;renderRail();
+  state.chapter=ch;renderRail();closeRail();
   var e=document.getElementById('ch-'+ch);
   if(e) window.scrollTo({top:e.getBoundingClientRect().top+window.scrollY-84,behavior:'smooth'});
 }
@@ -421,18 +421,39 @@ function setMode(m){
 document.querySelectorAll('.modes button').forEach(function(b){
   b.addEventListener('click',function(){setMode(b.getAttribute('data-mode'));});});
 
+/* ---------------- phone rail ---------------- */
+// Below 900px the rail is an off-canvas panel (see page.css, "responsive"), opened from the
+// header button; on desktop the button is hidden and these calls change nothing visible.
+var menubtn=document.getElementById('menubtn'), railscrim=document.getElementById('railscrim');
+function openRail(){
+  document.body.classList.add('railopen');menubtn.setAttribute('aria-expanded','true');
+  var cur=railEl.querySelector('.chrow[aria-current=true]');
+  if(cur) cur.scrollIntoView({block:'center'});
+}
+function closeRail(){
+  if(!document.body.classList.contains('railopen'))return;
+  document.body.classList.remove('railopen');menubtn.setAttribute('aria-expanded','false');
+}
+menubtn.addEventListener('click',function(){
+  if(document.body.classList.contains('railopen')) closeRail(); else openRail();});
+railscrim.addEventListener('click',closeRail);
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeRail(); });
+
 var bar=document.getElementById('bar'), pct=document.getElementById('pct');
+var hbar=document.getElementById('hbar'), mpct=document.getElementById('mpct'), mchap=document.getElementById('mchap');
 var ticking=false;
 function onScroll(){
   var h=document.documentElement.scrollHeight-window.innerHeight;
   var v=h>0?Math.min(100,Math.max(0,Math.round(window.scrollY/h*100))):0;
   bar.style.width=v+'%'; pct.textContent=v+'% through the reading';
+  hbar.style.width=v+'%'; mpct.textContent=v+'%';
   var ch=state.chapter;
   var marks=document.querySelectorAll('[data-chapter]');
   for(var i=0;i<marks.length;i++){
     if(marks[i].getBoundingClientRect().top<=160) ch=+marks[i].getAttribute('data-chapter'); else break;
   }
   if(ch!==state.chapter){state.chapter=ch;renderRail();}
+  mchap.textContent='Ch '+state.chapter;
   ticking=false;
 }
 window.addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(onScroll);} },{passive:true});

@@ -157,7 +157,9 @@ and this file did not.
   pre-fix it technically fit without overflowing (grid columns can shrink below their content's
   comfortable width), but the reading column was cramped next to the fixed-width icon card; putting
   the ≤900px breakpoint above real tablet widths gives portrait iPads the full-width single-column
-  reading experience instead of a technically-fitting-but-tight one. Landscape tablets and up
+  reading experience instead of a technically-fitting-but-tight one. **Superseded in part by 2026-09-27k:**
+  below 900px the rail is no longer a static block at the top of the page but an off-canvas
+  panel opened from a chapter button in the sticky header (see that Session block). Landscape tablets and up
   (≥1024px) are unaffected — still the original two-column desktop layout.
 - **Layout (since 2026-09-18).** The pipeline in `src/` (`assemble.js`, `check.js`,
   `build.js`, `fathers.js`, `app.js`, `tools/`) is shared and takes `BOOK=matthew|mark|luke|john`
@@ -6467,3 +6469,27 @@ won't, alone; see the Deliverables bullet in `## Status` for why that's an accep
 bug). Old bare URLs (`Matthew%20Reader.html`) are not redirected — undecided whether that matters,
 since nothing is indexed by a search engine yet (Search Console isn't set up, DNS was still
 converging as of 2026-09-27g/h).
+
+## Session 2026-09-27k (phone chapter menu and always-visible progress)
+
+- **Did.** Owner reported that on mobile "the side menu disappears and the user cannot jump from
+  one chapter to another nor does he know the progress bar." Cause: the 2026-09-27g ≤900px rule
+  made `aside` a static block at the top of the page, so once the reader scrolled into the text
+  the chapter list and progress bar were gone. Now, ≤900px: the header carries a `.menubtn`
+  ("☰ Ch N  NN%", live from `onScroll`) and a 3px `.hprog` strip along its bottom edge; the
+  button slides `aside#rail` in from the left as a full-height, self-scrolling panel over a
+  `.railscrim`. Tapping a chapter or icon row, the scrim, or Escape closes it; opening it scrolls
+  the current chapter into view. The header badge is hidden ≤560px to keep the header one row.
+  Desktop (>900px) unchanged — button, strip and scrim are `display:none` there.
+- **Gotcha.** A `position:fixed` child of the `.layout` grid still honours the desktop
+  `align-self:start` and shrank to content height (1751px, rows past the fold unclickable); the
+  mobile rule sets `height:100vh;height:100dvh;align-self:auto`.
+- **Verified** (Playwright MCP, served over http): 1400px rail unchanged, button hidden; 820 and
+  390px panel equals viewport height, chapter 20 tap jumps and closes the panel, label follows
+  ("Ch 20 59%"), scrim tap closes; no horizontal overflow at 320/375/390 on Matthew and John;
+  header one row at 375/390, two at 320; zero console errors.
+- **Next.** Nothing outstanding from this; not committed at session end unless the owner asked.
+- **Also (same session, owner: "make the front page more succinct and no emdash").** Root
+  `index.html` intro cut to one sentence, footer to one line, and every em dash removed from the
+  page (title/og/twitter titles now use " · "). The self-contained/offline note was dropped from
+  the intro; the Download link in each reader's rail still offers it.
