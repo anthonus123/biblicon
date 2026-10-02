@@ -65,7 +65,9 @@ module.exports = {
  hidden11:    {tier:'b', subj:'Christ the Wisdom of God', kw:[['pantocrator'],['sophia']], q:['Christ Pantocrator icon Byzantine','Holy Wisdom Christ icon']},
  yoke:        {tier:'a', subj:'Come unto Me — Christ Pantocrator / the Merciful', kw:[['pantocrator'],['eleemon'],['merciful']], q:['Christ Pantocrator Sinai icon','Christ the Merciful icon Byzantine']},
 
- sabbath:     {tier:'a', subj:'Christ and the disciples plucking corn / healing the withered hand', kw:[['withered'],['paralysed','hand'],['corn'],['sabbath']], q:['Christ heals the man with the withered hand mosaic','plucking corn on the sabbath icon']},
+ corn12:      {tier:'c', subj:'', kw:[]},
+ sabbath:     {tier:'a', subj:'The healing of the withered hand on the sabbath', kw:[['withered'],['paralysed','hand'],['sabbath']], q:['Christ heals the man with the withered hand mosaic']},
+ servant12:   {tier:'c', subj:'', kw:[]},
  beelzebub12: {tier:'b', subj:'Christ casting out a demon', kw:[['demon','possess'],['exorcis']], q:[]},
  signjonah12: {tier:'a', subj:'The Prophet Jonah — sign of the Resurrection', kw:[['jonah'],['jonas']], q:['Prophet Jonah icon orthodox','Jonah and the whale Byzantine']},
  kindred12:   {tier:'b', subj:'The Theotokos', kw:[['theotokos'],['hodegetria'],['virgin','child']], q:['Theotokos Hodegetria icon Byzantine']},

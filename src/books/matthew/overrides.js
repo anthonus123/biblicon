@@ -101,6 +101,21 @@ module.exports={
   story:"I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes: even so, Father, for so it seemed good in thy sight. All things are delivered unto me of my Father: and no man knoweth the Son, but the Father; neither knoweth any man the Father, save the Son, and he to whomsoever the Son will reveal him."},
 
  // ---- chapter 12 ----
+ // 12:1–21 was one passage, "Lord of the Sabbath", showing the withered-hand fresco; the owner
+ // flagged the mismatch twice, so it is split as Mark and Luke already split it. `sabbath` keeps
+ // its id on 9–14 so the owner's original notes (icons_orig.json) stay with the icon.
+ corn12:{name:'Lord of the Sabbath',type:'Teaching',keyVerse:8,
+  story:"Jesus went on the sabbath day through the corn, and his disciples, being an hungred, began to pluck the ears of corn and to eat. The Pharisees said, Thy disciples do that which is not lawful to do upon the sabbath day. He answered with what David did when he was an hungred, eating the shewbread in the house of God, and with the priests in the temple, who profane the sabbath and are blameless; and in this place is one greater than the temple. If ye had known what this meaneth, I will have mercy, and not sacrifice, ye would not have condemned the guiltless. For the Son of man is Lord even of the sabbath day."},
+ sabbath:{name:'The Withered Hand',type:'Miracle',keyVerse:13,
+  story:"He went into their synagogue, and there was a man which had his hand withered. They asked him, Is it lawful to heal on the sabbath days? that they might accuse him. He answered, What man among you, having one sheep fallen into a pit on the sabbath day, will not lay hold on it and lift it out? How much then is a man better than a sheep? Wherefore it is lawful to do well on the sabbath days. Then saith he to the man, Stretch forth thine hand; and it was restored whole, like as the other. The Pharisees went out, and held a council against him, how they might destroy him.",
+  // The owner's original three notes, with the second re-anchored: Hosea is quoted at 12:7,
+  // which is now in `corn12`, so it is tied here to the sheep in the pit (12:11–12).
+  notes:[
+   ["The withered hand restored","Christ heals on the Sabbath to show that the day of rest is for works of mercy, not against them."],
+   ["‘It is lawful to do well’","A man is better than a sheep: if they would lift a sheep out of a pit on the sabbath, mercy to a man cannot break it. He had just told them the same from Hosea, I will have mercy, and not sacrifice."],
+   ["Lord of the Sabbath","The One who rested on the seventh day of creation declares himself its Master: the Sabbath serves him."]]},
+ servant12:{name:'Behold My Servant',type:'Teaching',keyVerse:18,
+  story:"When Jesus knew it, he withdrew himself from thence; great multitudes followed him, and he healed them all, and charged them that they should not make him known. So was fulfilled the word of Esaias: Behold my servant, whom I have chosen; my beloved, in whom my soul is well pleased. He shall not strive, nor cry; a bruised reed shall he not break, and smoking flax shall he not quench, till he send forth judgment unto victory. And in his name shall the Gentiles trust."},
  beelzebub12:{name:'Blasphemy Against the Spirit',type:'Teaching',keyVerse:28,
   story:"One possessed with a devil, blind and dumb, was brought and healed, so that the blind and dumb both spake and saw. The Pharisees said, This fellow doth not cast out devils, but by Beelzebub. Jesus answered that a kingdom divided against itself cannot stand: if I cast out devils by the Spirit of God, then the kingdom of God is come unto you. The blasphemy against the Holy Ghost shall not be forgiven — for it names the healing Spirit as unclean."},
  signjonah12:{tierB:true,name:'The Sign of Jonah',type:'Teaching',keyVerse:40,

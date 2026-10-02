@@ -185,7 +185,7 @@ and this file did not.
   image and under the "Icons lead" plate switches between them, and the credit line, the
   prose reading and the positioned markers all follow the icon selected.
 - **Content, as of 2026-09-15:**
-  - **118 passages**, all 28 chapters. Tiers: **51 (a)**, **6 (b)**, **61 (c)**.
+  - **120 passages**, all 28 chapters. Tiers: **51 (a)**, **5 (b)**, **64 (c)** (2026-10-02).
     **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
@@ -418,7 +418,7 @@ and this file did not.
     icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
     sign of Jonah), `lostsheep` (the Good Shepherd), `commission` (Christ manifest among the
     apostles). `olivet` became tier a when it got a real Second Coming icon.
-  - **c** — no icon; the passage is a plain verse row. 62, and that is the honest number.
+  - **c** — no icon; the passage is a plain verse row. 64, and that is the honest number.
     (`galilee`, 4:12–17, went to c on 2026-10-02: the owner rejected the Forerunner-to-prison
     fresco there because the passage is about Jesus beginning to preach. See that Session block.)
   - Tier is **declared, not counted**. `assemble.js` reads `c` if there is no image, `b` if
@@ -2268,9 +2268,12 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   prison"): the passage is read as Jesus beginning to preach, not as John's arrest. Do not put
   the fresco back on Matthew 4. `galilee` is now tier c.
 - **An icon of one scene inside a multi-verse pericope is correct, not a mismatch.** The
-  passage titles name the whole block, so `Lord of the Sabbath` (12:1–21) legitimately carries
-  the healing of the withered hand (vv 9–14), and `Christ Walking on the Water` (14:22–36)
-  carries Peter saved from the waves (vv 28–31). Don't "fix" these.
+  passage titles name the whole block, so `Christ Walking on the Water` (14:22–36) carries
+  Peter saved from the waves (vv 28–31). **Exception, owner's call (flagged twice, the second
+  time 2026-10-02):** `Lord of the Sabbath` + the withered-hand fresco read as a mismatch to
+  the owner, so Matthew 12:1–21 is now split like Mark and Luke: `corn12` 1–8 "Lord of the
+  Sabbath" (c), `sabbath` 9–14 "The Withered Hand" (a, the fresco), `servant12` 15–21 "Behold My
+  Servant" (c). If a passage title names a different scene from the icon, prefer splitting.
 - **Read the Greek inscription before trusting a Dionysiou file name.** The three exorcism
   frescoes were all in the wrong place, and only the painted inscriptions settled it:
   `Iomenos Daimonon Takophon` is *τὸν δαιμονῶντα κωφόν*, the **dumb** demoniac (Mt 9:32–34),
@@ -6536,3 +6539,17 @@ converging as of 2026-09-27g/h).
   (biblicon.ca/matthew/, fetched and checked with Playwright) had no card and no icon for
   4:12–17, only the verses; it was a cached copy on the owner's side. GitHub Pages serves with
   a 10-minute cache, so a hard refresh is needed right after a push.
+- **Matthew 12:1–21 split (owner: "the lord of sabaoth seems to be linked with healing the man
+  who had the withered hand").** Same split Mark (2:23–28 / 3:1–6) and Luke (6:1–5 / 6:6–11)
+  already have. `anchors.json` ch 12 is now `corn12` 1–8, `sabbath` 9–14, `servant12` 15–21.
+  `sabbath` kept its id on the icon passage on purpose: the owner's original "Points to notice"
+  come from `icons_orig.json` by id, and a tier-c row has no drawer, so notes on 1–8 would be
+  invisible. Its name, type (Miracle), key verse (12:13) and story are set in `overrides.js`
+  so nothing falls through to the orig entry's 12:8 / both-scenes text. **The owner's second
+  note was edited:** it said "He quotes Hosea", which is 12:7, now outside the passage; it is
+  re-anchored to the sheep in the pit (12:11–12) and still mentions Hosea as said just before.
+  Notes 1 and 3 unchanged. New stories for all three passages; story_check flags only
+  connectives (answered, having, fallen, word).
+- **Verified.** `make matthew`: check ok, 120 passages, a:51 b:5 c:64, 46 with notes, 360
+  quotations, 112 icons. Front-page stats (`index.html`) and `llms.txt` updated for Matthew
+  (120 / 112 / 360) and Mark (80 icons, after the 1:14–15 fix).

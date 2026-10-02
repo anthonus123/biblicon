@@ -14,8 +14,8 @@
 
 ## The four readers
 
-- Matthew: 28 chapters, 118 passages, 113 icons, 354 patristic quotations
-- Mark: 16 chapters, 104 passages, 81 icons, 300 patristic quotations
+- Matthew: 28 chapters, 120 passages, 112 icons, 360 patristic quotations
+- Mark: 16 chapters, 104 passages, 80 icons, 300 patristic quotations
 - Luke: 24 chapters, 152 passages, 89 icons, 455 patristic quotations
 - John: 21 chapters, 64 passages, 73 icons, 192 patristic quotations
 
