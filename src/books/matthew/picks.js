@@ -60,7 +60,6 @@ module.exports={
     "File:Christ's temptation (Monreale).jpg",
     "File:Cathedral (Monreale) - Right wing transept - 2nd Temptation of Christ.jpg",
   ],
-  "galilee": "File:Elkomenos Prodromos Phylaken Dionysiou.jpg",
   "multitudes": "File:Iomenos Asthenoun tas apo Poikilon noson.jpg",
   "beatitudes": "File:IkonaZapovediBlazhenGIM.jpg",
   "leper8": "File:Christ cleans leper man.jpg",

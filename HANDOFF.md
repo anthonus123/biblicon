@@ -413,12 +413,14 @@ and this file did not.
   - **a** — an Orthodox icon of *this* scene, shown for this passage only. 51.
   - **b** — a **type icon**: the image the Church attaches to the passage without depicting its
     verses. The card and drawer say so: *"This is the icon the Church attaches to this passage;
-    it is not a depiction of these verses."* Exactly 6, each declared `tierB` in `overrides.js`:
-    `galilee` (the Forerunner dragged to prison, the event 4:12 reports), `matthew` (the apostle's own
+    it is not a depiction of these verses."* Exactly 5, each declared `tierB` in `overrides.js`:
+    `matthew` (the apostle's own
     icon at his calling), `twelve` (the Synaxis at the sending), `signjonah12` (Jonah at the
     sign of Jonah), `lostsheep` (the Good Shepherd), `commission` (Christ manifest among the
     apostles). `olivet` became tier a when it got a real Second Coming icon.
-  - **c** — no icon; the passage is a plain verse row. 61, and that is the honest number.
+  - **c** — no icon; the passage is a plain verse row. 62, and that is the honest number.
+    (`galilee`, 4:12–17, went to c on 2026-10-02: the owner rejected the Forerunner-to-prison
+    fresco there because the passage is about Jesus beginning to preach. See that Session block.)
   - Tier is **declared, not counted**. `assemble.js` reads `c` if there is no image, `b` if
     `overrides.tierB` says so, else `a`. The old rule ("shared image ⇒ tier b") is gone with
     the sharing.
@@ -2261,7 +2263,10 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   inscription is *ΕΛΚΟΜΕΝΟС Ο ΠΡΟΔΡΟΜΟС ΕΙС ΤΗΝ ΦΥΛΑΚΗΝ* — the Forerunner **dragged into**
   prison. That is the arrest Matthew reports at 4:12, not John sending his disciples at 11:2.
   The owner caught it; the automated name check did not, because both names contain "prison".
-  The fresco now sits at `galilee` (4:12–17) and 11:1–15 has no icon.
+  The fresco then sat at `galilee` (4:12–17) and 11:1–15 has no icon. **On 2026-10-02 the
+  owner rejected it at 4:12–17 too** ("Jesus began to preach … but it is John going to
+  prison"): the passage is read as Jesus beginning to preach, not as John's arrest. Do not put
+  the fresco back on Matthew 4. `galilee` is now tier c.
 - **An icon of one scene inside a multi-verse pericope is correct, not a mismatch.** The
   passage titles name the whole block, so `Lord of the Sabbath` (12:1–21) legitimately carries
   the healing of the withered hand (vv 9–14), and `Christ Walking on the Water` (14:22–36)
@@ -6501,3 +6506,27 @@ converging as of 2026-09-27g/h).
   uninformative": the landing page is now **"The Gospels in Icons"** (h2 and title
   "Biblicon · The Gospels in Icons") and each reader's tab title is "The Gospel of X in Icons ·
   Biblicon". `llms.txt` still says "icon reader" as a descriptor, left as is.
+
+## Session 2026-10-02
+
+- **Did.** Owner: "in matthew, where you have jesus began to preach matthew 4 but it is john
+  going to prison, can you fix". Removed `Elkomenos Prodromos Phylaken Dionysiou` from Matthew's
+  `galilee` (4:12–17) in `picks.js` and dropped its `tierB` in `overrides.js`. The passage is now
+  a plain verse row (tier c), same treatment as `johnq` (11:1–15). Rebuilt Matthew only.
+- **Why no replacement.** Searched for a genuine Orthodox image of Christ beginning to preach and
+  found none: Commons free-text (English and Russian), all 445 Dionysiou frescoes, Gračanica
+  (180) and the Blago fund (1,038), Visoki Dečani (45), the Ivan Alexander Tetraevangelion on
+  Commons (folio 14 is John in prison above and the call of Peter and Andrew below, not the
+  preaching), and the Met's "Christ Preaching" (a Russian enamel Pantokrator, generic). The
+  retired `Christos Didaskon Dionysiou` is **not** a candidate: its titulus reads
+  Ο ΧΣ ΔΙΔΑΣΚΩΝ ΕΝ ΤΩ ΙΕΡΩ (teaching in the Temple) with the Theotokos at the left, so it is
+  Christ among the doctors / Mid-Pentecost, and its reading in `hotspots.js` (elders only) is
+  also wrong about the picture.
+- **Open.** Mark's `kingdom` (1:14–15) still shows the same fresco as its primary; it has the
+  same "John put in prison, Jesus came preaching" shape, so the owner may want the same fix
+  there. The fresco is now unused in Matthew (warning only); its reading stays in Matthew's
+  hotspots in case it is ever placed at 14:1–12 (14:3 tells the arrest), which would need its
+  reading rewritten since the current one argues for 4:12.
+- **Verified.** `make matthew`: check ok, tiers a:51 b:5 c:62; assembled `galilee` is tier c
+  with no image; "Forerunner Led to Prison" no longer appears in `matthew/index.html`; only
+  Matthew's HTML changed.

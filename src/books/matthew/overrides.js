@@ -23,7 +23,7 @@ module.exports={
   story:"Herod, seeing that the wise men had not returned to him, sent and slew all the children in Bethlehem from two years old and under. Jeremiah’s lament was fulfilled: Rachel weeping for her children, and would not be comforted, because they are not. The Church honours these children as the first martyrs of Christ — witnesses who suffered for him before they could speak his name."},
 
  // ---- chapter 4 ----
- galilee:{tierB:true,name:'Jesus Begins to Preach',type:'Event',keyVerse:17,
+ galilee:{name:'Jesus Begins to Preach',type:'Event',keyVerse:17,
   story:"Hearing that John was cast into prison, Jesus withdrew into Galilee and dwelt in Capernaum, upon the sea coast, in the borders of Zabulon and Nephthalim — the region Isaiah had called the land of the shadow of death, upon which a great light should shine. From that time he began to preach with the Forerunner’s own words: Repent, for the kingdom of heaven is at hand."},
  multitudes:{name:'Jesus Heals the Multitudes',type:'Miracle',keyVerse:23,
   story:"Jesus went about all Galilee, teaching in their synagogues, preaching the gospel of the kingdom, and healing every sickness among the people. They brought him all that were sick with divers diseases, those possessed with devils, the lunatick, and those that had the palsy; and he healed them. Great multitudes followed him from Galilee, Decapolis, Jerusalem, Judaea and beyond Jordan."},
