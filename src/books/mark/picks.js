@@ -22,9 +22,6 @@ module.exports={
   "temptation": [
     "File:Christ's temptation (Monreale).jpg",
   ],
-  "kingdom": [
-    "File:Elkomenos Prodromos Phylaken Dionysiou.jpg",
-  ],
   "petersmother": [
     "File:Monreale - Jesus heals Simon's mother in law.jpg",
   ],

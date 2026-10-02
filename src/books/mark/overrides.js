@@ -16,7 +16,7 @@ module.exports={
  // ---- the four type icons ----
  // Mark 1:14 reports the Forerunner's imprisonment in half a verse; the fresco paints the
  // arrest itself, which is the event that half-verse refers to, not the preaching that follows.
- kingdom:{tierB:true,type:'Event',keyVerse:15,
+ kingdom:{type:'Event',keyVerse:15,
   story:"Now after that John was put in prison, Jesus came into Galilee, preaching the gospel of the kingdom of God, and saying, The time is fulfilled, and the kingdom of God is at hand: repent ye, and believe the gospel."},
  // The Church identifies Levi the son of Alphaeus with the Apostle Matthew, and these are his
  // own icons, not a picture of the receipt of custom.

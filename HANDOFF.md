@@ -239,7 +239,7 @@ and this file did not.
     other two differ only where `fathers.js` `clean()` strips a bracketed scripture reference.
     Blessed Theophylact (106) and St Bede (103) lead, then Augustine 43, Chrysostom 35,
     Jerome 4, Gregory the Dialogist 3, Hilary 2, Cyril of Alexandria 2, Ambrose 1, Leo 1.
-  - The five type icons (`tierB`): the Forerunner's arrest at 1:14, the Angel of the Desert at
+  - The four type icons (`tierB`): the Angel of the Desert at
     1:2–8, the Apostle Matthew's own icons at the calling of Levi, the Synaxis of the Twelve, and
     Christ among the apostles at 16:14–18.
   - **Scripture stories: 40 of 40 icon-bearing passages.** Batch 4 wrote the last 15 stories,
@@ -6522,11 +6522,17 @@ converging as of 2026-09-27g/h).
   Ο ΧΣ ΔΙΔΑΣΚΩΝ ΕΝ ΤΩ ΙΕΡΩ (teaching in the Temple) with the Theotokos at the left, so it is
   Christ among the doctors / Mid-Pentecost, and its reading in `hotspots.js` (elders only) is
   also wrong about the picture.
-- **Open.** Mark's `kingdom` (1:14–15) still shows the same fresco as its primary; it has the
-  same "John put in prison, Jesus came preaching" shape, so the owner may want the same fix
-  there. The fresco is now unused in Matthew (warning only); its reading stays in Matthew's
+- **Mark too (owner: "yes fix mark too").** Mark's `kingdom` (1:14–15) had the same fresco as
+  a tier-b type icon; removed from `picks.js`, `tierB` dropped, now tier c (Mark a:35 b:4 c:65).
+  Same rule for Mark as for Matthew: do not put the fresco back on 1:14–15. The fresco is now
+  unused in every reader except wherever else `grep -rn Elkomenos src/books/*/picks.js` finds
+  it (none at this date). It is unused in Matthew (warning only); its reading stays in Matthew's
   hotspots in case it is ever placed at 14:1–12 (14:3 tells the arrest), which would need its
   reading rewritten since the current one argues for 4:12.
 - **Verified.** `make matthew`: check ok, tiers a:51 b:5 c:62; assembled `galilee` is tier c
   with no image; "Forerunner Led to Prison" no longer appears in `matthew/index.html`; only
   Matthew's HTML changed.
+- **Owner still saw "Jesus Begins to Preach" after the first push.** The live page
+  (biblicon.ca/matthew/, fetched and checked with Playwright) had no card and no icon for
+  4:12–17, only the verses; it was a cached copy on the owner's side. GitHub Pages serves with
+  a 10-minute cache, so a hard refresh is needed right after a push.
