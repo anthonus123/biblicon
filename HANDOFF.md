@@ -62,7 +62,8 @@ and this file did not.
   favicon `src/build.js` inlines into every reader. An empty `.nojekyll` at the repo root tells
   GitHub Pages to skip Jekyll processing, since this is a plain static site. Target host is
   GitHub Pages (`main` branch, root folder) under a `.ca` domain the owner is registering; neither
-  Pages nor the domain/DNS/`CNAME` is wired up yet — see `## Next`. Committed and pushed
+  Pages nor the domain/DNS/`CNAME` is wired up yet — see `## Next`. (**Superseded: live at
+  https://biblicon.ca/ with HTTPS enforced, confirmed 2026-11-01.**) Committed and pushed
   (`f7952cc`), verified locally over `python3 -m http.server` and Playwright (zero console errors,
   all four links resolve).
 - **Patristic-commentary credit lines (since 2026-09-27d) — read this before touching `book.json`'s
@@ -136,7 +137,8 @@ and this file did not.
   (`dns5.name-services.com` returns only the four GitHub IPs, confirmed directly) but was still
   finishing propagation through public resolvers' stale caches (Google's 8.8.8.8 in particular) as
   of session end — see `## Next` for how to check and what's left (Enforce HTTPS, Search Console,
-  deferred GA4).
+  deferred GA4). **Update 2026-11-01: DNS converged, HTTPS enforced, GA4 done; only Search
+  Console is left.**
 - **Mobile/tablet responsiveness (since 2026-09-27g).** The owner asked directly ("is the website
   mobile and tablet friendly?") and the honest answer, checked with Playwright at real viewport
   widths rather than guessed, was: the landing page yes, the four readers no — `src/page.css` had
@@ -444,22 +446,10 @@ provenance, and Mark blocked regardless (no complete patristic source on Mark ex
 all, translator aside). Don't re-run that research from scratch — read the 2026-09-27d Session
 block first for exactly what was checked and where each candidate failed.
 
-**Website: GitHub Pages is enabled and built; DNS is configured correctly but was still
-propagating through public resolver caches at session end (2026-09-27f/g) — check before assuming
-it isn't done.** `gh` is now installed and authenticated in this environment (owner ran the
-install + `gh auth login` mid-session — `gh auth status` confirms `anthonus123`), so a future
-session can use it directly rather than re-hitting the "no GitHub access" wall earlier sessions
-recorded. In order, what's left:
-1. **Check DNS first, before doing anything else**: `dig biblicon.ca A @dns5.name-services.com`
-   (the domain's own authoritative server, bypasses every cache) should show only the four
-   `185.199.10x.153` addresses — if it does, the owner's config is correct and any stale answer
-   from `dig ... @8.8.8.8` or `@1.1.1.1` is just public-resolver cache lag, not a real problem;
-   give it more time rather than re-touching the registrar. `curl -sI http://biblicon.ca/` should
-   return the GitHub Pages response once caches clear.
-2. Once `biblicon.ca` resolves cleanly and consistently: `gh api -X PATCH
-   repos/anthonus123/biblicon/pages -f https_enforced=true` (or the Settings → Pages UI toggle) —
-   fails until GitHub has actually issued the certificate, which needs correct DNS first.
-3. Once live, add the URL to `README.md`.
+**Website: live at https://biblicon.ca/, checked 2026-11-01.** DNS resolves to the four
+`185.199.10x.153` GitHub Pages addresses, the certificate is approved (expires 2026-12-27, GitHub
+renews it), `https_enforced` is already true, and `README.md` already names the URL. Steps 1–3 of
+the old list (DNS, HTTPS, README) are done. What's left needs the owner:
 4. **Google Search Console**: needs the live domain to verify against. Once it's up, the owner
    adds the property and gives a future session the verification file/meta tag it generates, to
    commit at the repo root the way `remtex.ca` has `google11ca6c32d9c55e41.html`.
@@ -615,7 +605,8 @@ class in the very words chosen to dodge the n-gram check.
   in either painted palm, whether the books are open or closed, how many hands hold them — had to
   be hedged or dropped rather than settled). The full-resolution crop settled three things past
   the first draft's guesswork: **both angels in `Ide Topos` are seated**, not one seated and one
-  standing as Matthew's reader has it (worth a look there — the crop is at
+  standing as Matthew's reader had it (**fixed in Matthew 2026-11-01**, along with its claim that
+  the great angel's hand reaches toward the women; it points to the tomb — the crop is at
   `https://upload.wikimedia.org/wikipedia/commons/a/a8/Ide_Topos_pou_Ekato_Dionysiou.jpg`); the
   vessel the two women hold could not be settled as one flask or two stacked ones, so the reading
   says so rather than picking a number (Mark's reader says two flasks; this reading does not
@@ -668,6 +659,13 @@ look rather than just a fix.
   check on `Epitaphios Threnos Dionysiou.jpg`'s own ΙΩ figure found the same thing: his own hand at
   his own cheek, not Christ's. Mark's reader is very likely wrong on both counts; not fixed there,
   since that is a different book's file, but worth a look if anyone revisits it.
+  **REVERSED 2026-11-01: this bullet had it backwards. Mark was right; Luke and John were wrong.**
+  Full-resolution Commons crops of both frescoes show the disciple's cheek resting on *Christ's*
+  hand: in the Epitaphios a bare forearm rises from the body to the hand under his cheek, there is
+  a dark nail-wound in that hand, and the disciple's own hand lies flat on the red slab further
+  right. In the Apokathelosis, Christ's left hand hangs down, limp and with its wound, and the
+  disciple's own hands press it to his cheek. Luke's and John's readings and markers were corrected
+  to match. See the 2026-11-01 Session block.
 - **The advisor caught two classes of error the self-checks (quotes.js, the n-gram overlap script,
   overlay.py, `make check`) cannot see at all: wrong Synoptic attribution, and claims about what a
   figure *is* rather than what it looks like — across four separate rounds, each fix round
@@ -6553,3 +6551,40 @@ converging as of 2026-09-27g/h).
 - **Verified.** `make matthew`: check ok, 120 passages, a:51 b:5 c:64, 46 with notes, 360
   quotations, 112 icons. Front-page stats (`index.html`) and `llms.txt` updated for Matthew
   (120 / 112 / 360) and Mark (80 icons, after the 1:14–15 fix).
+
+## Session 2026-11-01 (two cross-reader image discrepancies closed; website checklist found done)
+
+- **Did.** Owner: "continue and dont stop". (1) Website: `dig`, `curl -sI https://biblicon.ca/`
+  and `gh api repos/anthonus123/biblicon/pages` show DNS correct, certificate approved and
+  `https_enforced: true`; README already has the URL. `## Next` now says so; only Search Console
+  (owner action) is left. (2) The Luke batch 15 "sibling-reader discrepancy" on the Dionysiou
+  `Apokalthelosis` and `Epitaphios Threnos` frescoes was re-checked on the full Commons originals
+  (714×838 and 982×839). **The old note was backwards:** in both, the beloved disciple's cheek
+  rests on Christ's own wounded hand (Mark's wording). Fixed in Luke (`hotspots2.js` two readings,
+  `hotspots3.js` two markers) and John (`hotspots2.js` reading, `hotspots3.js` marker "John
+  bowed"). (3) Same crop, tight 5× zoom: the woman in gold in `Apokalthelosis` has Christ's right
+  forearm along her jaw and holds his hand just under her chin. Mark and Luke both said "to her
+  cheek"; a first fix this session said "against her breast", which the zoom also ruled out.
+  Both now say under her chin/jaw (readings and markers), and
+  Luke's marker moved from 40%/12% (it sat on the blue-veiled woman) to 47%/20% on her.
+  (4) Matthew's `Ide Topos` (luke batch 16 flag): both angels are seated, and the great angel
+  looks back at the women while his open hand points toward the tomb. Matthew's reading and its
+  "two angels" marker said one stood and the hand reached to the women; both corrected. The
+  marker's "the pair that St Luke and St John report" was hedged to the count only, since Luke's
+  two men stand and John's two angels sit, as these do.
+- **Phrasing rule kept.** Per the Luke batch 16 note, every new string was checked for 5-grams
+  shared with the other three books' `hotspots*.js`. There is no overlap tool in `src/tools`; a
+  throwaway script compared only n-grams new against `git diff`'s removed lines. Three first-draft
+  overlaps ("holds it to his face" with Matthew's Nerezi marker, "the other way toward the" with
+  Luke's, "his face turned to the" with Mark's Pilate) were reworded; final run 0. No new visual
+  claim was invented to dodge a hit: "nail-wound dark in its palm" was cut to "a wound marked on
+  it", since palm vs back of the hand can't be told under his cheek.
+- **Verified.** `make`: all four books `ok — every structural invariant holds`, same tiers as
+  before (Matthew a:51 b:5 c:64, John a:25 b:2 c:37, Mark a:35 b:4 c:65, Luke a:42 b:6 c:104).
+  `overlay.py` on Luke's two burial frescoes, re-run after the marker move: every marker on its
+  figure, marker 6 now on the woman in gold. New wording grepped in
+  each built `index.html`; Luke's old "own hand is pressed to his own cheek" is gone (0 hits).
+  Not browser-checked: text-only edits plus one marker coordinate.
+- **Next.** Not committed (owner did not ask). Mark's `Ide Topos` says "two flasks" and Luke's
+  hedges; at full resolution the green-robed woman holds what looks like two stacked gold
+  vessels, so Mark's wording is probably fine. Left alone.

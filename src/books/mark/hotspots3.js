@@ -682,7 +682,7 @@ module.exports={
  ["The ladder", "Still propped against the crossbeam at the left.", "17%", "22%"],
  ["The pincers", "A dark-haired man kneels at the foot of the cross drawing a nail from the feet. Byzantine painters give this place to Nicodemus, whom only John names; Mark names no one with Joseph.", "72%", "57%"],
  ["The drawn nails", "Two nails already out stand upright in a basket at his knee. Mark's account of the crucifixion says only, And when they had crucified him.", "83%", "59%"],
- ["The woman with his hand", "In yellow, she holds Christ's loose right hand to her cheek, with two more women behind her. The painter does not name them. Mark's two at the burial are Mary Magdalene and Mary the mother of Joses.", "47%", "21%"],
+ ["The woman with his hand", "In yellow, she clasps Christ's loose right hand just under her chin, with two more women behind her. The painter does not name them. Mark's two at the burial are Mary Magdalene and Mary the mother of Joses.", "47%", "21%"],
  ["The young disciple", "He rests his cheek on Christ's left hand. The place is from John's Gospel; in Mark's, at the arrest, they all forsook him, and fled.", "38%", "64%"],
  ["The woman in green", "At the back, one hand at her face and the other open. Mark's women beheld where he was laid; the painter gives them grief as well.", "37%", "83%"],
  ["The place of a skull", "A black cave opens in the rock under the cross with a skull in it: Golgotha, which is, being interpreted, The place of a skull.", "89%", "50%"],

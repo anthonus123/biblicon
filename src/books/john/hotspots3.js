@@ -192,7 +192,7 @@ module.exports={
  ["The inscription", "Η ΑΠΟΚΑΘΗΛΩΣΙΣ — the taking down from the nails. John names the two who did it: Joseph of Arimathaea, and Nicodemus with him.", "9%", "37%"],
  ["Joseph receiving the body", "The grey-bearded man holds the body as it is lowered. Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body.", "20%", "45%"],
  ["The Mother of God", "She presses her Son's face to hers as he comes down into her arms.", "24%", "30%"],
- ["John bowed", "The beloved disciple stands with his head on his hand, the same gesture he has at the cross.", "40%", "60%"],
+ ["John bowed", "The beloved disciple bows his head over his Lord's hanging hand, pressing it against his face. At the cross his own hand was at his cheek; here the hand is Christ's.", "40%", "60%"],
  ["Drawing the nails", "A man kneels at the foot of the cross and draws the nails from the feet with pincers. There came also Nicodemus, which at the first came to Jesus by night, and brought a mixture of myrrh and aloes.", "64%", "61%"],
  ["The basket of tools", "The basket of the ladder-men stands on the rock beside him, with the tools of the unnailing.", "82%", "56%"],
  ["The skull under Golgotha", "In the black cleft under the cross lies the skull the Church calls Adam's.", "88%", "48%"],
