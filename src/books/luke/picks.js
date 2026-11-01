@@ -175,6 +175,13 @@ module.exports={
   "centurion": [
     "File:Iomenos Gon Ekatonarchou Dionysiou.jpg",
   ],
+  // Only Luke has Nain. The Monreale mosaic names it in its own Latin (IHS FILIV[M] VIDVE
+  // RESVSC… PORTA CIVITATIS NAY…; the photograph cuts both lines short). It sat in `pool.json`
+  // under "Resurrection of the widow's son at Nain" all along; title passes for `nain` missed it
+  // because the title says "Nain widow's son", not the keyword pairs tried (2026-11-01e).
+  "nain": [
+    "File:Nain widow's son is resurrected by Christ.jpg",
+  ],
 
   // ---- chapter 8 ----
   "sower": [
@@ -228,6 +235,22 @@ module.exports={
     "File:Christos Iomenos Daimonon Takophon Dionysiou.jpg",
   ],
 
+  // ---- chapter 13 ----
+  // The woman bowed together. Inscribed IHS MVLIEREM ANNIS DE/CE(M) ET OCTO CVRVA(M) ERIGIT….
+  // Commons titles it only "Counterfacade Miracle of J.C."; its credit says it is a crop from
+  // the left-wall mosaics. The earlier search found only "Healing of the Infirm Woman p.2" (a
+  // crowd, no woman) and stopped there (2026-11-01e).
+  "bowedwoman": [
+    "File:Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg",
+  ],
+
+  // ---- chapter 14 ----
+  // The man with the dropsy. Commons calls it "Christ in the pharisee's house"; the mosaic's own
+  // title is …ANAT YDROPICVM DIE SABATI. It was in src/img (unreferenced) since the first build.
+  "dropsy": [
+    "File:Christ in the pharisee's house (Monreale).jpg",
+  ],
+
   // ---- chapter 15 ----
   // The Good Shepherd is the image the Church reads over this parable; neither mosaic paints
   // the ninety and nine left in the wilderness.
@@ -267,6 +290,14 @@ module.exports={
   ],
 
   // ---- chapter 21 ----
+  // The widow at the treasury: the same two files as Mark's 12:41-44, read fresh for Luke. The
+  // Ravenna panel was in `pool.json` under its category the whole time; its title never says
+  // "widow" (2026-11-01e). The Ferapontov wall's right half is the healing of two blind men, a
+  // different miracle, and the reading says so.
+  "mites": [
+    "File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 10,1.jpg",
+    "File:Lesson of the widow's mite--Healing of two blind men 04-15.jpg",
+  ],
   "coming": [
     "File:Second Coming by G.Klontzas (16th c.).jpg",
   ],
@@ -303,6 +334,18 @@ module.exports={
   "pilate": [
     "File:Cathedral (Monreale) - Right wing transept - Before Pilate.jpg",
     "File:Pilate judgement (icon).jpg",
+  ],
+  // Only Luke sends Christ to Herod. The fresco's own title, read off the 1920x2560 original:
+  // Η ΠΑΡΑ ΤΟΥ ΗΡΟΔΟΥ (sic, omicron) ΚΑΤΑ Χ(ΡΙΣΤΟ)Υ ΕΞΕΤΑΣΙΣ, the examination of Christ by Herod. Commons
+  // files it only as "a scene from the Passion cycle, south wall" (2026-11-01d).
+  "herodtrial": [
+    "File:03 Нагоричино сц из страст цикла ю с.JPG",
+  ],
+  // Simon carries the cross; Christ is led behind him by the wrists. Simon goes AHEAD here, so
+  // the reading does not claim Luke's "that he might bear it after Jesus" for the picture. No
+  // title survives. Same church, north wall (2026-11-01d).
+  "simoncyrene": [
+    "File:03 Нагоричино сц из страст цикла с.jpg",
   ],
   // Luke alone gives the penitent malefactor his words and the promise of paradise — Luke
   // himself never says which side he hung on; "the right hand" is Bede's own tradition, not
@@ -376,5 +419,9 @@ module.exports={
   "ascension": [
     "File:016 Ascension of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",
     "File:Cathedral (Monreale) - Left wing transept - Ascension.jpg",
+    // Added 2026-11-01. Cappadocia (Commons: Tokalı Kilise; not confirmed in situ): the Greek either side of Christ's
+    // head is Luke 24:50-51 itself, the blessing with lifted hands and the parting. The
+    // moment before the two Ascension icons above, and only Luke tells it.
+    "File:Apostles capp.JPG",
   ],
 };

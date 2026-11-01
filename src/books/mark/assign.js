@@ -20,7 +20,7 @@ module.exports = {
  authority:    {tier:'c', subj:'', kw:[]},
  capernaum:    {tier:'a', subj:'The unclean spirit cast out in the synagogue at Capernaum', kw:[['daimon'],['demoniac'],['unclean','spirit'],['exorcis']]},
  petersmother: {tier:'a', subj:'The healing of Peter’s mother-in-law', kw:[['mother','law'],['peter','fever'],['penthera']]},
- evening:      {tier:'c', subj:'', kw:[]},
+ evening:      {tier:'b', subj:'Christ healing the multitudes', kw:[['healing','multitude']]},
  preaching:    {tier:'c', subj:'', kw:[]},
  leper:        {tier:'a', subj:'The cleansing of the leper', kw:[['leper'],['lepros'],['leprosy']]},
 

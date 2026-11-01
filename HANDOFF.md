@@ -21,8 +21,8 @@ and this file did not.
   (see `## Status` below) — a native app "only if we see that it's worth it."
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables (paths changed 2026-09-27j, see that Session block):** `matthew/index.html`
-  (~17.2 MB), `john/index.html` (~13.0 MB), `mark/index.html` (~13.2 MB, up from ~12.6 MB after the
-  2026-09-26 icon search) and `luke/index.html` (~14.6 MB, up from ~11 MB after the 2026-09-25c
+  (~17.2 MB), `john/index.html` (~13.6 MB), `mark/index.html` (~13.4 MB as of 2026-11-01e, up from ~12.6 MB after the
+  2026-09-26 icon search) and `luke/index.html` (~16.1 MB as of 2026-11-01e, up from ~11 MB after the 2026-09-25c
   icon harvest) — each a single self-contained file, served hosted at `biblicon.ca/matthew/` etc
   with a clean, extensionless URL. Fonts, icons, the KJV text and all commentary are embedded; each
   still opens by double-clicking, no server and no network. Each also carries an in-page "Download
@@ -187,14 +187,16 @@ and this file did not.
   image and under the "Icons lead" plate switches between them, and the credit line, the
   prose reading and the positioned markers all follow the icon selected.
 - **Content, as of 2026-09-15:**
-  - **120 passages**, all 28 chapters. Tiers: **51 (a)**, **5 (b)**, **64 (c)** (2026-10-02).
+  - **120 passages**, all 28 chapters. Tiers: **52 (a)**, **5 (b)**, **63 (c)** (2026-11-01c:
+    `calling` 4:18-22 got the Tokalı calling fresco; `make check` now reports 57 passages
+    showing 113 icons).
     **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
-    second Orthodox image of that scene was found. The remaining 61 passages render as
+    second Orthodox image of that scene was found. The remaining 63 passages (2026-11-01c) render as
     plain verse rows because no Orthodox icon of them exists.
-  - **All 113 icons have positioned hotspot markers**, 594 markers in all: 14 live sets in
-    `hotspots.js` (a 15th is on a retired image) and 99 in `hotspots3.js`. The Passion
+  - **All 113 icons have positioned hotspot markers**, 602 markers in all (2026-11-01c): 14 live sets in
+    `hotspots.js` (a 15th is on a retired image) and 100 in `hotspots3.js`. The Passion
     stretch (26:6 to 27:66, 26 icons) was done on 2026-09-15, and every marker on every icon
     was checked by drawing it back onto the picture (`src/tools/overlay.py`, see Gotchas).
     **All 113 have a prose reading** — `make check` hard-fails on an
@@ -205,7 +207,9 @@ and this file did not.
     (Oxford 1842, public domain). Chrysostom on 115 of 118 passages, then Jerome,
     Augustine, Hilary, Leo, Ambrose, Cyril of Alexandria, Bede, Cassian, Chrysologus,
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
-- **John content, as of 2026-09-19:**
+- **John content, as of 2026-09-19 (updated 2026-11-01: +3 icons — `anointing` 12:1-11 and
+  `walking` 6:16-21 now tier a, `shepherd` 10:1-21 now tier b — so 27 (a) / 3 (b) / 34 (c),
+  30 passages with an icon, 76 icons, 535 markers):**
   - **64 passages**, all 21 chapters. Tiers: **25 (a)**, **2 (b)**, **37 (c)**. The two tier-b
     passages are the Prologue (1:1–18, the Evangelist writing) and 1:35–42 (St Andrew's own icon).
   - **27 have an icon, showing 73 icons between them**; 23 of the 27 show more than one.
@@ -221,13 +225,14 @@ and this file did not.
     overlapping pairs resolved and its 1:2–3 / 1:4–8 pair joined: they are the traditional
     pericopes, which is also where the Fathers' comments sit, so `fathers.js` selects cleanly.
   - **40 passages have an icon and they show 81 icons between them; 22 show more than one.**
-    Tiers: **35 (a), 5 (b), 64 (c)**. 78 of the 81 are files Matthew or John already carry — the
+    Tiers: **36 (a), 4 (b), 64 (c)** as of 2026-11-01c (`fishers` 1:16-20 got the Tokalı calling
+    fresco; `make check`: 40 passages showing 81 icons). 78 of the 81 are files Matthew or John already carry — the
     owner's decision of 2026-09-20 — chosen against what the picture shows of *Mark's* verses;
     five scenes were deliberately **not** reused because Mark's account differs (see the Gotcha
     below). The other 3 files (one for 5:21–34, the woman with the issue of blood; two for
     16:19–20, the Ascension) are files Luke's own 2026-09-25c harvest found that postdate Mark's
     original 2026-09-20 build — wired in 2026-09-26, see that Session block. **All 81 have a prose reading and positioned
-    markers, 528 markers in all**, every set checked by drawing it back onto the picture.
+    markers, 552 markers in all as of 2026-11-01e (537 at 2026-11-01d, 529 counted 2026-11-01c; `widowmite` added two icons 2026-11-01e)**, every set checked by drawing it back onto the picture.
     **13** subjects `make check` still lists as wanting an icon — a 2026-09-26 search (see that
     Session block) settled the disposition of seven for good (they are already painted elsewhere
     in this reader, or the pool's only file is another Evangelist's own version) and found nothing
@@ -324,6 +329,8 @@ and this file did not.
     cannot replace: read every "so", "that" or "because" a story adds, and every quoted speech
     whose pronouns changed, against the printed verses by eye.
   - **31 passages still want a story** at this date; closed by batch 4, 2026-09-25h, above.
+  - **(2026-11-01e: 97 icons, 588 markers, tiers a:48 b:6 c:98, 54 icon-bearing passages and 54 stories — `nain`, `bowedwoman`, `dropsy` (all Monreale) and `mites` (Ravenna + Ferapontov) wired; see that Session block.)**
+  - **(2026-11-01d: 92 icons, 549 markers, tiers a:44 b:6 c:102, 50 icon-bearing passages and 50 stories — `herodtrial` and `simoncyrene` wired from Staro Nagoričane; see that Session block. 2026-11-01c: 90 icons, 533 markers.)**
   - **All 89 icons now have a prose reading and positioned markers (89/89), finishing the readings
     the 2026-09-25c harvest left undone.** Five batches (17 through 21, see the Session block
     below), each verified against its picture with `overlay.py` before commit, each built and
@@ -364,8 +371,8 @@ and this file did not.
     **48 icon-bearing passages, 89 icons; tiers 42 (a), 6 (b), 104 (c)**, up from 34/69/29/5/118.
     **None of the 13 has a prose reading yet** — this session was survey-and-wire only, the
     pattern 2026-09-20b/d set for the first pass; readings are next. **26 passages still want an
-    icon**: `nain` and Zacchaeus (searched again, still no Orthodox image found either time), the
-    woman bowed together at 13:10-17 (Monreale's own Commons record turned out to hold only half
+    icon**: `nain` (**found 2026-11-01e — Monreale; it was in the pool under its category**) and Zacchaeus (searched again, still no Orthodox image found either time), the
+    woman bowed together at 13:10-17 (**found 2026-11-01e: `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg` is the woman's half**; Monreale's own Commons record turned out to hold only half
     the mosaic — see the Session block), and the rest of the Infancy/parables/Luke-only-Passion
     list the harvest could not supply.
 - **Luke content, as of 2026-09-20d:**
@@ -465,7 +472,7 @@ the shared fonts/images out of each `Reader.html` so the four files stop duplica
 embedded assets between them. **Mobile/responsive redesign is done, not out of scope any more** —
 see `## Status`, 2026-09-27g; that line here was accurate as of 2026-09-27c/f and is now stale.
 
-**Mark's readings are finished — 81 of 81, 528 markers.** Twelve batches through 2026-09-22d
+**Mark's readings are finished — 84 of 84, 552 markers shipped (2026-11-01e: +15 on `widowmite`'s two new icons; 2026-11-01d: +8 on `evening`; 529 as counted 2026-11-01c).** Twelve batches through 2026-09-22d
 (78 of 78, 513 markers; batch 12 did 16:9-18, the three appearances to Mary Magdalene and the
 Dionysiou `Christos Apostolois`, 38 markers), plus 2 more icons and 15 markers wired 2026-09-26
 (see that Session block).
@@ -498,16 +505,16 @@ verse order, with what was actually tried:
    almost all Voronet monastery photos, and nobody read past the first page of them. Treat the
    Greek pass and the Matthew/Luke cross-check as solid, and the English pass as unreviewed rather
    than exhausted, if a future session wants to redo it properly (bare stems, not compound
-   patterns, and actually read the hit list): `calling` (1:16-20, nets — Matthew's own 4:18-22
-   wants the same subject and
-   has never had it either), `demoniac` (1:23-28, the Capernaum synagogue exorcism — Luke's own
+   patterns, and actually read the hit list): `calling` (1:16-20, nets — **RESOLVED 2026-11-01c**: the Tokalı calling fresco now serves Mark's
+   `fishers` and Matthew's `calling`; see that Session block. Before that: Matthew's own 4:18-22 wanted the same subject and
+   had never had it either), `demoniac` (1:23-28, the Capernaum synagogue exorcism — Luke's own
    4:31-37 wants it too), `boy` (9:14-29 — Luke's own 9:37-43 wants it too), `husbandmen`
    (12:1-12 — both Matthew's 21:33-46 and Luke's 20:9-18 want it and have never had it), `mites`
-   (12:41-44 — Luke's own 21:1-4 wants it too). None of these has ever turned up an Orthodox
+   (12:41-44 — Luke's own 21:1-4 wants it too; **RESOLVED 2026-11-01e — it was never a dead end: `pool.json` always held the category `Widow's Mite mosaic in Sant'Apollinare Nuovo (Ravenna)`, whose Sailko file titles never say "widow"; see that Session block**). None of these has ever turned up an Orthodox
    image anywhere in the whole corpus this project has enumerated (Dionysiou, Monreale,
    Ferapontov, Langadas, Rossano, Menologion of Basil II, Gračanica, Sant'Apollinare Nuovo, Chora,
    the Serbian and Bulgarian monasteries, the Moldavian painted monasteries, Sinai, Athens,
-   Rublev, Novgorod, Pskov, the Tretyakov, Nerezi, Cyprus, Kariye, Troodos — the full `CYCLES` list
+   Rublev, Novgorod, Pskov, the Tretyakov, Nerezi, Cyprus, Kariye, Troodos — the full `CYCLES` list (**correction 2026-11-01d: the Dečani, Sopoćani, Mileševa, Studenica, Nerezi and Protaton names in that list match no Commons category, so none of their files were ever pooled; Mystras, Lesnovo and Staro Nagoričane were never listed at all — see that Session block**)
    in `harvest_pool.js`).
 3. **One is this session's own fresh dead end** — nobody had searched for it before: `bethsaida`
    (8:22-26, the blind man healed by degrees). A free-text Commons search turned up one candidate,
@@ -528,10 +535,10 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Luke's readings are finished — 89/89, all 89 icons across 57 passages, closed in five batches
+**Luke's readings are finished — 97/97 since 2026-11-01e (588 markers; 92/92 and 549 at 2026-11-01d); 89/89 across 57 passages was closed in five batches
 (17 through 21, 2026-09-25d) after the 2026-09-25c harvest left them undone.** What is left for
 Luke, in order:
-1. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
+1. **RESOLVED 2026-11-01e: `nain` now has the Monreale mosaic** (`Nain widow's son is resurrected by Christ.jpg`, in `pool.json` under `Resurrection of the widow's son at Nain` all along). What follows is the old entry. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
    2026-09-25c (English, Greek, Cyrillic, and by category), still nothing; see the Session block
    for what was tried. Likely stays tier c permanently; no fixed Orthodox icon type exists for it,
    unlike the Feasts.
@@ -542,10 +549,10 @@ Luke, in order:
    chose not to use it, on the same reasoning the retraction itself gave: the catalogue entry
    doesn't confirm the panel depicts this scene. No further work needed here unless the owner
    reopens it.
-3. **26 passages still want an icon** (down from 39, net unchanged from the harvest's own first
+3. **20 passages still want an icon** (24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
-   13:10-17 (Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
+   13:10-17 (**wired 2026-11-01e from `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg`, the woman's half, which no title search could find**; Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
    side, not the woman's, so there is nothing to point
    a marker at), and the rest of the Infancy/parables/Luke-only-Passion list `make check` prints
    in full. The harvest read every Feast, miracle and named parable in `assign.js` against the
@@ -1319,6 +1326,10 @@ same commit.
   without a number. The healed man's tunic and mantle colours are now given in the same order
   Matthew's own audited marker gives them, since it is the same figure on the same fresco.
 
+**RESOLVED 2026-11-01 — this was a false alarm.** Both files' readings and markers live in
+Matthew's `hotspots.js` (h1, reading and markers together), which this note never grepped. A sweep
+of every `picks.js` file in all four books against h1/h2/h3 found 0 picks without a reading or
+markers. Kept below for the record only.
 **For the owner — a gap in Matthew's own reader, found while writing Luke's Transfiguration
 readings, not fixed here.** Matthew's `picks.js` lists four Transfiguration files, but Matthew's
 `hotspots2.js` has no entry at all for `Transfiguration of Christ Icon Sinai 12th century.jpg` —
@@ -1760,8 +1771,12 @@ here, not the words.**
   Matthew 22's wedding feast, a different parable.
 - **The draught of fishes** (`draught`, 5:1–11). The Monreale `Miraculous catch of fish` and
   `Evresete Dionysiou` are the *post-resurrection* catch at Tiberias, John 21.
-- **The sinful woman** (`sinfulwoman`, 7:36–50). `Monreale — Anointing at Bethany` is Matthew 26
-  / Mark 14, and `Katakrinon Pornin` is the woman taken in adultery, John 8. Luke 7 is neither.
+- **The sinful woman** (`sinfulwoman`, 7:36–50). `Katakrinon Pornin` is the woman taken in
+  adultery, John 8. **Corrected 2026-11-01:** `Monreale — Anointing at Bethany` is *not* simply
+  Matthew 26 / Mark 14: the woman is at the feet, her hair falls to them, she kisses the foot, and
+  its Latin band (MARIA MAGDALENA ... PEDES ... LACRIMIS ... CAPILLIS) borrows Luke 7:38's tears.
+  It is now wired to John 12:1-11; whether Luke 7 should also get it is an owner question (see
+  the 2026-11-01b Session block).
 - **The ten lepers** (`tenlepers`, 17:11–19). The one leper file is already Luke 5:12–16's, and
   "one icon, one passage" holds inside this reader.
 - **The Prologue** (`prologue`, 1:1–4). The three Evangelist-at-his-desk icons in the pool are all
@@ -1943,15 +1958,20 @@ Then, in the owner's priority order:
    woman, walking on the water, the Sermon on the Mount. Method that worked is in Gotchas.
 5. **Mobile.** The layout is desktop-only by decision: a fixed 284px rail plus a 240px
    icon column. There is no responsive breakpoint at all yet.
-6. **John: the ten passages that want an icon and have none.** `make check` lists them. Unlike
-   Matthew's, they have not had two dedicated searches; the check now says so. Two leads:
-   - **John 10:1–21, the Good Shepherd.** Both Good Shepherd mosaics in the pool (the Great
-     Palace floor and Galla Placidia at Ravenna) already serve Matthew 18:10–14 at tier b.
-     The shared pool allows one file in both readers, and John 10 is the Good Shepherd's own
-     text. Whether to reuse them there, and at which tier, is the owner's call.
-   - Christ and Nicodemus, walking on the sea, Mary anointing the feet, and the appearance
-     with the doors shut are all subjects Orthodox programmes do paint. Seed the search from
-     the Dionysiou, Monreale and Kirillo files John already uses (see Gotchas).
+6. **John: seven passages want an icon (ten at the start of 2026-11-01).** `make check` lists
+   them. Two searches were done 2026-11-01: the shared pool (Session 2026-11-01b) and Commons
+   categories outside it (Session 2026-11-01c). Wired that day: `anointing` (12:1-11, Monreale),
+   `walking` (6:16-21, Hagia Sophia Trebizond fresco), `shepherd` (10:1-21, tier b, an
+   18th-century Bessarabian Good Shepherd icon; this reader takes its own file, so the old question
+   of reusing Matthew's and Luke's two mosaics here is moot unless the owner prefers them).
+   Still open: Lamb of God (1:29-34), Philip and Nathanael (1:43-51), Nicodemus (3:1-21), the
+   nobleman's son (4:43-54), Martha and Mary meet Christ (11:17-37), the doors shut (20:19-23),
+   "Feed my sheep" (21:15-19). Commons categories for each are Western only (see 2026-11-01c).
+   Tokalı Kilise's Commons category was searched through 2026-11-01c (it gave Matthew and Mark
+   their calling and Luke a third Ascension-day icon, nothing for John). Dečani's category is thin
+   (Cana and the Temple, both already tier a everywhere). Still untried: Peć and Staro Nagoričane
+   by place name, other Göreme churches, and the Blago Fund uploads for Prizren beyond the two
+   fragments already parked.
 
 Note: everything through 2026-09-15 is committed and pushed on the branch named in that
 session block (`de9a101` the eight marker fixes; the next commit the Passion markers, the
@@ -5200,10 +5220,11 @@ checked:
   the Forerunner (Matthew 14 / Mark 6), not Luke's own scene. `Monreale - Healing of the Infirm
   Woman p.2.jpg` (searched for 13:10-17, the woman bowed together) shows only the crowd of
   onlookers — a `search` for its own title found no companion "p.1" anywhere on Commons, so the
-  only surviving photograph of this mosaic doesn't actually show the healing. `Lesson of the
+  only surviving photograph of this mosaic doesn't actually show the healing. **(Wrong, 2026-11-01e: the woman's half is `Cathedral (Monreale) - Counterfacade Miracle of J.C.
+  mosaic 01.jpg`, filed under the left-wall mosaics with a title no search would match; now wired.)** `Lesson of the
   widow's mite--Healing of two blind men 04-15.jpg` (Ferapontov) was fetched but not wired: its two
   registers are hard to read with confidence at this resolution and neither the widow nor a mite
-  is clearly legible; a full-resolution crop might settle it, not done this session.
+  is clearly legible; a full-resolution crop might settle it, not done this session. **(Settled 2026-11-01e: 800×675 is the Commons original, and at that size the left half plainly paints the widow — a veiled woman with her hand over a footed bowl of coins on a draped table, Christ pointing; the right half is the two blind men. Wired as the second icon on Mark `widowmite` and Luke `mites`.)**
 - After the first wiring: `BOOK=luke node src/assemble.js` and `BOOK=luke node src/check.js`
   caught one real error before it shipped — **the two Gračanica files got the same label**, which
   `make check` hard-fails on ("two icons in one gallery must not carry the same name"); fixed by
@@ -6588,3 +6609,455 @@ converging as of 2026-09-27g/h).
 - **Next.** Not committed (owner did not ask). Mark's `Ide Topos` says "two flasks" and Luke's
   hedges; at full resolution the green-robed woman holds what looks like two stacked gold
   vessels, so Mark's wording is probably fine. Left alone.
+
+## Session 2026-11-01b (John 12's anointing gets an icon; the Monreale inscription read; credit-line dates fixed)
+
+- **Did.** Owner: "continue and dont stop". (1) A sweep of every `picks.js` file in all four books
+  against `hotspots.js`/`hotspots2.js`/`hotspots3.js`: 0 picks lack a reading or markers. The
+  `## Next` "gap in Matthew's own reader" (Sinai Transfiguration, `Baiophoros`) was a false alarm:
+  both live in Matthew's h1 file. Marked resolved there. (2) First pool search for John's ten
+  "wanted" passages (`pool.json` regex: English, Greek, Russian stems). **`Monreale - Anointing at
+  Bethany.jpg` wired to John `anointing` (12:1-11)**, tier c to a: reading in `hotspots2.js`, 7
+  markers in `hotspots3.js`, label, picks comment. (3) Matthew's and Mark's readings and markers on
+  the same mosaic corrected (below). (4) **50 credit lines across all four readers printed
+  Commons' hidden Wikidata stamp after the date** ("12th centurydate QS:P,+1150-00-00T00:00:00Z/7").
+  `src/data/image_meta.json` cleaned (50 values, no other change), and `src/commons.js` now drops
+  the `display:none` div before stripping tags, so a future fetch won't reintroduce it. (5) John
+  card on `index.html` and `llms.txt`: 73 to 74 icons. John's `book.json` `iconGap` text updated.
+- **The mosaic, looked at properly.** Nobody had read its inscription before. The Commons file
+  (1462x2023) is too soft to read it; a sharper photograph on christianiconography.info
+  (`https://www.christianiconography.info/sicily/oilJarMonreale.html`, used as evidence only, not
+  shipped) shows roughly MARIA MAGDALENA VNXIT PEDES X[PISTI] [ET] LACRIMIS / LAVA[T] [ET]
+  CAPILLIS / [EX]TERSIT, "Mary Magdalene anointed Christ's feet, washed them with tears, wiped them
+  with her hair". No published transcription was found (searched; Kitzinger's *I mosaici di
+  Monreale* would settle it), so the readings say "so far as the letters can be made out". In both
+  photos the woman holds his foot to her lips and **a lock of loose hair falls from under her white
+  veil to the foot**. Matthew's marker said "her hair is bound up ... nothing in the picture is
+  wiped with it" and Mark's reading/marker said no wiping is shown: both wrong, both corrected, and
+  both now name the inscription's *name* as the Latin West's identification, not the Orthodox
+  Church's. **Only the name is Western.** A first draft of Matthew's reading called reading the
+  anointing women as one a Western habit the Orthodox Church does not share; the advisor caught it.
+  Matthew's own Catena (26:6-13 block) has Chrysostom, Hom. 80: "it may be the same in the three
+  Evangelists, Matthew, Mark, and Luke ... But she in John is a different woman, the wonderful
+  sister of Lazarus", and the hymn of Kassiani on Holy Wednesday gives the Bethany woman tears and
+  hair at his feet. Matthew's reading now says so. Same pass fixed three attributions: John's jar
+  marker had "the other three Evangelists call the vessel alabaster" (Luke's alabaster box is at a
+  different supper), Mark's reading hung the kiss on "John's telling" (the kiss is Luke 7:38/45),
+  and John's "Mary at his feet" marker described the kiss with no note that it is Luke's.
+  Tally by Gospel: feet (Luke, John), hair (Luke, John), kiss (Luke), tears in the inscription
+  (Luke), name Mary (John), objecting disciples (Matthew, Mark, John), head (absent, so not Matthew
+  or Mark). John 12 fits best ("comes nearest", the reading says, not "is"); it quotes John 11:2 for
+  who the woman is and says Mary of Bethany, Luke 7's sinner and the Magdalene are three.
+- **Not done, for the owner.** The file stays in Matthew 26:6-13 and Mark 14:3-9 (moving a shipped
+  icon is the owner's call, same precedent as Matthew 9:1-8); both readings already say the
+  mosaicist follows John. Luke 7:36-50 (`sinfulwoman`, tier c) could also take it: the kiss is
+  visible and the tears are in its inscription, but Luke's objector is Simon the Pharisee, not a
+  crowd of disciples. Owner's call.
+- **Rejected or parked this session.** `Jesus and Nicodemus.jpg`, `Nicodemus seeks Jesus by
+  night.png`: Western prints. `Anointing of Jesus Christ 03-16.jpg` (Dionisy, Ferapontov; categories
+  include Mary of Bethany): Commons has it only at 800x562, too faded to find the woman or tell
+  head from feet; worth a look if a larger photo turns up. The two `The Christs Appearance to the
+  Apostles showing them his wounds PRIZREN 2 IMG 4842-3/4845-3.jpg` (Blago Fund, Bogorodica
+  Ljeviška): 4842 is apostles looking upward (reads like an Ascension fragment, title notwithstanding);
+  4845 is Christ's head and raised hand with a wound in the palm. A lead for John 20:19-23, but
+  fragments of one wall; not wired. No Good Shepherd, walking-on-the-sea, nobleman's son, Nathanael,
+  Lamb-of-God or "feed my sheep" image of any Orthodox origin turned up in the pool.
+- **Still open from (4):** many `image_meta.json` dates are a photograph's timestamp
+  ("2020-11-29 05:53:48"), not the work's date, and print as such in the credit line. Fixing needs
+  per-file judgement, so it was left.
+- **Verified.** `make`: all four `ok`, John tiers a:26 b:2 c:36, 74 icons; Matthew, Mark, Luke
+  tiers unchanged. `quotes.js` for Matthew, Mark and John: each summary identical before and after.
+  5-gram overlap of only the new text against HEAD's `hotspots*.js` in all four books: the first
+  run hit six phrases from Matthew's and Mark's text on this same mosaic ("sits upright at the
+  left", "on a cushioned seat haloed", "press in from the right", "the Latin band at the"), all
+  reworded; what is left is the shared Monreale boilerplate sentence, the file name and a code
+  comment. `overlay.py` on `1700683b5e46`: all 7 markers on their figures (the inscription marker
+  clamps to 9%, as every other top-edge inscription marker does). `grep 'date QS'` in all four
+  built readers: 0. Playwright, served locally: John's `anointing` card opens its drawer with the
+  mosaic, credit line clean after the date fix, 0 console errors.
+
+## Session 2026-11-01c (John 6:16-21 and 10:1-21, Matthew 4:18-22 and Mark 1:16-20 get icons; translator notes and "Catena" removed from the readers)
+
+- **Did.** Owner: "continue and dont stop". A Commons category and free-text search for John's
+  nine remaining "wanted" subjects, outside `pool.json`. Two files wired:
+  - **`walking` (6:16-21), tier c to a:** `Fresco of Christ walking on water in Hagia Sophia
+    Trabzon 4796b.jpg` (Dosseman, CC BY-SA 4.0), key `fee17924a919`. Reading in `hotspots2.js`,
+    9 markers in `hotspots3.js`. `image_meta.json` date set by hand to "c. 1260–1290" (Commons
+    gives the 2006 photo timestamp; the date is from Francesco Bini's own upload title for the
+    same panel, "affreschi del 1260-90 ca.").
+  - **`shepherd` (10:1-21), tier c to b:** `Shep02 bessarabia.jpg` (18th c., PD), key
+    `10ea75a70e43`, `tierB:true` in `overrides.js`. Reading, 6 markers. Artist set to "Unknown"
+    (Commons had "AnonymousUnknown author").
+  - `src/tools/fetch_images.js` had its own copy of the metadata getter without the hidden-div
+    fix made to `src/commons.js` in 2026-11-01b; fixed the same way. The two files were fetched
+    to the scratchpad and encoded by hand rather than through `encode_images.py`, so the tracked
+    `new_fetch.json` is untouched.
+- **Why the Trebizond fresco fits John, and what it also shows.** The panel holds two miracles.
+  Left: Christ on the sea reaching to a small boat; one disciple leans over the bow toward him,
+  but **nobody is in the water**. Checked on Bini's 6720px photo of the same panel (crop: the
+  leaning figure's body is inside the gunwale). Peter's walk is Matthew's alone, and Mark's own
+  `water` was rejected for showing it. Right: Christ standing in a larger boat lifting a hand
+  against a winged, clawed wind figure, and (per the uploader, and consistent with the crop) a
+  haloed figure at the far end with head on hand, Christ asleep: **the stilling of the storm**,
+  which John does not tell. The reading and a marker say so. Blessed Theophylact's "three
+  miracles" in John's crossing (walking, stilling the waves, landing at once) is quoted from the
+  Catena; the reading does not claim the right half is John's. The worn Greek title by Christ's
+  halo was not read with confidence; the marker says so.
+- **Why tier b for the Good Shepherd.** Every Good Shepherd icon found paints the lamb on his
+  shoulders, which is Luke 15:5; John 10 never has the shepherd carry a sheep. Same reasoning as
+  Matthew's and Luke's `lostsheep` (tier b). The reading and the lamb marker say the gesture is
+  Luke's. Chrysostom on 10:11 quoted from the Catena.
+- **For the owner.**
+  - The Trebizond panel would also fill **Mark's `water` (6:45-52)**: Mark has no Peter on the
+    water either. Not wired there (owner's call; a second use of one file across readers has
+    precedent).
+  - The Bessarabian icon paints Luke 15:5 literally, which the two early mosaics on Luke's
+    `lostsheep` do too but less plainly. Not wired into Luke.
+  - Should John 10 use Matthew's and Luke's two early mosaics instead of (or beside) this icon?
+- **Rejected this session.** Good Shepherd: `Shepherd rus.jpg` and `ПАСТЫРЬ ДОБРЫЙ.jpeg` paint
+  the Sacred Heart on Christ's breast (a Latin devotion); `Good shepherd icon.jpg` is lettered in
+  English with an implausible "end XIX c." date; `Shep01.jpg` (Russian, 19th c., border saints)
+  is Orthodox but paints a dove in a glory on Christ's breast, likely Western-print influence,
+  so the plainer Bessarabian panel was preferred. Walking on the sea: the Russian church mural
+  `Роспись южной стены … "Хождение по водам"` is academic-style, badly flaked, and shows Peter
+  sinking; `Jesus walking on water. Daniel of Uranc, 1433` is Armenian. Categories checked and
+  found Western only: `Feed my sheep`, `Nicodemus` / `Nicodemus in art`, `Ecce Agnus Dei`,
+  `Jesus Christ walking on water`, `Jesus Christ as the Good Shepherd (in art)`. Commons has no
+  category for Nathanael's calling, the nobleman's son, or 20:19-23.
+- **Verified.** `make`: all four `ok`; John tiers a:27 b:3 c:34, 76 icons, 535 markers;
+  Matthew, Mark, Luke tiers unchanged. `quotes.js` John: 11 KJV / 67 Fathers / 0 wrong / 0 no
+  source / 3 drifted (was 11/66/0/0/3; the drift count is the old three only — a Father quotation
+  must end a reading or be followed only by KJV, or the tool reads our next sentence as the
+  Father's). `quotes.js` checks KJV only against John's own text, so the Luke 15:5 and Mark 4:38
+  clauses were grepped in those books' `kjv.json`: both verbatim. Advisor pass caught three
+  things, all fixed: the Trebizond reading said John has no stilling of the storm and then quoted
+  Theophylact counting a stilling of the waves in John's night (now attributed to his reading,
+  and no claim that John says the wind ceased); the shepherd reading had his two hands holding
+  the lamb's feet together while the marker (correctly) has one pair in each hand; "That gesture"
+  had been pushed off its antecedent by a moved sentence. Credit line "Dosseman · c. 1260–1290":
+  photographer in `artist` is the existing convention for every CC BY-SA file. `overlay.py` on both keys: every marker
+  on its figure (the Good Shepherd's "Bare feet" clamps from 95% to 92%, on the hem). 5-gram
+  overlap of new text: distinctive overlaps reworded; what is left is generic ("at the far end
+  of"), file-name/label crossings, and the earlier session's picks comment.
+- **Later the same session: Matthew 4:18-22 and Mark 1:16-20 get an icon.** Listing Commons'
+  `Frescos in the Tokalı Kilise` (104 files; the pool had only the Jairus fresco from it) turned up
+  `Tokalı Kilise Calling of apostles. Peter and Andrew on the upper boat in 2004 6958.jpg`
+  (Dosseman, CC BY-SA 4.0, key `f8af6b342c86`): Christ on the shore, hand out over the sea; four
+  haloed fishermen two to a boat. Wired to Matthew `calling` (c to a; 8 markers) and Mark `fishers`
+  (c to a; 7 markers), each with its own reading. Both readings say what the painter changed:
+  Matthew and Mark put only James and John in a ship (Peter and Andrew are "casting a net"), and
+  neither Zebedee nor Mark's hired servants is painted. The names lettered beside the upper boat
+  are too worn to read in this photo, so no figure is named (Dosseman's title says Peter and
+  Andrew are in the upper boat; the faces fit the usual types, but the readings don't rest on it).
+  The left edge of the photo catches part of a neighbouring scene (a haloed figure behind a
+  patterned table); a marker says it is not part of the calling. `image_meta.json` date for this
+  file and for the Tokalı Jairus file set to "10th century" (both had the 2004 photo timestamp).
+  Front page and `llms.txt`: Matthew 113 icons, Mark 81. Verified: `make` all four `ok` (Matthew
+  a:52 b:5 c:63, Mark a:36 b:4 c:64, Luke and John unchanged); `quotes.js` Matthew 45/0/0/0/0 and
+  Mark 56/1/0/0/0 (the 1 is the new Theophylact quotation; KJV counts unchanged); overlays on both
+  books: every marker on its figure; 5-gram overlap reworded both against HEAD and between the
+  new Matthew and Mark texts. **For the owner:** Luke 5:1-11 (the draught, Luke's own calling) is
+  a different scene and was not given this file. The rest of the Tokalı series (Cana 6960, the
+  twelve baskets 6971/6973, Entry 6962/6963, Last Supper 6935/6965, Baptism 6966) was not
+  compared against what each reader already shows; a future session could.
+- **Later still: "Catena" taken out of every reader.** The standing rule (memory and Status:
+  never name Aquinas or the *Catena Aurea* in the UI) was being broken in 17 places in Luke's and
+  Mark's readings and markers ("St Augustine, in the Catena, …", "in Mark's own Catena here").
+  Each reworded to drop the name only ("St Augustine notices", "commenting on this verse", "the
+  Fathers"); `quotes.js` Luke 50/0/0/0/0 and Mark 56/1/0/0/0 identical before and after. Three
+  more came through the patristic quotations themselves: the 1842 translators' `[ed. note: …]`
+  footnotes longer than `fathers.js`'s 300-character bracket limit were being shown as the
+  Father's own words, some naming the Catena or St Thomas, and two whole "comments" were notes
+  (Matthew 16:13-20 under Cyril, "This passage is quoted in the Catena from Cyril…"; Mark 2:1-12
+  under Cyril, "Nicolai observes on this passage…"). `src/fathers.js` now strips `[ed. note …]` of
+  any length, skips a comment whose author head contains "ed. note", and skips any comment whose
+  cleaned text still contains Catena/Aquinas/"S. Thomas"/"ed. note". Built readers: 0 hits for
+  those strings in all four (were 1 each in Matthew, Mark, Luke). Quotation totals unchanged
+  (360/300/455/192); 15 passages' selections changed — 9 Matthew, 6 Mark, 0 Luke, 0 John — mostly
+  the same quotation minus its footnote, and where a long note had been inflating a comment's
+  score a different comment now ranks: Matthew `beatitudes` (Jerome's Tabor note out, Ambrose
+  in), `confession` (Cyril note out, Jerome in), `olivet` (Jerome out, Hilary in), `boy17` /
+  `passion17` (another Chrysostom passage); Mark `paralytic` (Cyril note out, Bede in), and
+  `fivethousand`, `water`, `dumbspirit` (a Bede note out, another Bede passage in). Two
+  attribution slips in the new Mark calling reading also fixed after an advisor pass: Matthew 4:22
+  has them leave Zebedee too, so Mark's reading now credits Mark alone only with the hired
+  servants; and "from the same nave" (unverified, Tokalı has an Old and a New Church) became
+  "the same church". Stale counts in Status/Next corrected: Matthew 63 tier-c passages, 602
+  markers, 100 sets in `hotspots3.js`; Mark 529 markers shipped.
+- **Luke 24:50-53 gets a third icon: Christ blessing the apostles before he is taken up.** A
+  contact sheet of the 43 unviewed files in `Frescos in the Tokalı Kilise` (mostly wide interior
+  shots; nothing else matched any reader's gap list) turned up `Apostles capp.JPG` (PD, uploaded
+  by Shakko from a book, key `6807ee53c107`): Christ with both hands lifted between two bowing
+  ranks of six apostles. **The Greek either side of his head is Luke 24:50-51**, read off the
+  1884px original: left column "…ας τὰς χεῖρας αὐτοῦ εὐλόγησεν αὐτούς. καὶ ἐγένετο ἐν τῷ εὐλογεῖν
+  αὐτὸν αὐτούς", right "διέστη ἀπ' αὐτῶν καὶ ἀνεφέρετο εἰς τὸν οὐρανόν" (worn; the reading hedges
+  with "as far as they can be made out"). Added as the third icon on Luke `ascension`
+  (24:50-53, already tier a), with a reading (indirect-speech Theophylact on 24:50, per Luke's
+  style) and 8 markers. Commons dates it "c. XII c."; the scene is the "Benediction of the
+  Apostles" in the New Church's nave vault, c. 960 (Wikipedia's *Churches of Göreme*, a
+  secondary source), and the lapis ground matches the Calling fresco, so the label says 10th c.
+  The reading names no apostle; the marker on the lowest right-hand head says it is painted as
+  Peter usually is, and no name can be read. It also notes twelve are painted where Luke has "the
+  eleven gathered together, and them that were with them" (24:33). Front page and `llms.txt`:
+  Luke 90 icons. Verified: `make` all four `ok`, Luke tiers unchanged (a:42 b:6 c:104, 48
+  passages, 90 icons); `quotes.js` Luke 50/0/0/0/0 unchanged; overlay: two markers moved onto the
+  raised hand and the right-hand column, then all eight on target; 5-gram overlaps reworded.
+  Also checked and not used: the Dečani `Christ casts the merchants out of the Temple.jpg` (every
+  reader's temple-cleansing passage is already tier a); the Tokalı `TOKALIKILISE 055` (Peter among
+  the apostles with an inscription naming deacons, apparently Acts 6, not a Gospel scene).
+- **Correction after an advisor pass: the blessing fresco's location is not confirmed.** Its only
+  ties to Tokalı are the Commons category and a secondary source placing a "Benediction of the
+  Apostles" in the New Church; the uploader dates it "c. XII c.", and Dosseman's in-situ frame
+  6942 (a column of bowing haloed figures) does not match it. The Luke reading now says Commons
+  files it under Tokalı and that the date is unsettled; the label is "Christ Blesses the Apostles
+  — Cappadocia, Byzantine"; `image_meta.json` date "10th–12th century". The HANDOFF lines above
+  that say "c. 960" and "label says 10th c." are superseded by this bullet. Also: Luke's reading
+  "come at him" became "press toward him"; Mark's calling reading no longer credits Mark with the
+  fishermen turning (it ties the answer to Mark's own *straightway*). A pairwise 5-gram check of
+  all six of today's new texts against each other: clean. `llms.txt` and `index.html` name
+  neither the Catena nor Aquinas.
+- **Owner questions from this session, all in one place:**
+  1. Trebizond walking-on-water fresco for Mark's `water` (6:45-52) too? Mark has no Peter on the
+     water either.
+  2. John 10: keep the Bessarabian icon alone, or use (or add) Matthew's and Luke's two early
+     Good Shepherd mosaics?
+  3. The Bessarabian icon literally paints Luke 15:5; add it to Luke's `lostsheep`?
+  4. Luke 5:1-11 deliberately not given the Tokalı calling (a different scene); agree?
+  5. Should the blessing fresco lead Luke's `ascension`? It paints Luke's own words; the two
+     icons ahead of it paint what Acts 1 adds. Not reordered.
+  6. The `fathers.js` translator-note filter changed the quotation shown in 15 passages (9
+     Matthew, 6 Mark), listed above.
+  7. Still open from 2026-11-01b: Luke 7:36-50 and the Monreale anointing; whether it stays in
+     Matthew 26 and Mark 14; the Prizren lead for John 20:19-23; photo-timestamp dates in
+     `image_meta.json` (three fixed this session: Trebizond, the Tokalı calling, the Tokalı Jairus).
+
+## Session 2026-11-01d (Luke 23:6-12 and 23:26-32 get icons; seven "enumerated" programmes were never in the pool)
+
+- **Did.** Owner: "continue and dont stop". **The pool was missing whole programmes.** Counting
+  `pool.json` by category: **zero files** from Dečani, Sopoćani, Mileševa, Studenica, Nerezi,
+  the Protaton or Mystras, and from Chora only the Infancy mosaics. `harvest_pool.js`'s `CYCLES`
+  names for those (`Frescoes in the Visoki Dečani monastery`, `Frescoes in Sopoćani monastery`,
+  …) do not exist on Commons, so `catMembers` silently returned nothing. (Mystras was simply never in `CYCLES`.) Every HANDOFF line that
+  lists them as already enumerated (Mark item 2 above, Luke item 3) was wrong for those six.
+  Real names, found by `catSearch`: `Frescos in Visoki Dečani`, `Visoki Dečani (interior)`,
+  `Frescos in Mileševa Monastery`, `Frescos in the Studenica Monastery`, `Sopocani Monastery`,
+  `Paintings in St. Panteleimon's Church, Nerezi`, `Protaton Church (Mount Athos) - Frescos`,
+  `Frescos in Mystras`, `Life of Christ mosaics (Chora Church)`, plus two never listed at all:
+  `Frescos in St. Michael the Archangel Church (Lesnovo)` and `St. George's Church (Staro
+  Nagoričane)`. A depth-2 harvest of these into the scratchpad (not into `pool.json`) gave 1,084
+  files not already pooled. `harvest_pool.js` itself was not edited.
+- **Viewed so far:** all of Lesnovo's 198 numbered frescoes (contact sheets): saints and a few
+  feasts; nothing for any gap except **one Lesnovo fresco** (Christ and a crawling, near-naked man —
+  first guessed an exorcism; **at full size it is John 21:1-14**, Christ on the shore with fish and bread on the coals, the full net, the boat, and Peter coming to him through the water — John's `tiberias` is already tier a, so it is only a possible gallery addition, owner's call).
+  **That is `File:Frescos from the Michael the Archangel Church of Lesnovo 0129.JPG`** (1500×1000);
+  "033" was only its position on a scratch contact sheet.
+  All 134 Staro Nagoričane files: the Passion cycle of Michael Astrapas and Eutychios, 1317,
+  with Greek titles. **Not yet viewed:** Nerezi (166, numbered), Studenica (85), Mystras (~150),
+  Dečani's ~100 (mostly exteriors and royal portraits; `The Marriage at Cana - Decani.jpg` and
+  `Mistra Hodigitria Samaritaine et Cana.JPG` are named but their passages are already tier a),
+  the Protaton (34), Mileševa (25).
+- **Wired, Luke (tiers a:42 b:6 c:104 to a:44 b:6 c:102; 90 to 92 icons; 533 to 549 markers):**
+  - **`herodtrial` (23:6-12):** `03 Нагоричино сц из страст цикла ю с.JPG` (PD, 1920×2560, key
+    `b93ebf4e9b18`). Commons says only "scene from the Passion cycle, south wall"; the fresco's
+    own title, read at full size: Η ΠΑΡΑ ΤΟΥ ΗΡΟΔΟΥ (omicron, as painted) ΚΑΤΑ Χ(ΡΙΣΤΟ)Υ
+    ΕΞΕΤΑΣΙΣ, the examination of Christ by Herod, the same formula as the church's Caiaphas panel
+    (`…051.JPG`, left: Η ΠΑΡΑ ΤΟΥ Κ[ΑΙ]ΑΦΑ ΚΑΤΑ ΧΥ ΕΞΕΤΑΣΙΣ; its right-hand neighbour is titled
+    …ΚΑΤΑ ΧΥ ΚΡΙΣΙΣ, the name too worn to read). Christ's crossed wrists are corded, the cord's end held by a
+    beardless youth in red. The reading does not claim the gorgeous robe (not painted), does not
+    call the young men behind the throne priests, and hedges the round white object at the margin
+    as "perhaps a shield". 8 markers. Theophylact on Christ's silence quoted from the Catena.
+  - **`simoncyrene` (23:26-32):** `03 Нагоричино сц из страст цикла с.jpg` (PD, 2560×1920, key
+    `856cc56d614c`), a tight frame of the north-wall Way to Golgotha; preferred over `…054.JPG`
+    and Tiffany Ziegler's wide wall shot, which both carry the Mocking beside it. No title
+    survives. **Simon walks ahead of Christ**, so the reading does not apply Luke's "that he might
+    bear it after Jesus" to the picture; it quotes St Ambrose's "nor does he precede but follow"
+    and says the painter put him in front instead. Christ faces the man pulling him, not the
+    women, so 23:28 is said to be unpainted. The two haloed mourners are hedged (no legible
+    names; the veiled woman is painted as the Theotokos is); St Romanos's hymn on Mary at the
+    Cross is cited (paraphrase, imagery confirmed by a web search, not
+    checked against Schork's translation) for the tradition of her following. 8 markers; the right-edge one clamps to 92%.
+  - Both: `overrides.js` entries (type, keyVerse 9 and 28, KJV stories), labels, picks comments,
+    `image_meta.json` artist normalised to "Michael Astrapas and Eutychios" (Commons: "Painters
+    Michael and Ephtichius"), date 1317. Front page and `llms.txt`: Luke 92 icons. Images
+    encoded by a scratch copy of `encode_images.py` (same md5 key and 660px WebP), so
+    `new_fetch.json` is untouched.
+- **Verified.** `make`: all four `ok`; Luke a:44 b:6 c:102, 50 passages with icons, 92/92
+  readings and markers; other books unchanged. `quotes.js` Luke 51/0/0/0/0 (the one new KJV
+  clause is a marker fragment). It recognises no Luke Father quotations, so the four quoted
+  (Theophylact ×2, Ambrose, Augustine) were string-matched against `catena.json` by hand: all
+  verbatim. `story_check`: neither new story adds vocabulary. `overlay.py`: every marker on its
+  figure. 5-gram overlap against all four books' `hotspots*.js`: reworded until only KJV and the
+  marker label "The young man in red" remained; the two readings no longer share their opening.
+  Playwright, served locally: both cards open with their images and credit lines, 0 console
+  errors.
+- **For the owner.**
+  1. Staro Nagoričane also has tight frames of the Caiaphas examination and the "judgement" beside
+     it (`01`/`02 Нагоричино сц из страст цикла ю с.JPG`; the second paints the garment rent) and `…093.JPG`, captioned with John 19:6 (ΛΑΒΕΤΕ … ΣΤΑΥΡΩΣΑΤΕ). Those
+     passages are already tier a everywhere; extra gallery icons only if wanted.
+  2. Should `harvest_pool.js`'s `CYCLES` be corrected and the pool regenerated? It is cheap, but
+     it changes the tracked `pool.json` (55,368 files) and every later regex pass reads it.
+- **Later the same session: the rest of the harvest viewed, and Mark 1:32-34 gets a tier-b icon.**
+  - **Viewed, nothing for any gap:** Nerezi (160 files: the 1164 Passion and Feast frescoes, all
+    for passages already tier a), Studenica, Mystras, the Protaton, Mileševa and the Dečani
+    files (~310, contact sheets). Only Gospel scenes among them: Dečani `Christ casts the
+    merchants out of the Temple.jpg` and a Christ-and-Samaritan panel, both for passages already
+    tier a everywhere. So these programmes add gallery candidates at most, not new passages.
+  - **Chora's ministry cycle is on Commons under `Miracles of Jesus mosaics (Chora Church)`** (24
+    files, never pooled); the Dumbarton Oaks `MSBZ004-ICFA-KC-BIA` series stops at the Life of
+    Mary. Its miracles (paralytic, withered hand, Peter's mother-in-law, Cana, loaves, issue of
+    blood, the dumb and blind man) fill no gap: each passage already has an icon.
+  - **Mark `evening` (1:32-34), tier c to b:** `Christ healing the afflicted.jpg` (José Luiz, CC
+    BY-SA 3.0, key `c0840cb175c6`), the Chora inner-narthex lunette of Christ healing a
+    multitude, c. 1315–1321 (date set by hand; Commons gives the 2011 photo date). Its title,
+    as far as it reads: Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ … ΠΟΙΚΙΛ… … ΝΟΣΗΜ…, "divers diseases", close to the Gospels' summaries (the noun is νόσημα, not Mark's
+    νόσοις; Matthew 4:24 and Luke 4:40 share Mark's wording). Tier b on the same reasoning as Matthew's 4:23-25 (Dionysiou's fresco of the same
+    subject): the Church's general image of his many healings, with no sunset and no devils. The
+    reading says so, notes the painted house and doorway against 1:33 without claiming them as
+    Mark's, and quotes Theophylact on why they waited for evening. 8 markers, all on target.
+    `overrides.js`: `tierB`, story; header counts now "five passages" tier b and 41 stories.
+    Front page and `llms.txt`: Mark 82 icons. `make`: Mark a:36 b:5 c:63. `quotes.js` Mark
+    57/1/0/0/0. `story_check` adds no vocabulary. Playwright: card opens, credit clean, 0 errors.
+    **The photograph is dim** (lit from below, with dark marble filling the lower third); a
+    better photo of the same lunette would be worth swapping in if one turns up.
+  - Same mosaic could also serve Mark 3:7-12 (`multitudes`) or Luke 4:40-41 / 6:17-19; not wired
+    there (one image, one passage per reader).
+  - **Advisor fixes on `evening`:** a second woman by the house also carries a child (the first
+    draft said only one child was carried; corrected after a full-size crop); `assign.js`
+    `evening` now `tier:'b'` with a subject, matching Matthew's `multitudes`. Theophylact quote
+    string-matched against Mark's `catena.json`: verbatim. No better-lit photograph of the
+    lunette was found (searched "Chora healing multitude", "Kariye healing sick").
+  - **Dečani's parable cycle is not on Commons.** The Blago Fund naming pattern ("Scene, PLACE N
+    code") gives 0 hits for `intitle:/DECANI [0-9]/` (also Studenica, Žiča, Sopoćani, Mileševa);
+    every Peć, Prizren and Gračanica file it finds is already in `pool.json`. With Nerezi,
+    Lesnovo, Staro Nagoričane, Mystras, the Protaton and Chora's miracles now viewed, the
+    remaining parable gaps (prodigal, rich man and Lazarus, husbandmen, talents, Zacchaeus…) have
+    no Commons source in any programme this project knows of. A future search would need a
+    source outside Commons, which the licensing rules make hard.
+- **Next.** Owner questions above. Nothing is committed (owner did not ask).
+
+## Session 2026-11-01e (Luke 7:11-17 and the widow's mite in Mark and Luke get icons; title-only keyword passes had missed them)
+
+- **Did.** Owner: "continue and dont stop". **The finding: three "dead end" subjects were in
+  `pool.json` all along, under category names their file titles never repeat.** Every earlier
+  keyword pass matched file *titles*; the category `Widow's Mite mosaic in Sant'Apollinare Nuovo
+  (Ravenna)` holds Sailko's `…storie cristologiche, epoca di teodorico 10,1.jpg`, and
+  `Resurrection of the widow's son at Nain` holds two Monreale photographs titled "Nain widow's
+  son is resur(r)ected by Christ". A sweep of every gap's `assign.js` `kw` against **category
+  names** — now `src/tools/category_sweep.js`, with a README line — turned them up. It also found `Healing of the possessed boy` (19 files: Western art
+  plus the Dionysiou dumb demoniac already wired — no use) and `Bosom of Abraham - Gračanica
+  Monastery` (Last Judgment details, not the parable; not wired, see owner questions). Everything
+  else the sweep matched was Western or already settled.
+- **Wired (all three encoded by a scratch copy of `encode_images.py`; `new_fetch.json` untouched;
+  dates set by hand since Commons gives photo timestamps):**
+  - **Mark `widowmite` (12:41-44) and Luke `mites` (21:1-4), tier c to a, two icons each:**
+    1. `Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 10,1.jpg`
+       (Sailko, CC BY-SA 3.0, 984×568, key `79323defbf60`, date c. 500–526). The tightest and
+       highest-resolution photograph of the panel (the 2760px wall shot holds it at fewer pixels).
+       Widow at a four-legged chest with a dark opening in its lid (no coins visible — the
+       readings say so), beardless Christ in purple, one disciple in white. Christ **stands**
+       where Mark says he *sat*; no rich men are painted; both readings say so. Mark quotes
+       Theophylact on the treasury custom (for priests, poor and widows) and reports Bede on the
+       word *gazophylacium*; Luke quotes Bede's "chest with an opening at the top placed near the
+       altar", which the mosaic's chest matches.
+    2. `Lesson of the widow's mite--Healing of two blind men 04-15.jpg` (Dionisy, Ferapontov,
+       1502, PD, 800×675 = the Commons original, key `35d1233814e1`). Left half: veiled widow,
+       footed gold bowl heaped with coins on a draped table before a curtained building, Christ
+       pointing. **Right half is the healing of two blind men** — one marker says so and ties it
+       to neither Bartimaeus nor Luke's blind man. Mark quotes Bede ("God does not weigh the
+       property but the conscience…" — the Catena line has an empty attribution continuing
+       Bede's); Luke quotes Cyril of Alexandria on her two oboli.
+  - **Luke `nain` (7:11-17), tier c to a:** `Nain widow's son is resurrected by Christ.jpg`
+    (Sibeaster, PD, 1021×1417, key `58dd7e8fc997`, date c. 1180–1190; looks like a book scan,
+    same uploader and licence as the Monreale Jairus already in Mark). Its own Latin: IHS
+    FILIV[M] VIDVE RESVSC… / PORTA CIVITATIS NAY… (both lines cut by the photograph). Christ grips
+    the youth's wrist (Luke has him touch the *bier*; the reading says the mosaic puts the touch
+    on the man); the woman in white nearest is "presumably the mother" (no name written); the
+    long pole by the bearded men is hedged "staff or taper". Cyril of Alexandria quoted on the
+    touch and the life-giving flesh of the Word. The other Monreale photo (`…resurected…`, 1632×1224)
+    is dim and oblique; not used.
+  - `overrides.js` stories for all three passages (Mark header now 42 stories / 62 without);
+    labels; picks comments; `index.html` and `llms.txt`: Mark 84 icons, Luke 95.
+  - `book.json` `iconGap` prose: Mark's now says three dead ends (not five) and names the two
+    found later; Luke's no longer calls Christ-at-twelve an open owner question (settled 2026-09-25e).
+  - Ferapontov Gotcha above annotated as settled.
+  - **Rejected, recorded so nobody re-finds it and wires it wrongly:** the Commons category
+    `Healing of the Blind Man at Jericho mosaic in Sant'Apollinare Nuovo (Ravenna)` is named in
+    the singular, but the panel (e.g. `Sant Apollinare Nuovo - Healing of the blind man of
+    Jericho.jpg`) paints **two** blind men — Matthew 20:30's version. Not for Mark `bartimaeus`
+    or Luke `blindjericho`, which each have one man.
+  - Luke 21:1-4 is read with 20:45 in view: Christ is already speaking "unto his disciples", so
+    the Luke texts say so rather than claiming Luke names no hearer (advisor catch).
+- **Verified.** `make`: all four `ok`; Mark a:37 b:5 c:62, 84 icons, 42 stories; Luke a:46 b:6
+  c:100, 95 icons, 52 stories; Matthew and John unchanged. `quotes.js`: Mark 59/1/0/0/0 (two
+  new KJV flags are lead-in prose around verbatim clauses), Luke 53/0/0/0/0 (two new, same kind).
+  All five Father quotations string-matched against `catena.json` by hand: verbatim.
+  `story_check`: nothing added. `overlay.py`: every marker on target after moving three. 5-gram
+  overlap of the five new readings and 38 markers (15 Mark, 23 Luke) against all four books' `hotspots2/3.js`
+  (KJV 5-grams excluded): reworded until clean. Playwright, served locally: all three cards open,
+  the two-icon galleries show, credit lines clean, 0 console errors.
+- **For the owner.**
+  1. `Воскрешение сына Наинской вдовы (10587712944).jpg`: a contemporary Orthodox fresco by the
+     Eleon icon workshop (Ukraine), Slavonic title, CC BY 2.0, 750×500, **with the workshop's URL
+     watermarked in the corner**. A second Nain icon if a living workshop's watermarked photo is
+     acceptable; not wired.
+  2. `Bosom of Abraham - Gračanica Monastery` (Last Judgment detail): the Church's image of
+     "Abraham's bosom" comes from Luke 16:22, but the fresco is of the Judgment, not the parable.
+     Tier b for Luke 16:19-31 if wanted; not wired.
+  3. Which icon should lead the two widow's-mite galleries? Ravenna leads (single scene); the
+     Ferapontov fresco is later but Russian Orthodox.
+  4. Still open from 2026-11-01d: the earlier owner questions in that block.
+- **Later the same session: Monreale enumerated file by file (advisor's lead), two more Luke gaps.**
+  `catMembers` on every Monreale New Testament subcategory and the Palatine chapel's `Life of
+  Christ mosaics` (118 files), compared against `picks.js`. Monreale's titles are idiosyncratic
+  and two gap scenes hid under them:
+  - **Luke `bowedwoman` (13:10-17), tier c to a:** `Cathedral (Monreale) - Counterfacade Miracle of
+    J.C. mosaic 01.jpg` (PD, uploader "byzantine", 1842×2650, key `a7c4b521ee8f`; credit says
+    "crop from … New Testament mosaics (left wall)"). Inscribed IHS MVLIEREM ANNIS DE/CE(M) ET OCTO
+    CVRVA(M) ERIGIT…; third line probably names the ruler of the synagogue but is not legible —
+    the texts say so. Woman bent double on a short staff, Christ's hand at her head (13:13), ten or
+    more apostles, domed building. St Basil quoted on the head of man made erect toward heaven.
+    `Monreale - Healing of the Infirm Woman p.2.jpg` (crowd) is presumably the other half; not
+    wired, not claimed. A second, dim photo of the same scene exists: `Christ heals the hutchback
+    woman.jpg` (Sibeaster); not used.
+  - **Luke `dropsy` (14:1-6), tier c to a:** `Christ in the pharisee's house (Monreale).jpg` (PD,
+    Sibeaster, 700×984, key `bd8f72a1b1fe` — the file had sat unreferenced in `src/img` since the
+    first build). Its own title: …ANAT YDROPICVM DIE SABATI. Christ takes the swollen man by the
+    hand (14:4); two towers and an arch for the Pharisee's house; no table painted (the texts say
+    so). St Cyril quoted on the man who asked nothing.
+  - Viewed and not used: `Jesus Healing the Blind.jpg` and Monreale's Jericho mosaic paint **two**
+    blind men (Matthew's); `Monreale catedral - Healing of the Crippled and the Blind.jpg`
+    (general healing, already covered); `Monreale - Healing of the Demon-Possessed Man.jpg` is
+    inscribed OBTVLERVNT … HOMINEM MVTVM DEMONIVM HABENTEM — Matthew 9:32's dumb demoniac, already
+    tier a, **not** the Capernaum synagogue demoniac; `Christ forgives the prostitute.jpg` (dim; the
+    Luke 7:36-50 question is still the owner's, see 2026-11-01b). Palatine chapel: nothing for a gap.
+  - Verified as before: `make` all four ok (Luke a:48 b:6 c:98, 97 icons, 54 stories; 16.09 MB);
+    `quotes.js` Luke 53/0/0/0/0; Basil and Cyril string-matched verbatim; `story_check` clean;
+    overlays on target; 5-gram overlap clean; Playwright cards open, 0 console errors.
+    `index.html`/`llms.txt`: Luke 97 icons. The two new WebPs are 200–300 KB (noisy tesserae);
+    six older images are already over 250 KB.
+- **Then Ferapontov and Trebizond, file by file (advisor's next leads; nothing wired).**
+  `catMembers` to depth 2 on `Frescos in Ferapontov Monastery`, `Museum of Dionisy's Frescos` and
+  `Frescos in Hagia Sophia, Trabzon` (468 files; 60 Ferapontov, 7 already used).
+  - `Barren fig tree.jpg` (Dionisy, PD): Commons original is **147×300** — unusable for Luke
+    13:6-9 unless a larger photo turns up.
+  - `Fresque de Dionisius à Ferapontov La parabole des invités qui se dérobent.jpg` (5184px, CC
+    BY-SA 4.0): the **same fresco** as Matthew's `Parable of the Wedding Feast 04-14.jpg` — crowned
+    king, a guest being thrown out at the right (Matthew 22:11-13). Not Luke's great supper.
+  - `Dionisius 003.jpg` (PD, 548×700): Cana above, **the widow's son at Nain below** — a genuinely
+    Orthodox Nain, but the Nain half is ~548×330 and dim. Owner's call whether to add it as a
+    second `nain` icon; not wired. `Marriage at Cana 03-18.jpg` and the 5184px `Les Noces de Cana…`
+    crop Cana only.
+  - `Fresque de Dionisius à Ferapontov , la parabole de l'obole.jpg` (Mortier.Daniel, CC BY-SA
+    4.0, **5184×3888**): a far larger photo of the widow's-mite wall now wired at 800px. Its
+    description calls the right half the healing of the **man born blind**, where dionisy.com's
+    title says two blind men; the readings attribute the identification to "the catalogue title"
+    and do not settle it. Could replace the 800px file (better detail; licence becomes CC BY-SA).
+  - `Christ forgives the prostitute.jpg` (Monreale) is the **woman taken in adultery** (Christ
+    stooping to write), not an anointing — it gives no evidence on the Luke 7:36-50 question.
+  - Trebizond's west-narthex cycle (c. 1260-90): Cana, the feeding, the paralytic, the man born
+    blind, walking on the water with Peter's mother-in-law, Christ teaching in the temple
+    (probably Mid-Pentecost, as with the Kirillo panel — not for Luke 2:42-52 without the owner),
+    Last Judgement. Nothing for any open gap.
+- **Next.** The category-name sweep is the cheap check every future gap search should start with, **but it cannot see scenes under generic programme categories ("(miracles)", "(left wall)") — list those with `catMembers` and view them file by file, which is how `bowedwoman` and `dropsy` were found.**
+  `harvest_pool.js` `CYCLES` is still uncorrected (owner question 2026-11-01d). Nothing is
+  committed (owner did not ask).

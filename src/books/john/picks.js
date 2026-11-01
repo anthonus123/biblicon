@@ -38,6 +38,14 @@ module.exports={
   "feeding": [
     "File:Evlogesis Pente Arton Dionysiou.jpg",
   ],
+  // Wired 2026-11-01. The panel holds two miracles on the water. The left half is John's
+  // night: Christ on the sea, a small boat with two disciples, nobody in the water (Peter's
+  // walk is Matthew's alone). The right half, Christ rebuking the wind in a larger boat and
+  // asleep at its end, is the stilling of the storm, which John does not tell; the reading
+  // and a marker both say so.
+  "walking": [
+    "File:Fresco of Christ walking on water in Hagia Sophia Trabzon 4796b.jpg",
+  ],
   "midfeast": [
     "File:42 Mid-Pentecost Icon from Saint Paraskevi Church in Adam.jpg",
     "File:Prepolovenie (Annunciation Cathedral in Moscow).jpg",
@@ -53,11 +61,25 @@ module.exports={
     "File:Christ Healing the Blind (Tzanes).png",
     "File:008 Sunday of the Blind Man Icon from Saint Paraskevi Church in Langadas.jpg",
   ],
+  // Wired 2026-11-01, tier b (overrides.js). The lamb on the shoulders is Luke 15:5's
+  // gesture, not John 10's; it is shown here as the Good Shepherd type icon.
+  // Matthew's and Luke's readers use the two early mosaics for the lost sheep; this
+  // reader takes its own file rather than a third use of theirs.
+  "shepherd": [
+    "File:Shep02 bessarabia.jpg",
+  ],
   "lazarus": [
     "File:Egersis Lazarou Dionysiou.jpg",
     "File:Lazarus Miracle Icon Sinai 12th century.jpg",
     "File:Cathedral (Monreale) - Right wing transept - Rising of Lazarus.jpg",
     "File:RossanoGospelsFolio001rRaisingLazarus.jpg",
+  ],
+  // Wired 2026-11-01. Matthew's and Mark's readers show the same mosaic for the supper in the
+  // house of Simon the leper, but it paints the woman at the FEET with her hair let down to
+  // them, which is John 12:3 (and Luke 7:38), not the head of Matthew 26:7 / Mark 14:3. Its
+  // Latin band names her MARIA MAGDALENA — the West's conflation; the readings say so.
+  "anointing": [
+    "File:Monreale - Anointing at Bethany.jpg",
   ],
   "entry": [
     "File:Cathedral (Monreale) - Right wing transept - Entry into Jerusalem.jpg",

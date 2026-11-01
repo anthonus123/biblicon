@@ -70,6 +70,17 @@ module.exports={
 
 // ---- chapters 1-2 ----
 
+"File:Christ healing the afflicted.jpg":[
+ ["The title", "Dark letters on the gold, hard to read here: Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ, Christ healing, and further along the words for divers and for diseases. He healed many that were sick of divers diseases.", "32%", "45%"],
+ ["Christ", "In a blue mantle, one hand stretched toward the sick before him. Mark counts many healed that evening and names none of them.", "46%", "33%"],
+ ["The apostles", "Three men stand close behind him. Mark has named four disciples by this evening, Simon, Andrew, James and John; the mosaic paints three and names none.", "48%", "16%"],
+ ["The man on the ground", "Propped on one elbow under a tree, his legs stretched out: one of all that were diseased whom they brought unto him.", "57%", "50%"],
+ ["The child held out", "A woman lifts a small child toward Christ; behind her, by the house, a second woman holds another at her breast.", "44%", "57%"],
+ ["The two seated men", "On the ground, the nearer lifting a hand toward him; whatever ails them, the mosaic does not say.", "56%", "65%"],
+ ["At the door", "Between the two houses one man bends over a stick and another reaches to steady him. All the city was gathered together at the door, Mark writes; the mosaic shows a house and a door, not a whole city.", "55%", "86%"],
+ ["The upper corners", "Figures and the window above belong to the scenes painted on the vault over this lunette, not to it.", "14%", "12%"],
+],
+
 "File:Monreale - Jesus heals Simon's mother in law.jpg":[
  ["The inscription", "IHS LIBERAT SOCRV[M] SIMONIS A MAGNIS FEBRIBVS — Jesus frees Simon's mother-in-law from a great fever. \"Great\" is Luke's word for it. Mark writes only that she lay sick of a fever.", "9%", "50%"],
  ["The two reaching arms", "His arm comes out from the left, hers back from the bed, and the mosaicist has left a band of bare gold between the hands — the instant before. Mark is the only Evangelist who says what closes it: he came and took her by the hand, and lifted her up. Matthew has him touch her hand; Luke has him stand over her and rebuke the fever.", "60%", "52%"],
@@ -384,6 +395,29 @@ module.exports={
  ["Isaiah", "One of four prophet busts below the scene, each holding nothing, his own words written in a column beneath him — the prophet Mark is quoting when Christ calls the temple the house of prayer.", "50%", "80%"],
 ],
 
+// ---- chapter 12 ----
+
+"File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 10,1.jpg":[
+ ["The widow", "A brown mantle drawn up over her head and wrapped about her. A certain poor widow, Mark says; nothing in the mosaic shows the poverty but the plainness of her dress beside Christ’s purple.", "45%", "23%"],
+ ["Her hand", "Laid across a dark opening in the lid. No coin shows under the fingers; Mark counts them: two mites, which make a farthing.", "38%", "41%"],
+ ["The treasury", "Four legs, a panelled front and side: a chest, not a room. Bede notes the word served for the chest as well as the porch where gifts were kept.", "62%", "41%"],
+ ["Christ", "Young, beardless and haloed, in purple. Mark says Jesus sat over against the treasury; the mosaic stands him up.", "58%", "66%"],
+ ["The raised hand", "Two fingers stretched toward the widow, as one does in speaking: Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury.", "31%", "53%"],
+ ["The disciple", "One man in a white mantle, palm lifted. Mark has Christ call unto him his disciples; a single figure stands here for them.", "45%", "82%"],
+ ["The rocks and grass", "Green ground and grey-green rocks. Mark has him teaching in the temple; the mosaicist has set this scene out of doors.", "68%", "11%"],
+],
+
+"File:Lesson of the widow's mite--Healing of two blind men 04-15.jpg":[
+ ["Christ", "Haloed, robed dark red under blue. Mark has him sitting over against the treasury; Dionisy paints him standing.", "55%", "23%"],
+ ["His hand", "Reaching across toward the bowl and the woman at it.", "39%", "30%"],
+ ["The apostles", "Heads crowded at Christ’s back. He called unto him his disciples, Mark says, before he spoke.", "27%", "14%"],
+ ["The bowl", "Gold, on a foot, piled with coins painted as small white discs, many more than two. Hers would be the least of them.", "44%", "36%"],
+ ["The widow", "Veiled in pale green over a long dress, leaning in: she of her want did cast in all that she had, even all her living.", "55%", "45%"],
+ ["The men behind her", "Several heads close behind her. Perhaps the many that were rich; nothing is painted to show it.", "22%", "49%"],
+ ["The curtain", "Hung behind the table: the old sign for an interior, here the temple.", "28%", "33%"],
+ ["Another scene", "Past the widow’s scene the wall turns to a different miracle, catalogued as Christ healing two blind men. These verses do not include it.", "50%", "60%"],
+],
+
 // ---- chapter 13 ----
 
 "File:Second Coming by G.Klontzas (16th c.).jpg":[
@@ -399,7 +433,7 @@ module.exports={
 
 "File:Monreale - Anointing at Bethany.jpg":[
  ["Christ reclining", "He sits upright at the left on a cushioned couch, haloed, his right hand low with the fingers reaching down toward the woman on the floor — Mark sets this as he sat at meat in the house of Simon the leper at Bethany.", "38%", "17%"],
- ["The woman at his feet", "Stretched full length on the floor, the only figure in the mosaic not upright. Mark says she brake the box, and poured it on his head; the mosaicist has followed John's Gospel instead in setting her at Christ's feet, with no wiping of them shown here.", "78%", "29%"],
+ ["The woman at his feet", "Stretched full length on the floor, the only figure in the mosaic not upright. Mark says she brake the box, and poured it on his head; the mosaicist has followed John's Gospel instead in setting her at Christ's feet, with her loosed hair falling to the one she holds.", "78%", "29%"],
  ["The alabaster vessel", "A small white two-handled vase stands on the floor below the couch, where she set it down after breaking it open. Mark and John alone name what was in it — ointment of spikenard very precious, in Mark's words — and give its price; Mark's is more than three hundred pence.", "86%", "11%"],
  ["The murmuring disciples", "Packed at the right with their hands raised in argument. Mark leaves them unnamed — some that had indignation within themselves ... and they murmured against her — where Matthew's account of this same supper calls them his disciples outright.", "40%", "72%"],
  ["The dish on the table", "One dish at the centre of the spread cloth. She hath done what she could: she is come aforehand to anoint my body to the burying — Mark's own word aforehand, before the deed itself is done.", "57%", "42%"],
@@ -794,5 +828,13 @@ module.exports={
  ["The Theotokos", "Haloed, in a dark red mantle, her two hands crossed and raised at her breast, standing between two angels with staffs in hand. Mark's account names no one present but the Lord and the disciples he leaves.", "48%", "50%"],
  ["The apostles", "Crowded to both sides, turning to one another and pointing upward.", "45%", "15%"],
 ],
-
+"File:Tokalı Kilise Calling of apostles. Peter and Andrew on the upper boat in 2004 6958.jpg": [
+ ["Christ", "Haloed, IC XC on either side, he walks the shore in sandals with his right arm out toward the water. Now as he walked by the sea of Galilee, he saw Simon and Andrew his brother.", "40%", "37%"],
+ ["The call", "His open hand is the only gesture he makes; Mark gives the words: Come ye after me, and I will make you to become fishers of men.", "30%", "50%"],
+ ["The older pair", "In the upper boat one man has turned to face Christ with his palm raised, the other is still busy at the stern. And straightway they forsook their nets, and followed him.", "15%", "70%"],
+ ["The worn lettering", "Names were painted beside the upper boat; this photograph does not show enough of them to read.", "14%", "92%"],
+ ["The younger pair", "Down in the second hull a beardless man lifts a hand while he holds his oar, and the dark-bearded man beside him pays a fishing line into the water.", "47%", "70%"],
+ ["What is left out", "There is no third man in either boat. Mark says the sons of Zebedee left their father Zebedee in the ship with the hired servants; the painter shows the four alone.", "65%", "88%"],
+ ["The edge of another panel", "At the far left, cropped by the camera, a haloed figure sits behind a patterned table: part of a separate scene further along the same wall.", "40%", "12%"],
+],
 };

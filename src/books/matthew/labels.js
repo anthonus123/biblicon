@@ -83,6 +83,7 @@ module.exports={
 "File:Healing of the Paralytic 04-17.jpg":"The Healing of the Paralytic — Dionisy, Ferapontov, 1502",
 "File:Matthew the Evangelist - icon.jpeg":"St Matthew the Evangelist — Palekh, Russia, 19th c.",
 "File:Raising of Jairus' daughter 03-19.jpg":"The Daughter of Jairus — Dionisy, Ferapontov, 1502",
+"File:Tokalı Kilise Calling of apostles. Peter and Andrew on the upper boat in 2004 6958.jpg":"The Calling of the Fishermen — Tokalı Kilise, Cappadocia, 10th c.",
 "File:Tokalı Kilise Raising of daughter of Jairus - 2004 6964.jpg":"The Daughter of Jairus — Tokalı Kilise, Cappadocia, 10th c.",
 "File:Mosaic of the exorcism of the Gerasene demoniac from the Basilica of Sant'Apollinare Nuovo.jpg":"The Gerasene Demoniac — Sant'Apollinare Nuovo, Ravenna, 6th c.",
 "File:Synaxis of the Twelve Apostles Dimitar Molerov Rila Monastery 1835.jpg":"The Synaxis of the Twelve Apostles — Dimitar Molerov, Rila, 1835",

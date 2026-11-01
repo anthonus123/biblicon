@@ -22,8 +22,21 @@ module.exports={
   "temptation": [
     "File:Christ's temptation (Monreale).jpg",
   ],
+  // Wired 2026-11-01. Tokalı (Göreme), 10th c. Matthew's `calling` shows the same file.
+  // Neither Zebedee nor Mark's own hired servants are painted; the reading says so.
+  "fishers": [
+    "File:Tokalı Kilise Calling of apostles. Peter and Andrew on the upper boat in 2004 6958.jpg",
+  ],
   "petersmother": [
     "File:Monreale - Jesus heals Simon's mother in law.jpg",
+  ],
+  // Tier b: the Chora's lunette of Christ healing a crowd of the sick, the Church's general image
+  // of his many healings, not a picture of this evening. Its worn title, as far as it reads,
+  // speaks of healing divers diseases (ΠΟΙΚΙΛ… … ΝΟΣΗΜ…), close to the Gospels' summaries (Mark 1:34,
+  // Matthew 4:24 and Luke 4:40 all have ποικίλαις νόσοις; the mosaic's noun is νόσημα). Matthew 4:23-25
+  // takes the Dionysiou fresco of the same subject as tier b on the same reasoning (2026-11-01d).
+  "evening": [
+    "File:Christ healing the afflicted.jpg",
   ],
   "leper": [
     "File:Christ cleans leper man.jpg",
@@ -95,6 +108,15 @@ module.exports={
   "temple": [
     "File:Christ banish tradesmen from Temple (Monreale).jpg",
     "File:Rossano Gospels - Cleansing of the Temple.jpg",
+  ],
+  // The widow at the treasury. The Ravenna panel sat in `pool.json` all along under the category
+  // "Widow's Mite mosaic in Sant'Apollinare Nuovo (Ravenna)"; Sailko's file titles never say
+  // "widow", so every title-keyword pass missed it (2026-11-01e). Christ stands in both, where
+  // Mark has him sit. The Ferapontov wall holds two scenes; its right half is the healing of two
+  // blind men, which is not this passage, and the reading says so.
+  "widowmite": [
+    "File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 10,1.jpg",
+    "File:Lesson of the widow's mite--Healing of two blind men 04-15.jpg",
   ],
   "coming": [
     "File:Second Coming by G.Klontzas (16th c.).jpg",

@@ -33,7 +33,10 @@ async function info(titles){
       iiprop:'url|size|extmetadata',iiurlwidth:'900'});
     for(const pg of (j.query&&j.query.pages)||[]){
       const ii=pg.imageinfo&&pg.imageinfo[0]; if(!ii) continue;
-      const em=ii.extmetadata||{}; const g=k=>em[k]&&String(em[k].value).replace(/<[^>]*>/g,'').trim();
+      const em=ii.extmetadata||{}; const g=k=>em[k]&&String(em[k].value)
+        // Commons hides a Wikidata stamp ("date QS:P,+1150-...") in a display:none div; drop it
+        // with its contents, or the tag strip below leaves it glued to the date in every credit line.
+        .replace(/<div[^>]*display:\s*none[^>]*>[\s\S]*?<\/div>/gi,'').replace(/<[^>]*>/g,'').trim();
       out[pg.title]={thumb:ii.thumburl,url:ii.url,w:ii.width,h:ii.height,
         license:g('LicenseShortName')||'', artist:g('Artist')||'', date:g('DateTimeOriginal')||g('DateTime')||'',
         credit:g('Credit')||'', desc:(g('ImageDescription')||'').slice(0,200),

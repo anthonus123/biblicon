@@ -203,7 +203,7 @@ module.exports={
 
 "File:Miraculous catch of fish - Sant'Apollinare Nuovo - Ravenna 2016.jpg":[
  ["Peter, at the net", "Grey hair and a short beard. Both hands are already in the net — the calling Matthew and Mark both open with the same clause: casting a net into the sea: for they were fishers.", "40%", "33%"],
- ["Andrew, beside him", "Dark-haired and wilder, working the boat at his brother's side. The mosaic gives him a face; Luke's own account of this calling never names him — a silence St Augustine notices in the Catena: he does not mention Andrew by name, who however is thought to have been in that ship, according to the accounts of Matthew and Mark.", "22%", "15%"],
+ ["Andrew, beside him", "Dark-haired and wilder, working the boat at his brother's side. The mosaic gives him a face; Luke's own account of this calling never names him — a silence St Augustine notices: he does not mention Andrew by name, who however is thought to have been in that ship, according to the accounts of Matthew and Mark.", "22%", "15%"],
  ["Christ, on the bank", "He stands on the shore here rather than seated with Peter, as Luke's own text has him through most of this story: he entered into one of the ships, which was Simon's.", "27%", "60%"],
  ["A second man, unnamed", "Standing behind Christ in a plain mantle, without a halo. Neither the fresco nor this reading can say who he is meant to be.", "30%", "88%"],
  ["The net", "A single net over the boat's side. Luke's own catch fills two boats, and the net breaks under it.", "62%", "45%"],
@@ -284,11 +284,22 @@ module.exports={
  ["The servant, sitting up", "Fair-haired on the red coverlet, face turned up, touched by no one in the scene — the same distance Christ's own healing keeps in Luke's own words: a certain centurion’s servant, who was dear unto him, was sick, and ready to die.", "62%", "90%"],
 ],
 
+"File:Nain widow's son is resurrected by Christ.jpg":[
+ ["The inscription", "Two lines of Latin, both cut short at the right of this photograph; the second begins porta civitatis, the gate of the city.", "9%", "55%"],
+ ["The city gate", "Crenellated tower and a high, dark doorway: he came nigh to the gate of the city.", "24%", "24%"],
+ ["The apostles", "Grey heads behind Christ’s shoulder. Many of his disciples went with him, and much people.", "37%", "10%"],
+ ["Christ", "Haloed, robed dark under blue, striding in from the gate, a hand raised over the bier: Young man, I say unto thee, Arise.", "60%", "22%"],
+ ["The grip", "His hand closes round the young man’s wrist. Luke says he touched the bier; here it is the man he takes hold of.", "60%", "46%"],
+ ["The young man", "Sitting up, still bound in white grave-bands: he that was dead sat up, and began to speak.", "62%", "66%"],
+ ["The woman in white", "Both hands held open toward Christ, nearest of all to her son; presumably the widow, though no name is written.", "38%", "47%"],
+ ["The mourners", "Women with cheek on hand, and on the right bearded men by a long pole that may be a candle: much people of the city was with her.", "32%", "70%"],
+],
+
 // ---- chapter 8 ----
 
 "File:Representation of the Sower's parable.JPEG":[
  ["The Romanian title", "PILDA SEMĂNĂTORULUI, lettered across the top, with the number 21 beside it — one panel in a series rather than a single commission.", "9%", "48%"],
- ["Christ as the sower", "Given his own face and halo. Luke's own text leaves him unnamed — A sower went out to sow his seed — but the Catena already reads Christ's own advent into that clause: St John Chrysostom, But Christ fitly denominates His advent, His going forth.", "18%", "50%"],
+ ["Christ as the sower", "Given his own face and halo. Luke's own text leaves him unnamed — A sower went out to sow his seed — but the Fathers already read Christ's own advent into that clause: St John Chrysostom, But Christ fitly denominates His advent, His going forth.", "18%", "50%"],
  ["The throwing arm", "Swung out ahead of him, the hand already open. Luke's disciples ask about the parable without any note of privacy: his disciples asked him, saying, What might this parable be?", "40%", "63%"],
  ["The birds on the path", "Four on a close count, pecking at the fallen seed. Luke's own clause adds one detail Matthew and Mark do not: and it was trodden down — the birds devouring the seed after it is in both of theirs too.", "48%", "16%"],
  ["The bare rock", "Grey stone with almost no soil on it, at the upper right. Where Matthew and Mark both blame no depth of earth, Luke's own verse names a cause neither uses: it withered away, because it lacked moisture.", "20%", "78%"],
@@ -441,6 +452,32 @@ module.exports={
  ["His archway", "Pale stone, a scalloped canopy over the top of it — one of three buildings on this wall, and the only one behind the second man; the healed man stands against the plain green wall instead.", "18%", "82%"],
 ],
 
+// ---- chapter 13 ----
+
+"File:Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg":[
+ ["The title", "Latin naming the miracle and her eighteen bent years; the lowest line probably speaks of the synagogue’s ruler, but cannot be made out here.", "27%", "63%"],
+ ["The woman", "Folded almost double, face to the ground: a spirit of infirmity eighteen years, and was bowed together.", "72%", "84%"],
+ ["Her staff", "A short stick held low; she cannot stand without it.", "76%", "74%"],
+ ["Christ’s hand", "Reaching to her head. He laid his hands on her: and immediately she was made straight.", "63%", "66%"],
+ ["Christ", "Haloed, mantled in blue over gold, turned toward her.", "70%", "51%"],
+ ["The apostles", "Ten or more heads pressed together at the left. Luke names no one with him in the synagogue.", "60%", "21%"],
+ ["The synagogue", "A domed hall and an open doorway: the building where he was teaching on the sabbath.", "24%", "27%"],
+ ["The winged figure", "In the upper corner; it probably belongs to the neighbouring decoration rather than to this scene.", "12%", "10%"],
+],
+
+// ---- chapter 14 ----
+
+"File:Christ in the pharisee's house (Monreale).jpg":[
+ ["The title", "The miracle’s name in Latin, its opening letters lost at the left edge.", "9%", "50%"],
+ ["The house", "Two towers and an arch: the house of one of the chief Pharisees. No table is painted, though he came to eat bread.", "30%", "51%"],
+ ["Christ", "Haloed, in gold and blue, facing the sick man.", "62%", "31%"],
+ ["The joined hands", "He took him, and healed him, and let him go.", "59%", "49%"],
+ ["The swollen body", "Almost naked, a cloth at the hips, the belly distended: a certain man before him which had the dropsy.", "61%", "61%"],
+ ["His stick", "Held in the other hand, reaching to the ground.", "76%", "71%"],
+ ["The watchers", "A crowd in long robes at the man’s back, the nearest bearded and wrapped in white: they watched him, and held their peace.", "48%", "86%"],
+ ["The apostles", "Three heads behind Christ’s shoulder.", "41%", "11%"],
+],
+
 // ---- chapter 15 ----
 
 "File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg":[
@@ -544,12 +581,33 @@ module.exports={
 
 // ---- chapter 21 ----
 
+"File:Ravenna, sant'apollinare nuovo, int., storie cristologiche, epoca di teodorico 10,1.jpg":[
+ ["The woman at the chest", "Mantled in brown from head to foot. A certain poor widow, Luke calls her; the mosaic picks her out only by making her the one who gives.", "45%", "23%"],
+ ["The opening", "A dark slot under her fingers. Bede’s treasury was a chest open on top, beside the altar.", "38%", "41%"],
+ ["The chest", "Panelled and stood on four legs. Luke saw the rich men casting their gifts into it; none of them is here.", "62%", "41%"],
+ ["Christ", "Haloed and beardless, robed in purple. Luke says he looked up, and saw; in the mosaic he faces out toward whoever stands below the wall.", "58%", "66%"],
+ ["Two fingers raised", "His right hand lifted toward her as he speaks: Of a truth I say unto you, that this poor widow hath cast in more than they all.", "31%", "53%"],
+ ["The man in white", "A disciple with an open hand. Luke’s Christ has been speaking unto his disciples since the chapter before; one stands here for them.", "45%", "82%"],
+ ["The ground", "Green grass and two rounded rocks, though the treasury stood in the temple, where Bede puts the chest near the altar.", "68%", "11%"],
+],
+
+"File:Lesson of the widow's mite--Healing of two blind men 04-15.jpg":[
+ ["Christ on the left", "Dark robe, blue mantle, haloed, turned toward the woman at the bowl.", "55%", "23%"],
+ ["The open hand", "Reaching across the table toward her gift.", "39%", "30%"],
+ ["The offerings", "Gold, raised on a foot and full of coins, on a draped table like an altar. Luke’s phrase is the offerings of God.", "44%", "36%"],
+ ["The widow", "A pale green veil over a long red-brown dress, one hand above the bowl: she of her penury hath cast in all the living that she had.", "55%", "45%"],
+ ["Behind her", "Men crowd at her shoulder. If they are Luke’s rich men, the painter has not shown it.", "22%", "49%"],
+ ["Behind Christ", "A few heads close at his back, at the left edge: the disciples he was already addressing.", "27%", "14%"],
+ ["The building", "A pink curtain hung before a building, which puts the scene indoors, at the temple.", "16%", "35%"],
+ ["The other miracle", "Beyond the widow, Christ again, before two short-tunicked men: a separate miracle, two blind men healed, and not in Luke’s verses here.", "50%", "60%"],
+],
+
 "File:Second Coming by G.Klontzas (16th c.).jpg":[
  ["Christ in the mandorla", "Luke's own noun for the moment is singular where the other two are not: and then shall they see the Son of man coming in a cloud with power and great glory — one cloud, not Matthew's clouds of heaven nor Mark's own plural.", "10%", "48%"],
  ["The wheeled, many-eyed chariot", "Ezekiel's own vision, set beneath the throne — nothing here comes from Luke's own nine verses.", "24%", "48%"],
  ["A double file of haloed apostles", "Seated to either side. Luke's own discourse in these verses closes on a parable and a promise, not a court of judgment.", "30%", "78%"],
  ["A wide band of flame", "Falls the height of the panel below the throne — the Church's own Last Judgment, a scene these nine verses of Luke's never name.", "55%", "55%"],
- ["Cherub heads filling the corner", "Even here, at the panel's own edge, the gold ground is packed with faces and wings, not left bare — no branch anywhere near them either. Ambrose, reading this passage in the Catena, notices what Luke does to the parable that follows: Matthew speaks of the fig-tree only, Luke of all the trees — a distinction this Last Judgment was never painted to illustrate.", "10%", "10%"],
+ ["Cherub heads filling the corner", "Even here, at the panel's own edge, the gold ground is packed with faces and wings, not left bare — no branch anywhere near them either. Ambrose, reading this passage, notices what Luke does to the parable that follows: Matthew speaks of the fig-tree only, Luke of all the trees — a distinction this Last Judgment was never painted to illustrate.", "10%", "10%"],
  ["The dead rising from open ground", "Along the very bottom edge — bare earth and open graves, not water. Luke's own list of signs, three registers above this ground, names something this register does not touch: the sea and the waves roaring.", "90%", "30%"],
 ],
 
@@ -671,7 +729,7 @@ module.exports={
  ["The enthroned judge", "A tall, domed cap on his head; he is the one of the pair who sits, nothing of his own face surviving in the worn green underpaint below it; a cushion of red lies under his feet. Luke names him nowhere in these nine verses; Christ before Caiaphas is a cataloguer's own title, not a word legible on this wall.", "53%", "26%"],
  ["Arms going two ways", "One hand from each side reaches to meet in the gap between the two groups — close to a pair of clauses Mark repeats almost word for word, that the witnesses could not be made to agree, testimony belonging to Matthew's and Mark's night session, not to Luke's, whose own council calls no witness beyond Christ's own answer.", "43%", "52%"],
  ["The prisoner and his guard", "He advances with a halo over him and his head bowed a little; a soldier beside him wears a scaled collar and carries a hilt at his side. In this passage, Luke's own word for the men who hold him goes no further than the men that held Jesus.", "47%", "69%"],
- ["The scene below", "Sliced away at the very foot of the photograph, the top edge of the denial, painted lower on this same wall. Mark's reader already reads the stacking as trial above, denial below — Matthew and Mark both tell the trial before the denial closes; Luke tells the denial first and the mocking after, an order of telling, as Augustine says in the Catena on this same passage.", "92%", "13%"],
+ ["The scene below", "Sliced away at the very foot of the photograph, the top edge of the denial, painted lower on this same wall. Mark's reader already reads the stacking as trial above, denial below — Matthew and Mark both tell the trial before the denial closes; Luke tells the denial first and the mocking after, an order of telling, as Augustine says on this same passage.", "92%", "13%"],
  ["No blindfold here", "No blindfold appears anywhere on this wall, though Luke opens his own passage with it: And when they had blindfolded him, they struck him on the face. Both walls in this reader paint the scene Matthew and Mark set beside it instead.", "35%", "70%"],
 ],
 
@@ -693,6 +751,28 @@ module.exports={
  ["Between the columns", "Christ's hand stops at the doorway's plain jamb; Pilate's reaches only to the twisted column on his own side of the dark recess beyond it — the two never quite match. Where John's own account explains the gap between them — lest they should be defiled — Luke gives no reason for it at all.", "48%", "55%"],
  ["Pilate", "Enthroned beyond the columns, PYLAT… lettered over his head, one hand reaching to the twisted column on his own side of the doorway. Thou sayest it is the last word Luke gives Christ to say to him here; Luke's own Pilate asks him no second question in this passage.", "42%", "71%"],
  ["The soldier", "In fish-scale mail behind the throne, a bared blade held upright at his own shoulder and a spear braced in his other hand — the only armed man on the whole wall. Luke's own five verses here name no soldier at all; his next soldier, in the passage just after this, is Herod's own men of war.", "38%", "87%"],
+],
+
+"File:03 Нагоричино сц из страст цикла ю с.JPG":[
+ ["The title", "Η ΠΑΡΑ ΤΟΥ ΗΡΟΔΟΥ ΚΑΤΑ Χ(ΡΙΣΤΟ)Υ ΕΞΕΤΑΣΙΣ, the examination of Christ by Herod. Luke tells it alone: he sent him to Herod, who himself also was at Jerusalem at that time.", "16%", "40%"],
+ ["Christ", "Under IC XC, haloed, his face toward the throne and his mouth shut. Then he questioned with him in many words; but he answered him nothing.", "38%", "22%"],
+ ["The bound wrists", "Crossed low before his body, a white cord wound about them; its loose end runs across to the young man beside him.", "58%", "31%"],
+ ["The young man in red", "Beardless, holding the cord's end, his free hand flat on his breast, looking toward Herod. Luke names no one who led Christ across from Pilate, and neither does the fresco.", "42%", "45%"],
+ ["The grey beard", "Half hidden behind the young man's shoulder, the only old face the painters gave this room. The chief priests and scribes stood and vehemently accused him, Luke says; the painter gives them no more than this, if it is theirs at all.", "33%", "37%"],
+ ["Herod", "Crowned with pearls, enthroned in gold, his right hand held out open toward the prisoner. He hoped to have seen some miracle done by him.", "37%", "72%"],
+ ["Behind the throne", "Three more men stand close, and something round and white, perhaps a shield, shows at the margin: Herod with his men of war, it may be, before they set him at nought.", "33%", "88%"],
+ ["His own clothes", "Mantle and tunic are his usual ones. The gorgeous robe of Luke's eleventh verse belongs to a later moment than this.", "75%", "18%"],
+],
+
+"File:03 Нагоричино сц из страст цикла с.jpg":[
+ ["Christ", "Gold-haloed, his mantle a deep blue, his face set toward the man pulling him on and not back toward the women. Luke has Jesus turning unto them; that turn is not painted.", "44%", "41%"],
+ ["The man in red", "Short tunic, bare legs, his grip on Christ's wrists, his head turned back over his shoulder. And as they led him away. Soldier or executioner, he is given no sign of which.", "53%", "56%"],
+ ["Simon", "Grey-headed and ochre-clad, bent forward under the beam with both hands on it, coming out of the country. Luke has him bear it after Jesus; here he walks ahead.", "50%", "79%"],
+ ["The cross", "Two long timbers crossing high over the procession, black sky behind them — the wood Blessed Theophylact says others refused to carry, \"because the wood was counted an abomination.\"", "24%", "55%"],
+ ["The two mourners", "Haloed, apart behind the rocks: a veiled woman, dark cloth drawn over her head, both hands at her chin, the way the Theotokos is painted grieving, and a younger man beside her. Neither has a name still legible.", "24%", "25%"],
+ ["The crowd behind", "Helmets and upright spears, and in front two bearded elders, one in red reaching an open hand after Christ. There followed him a great company of people.", "50%", "23%"],
+ ["The left edge", "A strip of the neighbouring panel, the mocking of Christ, with its trumpeter; it is not part of this scene.", "40%", "6%"],
+ ["The right edge", "Armour and a helmet from the next scene along the wall.", "65%", "96%"],
 ],
 
 "File:Stavrosis Dionysiou.jpg":[
@@ -829,5 +909,14 @@ module.exports={
  ["The books", "Several carry a book or a scroll, held close against the chest. The passage just after this one has Christ opening their understanding instead: then opened he their understanding, that they might understand the scriptures.", "45%", "16%"],
  ["The footrest", "A red cushion raised on a stepped footstool beneath his feet, marking him enthroned rather than merely standing in a room. Luke's own scene names no such furniture: only that he stood in the midst of them.", "82%", "46%"],
 ],
-
+"File:Apostles capp.JPG": [
+ ["Christ's lifted hands", "Both arms are raised to shoulder height, palms open to the bowing men at left and right. And he lifted up his hands, and blessed them.", "35%", "68%"],
+ ["The left inscription", "Greek in white letters beside his head. So far as it can be read here it gives the first half of Luke's sentence, his blessing them and the words And it came to pass, while he blessed them.", "25%", "36%"],
+ ["The right inscription", "The column on the other side carries on the same verse: he was parted from them, and carried up into heaven.", "22%", "62%"],
+ ["The lost plaster", "Above his halo the wall has broken away, so whatever the painter set over this scene is gone.", "9%", "48%"],
+ ["The bowing apostles", "Six on each side lean toward him one above another, hands held out. Luke's next verse: And they worshipped him, and returned to Jerusalem with great joy.", "40%", "14%"],
+ ["The lowest apostle on the right", "The grey-haired, short-bearded head nearest the ground on the right is painted the way Peter is usually painted, though no name can be read beside him.", "57%", "79%"],
+ ["The trees", "Two small leafy trees stand either side of Christ and two tall trunks rise behind them. Luke places the scene only by name: he led them out as far as to Bethany.", "65%", "28%"],
+ ["His feet", "Sandalled, planted on the green ground; in this picture he has not yet left it.", "92%", "50%"],
+],
 };

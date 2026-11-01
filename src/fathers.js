@@ -74,7 +74,10 @@ function identify(attr){
 
 function clean(t){
   return t
-    .replace(/\s*\[[^\]]{0,300}\]/g,'')   // editorial notes and inserted scripture refs
+    // The 1842 translators' notes ("[ed. note: ...]") run to any length and are not the Father's
+    // words; several also name the Catena or St Thomas, which the reader must never show.
+    .replace(/\s*\[ed\. note[^\]]*\]/gi,'')
+    .replace(/\s*\[[^\]]{0,300}\]/g,'')   // other editorial notes and inserted scripture refs
     .replace(/\s{2,}/g,' ')
     .replace(/`/g,'’')
     .replace(/ '/g,' ‘').replace(/([a-z.,;!?])'/g,'$1’')
@@ -95,8 +98,12 @@ function forPericope(ch,vS,vE,want=3){
     for(const b of chapterBlocks(ch)){
       if(b.end<vS-pad||b.start>vE+pad) continue;
       for(const cm of b.comments){
+        // a comment headed "[ed. note" is the translator's, whatever author token precedes it
+        if(/ed\. note/i.test(cm.attr||'')) continue;
         const id=identify(cm.attr); if(!id) continue;
         const text=clean(cm.text);
+        // an unclosed or stray note can still leave the compiler's name behind; never ship it
+        if(/Catena|Aquinas|S\. Thomas|ed\. note/i.test(text)) continue;
         if(text.length<minLen||text.length>1500) continue;
         if(strict && /^(Or|Otherwise|Or else)\b/.test(text)) continue;
         let score=id.rank*10 + Math.min(text.length,700)/100;

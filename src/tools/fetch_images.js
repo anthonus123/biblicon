@@ -15,7 +15,9 @@ async function grab(titles,width){
       iiprop:'url|size|extmetadata',iiurlwidth:String(width)});
     for(const pg of (j.query&&j.query.pages)||[]){
       const ii=pg.imageinfo&&pg.imageinfo[0]; if(!ii) continue;
-      const em=ii.extmetadata||{}; const g=k=>em[k]&&String(em[k].value).replace(/<[^>]*>/g,'').trim();
+      const em=ii.extmetadata||{}; const g=k=>em[k]&&String(em[k].value)
+        // drop Commons' hidden Wikidata date stamp with its div, as commons.js does
+        .replace(/<div[^>]*display:\s*none[^>]*>[\s\S]*?<\/div>/gi,'').replace(/<[^>]*>/g,'').trim();
       meta[pg.title]={thumb:ii.thumburl,url:ii.url,w:ii.width,h:ii.height,
         license:g('LicenseShortName')||'',artist:g('Artist')||'',
         date:g('DateTimeOriginal')||g('DateTime')||'',credit:g('Credit')||'',

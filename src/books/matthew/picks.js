@@ -60,6 +60,12 @@ module.exports={
     "File:Christ's temptation (Monreale).jpg",
     "File:Cathedral (Monreale) - Right wing transept - 2nd Temptation of Christ.jpg",
   ],
+  // Wired 2026-11-01. Tokalı (Göreme), 10th c.: Christ on the shore, four haloed fishermen in
+  // two boats. The painter puts Peter and Andrew afloat too and leaves Zebedee out; the
+  // reading says so. Mark's `fishers` shows the same file.
+  "calling": [
+    "File:Tokalı Kilise Calling of apostles. Peter and Andrew on the upper boat in 2004 6958.jpg",
+  ],
   "multitudes": "File:Iomenos Asthenoun tas apo Poikilon noson.jpg",
   "beatitudes": "File:IkonaZapovediBlazhenGIM.jpg",
   "leper8": "File:Christ cleans leper man.jpg",

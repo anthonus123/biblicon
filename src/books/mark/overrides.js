@@ -1,11 +1,11 @@
 // Passage types, key verses and type-icon declarations for the Gospel of Mark. `keyVerse` pulls
-// the KJV text automatically. Tier is declared, not counted: `tierB` marks the four passages
+// the KJV text automatically. Tier is declared, not counted: `tierB` marks the five passages
 // whose icon is the one the Church attaches to them without depicting their verses.
 //
 // `story` retells the passage's own verses — it adds nothing the text does not say, keeps KJV
 // spelling and curly apostrophes, and folds KJV clauses in without quotation marks, the same
-// convention Matthew's, Luke's and John's own `story` fields use. Written only for the 38
-// passages that carry an icon (`make check`'s "with an icon" count) — the other 66 have no card
+// convention Matthew's, Luke's and John's own `story` fields use. Written only for the 42
+// passages that carry an icon (`make check`'s "with an icon" count) — the other 62 have no card
 // and no opener, so `app.js` never reaches a story field for them. Check every batch with
 // `BOOK=mark node src/tools/story_check.js` before commit, then read every "so", "that" or
 // "because" the story adds and every quoted speech whose pronouns changed by eye against the
@@ -44,7 +44,10 @@ module.exports={
  capernaum:{type:'Miracle',keyVerse:27},
  petersmother:{type:'Miracle',keyVerse:31,
   story:"Forthwith, when they were come out of the synagogue, they entered into the house of Simon and Andrew, with James and John. Simon’s wife’s mother lay sick of a fever, and anon they tell him of her; and he came and took her by the hand, and lifted her up, and immediately the fever left her, and she ministered unto them."},
- evening:{type:'Miracle',keyVerse:34},
+ // The Chora lunette is the Church's general picture of his many healings, not this evening's own
+ // scene: no sunset, no devils cast out. Same reasoning as Matthew's tier-b 4:23-25.
+ evening:{tierB:true,type:'Miracle',keyVerse:34,
+  story:"At even, when the sun did set, they brought unto him all that were diseased, and them that were possessed with devils. And all the city was gathered together at the door. He healed many that were sick of divers diseases, and cast out many devils; and suffered not the devils to speak, because they knew him."},
  preaching:{type:'Event',keyVerse:38},
  leper:{type:'Miracle',keyVerse:41,
   story:"There came a leper to him, beseeching him, and kneeling down to him, and saying unto him, If thou wilt, thou canst make me clean. Jesus, moved with compassion, put forth his hand, and touched him, and saith unto him, I will; be thou clean; and as soon as he had spoken, immediately the leprosy departed from him, and he was cleansed. He straitly charged him, and forthwith sent him away, and saith unto him, See thou say nothing to any man: but go thy way, shew thyself to the priest, and offer for thy cleansing those things which Moses commanded, for a testimony unto them. But he went out, and began to publish it much, and to blaze abroad the matter, insomuch that Jesus could no more openly enter into the city, but was without in desert places: and they came to him from every quarter."},
@@ -143,7 +146,8 @@ module.exports={
  commandment:{type:'Teaching',keyVerse:30},
  davidson:{type:'Teaching',keyVerse:37},
  scribes:{type:'Teaching',keyVerse:38},
- widowmite:{type:'Event',keyVerse:44},
+ widowmite:{type:'Event',keyVerse:44,
+  story:"Jesus sat over against the treasury, and beheld how the people cast money into the treasury: and many that were rich cast in much. There came a certain poor widow, and she threw in two mites, which make a farthing. Jesus called unto him his disciples, and saith unto them, Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury: For all they did cast in of their abundance; but she of her want did cast in all that she had, even all her living."},
 
  // ---- chapter 13 ----
  stones:{type:'Teaching',keyVerse:2},
