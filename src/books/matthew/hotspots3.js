@@ -388,6 +388,14 @@ module.exports={
  ["Both hands stretched out","He gives to left and right and does not hand anything to the crowd himself. The distribution goes through the Twelve, which is how the Fathers read the Church's own ministry out of this miracle.","33%","40%"],
  ["The empty gold ground","There is no multitude in the frame at all. Ravenna keeps only the essential: the one who blesses, the men he gives to, and what there was to give.","14%","20%"]],
 
+"File:Paintings in the Church of the Theotokos Peribleptos of Ohrid 0143.jpg":[
+ ["The Greek inscription", "Upon this rock I will build my church; and the gates of hell shall not prevail against it.", "11%", "62%"],
+ ["Christ", "Haloed, seated low, turned toward the right.", "38%", "48%"],
+ ["His outstretched hand", "Held out to someone beyond the frame.", "45%", "74%"],
+ ["The hand at his breast", "Drawn back to his chest, fingers spread.", "57%", "50%"],
+ ["An arm from the next figure", "Bare and pale, gripping a roof; its owner is cut off.", "62%", "81%"],
+ ["A small building", "Its gable sloping in from the right edge.", "38%", "88%"],
+],
 'File:Monreale - Peter Saved from the Waves.jpg':[
  ["The inscription","The letters read IHS SVP MARE ABVLAT 7 PETRV ALLEVAT, the mast cutting through the middle of ABVLAT and the 7 standing for et: Iesus super mare ambulat et Petrum allevat — Jesus walks upon the sea and lifts Peter up. The mosaic names both halves of the miracle, and the second half is the one Matthew alone records.","6%","45%"],
  ["Christ standing on the sea","He stands on the water as on a floor, in the fourth watch of the night. The disciples had cried out for fear, supposing it was a spirit, and his first words were: Be of good cheer; it is I; be not afraid.","45%","25%"],

@@ -62,6 +62,15 @@ module.exports={
     "File:12 Nativity of Jesus Icon in Assumption of Mary Church in Agios Vasileios.jpg",
     "File:Nativity Icon Panagia Evraidos Church 19 Century.jpg",
   ],
+  // Two Dumbarton Oaks details (CC0) of the Nativity at Panagia tou Arakos, Lagoudera, Cyprus,
+  // painted 1192 (the church's own inscription). The first letters the angel's words of 2:10 in
+  // Greek; the second is the shepherds' side of the same fresco. The whole-Nativity icons stay at
+  // 2:1-7; these are details of the shepherds' half only. Found 2026-11-01f in `Painted Churches
+  // in the Troodos Region`, a harvest_pool.js CYCLES name that had pooled nothing.
+  "shepherds": [
+    "File:Church of Panagia tou Arakos, nave, west bay, south side, vault, wall paintings, Lagoudera, Cyprus - Nativity, detail of angel and shepherd, upper half - MSBZ004 BF T Lag H 1 07 - Dumbarton Oaks.jpg",
+    "File:Church of Panagia tou Arakos, nave, west bay, south side, vault, wall paintings, Lagoudera, Cyprus - Nativity, detail of shepherds - MSBZ004 BF T Lag H 2 2 - Dumbarton Oaks.jpg",
+  ],
   // Harvested 2026-09-25c. Both inscribed "Η ΠΕΡΙΤΟΜΗ ΤΟΥ ΧΡΙΣΤΟΥ" — the Circumcision of
   // Christ — a priest at an altar with the child, Mary and Joseph named in the Adam panel's
   // own lettering. That panel's inscription also names a second, unrelated figure, "Ο ΑΓΙΟΣ
@@ -115,6 +124,14 @@ module.exports={
   "temptation": [
     "File:Christ's temptation (Monreale).jpg",
     "File:Cathedral (Monreale) - Right wing transept - 2nd Temptation of Christ.jpg",
+  ],
+  // Peribleptos, Ohrid, c. 1295 (Michael Astrapas and Eutychios; Commons: "Painters Michael and
+  // Ephtichius"). Christ standing at a lectern whose open book reads ΠΝΑ ΚΥ ΕΠ ΕΜΕ ΟΥ ΕΝ[ΕΚΕΝ]
+  // ΕΧΡΙΣΕ ΜΕ ΕΥΑΓ[ΓΕΛΙΣΑΣΘΑΙ] — Luke 4:18. Commons titles it only "…of Ohrid 06". The
+  // neighbouring "…07" (Christ seated among elders under a building) has no legible title and
+  // could as well be Mid-Pentecost; not used. Found 2026-11-01f.
+  "synagogue": [
+    "File:Paintings in the Church of the Theotokos Peribleptos of Ohrid 06.jpg",
   ],
   "petersmother": [
     "File:Monreale - Jesus heals Simon's mother in law.jpg",
@@ -235,6 +252,18 @@ module.exports={
     "File:Christos Iomenos Daimonon Takophon Dionysiou.jpg",
   ],
 
+  // ---- chapter 12 ----
+  // Two photographs of one Rila mural pair, 1844 (Commons category text: Dimitar Hristov and
+  // Zafir, east façade of the katholikon's gallery). Lettered with 12:19 under the rich man and
+  // 12:20 in the book Christ holds; the panel below is captioned "St Archangel Michael torments
+  // the soul of the rich man". The close photograph cuts off Christ and the book. Found
+  // 2026-11-01f in `Nativity of Mary Church, Rila Monastery - Rich Man and Warehouse`, a
+  // category harvest_pool.js never reached (its CYCLES name `Rila Monastery` holds 19 files).
+  "richfool": [
+    "File:20140617 Rila Monastery 086.jpg",
+    "File:20140617 Rila Monastery 083.jpg",
+  ],
+
   // ---- chapter 13 ----
   // The woman bowed together. Inscribed IHS MVLIEREM ANNIS DE/CE(M) ET OCTO CVRVA(M) ERIGIT….
   // Commons titles it only "Counterfacade Miracle of J.C."; its credit says it is a crop from
@@ -257,6 +286,16 @@ module.exports={
   "lostsheep": [
     "File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg",
     "File:Ravenna — The Good Shepherd mosaic.jpg",
+  ],
+
+  // ---- chapter 16 ----
+  // Rila, 19th c., lettered ПРИТЧА ЗА БОГАТАГО И НИЩАГО ЛАЗАРА, with 16:24 written in full from
+  // the rich man's mouth (read at full size 2026-11-01f). The figure in the cloud is ABRAHAM (named), holding Lazarus as a
+  // small figure on his lap — not the Theotokos with the Child, which it resembles at thumbnail
+  // size. Rila's separate `Bosom of Abraham` panels (three patriarchs in Paradise) belong to the
+  // Last Judgement, not to this parable, and are not used.
+  "lazarus": [
+    "File:20140617 Rila Monastery 066.jpg",
   ],
 
   // ---- chapter 17 ----

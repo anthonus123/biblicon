@@ -117,6 +117,13 @@ module.exports={
   "walking": "File:Monreale - Peter Saved from the Waves.jpg",
   "canaanite": "File:Christos Iomenos Thygatera Xananaias Dionysiou.jpg",
   "feeding4": "File:Monreale - Multiplication of the Loaves and Fishes.jpg",
+  // Peribleptos, Ohrid, c. 1295 (Michael Astrapas and Eutychios). Lettered above Christ with
+  // Matthew 16:18 in Greek, read at full size 2026-11-01f: …ΕΠΙ ΤΑΥΤΗ ΤΗ ΠΕΤΡΑ ΟΙΚΟΔΟΜΗΣΩ / ΤΗΝ
+  // ΕΚΚΛΗΣΙΑΝ… ΚΑΙ ΠΥΛΑΙ ΑΔΟΥ ΟΥ ΚΑΤΙΣΧΥΣΟΥΣΙΝ / ΑΥΤΗΣ. Peter himself is outside this photograph;
+  // only a pale arm at the right edge, gripping a building's gable, belongs to the next figure.
+  "confession": [
+    "File:Paintings in the Church of the Theotokos Peribleptos of Ohrid 0143.jpg",
+  ],
   "transfiguration": [
     "File:Transfiguration of Christ Icon Sinai 12th century.jpg",
     "File:042 Transfiguration of Jesus Icon from Saint Paraskevi Church in Langadas.jpg",

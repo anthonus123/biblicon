@@ -86,6 +86,27 @@ module.exports={
  ["The Child, and no manger", "He lies swaddled in white bands directly on the grass, with thin gold rays spreading from him across it. There is no crib here, no cave and no ox and ass — which leaves out the one detail of the birth Luke actually gives. Two pale beasts lie on the grass below his feet, the nearer with a long muzzle and a drooping ear.", "70%", "46%"],
 ],
 
+"File:Church of Panagia tou Arakos, nave, west bay, south side, vault, wall paintings, Lagoudera, Cyprus - Nativity, detail of angel and shepherd, upper half - MSBZ004 BF T Lag H 1 07 - Dumbarton Oaks.jpg":[
+ ["The angel's words", "Verse 10 in Greek: fear not, good tidings of great joy.", "12%", "63%"],
+ ["The angel", "Haloed and winged, standing on the hill.", "33%", "41%"],
+ ["His staff", "A tall rod held against the shoulder, the messenger's sign.", "16%", "33%"],
+ ["The outstretched hand", "Stretched to the shepherd on the far hill.", "60%", "54%"],
+ ["The shepherd with the pipe", "Young, seated on a rock, still playing.", "34%", "82%"],
+ ["A hand from below", "Raised up into the frame by a shepherd the photograph cuts off.", "87%", "57%"],
+ ["The Theotokos", "The rim of her halo and the letters ΘΥ, beside the dark cave.", "79%", "15%"],
+],
+
+"File:Church of Panagia tou Arakos, nave, west bay, south side, vault, wall paintings, Lagoudera, Cyprus - Nativity, detail of shepherds - MSBZ004 BF T Lag H 2 2 - Dumbarton Oaks.jpg":[
+ ["The young shepherd", "One arm thrown up toward the sky and the angel.", "16%", "70%"],
+ ["His lifted hand", "Pointing up past the top of the photograph.", "9%", "54%"],
+ ["The old shepherd", "Grey-bearded, red-capped, leaning on his staff and looking up.", "21%", "83%"],
+ ["The flock", "Sheep crowded on the slope: keeping watch over their flock by night.", "67%", "53%"],
+ ["More sheep below", "A second group, heads down, lower on the slope.", "82%", "65%"],
+ ["The crook and bag", "Slanting over the slope, a pouch dangling from it.", "31%", "30%"],
+ ["The midwife", "Pouring water from a jug; not from Luke's text.", "41%", "26%"],
+ ["The Child in the basin", "Lettered IC XC, being bathed.", "77%", "9%"],
+],
+
 "File:039 Circumcision of Jesus Icon from Saint Paraskevi Church in Langadas.jpg":[
  ["The ciborium", "A domed canopy raised on slender columns over the altar — the same device the Hypapante icon builds sixteen verses later.", "15%", "50%"],
  ["The priest", "A tall gold mitre, a small blade held between two fingers, performing the rite: and when eight days were accomplished for the circumcising of the child, his name was called Jesus. No lettering on this panel names him.", "48%", "37%"],
@@ -188,6 +209,17 @@ module.exports={
  ["Jerusalem beneath his feet", "The small arcaded building under Christ's feet is the pinnacle of the temple, and Luke alone names the city it stands in: he brought him to Jerusalem. Matthew's parallel calls it only the holy city.", "70%", "30%"],
  ["The tempter, reaching but not touching", "He hangs beside Christ in the air, winged and dark, his hand out toward him without contact — the same distance he kept over the stones in the first temptation, on the same wall.", "35%", "70%"],
  ["Departed for a season", "What the picture cannot show is how the contest ends: when the devil had ended all the temptation, he departed from him for a season. Luke's own word for it is temporary, not final, and gives Christ none of Matthew's angels sent at once to minister to him.", "82%", "62%"],
+],
+
+"File:Paintings in the Church of the Theotokos Peribleptos of Ohrid 06.jpg":[
+ ["Christ", "Haloed and standing: he stood up for to read.", "27%", "66%"],
+ ["The open book", "Luke 4:18 in Greek, the Spirit of the Lord is upon me.", "38%", "26%"],
+ ["His hand on the page", "Holding the book open on the lectern.", "40%", "42%"],
+ ["The small roll", "Held low in his other hand.", "57%", "57%"],
+ ["The youth with the closed book", "Unnamed; perhaps the minister of verse 20.", "56%", "10%"],
+ ["The little bearer", "A naked figure holding the lectern up on his shoulders.", "77%", "30%"],
+ ["The building", "Pale walls and a gabled roof behind him.", "16%", "34%"],
+ ["A timber of the church", "A real roof beam crossing the photograph, not painted.", "82%", "86%"],
 ],
 
 "File:Monreale - Jesus heals Simon's mother in law.jpg":[
@@ -452,6 +484,31 @@ module.exports={
  ["His archway", "Pale stone, a scalloped canopy over the top of it — one of three buildings on this wall, and the only one behind the second man; the healed man stands against the plain green wall instead.", "18%", "82%"],
 ],
 
+// ---- chapter 12 ----
+
+"File:20140617 Rila Monastery 086.jpg":[
+ ["The rich man", "Turban, white beard, a long coat edged with fur: the ground of a certain rich man brought forth plentifully.", "28%", "33%"],
+ ["His pointing hand", "Directing the work.", "30%", "44%"],
+ ["The sacks", "Heaped at his feet, one spilling small white rounds: my fruits and my goods.", "74%", "13%"],
+ ["Two men at a beam", "One kneeling, one swinging his tool down on the timber.", "52%", "61%"],
+ ["The man with the hatchet", "Walking away from the frame, the blade in his hand.", "22%", "60%"],
+ ["The new frame", "Upright timbers going up against the wall: build greater.", "28%", "84%"],
+ ["The words under the picture", "Verse 19 in Slavonic: eat, drink, and be merry.", "92%", "70%"],
+ ["The corner beast", "A green winged creature in fire, part of the Apocalypse painted above, not of this parable.", "14%", "11%"],
+],
+
+"File:20140617 Rila Monastery 083.jpg":[
+ ["Christ in the clouds", "Lettered IC XC, leaning down from the sky.", "16%", "57%"],
+ ["The open book", "Verse 20 in Slavonic: Thou fool, this night thy soul shall be required of thee.", "17%", "66%"],
+ ["The rich man and his builders", "The upper panel, the same one the first photograph shows close.", "28%", "24%"],
+ ["The scroll", "St Michael the Archangel torments the soul of the rich man.", "44%", "32%"],
+ ["The archangel", "Winged, armoured, sword lifted over his head.", "54%", "21%"],
+ ["The soul", "A small pale figure, nearly naked, at the archangel's hand.", "71%", "33%"],
+ ["The rich man laid low", "On his back, white-bearded, the archangel's foot on him.", "86%", "28%"],
+ ["The demons", "Horned and dark, one holding out a written paper.", "79%", "39%"],
+ ["Four women saints", "Sophia with Faith, Hope and Love, painted over the door; not part of the parable.", "30%", "70%"],
+],
+
 // ---- chapter 13 ----
 
 "File:Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg":[
@@ -493,6 +550,22 @@ module.exports={
  ["A cross, not a crook", "Held upright in his left hand.", "55%", "49%"],
  ["Fingers at a muzzle", "His right hand touches rather than carries — no shoulder bears any weight in this mosaic.", "65%", "58%"],
  ["Six faces, none of them grazing", "Every one turned to look at him instead.", "78%", "25%"],
+],
+
+// ---- chapter 16 ----
+
+"File:20140617 Rila Monastery 066.jpg":[
+ ["Abraham", "Named in the cloud, enthroned: Abraham afar off.", "16%", "24%"],
+ ["Lazarus in his bosom", "Small, in white and blue, held on Abraham's lap.", "23%", "25%"],
+ ["The rich man in the flame", "Naked, an arm stretched up to the cloud: in hell he lift up his eyes, being in torments.", "52%", "16%"],
+ ["His words", "Verse 24 in Slavonic, rising from his mouth toward Abraham.", "40%", "21%"],
+ ["The jaws of hell", "A great grey sea beast, its mouth open round the fire.", "78%", "17%"],
+ ["The rich man at his feast", "Enthroned under a canopy, a goblet raised, his cloak trimmed with fur: and fared sumptuously every day.", "36%", "75%"],
+ ["The servant with the jug", "Pouring for a guest at the round table.", "46%", "33%"],
+ ["The title", "The parable of the rich man and of Lazarus the beggar.", "66%", "71%"],
+ ["Lazarus at the gate", "Ribs showing, a cloth at his hips, his name written above him: laid at his gate, full of sores.", "77%", "39%"],
+ ["His raised hand", "Lifting something small and dark toward the house.", "64%", "46%"],
+ ["The dogs", "One noses at his leg, one licks his foot: the dogs came and licked his sores.", "80%", "53%"],
 ],
 
 // ---- chapter 17 ----

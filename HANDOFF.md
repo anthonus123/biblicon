@@ -22,7 +22,7 @@ and this file did not.
   Keep the existing page structure and extend it rather than redesign it.
 - **Deliverables (paths changed 2026-09-27j, see that Session block):** `matthew/index.html`
   (~17.2 MB), `john/index.html` (~13.6 MB), `mark/index.html` (~13.4 MB as of 2026-11-01e, up from ~12.6 MB after the
-  2026-09-26 icon search) and `luke/index.html` (~16.1 MB as of 2026-11-01e, up from ~11 MB after the 2026-09-25c
+  2026-09-26 icon search) and `luke/index.html` (~17.9 MB as of 2026-11-01f, ~16.1 MB as of 2026-11-01e, up from ~11 MB after the 2026-09-25c
   icon harvest) — each a single self-contained file, served hosted at `biblicon.ca/matthew/` etc
   with a clean, extensionless URL. Fonts, icons, the KJV text and all commentary are embedded; each
   still opens by double-clicking, no server and no network. Each also carries an in-page "Download
@@ -189,7 +189,8 @@ and this file did not.
 - **Content, as of 2026-09-15:**
   - **120 passages**, all 28 chapters. Tiers: **52 (a)**, **5 (b)**, **63 (c)** (2026-11-01c:
     `calling` 4:18-22 got the Tokalı calling fresco; `make check` now reports 57 passages
-    showing 113 icons).
+    showing 113 icons). **2026-11-01f: `confession` 16:13-20 got the Ohrid "upon this rock" fresco — tiers
+    53/5/62, 58 passages showing 114 icons, 608 markers; the counts below are as of 11-01c.**
     **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
@@ -329,6 +330,7 @@ and this file did not.
     cannot replace: read every "so", "that" or "because" a story adds, and every quoted speech
     whose pronouns changed, against the printed verses by eye.
   - **31 passages still want a story** at this date; closed by batch 4, 2026-09-25h, above.
+  - **(2026-11-01f: 103 icons, 639 markers, tiers a:52 b:6 c:94, 58 icon-bearing passages and 58 stories — `shepherds` (Lagoudera), `synagogue` (Peribleptos, Ohrid), `richfool` and `lazarus` (Rila) wired; see that Session block.)**
   - **(2026-11-01e: 97 icons, 588 markers, tiers a:48 b:6 c:98, 54 icon-bearing passages and 54 stories — `nain`, `bowedwoman`, `dropsy` (all Monreale) and `mites` (Ravenna + Ferapontov) wired; see that Session block.)**
   - **(2026-11-01d: 92 icons, 549 markers, tiers a:44 b:6 c:102, 50 icon-bearing passages and 50 stories — `herodtrial` and `simoncyrene` wired from Staro Nagoričane; see that Session block. 2026-11-01c: 90 icons, 533 markers.)**
   - **All 89 icons now have a prose reading and positioned markers (89/89), finishing the readings
@@ -514,7 +516,7 @@ verse order, with what was actually tried:
    image anywhere in the whole corpus this project has enumerated (Dionysiou, Monreale,
    Ferapontov, Langadas, Rossano, Menologion of Basil II, Gračanica, Sant'Apollinare Nuovo, Chora,
    the Serbian and Bulgarian monasteries, the Moldavian painted monasteries, Sinai, Athens,
-   Rublev, Novgorod, Pskov, the Tretyakov, Nerezi, Cyprus, Kariye, Troodos — the full `CYCLES` list (**correction 2026-11-01d: the Dečani, Sopoćani, Mileševa, Studenica, Nerezi and Protaton names in that list match no Commons category, so none of their files were ever pooled; Mystras, Lesnovo and Staro Nagoričane were never listed at all — see that Session block**)
+   Rublev, Novgorod, Pskov, the Tretyakov, Nerezi, Cyprus, Kariye, Troodos — the full `CYCLES` list (**correction 2026-11-01f: 23 of the 37 `CYCLES` names pool zero files — Chora, Daphni, Nea Moni, Sinai, the Moldavian monasteries, Rublev, Novgorod, Pskov, the Tretyakov, the Russian Museum, Kariye and Troodos among them; Rila pooled 19. See the 2026-11-01f Session block for the real names. Earlier correction, 2026-11-01d: the Dečani, Sopoćani, Mileševa, Studenica, Nerezi and Protaton names in that list match no Commons category, so none of their files were ever pooled; Mystras, Lesnovo and Staro Nagoričane were never listed at all — see that Session block**)
    in `harvest_pool.js`).
 3. **One is this session's own fresh dead end** — nobody had searched for it before: `bethsaida`
    (8:22-26, the blind man healed by degrees). A free-text Commons search turned up one candidate,
@@ -535,7 +537,7 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Luke's readings are finished — 97/97 since 2026-11-01e (588 markers; 92/92 and 549 at 2026-11-01d); 89/89 across 57 passages was closed in five batches
+**Luke's readings are finished — 103/103 since 2026-11-01f (639 markers; 97/97 and 588 at 2026-11-01e; 92/92 and 549 at 2026-11-01d); 89/89 across 57 passages was closed in five batches
 (17 through 21, 2026-09-25d) after the 2026-09-25c harvest left them undone.** What is left for
 Luke, in order:
 1. **RESOLVED 2026-11-01e: `nain` now has the Monreale mosaic** (`Nain widow's son is resurrected by Christ.jpg`, in `pool.json` under `Resurrection of the widow's son at Nain` all along). What follows is the old entry. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
@@ -549,7 +551,7 @@ Luke, in order:
    chose not to use it, on the same reasoning the retraction itself gave: the catalogue entry
    doesn't confirm the panel depicts this scene. No further work needed here unless the owner
    reopens it.
-3. **20 passages still want an icon** (24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
+3. **16 passages still want an icon** (20 until 2026-11-01f wired `shepherds`, `synagogue`, `richfool` and `lazarus` — **and the harvest's `CYCLES` list is 23 of 37 names empty, not seven; see the 2026-11-01f Session block**; 24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
    13:10-17 (**wired 2026-11-01e from `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg`, the woman's half, which no title search could find**; Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
@@ -7060,4 +7062,173 @@ converging as of 2026-09-27g/h).
     Last Judgement. Nothing for any open gap.
 - **Next.** The category-name sweep is the cheap check every future gap search should start with, **but it cannot see scenes under generic programme categories ("(miracles)", "(left wall)") — list those with `catMembers` and view them file by file, which is how `bowedwoman` and `dropsy` were found.**
   `harvest_pool.js` `CYCLES` is still uncorrected (owner question 2026-11-01d). Nothing is
+  committed (owner did not ask).
+
+## Session 2026-11-01f (Luke's rich fool and rich man and Lazarus from Rila; 23 of 37 harvest programmes were empty)
+
+- **Did.** Owner: "continue and dont stop. also review thoroughly and dont stop".
+  **`harvest_pool.js`'s `CYCLES` is far emptier than 2026-11-01d found.** Counting `pool.json`
+  files per `CYCLES` entry: **23 of the 37 names hold zero pooled files**, not seven. Zero:
+  Sant'Apollinare Nuovo (its subcategories came in through seeds), Chora, Dečani, Studenica,
+  Mileševa, Sopoćani, Daphni, Nea Moni, Sinai icons, the Protaton, Sucevița, Moldovița, Humor,
+  Rublev, Theophanes the Greek, Novgorod, Pskov, the Tretyakov, the Russian Museum, Nerezi, Kariye,
+  Troodos, and the two "Life of Jesus/Gospel in icons" names. Also thin: Monreale 10, Hosios Loukas
+  3, Rila 19, Voroneț 23. **Real Commons names (from `catSearch`, copy verbatim — case matters):**
+  `Mosaics in Daphni`, `Mosaics in Hosios Loukas`, `Mosaics in Nea Moni of Chios`,
+  `Sucevița murals`, `Moldovița murals`, `Humor murals`, `Voroneț murals`, `Arbore murals`,
+  `Painted Churches in the Troodos Region`, `Icons from Saint Catherine's Monastery, Mount Sinai`
+  (and a near-duplicate without the 's), `Icons in the Tretyakov Gallery`, `Icons in the Russian
+  Museum`, `Works by Andrej Rublëv`, `Novgorod School`, `Nativity of Mary Church, Rila Monastery`,
+  `Frescos in Nativity of Mary Church, Rila Monastery`, `Frescos in the Rila Monastery`; plus
+  programmes never listed at all: `Frescos in the church of Elijah the Prophet in Yaroslavl`,
+  `Frescos in Yaroslavl`, `Frescos in Rostov`, `Frescos in Great Lavra monastery`,
+  `Frescos in Stavronikita monastery`, `Frescos at Moni Agiou Nikolaou (Meteora)`,
+  `Paintings in the Megalo Meteoro (Meteora)`, `Frescos in the Meteora`, the Kastoria church
+  categories, `Frescos in the Church of the Theotokos Peribleptos` (Ohrid; has a "Story of Christ"
+  subcategory of 65), `Paintings in St. George's Church (Kurbinovo)`, `Frescos in the Manasija
+  Monastery`, `Frescos in Bogorodica Ljeviška`, `Frescos in Bachkovo Monastery`. A depth-2 harvest
+  of these into the scratchpad (not `pool.json`) gave **5,092 files not already pooled**.
+  `harvest_pool.js` and `pool.json` were not edited (still the owner's call, 2026-11-01d).
+- **Wired, Luke (a:48 b:6 c:98 to a:50 b:6 c:96; 97 to 100 icons):**
+  - **`richfool` (12:13-21), tier c to a, two photographs of one mural pair** on the east façade
+    of the gallery of Rila's katholikon. The Commons category text dates them 1844 and names the
+    painters Dimitar Hristov and Zafir (`Nativity of Mary Church, Rila Monastery - Rich Man and
+    Warehouse`; the archangel panel's own category says the same).
+    1. `20140617 Rila Monastery 086.jpg` (Mark Ahsmann, CC BY-SA 4.0, 3968×2976, key
+       `1c27e7bb8827`): the rich man, his sacks, the workmen raising a new timber frame; lettered
+       with 12:19 in Slavonic (read at full size). No demolition is painted; the reading says so.
+       It crops off the top of the panel. St Basil quoted ("his words are weighed in heaven").
+    2. `20140617 Rila Monastery 083.jpg` (same photographer and licence, 2976×3968, key
+       `b77e4569ca01`): the wider wall. Christ (IC XC) in the clouds holds a book lettered with
+       **12:20 entire** (read at full size from Rosbach's `Rila Monastery 20110712-054.jpg`);
+       below, a panel captioned СВ. АРХАНГЕЛЪ МИХАИЛЪ МУЧИТЪ ДУШУ БОГАТАГО, the archangel standing
+       on the dying rich man with his soul as a small figure and demons with a written paper.
+       The reading says Luke has "God said" and the painters gave the words to Christ, and that
+       the archangel panel is not in the parable. Chrysostom quoted ("certain dread powers were
+       sent to require it").
+  - **`lazarus` (16:19-31), tier c to a:** `20140617 Rila Monastery 066.jpg` (Mark Ahsmann, CC
+    BY-SA 4.0, 3968×2976, key `47979c58ab93`; date "19th c." — Commons gives none for this
+    panel). Titled ПРИТЧА ЗА БОГАТАГО И НИЩАГО ЛАЗАРА. Feast at right, Lazarus (named) at the gate
+    with two dogs; at left the rich man in the flames inside a sea-monster's jaws, **16:24 lettered
+    up from his mouth**, and **Abraham (named АВРААМЪ) holding Lazarus as a small figure** — at
+    thumbnail size this looks like the Theotokos with the Child; it is not. No angels, no gulf;
+    the reading says so. St Gregory the Dialogist quoted ("a drop of water… a crumb of bread").
+    Chosen over Dennis Jarvis's 6000px `Bulgaria-03068`, which trims the left edge, and
+    Rosbach's/Apostoloff's frames. Graffiti scratched on the hell-mouth ("САРА") is not mentioned.
+  - **Not used, recorded:** Rila's `Bosom of Abraham` panels (17 files) are the three patriarchs
+    in Paradise from the Last Judgement, not the parable — so the 2026-11-01e owner question about
+    Gračanica's `Bosom of Abraham` is moot now that the parable itself is wired.
+  - `overrides.js` stories for both (KJV), labels, picks comments, `book.json` `iconGap`,
+    `index.html`/`llms.txt` Luke 100 icons, `overrides.js` header "other 96 passages".
+- **Verified.** `make luke` ok, Luke a:50 b:6 c:96, 100 icons, 56 stories; `quotes.js` Luke
+  53/1/0/0/0 (no new KJV flags); the three Father quotations string-matched against `catena.json`
+  and attributed to the Catena's own Basil, Chrys. and Gregory; `story_check` adds nothing for
+  either story; `overlay.py` every marker on target after moving three; 5-gram overlap against all
+  four books' readings and markers (KJV 5-grams excluded): reworded until clean.
+
+- **Later the same session: two more Luke gaps (a:50 to a:52, 100 to 103 icons, 16 gaps left).**
+  - **`shepherds` (2:8-20), tier c to a:** two Dumbarton Oaks photographs (CC0, Byzantine
+    Institute staff / David Winfield, c. 1968-73) of the **Nativity at Panagia tou Arakos,
+    Lagoudera, 1192** (Theodore Apseudes; the church's own lintel inscription, per Wikipedia).
+    1. `…Nativity, detail of angel and shepherd, upper half - MSBZ004 BF T Lag H 1 07 …` (1800×1417,
+       key `404034d6487c`): the angel's words lettered in Greek, **Luke 2:10**: ΜΗ ΦΟΒΗΣΘΕ· ΙΔΟΥ ΓΑΡ
+       ΕΥΑΓΓΕΛΙΖΟΜΕ ΥΜΙΝ ΧΑΡΑΝ ΜΕΓΑΛΗΝ… ΠΑΝΤΙ ΤΩ ΛΑΩ (read at full size); a young shepherd with a pipe.
+    2. `…Nativity, detail of shepherds - MSBZ004 BF T Lag H 2 2 …` (1417×1800, key `948c827e995f`):
+       the two shepherds looking up, the flock, and on the left the midwife's bath of the Child,
+       which the reading says is tradition, not Luke.
+    The whole-Nativity icons stay at 2:1-7. Chrysostom and Ambrose quoted (verbatim, Catena).
+    Other Lagoudera Nativity details (Magi, Joseph, bath) not used.
+  - **`synagogue` (4:14-21), tier c to a:** `Paintings in the Church of the Theotokos Peribleptos
+    of Ohrid 06.jpg` (PD, 1542×2448, key `8049ce24c178`; artist normalised to "Michael Astrapas and
+    Eutychios", date "c. 1295" from the church's founding inscription). Christ standing at a
+    lectern whose open book reads **ΠΝΑ ΚΥ ΕΠ ΕΜΕ ΟΥ ΕΝ[ΕΚΕΝ] ΕΧΡΙΣΕ ΜΕ ΕΥΑΓ[ΓΕΛΙΣΑΣΘΑΙ]** — Luke
+    4:18 (read at full size). A youth holding a closed book is hedged as "perhaps the minister".
+    A real roof beam crosses the photo; a marker says so. Ambrose quoted (verbatim).
+    **Not used:** `…Ohrid 07.jpg` (Christ seated among elders under a building, no legible title —
+    could be Mid-Pentecost, the same trap as Kirillo's "Among doctors"); `…0330`/`0289` are the
+    Incredulity of Thomas (John 20:24-29, already tier a); `…0374` is a wide wall holding Thomas
+    *and*, to its left, a separate scene — see owner item 6.
+  - **Viewed, nothing for any gap** (contact sheets): Yaroslavl (Elijah the Prophet, St John at
+    Tolchkovo, Ascension, Rostov; 144 files — the Elijah church's narrative frescoes on Commons are
+    Elijah/Elisha scenes, e.g. `Frescos in Yaroslavl 04.tif` is the Shunammite, and the Last
+    Judgement); Stavronikita, Great Lavra, Meteora (95; Great Meteoron's
+    `Wall paintings in the Monastery of Great Meteoron.jpg` is the anointing at Bethany on the head,
+    a gallery candidate for Matthew 26:6-13 / Mark 14:3-9 only); Kurbinovo and the Kastoria
+    churches (246); the Troodos churches (404 non-DO photos; Feasts, Passion, Communion of the
+    Apostles); Manasija, Ljeviška, Bachkovo (97); the Russian/Sinai museum icons (keyword pass only:
+    Dionisy's Incredulity of Thomas, a "Blind Man and the Lame" allegory, Borovikovsky's Ten Virgins
+    — nothing for a gap). **Not yet viewed:** the Moldavian murals (Sucevița 200, Moldovița 179,
+    Humor 111, Voroneț 321, Arbore 26), Daphni/Nea Moni/Hosios Loukas (Feasts only, skipped on
+    purpose), the Tretyakov/Russian Museum icons by sheet (only keyword-filtered).
+  - Verified as before: `make` all four ok (Luke a:52 b:6 c:94, 103 icons, 58 stories);
+    `quotes.js` Luke 54/4/0/0/0; Father quotations string-matched; `story_check` clean; overlays on
+    target; 5-gram overlap clean; Playwright: the four new cards open with images and credit lines,
+    0 console errors. Front page and `llms.txt`: Luke 103 icons. `book.json` gap prose updated.
+- **For the owner.**
+  1. `harvest_pool.js` `CYCLES`: the list of 23 empty names above, and the real names, are ready
+     if you want the pool regenerated (still your call from 2026-11-01d).
+  2. Rila's `Bosom of Abraham` and Gračanica's (2026-11-01e question 2) — moot now.
+  3. Meteoron anointing fresco as a gallery addition for Matthew 26 / Mark 14?
+  4. **Luke 2:8-20 takes two details of a whole-Nativity fresco**, which departs from Mark's rule
+     that a scene already painted under the neighbouring passage stays there (2:1-7 has three
+     whole Nativity icons). The justification is that the first detail letters the angel's own
+     words of 2:10, and both crops show only the shepherds' half. Your call whether to keep it.
+  6. **Peribleptos `…Ohrid 0288.jpg`: Christ holding a scroll lettered ΕΔΟΘΗ ΠΑΣΑ ΕΞΟΥΣΙΑ ΕΝ
+     ΟΥΡΑΝΩ ΚΑΙ ΕΠΙ ΓΗΣ — Matthew 28:18**, "All power is given unto me in heaven and in earth"
+     (read at full size). Matthew's `commission` (28:16-20) is tier b on Dionysiou's
+     `Christos Apostolois`; this fresco would make it tier a. Not wired: in 0288 the apostles to
+     the right face *away* from this Christ, toward the Thomas scene beside it (`…0289`), so the
+     frame shows the commissioning Christ alone; and a tier-a primary cannot keep the Dionysiou
+     type icon beside it (picks.js header), so Matthew would lose that file (Mark and Luke keep it).
+     The wide `…0374.JPG` (1791×1188) holds both scenes. Your call.
+  7. **Kholmogorets `… detail 05.jpg`** (a whole Commons file, PD): the two kneeling women the
+     museum names Martha and Mary, one wiping Christ's feet with her hair, at the enthroned Christ —
+     a possible **tier-b type icon for John 11:17-37** (same reasoning as John's Good Shepherd).
+  5. **Matthew `confession` (16:13-20) was wired from a partial frame** — see the bullet below.
+     Peter is outside the photograph; only an unattributed arm shows. Keep, or wait for a wider photo?
+- **Then Matthew 16:13-20, tier c to a (Matthew 113 to 114 icons; a:52 to a:53).**
+  `Paintings in the Church of the Theotokos Peribleptos of Ohrid 0143.jpg` (PD, 2720×1667, key
+  `d4dc487be81b`, artist normalised, date c. 1295). Lettered with **Matthew 16:18** in Greek, read
+  at full size with contrast: …ΕΠΙ ΤΑΥΤΗ ΤΗ ΠΕΤΡΑ ΟΙΚΟΔΟΜΗΣΩ / ΤΗΝ ΕΚΚΛΗΣΙΑΝ… ΚΑΙ ΠΥΛΑΙ ΑΔΟΥ ΟΥ
+  ΚΑΤΙΣΧΥΣΟΥΣΙΝ / ΑΥΤΗΣ (first line worn). Christ seated, hand stretched to the right; Peter is
+  outside the frame, and a bare arm gripping a small building's roof is left unattributed. No keys
+  visible; the reading says so. Chrysostom quoted ("On this faith and confession I will build my
+  Church", verbatim, Catena). **Also fixed:** Matthew's base `confession` story ran on into
+  16:21-24 (the separate `passion16` passage); `overrides.js` now gives a KJV story of 16:13-20 and
+  keyVerse 18. Neighbouring photos `…0142` (an angel) and `…0144` (a bishop) do not show the rest
+  of the scene. The rest of Peribleptos's 241 uncategorised photos (bishops, the Dormition, the
+  Communion of the Apostles, the Passion, Pentecost) were sheeted too: nothing else for a gap.
+  Verified: `make` all four ok; `quotes.js` Matthew 45/0/0/0/0; overlay on target; 5-gram clean;
+  Playwright card opens with image and credit, 0 console errors. Front page/`llms.txt`: Matthew 114.
+- **Also this session (advisor review): the Rila Cyrillic re-read letter by letter at full size.**
+  12:19, 12:20 and 16:24 are each painted in full; the transcriptions now keep the painters'
+  spelling (ЛѢТА, ЯЖДЪ, ПІЙ, ВЕСЕЛИСА; СІЮ, ИСТАЖУТЪ; ОЧЕ АВРААМЕ, ПОМИЛУИ МА, ПОСЛИ ЛАЗАРА … ВО
+  ПЛАМЕНИ СЕМЪ) and the archangel scroll's abbreviations (С. АРХГГЛЪ МИХАИЛЪ МУЧИТЪ ДУШУ БГТАГО —
+  "torments" as painted, though the Commons category text paraphrases it "draws out the soul").
+  Absence claims on the Lazarus panel now say "in this photograph"; "another wall of the Rila
+  gallery" (unsourced) became "also at Rila"; an unsourced "borrowed from pagan furniture" was cut
+  from the Ohrid synagogue reading.
+- **Then the remaining programmes, viewed by contact sheet — nothing wired.** Moldovița, Humor,
+  Arbore (316), Sucevița and Voroneț (487): Akathist, Tree of Jesse, Siege of Constantinople,
+  Ladder, Last Judgement, Genesis and saints' lives; no ministry scene for a gap. The Russian and
+  Sinai museum icons (644 by sheet): feasts, saints, Theotokos types, Novgorod battle icons;
+  nothing usable as a whole file for a gap.
+- **For the owner, one more: Semyon Kholmogorets, *Christ Pantocrator Enthroned*, c. 1682
+  (Russian Museum, from St John Chrysostom at Korovniki, Yaroslavl; PD, 3409×4980,
+  `File:Pantocrator by S. Kholmogorets (c. 1682, GRM).jpg`).** Its Commons description gives the
+  museum's own list of its **28 border scenes (клейма)**, among them **6, the Forerunner's prophecy
+  about Christ** (John 1:29-34, a gap), **16, the feast in the house of Simon the Pharisee** (Luke
+  7:36-50, a gap and the open 2026-11-01b question), 12 "Christ and the sinful woman", 11 the man
+  born blind and the paralytic, 15 the demoniacs and the issue of blood. Each scene is only about
+  400×450 px of the original, and **using one would mean cropping it ourselves** — no Biblicon
+  image has ever been a crop we made; every one is a Commons file as uploaded. Only three
+  kleymo are on Commons as their own files (`… kleymo 12/18/28.jpg`; note Commons's "kleymo 12"
+  shows the Samaritan woman, which the museum list numbers 10 — the numbering differs). The
+  centre panel's two kneeling women are, per the catalogue, **Martha and Mary**, one wiping
+  Christ's feet with her hair — a devotional composition, not the scene of John 11 or Luke 7.
+  Should self-made crops of a PD icon's border scenes be allowed? If yes, kleymo 6 and 16 are
+  the first to try. Not wired.
+- **Next.** Every programme harvested this session has now been viewed. Remaining Luke gaps (16),
+  Matthew (18), Mark (11), John (7) have no Commons whole-file source in any programme known here.
+  Open leads: the owner's ruling on self-cropped kleymo (above); `CYCLES` regeneration. Nothing is
   committed (owner did not ask).

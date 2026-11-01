@@ -34,6 +34,7 @@ module.exports={
 "File:Representation of the Sower's parable.JPEG":'The Parable of the Sower — Orthodox mosaic',
 'File:Apotome Agiou Ioannou Prodromou Dionysiou.jpg':'The Beheading of the Forerunner — Dionysiou, Athos, 1547',
 'File:Evlogesis Pente Arton Dionysiou.jpg':'The Blessing of the Five Loaves — Dionysiou, Athos, 1547',
+'File:Paintings in the Church of the Theotokos Peribleptos of Ohrid 0143.jpg':'Upon This Rock — Peribleptos, Ohrid, c. 1295',
 'File:Monreale - Peter Saved from the Waves.jpg':'Christ Saving Peter from the Waves — Monreale, 12th c.',
 'File:Christos Iomenos Thygatera Xananaias Dionysiou.jpg':'The Canaanite Woman — Dionysiou, Athos, 1547',
 'File:Monreale - Multiplication of the Loaves and Fishes.jpg':'The Multiplication of the Loaves — Monreale, 12th c.',
