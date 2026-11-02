@@ -6,6 +6,8 @@ module.exports={
 "File:Prodromos Didaskon Ioudaious Dionysiou.jpg":"The Forerunner Teaching the Jews — Dionysiou, Athos, 1547",
 "File:Αμφιπρόσωπη εικόνα με τον Άγιο Γεώργιο και τον Άγιο Ανδρέα Β΄ μισό 12ου αι. - Α΄ μισό 18ου αι. Βέροια, Ιερός ναός Αγίου Ανδρέα 2.jpg":"St Andrew the First-called — Veria, Macedonia",
 "File:Andrew (Kirillo-Belozersk).jpg":"St Andrew — Kirillo-Belozersky monastery, late 15th c.",
+"File:Grec 74 fol 170r.jpg":"Philip and Nathanael — Paris Gospels gr. 74, 11th c.",
+"File:Grec 74 fol 169r.jpg":"The Baptism the Forerunner Recalls — Paris Gospels gr. 74, 11th c.",
 "File:Christos Kana Galilaias.jpg":"The Marriage at Cana — Dionysiou, Athos, 1547",
 "File:Cathedral (Monreale) - North arch of transept - Wedding at Cana.jpg":"The Marriage at Cana — Monreale, 12th c.",
 "File:StNikita122general.jpg":"The Marriage at Cana — St Nikita near Skopje, 14th c.",

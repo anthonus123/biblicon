@@ -8,11 +8,13 @@ module.exports={
   story:"John opens not in Bethlehem but before time: In the beginning was the Word, and the Word was with God, and the Word was God. All things were made by him. In him was life, and the life was the light of men, shining in a darkness that could not overcome it. A man sent from God, whose name was John, came to bear witness of that Light. The Word came to his own, and his own received him not; but to as many as received him he gave power to become the sons of God. And the Word was made flesh, and dwelt among us, full of grace and truth. No man hath seen God at any time; the only begotten Son hath declared him."},
  witness1:{type:'Event',keyVerse:23,
   story:"The Jews sent priests and Levites from Jerusalem to ask John, Who art thou? He confessed, and denied not: I am not the Christ. Not Elias; not that prophet. Then who? I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias. Pressed on why he baptized, he answered: I baptize with water, but there standeth one among you whom ye know not, whose shoe’s latchet I am not worthy to unloose. These things were done in Bethabara beyond Jordan."},
- lamb:{type:'Event',keyVerse:29,
+ // The key verse is the sight the Paris strip paints (2026-11-02; was 29).
+ lamb:{type:'Event',keyVerse:32,
   story:"The next day John saw Jesus coming and said, Behold the Lamb of God, which taketh away the sin of the world. This is he of whom I said, After me cometh a man which is preferred before me, for he was before me. John bore record that he had seen the Spirit descending from heaven like a dove and abiding upon him — the sign he had been given by which to know the one who baptizes with the Holy Ghost. And I saw, and bare record, that this is the Son of God."},
  firstdisciples:{tierB:true,type:'Event',keyVerse:41,
   story:"Again the next day John stood with two of his disciples, and looking upon Jesus as he walked, he said, Behold the Lamb of God. The two followed Jesus, who turned and asked, What seek ye? Rabbi, where dwellest thou? Come and see. They abode with him that day, about the tenth hour. One of the two was Andrew, Simon Peter’s brother. He first findeth his own brother Simon and saith, We have found the Messias. He brought him to Jesus, who looked on him and said, Thou art Simon the son of Jona: thou shalt be called Cephas — a stone."},
- nathanael:{type:'Event',keyVerse:51,
+ // The key verse is the fig tree the Paris strip paints (2026-11-02; was 51).
+ nathanael:{type:'Event',keyVerse:48,
   story:"The day following Jesus went into Galilee, found Philip, and said, Follow me. Philip found Nathanael: We have found him of whom Moses and the prophets did write, Jesus of Nazareth. Can there any good thing come out of Nazareth? Come and see. Jesus saw Nathanael coming and said, Behold an Israelite indeed, in whom is no guile — before Philip called thee, when thou wast under the fig tree, I saw thee. Rabbi, thou art the Son of God, the King of Israel. Thou shalt see greater things: heaven open, and the angels of God ascending and descending upon the Son of man."},
 
  // ---- chapter 2 ----

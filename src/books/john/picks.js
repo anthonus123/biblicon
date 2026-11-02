@@ -11,9 +11,18 @@ module.exports={
   "witness1": [
     "File:Prodromos Didaskon Ioudaious Dionysiou.jpg",
   ],
+  // The Forerunner's witness. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block): the
+  // Baptism, set between 1:34 and 1:35, so the book's own picture for this passage. No dove painted.
+  "lamb": [
+    "File:Grec 74 fol 169r.jpg",
+  ],
   "firstdisciples": [
     "File:Αμφιπρόσωπη εικόνα με τον Άγιο Γεώργιο και τον Άγιο Ανδρέα Β΄ μισό 12ου αι. - Α΄ μισό 18ου αι. Βέροια, Ιερός ναός Αγίου Ανδρέα 2.jpg",
     "File:Andrew (Kirillo-Belozersk).jpg",
+  ],
+  // Philip and Nathanael. Paris, BnF grec 74, an eleventh-century Byzantine Gospel book (CSNTM catalogues it as GA 269, 11th c.; Commons' "12. Jahrhundert" is not used). Its strips sit inside the Gospel text; the verse next to each was read from the Commons crop. Found 2026-11-02 in `Codex Parisinus Graecus 74`, a category the pool never reached. Nathanael stands under the fig tree at the right.
+  "nathanael": [
+    "File:Grec 74 fol 170r.jpg",
   ],
   "cana": [
     "File:Christos Kana Galilaias.jpg",

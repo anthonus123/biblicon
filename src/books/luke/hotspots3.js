@@ -327,6 +327,17 @@ module.exports={
  ["The mourners", "Women with cheek on hand, and on the right bearded men by a long pole that may be a candle: much people of the city was with her.", "32%", "70%"],
 ],
 
+"File:Grec 74 fol 122r.jpg":[
+ ["Christ", "Haloed, reclining at the end of the couch.", "40%", "38%"],
+ ["The woman bending to his feet", "Bent low over them: stood at his feet behind him weeping.", "45%", "24%"],
+ ["His feet", "Bare, in her two hands.", "55%", "27%"],
+ ["The couch's high back", "Dark blue, rising behind him like a hood.", "20%", "40%"],
+ ["The bowl", "The one dish on the table.", "45%", "50%"],
+ ["Two men without haloes", "One must be Simon, the Pharisee who had bidden him.", "22%", "48%"],
+ ["Two apostles", "Haloed; the further sits on a folding stool.", "35%", "60%"],
+ ["The tower", "A gilded band round it.", "45%", "76%"],
+],
+
 // ---- chapter 8 ----
 
 "File:Representation of the Sower's parable.JPEG":[
@@ -473,6 +484,18 @@ module.exports={
  ["The journey to the inn", "The wounded man astride a dark pack animal, led on foot toward an archway where a figure waits: and set him on his own beast, and brought him to an inn... he took out two pence, and gave them to the host.", "20%", "78%"],
 ],
 
+"File:Grec 74 fol 132r2.jpg":[
+ ["Christ", "Haloed, at the table's head.", "50%", "15%"],
+ ["Four apostles", "Haloed, round the table with him.", "38%", "35%"],
+ ["The last of them", "Reclining at the right end on a red couch.", "50%", "54%"],
+ ["The cups", "Three gilded cups on the green cloth.", "60%", "35%"],
+ ["The woman with the dish", "Martha was cumbered about much serving.", "45%", "79%"],
+ ["The dish", "Carried before her.", "52%", "73%"],
+ ["The ewer", "A tall gilded vessel.", "60%", "86%"],
+ ["The pot on the fire", "A flame beneath it.", "72%", "92%"],
+ ["No Mary", "Nobody sits at Christ's feet.", "80%", "20%"],
+],
+
 // ---- chapter 11 ----
 
 "File:Christos Iomenos Daimonon Takophon Dionysiou.jpg":[
@@ -522,6 +545,16 @@ module.exports={
  ["The winged figure", "In the upper corner; it probably belongs to the neighbouring decoration rather than to this scene.", "12%", "10%"],
 ],
 
+"File:Grec 74 fol 138v.jpg":[
+ ["The owner", "Long gold robe: he came and sought fruit thereon, and found none.", "55%", "45%"],
+ ["His hand in the branches", "Searching the leaves.", "36%", "47%"],
+ ["The barren tree", "Thick leaves and no fruit anywhere.", "20%", "55%"],
+ ["The dresser of the vineyard", "Short red tunic, hands raised: Lord, let it alone this year also.", "52%", "66%"],
+ ["The stump", "A broken trunk at the tree's foot.", "73%", "58%"],
+ ["The vines", "Heavy with blue grapes: the vineyard bears, the tree does not.", "55%", "20%"],
+ ["More vines", "Grapes again on the right.", "60%", "86%"],
+],
+
 // ---- chapter 14 ----
 
 "File:Christ in the pharisee's house (Monreale).jpg":[
@@ -550,6 +583,29 @@ module.exports={
  ["A cross, not a crook", "Held upright in his left hand.", "55%", "49%"],
  ["Fingers at a muzzle", "His right hand touches rather than carries — no shoulder bears any weight in this mosaic.", "65%", "58%"],
  ["Six faces, none of them grazing", "Every one turned to look at him instead.", "78%", "25%"],
+],
+
+"File:Grec 74 fol 143r (1).jpg":[
+ ["The father", "Enthroned before his house: he divided unto them his living.", "50%", "17%"],
+ ["The younger son", "Red tunic edged with gold, hands raised: give me the portion of goods.", "55%", "33%"],
+ ["The son in want", "A poor short tunic, a staff, face sunk on one palm.", "52%", "57%"],
+ ["The swine", "A herd crowded round the tree trunk: to feed swine.", "72%", "70%"],
+ ["The man in the tree", "Beating the branches with a stick.", "30%", "80%"],
+ ["The falling pods", "Blue pods dropping to the herd: the husks that the swine did eat.", "40%", "70%"],
+ ["Two more swine", "Turned away at the right edge.", "72%", "90%"],
+ ["Verse 17 begins", "Below the picture: and when he came to himself.", "92%", "22%"],
+ ["143", "The folio number, written later.", "20%", "92%"],
+],
+
+"File:Grec 74 fol 143r (2).jpg":[
+ ["Verse 22 above", "And put a ring on his hand, and shoes on his feet: the text just before the picture.", "9%", "40%"],
+ ["The father", "Seated before his house.", "45%", "12%"],
+ ["The son bowed down", "Face to the ground at his father's feet: I have sinned.", "70%", "22%"],
+ ["The embrace", "Fell on his neck, and kissed him.", "45%", "37%"],
+ ["The son clothed", "In a gold tunic, one foot held out.", "50%", "52%"],
+ ["The ring", "A servant takes his outstretched hand.", "40%", "59%"],
+ ["The shoes", "A servant bends to his feet.", "63%", "61%"],
+ ["The house", "Empty: no calf, no music, no elder son.", "45%", "77%"],
 ],
 
 // ---- chapter 16 ----
@@ -592,6 +648,18 @@ module.exports={
  ["The publican, left", "Bowed, hands crossed, lower on the same steps.", "45%", "9%"],
  ["The Pharisee, right", "The same pair repeated on the temple's other side.", "27%", "77%"],
  ["The publican, right", "Bowed and crossed-handed, below him.", "45%", "87%"],
+],
+
+"File:Grec 74 fol 35v.jpg":[
+ ["Christ on the throne", "Raising a hand to the crowd.", "40%", "36%"],
+ ["The boy at his knee", "Already where the others are trying to come.", "68%", "40%"],
+ ["A face behind the throne", "Another child, half hidden.", "58%", "29%"],
+ ["The disciples in the way", "Two haloed men between the parents and Christ.", "35%", "50%"],
+ ["A hand on a head", "His disciples saw it, they rebuked them, or an apostle ushering a child on.", "57%", "56%"],
+ ["Children walking", "Ahead of the crowd.", "68%", "63%"],
+ ["The parents", "They brought unto him also infants.", "45%", "74%"],
+ ["Held aloft", "Two little ones raised above the crowd.", "15%", "76%"],
+ ["More apostles", "Three, waiting at the left.", "35%", "12%"],
 ],
 
 // ---- chapter 19 ----
@@ -650,6 +718,18 @@ module.exports={
  ["Animals led from the courts", "At the right edge, John's own detail — as absent from Luke's two verses as from Mark's own list of what was overturned.", "22%", "92%"],
  ["David, crowned", "At the left end of the row of witnesses beneath the scene. The same crown, and the same overlined caption, recur at the third bust along — David quoted a second time.", "50%", "15%"],
  ["Isaiah", "His own column of words sits beneath the scene. Mark alone keeps the prophecy's reach to the nations, of all nations; Matthew leaves it out, same as Luke. Where Luke differs from both is the verb: Matthew and Mark keep the prophecy's future tense, shall be called, and Luke flattens it to a plain is.", "50%", "80%"],
+],
+
+"File:Grec 74 fol 149v.jpg":[
+ ["The last words", "Τὸ ἀπολωλός, that which was lost: the end of verse 10, just above the picture.", "9%", "20%"],
+ ["Zacchaeus in the tree", "A little man in red up among the branches: climbed up into a sycomore tree to see him.", "30%", "77%"],
+ ["Christ looking up", "His hand lifted to the man in the tree.", "38%", "86%"],
+ ["Two apostles", "Haloed, close behind him.", "40%", "92%"],
+ ["The table", "Cups and a bowl on a curved table.", "62%", "37%"],
+ ["Christ at the table", "Reclining at the right-hand end, his halo flaked.", "50%", "51%"],
+ ["The host", "No halo, red and gold, at the other end: received him joyfully.", "57%", "26%"],
+ ["Three apostles", "Haloed, behind the table.", "46%", "38%"],
+ ["The murmurers", "Unhaloed men outside the house, heads together: they all murmured.", "58%", "14%"],
 ],
 
 // ---- chapter 21 ----

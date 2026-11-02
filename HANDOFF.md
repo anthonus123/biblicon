@@ -190,7 +190,7 @@ and this file did not.
   - **120 passages**, all 28 chapters. Tiers: **52 (a)**, **5 (b)**, **63 (c)** (2026-11-01c:
     `calling` 4:18-22 got the Tokalı calling fresco; `make check` now reports 57 passages
     showing 113 icons). **2026-11-01f: `confession` 16:13-20 got the Ohrid "upon this rock" fresco — tiers
-    53/5/62, 58 passages showing 114 icons, 608 markers; the counts below are as of 11-01c.**
+    53/5/62, 58 passages showing 114 icons, 608 markers; the counts below are as of 11-01c. **2026-11-02: 116 icons, tiers a:55 b:5 c:60 (`nativity` 2:19-23 and `children` 19:13-15 from Paris gr. 74).**
     **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
@@ -210,7 +210,7 @@ and this file did not.
     Cyprian, John of Damascus. **Nothing paraphrased, nothing invented.**
 - **John content, as of 2026-09-19 (updated 2026-11-01: +3 icons — `anointing` 12:1-11 and
   `walking` 6:16-21 now tier a, `shepherd` 10:1-21 now tier b — so 27 (a) / 3 (b) / 34 (c),
-  30 passages with an icon, 76 icons, 535 markers):**
+  30 passages with an icon, 76 icons, 535 markers; **2026-11-02: 32 passages, 78 icons — `lamb` and `nathanael` from Paris gr. 74**):**
   - **64 passages**, all 21 chapters. Tiers: **25 (a)**, **2 (b)**, **37 (c)**. The two tier-b
     passages are the Prologue (1:1–18, the Evangelist writing) and 1:35–42 (St Andrew's own icon).
   - **27 have an icon, showing 73 icons between them**; 23 of the 27 show more than one.
@@ -330,6 +330,7 @@ and this file did not.
     cannot replace: read every "so", "that" or "because" a story adds, and every quoted speech
     whose pronouns changed, against the printed verses by eye.
   - **31 passages still want a story** at this date; closed by batch 4, 2026-09-25h, above.
+  - **(2026-11-02: 110 icons, tiers a:58 b:6 c:88 — `figtree`, `prodigal` (2), `zacchaeus`, `sinfulwoman`, `marthamary`, `children` from Paris gr. 74.)**
   - **(2026-11-01f: 103 icons, 639 markers, tiers a:52 b:6 c:94, 58 icon-bearing passages and 58 stories — `shepherds` (Lagoudera), `synagogue` (Peribleptos, Ohrid), `richfool` and `lazarus` (Rila) wired; see that Session block.)**
   - **(2026-11-01e: 97 icons, 588 markers, tiers a:48 b:6 c:98, 54 icon-bearing passages and 54 stories — `nain`, `bowedwoman`, `dropsy` (all Monreale) and `mites` (Ravenna + Ferapontov) wired; see that Session block.)**
   - **(2026-11-01d: 92 icons, 549 markers, tiers a:44 b:6 c:102, 50 icon-bearing passages and 50 stories — `herodtrial` and `simoncyrene` wired from Staro Nagoričane; see that Session block. 2026-11-01c: 90 icons, 533 markers.)**
@@ -373,7 +374,7 @@ and this file did not.
     **48 icon-bearing passages, 89 icons; tiers 42 (a), 6 (b), 104 (c)**, up from 34/69/29/5/118.
     **None of the 13 has a prose reading yet** — this session was survey-and-wire only, the
     pattern 2026-09-20b/d set for the first pass; readings are next. **26 passages still want an
-    icon**: `nain` (**found 2026-11-01e — Monreale; it was in the pool under its category**) and Zacchaeus (searched again, still no Orthodox image found either time), the
+    icon**: `nain` (**found 2026-11-01e — Monreale; it was in the pool under its category**) and Zacchaeus (**RESOLVED 2026-11-02 — Paris gr. 74 fol. 149v**; searched again, still no Orthodox image found either time), the
     woman bowed together at 13:10-17 (**found 2026-11-01e: `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg` is the woman's half**; Monreale's own Commons record turned out to hold only half
     the mosaic — see the Session block), and the rest of the Infancy/parables/Luke-only-Passion
     list the harvest could not supply.
@@ -444,6 +445,8 @@ and this file did not.
   if anything is ever needed back out of it.
 
 ## Next
+
+**2026-11-02: Paris gr. 74 (BnF, 11th c., `Category:Codex Parisinus Graecus 74`) filled ten gaps** — see that Session block. Its ~300 miniatures not on Commons are the biggest remaining lead (Gallica blocks scripted access; needs the owner to fetch folios). Remaining gaps after it: Matthew 16, Mark 11, Luke 10, John 5 (by `make check`).
 
 **Patristic sourcing: the credit lines are fixed (see `## Status`, 2026-09-27d); the underlying
 source is not, and may never be under current constraints.** If a future session ever finds a
@@ -537,7 +540,7 @@ comments on it as Mark's (blocks 9–13, 14–18, 19–20), so the readings trea
 do not raise the manuscript question. That was the suggestion recorded in batch 11 and it was
 followed; the owner can still rule otherwise, and nothing in the two readings depends on it.
 
-**Luke's readings are finished — 103/103 since 2026-11-01f (639 markers; 97/97 and 588 at 2026-11-01e; 92/92 and 549 at 2026-11-01d); 89/89 across 57 passages was closed in five batches
+**2026-11-02: Luke now has 110 icons (7 more from Paris gr. 74, each with its own reading and markers). Luke's readings are finished — 103/103 since 2026-11-01f (639 markers; 97/97 and 588 at 2026-11-01e; 92/92 and 549 at 2026-11-01d); 89/89 across 57 passages was closed in five batches
 (17 through 21, 2026-09-25d) after the 2026-09-25c harvest left them undone.** What is left for
 Luke, in order:
 1. **RESOLVED 2026-11-01e: `nain` now has the Monreale mosaic** (`Nain widow's son is resurrected by Christ.jpg`, in `pool.json` under `Resurrection of the widow's son at Nain` all along). What follows is the old entry. `nain` (7:11-17, the widow's son) still has **no file wired at all** — searched again
@@ -551,7 +554,7 @@ Luke, in order:
    chose not to use it, on the same reasoning the retraction itself gave: the catalogue entry
    doesn't confirm the panel depicts this scene. No further work needed here unless the owner
    reopens it.
-3. **16 passages still want an icon** (20 until 2026-11-01f wired `shepherds`, `synagogue`, `richfool` and `lazarus` — **and the harvest's `CYCLES` list is 23 of 37 names empty, not seven; see the 2026-11-01f Session block**; 24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
+3. **10 passages still want an icon** (16 until 2026-11-02 wired `figtree`, `prodigal`, `zacchaeus`, `sinfulwoman`, `marthamary` and `children` from Paris gr. 74 — **Zacchaeus below is RESOLVED**; 20 until 2026-11-01f wired `shepherds`, `synagogue`, `richfool` and `lazarus` — **and the harvest's `CYCLES` list is 23 of 37 names empty, not seven; see the 2026-11-01f Session block**; 24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
    13:10-17 (**wired 2026-11-01e from `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg`, the woman's half, which no title search could find**; Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
@@ -1966,7 +1969,7 @@ Then, in the owner's priority order:
    `walking` (6:16-21, Hagia Sophia Trebizond fresco), `shepherd` (10:1-21, tier b, an
    18th-century Bessarabian Good Shepherd icon; this reader takes its own file, so the old question
    of reusing Matthew's and Luke's two mosaics here is moot unless the owner prefers them).
-   Still open: Lamb of God (1:29-34), Philip and Nathanael (1:43-51), Nicodemus (3:1-21), the
+   Still open (**Lamb of God and Philip and Nathanael RESOLVED 2026-11-02, Paris gr. 74**): Lamb of God (1:29-34), Philip and Nathanael (1:43-51), Nicodemus (3:1-21), the
    nobleman's son (4:43-54), Martha and Mary meet Christ (11:17-37), the doors shut (20:19-23),
    "Feed my sheep" (21:15-19). Commons categories for each are Western only (see 2026-11-01c).
    Tokalı Kilise's Commons category was searched through 2026-11-01c (it gave Matthew and Mark
@@ -7232,3 +7235,121 @@ converging as of 2026-09-27g/h).
   Matthew (18), Mark (11), John (7) have no Commons whole-file source in any programme known here.
   Open leads: the owner's ruling on self-cropped kleymo (above); `CYCLES` regeneration. Nothing is
   committed (owner did not ask).
+
+## Session 2026-11-02 (Paris gr. 74: the Byzantine Gospel book's own strips fill gaps the frescoes never could)
+
+- **Did.** Owner: "continue and dont stop". **New source: `Category:Codex Parisinus Graecus 74`**
+  (56 files, 55 never pooled) — strips cropped from Paris, BnF grec 74, an eleventh-century
+  Byzantine Gospel book whose miniatures sit *inside the Gospel text*, so the Greek just above or
+  below each strip fixes which verses it illustrates. Commons dates every file "12. Jahrhundert /
+  1200-12-31" (a placeholder); CSNTM catalogues the codex as GA 269, **11th century** — that is the
+  date used. `image_meta.json` artist normalised to "Byzantine illuminator", date "11th century".
+  Gallica (the files' source) blocks scripted access behind Cloudflare; it was **not** worked
+  around, so every verse placement below was read from the Greek visible in the Commons crops.
+- **Also looked at, nothing for a gap:** the Ivan Alexander Tetraevangelion on Commons (15
+  narrative folios). Its descriptions list each folio's scenes. Fol. 123 is **Mark 13** (the text
+  above it is 13:15-20, ending "ѧже избра", which only Mark has), with persecution before a king
+  and horsemen besieging a city — but Mark 13:9-13 and 13:14-20 are tier c with no subject in
+  `assign.js`, so it was not wired (owner's call). Fol. 32 sits under Matthew 10:29 (apostles
+  preaching in cities) — a possible tier-b for Matthew 10's discourse passages; not wired.
+- **Batch 1 wired (Luke a:52 → a:55, 103 → 107 icons; John a:27 → a:28, 76 → 77):**
+  - Luke `zacchaeus` (19:1-10), fol. 149v, set just after 19:10 (τὸ ἀπολωλός visible top left):
+    Christ calling him from the tree, and the meal in his house with the murmurers outside. The
+    2026-09-25c search had called this gap "likely permanent".
+  - Luke `prodigal` (15:11-32), two strips: fol. 143r (1), after 15:16 (verse 17 begins below
+    it) — the portion asked, the son with the swine, a man beating pods down from a tree; and
+    fol. 143r (2), after 15:22 (its Greek above it) — the son bowed down, the embrace, robe, ring
+    and shoes. No elder son in either; the readings say so.
+  - Luke `figtree` (13:6-9), fol. 138v: owner and vinedresser at a fruitless tree among laden vines,
+    neither haloed. The line above it seems to end 13:10 (…σάββασιν +), so the strip sits at the
+    parable's close; the reading does not claim a verse.
+  - John `nathanael` (1:43-51), fol. 170r, between the Baptism (fol. 169r, 1:34-35) and Cana:
+    Christ, two disciples behind him, two coming to him, and a haloed youth under a tree at the
+    right. Figures unlabelled; the reading says which is Philip is not shown. John `nathanael`
+    keyVerse 51 → 48 (the fig tree).
+  - Fathers: Cyril (Zacchaeus), Bede (husks), Chrysostom (ring), Theophylact (fig tree),
+    Chrysostom (Nathanael) — all verbatim from each book's `catena.json`.
+- **Display.** Strips are ~2.2-2.6:1. In the drawer and lightbox they show whole, legible at
+  desktop and at 390px phone width; the 226×180 card thumbnail (`object-fit:cover`) crops their
+  sides. Left as is — for the owner if it bothers them.
+- **Verified (batch 1).** `make` all four ok; `quotes.js` Luke 54 KJV clauses to read (unchanged),
+  0 wrong Father/no source/drift; John 0 new flags (its 3 drifts are pre-existing, other files);
+  `story_check` clean for the three Luke stories (full KJV text); `overlay.py` every marker on
+  target; 5-gram overlap of the new prose against all four books: 0 after rewording; Playwright:
+  cards and drawer render, 0 console errors. Front page and `llms.txt`: Luke 107, John 77.
+- **Batch 2 wired (Matthew a:53 → a:55, 114 → 116 icons; Luke a:55 → a:58, 107 → 110):**
+  - Luke `sinfulwoman` (7:36-50), fol. 122r (the leaf after Nain): Christ reclining, the woman
+    bent over his feet, two unhaloed men at table (one must be Simon) and two apostles. No
+    alabaster box, hair not shown wiping. **This closes the gap without the Monreale Bethany mosaic**
+    — the 2026-11-01b owner question now only concerns whether that mosaic stays in Matthew 26 /
+    Mark 14 (it is wired to John 12).
+  - Luke `marthamary` (10:38-42), fol. 132r2 (same leaf as the Good Samaritan): Christ and four
+    apostles at table, a woman bringing a dish, ewer and pot on a fire. **Mary is not painted**;
+    the reading says so and keyVerse is 40 (Martha's serving).
+  - Matthew `children` (19:13-15) and Luke `children` (18:15-17), **one file, fol. 35v, in both
+    readers** (cross-reader reuse, as with the widow's mite). The book sets it at Matthew 19; the
+    Luke reading says so. Mark-test applied: nothing Matthew-only is painted (no laying on of
+    hands distinct from Luke's "touch"; Mark's "took them up in his arms" is not painted either).
+    Mark 10:13-16 stays tier c (its `assign.js` has no subject — unchanged).
+  - Matthew `nativity` (2:19-23, the Return to Nazareth), fol. 5r2, set after 2:23 (its Greek above
+    the strip): Joseph's dream on a roof, the Child on Joseph's shoulders (IC XC), the Theotokos
+    (ΜΡ ΘΥ) on the donkey, a youth with a bundle (hedged as James, by tradition), a man kneeling
+    at a town gate. Hilary quoted ("Christ is entrusted to be borne about").
+  - **Already in Matthew since the first build:** `Workers in the vineyard, Minuscule 269 (11th
+    century).jpg` (20:1-16) is from this same codex (GA 269 = Paris gr. 74); its metadata already
+    said 11th c., confirming the date. Its label still says "Byzantine Gospel book, 11th c.".
+- **Batch 3: John `lamb` (1:29-34), fol. 169r (John a:28 → a:29, 77 → 78 icons).** The Baptism,
+  set *between 1:34 and 1:35* (ὁ υἱὸς τοῦ θεοῦ + above, τῇ ἐπαύριον πάλιν below) — the book's own
+  picture for the Forerunner's remembered sight. No dove painted; the reading says so. keyVerse
+  29 → 32. **fol. 167v is not used:** it looks like 1:29 (John pointing to Christ coming, vested
+  men at the right) but the book sets it after 1:7, the prologue's "witness of the Light"; the
+  vested men fit 1:19. A possible gallery image for `witness1` (1:19-28) — owner's call.
+- **Verified (batches 2-3).** As batch 1: `make` all four ok; `quotes.js` Matthew 45 / Luke 54
+  KJV clauses to read (unchanged), 0 wrong/no source/drift in all four except John's 3
+  pre-existing drifts; `story_check` clean for the three new Luke stories; overlays on target
+  (one Luke marker moved); 5-gram overlap 0 for all ten new readings after varying the repeated
+  source-intro sentence. Counts: Matthew 116, Luke 110, John 78 on the front page and `llms.txt`.
+- **Then viewed, nothing wired:** the Georgian Gospel books on Commons (Jruchi I and II, Mokvi,
+  Gelati, Vani — ~90 files; feasts, Passion, sieges, Evangelists; Jruchi II's 138r "Healing of
+  the Possessed" is the Gadarene, already tier a); the Sinope Gospels (18; the two blind men of
+  Jericho, Herod's feast, the feeding — all passages already tier a, so gallery candidates only:
+  Matthew `blind20`, `beheading`, `feeding5`); Matejče (25) and Treskavec (12); and **all 535
+  files of St Demetrius, Markova Sušica** (`Paintings in St. Demetrius Church (Markova Sušica)`,
+  never pooled): Akathist, saints, Infancy, Passion, Dormition, Last Judgement — no ministry
+  scene for a gap. Cappadocia's Dark Church, Elmalı and Çarıklı on Commons are mostly exteriors
+  and Feasts by title (not sheeted).
+- **Paris gr. 74 strips on Commons still unused, for the owner:** 113v (Luke 4:14-21 synagogue,
+  gallery), 167v (the Baptist's witness after John 1:7 — possible gallery for `witness1`), 192r
+  (raising of Lazarus, gallery for John 11:38-44), 39r2 (labourers, gallery for Matthew 20:1-16),
+  142v (**the lost coin, Luke 15:8-10 — tier c with no subject in `assign.js`**; would need a
+  tier change), 108v/136r/139r/105r/105v/107r and the rest (Infancy, Luke 12-13, 21-24, John
+  5-6, 9, 12-13, 19-20 — mostly passages already tier a). **The codex has ~360 miniatures; only
+  56 are on Commons.** Most of the remaining gaps (talents, wicked husbandmen, unforgiving
+  servant, tares, mustard seed, pearl, Nicodemus, the nobleman's son, feed my sheep…) are almost
+  certainly painted in it. Gallica holds the full digitisation (ark:/12148/btv1b105494556) as
+  public domain, but it blocks scripted access; a future session could only use those if the
+  owner downloads or uploads the folios. That is the single biggest lead left.
+- **Advisor fixes.** `iconGap` texts in Luke/Matthew/John reworded (Luke "Six more"; John no
+  longer opens "none found"; no trailing period); the Luke 7 reading's unverified "leaf after Nain"
+  clause cut (fol. 121r's subject is not certain); `overrides.js` header "other 88 passages";
+  stale counts above `## Session history` annotated. Playwright with cache-busting: all ten new
+  cards in Matthew, Luke and John load their images, 0 console errors.
+- **For the owner.**
+  1. Card thumbnails (226×180, `object-fit:cover`) crop the wide manuscript strips' sides; the
+     drawer and lightbox show them whole. Change the CSS for wide images, or leave?
+  2. Luke 15:8-10 (the lost coin) has a Paris gr. 74 strip (fol. 142v) but is tier c with no
+     subject in `assign.js`. Promote it?
+  3. Ivan Alexander fol. 123 (Mark 13:9-20, persecution and siege) and fol. 32 (Matthew 10's
+     preaching apostles): both would need tier changes. Wire?
+  4. Paris gr. 74 fol. 167v as a gallery image for John `witness1` (1:19-28)?
+  5. Gallery candidates: Sinope (Matthew `blind20`, `beheading`, `feeding5`); Paris gr. 74 113v
+     (Luke 4:14-21), 192r (John 11:38-44), 39r2 (Matthew 20:1-16 — **may duplicate** the
+     `Workers in the vineyard, Minuscule 269` file already there, same codex).
+  6. Gallica holds all ~360 miniatures of Paris gr. 74 (public domain) but blocks scripted access.
+     If you download or upload folios, they very likely cover the talents, wicked husbandmen,
+     unforgiving servant, tares, mustard seed, pearl, Nicodemus, the nobleman's son, feed my sheep.
+  7. Still open from 2026-11-01b: should the Monreale Bethany mosaic *also* go on Luke 7:36-50
+     (now that 122r is its primary), and does it stay in Matthew 26 / Mark 14? Wiring 122r does
+     not settle it.
+- **Next.** The owner list above; then, if Gallica folios become available, the remaining gaps
+  (Matthew 16, Mark 11, Luke 10, John 5). Nothing is committed (owner did not ask).

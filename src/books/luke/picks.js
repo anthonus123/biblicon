@@ -200,6 +200,13 @@ module.exports={
     "File:Nain widow's son is resurrected by Christ.jpg",
   ],
 
+  // The sinful woman at Christ's feet. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block). Two men at table unhaloed, one of them Simon;
+  // no alabaster box painted. Whether the Monreale Bethany mosaic should also go here is still the
+  // owner's 2026-11-01b question.
+  "sinfulwoman": [
+    "File:Grec 74 fol 122r.jpg",
+  ],
+
   // ---- chapter 8 ----
   "sower": [
     "File:Representation of the Sower's parable.JPEG",
@@ -245,6 +252,11 @@ module.exports={
     "File:RossanoGospelsFolio007vGoodSamaritan.jpg",
   ],
 
+  // Martha serving. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block). Same leaf as the Good Samaritan. Mary is not painted.
+  "marthamary": [
+    "File:Grec 74 fol 132r2.jpg",
+  ],
+
   // ---- chapter 11 ----
   // The DUMB demoniac, which is exactly Luke 11:14. Its neighbour in the pool, `Iomenos
   // Daimonizomenon`, is Matthew 12:22 — blind AND dumb, a detail Luke does not give.
@@ -273,6 +285,11 @@ module.exports={
     "File:Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg",
   ],
 
+  // The barren fig tree. Paris, BnF grec 74, an eleventh-century Byzantine Gospel book (CSNTM catalogues it as GA 269, 11th c.; Commons' "12. Jahrhundert" is not used). Its strips sit inside the Gospel text; the verse next to each was read from the Commons crop. Found 2026-11-02 in `Codex Parisinus Graecus 74`, a category the pool never reached. The owner and the dresser are unhaloed.
+  "figtree": [
+    "File:Grec 74 fol 138v.jpg",
+  ],
+
   // ---- chapter 14 ----
   // The man with the dropsy. Commons calls it "Christ in the pharisee's house"; the mosaic's own
   // title is …ANAT YDROPICVM DIE SABATI. It was in src/img (unreferenced) since the first build.
@@ -286,6 +303,14 @@ module.exports={
   "lostsheep": [
     "File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg",
     "File:Ravenna — The Good Shepherd mosaic.jpg",
+  ],
+
+  // Two strips of the same book (grec 74), one after 15:16 (the portion, the swine, the husks
+  // beaten down from a tree) and one after 15:22 (the son bowed down, the embrace, the robe, ring
+  // and shoes). No elder son in either.
+  "prodigal": [
+    "File:Grec 74 fol 143r (1).jpg",
+    "File:Grec 74 fol 143r (2).jpg",
   ],
 
   // ---- chapter 16 ----
@@ -316,6 +341,13 @@ module.exports={
     "File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 4 IMG 8016.jpg",
   ],
 
+  // The blessing of the children. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block). The book sets it at Matthew 19:13-15 (Matthew's
+  // reader shows it there); nothing in it is Matthew-only, and the reading says whose text it
+  // illustrates.
+  "children": [
+    "File:Grec 74 fol 35v.jpg",
+  ],
+
   // ---- chapter 19 ----
   "entry": [
     "File:Baiophoros Dionysiou.jpg",
@@ -326,6 +358,13 @@ module.exports={
   "temple": [
     "File:Christ banish tradesmen from Temple (Monreale).jpg",
     "File:Rossano Gospels - Cleansing of the Temple.jpg",
+  ],
+
+  // Zacchaeus. Grec 74, set just after 19:10 (τὸ ἀπολωλός shows at its top left): Christ calling
+  // him from the tree, and the meal in his house with the murmurers outside. Earlier searches had
+  // called this gap likely permanent.
+  "zacchaeus": [
+    "File:Grec 74 fol 149v.jpg",
   ],
 
   // ---- chapter 21 ----

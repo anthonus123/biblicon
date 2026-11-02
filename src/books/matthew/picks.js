@@ -46,6 +46,11 @@ module.exports={
     "File:Menologion of Basil II - Massacre of the Innocents.jpg",
     "File:Detail of the Massacre of the innocents mosaic at Chora (1).jpg",
   ],
+  // The return to Nazareth. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block). Set after 2:23, whose Greek runs above it; Joseph's dream
+  // on the roof, the Child on Joseph's shoulders (IC XC), the Theotokos (ΜΡ ΘΥ) on the donkey.
+  "nativity": [
+    "File:Grec 74 fol 5r2.jpg",
+  ],
   "forerunner": [
     "File:Christos Prodomo Dionysiou.jpg",
     "File:St John the Baptist Late XVII - Early XVIII Cenury St Mary Blonichka Church, Ohris Icon Gallery.jpg",
@@ -133,6 +138,10 @@ module.exports={
   "lostsheep": [
     "File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg",
     "File:Ravenna — The Good Shepherd mosaic.jpg",
+  ],
+  // The blessing of the children. Paris, BnF grec 74, 11th c. (see the 2026-11-02 HANDOFF block). Luke's 18:15-17 shows it too.
+  "children": [
+    "File:Grec 74 fol 35v.jpg",
   ],
   "vineyard": "File:Workers in the vineyard, Minuscule 269 (11th century).jpg",
   "blind20": "File:Christ heals two Jericho blind men.jpg",

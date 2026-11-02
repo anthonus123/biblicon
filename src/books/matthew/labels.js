@@ -40,6 +40,8 @@ module.exports={
 'File:Monreale - Multiplication of the Loaves and Fishes.jpg':'The Multiplication of the Loaves — Monreale, 12th c.',
 'File:Transfiguration of Christ Icon Sinai 12th century.jpg':'The Transfiguration — Sinai, 12th c.',
 'File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg':'The Good Shepherd — Great Palace, Constantinople, 5th–6th c.',
+"File:Grec 74 fol 5r2.jpg":"The Return to Nazareth — Paris Gospels gr. 74, 11th c.",
+"File:Grec 74 fol 35v.jpg":"Christ Blessing the Children — Paris Gospels gr. 74, 11th c.",
 'File:Workers in the vineyard, Minuscule 269 (11th century).jpg':'The Labourers in the Vineyard — Byzantine Gospel book, 11th c.',
 'File:Christ heals two Jericho blind men.jpg':'The Blind Men of Jericho — Monreale, 12th c.',
 'File:Baiophoros Dionysiou.jpg':'The Entry into Jerusalem — Dionysiou, Athos, 1547',

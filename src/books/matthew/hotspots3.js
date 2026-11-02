@@ -453,6 +453,31 @@ module.exports={
  ["The flock turned toward him","Every one of the six sheep has its head to him and none is grazing. The passage this belongs to is about not despising one of these little ones, for in heaven their angels do always behold the face of my Father.","70%","25%"],
  ["The starry vault above","The lunette sits under a dome of gold stars on deep blue. This is a mausoleum: the Good Shepherd was painted over the dead, because he is the one who goes out after what is lost.","18%","50%"]],
 
+"File:Grec 74 fol 5r2.jpg":[
+ ["Verse 23 above", "He shall be called a Nazarene: written just above.", "12%", "40%"],
+ ["Joseph asleep", "On the roof, haloed: being warned of God in a dream.", "25%", "88%"],
+ ["The angel", "Red wings, bending over him.", "15%", "78%"],
+ ["Joseph on the road", "Grey-haired, a red cloth in his hand.", "60%", "40%"],
+ ["The Child on his shoulders", "A small haloed head, lettered IC XC.", "35%", "41%"],
+ ["The Theotokos", "Lettered ΜΡ ΘΥ, riding.", "50%", "56%"],
+ ["The donkey", "Pale grey.", "72%", "50%"],
+ ["The youth with the bundle", "Haloed; perhaps James, Joseph's son in tradition.", "52%", "67%"],
+ ["The man at the gate", "Kneeling, hands raised; unnamed.", "75%", "25%"],
+ ["The town", "Walled and domed: he came and dwelt in a city called Nazareth.", "50%", "12%"],
+],
+
+"File:Grec 74 fol 35v.jpg":[
+ ["Christ enthroned", "Blessing with a lifted hand.", "40%", "36%"],
+ ["The boy at his knee", "Red and gold, close against him.", "68%", "40%"],
+ ["Another child", "Peering from behind the throne.", "58%", "29%"],
+ ["Two apostles", "Standing between Christ and the crowd.", "35%", "50%"],
+ ["A hand on a child's head", "Drawing him on, or the disciples rebuked them.", "57%", "56%"],
+ ["Children coming", "Walking ahead of their parents.", "68%", "63%"],
+ ["The parents", "Then were there brought unto him little children.", "45%", "74%"],
+ ["On their shoulders", "Two small children lifted up.", "15%", "76%"],
+ ["Three apostles", "Apart, at the left.", "35%", "12%"],
+],
+
 'File:Workers in the vineyard, Minuscule 269 (11th century).jpg':[
  ["The caption ΟΙΚΟΔΕΣΠΟΤΗΣ","The red Greek, cut short after its first letters, stands over the man in grey who is paying, not over the seated man at the door. It calls him the householder — the word Matthew uses in the first line: the kingdom of heaven is like unto a man that is an householder, which went out early in the morning to hire labourers into his vineyard.","10%","42%"],
  ["The man at the door","An older man in ochre sits on a stool before a tall house with a red roof, both hands open toward the payment. No caption names him. Whether he is the householder shown a second time at his own door the miniature does not say.","25%","27%"],

@@ -29,6 +29,31 @@ module.exports={
  ["The inscription", "Ο ΑΓΙΟΣ ΑΝΔΡΕΑΣ, split to either side of the halo. The Church keeps his feast on the 30th of November.", "36%", "84%"],
  ["The First-called", "Andrew is painted with the thick, disordered grey hair and beard that mark him in every Orthodox icon. He was a disciple of the Forerunner before he was Christ's, and followed Jesus the moment John pointed him out: Behold the Lamb of God.", "30%", "50%"],
 ],
+"File:Grec 74 fol 170r.jpg":[
+ ["Christ", "Dark-mantled, reaching toward the pair who approach.", "55%", "44%"],
+ ["His outstretched hand", "Reaching across the gap.", "40%", "51%"],
+ ["Two disciples behind him", "Haloed, one young and one grey, already following.", "40%", "33%"],
+ ["The two who come", "Hands lifted: Philip findeth Nathanael.", "45%", "63%"],
+ ["The grey-haired one", "A hand on his breast.", "50%", "71%"],
+ ["Under the fig tree", "A haloed youth in a short tunic: when thou wast under the fig tree, I saw thee.", "50%", "88%"],
+ ["The tree", "Leaves dotted with red.", "20%", "90%"],
+ ["The town", "Walled and towered, unnamed.", "45%", "12%"],
+ ["The Gospel text", "John's Greek running along the top.", "9%", "50%"],
+],
+
+"File:Grec 74 fol 169r.jpg":[
+ ["The end of verse 34", "Ὁ υἱὸς τοῦ θεοῦ, the Son of God, written just above.", "9%", "20%"],
+ ["Christ in the Jordan", "Small and haloed, standing in the water.", "55%", "47%"],
+ ["The Forerunner's hand", "Resting on the crown of his head.", "28%", "49%"],
+ ["John the Forerunner", "A rough dark garment: I saw, and bare record.", "45%", "55%"],
+ ["The cross-staff", "Tall and slender, at his side.", "15%", "55%"],
+ ["Two angels", "Bowing, their hands covered with cloths.", "45%", "22%"],
+ ["The river in human form", "A small dark figure lying in the water.", "82%", "58%"],
+ ["The onlookers", "Unhaloed men at the right.", "40%", "67%"],
+ ["No dove", "The sign of verse 32 is not painted.", "12%", "47%"],
+ ["Verse 35 begins", "Τῇ ἐπαύριον πάλιν, the next day again, below.", "92%", "20%"],
+],
+
 "File:Christos Kana Galilaias.jpg":[
  ["The inscription", "Ο ΧΣ ΕΝ ΚΑΝΑ ΤΗΣ ΓΑΛΙΛΑΙΑΣ … ΤΟ ΥΔΩΡ ΟΙΝΟΝ — Christ in Cana of Galilee making the water wine.", "9%", "55%"],
  ["The Mother of God", "She stands and turns to her Son: They have no wine. Then she tells the servants, Whatsoever he saith unto you, do it — the last words the Gospels give her. St John Chrysostom: He afterwards did what His mother told Him, in order to show plainly, that he was not under subjection to the hour.", "25%", "13%"],
