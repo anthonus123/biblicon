@@ -9,8 +9,8 @@
 // John do not tell those events — was harvested 2026-09-25c: the two Annunciations, the
 // Visitation, the Nativity of the Forerunner, the Circumcision, the Meeting in the Temple, and
 // the Ascension are wired below; Emmaus is wired in both its own moments (the road and the
-// supper); Christ at twelve years is not (see HANDOFF Gotchas — the one candidate found is
-// catalogued as a different feast).
+// supper); Christ at twelve years was not until 2026-11-02 (see HANDOFF Gotchas — the one
+// candidate found then is catalogued as a different feast; the page wired since is lettered).
 //
 // Where Luke's account differs, the file is deliberately NOT reused, and the reasons are in
 // HANDOFF by name: no scourging (Luke has Pilate say only "I will therefore chastise him" and
@@ -85,6 +85,7 @@ module.exports={
   "meeting": [
     "File:050 Presentation of Jesus at the Temple Icon from Saint Paraskevi Church in Langadas.jpg",
   ],
+  // (Historical, 2026-09-25c; see the 2026-11-02 note below for what is wired now.)
   // NOT wired — an open question for the owner, the same shape as `Christos Iomenos Typhlon`
   // and the Bethesda fresco in Matthew's reader. `Kirillo-Belozersky iconostasis 06 - Among
   // doctors.jpg` was drafted here 2026-09-25c on the strength of its composition (a haloed figure
@@ -96,6 +97,16 @@ module.exports={
   // shows, only that the composition alone can't. No other Orthodox icon of Christ at twelve
   // years was found this session; tier c for now, pending the owner's word on whether the
   // resemblance is enough to keep it here with a caveat.
+  //
+  // 2026-11-02: wired from a different source that does not depend on the resemblance. Paris,
+  // BnF grec 510 (Homilies of St Gregory, Constantinople, 879-883), fol. 165r (Commons calls it
+  // "f 343", Gallica's view number). Its top band is titled ΙϹ … ΜΕϹΩ … ΔΙΔΑϹΚΑ[ΛΩΝ] — Luke 2:46's
+  // own words — and puts Joseph (…ΗΦ) and "Η ΜΗΤΗΡ ΑΥΤΟΥ" embracing the boy beside the seated
+  // Christ, which no Mid-Pentecost icon has. A whole page of three bands; the reading says only
+  // the top one is this passage. The Kirillo panel stays unwired.
+  "twelveyears": [
+    "File:Homilies of Gregory the Theologian gr. 510, f 343.jpg",
+  ],
 
   // ---- chapter 3 ----
   // The Angel of the Desert: the Church's icon of the Forerunner himself, winged, with his own
@@ -346,6 +357,14 @@ module.exports={
   // illustrates.
   "children": [
     "File:Grec 74 fol 35v.jpg",
+  ],
+
+  // The rich ruler. Paris, BnF grec 510 (Homilies of St Gregory, Constantinople, 879-883), fol.
+  // 87v (Commons "f 188"): the left half of the middle band, lettered Ο ΠΛΟΥϹΙΟϹ Ο ΕΠΕΡΩΤΩΝ ΤΟΝ
+  // Κ(ΥΡΙΟ)Ν. A whole page of several scenes; the reading says which figures are this passage.
+  // Matthew's reader shows the same file at 19:16-30 (cross-reader reuse, as with `children`).
+  "richruler": [
+    "File:Homilies of Gregory the Theologian gr. 510, f 188.jpg",
   ],
 
   // ---- chapter 19 ----

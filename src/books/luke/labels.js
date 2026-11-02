@@ -116,6 +116,8 @@ module.exports={
 "File:Grec 74 fol 122r.jpg":"The Sinful Woman at Christ's Feet — Paris Gospels gr. 74, 11th c.",
 "File:Grec 74 fol 132r2.jpg":"Martha Serving — Paris Gospels gr. 74, 11th c.",
 "File:Grec 74 fol 35v.jpg":"Christ Blessing the Children — Paris Gospels gr. 74, 11th c.",
+"File:Homilies of Gregory the Theologian gr. 510, f 188.jpg":"The Rich Man Questions the Lord — Paris Gregory gr. 510, 879–883",
+"File:Homilies of Gregory the Theologian gr. 510, f 343.jpg":"Christ in the Midst of the Doctors — Paris Gregory gr. 510, 879–883",
 "File:Monreale - Christ cleans ten leper men in Samaria.jpg":"The Cleansing of the Ten Lepers — Monreale, 12th c.",
 "File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 1 090A7601.jpg":"The Pharisee and the Publican — Gračanica, Serbia, 14th c.",
 "File:The story of the Publican and the Pharisee, under dome, east, GRACANICA 4 IMG 8016.jpg":"The Pharisee and the Publican, wider view — Gračanica, Serbia, 14th c.",

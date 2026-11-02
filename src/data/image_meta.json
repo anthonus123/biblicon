@@ -2854,5 +2854,29 @@
   "credit": "https://gallica.bnf.fr/ark:/12148/btv1b105494556/f1.item.zoom",
   "desc": "Illustration zum Johannesevangelium, Kapitel 1",
   "page": "https://commons.wikimedia.org/wiki/File%3AGrec_74_fol_169r.jpg"
+ },
+ "File:Homilies of Gregory the Theologian gr. 510, f 188.jpg": {
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Homilies_of_Gregory_the_Theologian_gr._510%2C_f_188.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Homilies_of_Gregory_the_Theologian_gr._510%2C_f_188.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "w": 1024,
+  "h": 1517,
+  "license": "Public domain",
+  "artist": "Byzantine illuminator",
+  "date": "879–883",
+  "credit": "http://gallica.bnf.fr/ark:/12148/btv1b84522082/f188.image",
+  "desc": "Homilies of Gregory the Theologian gr. 510, f 188",
+  "page": "https://commons.wikimedia.org/wiki/File%3AHomilies_of_Gregory_the_Theologian_gr._510%2C_f_188.jpg"
+ },
+ "File:Homilies of Gregory the Theologian gr. 510, f 343.jpg": {
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Homilies_of_Gregory_the_Theologian_gr._510%2C_f_343.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Homilies_of_Gregory_the_Theologian_gr._510%2C_f_343.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "w": 1024,
+  "h": 1470,
+  "license": "Public domain",
+  "artist": "Byzantine illuminator",
+  "date": "879–883",
+  "credit": "http://gallica.bnf.fr/ark:/12148/btv1b84522082/f343.image",
+  "desc": "Homilies of Gregory the Theologian gr. 510, f 343",
+  "page": "https://commons.wikimedia.org/wiki/File%3AHomilies_of_Gregory_the_Theologian_gr._510%2C_f_343.jpg"
  }
 }

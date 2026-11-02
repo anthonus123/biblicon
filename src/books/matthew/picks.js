@@ -143,6 +143,13 @@ module.exports={
   "children": [
     "File:Grec 74 fol 35v.jpg",
   ],
+  // The rich young man. Paris, BnF grec 510 (Homilies of St Gregory, Constantinople, 879-883),
+  // fol. 87v (Commons "f 188"): the left half of the middle band, lettered Ο ΠΛΟΥϹΙΟϹ Ο
+  // ΕΠΕΡΩΤΩΝ ΤΟΝ Κ(ΥΡΙΟ)Ν. A whole page of several scenes; the reading says which figures are
+  // this passage. Luke's 18:18-23 shows it too. Nothing in it is Matthew-only.
+  "richman": [
+    "File:Homilies of Gregory the Theologian gr. 510, f 188.jpg",
+  ],
   "vineyard": "File:Workers in the vineyard, Minuscule 269 (11th century).jpg",
   "blind20": "File:Christ heals two Jericho blind men.jpg",
   "entry": [

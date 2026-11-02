@@ -42,6 +42,7 @@ module.exports={
 'File:The Good Shepherd from the Imperial Palace of Constantinople 5th-6th century AD.jpg':'The Good Shepherd — Great Palace, Constantinople, 5th–6th c.',
 "File:Grec 74 fol 5r2.jpg":"The Return to Nazareth — Paris Gospels gr. 74, 11th c.",
 "File:Grec 74 fol 35v.jpg":"Christ Blessing the Children — Paris Gospels gr. 74, 11th c.",
+"File:Homilies of Gregory the Theologian gr. 510, f 188.jpg":"The Rich Young Man Questions the Lord — Paris Gregory gr. 510, 879–883",
 'File:Workers in the vineyard, Minuscule 269 (11th century).jpg':'The Labourers in the Vineyard — Byzantine Gospel book, 11th c.',
 'File:Christ heals two Jericho blind men.jpg':'The Blind Men of Jericho — Monreale, 12th c.',
 'File:Baiophoros Dionysiou.jpg':'The Entry into Jerusalem — Dionysiou, Athos, 1547',

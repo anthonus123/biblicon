@@ -478,6 +478,17 @@ module.exports={
  ["Three apostles", "Apart, at the left.", "35%", "12%"],
 ],
 
+"File:Homilies of Gregory the Theologian gr. 510, f 188.jpg":[
+ ["The questioner", "Red and gold, unhaloed, leaning in with open hands: what good thing shall I do?", "50%", "47%"],
+ ["The caption", "White Greek above: the rich man putting his question to the Lord.", "39%", "44%"],
+ ["Christ", "In purple, a scroll held low, the other hand at his breast.", "50%", "33%"],
+ ["Philip, most likely", "A haloed youth; his name down the frame starts ΦΙ.", "50%", "20%"],
+ ["A fig tree", "Where the band turns to another Gospel.", "40%", "57%"],
+ ["Nathanael's call", "John 1:43-51, painted on the same band.", "45%", "85%"],
+ ["The top band's heading", "Η ΚΛΗϹΙϹ ΤΩΝ ΑΠΟϹΤ[ΟΛΩΝ].", "10%", "14%"],
+ ["The lowest band", "Not part of these verses.", "78%", "50%"],
+],
+
 'File:Workers in the vineyard, Minuscule 269 (11th century).jpg':[
  ["The caption ΟΙΚΟΔΕΣΠΟΤΗΣ","The red Greek, cut short after its first letters, stands over the man in grey who is paying, not over the seated man at the door. It calls him the householder — the word Matthew uses in the first line: the kingdom of heaven is like unto a man that is an householder, which went out early in the morning to hire labourers into his vineyard.","10%","42%"],
  ["The man at the door","An older man in ochre sits on a stool before a tall house with a red roof, both hands open toward the payment. No caption names him. Whether he is the householder shown a second time at his own door the miniature does not say.","25%","27%"],

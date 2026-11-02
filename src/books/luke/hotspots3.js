@@ -720,6 +720,29 @@ module.exports={
  ["Isaiah", "His own column of words sits beneath the scene. Mark alone keeps the prophecy's reach to the nations, of all nations; Matthew leaves it out, same as Luke. Where Luke differs from both is the verb: Matthew and Mark keep the prophecy's future tense, shall be called, and Luke flattens it to a plain is.", "50%", "80%"],
 ],
 
+"File:Homilies of Gregory the Theologian gr. 510, f 343.jpg":[
+ ["The title", "Red letters on the frame, half worn: in the midst of the doctors.", "10%", "50%"],
+ ["The boy teaching", "Frontal, enthroned beneath the curtain, his hand lifted in speech.", "20%", "50%"],
+ ["A teacher in orange", "Seated low on his right: both hearing them, and asking them questions.", "27%", "37%"],
+ ["A second teacher", "Leaning in from the other side.", "26%", "62%"],
+ ["Joseph", "Older, haloed, his name ending …ΗΦ.", "20%", "13%"],
+ ["His mother", "Η ΜΗΤΗΡ ΑΥΤΟΥ, the boy held cheek to cheek: thy father and I have sought thee sorrowing.", "20%", "24%"],
+ ["The youth once more", "Again, by a tall house at the right; no name.", "20%", "77%"],
+ ["Not this passage", "The middle band is another miracle.", "47%", "50%"],
+ ["The loaves", "Baskets of bread in the lowest band: the feeding, chapter nine.", "70%", "15%"],
+],
+
+"File:Homilies of Gregory the Theologian gr. 510, f 188.jpg":[
+ ["The rich man", "Beardless, in red edged with gold, both palms open toward Christ.", "50%", "47%"],
+ ["His name", "White capitals over his head name him the rich man.", "39%", "44%"],
+ ["Christ answering", "Standing, a scroll in hand: Why callest thou me good?", "50%", "33%"],
+ ["A disciple", "Haloed; his upright name begins ΦΙ.", "50%", "20%"],
+ ["The fig tree", "The band's divide; beyond it is John's Nathanael.", "40%", "57%"],
+ ["Christ and Nathanael", "From John 1:43-51; Luke never tells it.", "45%", "85%"],
+ ["The callings", "The top band: fishermen in boats, a man up a tree, a man at his coins.", "20%", "30%"],
+ ["Further scenes", "The lowest band lies outside this passage.", "78%", "50%"],
+],
+
 "File:Grec 74 fol 149v.jpg":[
  ["The last words", "Τὸ ἀπολωλός, that which was lost: the end of verse 10, just above the picture.", "9%", "20%"],
  ["Zacchaeus in the tree", "A little man in red up among the branches: climbed up into a sycomore tree to see him.", "30%", "77%"],

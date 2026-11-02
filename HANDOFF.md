@@ -190,7 +190,7 @@ and this file did not.
   - **120 passages**, all 28 chapters. Tiers: **52 (a)**, **5 (b)**, **63 (c)** (2026-11-01c:
     `calling` 4:18-22 got the Tokalı calling fresco; `make check` now reports 57 passages
     showing 113 icons). **2026-11-01f: `confession` 16:13-20 got the Ohrid "upon this rock" fresco — tiers
-    53/5/62, 58 passages showing 114 icons, 608 markers; the counts below are as of 11-01c. **2026-11-02: 116 icons, tiers a:55 b:5 c:60 (`nativity` 2:19-23 and `children` 19:13-15 from Paris gr. 74).**
+    53/5/62, 58 passages showing 114 icons, 608 markers; the counts below are as of 11-01c. **2026-11-02: 116 icons, tiers a:55 b:5 c:60 (`nativity` 2:19-23 and `children` 19:13-15 from Paris gr. 74); later the same day 117 icons, a:56, with `richman` 19:16-30 from Paris gr. 510.**
     **57 have an icon, and they show 113 icons between them** — no image is used under two
     passages. **32 of those 57 show more than one icon of their own scene** (the Theophany
     has four, the Burial four, the Crucifixion four); the other 25 have one because no
@@ -330,6 +330,7 @@ and this file did not.
     cannot replace: read every "so", "that" or "because" a story adds, and every quoted speech
     whose pronouns changed, against the printed verses by eye.
   - **31 passages still want a story** at this date; closed by batch 4, 2026-09-25h, above.
+  - **(2026-11-02, later: 112 icons, tiers a:60 b:6 c:86 — `twelveyears` and `richruler` from Paris gr. 510.)**
   - **(2026-11-02: 110 icons, tiers a:58 b:6 c:88 — `figtree`, `prodigal` (2), `zacchaeus`, `sinfulwoman`, `marthamary`, `children` from Paris gr. 74.)**
   - **(2026-11-01f: 103 icons, 639 markers, tiers a:52 b:6 c:94, 58 icon-bearing passages and 58 stories — `shepherds` (Lagoudera), `synagogue` (Peribleptos, Ohrid), `richfool` and `lazarus` (Rila) wired; see that Session block.)**
   - **(2026-11-01e: 97 icons, 588 markers, tiers a:48 b:6 c:98, 54 icon-bearing passages and 54 stories — `nain`, `bowedwoman`, `dropsy` (all Monreale) and `mites` (Ravenna + Ferapontov) wired; see that Session block.)**
@@ -369,7 +370,7 @@ and this file did not.
     icon at the Prologue (tier b, `assign.js` had named it since 2026-09-20b but no file had ever
     been wired). **A fourteenth candidate, for Christ at twelve years (2:42-52), was wired and
     retracted the same session** — it is catalogued as the Kirillo-Belozersky iconostasis's own
-    Mid-Pentecost panel, not confirmed as a Finding-in-the-Temple icon; see the Gotcha below and
+    Mid-Pentecost panel, not confirmed as a Finding-in-the-Temple icon (**RESOLVED 2026-11-02b from a different, lettered source — Paris gr. 510 fol. 165r; the Kirillo panel stays unwired**); see the Gotcha below and
     `## Next` for the open question. That passage stays tier c for now, pending the owner.
     **48 icon-bearing passages, 89 icons; tiers 42 (a), 6 (b), 104 (c)**, up from 34/69/29/5/118.
     **None of the 13 has a prose reading yet** — this session was survey-and-wire only, the
@@ -446,7 +447,7 @@ and this file did not.
 
 ## Next
 
-**2026-11-02: Paris gr. 74 (BnF, 11th c., `Category:Codex Parisinus Graecus 74`) filled ten gaps** — see that Session block. Its ~300 miniatures not on Commons are the biggest remaining lead (Gallica blocks scripted access; needs the owner to fetch folios). Remaining gaps after it: Matthew 16, Mark 11, Luke 10, John 5 (by `make check`).
+**2026-11-02: Paris gr. 74 (BnF, 11th c., `Category:Codex Parisinus Graecus 74`) filled ten gaps** — see that Session block. **Later 2026-11-02 (second Session block): Paris gr. 510 (the Paris Gregory, 879–883) filled three more — Luke `twelveyears` 2:42-52, and the rich young man/ruler in Matthew 19:16-30 and Luke 18:18-23 (one page, both readers). Gaps now Matthew 15, Mark 11, Luke 8, John 5.** Its ~300 miniatures not on Commons are the biggest remaining lead (Gallica blocks scripted access; needs the owner to fetch folios). Remaining gaps after it: Matthew 16, Mark 11, Luke 10, John 5 (by `make check`).
 
 **Patristic sourcing: the credit lines are fixed (see `## Status`, 2026-09-27d); the underlying
 source is not, and may never be under current constraints.** If a future session ever finds a
@@ -547,14 +548,14 @@ Luke, in order:
    2026-09-25c (English, Greek, Cyrillic, and by category), still nothing; see the Session block
    for what was tried. Likely stays tier c permanently; no fixed Orthodox icon type exists for it,
    unlike the Feasts.
-2. **Christ at twelve years (2:42-52): settled by the owner 2026-09-25e — stays tier c.** The one
+2. **Christ at twelve years (2:42-52): settled by the owner 2026-09-25e — stays tier c.** (**2026-11-02b: now tier a from Paris gr. 510 fol. 165r, lettered with Luke 2:46's words and painting Joseph and the Mother — a different source from the one the owner declined; listed for the owner's confirmation in that Session block.**) The one
    candidate found, `Kirillo-Belozersky iconostasis 06 - Among doctors.jpg`, is catalogued by its
    own iconostasis's panel list as the Mid-Pentecost feast image (John 7:14), which Byzantine
    iconography paints with the same composition Luke 2:46 describes — see the Gotcha. The owner
    chose not to use it, on the same reasoning the retraction itself gave: the catalogue entry
    doesn't confirm the panel depicts this scene. No further work needed here unless the owner
    reopens it.
-3. **10 passages still want an icon** (16 until 2026-11-02 wired `figtree`, `prodigal`, `zacchaeus`, `sinfulwoman`, `marthamary` and `children` from Paris gr. 74 — **Zacchaeus below is RESOLVED**; 20 until 2026-11-01f wired `shepherds`, `synagogue`, `richfool` and `lazarus` — **and the harvest's `CYCLES` list is 23 of 37 names empty, not seven; see the 2026-11-01f Session block**; 24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
+3. **8 passages still want an icon** (10 until 2026-11-02b wired `twelveyears` and `richruler` from Paris gr. 510; 16 until 2026-11-02 wired `figtree`, `prodigal`, `zacchaeus`, `sinfulwoman`, `marthamary` and `children` from Paris gr. 74 — **Zacchaeus below is RESOLVED**; 20 until 2026-11-01f wired `shepherds`, `synagogue`, `richfool` and `lazarus` — **and the harvest's `CYCLES` list is 23 of 37 names empty, not seven; see the 2026-11-01f Session block**; 24 until 2026-11-01e wired `nain`, `mites`, `bowedwoman` and `dropsy`; **match keywords against `pool.json` category names, not just file titles — see the 2026-11-01e Session block**) (26 until 2026-11-01d wired `herodtrial` 23:6-12 and `simoncyrene` 23:26-32 from Staro Nagoričane; **and the "categories already enumerated" below was wrong for seven Serbian/Macedonian/Greek programmes — see the 2026-11-01d Session block before trusting it**) (down from 39, net unchanged from the harvest's own first
    pass — `emmausroad` was found on a second look after `twelveyears` was retracted): Zacchaeus
    (searched again, nothing — likely permanent, same as `nain`), the woman bowed together at
    13:10-17 (**wired 2026-11-01e from `Cathedral (Monreale) - Counterfacade Miracle of J.C. mosaic 01.jpg`, the woman's half, which no title search could find**; Monreale's own Commons record turned out to hold only half the mosaic — the crowd's
@@ -1989,7 +1990,7 @@ them on purpose.** They are rejected candidates kept as the evidence for the rej
 Gotchas below describe by name — `a4ad798db862` is the "Saint Mathias", `55b6d2c3f412` is the
 Gračanica Last Judgment Christ, `d327dedf9c14` is the retired `Christos Didaskon`, and
 `6cc1c1be2fcf` (added 2026-09-25c) is the Kirillo-Belozersky Mid-Pentecost panel, wired to
-`twelveyears` and retracted the same session (see the Gotcha). There were
+`twelveyears` and retracted the same session (see the Gotcha; `twelveyears` has had Paris gr. 510 fol. 165r since 2026-11-02b). There were
 ten until 2026-09-18, when the John reader took two of them into use: `66e7620d02cb` (the
 Langadas St John the **Evangelist** mislabelled as the Baptist) is John's Prologue icon, and
 `d5b36ae3319a` (the Dionysiou `Mnemeion Christou`, inscribed with John 20:3) is John 20:1–10's.
@@ -2224,7 +2225,7 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   resemblance is not conclusive either way. Retracted to tier c pending the owner rather than kept
   with a caveat — the same shape of open question as `Christos Iomenos Typhlon` and the Bethesda
   fresco in Matthew's reader, and one line to reverse if the owner judges the composition decides
-  it. No other candidate for the Finding in the Temple was found this session.
+  it. No other candidate for the Finding in the Temple was found this session. (**2026-11-02b: Paris gr. 510 fol. 165r settles it by its lettering and the parents; wired.**)
 - **`upload.wikimedia.org` rate-limits into 429s, and a 429 is not a dead candidate.** A first
   pass fetching 177 thumbnails got 21 files and 156 "failures". With `Retry-After` honoured and
   an exponential backoff (6 attempts, ~1.5s growing), the same list returned 172 of 172. Never
@@ -2268,7 +2269,7 @@ keeping, delete the files *and* their `pick_keys.json` entries together.
   programs were enumerated in full (Dionysiou katholikon 338 files, Saint Paraskevi Langadas
   115 icons, Dionisy at Ferapontov 39) and **none** contains the Sermon, the disputes, or the
   parables of the talents / tares / mustard seed / hidden treasure / unforgiving servant /
-  wicked husbandmen, nor the tribute money, the stater, the rich young ruler, the blessing of
+  wicked husbandmen, nor the tribute money, the stater, the rich young ruler (**found 2026-11-02b in Paris gr. 510**), the blessing of
   the children, the calling of the fishermen, the confession of Peter, or the Great
   Commission. Orthodox programs are built on the **feast cycle, the miracles and the saints**;
   parables are the exception, not the rule. Every dedicated Commons category for those 15
@@ -7353,3 +7354,73 @@ converging as of 2026-09-27g/h).
      not settle it.
 - **Next.** The owner list above; then, if Gallica folios become available, the remaining gaps
   (Matthew 16, Mark 11, Luke 10, John 5). Nothing is committed (owner did not ask).
+
+## Session 2026-11-02b (Paris gr. 510: Christ among the doctors, and the rich young man)
+
+- **Did.** Owner: "keep filling icon gaps". **New source: `Category:Bibliothèque Nationale MS Gr. 510`**
+  (66 files, never pooled) — the Paris Gregory, the Homilies of St Gregory the Theologian made at
+  Constantinople for Basil I, **879–883** (the date the Commons record of its fol. 137r detail and
+  Wikipedia both give; the "f NNN" files carry no date, only the 2015 upload date). Its pictures are
+  **whole pages of two to four bands**, several Gospel scenes to a page, so every reading says which
+  band and which figures belong to the passage. `image_meta.json` artist normalised to "Byzantine
+  illuminator", date "879–883", the Russian description translated.
+- **Commons "f NNN" is Gallica's view number, not the folio.** f 287 is fol. 137r (its own
+  detail file says so), so view = 2×folio + 13 (recto) / + 14 (verso): f 188 = **fol. 87v**, f 343 =
+  **fol. 165r** (the page's own stamp reads 165), f 353 = 170r, f 406 = 196v, f 645 = 316r. Labels
+  and readings use the folios.
+- **Wired (Luke a:58 → a:60, 110 → 112 icons; Matthew a:55 → a:56, 116 → 117):**
+  - Luke `twelveyears` (2:42-52), **f 343 / fol. 165r, top band**. Red title on the frame, worn:
+    ΙϹ … ΜΕϹΩ … ΔΙΔΑϹΚΑ[ΛΩΝ] — Luke 2:46's own phrase. The boy (cross-nimbus) sits frontally under
+    a red curtain between two teachers; at the left **Joseph (…ΗΦ, only the end legible) and a woman
+    lettered Η ΜΗΤΗΡ ΑΥΤΟΥ embracing the boy** — Luke 2:48, which no Mid-Pentecost icon paints. That
+    is why this does not reopen the owner's 2026-09-25e ruling: that ruling was on the Kirillo panel,
+    catalogued as Mid-Pentecost by its own iconostasis list; the Kirillo panel stays unwired. A third
+    figure of the youth walks off by a building at the right, unlettered (not identified). Middle
+    band (Christ, figures with dark winged shapes fleeing — not identified, could be the Gadarene)
+    and lower band (the feeding) are said to be other passages. keyVerse 46. St Bede quoted
+    (verbatim, Catena 2:42-50).
+  - Matthew `richman` (19:16-30) and Luke `richruler` (18:18-23), **one file, f 188 / fol. 87v, in
+    both readers** (as with `children`). Middle band, left half: a beardless, unhaloed young man in
+    red with gold borders, palms open toward Christ, lettered **Ο ΠΛΟΥϹΙΟϹ Ο ΕΠΕΡΩΤΩΝ ΤΟΝ Κ(ΥΡΙΟ)Ν**
+    (read at full size with contrast). A haloed youth behind Christ is lettered vertically with a
+    name beginning ΦΙ (hedged "most likely Philip"). Right of a fig tree, Christ "…ΔΙΑΛΕΓΟΜΕΝΟϹ ΤΩ
+    ΝΑΘΑΝΑΗΛ" (John 1, not used for John's `nathanael`, which has fol. 170r of gr. 74). Top band headed
+    Η ΚΛΗϹΙϹ ΤΩΝ ΑΠΟϹΤ[ΟΛΩΝ] (fishermen, a man in a tree, a man at coins); lowest band not a Gospel
+    passage as far as read. Only the question is painted, not the going away; the readings say so.
+    Mark 10:17-31 (`richman`) stays tier c — its `assign.js` has no subject (unchanged, owner's call
+    as with `children`). Chrysostom (Matthew) and Bede (Luke) quoted, verbatim. Luke keyVerse 18;
+    Matthew's base keyVerse 21 left as it was.
+- **Card thumbnails.** `.frame img` crops at `object-position:center 22%`, so on these portrait
+  pages the card shows roughly the top two-thirds: fol. 165r's top band and fol. 87v's middle band
+  both show (checked in Playwright for 87v — the rich man is at the card's centre).
+- **Viewed, not used:** f 353 (fol. 170r) bottom band is Peter sinking on the water — Matthew-only,
+  fails Mark's test for `walking` 6:45-52; f 406 (196v) top is the raising of Lazarus and the
+  supper with Simon the leper (Lazarus already standing, so not John 11:17-37's meeting); f 645
+  (316r) the man born blind, the Samaritan woman, the paralytic; f 287 (137r) the Infancy; f 300 the
+  centurion?/Gadarene/Jairus; f 311 the Last Supper; f 163 the Transfiguration; f 362, f 444 Old
+  Testament and saints. All for passages already tier a — gallery candidates at most.
+- **Lead for later: Commons holds whole Gallica manuscripts uploaded by Gzen92Bot**
+  (`Category:Grec NNN - btv1b…`, every page as "(n of N).jpg"; parent `Category:Manuscripts from
+  Gallica (Bibliothèque nationale de France) uploaded by Gzen92Bot`). **Grec 74 is not among them**,
+  nor gr. 510; gr. 550 (Gregory homilies, 12th c.) is. Not yet searched for an illustrated Gospel
+  book among the uploaded shelfmarks. Laurentian Plut. VI.23 and the Elisavetgrad Gospels: no
+  Commons category found by name.
+- **Verified.** `make` all four ok (Matthew a:56 117 icons; Luke a:60 b:6 c:86, 112 icons);
+  `quotes.js` Matthew 45 / Luke 54 KJV clauses to read (unchanged after fixing one marker that had
+  trimmed "thy father and I"), 0 wrong/no source/drift (John's 3 pre-existing drifts unchanged);
+  the three Father quotations string-matched in `catena.json` (Chrys. Matt 19:16, Bede Luke 2:42,
+  Bede Luke 18:18); `story_check` adds nothing for either new Luke story (both full KJV);
+  `overlay.py` every marker on target after moving two per book; 5-gram overlap of the new prose and
+  markers against all four books (KJV, Catena and the painted Greek inscriptions excluded): 0 after
+  rewording. Playwright (Matthew and Luke, cache-busted): all three cards' images load (660px); each drawer shows the credit line (879–883, Byzantine illuminator), the story, and under Deciphering the Icon the reading and its 8–9 markers; 0 console errors. `image_meta` `credit` corrected from Commons's wrong `f542` view to `f188`/`f343` (same ark). Front page and
+  `llms.txt`: Matthew 117, Luke 112. `book.json` `iconGap` for both books and the Luke `overrides.js`
+  header ("other 86") updated.
+- **For the owner.**
+  1. **Whole multi-scene pages as icons.** Both files are whole pages; the passage is one band (Luke
+     2) or half a band (the rich man). The readings name what belongs and what does not. Keep, or
+     would you rather these wait for a crop (still your open kleymo question from 2026-11-01f)?
+  2. Christ at twelve years is now wired from a lettered page with Joseph and the Mother — not the
+     Kirillo panel you declined. Confirm you are content with it.
+- **Next.** Gaps (by `make check`): Matthew 15, Mark 11, Luke 8, John 5. Leads: the Gzen92Bot
+  Gallica uploads (look for an illustrated Gospel book or lectionary among the `Grec NNN`
+  categories); Paris gr. 74's missing folios (owner download). Nothing is committed (owner did not ask).
