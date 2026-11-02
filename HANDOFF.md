@@ -447,6 +447,10 @@ and this file did not.
 
 ## Next
 
+**2026-11-02d: Paris gr. 74's whole cycle IS on Commons — Omont's 1908 B&W facsimile, two PDFs (see that Session block). ~17 gap strips identified and viewed; nothing wired, pending two owner rulings (crop+rotate a strip out of a PD plate; B&W as an icon).** Review sheets (`review_1-3.jpg`), Omont's plate notices (`*.txt.plates`), the rotated plates and cropped strips are saved in `src/tools/raw/omont/` (gitignored, local only); the Session block's table is the durable record. **Owner ruled 2026-11-02d: no crops at all (not even the whole rotated plate), and B&W only for strong matches — so the Omont strips are closed.** The one open route is colour whole folios from Gallica (ark:/12148/btv1b105494556, public domain; Gallica blocks scripts, so the owner downloads them). The thirteen strong-match folios are listed in the 2026-11-02d Session block under "Owner rulings".
+
+**2026-11-02c: a full search pass found nothing new — the Gallica bot uploads, four psalters and ~1,760 files from 22 never-pooled fresco programmes. See that Session block before searching any of them again.** Remaining leads all need the owner: Paris gr. 74 and the Ivan Alexander Tetraevangelion (BL Add MS 39627, ~366 miniatures, only ~40 on Commons) from outside Commons, or the self-cropping ruling.
+
 **2026-11-02: Paris gr. 74 (BnF, 11th c., `Category:Codex Parisinus Graecus 74`) filled ten gaps** — see that Session block. **Later 2026-11-02 (second Session block): Paris gr. 510 (the Paris Gregory, 879–883) filled three more — Luke `twelveyears` 2:42-52, and the rich young man/ruler in Matthew 19:16-30 and Luke 18:18-23 (one page, both readers). Gaps now Matthew 15, Mark 11, Luke 8, John 5.** Its ~300 miniatures not on Commons are the biggest remaining lead (Gallica blocks scripted access; needs the owner to fetch folios). Remaining gaps after it: Matthew 16, Mark 11, Luke 10, John 5 (by `make check`).
 
 **Patristic sourcing: the credit lines are fixed (see `## Status`, 2026-09-27d); the underlying
@@ -7424,3 +7428,120 @@ converging as of 2026-09-27g/h).
 - **Next.** Gaps (by `make check`): Matthew 15, Mark 11, Luke 8, John 5. Leads: the Gzen92Bot
   Gallica uploads (look for an illustrated Gospel book or lectionary among the `Grec NNN`
   categories); Paris gr. 74's missing folios (owner download). Nothing is committed (owner did not ask).
+
+## Session 2026-11-02c (no new icons: the Gallica bot uploads, four psalters and 22 unharvested fresco programmes searched)
+
+- **Did.** Owner: "Continue" (after 2026-11-02b's "keep filling icon gaps"). Followed 2026-11-02b's
+  lead, then the next ones. **Nothing wired; no `src/` file changed.** Gaps unchanged: Matthew 15,
+  Mark 11, Luke 8, John 5.
+- **Gzen92Bot Gallica uploads: exhausted.** `list=allcategories` by prefix (`Grec `, `Supplément
+  grec `, `Coislin `, `Syriaque `, `Arménien `, `Copte `, `Slave `) gives ~420 `… - btv1b…`
+  categories; their parent category lists none of them as subcats, so prefix enumeration is the
+  way in. Subject lines were read from each category's first file (`{{Artwork}}` description)
+  for the ~340 Greek, Coislin, Supplément grec and Slave ones (five that hit HTTP 429 were re-read:
+  medicine and Chrysostom, no Gospels). **About 195 say "document de substitution", i.e. B&W
+  microfilm scans** (the count is approximate: descriptions were truncated at 400 characters).
+  Gospel books and lectionaries present: Grec 48, 49, 50, 96, 98, 119; lectionaries Grec 273,
+  285, 289 (1066), 292, 297, 300, 305, 307, 312, Suppl. gr. 758, Coislin 214, Suppl. gr. 1276;
+  Suppl. gr. 1316 (Gospels, 1076–1125). **Only colour ones viewed by sheet:** Grec 48
+  (`btv1b10507213z`, 552 pages; ranked by saturation) has Evangelist portraits only; Suppl. gr.
+  1316's own catalogue lists only an Evangelist portrait; Suppl. gr. 1276 is microfilm. Grec 74 and
+  510 are not among the uploads. No narrative Gospel cycle is in this corpus.
+- **Psalters and manuscripts on Commons, never pooled:** Kyivan Psalter 1397 (114 files, sheeted:
+  David-and-Christ psalm pairings, Old Testament, beasts — no gap scene); Theodore Psalter (28) and
+  Chludov Psalter (30) by title: their Gospel scenes (Baptism, Entry, Transfiguration, Magi) are
+  passages already tier a; Ivan Alexander Tetraevangelion (`Tetraevangelia of Tsar Ivan Alexander
+  (1355-1356) - BL Add MS 39627`, 42 files, 2 pooled): the extra files are royal portraits, the
+  genealogy (`TetraevangeliaOfIvanAlexander.jpg`), fol. 88r (Mark's headpiece with Mark, the
+  Forerunner and Isaiah) — no gap scene beyond the fol. 32/123 already noted. **The BL's own viewer
+  for Add MS 39627 now redirects to a generic collection page and `iiif.bl.uk` returns 403**, so
+  the full 366-miniature digitisation is not reachable by script today.
+- **22 Orthodox fresco programmes with zero pooled files, harvested depth-2 into the scratchpad
+  (not `pool.json`) and sheeted — 1,763 files:** Marko's Monastery (main category; its 535 St
+  Demetrius paintings were already viewed 2026-11-02 and skipped), Ravanica (243), Kalenić (76),
+  Cozia (Holy Trinity + interior + `Cozia murals`), Curtea de Argeș princely church (incl. its
+  interior), Mirozh (Transfiguration Cathedral + frescos + monastery), Ubisi, Ateni Sioni,
+  Kremikovtsi, Poganovo (201), Dochiariou, Vatopedi frescos, Zemen, Arbanasi Nativity (all three
+  categories), Arilje, Staraya Ladoga St George, Nereditsa, Kovalevo, Dragalevtsi, Ivanovo.
+  Overwhelmingly exteriors, single saints and wide wall or vault shots. Narrative scenes seen:
+  Kalenić's Cana (`Marriage at Cana Monastery Kalenic …jpg`, 531×600, John 2 already tier a);
+  Ubisi's Last Supper and St George; Kremikovtsi's Magi; Vatopedi's Ladder; Arbanasi's
+  `Bulgaria Bulgaria-1040 - Life of Christ (7469369946).jpg` (Dennis Jarvis, CC BY-SA 2.0,
+  4437×3073) — a vault with **lettered Greek panels**: the Deposition, the Lamentation, the
+  myrrhbearers, Christ healing the man with the dropsy (Ο Χ(ΡΙΣΤΟ)Σ ΙΩΜΕΝΟΣ ΤΟΝ ΥΔΡΩΠΙΚΟΝ) and the
+  rich man and Lazarus — **all passages already tier a; gallery candidates at most, and only as
+  crops.** The other Arbanasi wide shots are the women's-section Marian/Akathist wall, the Wheel
+  of Life, the Tree of Jesse and the Pantocrator vault. Mirozh: fragments of apostles and saints,
+  nothing lettered for a gap. Yaroslavl, Rostov and Kostroma were already sheeted 2026-11-01f.
+- **What is left, for the owner** (unchanged in substance, sharper in evidence):
+  1. **Self-made crops** (open since 2026-11-01f, the Kholmogorets kleymo): every untapped
+     programme found this session survives on Commons only as wide wall photographs. Without
+     crops, no further Commons fresco programme is likely to yield a whole-file gap icon.
+  2. **A non-Commons public-domain manuscript**: Paris gr. 74 (Gallica, blocked to scripts) or
+     the Ivan Alexander Tetraevangelion (BL, viewer offline to scripts). Either, downloaded by
+     the owner, very likely covers the talents, the wicked husbandmen, the unforgiving servant,
+     the tares, the mustard seed, the pearl, Nicodemus, the nobleman's son and feed my sheep.
+  3. The 2026-11-02 and 2026-11-02b owner lists still stand.
+- **Verified.** No `src/` or HTML change, so no build; `make check` run at start for the gap list
+  (Matthew 15, Mark 11, Luke 8, John 5). Nothing committed (owner did not ask).
+- **Next.** The owner's rulings above. Without them, the Commons search for gap icons is
+  exhausted as far as whole files go.
+
+## Session 2026-11-02d (Paris gr. 74 complete on Commons as Omont's 1908 facsimile; ~17 gap strips found, none wired)
+
+- **Did.** Owner: "continue and dont stop". Walked `Category:Byzantine illuminated manuscripts` by
+  century (nothing new of use: Jaharis Lectionary, Getty Ludwig II 4/5, Walters W530/531, Vat. gr.
+  1851 etc. are portraits/feasts), then searched file names for the Omont facsimile. **Found:**
+  `File:Evangiles avec peintures byzantines du XIe siècle - reproduction des 361 miniatures du
+  Manuscrit grec 74 de la Bibliothèque nationale (IA gri 33125001710991).pdf` (Tome I, Matthew +
+  Mark, plates 1–91, 198 pp.) and `… (IA gri 33125001711007).pdf` (Tome II, Luke + John, plates
+  92–187, 206 pp.), Public domain (PD US expired; Omont d. 1940), uploaded by Fæ from the Getty
+  Research Institute scans. Same items on IA: `gri_33125001710991`, `gri_33125001711007`
+  (`/download/<id>/page/n<leaf>_w2000.jpg` works by script; `_djvu.txt` holds Omont's plate
+  notices with folio and scene for every plate — read those first, they are a full index).
+- **Plate → IA leaf (0-based), checked against the printed plate numbers:** Tome I plates 1–58:
+  leaf = 12+2N; from plate 59 on: leaf = 14+2N (an insert leaf). Tome II: leaf = 14+2(N−92).
+  Tome I plates must be rotated 90° clockwise, Tome II 90° anticlockwise. Each plate holds **two
+  strips (two different scenes, often from different folios)** in sepia photogravure.
+- **Candidates, each strip viewed at 2000px (strip a = upper, b = lower once rotated):**
+  strong — Matthew 17:14-21 lunatic boy (pl. 29b), 18:21-35 unforgiving servant (31b: king,
+  kneeling servant, prison, the choking of the fellow servant); Mark 1:23-28 (60b), 8:22-26
+  Bethsaida (73a), 9:14-29 the boy (74b), 10:46-52 Bartimaeus, one blind man (77a), 12:1-12
+  husbandmen beating the servants beside the vineyard (78b); Luke 4:31-37 (101b), 14:15-24 great
+  supper (123a), 18:35-43 (128b); John 4:43-54 nobleman and the sick son in bed (151b), 11:17-37
+  Martha meets Christ (164b), 20:19-23 Christ standing in a door-frame among the disciples
+  (183b). Medium — Matthew 22:15-22 Pharisees with two armed Herodians before the seated Christ
+  (36b), 17:24-27 collectors and Peter at the gate, **no fish painted** (30a); Mark 7:31-37
+  deaf-mute (72a); John 3:1-21 Moses' bronze serpent beside a cross — John 3:14, **Nicodemus not
+  painted** (148b). Cross-Gospel only (strip sits in Luke's text): Matthew 11:1-15 John's
+  disciples (108a), Matthew 13:31-35 mustard tree with birds (122a). Weak/rejected — Matthew
+  13:24-30 (24b is Christ teaching, no sower or tares), Luke 9:44-50 (113a: seated Christ with a
+  child at his side and children being brought — 9:47 or a blessing, unsettled), Luke 20:9-18
+  (130a: parable told, vineyard plants, no violence), John 21:15-19 (186a: the meal, unlettered).
+  Mark 6:45-52 (pl. 70) paints Peter leaving the boat, Matthew's detail — the existing Gotcha holds.
+  No talents, Nicodemus visit, weeping over Jerusalem, Lord's Prayer, builders or pearl strip.
+- **Blocked on the owner (asked this session):** (1) a strip means cropping and rotating a PD
+  plate ourselves — the open 2026-11-01f kleymo question, and no Biblicon image has been a
+  self-made crop; (2) every icon so far is colour, these are sepia/B&W. Alternative: Omont gives
+  exact folios, so the owner could fetch ~17 named folios in colour from Gallica.
+  **Plumbing needed if yes:** `info()`/`fetch_images` expect a Commons image; a PDF page plus
+  crop box plus rotation needs a new source path and a credit line naming the Commons PDF and page.
+- **Verified.** Plate numbers read off every fetched page; no `src/` change, no build. Nothing
+  committed (owner did not ask).
+- **Owner rulings (asked after the pause, same day).** (1) **No crops at all**: the owner turned
+  down both cropping one strip and showing the whole rotated plate. So no Omont strip can be used,
+  because every plate holds two scenes. (2) **B&W is acceptable, but only for strong matches.** That
+  ruling stands for any future B&W source that can be used whole, uncropped. These rulings also
+  settle the 2026-11-01f kleymo question: no self-made crops.
+- **The remaining route is whole colour folios from Gallica** (ark:/12148/btv1b105494556). An
+  uncropped folio is not a crop, and the ten gr. 74 icons already wired are whole pages. Gallica
+  blocks scripted access, so the owner would have to download these. The folios come from Omont's
+  notices; each plate's first folio is strip a and its second is strip b:
+  Matthew 17:14-21 fol. 34v (pl. 29; OCR garbled, 34v inferred) · Matthew 18:21-35 fol. 37 (31) ·
+  Mark 1:23-28 fol. 66 (60) · Mark 8:22-26 fol. 81 (73) · Mark 9:14-29 fol. 83 (74) ·
+  Mark 10:46-52 fol. 87 (77) · Mark 12:1-12 fol. 89v (78) · Luke 4:31-37 fol. 114 (101) ·
+  Luke 14:15-24 fol. 141 (123) · Luke 18:35-43 fol. 149 (128) · John 4:43-54 fol. 175 (151) ·
+  John 11:17-37 fol. 191 (164) · John 20:19-23 fol. 210 (183).
+  Gallica's view numbers (f1, f2, …) are not folio numbers. The owner has to match each file to the
+  scene in `src/tools/raw/omont/strip/<plate>_<a|b>.jpg`.
+
