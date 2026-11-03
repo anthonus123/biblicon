@@ -7544,4 +7544,15 @@ converging as of 2026-09-27g/h).
   John 11:17-37 fol. 191 (164) · John 20:19-23 fol. 210 (183).
   Gallica's view numbers (f1, f2, …) are not folio numbers. The owner has to match each file to the
   scene in `src/tools/raw/omont/strip/<plate>_<a|b>.jpg`.
+- **Commons structured-data pass (new method, nothing found).** Ran `haswbstatement:P180=<Q>` in
+  namespace 6 for 19 gap subjects: Bethsaida Q373364, Bartimaeus Q809440, great banquet Q1269583,
+  wicked husbandmen Q654574, unforgiving servant Q1279250, royal official's son Q5690330, deaf
+  mute Q618138, possessed boy Q41596732, talents Q1267763, pearl Q1289917, mustard seed Q1259342,
+  tares Q1261345, coin in the fish Q3079207, render unto Caesar Q504136, feed my sheep Q74538858,
+  restoration of Peter Q16166091, Flevit super illam Q36367373, builders Q1279239, Lord's Prayer
+  Q23393. That returned 215 files. Every one is Western (Bowyer Bible, Luyken, Rijksmuseum prints,
+  Fetti, Sweet Media) or modern. The only Russian file is A. N. Mironov's 2013 realist painting
+  of the husbandmen, which is not an icon. Orthodox files on Commons carry almost no P180 tags, so
+  don't repeat this. **Commons is exhausted for the open gaps. The Gallica folio list above is the
+  only route left.**
 
