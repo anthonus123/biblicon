@@ -515,7 +515,7 @@ verse order, with what was actually tried:
    almost all Voronet monastery photos, and nobody read past the first page of them. Treat the
    Greek pass and the Matthew/Luke cross-check as solid, and the English pass as unreviewed rather
    than exhausted, if a future session wants to redo it properly (bare stems, not compound
-   patterns, and actually read the hit list): `calling` (1:16-20, nets — **RESOLVED 2026-11-01c**: the Tokalı calling fresco now serves Mark's
+   patterns, and actually read the hit list) (**done 2026-11-02d, every hit read, no gap filled; see that Session block**): `calling` (1:16-20, nets — **RESOLVED 2026-11-01c**: the Tokalı calling fresco now serves Mark's
    `fishers` and Matthew's `calling`; see that Session block. Before that: Matthew's own 4:18-22 wanted the same subject and
    had never had it either), `demoniac` (1:23-28, the Capernaum synagogue exorcism — Luke's own
    4:31-37 wants it too), `boy` (9:14-29 — Luke's own 9:37-43 wants it too), `husbandmen`
@@ -7555,4 +7555,23 @@ converging as of 2026-09-27g/h).
   of the husbandmen, which is not an icon. Orthodox files on Commons carry almost no P180 tags, so
   don't repeat this. **Commons is exhausted for the open gaps. The Gallica folio list above is the
   only route left.**
+- **`pool.json` English/multilingual pass (the 2026-09-26 "unreviewed" one, now done and
+  read).** Bare stems for all 39 wanted subjects in English, Russian, Serbian, Romanian, Greek
+  and French, matched against file titles and categories (scratch script; hit counts: husbandmen
+  6, talents 1, pearl 41, tares 1, mustard 0, servant 61, nobleman/Capernaum 26, Jericho 106,
+  Bethsaida 2, deaf/dumb 163, possessed boy 66, Nicodemus 14, weeping 14, tribute/Caesar/coin
+  1,127, Lord's Prayer 6, builders 6, supper 9, Martha 19, appearance 13, Tiberias 13, Nazareth
+  26, child 90). Hits were filtered of Western, landscape and coin noise, and every remaining
+  hit was read. **No gap filled.** Three notes:
+  - **The 2026-09-26 English-pass line in `## Next` is now settled.** Don't redo it.
+  - **Walters W.592** (Arabic Gospels, 1684, ~50 miniatures, including the possessed boy at
+    fol. 48b) is **Coptic**: Walters says it was copied in Egypt by "most likely a Coptic monk".
+    So the Coptic/Armenian Gotcha excludes it.
+  - **Lead, not a gap:** `The Christs Appearance to the Apostles showing them his wounds PRIZREN 2
+    IMG 4842-3.jpg` / `4845-3.jpg` (Blago, CC BY 4.0, Bogorodica Ljeviška). These are
+    photographer-framed details: the apostles in one, and Christ raising a hand with the nail
+    wound in the other. The cycle runs Myrrhbearers → Emmaus → Supper at Emmaus → this, so it is
+    most likely Luke 24:36-43, possibly a gallery or tier-a upgrade for Luke's tier-b `peace`.
+    One caveat: the apostles gaze upward, which is unusual for this scene. Not wired; it needs
+    its own viewing session. For John 20:19-23 it would be a cross-Gospel match.
 
